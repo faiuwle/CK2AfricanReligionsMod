@@ -11,7 +11,7 @@ b_wara = tribal
 
 # Misc
 culture = daju
-religion = west_african_pagan
+religion = amazigh
 
 # History
 1200.1.1 = { religion = sunni } # Kanem dominance and partial islamization

@@ -12,7 +12,4 @@ culture = maghreb_arabic
 religion = amazigh
 
 # History
-1066.1.1 = { 
-    culture = daju 
-    religion = west_african_pagan
-}
+1066.1.1 = { culture = daju }

@@ -12,6 +12,6 @@ b_el_fasher = tribal
 
 # Misc
 culture = daju
-religion = west_african_pagan
+religion = amazigh
 
 # History
