@@ -1,5 +1,5 @@
 african_group = {
-    # color = {}
+    color = { 100 45 0 }
     graphical_culture = norsegfx
     has_coa_on_barony_only = yes
     hostile_within_group = no
@@ -9,9 +9,8 @@ african_group = {
         ai_convert_same_group = 0
         ai_convert_other_group = 2
 
-        # icon =
-        # heresy_icon =
-        # color = {}
+        icon = 66
+        color = { 150 85 35 }
 
         crusade_name = GREAT_HOLY_WAR
         scripture_name = THE_KANO_CHRONICLE
@@ -84,9 +83,9 @@ african_group = {
         ai_convert_same_group = 0
         ai_convert_other_group = 2
 
-        # icon = 
-        # heresy_icon = 
-        # color = {}
+        icon = 61
+        heresy_icon = 62
+        color = { 65 40 20 }
 
         crusade_name = GREAT_HOLY_WAR
         scripture_name = NAGA_REETU_REET
@@ -127,9 +126,9 @@ african_group = {
         ai_convert_same_group = 0
         ai_convert_other_group = 2
 
-        # icon = 
-        # heresy_icon = 
-        # color = {}
+        icon = 60
+        heresy_icon = 61
+        color = { 80 50 30 }
 
         crusade_name = GREAT_HOLY_WAR
         scripture_name = NAGA_REETU_REET
@@ -196,9 +195,9 @@ african_group = {
         ai_convert_same_group = 0
         ai_convert_other_group = 2
 
-        # icon =
-        # heresy_icon =
-        # color = {}
+        icon = 64
+        heresy_icon = 65
+        color = { 215 215 45 }
 
         crusade_name = GREAT_HOLY_WAR
         scripture_name = THE_LEGENDS
@@ -217,6 +216,8 @@ african_group = {
 
         priests_can_marry = yes
         priests_can_inherit = yes
+
+        feminist = yes
 
         intermarry = muslim
         intermarry = bori
@@ -252,9 +253,9 @@ african_group = {
         ai_convert_same_group = 0
         ai_convert_other_group = 2
 
-        # icon =
-        # heresy_icon =
-        # color = {}
+        icon = 63
+        heresy_icon = 64
+        color = { 190 190 75 }
 
         crusade_name = GREAT_HOLY_WAR
         scripture_name = THE_LEGENDS
@@ -273,6 +274,8 @@ african_group = {
 
         priests_can_marry = yes
         priests_can_inherit = yes
+
+        feminist = yes
 
         intermarry = muslim
         intermarry = bori
