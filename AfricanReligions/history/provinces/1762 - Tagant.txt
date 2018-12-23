@@ -17,5 +17,4 @@ religion = a_tag_roog
 1150.1.1 = { 
 	culture = maghreb_arabic
 	#culture = butr
-    religion = amazigh
 }
