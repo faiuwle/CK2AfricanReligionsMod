@@ -14,12 +14,12 @@ african_group = {
 
         crusade_name = GREAT_HOLY_WAR
         scripture_name = THE_KANO_CHRONICLE
-        priest_name = MAGADJA
+        priest_title = MAGADJA
 
         high_god_name = GOD_MAGIRO
 
         god_names = {
-            GOD_MAI_JA_CIKI, GOD_GARKI_BABA, GOD_ZAKI
+            GOD_MAI_JA_CIKI GOD_GARKI_BABA GOD_ZAKI
         }
 
         evil_god_names = {
@@ -89,12 +89,12 @@ african_group = {
 
         crusade_name = GREAT_HOLY_WAR
         scripture_name = NAGA_REETU_REET
-        priest_name = SALTIGUE
+        priest_title = SALTIGUE
 
         high_god_name = GOD_ROOG
 
         god_names = {
-            GOD_MENDISS, GOD_TIURAKH, GOD_TAAHKARR
+            GOD_MENDISS GOD_TIURAKH GOD_TAAHKARR
         }
 
         evil_god_names = {
@@ -132,12 +132,12 @@ african_group = {
 
         crusade_name = GREAT_HOLY_WAR
         scripture_name = NAGA_REETU_REET
-        priest_name = MARABOUT
+        priest_title = MARABOUT
 
         high_god_name = GOD_ROOG
 
         god_names = {
-            GOD_MENDISS, GOD_TIURAKH, GOD_TAAHKARR
+            GOD_MENDISS GOD_TIURAKH GOD_TAAHKARR
         }
 
         evil_god_names = {
@@ -197,15 +197,16 @@ african_group = {
 
         icon = 64
         heresy_icon = 65
-        color = { 215 215 45 }
+        color = { 205 90 15 }
 
         crusade_name = GREAT_HOLY_WAR
         scripture_name = THE_LEGENDS
+        priest_title = MARABOUT
 
         high_god_name = GOD_TANIT
 
         god_names = {
-            GOD_ANTI, GOD_GURZIL, GOD_MAGEC, GOD_SET
+            GOD_ANTI GOD_GURZIL GOD_MAGEC GOD_SET
         }
 
         evil_god_names = {
@@ -255,15 +256,16 @@ african_group = {
 
         icon = 63
         heresy_icon = 64
-        color = { 190 190 75 }
+        color = { 205 140 95 }
 
         crusade_name = GREAT_HOLY_WAR
         scripture_name = THE_LEGENDS
+        priest_title = MARABOUT
 
         high_god_name = GOD_TANIT
 
         god_names = {
-            GOD_ANTI, GOD_GURZIL, GOD_MAGEC, GOD_SET
+            GOD_ANTI GOD_GURZIL GOD_MAGEC GOD_SET
         }
 
         evil_god_names = {

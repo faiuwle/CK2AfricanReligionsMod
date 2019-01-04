@@ -1,0 +1,18 @@
+# 1779 - Draa
+
+# County Title
+title = c_draa
+
+# Settlements
+max_settlements = 2
+
+b_tazagourt = tribal
+b_tizgui = temple
+
+# Misc
+culture = maghreb_arabic
+religion = amazigh
+
+# History
+1062.1.1 = { b_tazagourt = castle }
+1216.1.1 = { religion = sunni }

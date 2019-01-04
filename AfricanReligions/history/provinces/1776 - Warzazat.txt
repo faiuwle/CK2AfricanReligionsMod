@@ -1,0 +1,23 @@
+# 1776 - Warzazat
+
+# County Title
+title = c_warzazat
+
+# Settlements
+max_settlements = 3 
+
+b_warzazat = tribal
+
+#b_tasagdah = city
+#b_shwan = temple
+
+# Misc
+culture = maghreb_arabic
+religion = amazigh
+
+# History
+1062.1.1 = {
+	b_warzazat = castle
+	b_tasagdah = city
+}
+1316.1.1 = { religion = sunni }
