@@ -197,7 +197,7 @@ african_group = {
 
         icon = 64
         heresy_icon = 65
-        color = { 215 215 45 }
+        color = { 205 90 15 }
 
         crusade_name = GREAT_HOLY_WAR
         scripture_name = THE_LEGENDS
@@ -256,7 +256,7 @@ african_group = {
 
         icon = 63
         heresy_icon = 64
-        color = { 190 190 75 }
+        color = { 205 140 95 }
 
         crusade_name = GREAT_HOLY_WAR
         scripture_name = THE_LEGENDS
