@@ -7890,7 +7890,7 @@
 168276 = {
 	name="Salih"
 	dynasty=9576
-	religion="shiite" #changed religion
+	religion="amazigh" #changed religion
 	culture="maghreb_arabic"
 	father=168275
 	720.1.1 = {
@@ -7918,7 +7918,7 @@
 168278 = {
 	name="Yunus"
 	dynasty=9576
-	religion="sunni"
+	religion="amazigh"
 	culture="maghreb_arabic"
 	father=168277
 	820.1.1 = {
@@ -8281,7 +8281,7 @@
 210038 = {
 	name="Hamad" # fictitious
 	dynasty=1048010
-	religion=ibadi
+	religion=amazigh
 	culture=maghreb_arabic
 	735.1.1 = {
 		birth="735.1.1"
@@ -8293,7 +8293,7 @@
 210039 = {
 	name="Masmud" # fictitious
 	dynasty=1048011
-	religion=shiite
+	religion=amazigh
 	culture=maghreb_arabic
 	733.1.1 = {
 		birth="733.1.1"
