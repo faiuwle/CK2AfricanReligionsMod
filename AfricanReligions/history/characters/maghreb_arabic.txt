@@ -7904,12 +7904,15 @@
 168277 = {
 	name="Ilyas"
 	dynasty=9576
-	religion="sunni"
+	religion="amazigh"
 	culture="maghreb_arabic"
 	father=168276
 	775.1.1 = {
 		birth="775.1.1"
 	}
+    792.1.1 = {
+        religion="sunni"
+    }
 	842.1.1 = {
 		death="842.1.1"
 	}
@@ -7932,12 +7935,15 @@
 168279 = {
 	name="Muhammad"
 	dynasty=9576
-	religion="sunni"
+	religion="amazigh"
 	culture="maghreb_arabic"
 	father=168278
 	855.1.1 = {
 		birth="855.1.1"
 	}
+    888.1.1 = {
+        religion="sunni"
+    }
 	917.1.1 = {
 		death="917.1.1"
 	}
