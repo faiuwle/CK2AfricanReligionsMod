@@ -30,31 +30,51 @@ GOD_GURZIL;Gurzil;;;;;;;;;;;;;x
 GOD_MAGEC;Magec;;;;;;;;;;;;;x
 GOD_SET;Set;;;;;;;;;;;;;x
 GOD_GUAYOTA;Guayota;;;;;;;;;;;;;x
-temple_baron_bori;Magadja;;;;;;;;;;;;;x
-temple_count_bori;Chief Magadja;;;;;;;;;;;;;x
-temple_duke_bori;Great Magadja;;;;;;;;;;;;;x
-temple_king_bori;Great Magadja;;;;;;;;;;;;;x
-temple_emperor_bori;Supreme Magadja;;;;;;;;;;;;;x
+temple_baron_female_bori;Magadja;;;;;;;;;;;;;x
+temple_count_female_bori;Chief Magadja;;;;;;;;;;;;;x
+temple_duke_female_bori;Great Magadja;;;;;;;;;;;;;x
+temple_king_female_bori;Great Magadja;;;;;;;;;;;;;x
+temple_emperor_female_bori;Supreme Magadja;;;;;;;;;;;;;x
 temple_baron_a_tag_roog;Saltigue;;;;;;;;;;;;;x
+temple_baron_female_a_tag_roog;Saltigue;;;;;;;;;;;;;x
 temple_baron_a_tag_roog_reformed;Saltigue;;;;;;;;;;;;;x
+temple_baron_female_a_tag_roog_reformed;Saltigue;;;;;;;;;;;;;x
 temple_count_a_tag_roog;Chief Saltigue;;;;;;;;;;;;;x
+temple_count_female_a_tag_roog;Chief Saltigue;;;;;;;;;;;;;x
 temple_count_a_tag_roog_reformed;Chief Saltigue;;;;;;;;;;;;;x
+temple_count_female_a_tag_roog_reformed;Chief Saltigue;;;;;;;;;;;;;x
 temple_duke_a_tag_roog;Great Saltigue;;;;;;;;;;;;;x
+temple_duke_female_a_tag_roog;Great Saltigue;;;;;;;;;;;;;x
 temple_duke_a_tag_roog_reformed;Great Saltigue;;;;;;;;;;;;;x
+temple_duke_female_a_tag_roog_reformed;Great Saltigue;;;;;;;;;;;;;x
 temple_king_a_tag_roog;Great Saltigue;;;;;;;;;;;;;x
+temple_king_female_a_tag_roog;Great Saltigue;;;;;;;;;;;;;x
 temple_king_a_tag_roog_reformed;Great Saltigue;;;;;;;;;;;;;x
+temple_king_female_a_tag_roog_reformed;Great Saltigue;;;;;;;;;;;;;x
 temple_emperor_a_tag_roog;Emperor Saltigue;;;;;;;;;;;;;x
+temple_emperor_female_a_tag_roog;Emperor Saltigue;;;;;;;;;;;;;x
 temple_emperor_a_tag_roog_reformed;Emperor Saltigue;;;;;;;;;;;;;x
+temple_emperor_female_a_tag_roog_reformed;Emperor Saltigue;;;;;;;;;;;;;x
 temple_baron_amazigh;Marabout;;;;;;;;;;;;;x
+temple_baron_female_amazigh;Marabout;;;;;;;;;;;;;x
 temple_baron_amazigh_reformed;Marabout;;;;;;;;;;;;;x
+temple_baron_female_amazigh_reformed;Marabout;;;;;;;;;;;;;x
 temple_count_amazigh;Chief Marabout;;;;;;;;;;;;;x
+temple_count_female_amazigh;Chief Marabout;;;;;;;;;;;;;x
 temple_count_amazigh_reformed;Chief Marabout;;;;;;;;;;;;;x
+temple_count_female_amazigh_reformed;Chief Marabout;;;;;;;;;;;;;x
 temple_duke_amazigh;Great Marabout;;;;;;;;;;;;;x
+temple_duke_female_amazigh;Great Marabout;;;;;;;;;;;;;x
 temple_duke_amazigh_reformed;Great Marabout;;;;;;;;;;;;;x
+temple_duke_female_amazigh_reformed;Great Marabout;;;;;;;;;;;;;x
 temple_king_amazigh;Great Marabout;;;;;;;;;;;;;x
+temple_king_female_amazigh;Great Marabout;;;;;;;;;;;;;x
 temple_king_amazigh_reformed;Great Marabout;;;;;;;;;;;;;x
+temple_king_female_amazigh_reformed;Great Marabout;;;;;;;;;;;;;x
 temple_emperor_amazigh;Emperor Marabout;;;;;;;;;;;;;x
+temple_emperor_female_amazigh;Emperor Marabout;;;;;;;;;;;;;x
 temple_emperor_amazigh_reformed;Emperor Marabout;;;;;;;;;;;;;x
+temple_emperor_female_amazigh_reformed;Emperor Marabout;;;;;;;;;;;;;x
 temple_barony_of_african_group;Temple of;;;;;;;;;;;;;x
 temple_county_of_african_group;Theocracy of;;;;;;;;;;;;;x
 temple_duchy_of_african_group;Theocracy of;;;;;;;;;;;;;x
@@ -68,4 +88,8 @@ job_spiritual_amazigh_reformed;Court Marabout;;;;;;;;;;;;;x
 job_chancellor_west_african;Djeli;;;;;;;;;;;;;x
 job_marshal_west_african;Farima;;;;;;;;;;;;;x
 job_treasurer_west_african;Farba;;;;;;;;;;;;;x
-
+job_chancellor_central_african;Wakili;;;;;;;;;;;;;x
+job_marshal_central_african;Zerma;;;;;;;;;;;;;x
+job_treasurer_central_african;Midala;;;;;;;;;;;;;x
+W_L_251180;https://en.wikipedia.org/wiki/Bayajidda;;;;;;;;;;;;;x
+W_L_251187;https://en.wikipedia.org/wiki/Daurama;;;;;;;;;;;;;x

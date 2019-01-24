@@ -1,11 +1,15 @@
 african_group = {
     color = { 100 45 0 }
     graphical_culture = norsegfx
+    interface_skin = { pagan_interface }
     has_coa_on_barony_only = yes
     hostile_within_group = no
     playable = yes
 
     bori = {
+        graphical_culture = africangfx
+        interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+
         ai_convert_same_group = 0
         ai_convert_other_group = 2
 
@@ -80,6 +84,9 @@ african_group = {
     }
 
     a_tag_roog_reformed = {
+        graphical_culture = africangfx
+        interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+
         ai_convert_same_group = 0
         ai_convert_other_group = 2
 
@@ -123,6 +130,9 @@ african_group = {
     }
 
     a_tag_roog = {
+        graphical_culture = africangfx
+        interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+
         ai_convert_same_group = 0
         ai_convert_other_group = 2
 
@@ -192,6 +202,9 @@ african_group = {
     }
 
     amazigh_reformed = {
+        graphical_culture = africangfx
+        interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+    
         ai_convert_same_group = 0
         ai_convert_other_group = 2
 
@@ -251,6 +264,9 @@ african_group = {
     }
 
     amazigh = {
+        graphical_culture = africangfx
+        interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+    
         ai_convert_same_group = 0
         ai_convert_other_group = 2
 
