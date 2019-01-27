@@ -1,0 +1,19 @@
+bayajidda = {
+    inheritance = patrilineal
+    allow_bastards = yes
+    combat_rating = 5
+    hausa_opinion = 5
+    monthly_character_prestige = 0.1
+    picture = GFX_bloodlines_symbol_african_waves
+    flags = { historical_bloodline }
+}
+
+daurama = {
+    inheritance = patrilineal
+    allow_bastards = yes
+    church_opinion = 5
+    monthly_character_piety = 0.1
+    bloodline_effect_enatic_cognatic = 1
+    picture = GFX_bloodlines_symbol_african_waves
+	flags = { historical_bloodline bloodline_enatic_cognatic }
+}
