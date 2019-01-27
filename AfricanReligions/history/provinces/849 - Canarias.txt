@@ -7,9 +7,9 @@ title = c_canarias
 max_settlements = 3
 
 b_lanzarote = tribal
+b_lagomera = temple
 
 #b_tenerife = city
-#b_lagomera = temple
 #b_fuerteventura = castle
 #b_lagraciosa = castle
 #b_alegranza = castle
