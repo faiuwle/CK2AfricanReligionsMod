@@ -1005,7 +1005,7 @@
 	dynasty=1060034 #Gobirawa
 	religion="bori"
 	culture="hausa"
-	father=251241
+	father=251243
     trait=sympathy_islam
 	1160.1.1 = {
 		birth=yes
