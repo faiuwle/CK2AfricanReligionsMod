@@ -184,6 +184,12 @@
 	1217.1.1={
 		birth="1217.1.1"
 	}
+    1234.1.1={
+        create_bloodline = {
+            type = mari_djata
+            has_dlc = "Holy Fury"
+        }
+    }
 	1255.1.1={
 		death="1255.1.1"
 	}
@@ -363,10 +369,6 @@
 	
 	1312.1.1 = {
 		give_nickname = nick_the_lion
-		create_bloodline = {
-			type = mansa_musa
-			has_dlc = "Holy Fury"
-		}
 	}
 	
 	1337.1.1={
@@ -988,12 +990,111 @@
 
 
 #ancestors of the Keita dynasty
+1060008 = {
+    name="Rabah"
+    dynasty=1030002
+    religion="shiite"
+    culture="bedouin_arabic"
+    550.1.1 = {
+        birth = yes
+    }
+    575.1.1 = {
+        add_spouse=1060009
+    }
+    610.1.1 = {
+        death = yes
+    }
+}
+
+1060009 = {
+    name="Hamamah"
+    dynasty=7246
+    female=yes
+    culture="ethiopian"
+    religion="shiite"
+    555.1.1 = {
+        birth = yes
+    }
+    575.1.1 = {
+        add_spouse=1060008
+    }
+    625.1.1 = {
+        death = yes
+    }
+}
+
+1060003 = {
+    name="Bilal"
+    dynasty=1030002
+    religion="shiite"
+    culture="ethiopian"
+    father=1060008
+    mother=1060009
+    580.1.1={
+        birth = yes
+        culture = "bedouin_arabic"
+    }
+    632.1.1={
+        create_bloodline = {
+            type = bilal_ibn_rabah
+            has_dlc = "Holy Fury"
+        }
+    }
+    640.1.1={
+        death = yes
+    }
+}
+
+1060004 = {
+    name="Lawalo"
+    dynasty=1030002
+    religion="shiite"
+    culture = "ethiopian"
+    father=1060003
+    602.1.1 = {
+        birth = yes
+        culture = "bedouin_arabic"
+    }
+    660.1.1 = {
+        death = yes
+    }
+}
+
+1060005 = {
+    name="Latal"
+    dynasty=1030002
+    religion="a_tag_roog"
+    culture="manden"
+    father=1060004
+    645.1.1 = {
+        birth = yes
+    }
+    727.1.1 = {
+        death = yes
+    }
+}
+
+1060006 = {
+    name="Damul"
+    dynasty=1030002
+    religion="a_tag_roog"
+    culture="manden"
+    father=1060005
+    700.1.1 = {
+        birth = yes
+    }
+    760.1.1 = {
+        death = yes
+    }
+}
+
 251110 = {
 	name="Lahilatoul"
 	#half-mythical placeholder
 	dynasty=1030002
 	religion="a_tag_roog"
 	culture = "manden"
+    father=1060006
 	748.1.1={
 		birth = yes
 	}

@@ -1,9 +1,28 @@
 # Duguwa dynasty of Kanem
+1060007 = {
+    name="Set"
+    dynasty=1059975
+    religion="bori"
+    culture="zaghawa"
+    710.1.1 = {
+        birth = yes
+    }
+    755.1.1 = {
+        create_bloodline = {
+            type = set_bloodline
+            has_dlc = "Holy Fury"
+        }
+    }
+    765.1.1 = {
+        death = yes
+    }
+}
 248708 = {
 	name="Dugu" #Kanem 769 - 830
 	dynasty=1059975
 	religion="bori"
 	culture="kanuri"
+    father=1060007
 	trait=strong
 	752.1.1 = {
 		birth=yes
