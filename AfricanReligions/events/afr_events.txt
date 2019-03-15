@@ -1,0 +1,176 @@
+namespace = AFRREL
+
+# Event upon a Bori Hausa ruler creating or acquring Hausaland for the first time, giving the option to change default gender laws for Bori Hausa characters
+narrative_event = {
+    id = AFRREL.001
+    desc = EVENTDESC_AFRREL001
+    
+    only_playable = yes
+    religion = bori
+    culture = hausa
+    is_triggered_only = yes
+    
+    trigger = {
+        NOR = {
+            has_global_flag = hausaland_patriarchal
+            has_global_flag = hausaland_matriarchal
+        }
+        has_landed_title = k_hausaland
+    }
+    
+    option = {
+        name = EVENTOPTA_AFRREL001
+        
+        ai_chance = {
+            factor = 1
+            # Eldest child (or at least one of an eldest pair of twins) is female
+            modifier = {
+                factor = 100
+                any_child = {
+                    NOT = {
+                        any_sibling = {
+                            is_older_than = PREV
+                            OR = {
+                                father = { character = PREVPREVPREV }
+                                mother = { character = PREVPREVPREV }
+                            }
+                        }
+                    }
+                    is_female = yes
+                }
+            }
+        }
+        
+        set_global_flag = hausaland_matriarchal
+    }
+    
+    option = {
+        name = EVENTOPTB_AFRREL001
+        
+        trigger = {
+            NOT = {
+                any_owned_bloodline = {
+                    has_bloodline_flag = bloodline_enatic_cognatic
+                }
+            }
+        }
+        
+        ai_chance = {
+            factor = 1
+            # Eldest child (or at least one of an eldest pair of twins) is male
+            modifier = {
+                factor = 100
+                any_child = {
+                    NOT = {
+                        any_sibling = {
+                            is_older_than = PREV
+                            OR = {
+                                father = { character = PREVPREVPREV }
+                                mother = { character = PREVPREVPREV }
+                            }
+                        }
+                    }
+                    is_female = no
+                }
+            }
+        }
+        
+        set_global_flag = hausaland_patriarchal
+        add_law = cognatic_succession
+        
+        any_playable_ruler = {
+            limit = { 
+                higher_tier_than = BARON 
+                OR = {
+                    is_feudal = yes
+                    is_tribal = yes
+                }
+                religion = bori
+                culture = hausa
+            }
+            
+            any_owned_bloodline = {
+                limit = {
+                    has_bloodline_flag = bloodline_enatic_cognatic
+                }
+                founder = { save_event_target = target_daurama }
+            }
+            
+            character_event = { id = AFRREL.002 days = 2 }
+        }
+    }
+}
+
+# Event to inform other rulers of succession law change
+character_event = {
+    id = AFRREL.002
+    desc = EVENTDESC_AFRREL002
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVENTOPTA_AFRREL002
+        
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 2
+                is_vassal_or_below_of = FROM
+            }
+        }
+        
+        if = {
+            limit = {
+                OR = {
+                    has_law = enatic_succession
+                    has_law = enatic_cognatic_succession
+                    has_law = true_cognatic_succession
+                }
+            }
+            add_law = cognatic_succession
+        }
+    }
+    
+    option = {
+        name = EVENTOPTB_AFRREL002
+        
+        trigger = {
+            NOT = {
+                any_owned_bloodline = {
+                    has_bloodline_flag = bloodline_enatic_cognatic
+                }
+            }
+            OR = {
+                has_law = enatic_succession
+                has_law = enatic_cognatic_succession
+                has_law = true_cognatic_succession
+            }
+        }
+        
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 2
+                NOT = { vassal_or_below_of = FROM }
+            }
+        }
+    }
+    
+    option = {
+        name = EVENTOPTC_AFRREL002
+        
+        trigger = {
+            any_owned_bloodline = {
+                has_bloodline_flag = bloodline_enatic_cognatic
+            }
+            OR = {
+                has_law = enatic_succession
+                has_law = enatic_cognatic_succession
+                has_law = true_cognatic_succession
+            }
+        }
+        
+        ai_chance = {
+            factor = 100
+        }
+    }

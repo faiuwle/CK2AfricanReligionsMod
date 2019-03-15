@@ -1,0 +1,20 @@
+on_create_title = {
+    events = {
+        AFRREL.001
+    }
+}
+on_new_holder = {
+    events = {
+        AFRREL.001
+    }
+}
+on_new_holder_inheritance = {
+    events = {
+        AFRREL.001
+    }
+}
+on_new_holder_usurpation = {
+    events = {
+        AFRREL.001
+    }
+}

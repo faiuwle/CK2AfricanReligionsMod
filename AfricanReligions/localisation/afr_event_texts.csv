@@ -1,0 +1,13 @@
+EVENTDESC_AFRREL001;I have proclaimed myself as the sole ruler of Hausaland, as such I have the duty to guide the destinies and customs of all the Hausa people.
+
+I have called all the elders to the grand city of [Capital.GetName] to decide on the controversial matter of succession in the kingdom. The old women of the land tell tales of the first days of our people and how it was tradition for only the wisest women to rule over the land. They beg me to codify the old ways and make it so Hausaland is forever ruled only by Hausa law.
+
+The old men instead insist that the ways of the matriarchy are an oddity and that all civilized people of the world are ruled by strong men. They insist that for my kingdom to prosper I must bring these foreign ways to our land.;;;;;;;;;;;;;x
+EVENTOPTA_AFRREL001;My heir shall be a woman, wise and graceful.;;;;;;;;;;;;;x
+EVENTOPTBA_FRREL001;My heir shall be a man, strong and brave.;;;;;;;;;;;;;x
+EVENTDESC_AFRREL002;For long the issue of succession among the Hausa cities has been one of great controversy. Should we follow the laws of matriarchy and respect the guidance of wise women as our ancestors did or should we give leadership to men as do the civilized people of the world?
+
+[From.GetTitledNameWithNick], in a meeting with all the wise elders of the land, has decided to end the debate once and for all, and from now on the people of Hausaland must use an agnatic-cognatic succession law.;;;;;;;;;;;;;x
+EVENTOPTA_AFRREL002;If the Queen of Hausaland wishes it, I will respect that decision.;;;;;;;;;;;;;x
+EVENTOPTB_AFRREL002;Ridiculous! How dare the tyrant impose these decisions on me?;;;;;;;;;;;;;x
+EVENTOPTC_AFRREL002;Mine is the blood of [target_daurama.GetBestName], and our matriarchy will endure regardless of what anyone says.;;;;;;;;;;;;;x
