@@ -23,6 +23,7 @@ narrative_event = {
         
         ai_chance = {
             factor = 1
+            
             # Eldest child (or at least one of an eldest pair of twins) is female
             modifier = {
                 factor = 100
@@ -57,18 +58,22 @@ narrative_event = {
         
         ai_chance = {
             factor = 1
-            # Eldest child (or at least one of an eldest pair of twins) is male
+            
+            # Eldest child (or at least one of an eldest pair of twins) is male (or a man somehow created the title)
             modifier = {
                 factor = 100
-                any_child = {
-                    NOT = {
-                        any_sibling = {
-                            is_older_than = PREV
-                            OR = {
-                                father = { character = PREVPREVPREV }
-                                mother = { character = PREVPREVPREV }
+                OR = {
+                    any_child = {
+                        NOT = {
+                            any_sibling = {
+                                is_older_than = PREV
+                                OR = {
+                                    father = { character = PREVPREVPREV }
+                                    mother = { character = PREVPREVPREV }
+                                }
                             }
                         }
+                        is_female = no
                     }
                     is_female = no
                 }
@@ -76,7 +81,19 @@ narrative_event = {
         }
         
         set_global_flag = hausaland_patriarchal
-        add_law = cognatic_succession
+        
+        if = {
+            limit = {
+                primary_title = {
+                    OR = {
+                        has_law = enatic_succession
+                        has_law = enatic_cognatic_succession
+                        has_law = true_cognatic_succession
+                    }
+                }
+            }
+            any_demesne_title = { add_law = cognatic_succession }
+        }
         
         any_playable_ruler = {
             limit = { 
@@ -102,7 +119,7 @@ narrative_event = {
 }
 
 # Event to inform other rulers of succession law change
-character_event = {
+narrative_event = {
     id = AFRREL.002
     desc = EVENTDESC_AFRREL002
     
@@ -121,13 +138,15 @@ character_event = {
         
         if = {
             limit = {
-                OR = {
-                    has_law = enatic_succession
-                    has_law = enatic_cognatic_succession
-                    has_law = true_cognatic_succession
+                primary_title = {
+                    OR = {
+                        has_law = enatic_succession
+                        has_law = enatic_cognatic_succession
+                        has_law = true_cognatic_succession
+                    }
                 }
             }
-            add_law = cognatic_succession
+            any_demesne_title = { add_law = cognatic_succession }
         }
     }
     
@@ -140,10 +159,12 @@ character_event = {
                     has_bloodline_flag = bloodline_enatic_cognatic
                 }
             }
-            OR = {
-                has_law = enatic_succession
-                has_law = enatic_cognatic_succession
-                has_law = true_cognatic_succession
+            primary_title = {
+                OR = {
+                    has_law = enatic_succession
+                    has_law = enatic_cognatic_succession
+                    has_law = true_cognatic_succession
+                }
             }
         }
         
@@ -163,10 +184,12 @@ character_event = {
             any_owned_bloodline = {
                 has_bloodline_flag = bloodline_enatic_cognatic
             }
-            OR = {
-                has_law = enatic_succession
-                has_law = enatic_cognatic_succession
-                has_law = true_cognatic_succession
+            primary_title = {
+                OR = {
+                    has_law = enatic_succession
+                    has_law = enatic_cognatic_succession
+                    has_law = true_cognatic_succession
+                }
             }
         }
         
