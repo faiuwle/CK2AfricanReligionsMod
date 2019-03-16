@@ -2,9 +2,6 @@
 
 766.1.1 = {
 	holder = 251177
-    effect = {
-        add_law = enatic_succession
-    }
 }
 825.1.1 = {
 	holder = 251178
@@ -14,9 +11,6 @@
 }
 865.1.1 = {
 	holder = 251180
-    effect = {
-        add_law = cognatic_succession
-    }
 }
 
 910.1.1 = {

@@ -2,9 +2,6 @@
 
 766.1.1 = {
 	holder = 251202
-    effect =  {
-        add_law = enatic_succession
-    }
 }
 775.1.1 = {
     holder = 1060000
