@@ -1012,6 +1012,7 @@
     female=yes
     culture="ethiopian"
     religion="shiite"
+    father=1060022
     555.1.1 = {
         birth = yes
     }

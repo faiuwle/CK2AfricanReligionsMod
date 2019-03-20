@@ -2765,7 +2765,8 @@ african_group = {
 
         can_grant_divorce = yes
         can_grant_claim = yes
-        can_have_antipopes = yes
+        #can_have_antipopes = yes
+        pentarchy = yes
 
         priests_can_marry = yes
         priests_can_inherit = yes

@@ -21,12 +21,19 @@ c_kano = {
     holy_site = bori
     holy_site = a_tag_roog
     holy_site = a_tag_roog_reformed
+    
+    b_hadejia = {
+        pentarchy = bori
+    }
 }
 c_kebbi = {
     holy_site = bori
 }
 c_djimi = {
     holy_site = bori
+    b_auno = {
+        pentarchy = bori
+    }
 }
 c_makuria = {
     holy_site = bori
