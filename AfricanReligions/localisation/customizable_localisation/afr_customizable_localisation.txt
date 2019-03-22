@@ -1,0 +1,118 @@
+defined_text = {
+	name = GetReformationReligionAfr
+	
+	text = {
+		trigger = { 
+			ROOT = { 
+				religion = norse_pagan_reformed
+				NOR = { 
+					has_religion_feature = religion_matriarchal 
+					has_religion_feature = religion_equal
+				} 
+			} 
+		}
+		localisation_key = string_reformed_religion_norse
+	}
+	text = {
+		trigger = { 
+			ROOT = { 
+				religion = norse_pagan_reformed
+				OR = { 
+					has_religion_feature = religion_matriarchal 
+					has_religion_feature = religion_equal
+				} 
+			} 
+		}
+		localisation_key = string_reformed_religion_norse_equal
+	}
+	text = {
+		trigger = { 
+			ROOT = { 
+				religion = tengri_pagan_reformed
+			} 
+		}
+		localisation_key = string_reformed_religion_tengri
+	}
+	text = {
+		trigger = { 
+			ROOT = { 
+				religion = slavic_pagan_reformed
+			} 
+		}
+		localisation_key = string_reformed_religion_slavic
+	}
+	text = {
+		trigger = { 
+			ROOT = { 
+				religion = baltic_pagan_reformed
+			} 
+		}
+		localisation_key = string_reformed_religion_baltic
+	}
+	text = {
+		trigger = { 
+			ROOT = { 
+				religion = finnish_pagan_reformed
+			} 
+		}
+		localisation_key = string_reformed_religion_finnish
+	}
+	text = {
+		trigger = { 
+			ROOT = { 
+				religion = west_african_pagan_reformed
+			} 
+		}
+		localisation_key = string_reformed_religion_west_african
+	}
+	text = {
+		trigger = { 
+			ROOT = { 
+				religion = zun_pagan_reformed
+			} 
+		}
+		localisation_key = string_reformed_religion_zunist
+	}
+	text = {
+		trigger = { 
+			ROOT = { 
+				religion = bon_reformed
+			} 
+		}
+		localisation_key = string_reformed_religion_bon
+	}
+	text = {
+		trigger = { 
+			ROOT = { 
+				religion = aztec_reformed
+			} 
+		}
+		localisation_key = string_reformed_religion_aztec
+	}
+	text = {
+		trigger = { 
+			ROOT = { 
+				religion = hellenic_pagan_reformed
+			} 
+		}
+		localisation_key = string_reformed_religion_hellenic
+	}
+    
+    text = {
+        trigger = {
+            ROOT = {
+                religion = a_tag_roog_reformed
+            }
+        }
+        localisation_key = string_reformed_religion_a_tag_roog
+    }
+    
+    text = {
+        trigger = {
+            ROOT = {
+                religion = amazigh_reformed
+            }
+        }
+        localisation_key = string_reformed_religion_amazigh
+    }
+}

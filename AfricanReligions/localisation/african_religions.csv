@@ -89,6 +89,11 @@ temple_county_of_african_group;Theocracy of;;;;;;;;;;;;;x
 temple_duchy_of_african_group;Theocracy of;;;;;;;;;;;;;x
 temple_kingdom_of_african_group;Theocracy of;;;;;;;;;;;;;x
 temple_empire_of_african_group;Empire of;;;;;;;;;;;;;x
+temple_barony_african_group;Temple;;;;;;;;;;;;;x
+temple_county_african_group;Theocracy;;;;;;;;;;;;;x
+temple_duchy_african_group;Theocracy;;;;;;;;;;;;;x
+temple_kingdom_african_group;Theocracy;;;;;;;;;;;;;x
+temple_empire_african_group;Empire;;;;;;;;;;;;;x
 king_manden;Faama;;;;;;;;;;;;;x
 tribal_king_manden;Faama;;;;;;;;;;;;;x
 emperor_manden;Mansa;;;;;;;;;;;;;x
@@ -124,3 +129,5 @@ mari_djata;Blood of Mari-Djata;;;;;;;;;;;;;x
 mari_djata_desc;Prince Mari-Djata, was born disabled and was exiled from Niani by his jealous stepmother. However, he would return to reclaim his birthright, becoming the first Mansa of Mali.;;;;;;;;;;;;;x
 set_bloodline;Blood of Set;;;;;;;;;;;;;x
 set_bloodline_desc;Set was a leader of the Zaghawa people, who left the nomadic lifestyle of his nation and founded the city of Djimi, governing as the first ruler of the Duguwa dynasty.;;;;;;;;;;;;;x
+string_reformed_religion_a_tag_roog; the ancient spiritual traditions of the Western Sahel have been unified into a single and true way of the divine, capable of resisting any foreign incursion.;;;;;;;;;;;;;x
+string_reformed_religion_amazigh; the people of North Africa will be able to resist the Abrahamic yoke and restore the glory of Carthage and Numidia.;;;;;;;;;;;;;x

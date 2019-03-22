@@ -2946,10 +2946,10 @@
     culture="ethiopian"
     father=1060014
     
-    755.1.1 = {
+    555.1.1 = {
         birth = yes
     }
-    790.1.1 = {
+    590.1.1 = {
         death = yes
     }
 }
