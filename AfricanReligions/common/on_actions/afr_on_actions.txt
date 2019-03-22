@@ -1,0 +1,5 @@
+on_startup = {
+    events = {
+        AFRREL.001
+    }
+}

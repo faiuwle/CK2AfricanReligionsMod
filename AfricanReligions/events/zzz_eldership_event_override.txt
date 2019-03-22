@@ -13,9 +13,14 @@ character_event = {
 		is_save_game = no
         OR = {
             is_tribal = yes #Can be used by feudals, but only tribals should start with it.
-            religion = bori
-            religion = a_tag_roog
-            religion = a_tag_roog_reformed
+            AND = {
+                is_feudal = yes
+                OR = {
+                    religion = bori
+                    religion = a_tag_roog
+                    religion = a_tag_roog_reformed
+                }
+            }
         }
 		is_landed = yes
 		has_dlc = "Holy Fury"

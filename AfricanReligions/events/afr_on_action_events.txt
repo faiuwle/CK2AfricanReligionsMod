@@ -1,0 +1,26 @@
+namespace = AFRREL
+
+# Replace male Inna generated on game start with a female one
+character_event = {
+    id = AFRREL.001
+    hide_window = yes
+    is_triggered_only = yes
+
+    is_female = no
+    only_rulers = yes
+    
+    trigger = {
+        has_landed_title = d_bori
+    }
+    
+    immediate = {
+        create_character = {
+            female = yes
+            age = 40
+            random_traits = yes
+            religion = bori
+            culture = hausa
+        }
+        abdicate_to = new_character
+    }
+}
