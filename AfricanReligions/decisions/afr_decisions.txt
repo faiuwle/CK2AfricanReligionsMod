@@ -1,0 +1,92 @@
+decisions = {
+    vassalize_inna = {
+        is_high_prio = yes
+        
+        potential = {
+            is_adult = yes
+            religion = bori
+            d_bori = { independent = yes }
+        }
+        
+        allow = {
+            is_adult = yes
+            religion = bori
+            higher_tier_than = DUKE
+            OR = {
+                has_landed_title = c_kano
+                is_liege_or_above_of = c_kano
+            }
+            wealth = 50
+            piety = 300
+            d_bori = {
+                holder_scope = {
+                    opinion = { who = ROOT value = 80 }
+                }
+            }
+        }
+        
+        effect = {
+            wealth = -50
+            d_bori = { set_defacto_liege = ROOT }
+        }
+        
+        revoke_allowed = {
+            always = no
+        }
+        
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    exalt_inna = {
+        is_high_prio = yes
+        ai_check_interval = 12
+    
+        potential = {
+            is_adult = yes
+            religion = bori
+        }
+        
+        allow = {
+            is_adult = yes
+            religion = bori
+            has_landed_title = e_kanem
+            OR = {
+                has_landed_title = c_kano
+                is_liege_or_above_of = c_kano
+            }
+            any_realm_title = {
+                is_holy_site = bori
+                count = 5
+            }
+            religion_authority = 0.5
+            piety = 750
+        }
+        
+        effect = {
+            religion_head = {
+                grant_title = c_kano
+                grant_title = d_bori
+            }
+            set_autocephaly = no
+            set_can_excommunicate = yes
+            set_can_grant_invasion_cb = yes
+            set_can_call_crusade = yes
+            set_can_have_antipopes = yes
+            character_event = { id = AFRREL.002 }
+        }
+        
+        revoke_allowed = {
+            always = no
+        }
+        
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                trait = cynical
+            }
+        }
+    }
+}

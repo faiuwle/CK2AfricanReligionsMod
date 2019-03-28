@@ -1,0 +1,54 @@
+namespace = AFRREL
+
+# Ping event for Exalt the Inna, received by decision taker
+character_event = {
+    id = AFRREL.002
+    hide_window = yes
+    is_triggered_only = yes
+    
+    immediate = {
+        religion_head = {
+            save_event_target_as = target_inna
+        }
+        any_playable_ruler = {
+            limit = { religion = bori }
+            character_event = { id = AFRREL.003 }
+        }
+    }
+}
+
+# Exalt the Inna, received by everyone
+narrative_event = {
+    id = AFRREL.003
+    is_triggered_only = yes
+    title = EVTTITLE_AFRREL003
+    desc = EVTDESC_AFRREL003
+    
+    option = {
+        name = EVTOPTA_AFRREL003
+        if = {
+            limit = { controls_religion = bori }
+            any_playable_ruler = {
+                limit = { religion = bori }
+                character_event = { id = AFRREL.004 days = 10 }
+            }
+        }
+    }
+}
+
+# Letter from the Inna, received by everyone
+letter_event = {
+    id = AFRREL.004
+    is_triggered_only = yes
+    desc = EVTDESC_AFRREL004
+    
+    immediate = {
+        set_jizya_tax = yes
+        set_global_flag = bori_beatification
+    }
+    
+    option = {
+        name = EVTOPTA_AFRREL004
+    }
+}
+        

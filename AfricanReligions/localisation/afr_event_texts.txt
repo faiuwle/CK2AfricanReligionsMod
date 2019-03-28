@@ -1,0 +1,10 @@
+EVTTITLE_AFRREL003;The Inna's Apotheosis;;;;;;;;;;;;;x
+EVTDESC_AFRREL003;The Inna, the mother of us all, for long has being reduced to the role of a mere subject or adviser of powerful rulers.
+But those dark days are over today. All the great Magadjas have met today in the court of [From.GetTitledName] and have invoked the bori spirits to elevate [target_inna.GetTitledName] to a divine character.
+The Inna possessed by the spirit of Magiro, the oldest and wisest of the bori, has received the authority to decide on all the spiritual issues that concern the faithful. The drums and marimbas rumble through the streets while the great mother is carried by her parishioners to the Kano temple, from where she will now rule the city until the end of time.;;;;;;;;;;;;x
+EVTOPTA_AFRREL003;Glory to our mother, [target_inna.GetBestName]!;;;;;;;;;;;;;x
+EVTDESC_AFRREL004;To all my faithful,
+The fervor of the most devoted who left this mortal coil must be rewarded, as they have crossed into the Jan gari and are now in full communion with the bori spirits. Their immortal souls will be revered with great honors and treated as if they were bori themselves.
+In the same vein, those who refuse to come to the light of the faith must be persuaded one way or another. Of course, I understand that greed can sometimes be more persuasive than the sword. As such I fully authorize the faithful lords to tax their unfaithful population, it may prove an effective method of proselytization.
+Lovingly, your spiritual mother.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL004;The Inna's word bring joy to my soul… and my pocket.;;;;;;;;;;;;;x

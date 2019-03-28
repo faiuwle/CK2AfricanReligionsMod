@@ -1991,19 +1991,17 @@ gender_laws = {
 			
 			modifier = {
 				factor = 100
-                OR = {
-                    holder_scope = {
+                holder_scope = {
+                    OR = {
                         has_religion_feature = religion_matriarchal
-                    }
-                    AND = {
                         any_owned_bloodline = {
                             has_bloodline_flag = bloodline_enatic_cognatic
                         }
-                        NAND = {
-                            religion = bori
-                            culture = hausa
-                            NOT = { year = 867 }
-                        }
+                    }
+                    NAND = {
+                        religion = bori
+                        culture = hausa
+                        NOT = { year = 867 }
                     }
                 }
 			}
