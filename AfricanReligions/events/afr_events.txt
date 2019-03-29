@@ -7,13 +7,12 @@ character_event = {
     is_triggered_only = yes
     
     immediate = {
-        religion_head = {
-            save_event_target_as = target_inna
-        }
         any_playable_ruler = {
             limit = { religion = bori }
-            character_event = { id = AFRREL.003 }
+            narrative_event = { id = AFRREL.003 }
         }
+        ROOT = { narrative_event = { id = AFRREL.003 } }
+        religion_head = { narrative_event = { id = AFRREL.003 } }
     }
 }
 
@@ -23,15 +22,26 @@ narrative_event = {
     is_triggered_only = yes
     title = EVTTITLE_AFRREL003
     desc = EVTDESC_AFRREL003
+    picture = GFX_evt_west_african_ruler
     
     option = {
         name = EVTOPTA_AFRREL003
-        if = {
-            limit = { controls_religion = bori }
-            any_playable_ruler = {
-                limit = { religion = bori }
-                character_event = { id = AFRREL.004 days = 10 }
-            }
+        
+        trigger = {
+            NOT = { has_landed_title = d_bori }
+        }
+    }
+    
+    option = {
+        name = EVTOPTA_AFRREL003
+        
+        trigger = {
+            has_landed_title = d_bori
+        }
+      
+        any_playable_ruler = {
+            limit = { religion = bori }
+            letter_event = { id = AFRREL.004 days = 10 }
         }
     }
 }

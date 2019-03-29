@@ -22,5 +22,6 @@ character_event = {
             culture = hausa
         }
         abdicate_to = new_character
+        death = { death_reason = death_vanished }
     }
 }
