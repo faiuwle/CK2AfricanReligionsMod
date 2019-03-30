@@ -12,7 +12,7 @@ character_event = {
             narrative_event = { id = AFRREL.003 }
         }
         ROOT = { narrative_event = { id = AFRREL.003 } }
-        religion_head = { narrative_event = { id = AFRREL.003 } }
+        religion_head = { character_event = { id = AFRREL.005 } }
     }
 }
 
@@ -26,23 +26,6 @@ narrative_event = {
     
     option = {
         name = EVTOPTA_AFRREL003
-        
-        trigger = {
-            NOT = { has_landed_title = d_bori }
-        }
-    }
-    
-    option = {
-        name = EVTOPTA_AFRREL003
-        
-        trigger = {
-            has_landed_title = d_bori
-        }
-      
-        any_playable_ruler = {
-            limit = { religion = bori }
-            letter_event = { id = AFRREL.004 days = 10 }
-        }
     }
 }
 
@@ -52,13 +35,28 @@ letter_event = {
     is_triggered_only = yes
     desc = EVTDESC_AFRREL004
     
-    immediate = {
-        set_jizya_tax = yes
-        set_global_flag = bori_beatification
-    }
-    
     option = {
         name = EVTOPTA_AFRREL004
+        
+        custom_tooltip = {
+            text = beatification_tooltip
+            set_global_flag = bori_beatification
+        }
+        set_jizya_tax = yes
+    }
+}
+
+# Ping event for the Inna to send the letter
+character_event = {
+    id = AFRREL.005
+    is_triggered_only = yes
+    hide_window = yes
+    
+    immediate = {
+        any_playable_ruler = {
+            limit = { religion = bori }
+            letter_event = { id = AFRREL.004 days = 10 }
+        }
     }
 }
         

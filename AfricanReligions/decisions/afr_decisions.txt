@@ -11,7 +11,10 @@ decisions = {
         allow = {
             is_adult = yes
             religion = bori
-            religion_head = { independent = yes }
+            religion_head = { 
+                independent = yes
+                opinion = { who = ROOT value = 80 }
+            }
             higher_tier_than = DUKE
             OR = {
                 has_landed_title = c_kano
@@ -19,9 +22,6 @@ decisions = {
             }
             wealth = 50
             piety = 300
-            religion_head = {
-                opinion = { who = ROOT value = 80 }
-            }
         }
         
         effect = {
