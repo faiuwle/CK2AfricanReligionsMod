@@ -1,0 +1,115 @@
+decisions = {
+    vassalize_inna = {
+        is_high_prio = yes
+        ai_check_interval = 4
+        
+        potential = {
+            is_adult = yes
+            religion = bori
+            religion_head = { independent = yes }
+        }
+        
+        allow = {
+            is_adult = yes
+            religion = bori
+            religion_head = { 
+                independent = yes
+                opinion = { who = ROOT value = 80 }
+            }
+            higher_tier_than = KING
+            OR = {
+                has_landed_title = c_kano
+                is_liege_or_above_of = c_kano
+            }
+            wealth = 50
+            piety = 300
+        }
+        
+        effect = {
+            wealth = -50
+            custom_tooltip = {
+                text = vassalize_inna_tooltip
+                religion_head = { set_defacto_liege = ROOT }
+            }
+        }
+        
+        revoke_allowed = {
+            always = no
+        }
+        
+        ai_will_do = {
+            factor = 1
+            
+            modifier = {
+                factor = 0.75
+                NOT = { trait = proud }
+            }
+            modifier = {
+                factor = 0.25
+                trait = humble
+            }
+        }
+    }
+
+    exalt_inna = {
+        is_high_prio = yes
+        ai_check_interval = 12
+    
+        potential = {
+            is_adult = yes
+            religion = bori
+            NOT = { has_global_flag = bori_pseudo_reformation }
+        }
+        
+        allow = {
+            is_adult = yes
+            religion = bori
+            has_landed_title = e_kanem
+            OR = {
+                has_landed_title = c_kano
+                is_liege_or_above_of = c_kano
+            }
+            custom_tooltip = {
+                text = controls_holy_sites_tooltip
+                any_realm_title = {
+                    is_holy_site = bori
+                    count = 5
+                }
+            }
+            religion_authority = 0.5
+            piety = 750
+        }
+        
+        effect = {
+            religion_head = { grant_title = c_kano }
+            set_autocephaly = no
+            set_can_excommunicate = yes
+            set_can_grant_invasion_cb = yes
+            set_can_call_crusade = yes
+            #set_can_have_antipopes = yes
+            set_global_flag = bori_pseudo_reformation
+            character_event = { id = AFRREL.002 }
+        }
+        
+        revoke_allowed = {
+            always = no
+        }
+        
+        ai_will_do = {
+            factor = 1
+            
+            modifier = {
+                factor = 0
+                trait = cynical
+            }
+            modifier = {
+                factor = 0.5
+                NOT = { trait = zealous }
+            }
+            modifier = {
+                factor = 0.5
+                NOT = { trait = possessed }
+            }
+        }
+    }
+}

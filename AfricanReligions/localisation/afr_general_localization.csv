@@ -36,7 +36,7 @@ SUPREME_SALTIGUE;Supreme Saltigue;;;;;;;;;;;;;x
 SUPREME_SALTIGUE_FOA;Your Holiness;;;;;;;;;;;;;x
 GUANAMENE;Guañameñe;;;;;;;;;;;;;x
 GUANAMENE_FOA;Your Holiness;;;;;;;;;;;;;x
-d_bori;The Bori Matriarchy;;;;;;;;;;;;;x
+k_bori;The Bori Matriarchy;;;;;;;;;;;;;x
 d_a_tag_roog;The Order of the Saltigue;;;;;;;;;;;;;x
 d_amazigh;The Church of the Amazigh People;;;;;;;;;;;;;x
 temple_baron_female_bori;Magadja;;;;;;;;;;;;;x
@@ -131,3 +131,10 @@ set_bloodline;Blood of Set;;;;;;;;;;;;;x
 set_bloodline_desc;Set was a leader of the Zaghawa people, who left the nomadic lifestyle of his nation and founded the city of Djimi, governing as the first ruler of the Duguwa dynasty.;;;;;;;;;;;;;x
 string_reformed_religion_a_tag_roog; the ancient spiritual traditions of the Western Sahel have been unified into a single and true way of the divine, capable of resisting any foreign incursion.;;;;;;;;;;;;;x
 string_reformed_religion_amazigh; the faith of Carthage and Numidia will return the old gods to their place of honor and liberate the people of North Africa of the Abrahamic yoke.;;;;;;;;;;;;;x
+controls_holy_sites_tooltip;Controls all five holy sites;;;;;;;;;;;;;x
+vassalize_inna_tooltip;Vassalize §Y[Root.RelHead.GetBestName]§!;;;;;;;;;;;;;x
+beatification_tooltip;Ancestors can now be beatified and canonized;;;;;;;;;;;;;x
+vassalize_inna;Vassalize the Inna;;;;;;;;;;;;;x
+vassalize_inna_desc;The Inna, our spiritual mother, deserves the loving protection of a faithful ruler. As her liege I shall provide that protection.;;;;;;;;;;;;;x
+exalt_inna;Exalt the Inna;;;;;;;;;;;;;x
+exalt_inna_desc;For too long our spiritual mother, the Inna, has seen her power limited by secular rulers. We must grant her full religious sovereignty, which will bring prosperity and glory to our realms.;;;;;;;;;;;;;x

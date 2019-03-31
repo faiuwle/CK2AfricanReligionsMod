@@ -201,23 +201,7 @@ succession_laws = {
 			}
 		}
 		effect = {
-            if = {
-                limit = {
-                    OR = {
-                        religion = bori
-                        religion = a_tag_roog
-                        religion = a_tag_roog_reformed
-                    }
-                }
-                succession = {
-                    base_type = tanistry
-                    voting_rules = eldership_rules
-                }
-                elective_voting_rules = eldership_rules
-            }
-            else = {
-                succession = gavelkind
-            }
+            succession = gavelkind
 		}
 		revoke_allowed = {
 			always = no
@@ -720,15 +704,13 @@ succession_laws = {
 							is_vice_royalty = yes
 						}
 					}
-					AND = {
-						holder_scope = {
+                    holder_scope = {
+						show_scope_change = no
+						primary_title = {
 							show_scope_change = no
-							primary_title = {
-								show_scope_change = no
-								OR = {
-									has_law = ze_administration_laws_1
-									has_law = ze_administration_laws_2
-								}
+                            OR = {
+								has_law = ze_administration_laws_1
+								has_law = ze_administration_laws_2
 							}
 						}
 					}
@@ -1991,19 +1973,17 @@ gender_laws = {
 			
 			modifier = {
 				factor = 100
-                OR = {
-                    holder_scope = {
+                holder_scope = {
+                    OR = {
                         has_religion_feature = religion_matriarchal
-                    }
-                    AND = {
                         any_owned_bloodline = {
                             has_bloodline_flag = bloodline_enatic_cognatic
                         }
-                        NAND = {
-                            religion = bori
-                            culture = hausa
-                            NOT = { year = 867 }
-                        }
+                    }
+                    NAND = {
+                        religion = bori
+                        culture = hausa
+                        NOT = { year = 867 }
                     }
                 }
 			}
