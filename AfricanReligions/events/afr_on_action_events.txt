@@ -6,7 +6,6 @@ character_event = {
     hide_window = yes
     is_triggered_only = yes
 
-    is_female = no
     only_rulers = yes
     
     trigger = {
