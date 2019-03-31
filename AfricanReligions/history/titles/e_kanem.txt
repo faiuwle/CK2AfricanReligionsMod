@@ -1,0 +1,5 @@
+769.1.1 = {
+    effect = {
+        set_pentarch_title = b_hadejia
+    }
+}

@@ -1,6 +1,7 @@
 decisions = {
     vassalize_inna = {
         is_high_prio = yes
+        ai_check_interval = 4
         
         potential = {
             is_adult = yes
@@ -15,7 +16,7 @@ decisions = {
                 independent = yes
                 opinion = { who = ROOT value = 80 }
             }
-            higher_tier_than = DUKE
+            higher_tier_than = KING
             OR = {
                 has_landed_title = c_kano
                 is_liege_or_above_of = c_kano
@@ -38,6 +39,15 @@ decisions = {
         
         ai_will_do = {
             factor = 1
+            
+            modifier = {
+                factor = 0.75
+                NOT = { trait = proud }
+            }
+            modifier = {
+                factor = 0.25
+                trait = humble
+            }
         }
     }
 
@@ -76,7 +86,7 @@ decisions = {
             set_can_excommunicate = yes
             set_can_grant_invasion_cb = yes
             set_can_call_crusade = yes
-            set_can_have_antipopes = yes
+            #set_can_have_antipopes = yes
             set_global_flag = bori_pseudo_reformation
             character_event = { id = AFRREL.002 }
         }
@@ -87,9 +97,18 @@ decisions = {
         
         ai_will_do = {
             factor = 1
+            
             modifier = {
                 factor = 0
                 trait = cynical
+            }
+            modifier = {
+                factor = 0.5
+                NOT = { trait = zealous }
+            }
+            modifier = {
+                factor = 0.5
+                NOT = { trait = possessed }
             }
         }
     }

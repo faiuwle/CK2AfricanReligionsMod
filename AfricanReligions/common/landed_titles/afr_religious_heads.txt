@@ -1,4 +1,4 @@
-d_bori = {
+k_bori = {
     color = { 150 85 35 }
     
     capital = 1746 # Kano
