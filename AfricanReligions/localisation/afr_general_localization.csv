@@ -116,6 +116,20 @@ job_treasurer_west_african;Farba;;;;;;;;;;;;;x
 job_chancellor_central_african;Wakili;;;;;;;;;;;;;x
 job_marshal_central_african;Zerma;;;;;;;;;;;;;x
 job_treasurer_central_african;Midala;;;;;;;;;;;;;x
+title_champion_afr;Champion;Champion;Champion;;Campeón;;;;;;;;;x
+title_champion_afr_desc;The person that this title is bestowed upon is considered to be the Champion of the Realm. There is surely no greater honor for mortal men to aspire to.;La personne à qui ce titre est décerné est considérée comme le champion du royaume. Aucun mortel ne saurait espérer titre plus honorable.;Die Person, die diesen Titel erhalten hat, wird als Champion des Reiches angesehen. Es gibt wahrlich keine größere Ehre für Sterbliche.;;La persona a la que se le otorga este título es considerada como el Campeón del Reino. No se puede aspirar a un honor mayor para los hombres mortales.;;;;;;;;;x
+title_master_of_the_blade_afr;Master of the Blade;Maître de la lame;Meister des Schwertes;;Maestro de la Espada;;;;;;;;;x
+title_master_of_the_blade_afr_desc;The Master of the Blade is a prestigious honorific usually granted to those with demonstrated ability in swordsmanship.;Le maître de la lame est un titre prestigieux habituellement décerné à ceux qui ont démontré leur habileté à manier l'épée.;Der Meister des Schwertes ist eine prestigeträchtige Ehrung, die nur den Erfahrensten im Umgang mit dem Schwert zuteil wird.;;El Maestro de la Espada es un prestigioso título honorífico concedido a aquellas personas con demostrada capacidad en el manejo de la espada.;;;;;;;;;x
+title_master_of_the_bow_afr;Master of the Bow;Maître de l'arc;Meister des Bogens;;Maestro del Arco;;;;;;;;;x
+title_master_of_the_bow_afr_desc;The Master of the Bow is a prestigious honorific usually granted to those with demonstrated ability in bowmanship.;Le maître de l'arc est un titre prestigieux habituellement décerné à ceux qui ont démontré leur habileté à manier l'arc.;Der Meister des Bogens ist eine prestigeträchtige Ehrung, die nur den Erfahrensten im Umgang mit dem Bogen zuteil wird.;;El Maestro del Arco es un prestigioso título honorífico concedido a aquellas personas con demostrada capacidad en el manejo del Arco.;;;;;;;;;x
+title_venerable_elder_afr;Venerable Elder;Vénérable aîné;Ehrwürdiger Älterer;;Venerable Anciano;;;;;;;;;x
+title_venerable_elder_afr_desc;This honorific can only be granted to those who have reached the age of fifty. Their wisdom and the sorely needed guidance they offer the younger generations is deserving of great respect.;Ce titre honorifique ne peut être accordé qu'à ceux qui ont atteint l'âge de cinquante ans. Leur sagesse et leurs conseils, dont ont grandement besoin les générations plus jeunes, appellent à un grand respect.;Diese Ehrung können nur jene erhalten, die das fünfzigste Lebensjahr erreicht haben. Ihre Weisheit und ihr dringend benötigter Rat für jüngere Generationen verdienen den höchstmöglichen Respekt.;;Este título honorífico sólo puede concederse a quienes hayan alcanzado la edad de cincuenta. Su sabiduría y la muy necesaria guía que ofrecen a las nuevas generaciones se merecen un gran respeto.;;;;;;;;;x
+title_magajiya_yaljigari;Magajiya Yaljigari;;;;;;;;;;;;;x
+title_magajiya_yaljigari_desc;The Magajiya Yaljigari is a trusted woman who is in charge of informing the ruler of the news around the capital.;;;;;;;;;;;;x
+title_griot;Griot;;;;;;;;;;;;;x
+title_griot_desc;A griot is an historian, a storyteller and a poet. A very trusted position in any West African court.;;;;;;;;;;;;x
+title_chiroma;Chiroma;;;;;;;;;;;;;x
+title_chiroma_desc;The chiroma is the traditional title held by the heir apparent in the lands of Kanem. Holding it may be enough to persuade the court to back the candidate in the eventual succession.;;;;;;;;;;;;x
 W_L_251180;https://en.wikipedia.org/wiki/Bayajidda;;;;;;;;;;;;;x
 W_L_251187;https://en.wikipedia.org/wiki/Daurama;;;;;;;;;;;;;x
 W_L_1060003;https://en.wikipedia.org/wiki/Bilal_ibn_Rabah;;;;;;;;;;;;;x

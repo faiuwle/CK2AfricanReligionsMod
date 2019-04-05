@@ -10,4 +10,5 @@ d_ghanan_band;Wagadouan Band;;;;;;;;;;;;;x
 d_ghanan_band_adj;Wagadouan;;;;;;;;;;;;;x
 manden;Manding;;;;;;;;;;;;;x
 job_chancellor_west_african;Djeli;;;;;;;;;;;;;x
-EVTDESC670_HF;[Root.GetReformationNature]\n[Root.GetReformationLeadership][Root.GetReformationReligionAfr]\n[Root.GetReformationOutro];[Root.GetReformationNature]\n[Root.GetReformationLeadership][Root.GetReformationReligion]\n[Root.GetReformationOutro];[Root.GetReformationNature]\n[Root.GetReformationLeadership][Root.GetReformationReligion]\n[Root.GetReformationOutro];;[Root.GetReformationNature]\n[Root.GetReformationLeadership][Root.GetReformationReligion]\n[Root.GetReformationOutro];;;;;;;;x
+EVTDESC670_HF;[Root.GetReformationNature]\n[Root.GetReformationLeadership][Root.GetReformationReligionAfr]\n[Root.GetReformationOutro];[Root.GetReformationNature]\n[Root.GetReformationLeadership][Root.GetReformationReligionAfr]\n[Root.GetReformationOutro];[Root.GetReformationNature]\n[Root.GetReformationLeadership][Root.GetReformationReligionAfr]\n[Root.GetReformationOutro];;[Root.GetReformationNature]\n[Root.GetReformationLeadership][Root.GetReformationReligionAfr]\n[Root.GetReformationOutro];;;;;;;;x
+tooltip_feminist_liege_vanilla_religion;Character and §YLiege§! publicly follow the §YCathar§!, §YMessalian§!, §YBogomilist§!, §YMazdaki§!, §YBori§!, or §YAmazigh§! religion;;;;;;;;;;;;x
