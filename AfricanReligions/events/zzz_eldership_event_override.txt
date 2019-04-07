@@ -19,6 +19,7 @@ character_event = {
                     religion = bori
                     religion = a_tag_roog
                     religion = a_tag_roog_reformed
+                    culture = kanuri
                 }
             }
         }
@@ -36,7 +37,10 @@ character_event = {
 					}
 				}
 				NOR = { 
-					religion_group = muslim 
+                    AND = {
+                        religion_group = muslim 
+                        NOT = { culture = kanuri }
+                    }
 					has_religion_feature = religion_matriarchal
 					has_religion_feature = religion_patriarchal
 				}
@@ -67,6 +71,7 @@ character_event = {
 					}
                     religion = bori
                     religion = a_tag_roog
+                    culture = kanuri
 					has_religion_feature = religion_beatification
 					has_religion_feature = religion_feature_baltic
 					has_religion_feature = religion_feature_west_african
