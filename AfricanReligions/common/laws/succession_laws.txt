@@ -345,6 +345,7 @@ succession_laws = {
 					}
                     religion = bori
                     religion = a_tag_roog
+                    culture = kanuri
 					has_religion_feature = religion_beatification
 					has_religion_feature = religion_feature_baltic
 					has_religion_feature = religion_feature_west_african
@@ -361,8 +362,11 @@ succession_laws = {
 						}
 					}
 				}
-				NOR = { 
-					religion_group = muslim 
+				NOR = {
+                    AND = {
+                        religion_group = muslim
+                        NOT = { culture = kanuri }
+                    }
 					has_religion_feature = religion_matriarchal
 					has_religion_feature = religion_patriarchal
 				}
@@ -410,6 +414,7 @@ succession_laws = {
 						}
                         religion = bori
                         religion = a_tag_roog
+                        culture = kanuri
 						has_religion_feature = religion_beatification
 						has_religion_feature = religion_feature_baltic
 						has_religion_feature = religion_feature_west_african
@@ -436,9 +441,9 @@ succession_laws = {
 		effect = {
 			succession = {
 				base_type = tanistry
-				voting_rules = eldership_rules
+				voting_rules = eldership_rules_afr
 			}
-			elective_voting_rules = eldership_rules
+			elective_voting_rules = eldership_rules_afr
 		}
 		revoke_allowed = {
 			always = no
@@ -1712,7 +1717,7 @@ gender_laws = {
 		
 		effect = {
 			gender_succ = cognatic
-			set_allows_matrilineal_marriage = yes
+			law_set_allow_matrilineal_marriage = yes
 		}
 		revoke_allowed = {
 			always = no
@@ -1869,7 +1874,7 @@ gender_laws = {
 		}
 		effect = {
 			gender_succ = true_cognatic
-			set_allows_matrilineal_marriage = yes
+			law_set_allow_matrilineal_marriage = yes
 		}
 		revoke_allowed = {
 			always = no

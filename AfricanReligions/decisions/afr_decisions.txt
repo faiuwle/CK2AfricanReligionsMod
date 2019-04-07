@@ -1,7 +1,7 @@
 decisions = {
     vassalize_inna = {
         is_high_prio = yes
-        ai_check_interval = 4
+        ai_check_interval = 12
         
         potential = {
             is_adult = yes
@@ -41,19 +41,27 @@ decisions = {
             factor = 1
             
             modifier = {
-                factor = 0.75
+                factor = 0.8
                 NOT = { trait = proud }
             }
             modifier = {
-                factor = 0.25
+                factor = 0.5
+                NOT = { trait = ambitious }
+            }
+            modifier = {
+                factor = 0.5
                 trait = humble
+            }
+            modifier = {
+                factor = 0.25
+                trait = content
             }
         }
     }
 
     exalt_inna = {
         is_high_prio = yes
-        ai_check_interval = 12
+        ai_check_interval = 24
     
         potential = {
             is_adult = yes
