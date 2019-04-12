@@ -12753,7 +12753,10 @@ pagan_county_conquest = {
 			}
 			AND = {
 				ROOT = {
-					religion_group = pagan_group
+                    OR = {
+                        religion_group = pagan_group
+                        religion_group = african_group
+                    }
 					NOT = { same_realm = FROM }
 				}
 				FROM = {

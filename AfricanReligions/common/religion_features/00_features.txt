@@ -1703,6 +1703,7 @@ religion_leadership = {
 						OR = { 
 							religion = norse_pagan 
 							religion = tengri_pagan 
+                            religion = amazigh
 						} 
 					}
 					has_selected_religion_feature = religion_monastic
@@ -1720,6 +1721,7 @@ religion_leadership = {
 						OR = { 
 							religion = norse_pagan 
 							religion = tengri_pagan 
+                            religion = amazigh
 						} 
 					} 
 				}
@@ -1793,6 +1795,7 @@ religion_leadership = {
 						OR = { 
 							religion = west_african_pagan
 							religion = zun_pagan
+                            religion = a_tag_roog
 						}
 					}
 					has_selected_religion_feature = religion_monastic
@@ -1810,6 +1813,7 @@ religion_leadership = {
 						OR = { 
 							religion = west_african_pagan
 							religion = zun_pagan
+                            religion = a_tag_roog
 						}
 					}
 				}
