@@ -349,6 +349,7 @@ succession_laws = {
 					has_religion_feature = religion_beatification
 					has_religion_feature = religion_feature_baltic
 					has_religion_feature = religion_feature_west_african
+                    has_religion_feature = religion_feature_a_tag_roog
 				}
 			}
 			holder_scope = {
@@ -418,6 +419,7 @@ succession_laws = {
 						has_religion_feature = religion_beatification
 						has_religion_feature = religion_feature_baltic
 						has_religion_feature = religion_feature_west_african
+                        has_religion_feature = religion_feature_a_tag_roog
 					}
 				}
 				custom_tooltip = {

@@ -1,0 +1,2905 @@
+namespace = HF
+namespace = TGF
+namespace = ADV
+
+#Divination: on war started, chance to divine outcome.
+#Hidden ping to select haruspex. 
+character_event = {
+	id = HF.23005
+	hide_window = yes
+	
+	trigger = { 
+		OR = { 
+			has_religion_feature = religion_haruspicy 
+            has_religion_feature = religion_feature_a_tag_roog
+			religion = hellenic_pagan
+			religion = hellenic_pagan_reformed
+		} 
+		NOR = {
+			has_character_modifier = divination_crit_success
+			has_character_modifier = divination_success
+			has_character_modifier = divination_failure
+			has_character_modifier = divination_crit_failure
+		}
+		any_war = { #Do not fire for minor peasant uprisings.
+			NOR = { 
+				attacker = { using_cb = peasant_revolt }
+				defender = { using_cb = peasant_revolt }
+			}
+		}
+	}
+
+	is_triggered_only = yes
+
+
+	immediate = {
+		if = { 
+			limit = {
+				any_courtier_or_vassal = { 
+					religion = ROOT
+					has_job_title = job_spiritual
+				}
+			}
+			random_courtier_or_vassal = {
+				limit = {
+					religion = ROOT
+					has_job_title = job_spiritual
+				}
+				character_event = { id = HF.23006 }
+				break = yes
+			}
+		}
+		if = { 
+			limit = {
+				any_realm_character = { 
+					religion = ROOT
+					is_theocracy = yes
+				}
+			}
+			random_realm_character = {
+				limit = {
+					religion = ROOT
+					is_theocracy = yes
+				}
+				character_event = { id = HF.23006 }
+				break = yes
+			}
+		}
+		set_character_flag = flag_cheap_diviner
+		character_event = { id = HF.23007 }
+	}
+}
+
+#Hidden ping on diviner.
+character_event = {
+	id = HF.23006
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = { 
+		OR = { 
+			has_religion_feature = religion_haruspicy
+            has_religion_feature = religion_feature_a_tag_roog
+			religion = hellenic_pagan
+			religion = hellenic_pagan_reformed
+		} 
+		NOR = {
+			has_character_modifier = divination_crit_success
+			has_character_modifier = divination_success
+			has_character_modifier = divination_failure
+			has_character_modifier = divination_crit_failure
+		}
+	}
+
+
+	immediate = { 
+		FROM = { character_event = { id = HF.23007 days = 7 random = 7 } }
+	}
+}
+
+character_event = {
+	id = HF.23007
+	desc = { 
+		text = EVTDESCAHF23007
+		trigger = {
+			FROM = { is_alive = yes }
+			NOT = {
+				FROM = { character = ROOT }
+			}
+		}
+	}
+	desc = { #Generic desc if priest dies in between or there was no priest available.
+		text = EVTDESCBHF23007
+		trigger = {
+			OR = {
+				FROM = { character = ROOT }
+				FROM = { is_alive = no }
+			}
+		}
+	}
+	
+	trigger = { 
+		war = yes
+		OR = { 
+			has_religion_feature = religion_haruspicy 
+            has_religion_feature = religion_feature_a_tag_roog
+			religion = hellenic_pagan
+			religion = hellenic_pagan_reformed
+		} 
+		NOR = {
+			has_character_modifier = divination_crit_success
+			has_character_modifier = divination_success
+			has_character_modifier = divination_failure
+			has_character_modifier = divination_crit_failure
+		}
+	}
+
+	
+	picture = GFX_evt_religious_exultation
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	immediate = { 
+		if = { 
+			limit = { FROM = { is_alive = no } } 
+			set_character_flag = flag_cheap_diviner #Prevents crit success, increases crit failure.
+		}
+		if = { 
+			limit = { 
+                OR = {
+                    has_religion_feature = religion_ritual_sacrifice
+                    has_religion_feature = religion_feature_amazigh
+                }
+            }
+			random_courtier = { 
+				limit = {
+					NOR = {
+						dynasty = ROOT
+						has_job_title = job_spiritual
+						is_ruler = yes
+						is_married = ROOT
+						is_close_relative = ROOT
+						is_lover = ROOT
+						is_friend = ROOT
+					}
+				}
+				preferred_limit = {
+					is_unimportant_trigger = yes
+				}
+				save_event_target_as = potential_victim 
+			} 
+		}	
+		clr_character_flag = flag_sacrificing_bull  #Safety cleanup.
+		clr_character_flag = flag_sacrificing_cow
+		clr_character_flag = flag_sacrificing_goat
+		clr_character_flag = flag_sacrificing_chicken
+		clr_character_flag = flag_sacrificing_human
+	}
+
+	#Great Bull
+	#Cow
+	#Goat
+	#Chicken
+
+	option = { #Human - Ensure no Critical Fail - Unlocks Critical success - Only if also Bloodthirsty Gods.
+		name = EVTOPTZHF23007
+		trigger = { 
+            OR = {
+                has_religion_feature = religion_ritual_sacrifice 
+                has_religion_feature = religion_feature_amazigh
+            }
+			event_target:potential_victim = { is_alive = yes } 
+		}
+		if = { 
+			limit = { ai = no }
+			scaled_wealth = { value = -1 min = -200 max = -400 } 
+		}
+		event_target:potential_victim = { 
+			show_scope_change = no 
+			death = { 
+				death_reason = death_execution_aztec_sacrifice 
+				killer = ROOT
+			} 
+		} 
+		set_character_flag = flag_sacrificing_human
+		ai_chance = { 
+			factor = 60 
+			modifier = { 
+				factor = 0
+				trait = greedy
+			}
+			modifier = { 
+				factor = 0.1
+				trait = cynical
+			}
+			modifier = { 
+				factor = 1.5
+				trait = zealous
+			}
+			modifier = { 
+				factor = 0.1
+				NOT = { wealth = 300 }
+			}
+		}
+	}
+	option = { #Great bull - Ensure no Critical Fail - Unlocks Critical success
+		name = EVTOPTAHF23007
+		trigger = { 
+            NOR = {
+                has_religion_feature = religion_ritual_sacrifice
+                has_religion_feature = religion_feature_amazigh
+            }
+        }
+		if = { 
+			limit = { ai = no }
+			scaled_wealth = { value = -1 min = -175 max = -500 } 
+		}
+		set_character_flag = flag_sacrificing_bull
+		ai_chance = { 
+			factor = 60 
+			modifier = { 
+				factor = 0
+				trait = greedy
+			}
+			modifier = { 
+				factor = 0.1
+				trait = cynical
+			}
+			modifier = { 
+				factor = 1.5
+				trait = zealous
+			}
+			modifier = { 
+				factor = 0.1
+				NOT = { wealth = 300 }
+			}
+		}
+	}
+	option = { #Cow - Unlocks critical success
+		name = EVTOPTBHF23007
+		if = { 
+			limit = { ai = no }
+			scaled_wealth = { value = -0.75 min = -50 max = -130 }
+		}
+		set_character_flag = flag_sacrificing_cow
+		ai_chance = { 
+			factor = 30 
+			modifier = { 
+				factor = 0.5
+				trait = greedy
+			}
+			modifier = { 
+				factor = 0.75
+				trait = cynical
+			}
+			modifier = { 
+				factor = 1.25
+				trait = zealous
+			}
+			modifier = { 
+				factor = 0.1
+				NOT = { wealth = 100 }
+			}
+		}
+	}
+	option = { #Goat
+		name = EVTOPTCHF23007
+		if = { 
+			limit = { ai = no }
+			scaled_wealth = { value = -0.5 min = -30 max = -75 }
+		}
+		set_character_flag = flag_sacrificing_goat
+		ai_chance = { 
+			factor = 40 
+			modifier = { 
+				factor = 0.75
+				trait = zealous
+			}
+		}
+	}
+	option = { #Chicken
+		name = EVTOPTDHF23007
+		if = { 
+			limit = { ai = no }
+			scaled_wealth = { value = -0.1 min = -5 max = -30 }
+		}
+		set_character_flag = flag_sacrificing_chicken
+		ai_chance = { 
+			factor = 10 
+			modifier = { 
+				factor = 0.5
+				trait = zealous
+			}
+			modifier = { 
+				factor = 0.5
+				trait = charitable
+			}
+		}
+	}
+
+	after = { 
+		hidden_tooltip = { 
+			random_list = { 
+				20 = { 
+					trigger = { 
+						OR = {
+							has_character_flag = flag_sacrificing_bull
+							has_character_flag = flag_sacrificing_human
+						}
+						NOT = { has_character_flag = flag_cheap_diviner }
+					}
+					modifier = { 
+						factor = 0.7
+						trait = cynical
+					}
+					modifier = { 
+						factor = 1.5
+						trait = zealous
+					}
+					modifier = { 
+						factor = 0.7
+						NOT = { piety = -150 }
+					}
+					modifier = { 
+						factor = 0.8
+						NOT = { piety = -100 }
+					}
+					modifier = { 
+						factor = 0.8
+						NOT = { piety = -50 }
+					}
+					modifier = { 
+						factor = 0.8
+						NOT = { piety = 0 }
+					}
+					modifier = { 
+						factor = 1.15
+						piety = 30
+					}
+					modifier = { 
+						factor = 1.15
+						piety = 40
+					}
+					modifier = { 
+						factor = 1.15
+						piety = 50
+					}
+					modifier = { 
+						factor = 1.15
+						piety = 70
+					}
+					modifier = { 
+						factor = 1.15
+						piety = 100
+					}
+					modifier = { 
+						factor = 1.25
+						piety = 150
+					}
+					modifier = { 
+						factor = 1.25
+						piety = 250
+					}
+					modifier = { 
+						factor = 1.5
+						piety = 350
+					}
+					modifier = { 
+						factor = 1.5
+						piety = 450
+					}
+					modifier = { 
+						factor = 1.5
+						piety = 550
+					}
+					modifier = { 
+						factor = 0.6
+						NOT = { has_character_flag = flag_cheap_diviner }
+						NOT = { FROM = { learning = 3 } }
+					}
+					modifier = { 
+						factor = 0.7
+						NOT = { has_character_flag = flag_cheap_diviner }
+						NOT = { FROM = { learning = 4 } }
+					}
+					modifier = { 
+						factor = 0.8
+						NOT = { has_character_flag = flag_cheap_diviner }
+						NOT = { FROM = { learning = 6 } }
+					}
+					modifier = { 
+						factor = 0.8
+						NOT = { has_character_flag = flag_cheap_diviner }
+						NOT = { FROM = { learning = 8 } }
+					}
+					modifier = { 
+						factor = 1.15
+						NOT = { has_character_flag = flag_cheap_diviner }
+						FROM = { learning = 10 }
+					}
+					modifier = { 
+						factor = 1.15
+						NOT = { has_character_flag = flag_cheap_diviner }
+						FROM = { learning = 12 }
+					}
+					modifier = { 
+						factor = 1.15
+						NOT = { has_character_flag = flag_cheap_diviner }
+						FROM = { learning = 14 }
+					}
+					modifier = { 
+						factor = 1.15
+						NOT = { has_character_flag = flag_cheap_diviner }
+						FROM = { learning = 16 }
+					}
+					modifier = { 
+						factor = 1.15
+						NOT = { has_character_flag = flag_cheap_diviner }
+						FROM = { learning = 18 }
+					}
+					modifier = { 
+						factor = 1.15
+						NOT = { has_character_flag = flag_cheap_diviner }
+						FROM = { learning = 20 }
+					}
+					modifier = { 
+						factor = 1.25
+						NOT = { has_character_flag = flag_cheap_diviner }
+						FROM = { learning = 25 }
+					}
+					modifier = { 
+						factor = 1.35
+						NOT = { has_character_flag = flag_cheap_diviner }
+						FROM = { learning = 30 }
+					}
+					#But, more importantly, does the divine like you?
+					modifier = { 
+						factor = 0.75
+						NOT = { has_character_flag = flag_cheap_diviner }
+						FROM = { NOT = { opinion = { who = ROOT value = -80 } } }
+					}
+					modifier = { 
+						factor = 0.75
+						NOT = { has_character_flag = flag_cheap_diviner }
+						FROM = { NOT = { opinion = { who = ROOT value = -60 } } }
+					}
+					modifier = { 
+						factor = 0.75
+						NOT = { has_character_flag = flag_cheap_diviner }
+						FROM = { NOT = { opinion = { who = ROOT value = -40 } } }
+					}
+					modifier = { 
+						factor = 0.85
+						NOT = { has_character_flag = flag_cheap_diviner }
+						FROM = { NOT = { opinion = { who = ROOT value = -20 } } }
+					}
+					modifier = { 
+						factor = 0.85
+						NOT = { has_character_flag = flag_cheap_diviner }
+						FROM = { NOT = { opinion = { who = ROOT value = 0 } } }
+					}
+					modifier = { 
+						factor = 1.15
+						NOT = { has_character_flag = flag_cheap_diviner }
+						FROM = { opinion = { who = ROOT value = 20 } }
+					}
+					modifier = { 
+						factor = 1.25
+						NOT = { has_character_flag = flag_cheap_diviner }
+						FROM = { opinion = { who = ROOT value = 40 } }
+					}
+					modifier = { 
+						factor = 1.25
+						NOT = { has_character_flag = flag_cheap_diviner }
+						FROM = { opinion = { who = ROOT value = 60 } }
+					}
+					modifier = { 
+						factor = 1.35
+						NOT = { has_character_flag = flag_cheap_diviner }
+						FROM = { opinion = { who = ROOT value = 80 } }
+					}
+					modifier = { 
+						factor = 1.45
+						NOT = { has_character_flag = flag_cheap_diviner }
+						FROM = { opinion = { who = ROOT value = 90 } }
+					}
+					character_event = { id = HF.23008 } #Crit success
+				}
+				50 = { 
+					modifier = { 
+						factor = 0.7
+						has_character_flag = flag_sacrificing_human
+					}
+					modifier = { 
+						factor = 0.7
+						has_character_flag = flag_sacrificing_bull
+					}
+					modifier = { 
+						factor = 0.8
+						has_character_flag = flag_sacrificing_goat
+					}
+					modifier = { 
+						factor = 0.8
+						has_character_flag = flag_sacrificing_chicken
+					}
+					modifier = { 
+						factor = 0.8
+						has_character_flag = flag_cheap_diviner
+					}
+					modifier = { 
+						factor = 0.7
+						trait = cynical
+					}
+					modifier = { 
+						factor = 1.5
+						trait = zealous
+					}
+					modifier = { 
+						factor = 0.8
+						NOT = { piety = -150 }
+					}
+					modifier = { 
+						factor = 0.9
+						NOT = { piety = -100 }
+					}
+					modifier = { 
+						factor = 0.9
+						NOT = { piety = -50 }
+					}
+					modifier = { 
+						factor = 0.9
+						NOT = { piety = 0 }
+					}
+					modifier = { 
+						factor = 0.7
+						NOT = { has_character_flag = flag_cheap_diviner }
+						NOT = { FROM = { learning = 3 } }
+					}
+					modifier = { 
+						factor = 0.8
+						NOT = { has_character_flag = flag_cheap_diviner }
+						NOT = { FROM = { learning = 4 } }
+					}
+					modifier = { 
+						factor = 0.9
+						NOT = { has_character_flag = flag_cheap_diviner }
+						NOT = { FROM = { learning = 6 } }
+					}
+					modifier = { 
+						factor = 0.9
+						NOT = { has_character_flag = flag_cheap_diviner }
+						NOT = { FROM = { learning = 8 } }
+					}
+					#But, more importantly, does the divine like you?
+					modifier = { 
+						factor = 0.85
+						NOT = { has_character_flag = flag_cheap_diviner }
+						FROM = { NOT = { opinion = { who = ROOT value = -80 } } }
+					}
+					modifier = { 
+						factor = 0.85
+						NOT = { has_character_flag = flag_cheap_diviner }
+						FROM = { NOT = { opinion = { who = ROOT value = -60 } } }
+					}
+					modifier = { 
+						factor = 0.85
+						NOT = { has_character_flag = flag_cheap_diviner }
+						FROM = { NOT = { opinion = { who = ROOT value = -40 } } }
+					}
+					modifier = { 
+						factor = 0.95
+						NOT = { has_character_flag = flag_cheap_diviner }
+						FROM = { NOT = { opinion = { who = ROOT value = -20 } } }
+					}
+					modifier = { 
+						factor = 0.95
+						NOT = { has_character_flag = flag_cheap_diviner }
+						FROM = { NOT = { opinion = { who = ROOT value = 0 } } }
+					}
+					character_event = { id = HF.23009 } #Success
+				}
+				30 = { 
+					modifier = { 
+						factor = 0.7
+						has_character_flag = flag_sacrificing_human
+					}
+					modifier = { 
+						factor = 0.7
+						has_character_flag = flag_sacrificing_bull
+					}
+					modifier = { 
+						factor = 0.8
+						has_character_flag = flag_sacrificing_cow
+					}
+					character_event = { id = HF.23010 } #Failure
+				}
+				5 = { 
+
+					trigger = { 
+						NOR = { 
+							has_character_flag = flag_sacrificing_bull
+							has_character_flag = flag_sacrificing_human
+						}
+					}
+					modifier = { 
+						factor = 0.5
+						has_character_flag = flag_sacrificing_cow
+					}
+					character_event = { id = HF.23011 } #Crit failure
+				}
+			} 
+		}
+	}
+}
+
+#Flavor Doctrine events: Astrology + Haruspicy causes Religious Head to interpret the stars 10-yearly. (Or your Court Chaplain if No Rel Head exists)
+
+#Main event for religious head (it is localized, because the religious head might be Temporal).
+narrative_event = {
+	id = HF.23400
+	title = EVTTITLEAHF23400
+	desc = { 
+		trigger = { has_character_flag = flag_astrology_very_good_omen } 
+		text = EVTDESCAHF23400
+	}
+	desc = { 
+		trigger = { has_character_flag = flag_astrology_good_omen } 
+		text = EVTDESCBHF23400
+	}
+	desc = { 
+		trigger = { has_character_flag = flag_astrology_ambiguous_omen } 
+		text = EVTDESCCHF23400
+	}
+	desc = { 
+		trigger = { has_character_flag = flag_astrology_bad_omen } 
+		text = EVTDESCDHF23400
+	}
+	desc = { 
+		trigger = { has_character_flag = flag_astrology_very_bad_omen } 
+		text = EVTDESCEHF23400
+	}
+	picture = GFX_evt_comet
+	border = GFX_event_narrative_frame_religion
+	
+	is_triggered_only = yes
+
+	trigger = {
+		controls_religion = yes
+		NOR = {
+			has_character_modifier = astrology_very_good_omen
+			has_character_modifier = astrology_good_omen
+			has_character_modifier = astrology_ambiguous_omen
+			has_character_modifier = astrology_bad_omen
+			has_character_modifier = astrology_very_bad_omen
+		}
+		OR = {
+			AND = {
+                OR = {
+                    has_religion_feature = religion_haruspicy
+                    has_religion_feature = religion_feature_a_tag_roog
+                }
+				has_religion_feature = religion_astrology 
+			}
+			AND = {
+				religion = hellenic_pagan_reformed #Part of their features.
+				is_alternate_start = no
+			}
+		}
+	}
+	immediate = { 
+		random_list = {
+			5 = {
+				modifier = { factor = 1.15 piety = 50 }
+				modifier = { factor = 1.15 piety = 100 }
+				modifier = { factor = 1.15 piety = 150 }
+				modifier = { factor = 1.15 piety = 200 }
+				modifier = { factor = 1.15 piety = 250 }
+				modifier = { factor = 1.15 piety = 350 }
+				modifier = { factor = 1.25 piety = 500 }
+				set_character_flag = flag_astrology_very_good_omen
+			}
+			10 = {
+				set_character_flag = flag_astrology_good_omen
+			}
+			20 = {
+				set_character_flag = flag_astrology_ambiguous_omen
+			}
+			10 = {
+				set_character_flag = flag_astrology_bad_omen
+			}
+			5 = {
+				set_character_flag = flag_astrology_very_bad_omen
+			}
+		}
+	}
+	#Reinterpret bad omen using high learning/Boost ambiguous or good omen with high learning.
+	#Spread the news.
+	#Ignore the omen.
+
+	option = { #Reinterpet less favorable omen to prevent bad modifier.
+		name = EVTOPTAHF23400
+		trigger = { 
+			learning = 15 
+			NOT = { has_character_flag = flag_astrology_very_good_omen }
+		}
+		tooltip_info = learning
+		custom_tooltip = { text = TOOLTIP_EVTOPTAHF23400 } 
+		if = {
+			limit = {
+				has_character_flag = flag_astrology_good_omen
+			}
+			clr_character_flag = flag_astrology_good_omen
+			add_character_modifier = { name = astrology_very_good_omen years = 2 }
+		}
+		if = {
+			limit = {
+				has_character_flag = flag_astrology_ambiguous_omen
+			}
+			clr_character_flag = flag_astrology_ambiguous_omen
+			add_character_modifier = { name = astrology_good_omen years = 2 }
+		}
+		if = {
+			limit = {
+				has_character_flag = flag_astrology_bad_omen
+			}
+			clr_character_flag = flag_astrology_bad_omen
+			add_character_modifier = { name = astrology_ambiguous_omen years = 2 }
+		}
+		hidden_tooltip = { 
+			change_variable = { which = haruspicy_testing_fate value = 1 }
+			random = { 
+				chance = 1 
+				modifier = { 
+					factor = 5
+					trait = ambitious
+				} 
+				modifier = { 
+					factor = 1.5
+					trait = proud
+				} 
+				testing_fate_variable_character_score = yes
+				character_event = { id = HF.23402 days = 25 random = 25 } #The gods did not appreciate your hubris.
+			}
+		}
+		hidden_tooltip = { 
+			any_independent_ruler = { 
+				limit = { 
+					religion = ROOT 
+					higher_tier_than = COUNT
+				}
+				narrative_event = { id = HF.23401 }
+			}
+		}
+		ai_chance = { 
+			factor = 25
+		}
+	}
+	option = { #Spread the news.
+		name = EVTOPTBHF23400
+		custom_tooltip = { text = TOOLTIP_EVTOPTBHF23400 } 
+		if = {
+			limit = {
+				has_character_flag = flag_astrology_very_good_omen
+			}
+			add_character_modifier = { name = astrology_very_good_omen years = 2 }
+			religion_authority = {
+				modifier = haruspicy_very_good_omen
+				years = 50
+			}
+			clr_character_flag = flag_astrology_very_good_omen
+		}
+		if = {
+			limit = {
+				has_character_flag = flag_astrology_good_omen
+			}
+			add_character_modifier = { name = astrology_good_omen years = 2 }
+			clr_character_flag = flag_astrology_good_omen
+		}
+		if = {
+			limit = {
+				has_character_flag = flag_astrology_ambiguous_omen
+			}
+			add_character_modifier = { name = astrology_ambiguous_omen years = 2 }
+			clr_character_flag = flag_astrology_ambiguous_omen
+		}
+		if = {
+			limit = {
+				has_character_flag = flag_astrology_bad_omen
+			}
+			add_character_modifier = { name = astrology_bad_omen years = 2 }
+			clr_character_flag = flag_astrology_bad_omen
+		}
+		if = {
+			limit = {
+				has_character_flag = flag_astrology_very_bad_omen
+			}
+			add_character_modifier = { name = astrology_very_bad_omen years = 2 }
+			religion_authority = {
+				modifier = haruspicy_very_bad_omen
+				years = 50
+			}
+			clr_character_flag = flag_astrology_very_bad_omen
+		} 
+		hidden_tooltip = { 
+			any_independent_ruler = { 
+				limit = { 
+					religion = ROOT 
+					higher_tier_than = COUNT
+				}
+				narrative_event = { id = HF.23401 }
+			}
+		}
+		ai_chance = { 
+			factor = 50 
+			modifier = { 
+				factor = 1.5
+				trait = zealous
+			} 
+			modifier = { 
+				factor = 1.5
+				trait = craven
+			} 
+		}
+	}
+	option = { #Ignore the omen.
+		name = EVTOPTCHF23400
+		custom_tooltip = { text = TOOLTIP_EVTOPTCHF23400 }
+		if = { 
+			limit = { 
+				NOR = { 
+					trait = cynical 
+					trait = zealous 
+				}
+			}
+			random = { chance = 15 add_trait = cynical }
+		}
+		if = { 
+			limit = { 
+				trait = zealous
+			}
+			random = { chance = 15 remove_trait = zealous }
+		}
+		tiered_piety_negative_effect = yes
+		hidden_tooltip = { 
+			change_variable = { which = haruspicy_testing_fate value = 2 }
+			random = { 
+				chance = 1 
+				modifier = { 
+					factor = 5
+					trait = cynical
+				} 
+				testing_fate_variable_character_score = yes
+				character_event = { id = HF.23402 days = 25 random = 25 } #The gods did not appreciate your cynicism.
+			}
+			clr_character_flag = flag_astrology_very_good_omen
+			clr_character_flag = flag_astrology_good_omen
+			clr_character_flag = flag_astrology_ambiguous_omen
+			clr_character_flag = flag_astrology_bad_omen
+			clr_character_flag = flag_astrology_very_bad_omen
+		}
+		ai_chance = { 
+			factor = 10
+			modifier = { 
+				factor = 5
+				trait = cynical
+			} 
+		}
+	}
+}
+
+#Main event for Court Chaplain of Kings and above (Only if no religious head exists).
+narrative_event = {
+	id = HF.23404
+	title = EVTTITLEAHF23404
+	desc = { 
+		trigger = { has_character_flag = flag_astrology_good_omen } 
+		text = EVTDESCAHF23404
+	}
+	desc = { 
+		trigger = { has_character_flag = flag_astrology_ambiguous_omen } 
+		text = EVTDESCBHF23404
+	}
+	desc = { 
+		trigger = { has_character_flag = flag_astrology_bad_omen } 
+		text = EVTDESCCHF23404
+	}
+	picture = GFX_evt_comet
+	border = GFX_event_narrative_frame_religion
+	
+	is_triggered_only = yes
+
+	trigger = {
+		has_job_title = job_spiritual 
+		independent = no
+		liege = { 
+			higher_tier_than = DUKE 
+			religion = ROOT
+			NOT = { character = ROOT }
+		}
+		NOR = {
+			has_character_modifier = astrology_good_omen
+			has_character_modifier = astrology_ambiguous_omen
+			has_character_modifier = astrology_bad_omen
+		}
+		OR = {
+			AND = {
+                OR = {
+                    has_religion_feature = religion_haruspicy
+                    has_religion_feature = religion_feature_a_tag_roog
+                }
+				has_religion_feature = religion_astrology 
+				has_religion_feature = religion_no_leader 
+			}
+			AND = {
+				religion = hellenic_pagan_reformed #Part of their features.
+				is_alternate_start = no
+				has_religion_feature = religion_no_leader 
+			}
+		}
+	}
+	immediate = { 
+		random_list = {
+			10 = {
+				modifier = { factor = 1.15 piety = 50 }
+				modifier = { factor = 1.15 piety = 100 }
+				modifier = { factor = 1.15 piety = 150 }
+				modifier = { factor = 1.15 piety = 200 }
+				modifier = { factor = 1.15 piety = 250 }
+				modifier = { factor = 1.15 piety = 350 }
+				modifier = { factor = 1.25 piety = 500 }
+				set_character_flag = flag_astrology_good_omen
+			}
+			10 = {
+				set_character_flag = flag_astrology_ambiguous_omen
+			}
+			10 = {
+				set_character_flag = flag_astrology_bad_omen
+			}
+		}
+	}
+	#Tell liege.
+	option = {
+		name = EVTOPTAHF23404
+		tooltip = {
+			liege = {
+				if = {
+					limit = {
+						ROOT = { has_character_flag = flag_astrology_good_omen }
+					}
+					add_character_modifier = { name = astrology_good_omen years = 2 }
+				}
+				if = {
+					limit = {
+						ROOT = { has_character_flag = flag_astrology_ambiguous_omen }
+					}
+					add_character_modifier = { name = astrology_ambiguous_omen years = 2 }
+				}
+				if = {
+					limit = {
+						ROOT = { has_character_flag = flag_astrology_bad_omen }
+					}
+					add_character_modifier = { name = astrology_bad_omen years = 2 }
+				}
+			}
+		}
+		hidden_tooltip = {  
+			liege = { 
+				narrative_event = { id = HF.23405 }
+			}
+		}
+		ai_chance = { 
+			factor = 100 
+		}
+	}
+}
+
+# Haruspicy + Bloodthirsty Gods allows to read your fortune when killing a notable prisoner.
+
+#On_death: Hidden ping from the prisoner.
+character_event = {
+	id = HF.23410
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = { 
+		is_ruler = yes
+		higher_real_tier_than = COUNT
+		OR = { 
+			death_execution_trigger = yes
+			death_sacrificed_trigger = yes
+		}
+		killer = { 
+			NOR = { #Shouldn't already have one of the main effects.
+				has_character_modifier = cannibal_haruspicy_sacrifice
+				has_character_modifier = martial_haruspicy_sacrifice
+				has_character_modifier = intrigue_def_haruspicy_sacrifice
+				has_character_modifier = intrigue_att_haruspicy_sacrifice
+				has_character_modifier = stewardship_haruspicy_sacrifice
+				has_character_modifier = negative_haruspicy_sacrifice
+			}
+			is_playable = yes
+			is_landed = yes
+			NOT = { trait = incapable }
+			OR = { 
+				has_religion_feature = religion_ritual_sacrifice
+                has_religion_feature = religion_feature_amazigh
+				religion = aztec
+				religion = aztec_reformed
+			}
+			OR = { 
+				has_religion_feature = religion_haruspicy
+                has_religion_feature = religion_feature_a_tag_roog
+				religion = hellenic_pagan
+				religion = hellenic_pagan_reformed
+			}
+		}
+	}
+
+	immediate = { 
+		killer = { 
+			character_event = { id = HF.23411 }
+		}
+	}
+}
+
+#Other players are notified.
+narrative_event = {
+	id = HF.23213
+	title = EVTTITLE23213
+	desc = EVTDESCHF23213
+	picture = { 
+		trigger = { FROM = { is_female = no } } 
+		picture = GFX_evt_vikings_arriving_oldgods
+	}
+	picture = { 
+		trigger = { FROM = { is_female = yes } } 
+		picture = GFX_evt_norse_tempest
+	}
+	border = GFX_event_narrative_frame_war
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAHF23213
+		trigger = { 
+			OR = { 
+				religion = norse_pagan 
+				religion = norse_pagan_reformed
+				AND = { 
+					has_religion_feature = religion_adventuring 
+					has_religion_feature = religion_seafaring
+				}
+                has_religion_feature = religion_feature_amazigh
+			} 
+		} 
+	}
+	option = {
+		name = EVTOPTBHF23213
+		trigger = { 
+			NOR = { 
+				religion = norse_pagan 
+				religion = norse_pagan_reformed
+				AND = { 
+					has_religion_feature = religion_adventuring 
+					has_religion_feature = religion_seafaring
+				}
+                has_religion_feature = religion_feature_amazigh
+			} 
+		} 
+	}
+}
+
+#Viking Trait Gained
+character_event = {
+	id = TGF.3320
+	desc = { 
+		trigger = { 
+			OR = {
+				religion = norse_pagan
+				religion = norse_pagan_reformed
+				any_owned_bloodline = {
+					has_bloodline_flag = bloodline_viking
+				}
+			}
+		} 
+		text = EVTDESC_TOG_3320
+	}
+	desc = { 
+		trigger = { 
+			NOR = {
+				religion = norse_pagan
+				religion = norse_pagan_reformed
+				any_owned_bloodline = {
+					has_bloodline_flag = bloodline_viking
+				}
+			}
+		} 
+		text = EVTDESC_TOG_3320_HF
+	}
+	picture = { 
+		trigger = { is_female = no } 
+		picture = GFX_evt_vikings_arriving_oldgods
+	}
+	picture = { 
+		trigger = { is_female = yes } 
+		picture = GFX_evt_norse_tempest
+	}
+	border = GFX_event_normal_frame_war
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		OR = {
+			has_dlc = "The Old Gods"
+			any_owned_bloodline = {
+				has_bloodline_flag = bloodline_viking
+			}
+			AND = {
+				has_religion_feature = religion_adventuring
+				has_religion_feature = religion_seafaring
+			}
+			has_religion_feature = religion_feature_norse
+            has_religion_feature = religion_feature_amazigh
+		}
+		NOR = { 
+			trait = viking
+			trait = pirate
+			trait = ravager
+			trait = seaking
+			trait = sea_queen
+		}
+		OR = {
+			religion = norse_pagan
+			religion = norse_pagan_reformed
+			any_owned_bloodline = {
+				has_bloodline_flag = bloodline_viking
+			}
+			AND = {
+				has_religion_feature = religion_adventuring
+				has_religion_feature = religion_seafaring
+			}
+            has_religion_feature = religion_feature_amazigh
+		}
+		FROM = { always = yes }
+	}
+	
+	option = {
+		name = EVTOPTA_TOG_3320
+		if = {
+			limit = { 
+				OR = {  
+					religion = norse_pagan
+					religion = norse_pagan_reformed
+				} 
+			}
+			add_trait = viking
+		}
+		if = {
+			limit = { 
+				NOR = {  
+					religion = norse_pagan
+					religion = norse_pagan_reformed
+				} 
+			}
+			if = {
+				limit = {
+					any_owned_bloodline = {
+						has_bloodline_flag = bloodline_viking
+					}
+				}
+				set_character_flag = acquired_pirate_trait_by_bloodline
+			}
+			add_trait = pirate
+		}
+		hidden_tooltip = {
+			set_variable = { which = viking_raids value = 0 }
+		}
+	}
+}
+
+#Ravager 
+character_event = {
+	id = TGF.3321
+	desc = { 
+		trigger = { 
+			OR = {
+				religion = norse_pagan
+				religion = norse_pagan_reformed
+				any_owned_bloodline = {
+					has_bloodline_flag = bloodline_viking
+				}
+			}
+		} 
+		text = TOG.3321.d
+	}
+	desc = { 
+		trigger = { 
+			NOR = {
+				religion = norse_pagan
+				religion = norse_pagan_reformed
+				any_owned_bloodline = {
+					has_bloodline_flag = bloodline_viking
+				}
+			}
+		} 
+		text = EVTDESC_TOG_3321_HF
+	}
+	picture = { 
+		trigger = { is_female = no } 
+		picture = GFX_evt_vikings_arriving_oldgods
+	}
+	picture = { 
+		trigger = { is_female = yes } 
+		picture = GFX_evt_norse_tempest
+	}
+	border = GFX_event_normal_frame_war
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		OR = {
+			has_dlc = "The Old Gods"
+			any_owned_bloodline = {
+				has_bloodline_flag = bloodline_viking
+			}
+			AND = {
+				has_religion_feature = religion_adventuring
+				has_religion_feature = religion_seafaring
+			}
+			has_religion_feature = religion_feature_norse
+            has_religion_feature = religion_feature_amazigh
+		}
+		OR = {
+			trait = viking
+			trait = pirate
+		}
+		NOR = { 
+			trait = ravager
+			trait = seaking
+			trait = sea_queen
+		}
+		OR = {
+			religion = norse_pagan
+			religion = norse_pagan_reformed
+			any_owned_bloodline = {
+				has_bloodline_flag = bloodline_viking
+			}
+			AND = {
+				has_religion_feature = religion_adventuring
+				has_religion_feature = religion_seafaring
+			}
+            has_religion_feature = religion_feature_amazigh
+		}
+		check_variable = { which = viking_raids value = 50 }
+		FROM = { always = yes }
+	}
+	
+	option = {
+		name = TOG.3321.a
+		if = {
+			limit = { 
+				trait = pirate
+			}
+			remove_trait = pirate
+		}
+		if = {
+			limit = { 
+				trait = viking
+			}
+			remove_trait = viking
+		}
+		add_trait = ravager
+	}
+}
+
+#Sea King
+character_event = {
+	id = TGF.3322
+	desc = TOG.3322.d
+	picture = { 
+		trigger = { is_female = no } 
+		picture = GFX_evt_vikings_arriving_oldgods
+	}
+	picture = { 
+		trigger = { is_female = yes } 
+		picture = GFX_evt_norse_tempest
+	}
+	border = GFX_event_normal_frame_war
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		OR = {
+			has_dlc = "The Old Gods"
+			any_owned_bloodline = {
+				has_bloodline_flag = bloodline_viking
+			}
+			AND = {
+				has_religion_feature = religion_adventuring
+				has_religion_feature = religion_seafaring
+			}
+			has_religion_feature = religion_feature_norse
+            has_religion_feature = religion_feature_amazigh
+		}
+		trait = ravager
+		NOR = { 
+			trait = seaking
+			trait = sea_queen
+		}
+		OR = {
+			religion = norse_pagan
+			religion = norse_pagan_reformed
+			any_owned_bloodline = {
+				has_bloodline_flag = bloodline_viking
+			}
+			AND = {
+				has_religion_feature = religion_adventuring
+				has_religion_feature = religion_seafaring
+			}
+            has_religion_feature = religion_feature_amazigh
+		}
+		check_variable = { which = viking_raids value = 100 }
+		FROM = { always = yes }
+	}
+	
+	option = {
+		name = TOG.3322.a
+		remove_trait = ravager
+		if = {
+			limit = {
+				is_female = no
+			}
+			add_trait = seaking
+		}
+		if = {
+			limit = {
+				is_female = yes
+			}
+			add_trait = sea_queen
+		}
+	}
+}
+
+character_event = {
+	id = TGF.3323
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		OR = {
+			has_dlc = "The Old Gods"
+			any_owned_bloodline = {
+				has_bloodline_flag = bloodline_viking
+			}
+			AND = {
+				has_religion_feature = religion_adventuring
+				has_religion_feature = religion_seafaring
+			}
+			has_religion_feature = religion_feature_norse
+            has_religion_feature = religion_feature_amazigh
+		}
+		OR = {
+			trait = pirate
+			trait = viking
+			trait = ravager
+			trait = seaking #Top trait, but there's still chance of gaining a Bloodline if variable goes high enough.
+			trait = sea_queen
+		}
+		OR = {
+			religion = norse_pagan
+			religion = norse_pagan_reformed
+			any_owned_bloodline = {
+				has_bloodline_flag = bloodline_viking
+			}
+			AND = {
+				has_religion_feature = religion_adventuring
+				has_religion_feature = religion_seafaring
+			}
+            has_religion_feature = religion_feature_amazigh
+		}
+		FROM = { always = yes }
+	}
+	
+	immediate = {
+		change_variable = { which = viking_raids value = 1 }
+	}
+}
+
+character_event = {
+    id = ADV.1
+
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+    	FROM = { save_event_target_as = raiding_adventurer }
+		if = {
+			limit = {
+				event_target:adventurer_decision_target_override = {
+					is_alive = yes
+				}
+			}
+			event_target:adventurer_decision_target_override = {
+				save_event_target_as = raiding_adventurer
+			}
+		}
+    	save_event_target_as = adventurer_target
+		if = {
+			limit = {
+				event_target:adventurer_decision_taker_override = {
+					is_alive = yes
+				}
+			}
+			event_target:adventurer_decision_taker_override = {
+				save_event_target_as = adventurer_target
+			}
+		}
+
+    	#Stores how much money adventurer has
+    	event_target:raiding_adventurer = { export_to_variable = { which = adventurer_treasury value = treasury } }
+
+    	#Picks out a province to sell 
+    	random_demesne_province = {
+    		limit = {
+    			is_capital = no 
+    			num_of_settlements = 1
+				NOT = {
+					has_province_modifier = nomad_agitation
+				}
+    		}
+			preferred_limit = {
+				event_target:raiding_adventurer = {
+					OR = {
+						religion = norse_pagan
+						has_religion_feature = religion_seafaring
+                        has_religion_feature = religion_feature_amazigh
+						is_seafarer = yes
+					}
+				}
+				port = yes
+			}
+
+    		set_variable = { which = price value = 100 }
+
+    		trigger_switch = {
+    			on_trigger = num_of_settlements
+    			7 = { change_variable = { which = price value = 700 } }
+    			6 = { change_variable = { which = price value = 600 } }
+    			5 = { change_variable = { which = price value = 500 } }
+    			4 = { change_variable = { which = price value = 400 } }
+    			3 = { change_variable = { which = price value = 300 } }
+    			2 = { change_variable = { which = price value = 200 } }
+    			1 = { change_variable = { which = price value = 100 } }
+    		}
+
+    		trigger_switch = {
+    			on_trigger = num_of_empty_holdings
+    			6 = { change_variable = { which = price value = 150 } }
+    			5 = { change_variable = { which = price value = 125 } }
+    			4 = { change_variable = { which = price value = 100 } }
+    			3 = { change_variable = { which = price value = 75 } }
+    			2 = { change_variable = { which = price value = 50 } }
+    			1 = { change_variable = { which = price value = 25 } }
+    		}
+
+    		set_variable = { which = haggle_price which = price }
+    		multiply_variable = { which = haggle_price value = 0.7 }
+
+
+    		#Checks that the adventurer has enough money to haggle
+    		if = {
+    			limit = {
+					OR = {
+						event_target:adventurer_target = {
+							has_character_flag = peaceful_negotiation
+						}
+						event_target:raiding_adventurer = { check_variable = { which = adventurer_treasury which = haggle_price which = PREV } }
+					}
+				}
+    			save_event_target_as = selling_province
+    		}
+    	}
+
+   		#If they can't afford your province, pick a vassal province (also a big chance to happen even if they can afford it)
+    	random_list = {
+    		80 = {
+    			random_vassal = {
+	    			limit = {
+	    				any_demesne_province = {
+			    			is_capital = no 
+			    			num_of_settlements = 1
+							NOT = {
+								has_province_modifier = nomad_agitation
+							}
+	    				}
+	    			}
+					preferred_limit = {
+						event_target:raiding_adventurer = {
+							OR = {
+								religion = norse_pagan
+								has_religion_feature = religion_seafaring
+                                has_religion_feature = religion_feature_amazigh
+								is_seafarer = yes
+							}
+						}
+						any_demesne_province = {
+							is_capital = no 
+			    			num_of_settlements = 1
+							NOT = {
+								has_province_modifier = nomad_agitation
+							}
+							port = yes
+						}
+					}
+	    			random_demesne_province = {
+	    				limit = {
+			    			is_capital = no 
+			    			num_of_settlements = 1
+							NOT = {
+								has_province_modifier = nomad_agitation
+							}
+			    		}
+						preferred_limit = {
+							event_target:raiding_adventurer = {
+								OR = {
+									religion = norse_pagan
+									has_religion_feature = religion_seafaring
+                                    has_religion_feature = religion_feature_amazigh
+									is_seafarer = yes
+								}
+							}
+							is_capital = no 
+			    			num_of_settlements = 1
+							NOT = {
+								has_province_modifier = nomad_agitation
+							}
+							port = yes
+						}
+
+			    		set_variable = { which = price value = 100 }
+
+			    		trigger_switch = {
+			    			on_trigger = num_of_settlements
+			    			7 = { change_variable = { which = price value = 400 } }
+			    			6 = { change_variable = { which = price value = 350 } }
+			    			5 = { change_variable = { which = price value = 300 } }
+			    			4 = { change_variable = { which = price value = 250 } }
+			    			3 = { change_variable = { which = price value = 200 } }
+			    			2 = { change_variable = { which = price value = 150 } }
+			    			1 = { change_variable = { which = price value = 100 } }
+			    		}
+
+			    		trigger_switch = {
+			    			on_trigger = num_of_empty_holdings
+			    			6 = { change_variable = { which = price value = 60 } }
+			    			5 = { change_variable = { which = price value = 50 } }
+			    			4 = { change_variable = { which = price value = 40 } }
+			    			3 = { change_variable = { which = price value = 30 } }
+			    			2 = { change_variable = { which = price value = 20 } }
+			    			1 = { change_variable = { which = price value = 10 } }
+			    		}
+
+			    		set_variable = { which = haggle_price which = price }
+	    				multiply_variable = { which = haggle_price value = 0.7 }
+
+	    				save_event_target_as = selling_province
+	    			}
+	    		}
+    		}
+    		20 = {
+    			trigger = {
+					event_target:selling_province = { always = yes }
+				}
+    			#Empty, your demesne province is kept as selling_province
+    		}
+    	}
+
+    	if = {
+    		limit = { event_target:raiding_adventurer = { is_married = no } }
+	    	random_child = {
+	    		limit = {	
+	    			OR = {
+		    			AND = {
+		    				event_target:raiding_adventurer = { is_female = yes }
+		    				is_female = no
+		    			}
+	    				AND = {
+		    				event_target:raiding_adventurer = { is_female = no }
+		    				is_female = yes
+		    			}
+	    			}
+	    			is_adult = yes
+	    			is_alive = yes
+	    			is_married = no
+	    			can_marry = yes
+	    			NOT = { is_primary_heir = ROOT }
+	    			is_ruler = no
+                    character_disease_trigger = no
+                    has_disability_trigger = no
+	    			OR = {
+                        stewardship = 5
+                        martial = 5
+                        diplomacy = 5
+                        intrigue = 5
+                        learning = 5
+	    			}
+	    		}
+                preferred_limit = {
+                    NOR = {
+                        is_dumb_trigger = yes
+                        has_mental_disorder_trigger = yes
+                        trait = homosexual
+                        trait = celibate
+                        has_ugly_trait_trigger = yes
+                    }
+                    OR = {
+                        is_smart_trigger = yes
+                        has_attractive_trait_trigger = yes
+                        has_pleasant_personality_trigger = yes
+                        stewardship = 13
+                        martial = 13
+                        diplomacy = 13
+                        intrigue = 13
+                        learning = 15
+                    }
+                }
+                preferred_limit = {
+                    NOR = {
+                        is_dumb_trigger = yes
+                        has_mental_disorder_trigger = yes
+                        trait = homosexual
+                        trait = celibate
+                        has_ugly_trait_trigger = yes
+                    }
+                }
+                preferred_limit = {
+                    NOR = {
+                        is_dumb_trigger = yes
+                        has_mental_disorder_trigger = yes
+                        has_ugly_trait_trigger = yes
+                    }
+                }
+                preferred_limit = {
+                    NOT = {
+                        has_ugly_trait_trigger = yes
+                    }
+                }
+	    		save_event_target_as = marriage_child
+	    	}
+    	}
+
+    	#If a suitable deal can be made, fire the negotiation
+    	if = {
+    		limit = {
+    			OR = {
+    				event_target:selling_province = { always = yes }
+    				event_target:marriage_child = { always = yes }
+    			}
+    		}
+    		event_target:raiding_adventurer = { character_event = { id = ADV.2 } }
+    		break = yes
+    	}
+
+    	#Adventurer declares war
+    	raiding_adventurer_war_declaration_effect = yes
+
+        #Logging for displaced prince...
+        if = {
+            limit = { event_target:raiding_adventurer = { has_character_flag = is_displaced_prince } }
+            log = "Displaced royal: [raiding_adventurer.GetBestName] declared war over the province [selling_province.GetName], currently held by [Root.GetBestName]."
+        }
+    }
+}
+
+#On_looting_settlement: Gaining Thralls.
+character_event = {
+	id = HF.23207
+	desc = EVTDESCHF23207
+	picture = { 
+		trigger = { is_female = no } 
+		picture = GFX_evt_vikings_arriving_oldgods
+	}
+	picture = { 
+		trigger = { is_female = yes } 
+		picture = GFX_evt_norse_tempest
+	}
+	border = GFX_event_normal_frame_war
+	
+	has_dlc = "Holy Fury"
+
+	is_triggered_only = yes
+
+	trigger = {
+		this_is_sea_raider_trigger = yes
+		FROM = {
+			location = { capital_holding = { title = FROM } } #Do not reiterate the event after taking the capital holding.
+			is_tribal = no
+			is_nomadic = no
+		}
+	}
+	
+	#Sacrifice to improve MA.
+	#Sell for money.
+	#Put to use (stacking capital building modifier/increasing revolt risk)
+
+	option = {
+		name = EVTOPTAHF23207
+		trigger = { 
+			OR = {
+                religion = aztec
+                religion = aztec_reformed
+                has_religion_feature = religion_ritual_sacrifice
+                has_religion_feature = religion_amazigh
+            } 
+			FROM = { location = { NOT = { religion = ROOT } } } #Only if province is of some other religion.
+		}
+		hidden_tooltip = { FROM = { owner = { character_event = { id = HF.23208 } } } } #Notify owner
+		add_blood_splatter_effect = yes
+		if = { 
+			limit = {
+				FROM = { location = { num_of_settlements = 6 } } 
+			}
+			piety = 150
+			religion_authority = {
+				modifier = great_sacrifice_positive
+				years = 150
+			}
+			hidden_tooltip = { 
+				change_variable = { which = burned_hearts_points value = 2 } 
+				bloodthirsty_tiered_traits_effect = yes
+			}
+		}
+		if = { 
+			limit = {
+				FROM = { location = { num_of_settlements = 4 } }
+				FROM = { location = { NOT = { num_of_settlements = 6 } } }
+			}
+			piety = 100 
+			religion_authority = {
+				modifier = great_sacrifice_positive
+				years = 100
+			}
+			hidden_tooltip = { 
+				change_variable = { which = burned_hearts_points value = 1 } 
+				bloodthirsty_tiered_traits_effect = yes
+			}
+		}
+		if = { 
+			limit = {
+				FROM = { location = { num_of_settlements = 2 } }
+				FROM = { location = { NOT = { num_of_settlements = 4 } } }
+			}
+			piety = 50 
+			religion_authority = {
+				modifier = great_sacrifice_positive
+				years = 50
+			}
+			hidden_tooltip = { 
+				bloodthirsty_tiered_traits_effect = yes
+			}
+		}
+		if = { 
+			limit = {
+				FROM = { location = { NOT = { num_of_settlements = 2 } } }
+			}
+			piety = 25 
+			religion_authority = {
+				modifier = great_sacrifice_positive
+				years = 25
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBHF23207
+		if = { 
+			limit = {
+				FROM = { location = { num_of_settlements = 6 } }
+			}
+			wealth = 300
+		}
+		if = { 
+			limit = {
+				FROM = { location = { num_of_settlements = 4 } }
+				FROM = { location = { NOT = { num_of_settlements = 6 } } }
+			}
+			wealth = 200
+		}
+		if = { 
+			limit = {
+				FROM = { location = { num_of_settlements = 2 } }
+				FROM = { location = { NOT = { num_of_settlements = 4 } } }
+			}
+			wealth = 100
+		}
+		if = { 
+			limit = {
+				FROM = { location = { NOT = { num_of_settlements = 2 } } }
+			}
+			wealth = 50
+		}
+	}
+	option = {
+		name = EVTOPTCHF23207
+		trigger = { is_ruler = yes higher_tier_than = BARON }
+		if = { 
+			limit = {
+				FROM = { location = { num_of_settlements = 6 } }
+			}
+			capital_scope = { show_scope_change = no add_lots_thralls_capital_effect = yes }
+		}
+		if = { 
+			limit = {
+				FROM = { location = { num_of_settlements = 3 } }
+				FROM = { location = { NOT = { num_of_settlements = 6 } } }
+			}
+			capital_scope = { show_scope_change = no add_some_thralls_capital_effect = yes }
+		}
+		if = { 
+			limit = {
+				FROM = { location = { NOT = { num_of_settlements = 3 } } }
+			}
+			capital_scope = { show_scope_change = no add_few_thralls_capital_effect = yes }
+		}
+	}
+}
+
+############################################################################
+# Bloodthirsty Gods/Aztecs
+# Sacrifying prisoners increases burned_hearts_points variable, unlocking tiered traits. It's like Viking traits, but for psychos.
+# Hidden on death event for the sacrifical victims.
+character_event = {
+	id = HF.23430
+	hide_window = yes
+	trigger = { 
+		has_dlc = "Holy Fury"
+		death_sacrificed_trigger = yes
+		killer = { 
+			is_playable = yes
+			is_landed = yes
+			NOT = { trait = incapable }
+			OR = { 
+				has_religion_feature = religion_ritual_sacrifice
+                has_religion_feature = religion_feature_amazigh
+				religion = aztec
+				religion = aztec_reformed
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+
+	immediate = { 
+		killer = { 
+			#Bonus points first.
+			if = { #The gods appreciate your sacrifice.
+				limit = {
+					is_adult = no
+					ROOT = { is_child_of = PREV } 
+				}
+				change_variable = { which = burned_hearts_points value = 1 }
+			}
+			if = { #And a divine child is even better.
+				limit = {
+					is_adult = no
+					ROOT = { religion = PREV } 
+					OR = { 
+						has_religion_feature = religion_holy_family 
+						has_religion_feature = religion_feature_zun
+					} 
+				}
+				change_variable = { which = burned_hearts_points value = 1 }
+			}
+			if = { #A foreign religious head is also quite good.
+				limit = {
+					NOT = { religion = ROOT } 
+					controls_religion = yes
+				}
+				change_variable = { which = burned_hearts_points value = 2 }
+			}
+			if = { #A foreign emperor is also well accepted.
+				limit = {
+					NOT = { religion = ROOT } 
+					higher_tier_than = KING
+				}
+				change_variable = { which = burned_hearts_points value = 2 }
+			}
+			#Finally, a third point is added regardless in the following scripted effect, which will also trigger the events below, when the proper score is reached.
+			bloodthirsty_tiered_traits_effect = yes 
+		}
+	}
+}
+
+#Gained the Haemophiliac trait.
+character_event = {
+	id = HF.23431
+	desc = EVTDESCAHF23431
+	picture = { 
+		trigger = { 
+			ROOT = { 
+				OR = {  
+					religion = aztec
+					religion = aztec_reformed
+				}
+			} 
+		} 
+		picture = GFX_evt_bishop_aztec
+	}
+	picture = { 
+		trigger = { 
+			ROOT = { 
+				NOR = {  
+					religion = aztec
+					religion = aztec_reformed
+				}
+			} 
+		} 
+		picture = GFX_evt_pagan_blood_sacrifice
+	}
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { trait = bloodthirsty_gods_1 }
+		OR = { 
+			has_religion_feature = religion_ritual_sacrifice
+            has_religion_feature = religion_feature_amazigh
+			religion = aztec
+			religion = aztec_reformed
+		}
+	}
+
+	immediate = { 
+		add_blood_splatter_effect = yes
+		add_trait = bloodthirsty_gods_1
+	}
+
+	option = { 
+		name = EVTOPTAHF23431
+		add_trait = bloodthirsty_gods_1
+		if = { 
+			limit = { NOR = { trait = kind trait = cruel } } 
+			random = { 
+				chance = 25 
+				add_trait = cruel 
+				hidden_tooltip = { character_event = { id = 38259 } }
+			} 
+		} 
+		if = { 
+			limit = { trait = kind } 
+			random = { 
+				chance = 25 
+				remove_trait = kind 
+				hidden_tooltip = { character_event = { id = 38307 } }
+			} 
+		} 
+		if = { 
+			limit = { trait = cynical } 
+			random = { chance = 25 remove_trait = cynical } 
+		}
+	}
+}
+
+#Gained the Haemophant trait.
+character_event = {
+	id = HF.23432
+	desc = EVTDESCAHF23432
+	picture = { 
+		trigger = { 
+			ROOT = { 
+				OR = {  
+					religion = aztec
+					religion = aztec_reformed
+				}
+			} 
+		} 
+		picture = GFX_evt_bishop_aztec
+	}
+	picture = { 
+		trigger = { 
+			ROOT = { 
+				NOR = {  
+					religion = aztec
+					religion = aztec_reformed
+				}
+			} 
+		} 
+		picture = GFX_evt_pagan_blood_sacrifice
+	}
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+
+	trigger = {
+		OR = { 
+			has_religion_feature = religion_ritual_sacrifice
+            has_religion_feature = religion_feature_amazigh
+			religion = aztec
+			religion = aztec_reformed
+		}
+		NOR = { 
+			trait = bloodthirsty_gods_2 
+			trait = bloodthirsty_gods_3
+		}
+	}
+	
+	immediate = { 
+		add_blood_splatter_effect = yes
+		add_trait = bloodthirsty_gods_2
+	}
+
+	option = { 
+		name = EVTOPTAHF23432
+		if = { 
+			limit = { trait = bloodthirsty_gods_1 } 
+			remove_trait = bloodthirsty_gods_1
+		} 
+		add_trait = bloodthirsty_gods_2
+		if = { 
+			limit = { NOR = { trait = kind trait = cruel } } 
+			random = { 
+				chance = 50 
+				add_trait = cruel 
+				hidden_tooltip = { character_event = { id = 38259 } }
+			} 
+		} 
+		if = { 
+			limit = { trait = kind } 
+			random = { 
+				chance = 50 
+				remove_trait = kind 
+				hidden_tooltip = { character_event = { id = 38307 } }
+			} 
+		}
+		if = { 
+			limit = { trait = cynical } 
+			random = { 
+				chance = 50 
+				remove_trait = cynical 
+			} 
+		}
+	}
+}
+
+#Gained the Haemoarch trait.
+character_event = {
+	id = HF.23433
+	desc = EVTDESCAHF23433
+	picture = { 
+		trigger = { 
+			ROOT = { 
+				OR = {  
+					religion = aztec
+					religion = aztec_reformed
+				}
+			} 
+		} 
+		picture = GFX_evt_bishop_aztec
+	}
+	picture = { 
+		trigger = { 
+			ROOT = { 
+				NOR = {  
+					religion = aztec
+					religion = aztec_reformed
+				}
+			} 
+		} 
+		picture = GFX_evt_pagan_blood_sacrifice
+	}
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+
+	trigger = {
+		OR = { 
+			has_religion_feature = religion_ritual_sacrifice
+            has_religion_feature = religion_feature_amazigh
+			religion = aztec
+			religion = aztec_reformed
+		}
+		NOT = { 
+			trait = bloodthirsty_gods_3
+		}
+	}
+	immediate = { 
+		add_blood_splatter_effect = yes
+		add_trait = bloodthirsty_gods_3
+	}
+
+	option = { 
+		name = EVTOPTAHF23433
+		if = { 
+			limit = { trait = bloodthirsty_gods_1 } 
+			remove_trait = bloodthirsty_gods_1
+		} 
+		if = { 
+			limit = { trait = bloodthirsty_gods_2 } 
+			remove_trait = bloodthirsty_gods_2
+		} 
+		add_trait = bloodthirsty_gods_3
+		if = { 
+			limit = { NOR = { trait = kind trait = cruel } } 
+			random = { 
+				chance = 75 
+				add_trait = cruel 
+				hidden_tooltip = { character_event = { id = 38259 } }
+			} 
+		}
+		if = { 
+			limit = { trait = kind } 
+			remove_trait = kind
+		}
+		if = { 
+			limit = { trait = cynical } 
+			remove_trait = cynical
+		}
+	}
+}
+
+#Gained the Bloodthirsty Bloodline.
+narrative_event = {
+	id = HF.23434
+	title = EVTTITLE23434
+	desc = EVTDESCAHF23434
+	picture = { 
+		trigger = { 
+			ROOT = { 
+				OR = {  
+					religion = aztec
+					religion = aztec_reformed
+				}
+			} 
+		} 
+		picture = GFX_evt_bishop_aztec
+	}
+	picture = { 
+		trigger = { 
+			ROOT = { 
+				NOR = {  
+					religion = aztec
+					religion = aztec_reformed
+				}
+			} 
+		} 
+		picture = GFX_evt_pagan_blood_sacrifice
+	}
+	border = GFX_event_narrative_frame_religion
+	sound = bloodline_added
+	
+	is_triggered_only = yes
+
+	trigger = {
+		OR = { 
+			has_religion_feature = religion_ritual_sacrifice
+            has_religion_feature = religion_feature_amazigh
+			religion = aztec
+			religion = aztec_reformed
+		}
+		NOT = { 
+			any_owned_bloodline = { # Not already has a Bloodthirsty bloodline.
+				has_bloodline_flag = bloodline_created_bloodthirsty
+			}
+		}
+	}
+
+	immediate = { 
+		add_blood_splatter_effect = yes
+		if = {
+			limit = {
+				ai = no
+			}
+			set_character_flag = achievement_bloody_line
+		}
+	}
+
+	option = {
+		name = EVTOPTAHF23434
+		hidden_tooltip = { 
+			if = { 
+				limit = { this_has_super_cool_nickname_trigger = no }
+				random_list = { 
+					20 = { 
+						give_nickname = nick_the_red_storm 
+					} 
+					20 = { 
+						give_nickname = nick_the_scarlet_hands 
+					} 
+					20 = { 
+						give_nickname = nick_the_blood_monger 
+					} 
+					20 = { 
+						give_nickname = nick_the_black_skull 
+					} 
+					20 = { 
+						give_nickname = nick_the_heart_eater 
+					} 
+					20 = { 
+						give_nickname = nick_the_slaughterer 
+					} 
+					20 = { 
+						give_nickname = nick_the_soul_flayer
+					} 
+					20 = { 
+						give_nickname = nick_the_spirit_stalker 
+					} 
+					10 = { 
+						give_nickname = nick_the_crimson_reaper 
+					} 
+					10 = { 
+						give_nickname = nick_the_dreaded
+					} 
+					5 = { 
+						give_nickname = nick_the_chest_buster 
+					} 
+				}
+			}
+		}
+		if = { 
+			limit = { is_female = no }
+			create_bloodline = {
+				type = bloodthirsty_male_bloodline
+			}
+			new_bloodline = {
+				set_description = "bloodline_desc_bloodthirsty_gods_bloodline"
+				random_list = { 
+					20 = { set_name = bloodline_bloodthirsty_name_random_a } #Randomize names to avoid too much repetition.
+					20 = { set_name = bloodline_bloodthirsty_name_random_b }
+					20 = { set_name = bloodline_bloodthirsty_name_random_c }
+					20 = { set_name = bloodline_bloodthirsty_name_random_d } 
+					20 = { set_name = bloodline_bloodthirsty_name_random_e } 
+					20 = { set_name = bloodline_bloodthirsty_name_random_f } 
+				}
+			}
+		}
+		if = { 
+			limit = { is_female = yes }
+			create_bloodline = {
+				type = bloodthirsty_female_bloodline
+			}
+			new_bloodline = {
+				set_description = "bloodline_desc_bloodthirsty_gods_bloodline"
+				random_list = { 
+					20 = { set_name = bloodline_bloodthirsty_name_random_a } #Randomize names to avoid too much repetition.
+					20 = { set_name = bloodline_bloodthirsty_name_random_b }
+					20 = { set_name = bloodline_bloodthirsty_name_random_c }
+					20 = { set_name = bloodline_bloodthirsty_name_random_d } 
+					20 = { set_name = bloodline_bloodthirsty_name_random_e } 
+					20 = { set_name = bloodline_bloodthirsty_name_random_f } 
+				}
+			}		
+		}
+		hidden_tooltip = { 
+			any_player = { 
+				limit = { 
+					NOT = { character = ROOT }
+					is_within_diplo_range = ROOT
+				}
+				narrative_event = { id = HF.23435 }
+			}
+		}
+	}
+}
+
+#Inform players.
+narrative_event = {
+	id = HF.23435
+	title = EVTTITLE23435
+	desc = {
+		trigger = {
+			OR = {
+				religion = FROM
+				has_religion_feature = religion_ritual_sacrifice
+                has_religion_feature = religion_feature_amazigh
+				religion = aztec
+				religion = aztec_reformed
+			}
+		}
+		text = EVTDESCAHF23435
+	}
+	desc = {
+		trigger = {
+			NOR = {
+				religion = FROM
+				has_religion_feature = religion_ritual_sacrifice
+                has_religion_feature = religion_feature_amazigh
+				religion = aztec
+				religion = aztec_reformed
+			}
+		}
+		text = EVTDESCBHF23435
+	}
+	picture = { 
+		trigger = { 
+			FROM = { 
+				OR = {  
+					religion = aztec
+					religion = aztec_reformed
+				}
+			} 
+		} 
+		picture = GFX_evt_bishop_aztec
+	}
+	picture = { 
+		trigger = { 
+			FROM = { 
+				NOR = {  
+					religion = aztec
+					religion = aztec_reformed
+				}
+			} 
+		} 
+		picture = GFX_evt_pagan_blood_sacrifice
+	}
+	border = GFX_event_narrative_frame_religion
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTAHF23435
+		trigger = { 
+			OR = {
+				religion = FROM
+				has_religion_feature = religion_ritual_sacrifice
+                has_religion_feature = religion_feature_amazigh
+				religion = aztec
+				religion = aztec_reformed
+			}
+		}
+	}
+	option = { 
+		name = EVTOPTBHF23435
+		trigger = { 
+			NOR = {
+				religion = FROM
+				has_religion_feature = religion_ritual_sacrifice
+                has_religion_feature = religion_feature_amazigh
+				religion = aztec
+				religion = aztec_reformed
+			}
+		}
+	}
+}
+
+#On_conversion cleanup. If the host converts to a religion without the bloodthirsty gods doctrine, the whole thing is off.
+character_event = {
+	id = HF.23458
+	desc = EVTDESCAHF23458
+	picture = { 
+		trigger = { 
+			ROOT = { 
+				OR = {  
+					religion = aztec
+					religion = aztec_reformed
+				}
+			} 
+		} 
+		picture = GFX_evt_bishop_aztec
+	}
+	picture = { 
+		trigger = { 
+			ROOT = { 
+				NOR = {  
+					religion = aztec
+					religion = aztec_reformed
+				}
+			} 
+		} 
+		picture = GFX_evt_pagan_blood_sacrifice
+	}
+	border = GFX_event_normal_frame_religion
+	hide_new = yes
+	
+	is_triggered_only = yes
+
+	has_character_flag = flag_preparing_blood_games
+
+	trigger = {
+		NOR = {
+			has_religion_feature = religion_ritual_sacrifice
+            has_religion_feature = religion_feature_amazigh
+			religion = aztec
+			religion = aztec_reformed
+		}
+	}
+	immediate = {
+		clr_character_flag = flag_preparing_blood_games
+		any_realm_character = { 
+			limit = {
+				has_opinion_modifier = {
+					modifier = opinion_blood_games_guest
+					who = ROOT
+				}
+			}
+			character_event = { id = HF.23459 } 
+			remove_opinion = { who = ROOT modifier = opinion_blood_games_guest }
+		}
+	}
+
+	option = { 
+		name = EVTOPTAHF23458
+		hidden_tooltip  = {  
+			clear_persistent_event_target = my_blood_contender
+		}
+	}
+}
+
+#Notify vassals.
+character_event = {
+	id = HF.23459
+	desc = EVTDESCAHF23459
+	picture = { 
+		trigger = { 
+			ROOT = { 
+				OR = {  
+					religion = aztec
+					religion = aztec_reformed
+				}
+			} 
+		} 
+		picture = GFX_evt_bishop_aztec
+	}
+	picture = { 
+		trigger = { 
+			ROOT = { 
+				NOR = {  
+					religion = aztec
+					religion = aztec_reformed
+				}
+			} 
+		} 
+		picture = GFX_evt_pagan_blood_sacrifice
+	}
+	border = GFX_event_normal_frame_religion
+	hide_new = yes
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTAHF23459
+		trigger  = {  
+			OR = {
+				has_religion_feature = religion_ritual_sacrifice
+                has_religion_feature = religion_feature_amazigh
+				religion = aztec
+				religion = aztec_reformed
+			}
+		}
+		hidden_tooltip  = {  
+			clear_persistent_event_target = my_blood_contender
+		}
+	}
+	option = { 
+		name = EVTOPTBHF23459
+		trigger  = {  
+			NOR = {
+				has_religion_feature = religion_ritual_sacrifice
+                has_religion_feature = religion_feature_amazigh
+				religion = aztec
+				religion = aztec_reformed
+			}
+		}
+		hidden_tooltip  = {  
+			clear_persistent_event_target = my_blood_contender
+		}
+	}
+}
+
+#Bloodthirsty Gods: The Mass Sacrifice - Available from trait tier 2 and above
+
+#Decide how many people are you going to sacrifice.
+character_event = {
+	id = HF.23462
+	desc = EVTDESCAHF23462
+	picture = { 
+		trigger = { 
+			ROOT = { 
+				OR = {  
+					religion = aztec
+					religion = aztec_reformed
+				}
+			} 
+		} 
+		picture = GFX_evt_bishop_aztec
+	}
+	picture = { 
+		trigger = { 
+			ROOT = { 
+				NOR = {  
+					religion = aztec
+					religion = aztec_reformed
+				}
+			} 
+		} 
+		picture = GFX_evt_pagan_blood_sacrifice
+	}
+	border = GFX_event_normal_frame_religion
+	hide_new = yes
+	portrait = persistent_event_target:my_blood_contender
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTAHF23462
+		add_character_modifier = { name = bloodthirsty_mass_sacrifice_bonus_3 years = 10 } 
+		religion_authority = {
+			modifier = bloodthirsty_mass_sacrifice
+			years = 100
+		}
+		if = { 
+			limit = { is_nomadic = yes } 
+			population = -2000 
+		} 
+		if = { 
+			limit = { is_nomadic = no } 
+			custom_tooltip = { text = TOOLTIP_EVTOPTAHF23462 } 
+		} 
+		add_blood_splatter_effect = yes
+		add_blood_splatter_effect = yes
+		hidden_tooltip = { 
+			any_demesne_province = { 
+				show_scope_change = no
+				if = { 
+					limit = { ROOT = { is_nomadic = no } } 
+					add_province_modifier = { name = bloodthirsty_mass_sacrifice_province_2 years = 10 stacking = yes }
+				} 
+				change_variable = { which = prosperity_value value = -40 }
+				if = { 
+					limit = { NOT = { check_variable = { which = prosperity_value value = 0 } } } 
+					set_variable = { which = prosperity_value value = 0 }
+				}
+			}
+		}
+		hidden_tooltip = { 
+			any_vassal = { 
+				limit = { 
+					higher_tier_than = BARON 
+					religion = ROOT 
+				} 
+				character_event = { id = HF.23463 } 
+			} 
+			any_vassal = { 
+				limit = { 
+					higher_tier_than = BARON 
+					NOR = { 
+						religion = ROOT  
+						religion = aztec
+						religion = aztec_reformed
+						has_religion_feature = religion_ritual_sacrifice
+                        has_religion_feature = religion_feature_amazigh
+					}
+				} 
+				character_event = { id = HF.23464 } 
+			}
+			any_independent_ruler = { 
+				limit = { 
+					war_with = ROOT
+				} 
+				character_event = { id = HF.23465 } 
+			} 
+		}
+		hidden_tooltip = { 
+			if = { 
+				limit = { this_has_super_cool_nickname_trigger = no }
+				random_list = { 
+					20 = { 
+						give_nickname = nick_the_red_storm 
+					} 
+					20 = { 
+						give_nickname = nick_the_scarlet_hands 
+					} 
+					20 = { 
+						give_nickname = nick_the_blood_monger 
+					} 
+					20 = { 
+						give_nickname = nick_the_black_skull 
+					} 
+					20 = { 
+						give_nickname = nick_the_heart_eater 
+					} 
+					20 = { 
+						give_nickname = nick_the_slaughterer 
+					} 
+					20 = { 
+						give_nickname = nick_the_soul_flayer
+					} 
+					20 = { 
+						give_nickname = nick_the_spirit_stalker 
+					} 
+					10 = { 
+						give_nickname = nick_the_crimson_reaper 
+					} 
+					10 = { 
+						give_nickname = nick_the_dreaded
+					} 
+					5 = { 
+						give_nickname = nick_the_chest_buster 
+					} 
+					70 = { #Nothing
+					} 
+				}
+			}
+			change_variable = { which = burned_hearts_points value = 15 }
+			bloodthirsty_tiered_traits_effect = yes
+		}
+		#Opinion bonus towards vassals of same religion (through event).
+		ai_chance = { factor = 10 }
+	}
+	option = { 
+		name = EVTOPTBHF23462
+		add_character_modifier = { name = bloodthirsty_mass_sacrifice_bonus_2 years = 10 } 
+		if = { 
+			limit = { is_nomadic = yes } 
+			population = -1000 
+		} 
+		if = { 
+			limit = { is_nomadic = no } 
+			custom_tooltip = { text = TOOLTIP_EVTOPTBHF23462 }
+		} 
+		add_blood_splatter_effect = yes
+		add_blood_splatter_effect = yes
+		hidden_tooltip = { 
+			any_demesne_province = { 
+				show_scope_change = no
+				if = { 
+					limit = { ROOT = { is_nomadic = no } } 
+					add_province_modifier = { name = bloodthirsty_mass_sacrifice_province_1 years = 10 stacking = yes } 
+				} 
+				change_variable = { which = prosperity_value value = -20 }
+				if = { 
+					limit = { NOT = { check_variable = { which = prosperity_value value = 0 } } } 
+					set_variable = { which = prosperity_value value = 0 }
+				}
+			}
+		}
+		hidden_tooltip = { 
+			any_vassal = { 
+				limit = { 
+					higher_tier_than = BARON 
+					religion = ROOT 
+				} 
+				character_event = { id = HF.23463 } 
+			} 
+			any_vassal = { 
+				limit = { 
+					higher_tier_than = BARON 
+					NOR = { 
+						religion = ROOT  
+						religion = aztec
+						religion = aztec_reformed
+						has_religion_feature = religion_ritual_sacrifice
+                        has_religion_feature = religion_feature_amazigh
+					}
+				} 
+				character_event = { id = HF.23464 } 
+			} 
+			any_independent_ruler = { 
+				limit = { 
+					war_with = ROOT
+				} 
+				character_event = { id = HF.23465 } 
+			}
+			change_variable = { which = burned_hearts_points value = 10 }
+			bloodthirsty_tiered_traits_effect = yes
+		}
+		ai_chance = { factor = 20 }
+	}
+	option = { 
+		name = EVTOPTCHF23462
+		add_blood_splatter_effect = yes
+		add_character_modifier = { name = bloodthirsty_mass_sacrifice_bonus_1 years = 5 } 
+		if = { 
+			limit = { is_nomadic = yes } 
+			population = -500 
+		} 
+		if = { 
+			limit = { is_nomadic = no } 
+			capital_scope = { 
+				show_scope_change = no
+				add_province_modifier = { name = bloodthirsty_mass_sacrifice_province_1 years = 10 stacking = yes }
+				hidden_tooltip = { 
+					change_variable = { which = prosperity_value value = -10 } 
+					if = { 
+						limit = { NOT = { check_variable = { which = prosperity_value value = 0 } } } 
+						set_variable = { which = prosperity_value value = 0 }
+					}
+				}
+			}
+		} 
+		hidden_tooltip = { 
+			capital_scope = { 
+				change_variable = { which = prosperity_value value = -10 } 
+				if = { 
+					limit = { NOT = { check_variable = { which = prosperity_value value = 0 } } } 
+					set_variable = { which = prosperity_value value = 0 }
+				}
+			}
+			any_vassal = { 
+				limit = { 
+					higher_tier_than = BARON 
+					religion = ROOT 
+				} 
+				character_event = { id = HF.23463 } 
+			} 
+			any_vassal = { 
+				limit = { 
+					higher_tier_than = BARON 
+					NOR = { 
+						religion = ROOT  
+						AND = { 
+							religion = aztec
+							NOT = { has_religion_feature = religion_peaceful }
+						}
+						AND = { 
+							religion = aztec_reformed
+							NOT = { has_religion_feature = religion_peaceful }
+						}
+						has_religion_feature = religion_ritual_sacrifice
+                        has_religion_feature = religion_feature_amazigh
+					}
+				} 
+				character_event = { id = HF.23464 } 
+			} 
+			any_independent_ruler = { 
+				limit = { 
+					war_with = ROOT
+				} 
+				character_event = { id = HF.23465 } 
+			}
+			change_variable = { which = burned_hearts_points value = 5 }
+			bloodthirsty_tiered_traits_effect = yes
+		}
+		ai_chance = { factor = 30 }
+	}
+	option = { #Nothing
+		name = EVTOPTDHF23462
+		hidden_tooltip = { remove_character_modifier = bloodthirsty_mass_sacrifice_cooldown }
+		ai_chance = { factor = 0 }
+	}
+}
+
+#War enemy notified.
+character_event = {
+	id = HF.23465
+	desc = EVTDESCAHF23465
+	picture = { 
+		trigger = { 
+			ROOT = { 
+				OR = {  
+					religion = aztec
+					religion = aztec_reformed
+				}
+			} 
+		} 
+		picture = GFX_evt_bishop_aztec
+	}
+	picture = { 
+		trigger = { 
+			ROOT = { 
+				NOR = {  
+					religion = aztec
+					religion = aztec_reformed
+				}
+			} 
+		} 
+		picture = GFX_evt_pagan_blood_sacrifice
+	}
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTAHF23465
+		trigger = { 
+			OR = {
+				religion = aztec
+				religion = aztec_reformed
+				has_religion_feature = religion_ritual_sacrifice
+                has_religion_feature = religion_feature_amazigh
+			}
+		}
+		if = { 
+			limit = { NOT = { trait = stressed } }
+			random = { 
+				chance = 20 
+				add_trait = stressed 
+			}
+		}
+		add_character_modifier = {
+			name = enemy_made_mass_sacrifice 
+			years = 2 
+		}
+	}
+	option = { 
+		name = EVTOPTBHF23465
+		trigger = { 
+			NOR = {
+				religion = aztec
+				religion = aztec_reformed
+				has_religion_feature = religion_ritual_sacrifice
+                has_religion_feature = religion_feature_amazigh
+			}
+		}
+	}
+}
+
+# Aztecs Sacrifice Prisoner
+character_event = {
+	id = SSI.60
+	desc = {
+		trigger = {
+			NOR = {
+				religion = aztec
+				religion = aztec_reformed
+				has_religion_feature = religion_ritual_sacrifice
+                has_religion_feature = religion_feature_amazigh
+			}
+		}
+		text = EVTDESC_SSI_060
+	}
+	desc = {
+		trigger = {
+			OR = {
+				religion = aztec
+				religion = aztec_reformed
+				has_religion_feature = religion_ritual_sacrifice
+                has_religion_feature = religion_feature_amazigh
+			}
+		}
+		text = EVTDESC_SSI_060_B
+	}
+	
+	picture = GFX_evt_bishop_aztec
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SSI_060
+		trigger = {
+			NOR = {
+				religion = aztec
+				religion = aztec_reformed
+				has_religion_feature = religion_ritual_sacrifice
+                has_religion_feature = religion_feature_amazigh
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB_SSI_060
+		trigger = {
+			OR = {
+				religion = aztec
+				religion = aztec_reformed
+				has_religion_feature = religion_ritual_sacrifice
+                has_religion_feature = religion_feature_amazigh
+			}
+		}
+	}
+}
