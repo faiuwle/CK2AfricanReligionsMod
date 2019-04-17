@@ -152,6 +152,10 @@ tooltip_bori_elector_vote_possessed;[From.GetSheHeCap] has the wisdom of a bori 
 tooltip_bori_elector_possessed_ruler;The bori spirit possessing my liege surely knows best;;;;;;;;;;;;;x
 tooltip_elector_vote_chiroma;[From.GetSheHeCap] is the §YChiroma§!, the position traditionally held by the heir apparent;;;;;;;;;;;;;x
 eldership_rules_afr;Eldership;;;;;;;;;;;;;x
+religion_feature_a_tag_roog;Way of the Divine;;;;;;;;;;;;;x
+religion_feature_a_tag_roog_desc;In order to edify the faith we shall unify the many traditions of life and divination practiced by the different nations of the land.;;;;;;;;;;;;;x
+religion_feature_amazigh;Numidian Faith;;;;;;;;;;;;;x
+religion_feature_amazigh_desc;As the heirs of an antique land we must revive all the customs practiced by the kings of Carthage and Numidia.;;;;;;;;;;;;;x
 vassalize_inna;Vassalize the Inna;;;;;;;;;;;;;x
 vassalize_inna_desc;The Inna, our spiritual mother, deserves the loving protection of a faithful ruler. As her liege I shall provide that protection.;;;;;;;;;;;;;x
 exalt_inna;Exalt the Inna;;;;;;;;;;;;;x
