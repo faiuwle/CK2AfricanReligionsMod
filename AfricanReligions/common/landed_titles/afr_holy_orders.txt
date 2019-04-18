@@ -72,7 +72,7 @@ d_orphans_of_numidia = {
 	holy_order = yes
 	
 	# Parent Religion 
-	religion = amazigh_reformed
+	religion = amazigh
 	
 	culture = maghreb_arabic
 	
