@@ -45,7 +45,7 @@ d_sacred_tyeddo = {
 	# Parent Religion 
 	religion = a_tag_roog_reformed
 	
-	culture = manden
+	culture = soninke
 	
 	# Cannot be held as a secondary title
 	primary = yes
