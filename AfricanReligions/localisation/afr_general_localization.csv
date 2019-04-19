@@ -37,11 +37,17 @@ SUPREME_SALTIGUE_FOA;Your Holiness;;;;;;;;;;;;;x
 GUANAMENE;Guañameñe;;;;;;;;;;;;;x
 GUANAMENE_FOA;Your Holiness;;;;;;;;;;;;;x
 k_bori;The Bori Matriarchy;;;;;;;;;;;;;x
+k_bori_adj;Matriarchal;;;;;;;;;;;;;x
 d_a_tag_roog;The Order of the Saltigue;;;;;;;;;;;;;x
+d_a_tag_roog_adj;Saltigue;;;;;;;;;;;;;x
 d_amazigh;The Church of the Amazigh People;;;;;;;;;;;;;x
+d_amazigh_adj;Holy Amazigh;;;;;;;;;;;;;x
 d_living_tan_garki;Living Tan Garki;;;;;;;;;;;;;x
+d_living_tan_garki_adj;Tan Garki;;;;;;;;;;;;;x
 d_sacred_tyeddo;Sacred Tyeddo;;;;;;;;;;;;;x
+d_sacred_tyeddo_adj;Tyeddo;;;;;;;;;;;;;x
 d_orphans_of_numidia;Orphans of Numidia;;;;;;;;;;;;;x
+d_orphans_of_numidia_adj;Orphan;;;;;;;;;;;;;x
 temple_baron_female_bori;Magadja;;;;;;;;;;;;;x
 temple_count_female_bori;Chief Magadja;;;;;;;;;;;;;x
 temple_duke_female_bori;Great Magadja;;;;;;;;;;;;;x
