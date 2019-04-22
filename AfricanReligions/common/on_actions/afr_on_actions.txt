@@ -3,3 +3,11 @@ on_startup = {
         AFRREL.001
     }
 }
+
+on_yearly_pulse = {
+    events = {
+        AFRREL.006  # Living Tan Garki
+        AFRREL.008  # Sacred Tyeddo
+        AFRREL.010  # Orphans of Numidia
+    }
+}
