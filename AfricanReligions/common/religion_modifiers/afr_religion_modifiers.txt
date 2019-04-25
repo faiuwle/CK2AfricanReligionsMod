@@ -1,0 +1,9 @@
+amazigh_resurgence = {
+    authority = -10
+    years = 100
+}
+
+african_revival = {
+    authority = 5
+    years = 20
+}

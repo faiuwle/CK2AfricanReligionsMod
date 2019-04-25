@@ -110,6 +110,31 @@ narrative_event = {
 				}
 			}
 		}
+        if = { # If Amazigh reformer owns Rome or Constantinople, Hellenic loses MA
+            limit = {
+                ROOT = {
+                    religion = amazigh_reformed
+                    OR = {
+                        completely_controls = c_roma
+                        completely_controls = c_byzantion
+                    }
+                }
+            }
+            random_playable_ruler = {
+                limit = { religion = hellenic_pagan }
+                religion_authority = {
+                    modifier = amazigh_resurgence
+                    years = 100
+                }
+            }
+            random_playable_ruler = {
+                limit = { religion = hellenic_pagan_reformed }
+                religion_authority = {
+                    modifier = amazigh_resurgence
+                    years = 100
+                }
+            }
+        }
 		if = {
 			limit = { #If religion being reformed is western paganism, other western pagan are emboldened, facilitating a chain reaction of reformation.
 				ROOT = { 
@@ -182,6 +207,36 @@ narrative_event = {
 				}
 			} 
 		}
+        if = { # Reforming an African religion, other African religions are emboldened
+            limit = { ROOT = { religion_group = african_group } }
+            random_playable_ruler = {
+                limit = { religion = bori }
+                religion_authority = {
+                    modifier = african_revival
+                    years = 20
+                }
+            }
+            if = {
+                limit = { ROOT = { NOT = { religion = a_tag_roog_reformed } } }
+                random_playable_ruler = {
+                    limit = { religion = a_tag_roog }
+                    religion_authority = {
+                        modifier = african_revival
+                        years = 20
+                    }
+                }
+            }
+            if = {
+                limit = { ROOT = { NOT = { religion = amazigh_reformed } } }
+                random_playable_ruler = {
+                    limit = { religion = amazigh }
+                    religion_authority = {
+                        modifier = african_revival
+                        years = 20
+                    }
+                }
+            }
+        }
 		if = {
 			limit = { #Modifier not applied correctly by pagan reformation screen.
 				ROOT = { has_religion_feature = religion_cosmopolitan }
