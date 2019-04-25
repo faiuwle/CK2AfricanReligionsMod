@@ -26,6 +26,7 @@ d_a_tag_roog = {
     title_female = "SUPREME_SALTIGUE"
     foa = "SUPREME_SALTIGUE_FOA"
     
+    landless = yes
     primary = yes
     dynasty_title_names = no
 }
@@ -42,6 +43,7 @@ d_amazigh = {
     title_female = "GUANAMENE"
     foa = "GUANAMENE_FOA"
     
+    landless = yes
     primary = yes
     dynasty_title_names = no
 }
