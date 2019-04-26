@@ -3686,7 +3686,7 @@ d_ghanan_band = {
 	}
 	
 	# Parent Religion 
-	religion = west_african_pagan
+	religion = a_tag_roog
 	
 	culture = manden
 	
@@ -51257,7 +51257,7 @@ d_african_massive = { # Massive Merc
 	hire_range = 900
 	
 	# Parent Religion 
-	religion = west_african_pagan
+	religion = a_tag_roog
 	
 	# Parent Culture
 	culture = manden
@@ -51289,7 +51289,7 @@ d_african_large = { # Large Merc
 	hire_range = 900
 	
 	# Parent Religion 
-	religion = west_african_pagan
+	religion = a_tag_roog
 	
 	# Parent Culture
 	culture = soninke
@@ -51324,7 +51324,7 @@ d_african_mid = { # Mid Merc
 	hire_range = 900
 	
 	# Parent Religion 
-	religion = west_african_pagan
+	religion = amazigh
 	
 	# Parent Culture
 	culture = nubian
@@ -51356,7 +51356,7 @@ d_african_mid_low_1 = { # Mid-Low Merc
 	hire_range = 900
 	
 	# Parent Religion 
-	religion = west_african_pagan
+	religion = a_tag_roog
 	
 	# Parent Culture
 	culture = soninke
@@ -51388,7 +51388,7 @@ d_african_mid_low_2 = { # Big merc
 	hire_range = 900
 	
 	# Parent Religion 
-	religion = west_african_pagan
+	religion = bori
 	
 	# Parent Culture
 	culture = hausa
@@ -51420,7 +51420,7 @@ d_african_low = { # Small Merc
 	hire_range = 900
 	
 	# Parent Religion 
-	religion = west_african_pagan
+	religion = a_tag_roog
 	
 	# Parent Culture
 	culture = songhay
@@ -51452,7 +51452,7 @@ d_african_tiny = { # Tiny Merc
 	hire_range = 900
 	
 	# Parent Religion 
-	religion = west_african_pagan
+	religion = amazigh
 	
 	# Parent Culture
 	culture = maghreb_arabic
