@@ -2750,7 +2750,7 @@ african_group = {
         color = { 150 85 35 }
 
         crusade_name = GREAT_HOLY_WAR
-        scripture_name = THE_KANO_CHRONICLE
+        scripture_name = KIRARI_OF_MAGIRO
         priest_title = MAGADJA
 
         high_god_name = GOD_MAGIRO
@@ -2947,7 +2947,7 @@ african_group = {
         color = { 205 90 15 }
 
         crusade_name = GREAT_HOLY_WAR
-        scripture_name = THE_LEGENDS
+        scripture_name = BAAL_CYCLE
         priest_title = MARABOUT
 
         high_god_name = GOD_TANIT
@@ -3007,7 +3007,7 @@ african_group = {
         color = { 205 140 95 }
 
         crusade_name = GREAT_HOLY_WAR
-        scripture_name = THE_LEGENDS
+        scripture_name = BAAL_CYCLE
         priest_title = MARABOUT
 
         high_god_name = GOD_TANIT
