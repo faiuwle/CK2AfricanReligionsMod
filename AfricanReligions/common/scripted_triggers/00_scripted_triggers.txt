@@ -3232,6 +3232,10 @@ has_sympathy_for_true_religion_of_prev_trigger = {
 			trait = sympathy_indian
 			PREV = { true_religion_group_indian_group_trigger = yes }
 		}
+		AND = {
+			trait = sympathy_african
+			PREV = { true_religion_group = african_group }
+		}
 	}
 }
 
@@ -3260,6 +3264,10 @@ has_sympathy_for_true_religion_of_root_trigger = {
 		AND = {
 			trait = sympathy_indian
 			ROOT = { true_religion_group_indian_group_trigger = yes }
+		}
+		AND = {
+			trait = sympathy_african
+			ROOT = { true_religion_group = african_group }
 		}
 	}
 }
@@ -3306,6 +3314,10 @@ ok_sr_sympathy_mission_target_trigger = {
 			AND = {
 				true_religion_group = indian_group
 				PREV = { trait = sympathy_indian }
+			}
+			AND = {
+				true_religion_group = african_group
+				PREV = { trait = sympathy_african }
 			}
 		}
 	}
@@ -8525,6 +8537,7 @@ has_any_sympathy_trait_trigger = {
 		trait = sympathy_zoroastrianism
 		trait = sympathy_judaism
 		trait = sympathy_indian
+        trait = sympathy_african
 	}
 }
 
