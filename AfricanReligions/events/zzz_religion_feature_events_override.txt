@@ -1755,7 +1755,7 @@ character_event = {
                 religion = aztec
                 religion = aztec_reformed
                 has_religion_feature = religion_ritual_sacrifice
-                has_religion_feature = religion_amazigh
+                has_religion_feature = religion_feature_amazigh
             } 
 			FROM = { location = { NOT = { religion = ROOT } } } #Only if province is of some other religion.
 		}

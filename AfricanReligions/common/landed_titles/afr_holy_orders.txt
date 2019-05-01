@@ -1,0 +1,86 @@
+d_living_tan_garki ={
+	color={ 120 120 55 }
+	
+	graphical_culture = westafricanholygfx
+	
+	capital = 1746 # Kano
+
+	title = "WARCHIEF"
+	foa = "WARCHIEF_FOA"
+	
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = bori
+	
+	culture = hausa
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to donations, etc
+	monthly_income = 2 # (Must be an integer between 1 and 512)
+
+	mercenary_type = spirit_guardians_composition
+}
+
+d_sacred_tyeddo = {
+	color={ 120 120 55 }
+	
+	graphical_culture = westafricanholygfx
+	
+	capital = 914 # Gao
+
+	title = "WARCHIEF"
+	foa = "WARCHIEF_FOA"
+	
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = a_tag_roog_reformed
+	
+	culture = soninke
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to donations, etc
+	monthly_income = 2 # (Must be an integer between 1 and 512)
+
+	mercenary_type = spirit_guardians_composition
+}
+
+d_orphans_of_numidia = {
+	color={ 120 120 55 }
+	
+	graphical_culture = westafricanholygfx
+	
+	capital = 817 # Tunis
+
+	title = "WARCHIEF"
+	foa = "WARCHIEF_FOA"
+	
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = amazigh
+	
+	culture = maghreb_arabic
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to donations, etc
+	monthly_income = 2 # (Must be an integer between 1 and 512)
+
+	mercenary_type = bektashi_composition
+}

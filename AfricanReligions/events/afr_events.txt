@@ -59,4 +59,114 @@ character_event = {
         }
     }
 }
-        
+
+# Event announcing the Living Tan Garki
+narrative_event = {
+    id = AFRREL.007
+    desc = EVTDESC_AFRREL007
+    title = d_living_tan_garki
+    picture = GFX_evt_melee
+    portrait = d_living_tan_garki
+    
+    is_triggered_only = yes
+    
+    only_playable = yes
+    
+    option = {
+        trigger = {
+            religion = bori
+        }
+        name = EVTOPTA_AFRREL007
+    }
+    option = {
+        trigger = {
+            NOT = { religion = bori }
+            religion_group = african_group
+        }
+        name = EVTOPTB_AFRREL007
+    }
+    option = {
+        trigger = {
+            NOT = { religion_group = african_group }
+        }
+        name = EVTOPTC_AFRREL007
+    }
+}
+
+# Event announcing the Sacred Tyeddo
+narrative_event = {
+    id = AFRREL.009
+    desc = EVTDESC_AFRREL009
+    title = d_sacred_tyeddo
+    picture = GFX_evt_melee
+    portrait = d_sacred_tyeddo
+    
+    is_triggered_only = yes
+    
+    only_playable = yes
+    
+    option = {
+        trigger = {
+            religion = a_tag_roog_reformed
+        }
+        name = EVTOPTA_AFRREL009
+    }
+    option = {
+        trigger = {
+            NOT = { religion = a_tag_roog_reformed }
+            religion_group = african_group
+        }
+        name = EVTOPTB_AFRREL009
+    }
+    option = {
+        trigger = {
+            NOT = { religion_group = african_group }
+        }
+        name = EVTOPTC_AFRREL009
+    }
+}
+
+# Event announcing the Orphans of Numidia
+narrative_event = {
+    id = AFRREL.011
+    desc = EVTDESC_AFRREL011
+    title = d_orphans_of_numidia
+    picture = GFX_evt_melee
+    portrait = d_orphans_of_numidia
+    
+    is_triggered_only = yes
+    
+    only_playable = yes
+    
+    option = {
+        trigger = {
+            OR = {
+                AND = {
+                    religion = amazigh
+                    NOT = { has_global_flag = amazigh_reformation }
+                }
+                religion = amazigh_reformed
+            }
+        }
+        name = EVTOPTA_AFRREL011
+    }
+    option = {
+        trigger = {
+            NOR = {
+                AND = {
+                    religion = amazigh
+                    NOT = { has_global_flag = amazigh_reformation }
+                }
+                religion = amazigh_reformed
+            }
+            religion_group = african_group
+        }
+        name = EVTOPTB_AFRREL011
+    }
+    option = {
+        trigger = {
+            NOT = { religion_group = african_group }
+        }
+        name = EVTOPTC_AFRREL011
+    }
+}
