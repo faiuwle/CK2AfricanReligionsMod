@@ -22,6 +22,535 @@ character_event = {
             culture = hausa
         }
         abdicate_to = new_character
-        death = { death_reason = death_vanished }
+        death = { death_reason = death_vanished } # It's awkward if he's still around afterwards
+    }
+}
+
+# on_yearly_pulse Create the Living Tan Garki if conditions apply
+character_event = {
+    id = AFRREL.006
+    hide_window = yes
+    is_triggered_only = yes
+    only_playable = yes
+    religion = bori
+    has_dlc = "Sons of Abraham"
+    
+    trigger = {
+        NOT = { is_title_active = d_living_tan_garki }
+        OR = {
+            1746 = { # Kano
+                holder_scope = { 
+                    NOT = { religion_group = african_group }
+                    top_liege = { NOT = { religion_group = african_group } }
+                }
+            }
+            1739 = { # Djimi
+                holder_scope = {
+                    NOT = { religion_group = african_group }
+                    top_liege = { NOT = { religion_group = african_group } }
+                }
+            }
+            has_global_flag = muslim_jihads_unlocked
+            year = 1066
+        }
+    }
+    
+    immediate = {
+        activate_title = { title = d_living_tan_garki status = yes }
+		create_character = {
+			dynasty = random
+			religion = bori
+            female = no
+			culture = hausa
+			age = 33
+			trait = brilliant_strategist
+			trait = zealous
+            trait = humble
+            trait = ambitious
+            trait = strategist
+			trait = holy_warrior
+			random_traits = no
+		}
+		new_character = {
+			wealth = 500
+			d_living_tan_garki = {
+				grant_title = PREV
+			}
+			set_government_type = order_government
+			save_event_target_as = leader_of_living_tan_garki
+            create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = bori
+					culture = hausa
+					female = no
+					age = 16
+				}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = bori
+				culture = hausa
+				female = no
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = bori
+				culture = hausa
+				female = no
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = bori
+				culture = hausa
+				female = no
+				age = 20
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = bori
+				culture = hausa
+				female = no
+				age = 25
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = bori
+				culture = hausa
+				female = no
+				age = 26
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = bori
+				culture = hausa
+				female = no
+				age = 28
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = bori
+				culture = hausa
+				female = yes
+				age = 16
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = bori
+				culture = hausa
+				female = yes
+				age = 17
+			}
+        }
+        any_playable_ruler = {
+			limit = {
+				ai = no
+				OR = {
+					religion = bori
+					capital_scope = { region = world_africa }
+					capital_scope = { region = world_europe_west_iberia }
+					capital_scope = { region = world_europe_south }
+					capital_scope = { region = world_middle_east }
+				}
+			}
+			narrative_event = { id = AFRREL.007 days = 1 random = 20 }
+		}
+    }
+}
+
+# on_yearly_pulse Create the Sacred Tyeddo if conditions apply
+character_event = {
+    id = AFRREL.008
+    hide_window = yes
+    is_triggered_only = yes
+    only_playable = yes
+    religion = a_tag_roog_reformed
+    has_dlc = "Sons of Abraham"
+    
+    trigger = {
+        NOT = { is_title_active = d_sacred_tyeddo }
+        OR = {
+            914 = { # Gao
+                holder_scope = { 
+                    NOT = { religion_group = african_group }
+                    top_liege = { NOT = { religion_group = african_group } }
+                }
+            }
+            911 = { # Timbuktu
+                holder_scope = {
+                    NOT = { religion_group = african_group }
+                    top_liege = { NOT = { religion_group = african_group } }
+                }
+            }
+            1759 = { # Wagadou
+                holder_scope = {
+                    NOT = { religion_group = african_group }
+                    top_liege = { NOT = { religion_group = african_group } }
+                }
+            }
+            has_global_flag = muslim_jihads_unlocked
+            year = 1066
+        }
+    }
+    
+    immediate = {
+        activate_title = { title = d_sacred_tyeddo status = yes }
+		create_character = {
+			dynasty = random
+			religion = a_tag_roog_reformed
+            female = no
+			culture = soninke
+			age = 33
+			trait = brilliant_strategist
+			trait = zealous
+            trait = humble
+            trait = ambitious
+            trait = strategist
+			trait = holy_warrior
+			random_traits = no
+		}
+		new_character = {
+			wealth = 500
+			d_sacred_tyeddo = {
+				grant_title = PREV
+			}
+			set_government_type = order_government
+			save_event_target_as = leader_of_living_tan_garki
+            create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = a_tag_roog_reformed
+					culture = soninke
+					female = no
+					age = 16
+				}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = a_tag_roog_reformed
+				culture = soninke
+				female = no
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = a_tag_roog_reformed
+				culture = soninke
+				female = no
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = a_tag_roog_reformed
+				culture = soninke
+				female = no
+				age = 20
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = a_tag_roog_reformed
+				culture = soninke
+				female = no
+				age = 25
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = a_tag_roog_reformed
+				culture = soninke
+				female = no
+				age = 26
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = a_tag_roog_reformed
+				culture = soninke
+				female = no
+				age = 28
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = a_tag_roog_reformed
+				culture = soninke
+				female = yes
+				age = 16
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = a_tag_roog_reformed
+				culture = soninke
+				female = yes
+				age = 17
+			}
+        }
+        any_playable_ruler = {
+			limit = {
+				ai = no
+				OR = {
+					religion = a_tag_roog_reformed
+					capital_scope = { region = world_africa }
+					capital_scope = { region = world_europe_west_iberia }
+					capital_scope = { region = world_europe_south }
+					capital_scope = { region = world_middle_east }
+				}
+			}
+			narrative_event = { id = AFRREL.009 days = 1 random = 20 }
+		}
+    }
+}
+
+# on_yearly_pulse Create the Orphans of Numidia
+character_event = {
+    id = AFRREL.010
+    hide_window = yes
+    is_triggered_only = yes
+    only_playable = yes
+    has_dlc = "Sons of Abraham"
+    
+    trigger = {
+        OR = {
+            religion = amazigh
+            religion = amazigh_reformed
+        }
+        NOT = { is_title_active = d_orphans_of_numidia }
+    }
+    
+    immediate = {
+        activate_title = { title = d_orphans_of_numidia status = yes }
+        if = {
+            limit = { has_global_flag = amazigh_reformation }
+            d_orphans_of_numidia = { religion = amazigh_reformed }
+            create_character = {
+                dynasty = random
+                religion = amazigh_reformed
+                female = no
+                culture = maghreb_arabic
+                age = 33
+                trait = brilliant_strategist
+                trait = zealous
+                trait = humble
+                trait = ambitious
+                trait = strategist
+                trait = holy_warrior
+                random_traits = no
+            }
+            new_character = {
+                wealth = 500
+                d_orphans_of_numidia = {
+                    grant_title = PREV
+                }
+                set_government_type = order_government
+                save_event_target_as = leader_of_orphans_of_numidia
+                create_character = {
+                        random_traits = yes
+                        dynasty = random
+                        religion = amazigh_reformed
+                        culture = maghreb_arabic
+                        female = no
+                        age = 16
+                    }
+                create_character = {
+                    random_traits = yes
+                    dynasty = random
+                    religion = amazigh_reformed
+                    culture = maghreb_arabic
+                    female = no
+                    age = 18
+                }
+                create_character = {
+                    random_traits = yes
+                    dynasty = random
+                    religion = amazigh_reformed
+                    culture = maghreb_arabic
+                    female = no
+                    age = 18
+                }
+                create_character = {
+                    random_traits = yes
+                    dynasty = random
+                    religion = amazigh_reformed
+                    culture = maghreb_arabic
+                    female = no
+                    age = 20
+                }
+                create_character = {
+                    random_traits = yes
+                    dynasty = random
+                    religion = amazigh_reformed
+                    culture = maghreb_arabic
+                    female = no
+                    age = 25
+                }
+                create_character = {
+                    random_traits = yes
+                    dynasty = random
+                    religion = amazigh_reformed
+                    culture = maghreb_arabic
+                    female = no
+                    age = 26
+                }
+                create_character = {
+                    random_traits = yes
+                    dynasty = random
+                    religion = amazigh_reformed
+                    culture = maghreb_arabic
+                    female = no
+                    age = 28
+                }
+                create_character = {
+                    random_traits = yes
+                    dynasty = random
+                    religion = amazigh_reformed
+                    culture = maghreb_arabic
+                    female = yes
+                    age = 16
+                }
+                create_character = {
+                    random_traits = yes
+                    dynasty = random
+                    religion = amazigh_reformed
+                    culture = maghreb_arabic
+                    female = yes
+                    age = 17
+                }
+            }
+            any_playable_ruler = {
+                limit = {
+                    ai = no
+                    OR = {
+                        religion = amazigh_reformed
+                        capital_scope = { region = world_africa }
+                        capital_scope = { region = world_europe_west_iberia }
+                        capital_scope = { region = world_europe_south }
+                        capital_scope = { region = world_middle_east }
+                    }
+                }
+                narrative_event = { id = AFRREL.011 days = 1 random = 20 }
+            }
+        }
+        else = {
+            create_character = {
+                dynasty = random
+                religion = amazigh
+                female = no
+                culture = maghreb_arabic
+                age = 33
+                trait = brilliant_strategist
+                trait = zealous
+                trait = humble
+                trait = ambitious
+                trait = strategist
+                trait = holy_warrior
+                random_traits = no
+            }
+            new_character = {
+                wealth = 500
+                d_orphans_of_numidia = {
+                    grant_title = PREV
+                }
+                set_government_type = order_government
+                save_event_target_as = leader_of_orphans_of_numidia
+                create_character = {
+                        random_traits = yes
+                        dynasty = random
+                        religion = amazigh
+                        culture = maghreb_arabic
+                        female = no
+                        age = 16
+                    }
+                create_character = {
+                    random_traits = yes
+                    dynasty = random
+                    religion = amazigh
+                    culture = maghreb_arabic
+                    female = no
+                    age = 18
+                }
+                create_character = {
+                    random_traits = yes
+                    dynasty = random
+                    religion = amazigh
+                    culture = maghreb_arabic
+                    female = no
+                    age = 18
+                }
+                create_character = {
+                    random_traits = yes
+                    dynasty = random
+                    religion = amazigh
+                    culture = maghreb_arabic
+                    female = no
+                    age = 20
+                }
+                create_character = {
+                    random_traits = yes
+                    dynasty = random
+                    religion = amazigh
+                    culture = maghreb_arabic
+                    female = no
+                    age = 25
+                }
+                create_character = {
+                    random_traits = yes
+                    dynasty = random
+                    religion = amazigh
+                    culture = maghreb_arabic
+                    female = no
+                    age = 26
+                }
+                create_character = {
+                    random_traits = yes
+                    dynasty = random
+                    religion = amazigh
+                    culture = maghreb_arabic
+                    female = no
+                    age = 28
+                }
+                create_character = {
+                    random_traits = yes
+                    dynasty = random
+                    religion = amazigh
+                    culture = maghreb_arabic
+                    female = yes
+                    age = 16
+                }
+                create_character = {
+                    random_traits = yes
+                    dynasty = random
+                    religion = amazigh
+                    culture = maghreb_arabic
+                    female = yes
+                    age = 17
+                }
+            }
+            any_playable_ruler = {
+                limit = {
+                    ai = no
+                    OR = {
+                        religion = amazigh
+                        capital_scope = { region = world_africa }
+                        capital_scope = { region = world_europe_west_iberia }
+                        capital_scope = { region = world_europe_south }
+                        capital_scope = { region = world_middle_east }
+                    }
+                }
+                narrative_event = { id = AFRREL.011 days = 1 random = 20 }
+            }       
+        }
     }
 }

@@ -3686,7 +3686,7 @@ d_ghanan_band = {
 	}
 	
 	# Parent Religion 
-	religion = west_african_pagan
+	religion = a_tag_roog
 	
 	culture = manden
 	
@@ -6746,7 +6746,7 @@ e_byzantium = {
 					pentarchy = orthodox
                     pentarchy = monothelite
                     pentarchy = iconoclast
-                    pentarchy = paulican
+                    pentarchy = paulician
 					turkish = "Ayasofya"
 				}
 				b_galata = {
@@ -10882,7 +10882,7 @@ e_italy = {
 					pentarchy = orthodox
                     pentarchy = monothelite
                     pentarchy = iconoclast
-                    pentarchy = paulican
+                    pentarchy = paulician
 					used_for_dynasty_names = no
 					
 					italian = Roma
@@ -33428,7 +33428,7 @@ e_arabia = {
 					pentarchy = orthodox
                     pentarchy = monothelite
                     pentarchy = iconoclast
-                    pentarchy = paulican
+                    pentarchy = paulician
 				}
 				b_abukir = {
 				}
@@ -34251,7 +34251,7 @@ e_arabia = {
 					pentarchy = orthodox
                     pentarchy = monothelite
                     pentarchy = iconoclast
-                    pentarchy = paulican
+                    pentarchy = paulician
 				}
 				b_nablus = {
 				}
@@ -34560,10 +34560,10 @@ e_arabia = {
 				holy_site = monophysite
 				
 				b_antiocheia = {
-					pentarchy = orthdox
+					pentarchy = orthodox
                     pentarchy = monothelite
                     pentarchy = iconoclast
-                    pentarchy = paulican
+                    pentarchy = paulician
 				}
 				b_latakiah = {
 				}
@@ -51257,7 +51257,7 @@ d_african_massive = { # Massive Merc
 	hire_range = 900
 	
 	# Parent Religion 
-	religion = west_african_pagan
+	religion = a_tag_roog
 	
 	# Parent Culture
 	culture = manden
@@ -51289,7 +51289,7 @@ d_african_large = { # Large Merc
 	hire_range = 900
 	
 	# Parent Religion 
-	religion = west_african_pagan
+	religion = a_tag_roog
 	
 	# Parent Culture
 	culture = soninke
@@ -51324,7 +51324,7 @@ d_african_mid = { # Mid Merc
 	hire_range = 900
 	
 	# Parent Religion 
-	religion = west_african_pagan
+	religion = amazigh
 	
 	# Parent Culture
 	culture = nubian
@@ -51356,7 +51356,7 @@ d_african_mid_low_1 = { # Mid-Low Merc
 	hire_range = 900
 	
 	# Parent Religion 
-	religion = west_african_pagan
+	religion = a_tag_roog
 	
 	# Parent Culture
 	culture = soninke
@@ -51388,7 +51388,7 @@ d_african_mid_low_2 = { # Big merc
 	hire_range = 900
 	
 	# Parent Religion 
-	religion = west_african_pagan
+	religion = bori
 	
 	# Parent Culture
 	culture = hausa
@@ -51420,7 +51420,7 @@ d_african_low = { # Small Merc
 	hire_range = 900
 	
 	# Parent Religion 
-	religion = west_african_pagan
+	religion = a_tag_roog
 	
 	# Parent Culture
 	culture = songhay
@@ -51452,7 +51452,7 @@ d_african_tiny = { # Tiny Merc
 	hire_range = 900
 	
 	# Parent Religion 
-	religion = west_african_pagan
+	religion = amazigh
 	
 	# Parent Culture
 	culture = maghreb_arabic
