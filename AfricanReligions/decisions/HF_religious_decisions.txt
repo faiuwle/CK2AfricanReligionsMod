@@ -468,6 +468,7 @@ decisions = {
 				trait = sympathy_zoroastrianism
 				trait = sympathy_judaism
 				trait = sympathy_indian
+                trait = sympathy_african
 				has_character_flag = flag_picking_sympathy
 			}
 			OR = { 
@@ -881,6 +882,71 @@ decisions = {
 									}
 									any_demesne_province = {
 										religion_group = indian_group
+									}
+								}
+							}
+						}
+						100 = {
+							add_trait = sympathy_african
+							
+							modifier = {
+								factor = 0
+								religion_group = african_group
+							}
+							modifier = { # Prioritize getting a sympathy trait that is useful
+								factor = 100
+								OR = {
+									any_demesne_province = {
+										religion_group = african_group
+									}
+									any_vassal = {
+										religion_group = african_group
+									}
+								}
+							}
+							modifier = { # Otherwise try to emulate your liege
+								factor = 5
+								NOR = {
+									any_demesne_province = {
+										NOT = { religion_group = african_group }
+									}
+									any_vassal = {
+										NOT = { religion_group = african_group }
+									}
+								}
+								any_liege = {
+									OR = {
+										AND = {
+											trait = sympathy_african
+											religion = ROOT
+										}
+										religion_group = african_group
+									}
+								}	
+							}
+							modifier = {
+								factor = 0
+								NOR = {
+									any_liege = {
+										OR = {
+											AND = {
+												trait = sympathy_african
+												religion = ROOT
+											}
+											religion_group = african_group
+										}
+									}
+									spouse = {
+										religion_group = african_group
+									}
+									any_courtier_or_vassal = {
+										religion_group = african_group
+									}
+									any_neighbor_independent_ruler = {
+										religion_group = african_group
+									}
+									any_demesne_province = {
+										religion_group = african_group
 									}
 								}
 							}

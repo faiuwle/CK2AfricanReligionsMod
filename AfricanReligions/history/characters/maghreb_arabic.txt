@@ -9158,7 +9158,7 @@
 	dynasty=1059962
 	religion="sunni"
 	culture="maghreb_arabic"
-	trait=sympathy_pagans
+	trait=sympathy_african
 	1040.1.1={
 		birth = yes
 	}
@@ -9172,7 +9172,7 @@
 	religion="sunni"
 	culture="maghreb_arabic"
 	father=248816
-	trait=sympathy_pagans
+	trait=sympathy_african
 	1067.1.1={
 		birth = yes
 	}
@@ -9186,7 +9186,7 @@
 	religion="sunni"
 	culture="maghreb_arabic"
 	father=248804
-	trait=sympathy_pagans
+	trait=sympathy_african
 	1086.1.1={
 		birth = yes
 	}
@@ -9200,7 +9200,7 @@
 	religion="sunni"
 	culture="maghreb_arabic"
 	father=248805
-	trait=sympathy_pagans
+	trait=sympathy_african
 	1110.1.1={
 		birth = yes
 	}
@@ -9214,7 +9214,7 @@
 	religion="sunni"
 	culture="maghreb_arabic"
 	father=248806
-	trait=sympathy_pagans
+	trait=sympathy_african
 	1130.1.1={
 		birth = yes
 	}
@@ -9228,7 +9228,7 @@
 	religion="sunni"
 	culture="maghreb_arabic"
 	father=248807
-	trait=sympathy_pagans
+	trait=sympathy_african
 	1150.1.1={
 		birth = yes
 	}
@@ -9242,7 +9242,7 @@
 	religion="sunni"
 	culture="maghreb_arabic"
 	father=248808
-	trait=sympathy_pagans
+	trait=sympathy_african
 	1180.1.1={
 		birth = yes
 	}
@@ -9256,7 +9256,7 @@
 	religion="sunni"
 	culture="maghreb_arabic"
 	father=248809
-	trait=sympathy_pagans
+	trait=sympathy_african
 	1200.1.1={
 		birth = yes
 	}
@@ -9270,7 +9270,7 @@
 	religion="sunni"
 	culture="maghreb_arabic"
 	father=248810
-	trait=sympathy_pagans
+	trait=sympathy_african
 	1220.1.1={
 		birth = yes
 	}
@@ -9284,7 +9284,7 @@
 	religion="sunni"
 	culture="maghreb_arabic"
 	father=248811
-	trait=sympathy_pagans
+	trait=sympathy_african
 	1240.1.1={
 		birth = yes
 	}
@@ -9298,7 +9298,7 @@
 	religion="sunni"
 	culture="maghreb_arabic"
 	father=248812
-	trait=sympathy_pagans
+	trait=sympathy_african
 	1270.1.1={
 		birth = yes
 	}
@@ -9312,7 +9312,7 @@
 	religion="sunni"
 	culture="maghreb_arabic"
 	father=248813
-	trait=sympathy_pagans
+	trait=sympathy_african
 	1290.1.1={
 		birth = yes
 	}
@@ -9326,7 +9326,7 @@
 	religion="sunni"
 	culture="maghreb_arabic"
 	father=248814
-	trait=sympathy_pagans
+	trait=sympathy_african
 	1315.1.1={
 		birth = yes
 	}
