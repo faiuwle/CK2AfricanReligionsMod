@@ -2739,7 +2739,7 @@ targetted_decisions = {
 				religion_group = indian_group
                 religion = bori
                 religion = a_tag_roog_reformed
-                religion = amaizgh_reformed
+                religion = amazigh_reformed
 			}
 			is_alive = yes
 		}
