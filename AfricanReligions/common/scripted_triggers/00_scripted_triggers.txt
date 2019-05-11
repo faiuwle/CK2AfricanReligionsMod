@@ -7074,7 +7074,11 @@ pagan_baptism_trigger = {
 	custom_tooltip = {
 		text = TT_UNREFORMED_PAGAN
 		hidden_tooltip = {
-			religion_group = pagan_group
+            OR = {
+                religion_group = pagan_group
+                religion = a_tag_roog
+                religion = amazigh
+            }
 			NOT = { is_reformed_religion = yes }
 			#NOT = { religion = bon }
 		}

@@ -213,3 +213,14 @@ character_event = {
 		}
 	}
 }
+
+character_event = {
+    id = AFRREL.013
+    hide_window = yes
+    is_triggered_only = yes
+    
+    trigger = {
+        is_reformed_religion = yes
+        is_reformed_religion = no
+    }
+}

@@ -161,7 +161,7 @@ beatification_tooltip;Ancestors can now be beatified and canonized;;;;;;;;;;;;;x
 tooltip_bori_elector_vote_possessed;[From.GetSheHeCap] has the wisdom of a bori spirit who has possessed them;;;;;;;;;;;;;x
 tooltip_bori_elector_possessed_ruler;The bori spirit possessing my liege surely knows best;;;;;;;;;;;;;x
 tooltip_elector_vote_chiroma;[From.GetSheHeCap] is the §YChiroma§!, the position traditionally held by the heir apparent;;;;;;;;;;;;;x
-baptism_sponsor_sypathetic_afr;§Y[Root.GetTitledFirstName]§! is sympathetic towards §YAfricans§!;;;;;;;;;;;;;x
+baptism_sponsor_sympathetic_afr;§Y[Root.GetTitledFirstName]§! is sympathetic towards §YAfricans§!;;;;;;;;;;;;;x
 baptism_sponsor_african;§Y[Root.GetTitledFirstName]§! is a §YReformed African§!;;;;;;;;;;;;;x
 eldership_rules_afr;Eldership;;;;;;;;;;;;;x
 religion_feature_a_tag_roog;Way of the Divine;;;;;;;;;;;;;x
@@ -175,4 +175,4 @@ exalt_inna_desc;For too long our spiritual mother, the Inna, has seen her power 
 african_revival;African Revival;;;;;;;;;;;;;x
 amazigh_resurgence;Amazigh Resurgence;;;;;;;;;;;;;x
 sympathy_african;Sympathy for Africans;;;;;;;;;;;;;x
-sympathy_african_desc;This character, though not an African, has a special sympathy and understanding for the African faiths and their practitioners.;;;;;;;;;;;;;x
+sympathy_african_desc;This character, though not a worshipper of the African gods, has a special sympathy and understanding for the African faiths and their practitioners.;;;;;;;;;;;;;x
