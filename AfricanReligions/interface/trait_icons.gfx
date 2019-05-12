@@ -6,4 +6,25 @@ spriteTypes = {
         norefcount = yes
         effectFile = "gfx/FX/buttonstate.lua"
     }
+    spriteType = {
+        name = GFX_trait_child_of_garki_baba
+        texturefile = "gfx/traits/child_of_garki_baba.dds"
+        noOfFrames = 1
+        norefcount = yes
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+    spriteType = {
+        name = GFX_trait_shield_of_roog
+        texturefile = "gfx/traits/shield_of_roog.dds"
+        noOfFrames = 1
+        norefcount = yes
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+    spriteType = {
+        name = GFX_trait_heir_of_dihya
+        texturefile = " gfx/traits/heir_of_dihya.dds"
+        noOfFrames = 1
+        norefcount = yes
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
 }
