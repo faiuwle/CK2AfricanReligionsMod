@@ -170,3 +170,57 @@ narrative_event = {
         name = EVTOPTC_AFRREL011
     }
 }
+
+# Tolerant character making African friend
+character_event = {
+	id = AFRREL.012
+	desc = EVTDESC_AFRREL012
+	picture = GFX_evt_courtiers_talking
+	border = GFX_event_normal_frame_religion
+
+	only_playable = yes
+	prisoner = no
+	only_capable = yes
+	min_age = 16
+	
+	trigger = {
+		trait = sympathy_african
+		has_dlc = "Sons of Abraham"
+		any_courtier = {
+			religion_group = african_group
+			prisoner = no
+			is_adult = yes
+			NOT = { trait = incapable }
+			NOT = { is_friend = ROOT }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+	}
+	
+	option = {
+		name = EVTOPTA_SoA_5414
+		random_courtier = {
+			limit = {
+				religion_group = african_group
+				prisoner = no
+				is_adult = yes
+				NOT = { trait = incapable }
+				NOT = { is_friend = ROOT }
+			}
+			add_friend = ROOT
+		}
+	}
+}
+
+character_event = {
+    id = AFRREL.013
+    hide_window = yes
+    is_triggered_only = yes
+    
+    trigger = {
+        is_reformed_religion = yes
+        is_reformed_religion = no
+    }
+}
