@@ -360,6 +360,9 @@ character_event = {
                                 trait = sun_warrior 
                                 trait = kailash_guardian 
 								trait = shieldmaiden
+                                trait = child_of_garki_baba
+                                trait = shield_of_roog
+                                trait = heir_of_dihya
                             }
         				}
         				if = {

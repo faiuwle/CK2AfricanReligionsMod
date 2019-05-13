@@ -4049,7 +4049,34 @@ add_crusade_trait_effect = {
 			religion_group = jewish_group
 		}
 		add_trait = shaddai
+        break = yes
 	}
+    if = {
+        limit = {
+            religion = bori
+        }
+        add_trait = child_of_garki_baba
+        break = yes
+    }
+    if = {
+        limit = {
+            OR = {
+                religion = a_tag_roog
+                religion = a_tag_roog_reformed
+            }
+        }
+        add_trait = shield_of_roog
+        break = yes
+    }
+    if = {
+        limit = {
+            OR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+        add_trait = heir_of_dihya
+    }
 }
 
 ###MONKS & MYSTICS###
