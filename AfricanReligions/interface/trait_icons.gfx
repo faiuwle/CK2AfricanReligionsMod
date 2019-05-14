@@ -22,7 +22,7 @@ spriteTypes = {
     }
     spriteType = {
         name = GFX_trait_heir_of_dihya
-        texturefile = " gfx/traits/heir_of_dihya.dds"
+        texturefile = "gfx/traits/heir_of_dihya.dds"
         noOfFrames = 1
         norefcount = yes
         effectFile = "gfx/FX/buttonstate.lua"
