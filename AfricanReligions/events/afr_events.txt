@@ -38,10 +38,10 @@ letter_event = {
     option = {
         name = EVTOPTA_AFRREL004
         
-        custom_tooltip = {
-            text = beatification_tooltip
-            set_global_flag = bori_beatification
-        }
+        #custom_tooltip = {
+        #    text = beatification_tooltip
+        #    set_global_flag = bori_beatification
+        #}
         set_jizya_tax = yes
     }
 }
