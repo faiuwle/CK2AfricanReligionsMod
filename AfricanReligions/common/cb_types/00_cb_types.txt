@@ -3722,6 +3722,13 @@ crusade = {
 							has_global_flag = muslim_jihads_unlocked
 						}
 					}
+                    AND = {
+                        religion_group = african_group
+                        custom_tooltip = {
+                            text = CTT_AFRICAN_GHWS_UNLOCKED
+                            has_global_flag = african_ghws_unlocked
+                        }
+                    }
 				}
 			}
 			mercenary = no
