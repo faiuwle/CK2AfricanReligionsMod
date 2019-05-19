@@ -225,8 +225,67 @@ character_event = {
     is_triggered_only = yes
     
     trigger = {
-        is_reformed_religion = yes
-        is_reformed_religion = no
+			uses_new_crusade = no
+			has_called_crusade = no
+			religion_authority = 0.05
+			conditional_tooltip = {
+				trigger = {
+					is_alternate_start = yes
+					has_alternate_start_parameter = {
+						key = religion_names
+						value = random
+					}
+				}
+				custom_tooltip = {
+					text = ALT_GHW_STARTED
+					has_global_flag = muslim_jihads_unlocked
+					has_global_flag = pagan_ghws_unlocked
+					has_global_flag = christian_crusades_unlocked
+				}
+			}
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						has_alternate_start_parameter = {
+							key = religion_names
+							value = random
+						}
+					}
+				}
+				OR = {
+					religion_group = zoroastrian_group
+					religion_group = jewish_group
+					AND = {
+						religion_group = pagan_group
+						custom_tooltip = {
+							text = CTT_PAGAN_GHWS_UNLOCKED
+							has_global_flag = pagan_ghws_unlocked
+						}
+					}
+					AND = { 
+						religion_group = christian
+						custom_tooltip = {
+							text = CTT_CHRISTIAN_CRUSADES_UNLOCKED
+							has_global_flag = christian_crusades_unlocked
+						}
+					}
+					AND = {
+						religion_group = muslim
+						custom_tooltip = {
+							text = CTT_MUSLIM_JIHADS_UNLOCKED
+							has_global_flag = muslim_jihads_unlocked
+						}
+					}
+                    AND = {
+                        religion_group = african_group
+                        custom_tooltip = {
+                            text = CTT_AFRICAN_GHWS_UNLOCKED
+                            has_global_flag = african_ghws_unlocked
+                        }
+                    }
+				}
+			}
+			mercenary = no
     }
 }
 
