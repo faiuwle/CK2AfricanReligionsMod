@@ -2837,6 +2837,7 @@ african_group = {
         heresy_icon = 62
         color = { 65 40 20 }
 
+        can_call_crusade = yes
         crusade_name = GREAT_HOLY_WAR
         scripture_name = NAGA_REETU_REET
         priest_title = SALTIGUE
@@ -2955,6 +2956,7 @@ african_group = {
         heresy_icon = 65
         color = { 205 90 15 }
 
+        can_call_crusade = yes
         crusade_name = GREAT_HOLY_WAR
         scripture_name = BAAL_CYCLE
         priest_title = MARABOUT
