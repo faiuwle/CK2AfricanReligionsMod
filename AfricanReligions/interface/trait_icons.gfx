@@ -6,4 +6,28 @@ spriteTypes = {
         norefcount = yes
         effectFile = "gfx/FX/buttonstate.lua"
     }
+    
+    spriteType = {
+        name = GFX_trait_foro
+        texturefile = "gfx/traits/foro.dds"
+        noOfFrames = 1
+        norefcount = yes
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+    
+    spriteType = {
+        name = GFX_trait_jakhanke
+        texturefile = "gfx/traits/jakhanke.dds"
+        noOfFrames = 1
+        norefcount = yes
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+    
+    spriteType = {
+        name = GFX_trait_wangara
+        texturefile = "gfx/traits/wangara.dds"
+        noOfFrames = 1
+        norefcount = yes
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
 }
