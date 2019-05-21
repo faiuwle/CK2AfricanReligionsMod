@@ -808,6 +808,24 @@ has_crusade_trait_trigger = {
 			religion_group = jewish_group
 			trait = shaddai
 		}
+        AND = {
+            religion = bori
+            trait = child_of_garki_baba
+        }
+        AND = {
+            OR = {
+                religion = a_tag_roog
+                religion = a_tag_roog_reformed
+            }
+            trait = shield_of_roog
+        }
+        AND = {
+            OR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+            trait = heir_of_dihya
+        }
 	}
 }
 
