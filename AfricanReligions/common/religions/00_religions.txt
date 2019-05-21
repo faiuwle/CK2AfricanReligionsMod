@@ -2846,6 +2846,9 @@ african_group = {
 
         priests_can_marry = yes
         priests_can_inherit = yes
+        
+        castes = yes
+        caste_opinions = yes
 
         intermarry = muslim
         intermarry = bori
@@ -2894,6 +2897,9 @@ african_group = {
 
         priests_can_marry = yes
         priests_can_inherit = yes
+        
+        castes = yes
+        caste_opinions = yes
 
         intermarry = muslim
         intermarry = bori
