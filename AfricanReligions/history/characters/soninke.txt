@@ -15,6 +15,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father=184019
+    trait = foro
 	1010.1.1={
 		birth="1010.1.1"
 	}
@@ -29,6 +30,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father=161000
+    trait = foro
 	1030.1.1={
 		birth="1030.1.1"
 	}
@@ -43,6 +45,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father=161001
+    trait = foro
 	1050.1.1={
 		birth="1050.1.1"
 	}
@@ -60,6 +63,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father=161002
+    trait = foro
 	1070.1.1={
 		birth="1070.1.1"
 	}
@@ -146,6 +150,7 @@
 	dynasty=1030001
 	religion="a_tag_roog"
 	culture="soninke"
+    trait = foro
 	1145.1.1={
 		birth="1145.1.1"
 	}
@@ -160,6 +165,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father=161009
+    trait = foro
 	1180.1.1={
 		birth="1180.1.1"
 	}
@@ -331,6 +337,7 @@
 	dynasty=1030000
 	religion="a_tag_roog"
 	culture="soninke"
+    trait = foro
 	695.1.1={
 		birth="695.1.1"
 	}
@@ -345,6 +352,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father=184010
+    trait = foro
 	725.1.1={
 		birth="725.1.1"
 	}
@@ -359,6 +367,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father=184010
+    trait = foro
 	730.1.1={
 		birth="730.1.1"
 	}
@@ -373,6 +382,7 @@
 	religion=a_tag_roog
 	culture=soninke
 	father=184012
+    trait = foro
 	770.1.1={
 		birth = yes
 	}
@@ -387,6 +397,7 @@
 	religion=a_tag_roog
 	culture=soninke
 	father=184013
+    trait = foro
 	805.1.1={
 		birth = yes
 	}
@@ -401,6 +412,7 @@
 	religion=a_tag_roog
 	culture=soninke
 	father=184014
+    trait = foro
 	830.1.1={
 		birth = yes
 	}
@@ -415,6 +427,7 @@
 	religion=a_tag_roog
 	culture=soninke
 	father=184015
+    trait = foro
 	875.1.1={
 		birth="875.1.1"
 	}
@@ -429,6 +442,7 @@
 	religion=a_tag_roog
 	culture=soninke
 	father=184016
+    trait = foro
 	905.1.1={
 		birth="905.1.1"
 	}
@@ -443,6 +457,7 @@
 	religion=a_tag_roog
 	culture=soninke
 	father=184017
+    trait = foro
 	925.1.1={
 		birth="925.1.1"
 	}
@@ -457,6 +472,7 @@
 	religion=a_tag_roog
 	culture=soninke
 	father=184018
+    trait = foro
 	970.1.1={
 		birth="970.1.1"
 	}
@@ -470,6 +486,7 @@
 	dynasty=1042631
 	religion=a_tag_roog
 	culture=soninke
+    trait = foro
 	825.1.1={
 		birth="825.1.1"
 	}
@@ -485,6 +502,7 @@
 	dynasty=1042173
 	religion="a_tag_roog"
 	culture="soninke"
+    trait = foro
 	730.1.1={
 		birth=yes
 	}
@@ -498,6 +516,7 @@
 	dynasty=1042175
 	religion="a_tag_roog"
 	culture="soninke"
+    trait = foro
 	745.1.1={
 		birth=yes
 	}
@@ -511,6 +530,7 @@
 	dynasty=1042176
 	religion="a_tag_roog"
 	culture="soninke"
+    trait = foro
 	742.1.1={
 		birth=yes
 	}
@@ -528,6 +548,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251170
+    trait = foro
 	1042.1.1={
 		birth=yes
 	}
@@ -541,6 +562,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father=251130
+    trait = foro
 	1073.1.1={
 		birth = yes
 	}
@@ -554,6 +576,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father=251131
+    trait = foro
 	1100.1.1={
 		birth = yes
 	}
@@ -567,6 +590,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father=251132
+    trait = foro
 	1124.1.1={
 		birth=yes
 	}
@@ -579,6 +603,7 @@
 	dynasty=1060010
 	religion="a_tag_roog"
 	culture="soninke"
+    trait = foro
 	745.1.1={
 		birth=yes
 	}
@@ -592,6 +617,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251165
+    trait = foro
 	845.1.1={
 		birth=yes
 	}
@@ -607,6 +633,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father=251140
+    trait = foro
 	832.1.1={
 		birth=yes
 	}
@@ -621,6 +648,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father=251136
+    trait = foro
 	849.1.1={
 		birth=yes
 	}
@@ -633,6 +661,7 @@
 	dynasty=1060013
 	religion="a_tag_roog"
 	culture="soninke"
+    trait = foro
 	740.1.1={
 		birth=yes
 	}
@@ -646,6 +675,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father=251138
+    trait = foro
 	790.1.1={
 		birth=yes
 	}
@@ -673,6 +703,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251153
+    trait = foro
 	1034.1.1={
 		birth=yes
 	}
@@ -687,6 +718,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251141
+    trait = foro
 	1059.1.1={
 		birth = yes
 	}
@@ -701,6 +733,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251142
+    trait = foro
 	1094.1.1={
 		birth=yes
 	}
@@ -714,6 +747,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251143
+    trait = foro
 	1120.1.1={
 		birth = yes
 	}
@@ -727,6 +761,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251144
+    trait = foro
 	1153.1.1={
 		birth = yes
 	}
@@ -741,6 +776,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251145
+    trait = foro
 	1180.1.1={
 		birth=yes
 	}
@@ -755,6 +791,7 @@
 	dynasty=1060011
 	religion="a_tag_roog"
 	culture="soninke"
+    trait = foro
 	748.1.1={
 		birth = yes
 	}
@@ -768,6 +805,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251176
+    trait = foro
 	848.1.1={
 		birth = yes
 	}
@@ -781,6 +819,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251148
+    trait = foro
 	880.1.1={
 		birth = yes
 	}
@@ -794,6 +833,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251149
+    trait = foro
 	912.1.1={
 		birth = yes
 	}
@@ -807,6 +847,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251150
+    trait = foro
 	939.1.1={
 		birth = yes
 	}
@@ -820,6 +861,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251151
+    trait = foro
 	977.1.1={
 		birth = yes
 	}
@@ -833,6 +875,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251152
+    trait = foro
 	1000.1.1={
 		birth = yes
 	}
@@ -848,6 +891,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251174
+    trait = foro
 	1050.1.1={
 		birth=yes
 	}
@@ -864,6 +908,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251154
+    trait = foro
 	1073.1.1={
 		birth=yes
 	}
@@ -877,6 +922,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251155
+    trait = foro
 	1090.1.1={
 		birth=yes
 	}
@@ -890,6 +936,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251156
+    trait = foro
 	1118.1.1={
 		birth=yes
 	}
@@ -902,6 +949,7 @@
 	dynasty=1060015
 	religion="a_tag_roog"
 	culture="soninke"
+    trait = foro
 	700.1.1={
 		birth=yes
 	}
@@ -915,6 +963,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251158
+    trait = foro
 	738.1.1={
 		birth=yes
 	}
@@ -928,6 +977,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251159
+    trait = foro
 	780.1.1={
 		birth=yes
 	}
@@ -941,6 +991,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251160
+    trait = foro
 	815.1.1={
 		birth=yes
 	}
@@ -954,6 +1005,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251161
+    trait = foro
 	850.1.1={
 		birth=yes
 	}
@@ -971,6 +1023,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251134
+    trait = foro
 	770.1.1={
 		birth=yes
 	}
@@ -986,6 +1039,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251163
+    trait = foro
 	790.1.1={
 		birth=yes
 	}
@@ -1001,6 +1055,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251164
+    trait = foro
 	819.1.1={
 		birth=yes
 	}
@@ -1016,6 +1071,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251135
+    trait = foro
 	870.1.1={
 		birth=yes
 	}
@@ -1031,6 +1087,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251166
+    trait = foro
 	903.1.1={
 		birth=yes
 	}
@@ -1046,6 +1103,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251167
+    trait = foro
 	937.1.1={
 		birth=yes
 	}
@@ -1061,6 +1119,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251168
+    trait = foro
 	970.1.1={
 		birth=yes
 	}
@@ -1076,6 +1135,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251169
+    trait = foro
 	1008.1.1={
 		birth=yes
 	}
@@ -1104,6 +1164,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251171
+    trait = foro
 	935.1.1={
 		birth=yes
 	}
@@ -1117,6 +1178,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251172
+    trait = foro
 	980.1.1={
 		birth=yes
 	}
@@ -1130,6 +1192,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251173
+    trait = foro
 	1020.1.1={
 		birth=yes
 	}
@@ -1145,6 +1208,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251147
+    trait = foro
 	780.1.1={
 		birth = yes
 	}
@@ -1158,6 +1222,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
 	father = 251175
+    trait = foro
 	813.1.1={
 		birth = yes
 	}
