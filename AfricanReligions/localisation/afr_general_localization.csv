@@ -158,6 +158,7 @@ string_reformed_religion_amazigh; the faith of Carthage and Numidia will return 
 controls_holy_sites_tooltip;Controls all five holy sites;;;;;;;;;;;;;x
 vassalize_inna_tooltip;Vassalize §Y[Root.RelHead.GetBestName]§!;;;;;;;;;;;;;x
 beatification_tooltip;Ancestors can now be beatified and canonized;;;;;;;;;;;;;x
+CTT_AFRICAN_GHWS_UNLOCKED;African Great Holy Wars are unlocked;;;;;;;;;;;;;x
 tooltip_bori_elector_vote_possessed;[From.GetSheHeCap] has the wisdom of a bori spirit who has possessed them;;;;;;;;;;;;;x
 tooltip_bori_elector_possessed_ruler;The bori spirit possessing my liege surely knows best;;;;;;;;;;;;;x
 tooltip_elector_vote_chiroma;[From.GetSheHeCap] is the §YChiroma§!, the position traditionally held by the heir apparent;;;;;;;;;;;;;x
@@ -174,6 +175,7 @@ exalt_inna;Exalt the Inna;;;;;;;;;;;;;x
 exalt_inna_desc;For too long our spiritual mother, the Inna, has seen her power limited by secular rulers. We must grant her full religious sovereignty, which will bring prosperity and glory to our realms.;;;;;;;;;;;;;x
 african_revival;African Revival;;;;;;;;;;;;;x
 amazigh_resurgence;Amazigh Resurgence;;;;;;;;;;;;;x
+bori_opinion;Bori Opinion;;;;;;;;;;;;;x
 sympathy_african;Sympathy for Africans;;;;;;;;;;;;;x
 sympathy_african_desc;This character, though not a worshipper of the African gods, has a special sympathy and understanding for the African faiths and their practitioners.;;;;;;;;;;;;;x
 foro;Foro;;;;;;;;;;;;;x
@@ -182,3 +184,9 @@ jakhanke;Jakhanke;;;;;;;;;;;;;x
 jakhanke_desc;This character belongs to the Jakhanke caste, the West African caste of religious scholars and educators.;;;;;;;;;;;;;x
 wangara;Wangara;;;;;;;;;;;;;x
 wangara_desc;This character belongs to the Wangara caste, the West African caste of merchants and traders.;;;;;;;;;;;;;x
+child_of_garki_baba;Child of Garki Baba;;;;;;;;;;;;;x
+child_of_garki_baba_desc;This character has fought in a great holy war while possessed by warrior bori.;;;;;;;;;;;;;x
+shield_of_roog;Shield of Roog;;;;;;;;;;;;;x
+shield_of_roog_desc;This character has fought in a great holy war in the name of Roog the merciful.;;;;;;;;;;;;;x
+heir_of_dihya;Heir of Dihya;;;;;;;;;;;;;x
+heir_of_dihya_desc;This character has fought for the Amazigh faith as Queen Dihya did in the days of yore.;;;;;;;;;;;;;x
