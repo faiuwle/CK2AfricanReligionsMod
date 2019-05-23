@@ -695,6 +695,9 @@ crusader = {
 		shaddai
 		gondi_shahansha
 		kailash_guardian
+        child_of_garki_baba
+        shield_of_roog
+        heir_of_dihya
 	}
 	
 	martial = 2
