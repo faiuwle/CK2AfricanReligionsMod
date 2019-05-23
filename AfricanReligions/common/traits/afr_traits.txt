@@ -35,7 +35,7 @@ foro = {
 	
 	caste_tier = 2
 
-	diplomacy = 2
+	monthly_character_wealth = 0.1
 
 	customizer = no
 	random = no
@@ -55,7 +55,7 @@ jakhanke = {
 	
 	caste_tier = 3
 
-	monthly_character_piety = 0.5
+	monthly_character_piety = 0.1
 
 	customizer = no
 	random = no
@@ -75,7 +75,7 @@ wangara = {
 	
 	caste_tier = 1
 
-	monthly_character_wealth = 0.1
+	diplomacy = 1
 
 	customizer = no
 	random = no
