@@ -173,6 +173,12 @@ vassalize_inna;Vassalize the Inna;;;;;;;;;;;;;x
 vassalize_inna_desc;The Inna, our spiritual mother, deserves the loving protection of a faithful ruler. As her liege I shall provide that protection.;;;;;;;;;;;;;x
 exalt_inna;Exalt the Inna;;;;;;;;;;;;;x
 exalt_inna_desc;For too long our spiritual mother, the Inna, has seen her power limited by secular rulers. We must grant her full religious sovereignty, which will bring prosperity and glory to our realms.;;;;;;;;;;;;;x
+become_foro;Forge an Ancestry;;;;;;;;;;;;;x
+become_foro_desc;[ChangeATagRoogCasteDesc];;;;;;;;;;;;;x
+become_wangara;Forge an Ancestry;;;;;;;;;;;;;x
+become_wangara_desc;[ChangeATagRoogCasteDesc];;;;;;;;;;;;;x
+change_caste_griot;In your court as well as among the common people, gossips say that you do not deserve your titles. After all, a person of your ancestry is not made to occupy such a position. Only prejudices and superstitions, certainly, but enough for people to speak ill of you.\n\nYour Court Griot, however proposes a solution; he will compose a great poem in which he will say that all your ancestors were in fact of the correct caste. A little fib for the greater good.;;;;;;;;;;;;;x
+change_caste_no_griot;In your court as well as among the common people, gossips say that you do not deserve your titles. After all, a person of your ancestry is not made to occupy such a position. Only prejudices and superstitions, certainly, but enough for people to speak ill of you.\n\nYou will need the advice of a learned Court Griot.;;;;;;;;;;;;;x
 african_revival;African Revival;;;;;;;;;;;;;x
 amazigh_resurgence;Amazigh Resurgence;;;;;;;;;;;;;x
 bori_opinion;Bori Opinion;;;;;;;;;;;;;x

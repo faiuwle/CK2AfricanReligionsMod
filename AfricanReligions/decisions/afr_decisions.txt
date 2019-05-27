@@ -120,4 +120,228 @@ decisions = {
             }
         }
     }
+    
+    # Forge A tag Roog castes
+    become_foro = {
+        only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 12
+        
+		potential = {
+			is_playable = yes
+			is_adult = yes
+            OR = {
+                religion = a_tag_roog
+                religion = a_tag_roog_reformed
+            }
+			OR = {
+				is_feudal = yes
+				is_tribal = yes
+				is_nomadic = yes
+			}
+			NOT = { trait = foro }
+		}
+		
+		allow = {
+            any_courtier_or_vassal = {
+                has_minor_title = title_griot
+                liege = { character = PREVPREV }
+            }
+			OR = {
+				trait = jakhanke
+				piety = 200
+			}
+			OR = {
+				scaled_wealth = 6
+				AND = {
+                    any_courtier_or_vassal = {
+                        has_minor_title = title_griot
+                        liege = { character = PREVPREV }
+                        learning = 12
+                    }
+					scaled_wealth = 3
+				}
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+                    any_courtier_or_vassal = {
+                        has_minor_title = title_griot
+                        liege = { character = PREVPREV }
+                        learning = 12
+                    }
+                }
+				scaled_wealth = -3
+			}
+			else = {
+				scaled_wealth = -6
+			}
+			if = {
+				limit = { NOT = { trait = jakhanke } }
+				piety = -200
+			}
+			
+			prestige = 50
+			add_trait = foro
+			any_spouse = {
+				limit = {
+					is_ruler = no
+					liege = { character = ROOT }
+					NOT = { trait = foro }
+				}
+				add_trait = foro
+			}
+			any_child = {
+				limit = {
+					is_ruler = no
+					liege = { character = ROOT }
+					NOT = { trait = foro }
+				}
+				add_trait = foro
+			}
+			hidden_tooltip = {
+				top_liege = {
+					any_realm_character = {
+						limit = {
+                            OR = {
+                                religion = a_tag_roog
+                                religion = a_tag_roog_reformed
+                            }
+							is_adult = yes
+							NOT = { character = ROOT }
+							NOT = { trait = cynical }
+						}
+						opinion = {
+							modifier = opinion_changed_caste
+							who = ROOT
+							years = 100
+						}
+					}
+				}
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+			}
+		}
+    }
+    
+    become_wangara = {
+        only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 12
+        
+		potential = {
+			is_playable = yes
+			is_adult = yes
+            OR = {
+                religion = a_tag_roog
+                religion = a_tag_roog_reformed
+            }
+			OR = {
+                is_republic = yes
+                is_merchant_republic = yes
+			}
+			NOT = { trait = wangara }
+		}
+		
+		allow = {
+            any_courtier_or_vassal = {
+                has_minor_title = title_griot
+                liege = { character = PREVPREV }
+            }
+			OR = {
+				trait = jakhanke
+				piety = 200
+			}
+			OR = {
+				scaled_wealth = 6
+				AND = {
+                    any_courtier_or_vassal = {
+                        has_minor_title = title_griot
+                        liege = { character = PREVPREV }
+                        learning = 12
+                    }
+					scaled_wealth = 3
+				}
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+                    any_courtier_or_vassal = {
+                        has_minor_title = title_griot
+                        liege = { character = PREVPREV }
+                        learning = 12
+                    }
+                }
+				scaled_wealth = -3
+			}
+			else = {
+				scaled_wealth = -6
+			}
+			if = {
+				limit = { NOT = { trait = jakhanke } }
+				piety = -200
+			}
+			
+			prestige = 50
+			add_trait = wangara
+			any_spouse = {
+				limit = {
+					is_ruler = no
+					liege = { character = ROOT }
+					NOT = { trait = wangara }
+				}
+				add_trait = wangara
+			}
+			any_child = {
+				limit = {
+					is_ruler = no
+					liege = { character = ROOT }
+					NOT = { trait = foro }
+				}
+				add_trait = wangara
+			}
+			hidden_tooltip = {
+				top_liege = {
+					any_realm_character = {
+						limit = {
+                            OR = {
+                                religion = a_tag_roog
+                                religion = a_tag_roog_reformed
+                            }
+							is_adult = yes
+							NOT = { character = ROOT }
+							NOT = { trait = cynical }
+						}
+						opinion = {
+							modifier = opinion_changed_caste
+							who = ROOT
+							years = 100
+						}
+					}
+				}
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+			}
+		}
+    }
 }
