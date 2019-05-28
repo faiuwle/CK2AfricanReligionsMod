@@ -143,9 +143,12 @@ decisions = {
 		}
 		
 		allow = {
-            any_courtier_or_vassal = {
-                has_minor_title = title_griot
-                liege = { character = PREVPREV }
+            custom_tooltip = {
+                text = has_griot_tooltip
+                any_courtier_or_vassal = {
+                    has_minor_title = title_griot
+                    liege = { character = PREVPREV }
+                }
             }
 			OR = {
 				trait = jakhanke
@@ -154,10 +157,13 @@ decisions = {
 			OR = {
 				scaled_wealth = 6
 				AND = {
-                    any_courtier_or_vassal = {
-                        has_minor_title = title_griot
-                        liege = { character = PREVPREV }
-                        learning = 12
+                    custom_tooltip = {
+                        text = learned_griot_tooltip
+                        any_courtier_or_vassal = {
+                            has_minor_title = title_griot
+                            liege = { character = PREVPREV }
+                            learning = 12
+                        }
                     }
 					scaled_wealth = 3
 				}
@@ -254,9 +260,12 @@ decisions = {
 		}
 		
 		allow = {
-            any_courtier_or_vassal = {
-                has_minor_title = title_griot
-                liege = { character = PREVPREV }
+            custom_tooltip = {
+                text = has_griot_tooltip
+                any_courtier_or_vassal = {
+                    has_minor_title = title_griot
+                    liege = { character = PREVPREV }
+                }
             }
 			OR = {
 				trait = jakhanke
@@ -265,10 +274,13 @@ decisions = {
 			OR = {
 				scaled_wealth = 6
 				AND = {
-                    any_courtier_or_vassal = {
-                        has_minor_title = title_griot
-                        liege = { character = PREVPREV }
-                        learning = 12
+                    custom_tooltip = {
+                        text = learned_griot_tooltip
+                        any_courtier_or_vassal = {
+                            has_minor_title = title_griot
+                            liege = { character = PREVPREV }
+                            learning = 12
+                        }
                     }
 					scaled_wealth = 3
 				}
