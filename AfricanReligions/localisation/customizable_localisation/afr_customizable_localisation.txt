@@ -116,3 +116,29 @@ defined_text = {
         localisation_key = string_reformed_religion_amazigh
     }
 }
+
+defined_text = {
+    name = ChangeATagRoogCasteDesc
+    
+    text = {
+        trigger = {
+            any_character = {
+                has_minor_title = title_griot
+                liege = { character = PREVPREV }
+            }
+        }
+        localisation_key = change_caste_griot
+    }
+    
+    text = {
+        trigger = {
+            NOT = {
+                any_character = {
+                    has_minor_title = title_griot
+                    liege = { character = PREVPREV }
+                }
+            }
+        }
+        localisation_key = change_caste_no_griot
+    }
+}

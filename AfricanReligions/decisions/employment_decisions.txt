@@ -142,6 +142,15 @@ decisions = {
 						add_trait = brahmin
 						character_event = { id = RoI.30121 }
 					}
+                    if = {
+                        limit = {
+                            OR = {
+                                religion = a_tag_roog
+                                religion = a_tag_roog_reformed
+                            }
+                        }
+                        add_trait = jakhanke
+                    }
 					if = {
 						limit = {
 							has_religion_feature = religion_no_leader
@@ -260,6 +269,15 @@ decisions = {
 						add_trait = brahmin
 						character_event = { id = RoI.30121 }
 					}
+                    if = {
+                        limit = {
+                            OR = {
+                                religion = a_tag_roog
+                                religion = a_tag_roog_reformed
+                            }
+                        }
+                        add_trait = jakhanke
+                    }
 					if = {
 						limit = {
 							has_religion_feature = religion_no_leader
@@ -380,6 +398,15 @@ decisions = {
 						add_trait = kshatriya
 						character_event = { id = RoI.30121 }
 					}
+                    if = {
+                        limit = {
+                            OR = {
+                                religion = a_tag_roog
+                                religion = a_tag_roog_reformed
+                            }
+                        }
+                        add_trait = foro
+                    }
 					if = {
 						limit = {
 							OR = {
@@ -509,6 +536,15 @@ decisions = {
 						add_trait = kshatriya
 						character_event = { id = RoI.30121 }
 					}
+                    if = {
+                        limit = {
+                            OR = {
+                                religion = a_tag_roog
+                                religion = a_tag_roog_reformed
+                            }
+                        }
+                        add_trait = foro
+                    }
 					if = {
 						limit = {
 							OR = {
@@ -588,6 +624,15 @@ decisions = {
 						add_trait = kshatriya
 						character_event = { id = RoI.30121 }
 					}
+                    if = {
+                        limit = {
+                            OR = {
+                                religion = a_tag_roog
+                                religion = a_tag_roog_reformed
+                            }
+                        }
+                        add_trait = foro
+                    }
 					if = {
 						limit = {
 							OR = {

@@ -158,6 +158,8 @@ string_reformed_religion_amazigh; the faith of Carthage and Numidia will return 
 controls_holy_sites_tooltip;Controls all five holy sites;;;;;;;;;;;;;x
 vassalize_inna_tooltip;Vassalize §Y[Root.RelHead.GetBestName]§!;;;;;;;;;;;;;x
 beatification_tooltip;Ancestors can now be beatified and canonized;;;;;;;;;;;;;x
+has_griot_tooltip;You have appointed a §YGriot§!;;;;;;;;;;;;;x
+learned_griot_tooltip;Your §YGriot§! has §YLearning§! greater than or equal to 12;;;;;;;;;;;;;x
 CTT_AFRICAN_GHWS_UNLOCKED;African Great Holy Wars are unlocked;;;;;;;;;;;;;x
 tooltip_bori_elector_vote_possessed;[From.GetSheHeCap] has the wisdom of a bori spirit who has possessed them;;;;;;;;;;;;;x
 tooltip_bori_elector_possessed_ruler;The bori spirit possessing my liege surely knows best;;;;;;;;;;;;;x
@@ -173,11 +175,23 @@ vassalize_inna;Vassalize the Inna;;;;;;;;;;;;;x
 vassalize_inna_desc;The Inna, our spiritual mother, deserves the loving protection of a faithful ruler. As her liege I shall provide that protection.;;;;;;;;;;;;;x
 exalt_inna;Exalt the Inna;;;;;;;;;;;;;x
 exalt_inna_desc;For too long our spiritual mother, the Inna, has seen her power limited by secular rulers. We must grant her full religious sovereignty, which will bring prosperity and glory to our realms.;;;;;;;;;;;;;x
+become_foro;Forge an Ancestry;;;;;;;;;;;;;x
+become_foro_desc;[ChangeATagRoogCasteDesc];;;;;;;;;;;;;x
+become_wangara;Forge an Ancestry;;;;;;;;;;;;;x
+become_wangara_desc;[ChangeATagRoogCasteDesc];;;;;;;;;;;;;x
+change_caste_griot;In your court as well as among the common people, gossips say that you do not deserve your titles. After all, a person of your ancestry is not made to occupy such a position. Only prejudices and superstitions, certainly, but enough for people to speak ill of you.\n\nYour Court Griot, however proposes a solution; he will compose a great poem in which he will say that all your ancestors were in fact of the correct caste. A little fib for the greater good.;;;;;;;;;;;;;x
+change_caste_no_griot;In your court as well as among the common people, gossips say that you do not deserve your titles. After all, a person of your ancestry is not made to occupy such a position. Only prejudices and superstitions, certainly, but enough for people to speak ill of you.\n\nYou will need the advice of a learned Court Griot.;;;;;;;;;;;;;x
 african_revival;African Revival;;;;;;;;;;;;;x
 amazigh_resurgence;Amazigh Resurgence;;;;;;;;;;;;;x
 bori_opinion;Bori Opinion;;;;;;;;;;;;;x
 sympathy_african;Sympathy for Africans;;;;;;;;;;;;;x
 sympathy_african_desc;This character, though not a worshipper of the African gods, has a special sympathy and understanding for the African faiths and their practitioners.;;;;;;;;;;;;;x
+foro;Foro;;;;;;;;;;;;;x
+foro_desc;This character belongs to the Foro caste, the West African caste of rulers and landowners.;;;;;;;;;;;;;x
+jakhanke;Jakhanke;;;;;;;;;;;;;x
+jakhanke_desc;This character belongs to the Jakhanke caste, the West African caste of religious scholars and educators.;;;;;;;;;;;;;x
+wangara;Wangara;;;;;;;;;;;;;x
+wangara_desc;This character belongs to the Wangara caste, the West African caste of merchants and traders.;;;;;;;;;;;;;x
 child_of_garki_baba;Child of Garki Baba;;;;;;;;;;;;;x
 child_of_garki_baba_desc;This character has fought in a great holy war while possessed by warrior bori.;;;;;;;;;;;;;x
 shield_of_roog;Shield of Roog;;;;;;;;;;;;;x

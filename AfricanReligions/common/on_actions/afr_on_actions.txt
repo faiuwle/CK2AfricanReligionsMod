@@ -1,6 +1,7 @@
 on_startup = {
     events = {
-        AFRREL.001
+        AFRREL.001  # Replace male Inna with female Inna
+        AFRREL.015  # Fix barons' castes
     }
 }
 
@@ -9,5 +10,23 @@ on_yearly_pulse = {
         AFRREL.006  # Living Tan Garki
         AFRREL.008  # Sacred Tyeddo
         AFRREL.010  # Orphans of Numidia
+    }
+}
+
+on_new_holder = {
+    events = {
+        AFRREL.015  # Fix barons' castes
+    }
+}
+
+on_new_holder_inheritance = {
+    events = {
+        AFRREL.015  # Fix barons' castes
+    }
+}
+
+on_new_holder_usurpation = {
+    events = {
+        AFRREL.015  # Fix barons' castes
     }
 }

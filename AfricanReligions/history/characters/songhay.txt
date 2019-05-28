@@ -9,6 +9,7 @@
 	dynasty=1030006
 	religion="a_tag_roog"
 	culture="songhay"
+    trait = foro
 	700.1.1={
 		birth="700.1.1"
 	}
@@ -24,6 +25,7 @@
 	religion="a_tag_roog"
 	culture="songhay"
 	father=161040
+    trait = foro
 	720.1.1={
 		birth="720.1.1"
 	}
@@ -39,6 +41,7 @@
 	religion="a_tag_roog"
 	culture="songhay"
 	father=161041
+    trait = foro
 	740.1.1={
 		birth="740.1.1"
 	}
@@ -54,6 +57,7 @@
 	religion="a_tag_roog"
 	culture="songhay"
 	father=161042
+    trait = foro
 	760.1.1={
 		birth="760.1.1"
 	}
@@ -69,6 +73,7 @@
 	religion=a_tag_roog
 	culture=songhay
 	father=161043
+    trait = foro
 	780.1.1={
 		birth="780.1.1"
 	}
@@ -84,6 +89,7 @@
 	religion=a_tag_roog
 	culture=songhay
 	father=161044
+    trait = foro
 	800.1.1={
 		birth="800.1.1"
 	}
@@ -99,6 +105,7 @@
 	religion=a_tag_roog
 	culture=songhay
 	father=161045
+    trait = foro
 	820.1.1={
 		birth="820.1.1"
 	}
@@ -114,6 +121,7 @@
 	religion=a_tag_roog
 	culture=songhay
 	father=161046
+    trait = foro
 	840.1.1={
 		birth="840.1.1"
 	}
@@ -129,6 +137,7 @@
 	religion=a_tag_roog
 	culture="songhay"
 	father=161047
+    trait = foro
 	860.1.1={
 		birth="860.1.1"
 	}
@@ -144,6 +153,7 @@
 	religion=a_tag_roog
 	culture="songhay"
 	father=161048
+    trait = foro
 	880.1.1={
 		birth="880.1.1"
 	}

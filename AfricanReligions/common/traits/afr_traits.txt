@@ -21,6 +21,66 @@ sympathy_african = {
 	child_insult_adj = INSULT_STUPID
 }
 
+foro = {
+	potential = {
+		OR = {
+            religion = a_tag_roog
+            religion = a_tag_roog_reformed
+		}
+	}
+	opposites = {
+        jakhanke
+        wangara
+	}
+	
+	caste_tier = 2
+
+	monthly_character_wealth = 0.1
+
+	customizer = no
+	random = no
+}
+
+jakhanke = {
+	potential = {
+		OR = {
+            religion = a_tag_roog
+            religion = a_tag_roog_reformed
+		}
+	}
+	opposites = {
+        foro
+        wangara
+	}
+	
+	caste_tier = 3
+
+	monthly_character_piety = 0.1
+
+	customizer = no
+	random = no
+}
+
+wangara = {
+	potential = {
+		OR = {
+            religion = a_tag_roog
+            religion = a_tag_roog_reformed
+		}
+	}
+	opposites = {
+        jakhanke
+        foro
+	}
+	
+	caste_tier = 1
+
+	diplomacy = 1
+
+	customizer = no
+	random = no
+}
+
 child_of_garki_baba = {
 	opposites = {
 		mujahid
