@@ -12,6 +12,6 @@ b_djado = tribal
 
 # Misc
 culture = kanuri
-religion = ibadi
+religion = bori
 
 # History
