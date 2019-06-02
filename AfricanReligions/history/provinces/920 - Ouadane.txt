@@ -17,4 +17,4 @@ culture = maghreb_arabic
 religion = amazigh
 
 # History
-900.1.1 = { religion = sunni }
+1200.1.1 = { religion = sunni }

@@ -31154,7 +31154,7 @@ e_france = {
 				b_laufenberg = {
 					frankish = "Laufond"
 				}
-				b_habsburg = {}
+
 			}
 			c_vaud = {
 				b_lausanne = {
@@ -31572,6 +31572,7 @@ e_spain = {
 				b_alcochete = {}
 				b_pegoes = {}
 				b_montijo = {}
+				}
 			}
 		}
 	}
@@ -34136,7 +34137,7 @@ e_arabia = {
 					maghreb_arabic = "al-Iskandariyya"
 					levantine_arabic = "al-Iskandariyya"
 					andalusian_arabic = "al-Iskandariyya"
-                }
+                    }
 				b_abukir = {
 				}
 				b_damanhur = {
@@ -34481,6 +34482,7 @@ e_arabia = {
 				}
 				b_clysma = {}
 				b_mount_anthony = {}
+				}
 			}
 		}
 		d_aswan = {
@@ -34511,6 +34513,8 @@ e_arabia = {
 				b_philae = {
 				}
 				b_kalabsha = {
+				}
+				b_edfu = {
 				}
 			}
 			c_quena = {

@@ -21,7 +21,6 @@ religion = a_tag_roog
 
 # History
 1050.1.1 = {
-	culture = maghreb_arabic
 	#culture = butr
 	religion = sunni 
 	b_tirakka = castle 
