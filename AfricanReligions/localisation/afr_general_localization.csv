@@ -49,6 +49,8 @@ d_sacred_tyeddo;Sacred Tyeddo;;;;;;;;;;;;;x
 d_sacred_tyeddo_adj;Tyeddo;;;;;;;;;;;;;x
 d_orphans_of_numidia;Orphans of Numidia;;;;;;;;;;;;;x
 d_orphans_of_numidia_adj;Orphan;;;;;;;;;;;;;x
+e_carthage;Carthaginian Empire;;;;;;;;;;;;;x
+e_carthage_adj;Carthaginian;;;;;;;;;;;;;x
 temple_baron_female_bori;Magadja;;;;;;;;;;;;;x
 temple_count_female_bori;Chief Magadja;;;;;;;;;;;;;x
 temple_duke_female_bori;Great Magadja;;;;;;;;;;;;;x
@@ -104,8 +106,6 @@ temple_county_african_group;Theocracy;;;;;;;;;;;;;x
 temple_duchy_african_group;Theocracy;;;;;;;;;;;;;x
 temple_kingdom_african_group;Theocracy;;;;;;;;;;;;;x
 temple_empire_african_group;Empire;;;;;;;;;;;;;x
-king_manden;Faama;;;;;;;;;;;;;x
-tribal_king_manden;Faama;;;;;;;;;;;;;x
 emperor_manden;Mansa;;;;;;;;;;;;;x
 tribal_emperor_manden;Mansa;;;;;;;;;;;;;x
 king_songhay;Dia;;;;;;;;;;;;;x
@@ -116,6 +116,26 @@ king_soninke;Ghana;;;;;;;;;;;;;x
 tribal_king_soninke;Ghana;;;;;;;;;;;;;x
 emperor_soninke;Ghana;;;;;;;;;;;;;x
 tribal_emperor_soninke;Ghana;;;;;;;;;;;;;x
+AGELLID;Agellid;;;;;;;;;;;;;x
+TAGELLIDT;Tagellidt;;;;;;;;;;;;;x
+AMENKAD;Amenkad;;;;;;;;;;;;;x
+SUFFETE;Suffete;;;;;;;;;;;;;x
+king_maghreb_arabic;[MaghrebArabicKing];;;;;;;;;;;;;x
+king_female_maghreb_arabic;[MaghrebArabicQueen];;;;;;;;;;;;;x
+emperor_maghreb_arabic;[MaghrebArabicEmperor];;;;;;;;;;;;;x
+emperor_female_maghreb_arabic;[MaghrebArabicEmpress];;;;;;;;;;;;;x
+tribal_king_maghreb_arabic;[MaghrebArabicKing];;;;;;;;;;;;;x
+tribal_king_female_maghreb_arabic;[MaghrebArabicQueen];;;;;;;;;;;;;x
+tribal_emperor_maghreb_arabic;[MaghrebArabicEmperor];;;;;;;;;;;;;x
+tribal_emperor_female_maghreb_arabic;[MaghrebArabicEmpress];;;;;;;;;;;;;x
+kingdom_of_maghreb_arabic;[MaghrebArabicKingdomOf];;;;;;;;;;;;;x
+tribal_kingdom_of_maghreb_arabic;[MaghrebArabicKingdomOf];;;;;;;;;;;;;x
+empire_of_maghreb_arabic;[MaghrebArabicEmpireOf];;;;;;;;;;;;;x
+tribal_empire_of_maghreb_arabic;[MaghrebArabicEmpireOf];;;;;;;;;;;;;x
+kingdom_maghreb_arabic;[MaghrebArabicKingdom];;;;;;;;;;;;;x
+tribal_kingdom_maghreb_arabic;[MaghrebArabicKingdom];;;;;;;;;;;;;x
+empire_maghreb_arabic;[MaghrebArabicEmpire];;;;;;;;;;;;;x
+tribal_empire_maghreb_arabic;[MaghrebArabicEmpire];;;;;;;;;;;;;x
 job_spiritual_bori;Court Magadja;;;;;;;;;;;;;x
 job_spiritual_a_tag_roog;Hogon;;;;;;;;;;;;;x
 job_spiritual_a_tag_roog_reformed;Hogon;;;;;;;;;;;;;x

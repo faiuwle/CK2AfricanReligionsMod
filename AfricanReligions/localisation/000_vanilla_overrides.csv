@@ -8,6 +8,8 @@ d_ghana;Wagadou;;;;;;;;;;;;;x
 d_ghana_adj;Wagadouan;;;;;;;;;;;;;x
 d_ghanan_band;Wagadouan Band;;;;;;;;;;;;;x
 d_ghanan_band_adj;Wagadouan;;;;;;;;;;;;;x
+king_manden;Faama;;;;;;;;;;;;;x
+tribal_king_manden;Faama;;;;;;;;;;;;;x
 manden;Manding;;;;;;;;;;;;;x
 job_chancellor_west_african;Djeli;;;;;;;;;;;;;x
 EVTDESC670_HF;[Root.GetReformationNature]\n[Root.GetReformationLeadership][Root.GetReformationReligionAfr]\n[Root.GetReformationOutro];[Root.GetReformationNature]\n[Root.GetReformationLeadership][Root.GetReformationReligionAfr]\n[Root.GetReformationOutro];[Root.GetReformationNature]\n[Root.GetReformationLeadership][Root.GetReformationReligionAfr]\n[Root.GetReformationOutro];;[Root.GetReformationNature]\n[Root.GetReformationLeadership][Root.GetReformationReligionAfr]\n[Root.GetReformationOutro];;;;;;;;x

@@ -142,3 +142,195 @@ defined_text = {
         localisation_key = change_caste_no_griot
     }
 }
+
+defined_text = {
+    name = MaghrebArabicKing
+    
+    text = {
+        trigger = {
+            OR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+        localisation_key = AGELLID
+    }
+    
+    text = {
+        trigger = {
+            NOR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+        localisation_key = king_arabic
+    }
+}
+
+defined_text = {
+    name = MaghrebArabicQueen
+    
+    text = {
+        trigger = {
+            OR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+        localisation_key = TAGELLIDT
+    }
+    
+    text = {
+        trigger = {
+            NOR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+        localisation_key = king_female_arabic
+    }
+}
+
+defined_text = {
+    name = MaghrebArabicEmperor
+    
+    text = {
+        trigger = {
+            OR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+        localisation_key = AMENKAD
+    }
+    
+    text = {
+        trigger = {
+            NOR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+        localisation_key = emperor_arabic
+    }
+}
+
+defined_text = {
+    name = MaghrebArabicEmpress
+    
+    text = {
+        trigger = {
+            OR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+        localisation_key = TAGELLIDT
+    }
+    
+    text = {
+        trigger = {
+            NOR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+        localisation_key = emperor_female_arabic
+    }
+}
+
+defined_text = {
+    name = MaghrebArabicKingdomOf
+    
+    text = {
+        trigger = {
+            OR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+        localisation_key = kingdom_of
+    }
+    
+    text = {
+        trigger = {
+            NOR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+        localisation_key = kingdom_of_arabic
+    }
+}
+
+defined_text = {
+    name = MaghrebArabicKingdom
+    
+    text = {
+        trigger = {
+            OR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+        localisation_key = kingdom
+    }
+    
+    text = {
+        trigger = {
+            NOR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+        localisation_key = kingdom_arabic
+    }
+}
+
+defined_text = {
+    name = MaghrebArabicEmpireOf
+    
+    text = {
+        trigger = {
+            OR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+        localisation_key = empire_of
+    }
+    
+    text = {
+        trigger = {
+            NOR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+        localisation_key = empire_of_arabic
+    }
+}
+
+defined_text = {
+    name = MaghrebArabicEmpire
+    
+    text = {
+        trigger = {
+            OR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+        localisation_key = empire
+    }
+    
+    text = {
+        trigger = {
+            NOR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+        localisation_key = empire_arabic
+    }
+}

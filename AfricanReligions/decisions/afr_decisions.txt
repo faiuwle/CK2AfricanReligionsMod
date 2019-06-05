@@ -356,4 +356,26 @@ decisions = {
 			}
 		}
     }
+    
+    reform_carthage = {
+        only_playable = yes
+        is_high_prio = yes
+        ai_check_interval = 24
+        
+        potential = {
+            OR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+        
+        allow = {
+            custom_tooltip = {
+                text = is_reformed_amazigh_tooltip
+                religion = amazigh_reformed
+            }
+            has_landed_title = e_maghreb
+            
+        }
+    }
 }
