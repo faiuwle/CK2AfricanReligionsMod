@@ -45,3 +45,22 @@ set_bloodline = {
     picture = GFX_bloodlines_symbol_african
     flags = { historical_bloodline }
 }
+
+carthage_bloodline = {
+    inheritance = patrilineal
+    allow_bastards = yes
+    monthly_character_prestige = 0.25
+    maghreb_arabic_opinion = 5
+    amazigh_opinion = 5
+    amazigh_reformed_opinion = 5
+    roman_opinion = -5
+    hellenic_pagan_opinion = -5
+    hellenic_pagan_reformed_opinion = -5
+    active = {
+        OR = {
+            religion = amazigh
+            religion = amazigh_reformed
+        }
+    }
+    picture = GFX_bloodlines_symbol_african_waves
+}

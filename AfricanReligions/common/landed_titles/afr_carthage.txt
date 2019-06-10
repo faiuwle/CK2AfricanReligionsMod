@@ -1,5 +1,5 @@
 e_carthage = {
-    color = { 205 90 15 }
+    color = { 220 240 40 }
     
     capital = 817 # Tunis
     
@@ -13,6 +13,6 @@ e_carthage = {
     dynasty_title_names = no
     
     allow = {
-        always = no
+        has_global_flag = carthage_restored
     }
 }

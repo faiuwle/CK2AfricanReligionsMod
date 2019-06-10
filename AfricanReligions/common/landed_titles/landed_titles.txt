@@ -36003,6 +36003,7 @@ e_maghreb = {
 				ai = no
 				culture = maghreb_arabic
 			}
+            NOT = { has_global_flag = carthage_restored }
 		}
 	}
 	

@@ -191,3 +191,15 @@ heir_of_dihya = {
 	male_compliment_adj = COMPL_RIGHTEOUS
 	female_compliment_adj = COMPL_RIGHTEOUS
 }
+
+suffete = {
+    customizer = no
+    
+    vassal_opinion = 10
+    monthly_character_prestige = 0.5
+    
+    male_compliment = HEIR_OF_HANNIBAL
+    female_compliment = HEIR_OF_DIDO
+    male_insult = FAKE_PHOENICIAN
+    female_insult = FAKE_PHOENICIAN
+}

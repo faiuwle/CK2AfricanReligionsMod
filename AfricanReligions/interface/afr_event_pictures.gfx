@@ -3,4 +3,9 @@ spriteTypes = {
         name = "GFX_evt_battle_african"
         texturefile = "gfx/event_pictures/afr_african_battle_picture.dds"
     }
+    
+    spriteType = {
+        name = "GFX_evt_building_carthage"
+        texturefile = "gfx/event_pictures/afr_building_carthage.dds"
+    }
 }

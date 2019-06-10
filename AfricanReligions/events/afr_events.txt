@@ -347,3 +347,329 @@ narrative_event = {
         }
     }
 }
+
+# Restoring Carthage
+narrative_event = {
+    id = AFRREL.016
+    title = EVTTITLE_AFRREL016
+    desc = EVTDESC_AFRREL016
+    picture = GFX_evt_building_carthage
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL016
+        
+        # Transfer k_africa, k_mauretania, and e_maghreb to de jure e_carthage
+        k_africa = { de_jure_liege = e_carthage }
+        k_mauretania = { de_jure_liege = e_carthage }
+        e_maghreb = {
+            any_direct_de_jure_vassal_title = {
+                de_jure_liege = e_carthage
+            }
+        }
+        
+        # Set up e_carthage
+		e_carthage = {
+			show_scope_change = no
+			grant_title = ROOT
+			hidden_tooltip = { make_primary_title = yes }
+			copy_title_laws = e_maghreb
+		}
+        
+        # Destroy e_maghreb
+        e_maghreb = {
+            show_scope_change = no
+            destroy_landed_title = THIS
+        }
+
+        # Deactivate e_maghreb
+        activate_title = { title = e_maghreb status = no }
+        
+        # Spawn announcement event
+        any_playable_ruler = {
+            limit = {
+                NOT = { has_landed_title = e_maghreb }
+                ai = no
+            }
+            narrative_event = { id = AFRREL.017 days = 2 }
+        }
+        
+        # Add Suffete trait
+        add_trait = suffete
+        
+        # Give nickname The Beloved
+        give_nickname = nick_the_beloved
+        
+        # Create bloodline
+        if = {
+            limit = {
+                has_dlc = "Holy Fury"
+                OR = {
+                    religion = amazigh
+                    religion = amazigh_reformed
+                }
+            }
+            create_bloodline = {
+                type = carthage_bloodline
+            }
+            new_bloodline = {
+                set_description = "bloodline_desc_carthage"
+            }
+            sound_effect = bloodline_added
+        }
+    }
+}
+
+# Informed about the restoration of Carthage
+narrative_event = {
+    id = AFRREL.017
+    title = EVTTITLE_AFRREL017
+
+    desc = {
+        text = EVTDESC_AFRREL017
+        trigger = {
+            NOR = {
+                has_landed_title = e_byzantium
+                has_landed_title = e_roman_empire
+                has_landed_title = e_hre
+                has_landed_title = e_latin_empire
+            }
+        }
+    }
+    
+    desc = {
+        text = EVTDESC_AFRREL017_ROME
+        trigger = {
+            OR = {
+                has_landed_title = e_byzantium
+                has_landed_title = e_roman_empire
+                has_landed_title = e_hre
+                has_landed_title = e_latin_empire
+            }
+        }
+    }
+    
+    picture = GFX_evt_building_carthage
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL017
+        trigger = {
+            NOR = {
+                has_landed_title = e_byzantium
+                has_landed_title = e_roman_empire
+                has_landed_title = e_hre
+                has_landed_title = e_latin_empire
+            }
+        }
+    }
+    
+    option = {
+        name = EVTOPTB_AFRREL017
+        trigger = {
+            OR = {
+                has_landed_title = e_byzantium
+                has_landed_title = e_roman_empire
+                has_landed_title = e_hre
+                has_landed_title = e_latin_empire
+            }
+        }
+        FROM = { letter_event = { id = AFRREL.018 days = 3 random = 10 } }
+        add_rival = FROM
+    }
+}
+
+# Nastygram from various Roman Emperors
+letter_event = {
+    id = AFRREL.018
+    desc = {
+        trigger = {
+            FROM = { has_landed_title = e_hre }
+        }
+        text = EVTDESC_AFRREL018_HRE
+    }
+    desc = {
+        trigger = {
+            FROM = { has_landed_title = e_latin_empire }
+        }
+        text = EVTDESC_AFRREL018_LATIN
+    }
+    desc = {
+        trigger = {
+            FROM = {
+                OR = {
+                    has_landed_title = e_byzantium
+                    has_landed_title = e_roman_empire
+                }
+            }
+        }
+        text = EVTDESC_AFRREL018_ROME
+    }
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL018
+        trigger = {
+            FROM = { has_landed_title = e_hre }
+        }
+        add_rival = FROM
+    }
+    option = {
+        name = EVTOPTB_AFRREL018
+        trigger = {
+            FROM = { has_landed_title = e_latin_empire }
+        }
+        add_rival = FROM
+    }
+    option = {
+        name = EVTOPTC_AFRREL018
+        trigger = {
+            FROM = {
+                OR = {
+                    has_landed_title = e_byzantium
+                    has_landed_title = e_roman_empire
+                }
+            }
+        }
+        add_rival = FROM
+    }
+}
+
+# Nastygram from Carthaginian Emperor on creation of various Romes
+letter_event = {
+    id = AFRREL.019
+    desc = EVTDESC_AFRREL019
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL019
+        add_rival = FROM
+    }
+}
+
+# Suffete trait
+
+# Suffete Trait Gained
+character_event = {
+	id = AFRREL.020
+	desc = EVTDESC_AFRREL020
+    
+	picture = GFX_evt_building_carthage
+	
+	only_playable = yes
+	has_global_flag = carthage_restored
+	
+	trigger = {
+		has_landed_title = e_carthage
+		NOT = { trait = suffete }
+	}
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = EVTOPTA_AFRREL020
+		add_trait = suffete
+	}
+}
+
+# Suffete Trait Lost
+character_event = {
+	id = AFRREL.021
+	desc = {
+        trigger = {
+            e_carthage = {
+                holder_scope = { always = yes }
+            }
+        }
+        text = EVTDESC_AFRREL021_LOST
+    }
+    desc = {
+        trigger = {
+            NOT = {
+                e_carthage = {
+                    holder_scope = { always = yes }
+                }
+            }
+        }
+        text = EVTDESC_AFRREL021_DESTROYED
+    }
+	picture = GFX_evt_building_carthage
+	
+	has_global_flag = carthage_restored
+		
+	trigger = {
+		trait = suffete
+		NOT = { has_landed_title = e_carthage }
+		is_alive = yes
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_AFRREL021
+        trigger = {
+            e_carthage = {
+                holder_scope = { always = yes }
+            }
+        }
+		remove_trait = suffete
+	}
+    
+    option = {
+        name = EVTOPTB_AFRREL021
+        trigger = {
+            NOT = {
+                e_carthage = {
+                    holder_scope = { always = yes }
+                }
+            }
+        }
+        remove_trait = suffete
+    }
+}
+
+#On_death Suffete Trait inheritance
+character_event = {
+	id = AFRREL.022
+	hide_window = yes
+	
+	only_playable = yes
+	has_global_flag = carthage_restored
+	
+	trigger = {
+		has_landed_title = e_carthage
+	}
+	
+	is_triggered_only = yes
+	
+	
+	immediate = {
+		e_carthage = { current_heir = { character_event = { id = AFRREL.020 days = 2 } } }
+	}
+}
+
+#On_title_usurped Suffete Trait inheritance
+character_event = {
+	id = AFRREL.023
+	hide_window = yes
+	
+	only_playable = yes
+	has_global_flag = carthage_restored
+	
+	trigger = {
+		FROM = { title = e_carthage }
+		NOT = { trait = suffete }
+	}
+	
+	is_triggered_only = yes
+	
+	
+	immediate = {
+		ROOT = { character_event = { id = AFRREL.020 days = 2 } }
+	}
+}

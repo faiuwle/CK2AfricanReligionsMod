@@ -1,0 +1,1 @@
+nick_the_beloved = {}  # Triggered by the creation of Carthage
