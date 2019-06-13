@@ -36,7 +36,7 @@ on_new_holder_inheritance = {
 on_new_holder_usurpation = {
     events = {
         AFRREL.015  # Fix barons' castes
-        AFRREL.023  # Inheritance Suffete trait
+        AFRREL.023  # Inheritance of Suffete trait
     }
 }
 

@@ -202,4 +202,6 @@ suffete = {
     female_compliment = HEIR_OF_DIDO
     male_insult = FAKE_PHOENICIAN
     female_insult = FAKE_PHOENICIAN
+    male_insult = AFRICAN_PETTY_KING
+    female_insult = AFRICAN_PETTY_QUEEN
 }

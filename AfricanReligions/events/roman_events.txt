@@ -752,9 +752,12 @@ narrative_event = {
 			any_playable_ruler = {
 				limit = {
 					NOT = { has_landed_title = e_byzantium }
-					ai = no
+                    OR = {
+                        ai = no
+                        has_landed_title = e_carthage
+                    }
 				}
-				narrative_event = { id = LoR.21 }
+				narrative_event = { id = LoR.21 days = 2 }
 			}
 			if = { #Hellenic Resurgence
 				limit = { 
@@ -837,6 +840,7 @@ narrative_event = {
 narrative_event = {
 	id = LoR.21
 	title = EVTNAMELoR.21
+
 	desc = {
 		text = EVTDESCLoR.21
 		trigger = { 

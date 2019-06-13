@@ -3,6 +3,12 @@ religion_nature = {
 	
 	religion_peaceful = {
 		picture = GFX_religion_feature_peaceful
+        trigger = {
+            NOR = {
+                has_selected_religion_feature = religion_feature_amazigh
+                has_selected_religion_feature = religion_feature_a_tag_roog
+            }
+        }
 		effect = {
 			custom_tooltip = { text = tooltip_religion_feature_pacifist }
 			custom_tooltip = { text = tooltip_religion_feature_peace_piety }
@@ -137,6 +143,9 @@ religion_nature = {
 	}
 	religion_defensive = {
 		picture = GFX_religion_feature_defensive
+        trigger = {
+            NOT = { has_selected_religion_feature = religion_feature_a_tag_roog }
+        }
 		effect = {
 			custom_tooltip = { text = tooltip_religion_feature_defensive }
 			custom_tooltip = { text = tooltip_religion_feature_hard_conversion }
@@ -721,8 +730,10 @@ religion_doctrine = {
 		potential = {
 			NOT = { religion = hellenic_pagan } #Core feature of the religion itself.
 			NOT = { religion = hellenic_pagan_reformed } #Core feature of the religion itself.
-            NOT = { has_selected_religion_feature = religion_feature_a_tag_roog }
 		}
+        trigger = {
+            NOT = { has_selected_religion_feature = religion_feature_a_tag_roog }
+        }
 
 		effect = {
 			custom_tooltip = { text = tooltip_religion_feature_haruspicy }
@@ -912,6 +923,7 @@ religion_doctrine = {
 				religion_openly_aztec_or_reformed_trigger = yes
 				has_selected_religion_feature = religion_peaceful
 				has_selected_religion_feature = religion_proselytizing
+                has_selected_religion_feature = religion_feature_amazigh
 			}
 		}
 		effect = {
@@ -935,9 +947,10 @@ religion_doctrine = {
 	religion_adventuring = {
 		picture = GFX_religion_feature_adventuring
 		trigger = {
-			NOT = {
+			NOR = {
 				has_selected_religion_feature = religion_peaceful
 				has_selected_religion_feature = religion_feature_norse
+                has_selected_religion_feature = religion_feature_amazigh
 			}
 		}
 		effect = {
@@ -970,6 +983,7 @@ religion_doctrine = {
 				has_selected_religion_feature = religion_peaceful
 				has_selected_religion_feature = religion_feature_norse #Redundant
 				has_selected_religion_feature = religion_feature_aztec
+                has_selected_religion_feature = religion_feature_amazigh
 			}
 		}
 		effect = {
