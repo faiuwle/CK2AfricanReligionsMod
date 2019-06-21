@@ -235,7 +235,7 @@ defined_text = {
                 religion = amazigh_reformed
             }
         }
-        localisation_key = emperor_female_arabic
+        localisation_key = emperor_female
     }
 }
 
@@ -284,5 +284,27 @@ defined_text = {
             }
         }
         localisation_key = kingdom_arabic
+    }
+}
+
+defined_text = {
+    name = AfrReligiousRevoltEvtDesc
+    
+    text = {
+        trigger = {
+            ROOT = {
+                county = c_roma
+            }
+        }
+        localisation_key = rome_revolt_desc
+    }
+    
+    text = {
+        trigger = {
+            ROOT = {
+                NOT = { county = c_roma }
+            }
+        }
+        localisation_key = non_rome_revolt_desc
     }
 }

@@ -8,4 +8,9 @@ spriteTypes = {
         name = "GFX_evt_building_carthage"
         texturefile = "gfx/event_pictures/afr_building_carthage.dds"
     }
+    
+    spriteType = {
+        name = "GFX_evt_carthage_falls"
+        texturefile = "gfx/event_pictures/afr_burning_carthage.dds"
+    }
 }

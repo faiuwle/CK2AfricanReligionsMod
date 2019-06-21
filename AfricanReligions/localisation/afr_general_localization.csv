@@ -130,10 +130,10 @@ tribal_king_maghreb_arabic;[MaghrebArabicKing];;;;;;;;;;;;;x
 tribal_king_female_maghreb_arabic;[MaghrebArabicQueen];;;;;;;;;;;;;x
 tribal_emperor_maghreb_arabic;[MaghrebArabicEmperor];;;;;;;;;;;;;x
 tribal_emperor_female_maghreb_arabic;[MaghrebArabicEmpress];;;;;;;;;;;;;x
-kingdom_of_maghreb_arabic;[MaghrebArabicKingdomOf];;;;;;;;;;;;;x
-tribal_kingdom_of_maghreb_arabic;[MaghrebArabicKingdomOf];;;;;;;;;;;;;x
-kingdom_maghreb_arabic;[MaghrebArabicKingdom];;;;;;;;;;;;;x
-tribal_kingdom_maghreb_arabic;[MaghrebArabicKingdom];;;;;;;;;;;;;x
+kingdom_of_maghreb_arabic;[Holder.MaghrebArabicKingdomOf];;;;;;;;;;;;;x
+tribal_kingdom_of_maghreb_arabic;[Holder.MaghrebArabicKingdomOf];;;;;;;;;;;;;x
+kingdom_maghreb_arabic;[Holder.MaghrebArabicKingdom];;;;;;;;;;;;;x
+tribal_kingdom_maghreb_arabic;[Holder.MaghrebArabicKingdom];;;;;;;;;;;;;x
 job_spiritual_bori;Court Magadja;;;;;;;;;;;;;x
 job_spiritual_a_tag_roog;Hogon;;;;;;;;;;;;;x
 job_spiritual_a_tag_roog_reformed;Hogon;;;;;;;;;;;;;x
@@ -189,6 +189,10 @@ tooltip_bori_elector_possessed_ruler;The bori spirit possessing my liege surely 
 tooltip_elector_vote_chiroma;[From.GetSheHeCap] is the §YChiroma§!, the position traditionally held by the heir apparent;;;;;;;;;;;;;x
 baptism_sponsor_sympathetic_afr;§Y[Root.GetTitledFirstName]§! is sympathetic towards §YAfricans§!;;;;;;;;;;;;;x
 baptism_sponsor_african;§Y[Root.GetTitledFirstName]§! is a §YReformed African§!;;;;;;;;;;;;;x
+salt_county_succ_tooltip;§Y[Root.GetTitledFirstName]§! takes all occupied territory.;;;;;;;;;;;;;x
+salt_rome_tooltip;The §YChristian§! world is outraged by your actions.\nThe destruction of the city and the §YHoly See§! has gravely affected the §YMoral Authority§! of the §YCatholic Church§!, as well as the faith of Rome's former owner.;;;;;;;;;;;;;x
+salt_constantinople_tooltip;The §YChristian§! world is outraged by your actions.\nThe destruction of the city has gravely affected the §YMoral Authority§! of the §YOrthodox Church§!, as well as the faith of Constantinople's former owner.;;;;;;;;;;;;;x
+salt_carthage_capital_tooltip;The §YAmazigh§! world is outraged by your actions.\nThe destruction of the city has gravely affected the §YMoral Authority§! of the §YChurch of the Amazigh People§!.;;;;;;;;;;;;;x
 eldership_rules_afr;Eldership;;;;;;;;;;;;;x
 religion_feature_a_tag_roog;Way of the Divine;;;;;;;;;;;;;x
 religion_feature_a_tag_roog_desc;In order to edify the faith we shall unify the many traditions of life and divination practiced by the different nations of the land.;;;;;;;;;;;;;x
@@ -233,3 +237,11 @@ FAKE_PHOENICIAN;fake Phoenician;;;;;;;;;;;;;x
 AFRICAN_PETTY_KING;African Petty King;;;;;;;;;;;;;x
 AFRICAN_PETTY_QUEEN;African Petty Queen;;;;;;;;;;;;;x
 nick_the_beloved;the Beloved;;;;;;;;;;;;;x
+nick_the_thunderbolt;the Thunderbolt;;;;;;;;;;;;;x
+nick_africanus;Africanus;;;;;;;;;;;;;x
+CB_NAME_IMPERIAL_CARTHAGE;Reconquest of [Title.GetBaseName];;;;;;;;;;;;;x
+imperial_reconquest_carthage_desc;The lost territory of the Carthaginian Empire must be reclaimed! §Y$CLAIMANT$§! can use this Casus Belli to seize all titles held by §Y$TARGET$§! within the de jure §Y$TITLE$§!.;;;;;;;;;;;;;x
+WAR_NAME_IMPERIAL_CARTHAGE;$ORDER$$FIRST_ADJ$ Imperial Reconquest of $OTHER_TITLE$;;;;;;;;;;;;;x
+CB_NAME_SALT_COUNTY;Salt [Title.GetBaseName];;;;;;;;;;;;;x
+salt_county_desc;This casus belli allows §Y$CLAIMANT$§! to declare war on the old imperial nemesis controlled by §Y$TARGET$§! to annex all conquered land and completely destroy their mighty metropolis.;;;;;;;;;;;;;x
+WAR_NAME_SALT_COUNTY;$ORDER$$FIRST_ADJ$ War to Salt $OTHER_TITLE$;;;;;;;;;;;;;x
