@@ -218,18 +218,6 @@ salt_county = {
 				detract_grace_super_huge_effect = yes 
 			}
 		}
-		if = {
-			limit = { 
-				attacker = { 
-					any_owned_bloodline = {
-						has_bloodline_flag = bloodline_great_conquerors
-					} 
-				} 
-			}
-			attacker = {  
-				set_character_flag = flag_declared_bloodline_invasion
-			}
-		}
 	}
     
     can_use = {
