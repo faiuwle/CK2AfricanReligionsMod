@@ -902,3 +902,75 @@ narrative_event = {
         }
     }
 }
+
+narrative_event = {
+	id = AFRREL.030
+	title = EVTTITLE_AFRREL030
+    desc = EVTDESC_AFRREL030
+	
+	picture = GFX_evt_building_carthage
+	
+	ai = no
+	
+	trigger = {
+		is_alternate_start = no
+        has_landed_title = e_carthage
+		OR = {
+            religion = amazigh
+            religion = amazigh_reformed
+		}
+		NOT = { has_global_flag = carthage_borders }
+		
+        completely_controls = d_tunis
+        completely_controls = d_tripolitania
+        completely_controls = d_syrte
+        completely_controls = d_jerid
+        completely_controls = d_cyrenaica
+        completely_controls = d_kabylia
+        completely_controls = d_mzab
+        
+        completely_controls = d_marrakech
+        completely_controls = d_tangiers
+        completely_controls = d_fes
+        completely_controls = d_alger
+        completely_controls = d_tlemcen
+        completely_controls = d_sijilmasa
+        completely_controls = d_sous
+        completely_controls = d_adrar
+        completely_controls = d_tahert
+        
+        completely_controls = d_benevento
+        completely_controls = d_capua
+        completely_controls = d_apulia
+        completely_controls = d_abruzzo
+        completely_controls = d_salerno
+        completely_controls = d_calabria
+        completely_controls = d_sicily
+        
+        completely_controls = d_sardinia
+        completely_controls = d_corsica
+        
+        completely_controls = d_valencia
+        completely_controls = d_murcia
+        
+        completely_controls = d_cordoba
+        completely_controls = d_granada
+        completely_controls = d_sevilla
+        completely_controls = d_toledo
+        
+        completely_controls = d_badajoz
+        completely_controls = d_beja
+        completely_controls = d_algarve
+        completely_controls = d_balata
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTA_AFRREL030
+		set_global_flag = carthage_borders
+		prestige = 1000
+	}
+}
