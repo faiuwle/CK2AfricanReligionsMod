@@ -130,8 +130,8 @@ tribal_king_maghreb_arabic;[MaghrebArabicKing];;;;;;;;;;;;;x
 tribal_king_female_maghreb_arabic;[MaghrebArabicQueen];;;;;;;;;;;;;x
 tribal_emperor_maghreb_arabic;[MaghrebArabicEmperor];;;;;;;;;;;;;x
 tribal_emperor_female_maghreb_arabic;[MaghrebArabicEmpress];;;;;;;;;;;;;x
-kingdom_of_maghreb_arabic;[Holder.MaghrebArabicKingdomOf];;;;;;;;;;;;;x
-tribal_kingdom_of_maghreb_arabic;[Holder.MaghrebArabicKingdomOf];;;;;;;;;;;;;x
+kingdom_of_maghreb_arabic;Kingdom of;;;;;;;;;;;;;x
+tribal_kingdom_of_maghreb_arabic;Kingdom of;;;;;;;;;;;;;x
 kingdom_maghreb_arabic;[Holder.MaghrebArabicKingdom];;;;;;;;;;;;;x
 tribal_kingdom_maghreb_arabic;[Holder.MaghrebArabicKingdom];;;;;;;;;;;;;x
 job_spiritual_bori;Court Magadja;;;;;;;;;;;;;x
