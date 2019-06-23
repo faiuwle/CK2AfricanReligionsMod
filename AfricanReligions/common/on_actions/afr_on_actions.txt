@@ -10,12 +10,20 @@ on_yearly_pulse = {
         AFRREL.006  # Living Tan Garki
         AFRREL.008  # Sacred Tyeddo
         AFRREL.010  # Orphans of Numidia
+        AFRREL.021  # Clean up Suffete trait
+    }
+}
+
+on_five_year_pulse = {
+    events = {
+        AFRREL.020  # Apply Suffete trait
     }
 }
 
 on_new_holder = {
     events = {
         AFRREL.015  # Fix barons' castes
+        AFRREL.020  # Apply Suffete trait
     }
 }
 
@@ -28,5 +36,12 @@ on_new_holder_inheritance = {
 on_new_holder_usurpation = {
     events = {
         AFRREL.015  # Fix barons' castes
+        AFRREL.023  # Inheritance of Suffete trait
+    }
+}
+
+on_death = {
+    events = {
+        AFRREL.022  # Inheritance of Suffete trait
     }
 }

@@ -48,4 +48,11 @@ spriteTypes = {
         norefcount = yes
         effectFile = "gfx/FX/buttonstate.lua"
     }
+    spriteType = {
+        name = GFX_trait_suffete
+        texturefile = "gfx/traits/suffete.dds"
+        noOfFrames = 1
+        norefcount = yes
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
 }

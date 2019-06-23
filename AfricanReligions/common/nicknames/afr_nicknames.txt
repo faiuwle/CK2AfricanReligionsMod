@@ -1,0 +1,3 @@
+nick_the_beloved = {}  # Triggered by the creation of Carthage
+nick_the_thunderbolt = {}  # Triggered by Salt Rome/Constantinople CB
+nick_africanus = {}  # Triggered by the Salt [Capital of Carthage] CB

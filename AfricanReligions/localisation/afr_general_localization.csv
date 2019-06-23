@@ -49,6 +49,8 @@ d_sacred_tyeddo;Sacred Tyeddo;;;;;;;;;;;;;x
 d_sacred_tyeddo_adj;Tyeddo;;;;;;;;;;;;;x
 d_orphans_of_numidia;Orphans of Numidia;;;;;;;;;;;;;x
 d_orphans_of_numidia_adj;Orphan;;;;;;;;;;;;;x
+e_carthage;Carthaginian Empire;;;;;;;;;;;;;x
+e_carthage_adj;Carthaginian;;;;;;;;;;;;;x
 temple_baron_female_bori;Magadja;;;;;;;;;;;;;x
 temple_count_female_bori;Chief Magadja;;;;;;;;;;;;;x
 temple_duke_female_bori;Great Magadja;;;;;;;;;;;;;x
@@ -104,10 +106,10 @@ temple_county_african_group;Theocracy;;;;;;;;;;;;;x
 temple_duchy_african_group;Theocracy;;;;;;;;;;;;;x
 temple_kingdom_african_group;Theocracy;;;;;;;;;;;;;x
 temple_empire_african_group;Empire;;;;;;;;;;;;;x
-king_manden;Faama;;;;;;;;;;;;;x
-tribal_king_manden;Faama;;;;;;;;;;;;;x
 emperor_manden;Mansa;;;;;;;;;;;;;x
+emperor_female_manden;Qasa;;;;;;;;;;;;;x
 tribal_emperor_manden;Mansa;;;;;;;;;;;;;x
+tribal_emperor_female_manden;Qasa;;;;;;;;;;;;;x
 king_songhay;Dia;;;;;;;;;;;;;x
 tribal_king_songhay;Dia;;;;;;;;;;;;;x
 emperor_songhay;Dia;;;;;;;;;;;;;x
@@ -116,6 +118,22 @@ king_soninke;Ghana;;;;;;;;;;;;;x
 tribal_king_soninke;Ghana;;;;;;;;;;;;;x
 emperor_soninke;Ghana;;;;;;;;;;;;;x
 tribal_emperor_soninke;Ghana;;;;;;;;;;;;;x
+AGELLID;Agellid;;;;;;;;;;;;;x
+TAGELLIDT;Tagellidt;;;;;;;;;;;;;x
+AMENKAD;Amenkad;;;;;;;;;;;;;x
+SUFFETE;Suffete;;;;;;;;;;;;;x
+king_maghreb_arabic;[MaghrebArabicKing];;;;;;;;;;;;;x
+king_female_maghreb_arabic;[MaghrebArabicQueen];;;;;;;;;;;;;x
+emperor_maghreb_arabic;[MaghrebArabicEmperor];;;;;;;;;;;;;x
+emperor_female_maghreb_arabic;[MaghrebArabicEmpress];;;;;;;;;;;;;x
+tribal_king_maghreb_arabic;[MaghrebArabicKing];;;;;;;;;;;;;x
+tribal_king_female_maghreb_arabic;[MaghrebArabicQueen];;;;;;;;;;;;;x
+tribal_emperor_maghreb_arabic;[MaghrebArabicEmperor];;;;;;;;;;;;;x
+tribal_emperor_female_maghreb_arabic;[MaghrebArabicEmpress];;;;;;;;;;;;;x
+kingdom_of_maghreb_arabic;[Holder.MaghrebArabicKingdomOf];;;;;;;;;;;;;x
+tribal_kingdom_of_maghreb_arabic;[Holder.MaghrebArabicKingdomOf];;;;;;;;;;;;;x
+kingdom_maghreb_arabic;[Holder.MaghrebArabicKingdom];;;;;;;;;;;;;x
+tribal_kingdom_maghreb_arabic;[Holder.MaghrebArabicKingdom];;;;;;;;;;;;;x
 job_spiritual_bori;Court Magadja;;;;;;;;;;;;;x
 job_spiritual_a_tag_roog;Hogon;;;;;;;;;;;;;x
 job_spiritual_a_tag_roog_reformed;Hogon;;;;;;;;;;;;;x
@@ -153,6 +171,8 @@ mari_djata;Blood of Mari-Djata;;;;;;;;;;;;;x
 mari_djata_desc;Prince Mari-Djata, was born disabled and was exiled from Niani by his jealous stepmother. However, he would return to reclaim his birthright, becoming the first Mansa of Mali.;;;;;;;;;;;;;x
 set_bloodline;Blood of Set;;;;;;;;;;;;;x
 set_bloodline_desc;Set was a leader of the Zaghawa people, who left the nomadic lifestyle of his nation and founded the city of Djimi, governing as the first ruler of the Duguwa dynasty.;;;;;;;;;;;;;x
+carthage_bloodline;Blood of [This.GetFirstNameWithNick];;;;;;;;;;;;;x
+carthage_bloodline_desc;[This.GetTitledNameWithNick] was the magnificent ruler who presided over the rebirth of the Carthaginian empire from the very ashes.;;;;;;;;;;;;;x
 string_reformed_religion_a_tag_roog; the ancient spiritual traditions of the Western Sahel have been unified into a single and true way of the divine, capable of resisting any foreign incursion.;;;;;;;;;;;;;x
 string_reformed_religion_amazigh; the faith of Carthage and Numidia will return the old gods to their place of honor and liberate the people of North Africa of the Abrahamic yoke.;;;;;;;;;;;;;x
 controls_holy_sites_tooltip;Controls all five holy sites;;;;;;;;;;;;;x
@@ -161,11 +181,18 @@ beatification_tooltip;Ancestors can now be beatified and canonized;;;;;;;;;;;;;x
 has_griot_tooltip;You have appointed a §YGriot§!;;;;;;;;;;;;;x
 learned_griot_tooltip;Your §YGriot§! has §YLearning§! greater than or equal to 12;;;;;;;;;;;;;x
 CTT_AFRICAN_GHWS_UNLOCKED;African Great Holy Wars are unlocked;;;;;;;;;;;;;x
+is_reformed_amazigh_tooltip;Publicly practices the Reformed §YAmazigh§! religion;;;;;;;;;;;;;x
+carthage_is_restored_tooltip;The Carthaginian Empire is restored;;;;;;;;;;;;;x
+is_empire_of_maghreb_tooltip;Is the Empire of §YMaghreb§!;;;;;;;;;;;;;x
 tooltip_bori_elector_vote_possessed;[From.GetSheHeCap] has the wisdom of a bori spirit who has possessed them;;;;;;;;;;;;;x
 tooltip_bori_elector_possessed_ruler;The bori spirit possessing my liege surely knows best;;;;;;;;;;;;;x
 tooltip_elector_vote_chiroma;[From.GetSheHeCap] is the §YChiroma§!, the position traditionally held by the heir apparent;;;;;;;;;;;;;x
 baptism_sponsor_sympathetic_afr;§Y[Root.GetTitledFirstName]§! is sympathetic towards §YAfricans§!;;;;;;;;;;;;;x
 baptism_sponsor_african;§Y[Root.GetTitledFirstName]§! is a §YReformed African§!;;;;;;;;;;;;;x
+salt_county_succ_tooltip;§Y[Root.GetTitledFirstName]§! takes all occupied territory.;;;;;;;;;;;;;x
+salt_rome_tooltip;The §YChristian§! world is outraged by your actions.\nThe destruction of the city and the §YHoly See§! has gravely affected the §YMoral Authority§! of the §YCatholic Church§!, as well as the faith of Rome's former owner.;;;;;;;;;;;;;x
+salt_constantinople_tooltip;The §YChristian§! world is outraged by your actions.\nThe destruction of the city has gravely affected the §YMoral Authority§! of the §YOrthodox Church§!, as well as the faith of Constantinople's former owner.;;;;;;;;;;;;;x
+salt_carthage_capital_tooltip;The §YAmazigh§! world is outraged by your actions.\nThe destruction of the city has gravely affected the §YMoral Authority§! of the §YChurch of the Amazigh People§!.;;;;;;;;;;;;;x
 eldership_rules_afr;Eldership;;;;;;;;;;;;;x
 religion_feature_a_tag_roog;Way of the Divine;;;;;;;;;;;;;x
 religion_feature_a_tag_roog_desc;In order to edify the faith we shall unify the many traditions of life and divination practiced by the different nations of the land.;;;;;;;;;;;;;x
@@ -179,11 +206,15 @@ become_foro;Forge an Ancestry;;;;;;;;;;;;;x
 become_foro_desc;[ChangeATagRoogCasteDesc];;;;;;;;;;;;;x
 become_wangara;Forge an Ancestry;;;;;;;;;;;;;x
 become_wangara_desc;[ChangeATagRoogCasteDesc];;;;;;;;;;;;;x
+reform_carthage;Restore the Carthaginian Empire;;;;;;;;;;;;;x
+reform_carthage_desc;Long ago the great Carthaginian empire perished under the Roman sword. The time has come to see its glory reborn.;;;;;;;;;;;;;x
 change_caste_griot;In your court as well as among the common people, gossips say that you do not deserve your titles. After all, a person of your ancestry is not made to occupy such a position. Only prejudices and superstitions, certainly, but enough for people to speak ill of you.\n\nYour Court Griot, however proposes a solution; he will compose a great poem in which he will say that all your ancestors were in fact of the correct caste. A little fib for the greater good.;;;;;;;;;;;;;x
 change_caste_no_griot;In your court as well as among the common people, gossips say that you do not deserve your titles. After all, a person of your ancestry is not made to occupy such a position. Only prejudices and superstitions, certainly, but enough for people to speak ill of you.\n\nYou will need the advice of a learned Court Griot.;;;;;;;;;;;;;x
 african_revival;African Revival;;;;;;;;;;;;;x
 amazigh_resurgence;Amazigh Resurgence;;;;;;;;;;;;;x
 bori_opinion;Bori Opinion;;;;;;;;;;;;;x
+amazigh_opinion;[amazigh.GetName] Opinion;;;;;;;;;;;;;x
+amazigh_reformed_opinion;[amazigh_reformed.GetName] Opinion;;;;;;;;;;;;;x
 sympathy_african;Sympathy for Africans;;;;;;;;;;;;;x
 sympathy_african_desc;This character, though not a worshipper of the African gods, has a special sympathy and understanding for the African faiths and their practitioners.;;;;;;;;;;;;;x
 foro;Foro;;;;;;;;;;;;;x
@@ -198,3 +229,19 @@ shield_of_roog;Shield of Roog;;;;;;;;;;;;;x
 shield_of_roog_desc;This character has fought in a great holy war in the name of Roog the merciful.;;;;;;;;;;;;;x
 heir_of_dihya;Heir of Dihya;;;;;;;;;;;;;x
 heir_of_dihya_desc;This character has fought for the Amazigh faith as Queen Dihya did in the days of yore.;;;;;;;;;;;;;x
+suffete;Suffete;;;;;;;;;;;;;x
+suffete_desc;This character is the highest magistrate of the Carthaginian Empire.;;;;;;;;;;;;;x
+HEIR_OF_HANNIBAL;heir of Hannibal;;;;;;;;;;;;;x
+HEIR_OF_DIDO;heir of Dido;;;;;;;;;;;;;x
+FAKE_PHOENICIAN;fake Phoenician;;;;;;;;;;;;;x
+AFRICAN_PETTY_KING;African Petty King;;;;;;;;;;;;;x
+AFRICAN_PETTY_QUEEN;African Petty Queen;;;;;;;;;;;;;x
+nick_the_beloved;the Beloved;;;;;;;;;;;;;x
+nick_the_thunderbolt;the Thunderbolt;;;;;;;;;;;;;x
+nick_africanus;Africanus;;;;;;;;;;;;;x
+CB_NAME_IMPERIAL_CARTHAGE;Reconquest of [Title.GetBaseName];;;;;;;;;;;;;x
+imperial_reconquest_carthage_desc;The lost territory of the Carthaginian Empire must be reclaimed! §Y$CLAIMANT$§! can use this Casus Belli to seize all titles held by §Y$TARGET$§! within the de jure §Y$TITLE$§!.;;;;;;;;;;;;;x
+WAR_NAME_IMPERIAL_CARTHAGE;$ORDER$$FIRST_ADJ$ Imperial Reconquest of $OTHER_TITLE$;;;;;;;;;;;;;x
+CB_NAME_SALT_COUNTY;Salt [Title.GetBaseName];;;;;;;;;;;;;x
+salt_county_desc;This casus belli allows §Y$CLAIMANT$§! to declare war on the old imperial nemesis controlled by §Y$TARGET$§! to annex all conquered land and completely destroy their mighty metropolis.;;;;;;;;;;;;;x
+WAR_NAME_SALT_COUNTY;$ORDER$$FIRST_ADJ$ War to Salt $OTHER_TITLE$;;;;;;;;;;;;;x
