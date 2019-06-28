@@ -212,9 +212,20 @@ change_caste_griot;In your court as well as among the common people, gossips say
 change_caste_no_griot;In your court as well as among the common people, gossips say that you do not deserve your titles. After all, a person of your ancestry is not made to occupy such a position. Only prejudices and superstitions, certainly, but enough for people to speak ill of you.\n\nYou will need the advice of a learned Court Griot.;;;;;;;;;;;;;x
 african_revival;African Revival;;;;;;;;;;;;;x
 amazigh_resurgence;Amazigh Resurgence;;;;;;;;;;;;;x
+constantinople_destroyed;Constantinople Burned;;;;;;;;;;;;;x
+carthage_capital_burned;Carthage Burned;;;;;;;;;;;;;x
 bori_opinion;Bori Opinion;;;;;;;;;;;;;x
 amazigh_opinion;[amazigh.GetName] Opinion;;;;;;;;;;;;;x
 amazigh_reformed_opinion;[amazigh_reformed.GetName] Opinion;;;;;;;;;;;;;x
+secret_bori_community;Secret Bori Community;;;;;;;;;;;;;x
+secret_bori_community_desc;In secret, the faithful have organized around a small church community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
+secret_a_tag_roog_community;Secret [a_tag_roog.GetName] Community;;;;;;;;;;;;;x
+secret_a_tag_roog_community_desc;In secret, the faithful have organized around a small church community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
+secret_a_tag_roog_reformed_community;Secret [a_tag_roog_reformed.GetName] Community;;;;;;;;;;;;;x
+secret_a_tag_roog_reformed_community_desc;In secret, the faithful have organized around a small church community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
+secret_amazigh_community;Secret [amazigh.GetName] Community;;;;;;;;;;;;;x
+secret_amazigh_community_desc;In secret, the faithful have organized around a small church community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
+secret_amazigh_reformed_community;Secret [amazigh_reformed.GetName] Community;;;;;;;;;;;;;x
 sympathy_african;Sympathy for Africans;;;;;;;;;;;;;x
 sympathy_african_desc;This character, though not a worshipper of the African gods, has a special sympathy and understanding for the African faiths and their practitioners.;;;;;;;;;;;;;x
 foro;Foro;;;;;;;;;;;;;x

@@ -627,16 +627,18 @@ narrative_event = {
 					limit = { is_capital = no } 
 					destroy_settlement = yes
 				}
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
+                any_province_holding = {
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                }
 			}
 			any_player = { 
 				limit = { 
@@ -747,16 +749,18 @@ narrative_event = {
 					limit = { is_capital = no } 
 					destroy_settlement = yes
 				}
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
+                any_province_holding = {
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                }
 			}
 			any_player = { 
 				limit = { 
@@ -816,7 +820,7 @@ narrative_event = {
 			any_vassal = { 
 				limit = { 
 					OR = {
-                        religion = amaizgh
+                        religion = amazigh
                         religion = amazigh_reformed
                     }
 					NOR = { 
@@ -853,16 +857,18 @@ narrative_event = {
 					limit = { is_capital = no } 
 					destroy_settlement = yes
 				}
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
-                destroy_random_building = yes
+                any_province_holding = {
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                }
 			}
 			any_player = { 
 				limit = { 
