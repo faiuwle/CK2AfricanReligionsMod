@@ -9447,6 +9447,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -9517,6 +9522,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -9587,6 +9597,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -9657,6 +9672,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -9727,6 +9747,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -9797,6 +9822,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -9867,6 +9897,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -9937,6 +9972,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -10007,6 +10047,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -10077,6 +10122,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -10147,6 +10197,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -10217,6 +10272,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -10287,6 +10347,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -10357,6 +10422,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -10427,6 +10497,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -10497,6 +10572,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -10567,6 +10647,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -10637,6 +10722,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -10707,6 +10797,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -10777,6 +10872,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -10847,6 +10947,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -10917,6 +11022,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -10987,6 +11097,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -11057,6 +11172,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -11127,6 +11247,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -11197,6 +11322,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -11267,6 +11397,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -11337,6 +11472,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -11408,6 +11548,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -11479,6 +11624,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -11549,6 +11699,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -11619,6 +11774,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -11690,6 +11850,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -11760,6 +11925,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -11831,6 +12001,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -11901,6 +12076,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -11971,6 +12151,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -12041,6 +12226,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -12111,6 +12301,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -12181,6 +12376,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -12251,6 +12451,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -12321,6 +12526,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -12391,6 +12601,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -12461,6 +12676,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -12531,6 +12751,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -12601,6 +12826,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -12671,6 +12901,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -12741,6 +12976,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -12811,6 +13051,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -12881,6 +13126,11 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -12951,6 +13201,386 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 							has_character_flag = character_was_baltic_pagan
 							has_character_flag = character_was_finnish_pagan
 							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
+							has_character_flag = character_was_zun_pagan
+							has_character_flag = character_was_aztec
+							has_character_flag = character_was_aztec_reformed
+    					}
+    				}
+    				religion = bori
+    			}
+    			has_character_flag = character_was_bori
+			}
+    	}
+    	set_secret_religion = bori
+    	clr_character_flag = character_was_bori
+		break = yes
+    }
+    if = {
+    	limit = {
+    		OR = {
+    			AND = {
+    				NOT = {
+    					OR = {
+    						has_character_flag = character_was_catholic
+							has_character_flag = character_was_cathar
+							has_character_flag = character_was_fraticelli
+							has_character_flag = character_was_waldensian
+							has_character_flag = character_was_lollard
+							has_character_flag = character_was_orthodox
+							has_character_flag = character_was_miaphysite
+							has_character_flag = character_was_monophysite
+							has_character_flag = character_was_bogomilist
+							has_character_flag = character_was_monothelite
+							has_character_flag = character_was_iconoclast
+							has_character_flag = character_was_paulician
+							has_character_flag = character_was_nestorian
+							has_character_flag = character_was_messalian
+							has_character_flag = character_was_sunni
+							has_character_flag = character_was_zikri
+							has_character_flag = character_was_yazidi
+							has_character_flag = character_was_ibadi
+							has_character_flag = character_was_kharijite
+							has_character_flag = character_was_shiite
+							has_character_flag = character_was_druze
+							has_character_flag = character_was_hurufi
+							has_character_flag = character_was_jewish
+							has_character_flag = character_was_karaite
+							has_character_flag = character_was_samaritan
+							has_character_flag = character_was_zoroastrian
+							has_character_flag = character_was_mazdaki
+							has_character_flag = character_was_manichean
+							has_character_flag = character_was_khurmazta
+							has_character_flag = character_was_bon
+							has_character_flag = character_was_bon_reformed
+							has_character_flag = character_was_hellenic_pagan
+							has_character_flag = character_was_hellenic_pagan_reformed
+							has_character_flag = character_was_taoist
+							has_character_flag = character_was_hindu
+							has_character_flag = character_was_buddhist
+							has_character_flag = character_was_jain
+							has_character_flag = character_was_norse_pagan_reformed
+							has_character_flag = character_was_slavic_pagan_reformed
+							has_character_flag = character_was_tengri_pagan_reformed
+							has_character_flag = character_was_baltic_pagan_reformed
+							has_character_flag = character_was_finnish_pagan_reformed
+							has_character_flag = character_was_west_african_pagan_reformed
+							has_character_flag = character_was_zun_pagan_reformed
+							has_character_flag = character_was_norse_pagan
+							has_character_flag = character_was_slavic_pagan
+							has_character_flag = character_was_tengri_pagan
+							has_character_flag = character_was_baltic_pagan
+							has_character_flag = character_was_finnish_pagan
+							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
+							has_character_flag = character_was_zun_pagan
+							has_character_flag = character_was_aztec
+							has_character_flag = character_was_aztec_reformed
+    					}
+    				}
+    				religion = a_tag_roog
+    			}
+    			has_character_flag = character_was_a_tag_roog
+			}
+    	}
+    	set_secret_religion = a_tag_roog
+    	clr_character_flag = character_was_a_tag_roog
+		break = yes
+    }
+    if = {
+    	limit = {
+    		OR = {
+    			AND = {
+    				NOT = {
+    					OR = {
+    						has_character_flag = character_was_catholic
+							has_character_flag = character_was_cathar
+							has_character_flag = character_was_fraticelli
+							has_character_flag = character_was_waldensian
+							has_character_flag = character_was_lollard
+							has_character_flag = character_was_orthodox
+							has_character_flag = character_was_miaphysite
+							has_character_flag = character_was_monophysite
+							has_character_flag = character_was_bogomilist
+							has_character_flag = character_was_monothelite
+							has_character_flag = character_was_iconoclast
+							has_character_flag = character_was_paulician
+							has_character_flag = character_was_nestorian
+							has_character_flag = character_was_messalian
+							has_character_flag = character_was_sunni
+							has_character_flag = character_was_zikri
+							has_character_flag = character_was_yazidi
+							has_character_flag = character_was_ibadi
+							has_character_flag = character_was_kharijite
+							has_character_flag = character_was_shiite
+							has_character_flag = character_was_druze
+							has_character_flag = character_was_hurufi
+							has_character_flag = character_was_jewish
+							has_character_flag = character_was_karaite
+							has_character_flag = character_was_samaritan
+							has_character_flag = character_was_zoroastrian
+							has_character_flag = character_was_mazdaki
+							has_character_flag = character_was_manichean
+							has_character_flag = character_was_khurmazta
+							has_character_flag = character_was_bon
+							has_character_flag = character_was_bon_reformed
+							has_character_flag = character_was_hellenic_pagan
+							has_character_flag = character_was_hellenic_pagan_reformed
+							has_character_flag = character_was_taoist
+							has_character_flag = character_was_hindu
+							has_character_flag = character_was_buddhist
+							has_character_flag = character_was_jain
+							has_character_flag = character_was_norse_pagan_reformed
+							has_character_flag = character_was_slavic_pagan_reformed
+							has_character_flag = character_was_tengri_pagan_reformed
+							has_character_flag = character_was_baltic_pagan_reformed
+							has_character_flag = character_was_finnish_pagan_reformed
+							has_character_flag = character_was_west_african_pagan_reformed
+							has_character_flag = character_was_zun_pagan_reformed
+							has_character_flag = character_was_norse_pagan
+							has_character_flag = character_was_slavic_pagan
+							has_character_flag = character_was_tengri_pagan
+							has_character_flag = character_was_baltic_pagan
+							has_character_flag = character_was_finnish_pagan
+							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
+							has_character_flag = character_was_zun_pagan
+							has_character_flag = character_was_aztec
+							has_character_flag = character_was_aztec_reformed
+    					}
+    				}
+    				religion = a_tag_roog_reformed
+    			}
+    			has_character_flag = character_was_a_tag_roog_reformed
+			}
+    	}
+    	set_secret_religion = a_tag_roog_reformed
+    	clr_character_flag = character_was_a_tag_roog_reformed
+		break = yes
+    }
+    if = {
+    	limit = {
+    		OR = {
+    			AND = {
+    				NOT = {
+    					OR = {
+    						has_character_flag = character_was_catholic
+							has_character_flag = character_was_cathar
+							has_character_flag = character_was_fraticelli
+							has_character_flag = character_was_waldensian
+							has_character_flag = character_was_lollard
+							has_character_flag = character_was_orthodox
+							has_character_flag = character_was_miaphysite
+							has_character_flag = character_was_monophysite
+							has_character_flag = character_was_bogomilist
+							has_character_flag = character_was_monothelite
+							has_character_flag = character_was_iconoclast
+							has_character_flag = character_was_paulician
+							has_character_flag = character_was_nestorian
+							has_character_flag = character_was_messalian
+							has_character_flag = character_was_sunni
+							has_character_flag = character_was_zikri
+							has_character_flag = character_was_yazidi
+							has_character_flag = character_was_ibadi
+							has_character_flag = character_was_kharijite
+							has_character_flag = character_was_shiite
+							has_character_flag = character_was_druze
+							has_character_flag = character_was_hurufi
+							has_character_flag = character_was_jewish
+							has_character_flag = character_was_karaite
+							has_character_flag = character_was_samaritan
+							has_character_flag = character_was_zoroastrian
+							has_character_flag = character_was_mazdaki
+							has_character_flag = character_was_manichean
+							has_character_flag = character_was_khurmazta
+							has_character_flag = character_was_bon
+							has_character_flag = character_was_bon_reformed
+							has_character_flag = character_was_hellenic_pagan
+							has_character_flag = character_was_hellenic_pagan_reformed
+							has_character_flag = character_was_taoist
+							has_character_flag = character_was_hindu
+							has_character_flag = character_was_buddhist
+							has_character_flag = character_was_jain
+							has_character_flag = character_was_norse_pagan_reformed
+							has_character_flag = character_was_slavic_pagan_reformed
+							has_character_flag = character_was_tengri_pagan_reformed
+							has_character_flag = character_was_baltic_pagan_reformed
+							has_character_flag = character_was_finnish_pagan_reformed
+							has_character_flag = character_was_west_african_pagan_reformed
+							has_character_flag = character_was_zun_pagan_reformed
+							has_character_flag = character_was_norse_pagan
+							has_character_flag = character_was_slavic_pagan
+							has_character_flag = character_was_tengri_pagan
+							has_character_flag = character_was_baltic_pagan
+							has_character_flag = character_was_finnish_pagan
+							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
+							has_character_flag = character_was_zun_pagan
+							has_character_flag = character_was_aztec
+							has_character_flag = character_was_aztec_reformed
+    					}
+    				}
+    				religion = amazigh
+    			}
+    			has_character_flag = character_was_amazigh
+			}
+    	}
+    	set_secret_religion = amazigh
+    	clr_character_flag = character_was_amazigh
+		break = yes
+    }
+    if = {
+    	limit = {
+    		OR = {
+    			AND = {
+    				NOT = {
+    					OR = {
+    						has_character_flag = character_was_catholic
+							has_character_flag = character_was_cathar
+							has_character_flag = character_was_fraticelli
+							has_character_flag = character_was_waldensian
+							has_character_flag = character_was_lollard
+							has_character_flag = character_was_orthodox
+							has_character_flag = character_was_miaphysite
+							has_character_flag = character_was_monophysite
+							has_character_flag = character_was_bogomilist
+							has_character_flag = character_was_monothelite
+							has_character_flag = character_was_iconoclast
+							has_character_flag = character_was_paulician
+							has_character_flag = character_was_nestorian
+							has_character_flag = character_was_messalian
+							has_character_flag = character_was_sunni
+							has_character_flag = character_was_zikri
+							has_character_flag = character_was_yazidi
+							has_character_flag = character_was_ibadi
+							has_character_flag = character_was_kharijite
+							has_character_flag = character_was_shiite
+							has_character_flag = character_was_druze
+							has_character_flag = character_was_hurufi
+							has_character_flag = character_was_jewish
+							has_character_flag = character_was_karaite
+							has_character_flag = character_was_samaritan
+							has_character_flag = character_was_zoroastrian
+							has_character_flag = character_was_mazdaki
+							has_character_flag = character_was_manichean
+							has_character_flag = character_was_khurmazta
+							has_character_flag = character_was_bon
+							has_character_flag = character_was_bon_reformed
+							has_character_flag = character_was_hellenic_pagan
+							has_character_flag = character_was_hellenic_pagan_reformed
+							has_character_flag = character_was_taoist
+							has_character_flag = character_was_hindu
+							has_character_flag = character_was_buddhist
+							has_character_flag = character_was_jain
+							has_character_flag = character_was_norse_pagan_reformed
+							has_character_flag = character_was_slavic_pagan_reformed
+							has_character_flag = character_was_tengri_pagan_reformed
+							has_character_flag = character_was_baltic_pagan_reformed
+							has_character_flag = character_was_finnish_pagan_reformed
+							has_character_flag = character_was_west_african_pagan_reformed
+							has_character_flag = character_was_zun_pagan_reformed
+							has_character_flag = character_was_norse_pagan
+							has_character_flag = character_was_slavic_pagan
+							has_character_flag = character_was_tengri_pagan
+							has_character_flag = character_was_baltic_pagan
+							has_character_flag = character_was_finnish_pagan
+							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
+							has_character_flag = character_was_zun_pagan
+							has_character_flag = character_was_aztec
+							has_character_flag = character_was_aztec_reformed
+    					}
+    				}
+    				religion = amazigh_reformed
+    			}
+    			has_character_flag = character_was_amazigh_reformed
+			}
+    	}
+    	set_secret_religion = amazigh_reformed
+    	clr_character_flag = character_was_amazigh_reformed
+		break = yes
+    }
+    if = {
+    	limit = {
+    		OR = {
+    			AND = {
+    				NOT = {
+    					OR = {
+    						has_character_flag = character_was_catholic
+							has_character_flag = character_was_cathar
+							has_character_flag = character_was_fraticelli
+							has_character_flag = character_was_waldensian
+							has_character_flag = character_was_lollard
+							has_character_flag = character_was_orthodox
+							has_character_flag = character_was_miaphysite
+							has_character_flag = character_was_monophysite
+							has_character_flag = character_was_bogomilist
+							has_character_flag = character_was_monothelite
+							has_character_flag = character_was_iconoclast
+							has_character_flag = character_was_paulician
+							has_character_flag = character_was_nestorian
+							has_character_flag = character_was_messalian
+							has_character_flag = character_was_sunni
+							has_character_flag = character_was_zikri
+							has_character_flag = character_was_yazidi
+							has_character_flag = character_was_ibadi
+							has_character_flag = character_was_kharijite
+							has_character_flag = character_was_shiite
+							has_character_flag = character_was_druze
+							has_character_flag = character_was_hurufi
+							has_character_flag = character_was_jewish
+							has_character_flag = character_was_karaite
+							has_character_flag = character_was_samaritan
+							has_character_flag = character_was_zoroastrian
+							has_character_flag = character_was_mazdaki
+							has_character_flag = character_was_manichean
+							has_character_flag = character_was_khurmazta
+							has_character_flag = character_was_bon
+							has_character_flag = character_was_bon_reformed
+							has_character_flag = character_was_hellenic_pagan
+							has_character_flag = character_was_hellenic_pagan_reformed
+							has_character_flag = character_was_taoist
+							has_character_flag = character_was_hindu
+							has_character_flag = character_was_buddhist
+							has_character_flag = character_was_jain
+							has_character_flag = character_was_norse_pagan_reformed
+							has_character_flag = character_was_slavic_pagan_reformed
+							has_character_flag = character_was_tengri_pagan_reformed
+							has_character_flag = character_was_baltic_pagan_reformed
+							has_character_flag = character_was_finnish_pagan_reformed
+							has_character_flag = character_was_west_african_pagan_reformed
+							has_character_flag = character_was_zun_pagan_reformed
+							has_character_flag = character_was_norse_pagan
+							has_character_flag = character_was_slavic_pagan
+							has_character_flag = character_was_tengri_pagan
+							has_character_flag = character_was_baltic_pagan
+							has_character_flag = character_was_finnish_pagan
+							has_character_flag = character_was_west_african_pagan
+                            has_character_flag = character_was_bori
+                            has_character_flag = character_was_a_tag_roog
+                            has_character_flag = character_was_a_tag_roog_reformed
+                            has_character_flag = character_was_amazigh
+                            has_character_flag = character_was_amazigh_reformed
 							has_character_flag = character_was_zun_pagan
 							has_character_flag = character_was_aztec
 							has_character_flag = character_was_aztec_reformed
@@ -13169,6 +13799,26 @@ add_religion_char_flag_effect = {
     	set_character_flag = character_was_west_african_pagan
     }
     if = {
+        limit = { religion = bori }
+        set_character_flag = character_was_bori
+    }
+    if = {
+        limit = { religion = a_tag_roog }
+        set_character_flag = character_was_a_tag_roog
+    }
+    if = {
+        limit = { religion = a_tag_roog_reformed }
+        set_character_flag = character_was_a_tag_roog_reformed
+    }
+    if = {
+        limit = { religion = amazigh }
+        set_character_flag = character_was_amazigh
+    }
+    if = {
+        limit = { religion = amazigh_reformed }
+        set_character_flag = character_was_amazigh_reformed
+    }
+    if = {
     	limit = { religion = zun_pagan }
     	set_character_flag = character_was_zun_pagan
     }
@@ -13230,6 +13880,11 @@ clr_religion_char_flag_effect = {
 	clr_character_flag = character_was_baltic_pagan
 	clr_character_flag = character_was_finnish_pagan
 	clr_character_flag = character_was_west_african_pagan
+    clr_character_flag = character_was_bori
+    clr_character_flag = character_was_a_tag_roog
+    clr_character_flag = character_was_a_tag_roog_reformed
+    clr_character_flag = character_was_amazigh
+    clr_character_flag = character_was_amazigh_reformed
 	clr_character_flag = character_was_zun_pagan
 	clr_character_flag = character_was_aztec
 	clr_character_flag = character_was_aztec_reformed
@@ -13535,6 +14190,36 @@ event_target_old_religion_from_flag_effect = {
     	west_african_pagan = {
     		save_event_target_as = old_religion
     	}
+    }
+    if = {
+        limit = { has_character_flag = character_was_bori }
+        bori = {
+            save_event_target_as = old_religion
+        }
+    }
+    if = {
+        limit = { has_character_flag = character_was_a_tag_roog }
+        a_tag_roog = {
+            save_event_target_as = old_religion
+        }
+    }
+    if = {
+        limit = { has_character_flag = character_was_a_tag_roog_reformed }
+        a_tag_roog_reformed = {
+            save_event_target_as = old_religion
+        }
+    }
+    if = {
+        limit = { has_character_flag = character_was_amazigh }
+        amazigh = {
+            save_event_target_as = old_religion
+        }
+    }
+    if = {
+        limit = { has_character_flag = character_was_amazigh_reformed }
+        amazigh_reformed = {
+            save_event_target_as = old_religion
+        }
     }
     if = {
     	limit = { has_character_flag = character_was_zun_pagan }
@@ -15564,6 +16249,61 @@ flip_secret_religious_community_provinces = {
 					}
 					religion = west_african_pagan
 					remove_province_modifier = secret_west_african_pagan_community
+				}
+			}
+		}
+		secret_religious_society_bori = { 
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_bori_community
+					}
+					religion = bori
+					remove_province_modifier = secret_bori_community
+				}
+			}
+		}
+		secret_religious_society_a_tag_roog = { 
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_a_tag_roog_community
+					}
+					religion = a_tag_roog
+					remove_province_modifier = secret_a_tag_roog_community
+				}
+			}
+		}
+		secret_religious_society_a_tag_roog_reformed = { 
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_a_tag_roog_reformed_community
+					}
+					religion = a_tag_roog_reformed
+					remove_province_modifier = secret_a_tag_roog_reformed_community
+				}
+			}
+		}
+		secret_religious_society_amazigh = { 
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_amazigh_community
+					}
+					religion = amazigh
+					remove_province_modifier = secret_amazigh_community
+				}
+			}
+		}
+		secret_religious_society_amazigh_reformed = { 
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_amazigh_reformed_community
+					}
+					religion = amazigh_reformed
+					remove_province_modifier = secret_amazigh_reformed_community
 				}
 			}
 		}

@@ -404,3 +404,350 @@ decisions = {
         }
     }
 }
+
+title_decisions = {
+	secretly_convert_to_bori_holy_site = {
+		filter = owned
+		ai_target_filter = self
+	
+		only_playable = yes
+		
+		from_potential = {
+			ai = no
+			NOT = { trait = incapable }
+			NOT = { secret_religion = bori }
+			NOT = { religion = bori }
+			NOT = { controls_religion = yes }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		potential = {
+			tier = COUNT
+			NOT = {
+				location = { religion = bori }
+			}
+			OR = {
+				is_holy_site = bori
+				any_de_jure_vassal_title = {
+					is_holy_site = bori
+				}
+			}
+			OR = {
+				holder_scope = {
+					character = FROM
+				}
+				AND = {
+					tier = BARON
+					holder_scope = {
+						liege = {
+							character = FROM
+						}
+					}
+				}
+			}
+		}
+		
+		allow = {
+			FROM = {
+				piety = 250
+				prisoner = no
+				NOT = { trait = incapable }
+				NOT = { is_inaccessible_trigger = yes }
+				NOT = { society_member_of = secret_religious_cult }
+			}
+		}
+		
+		effect = {
+			FROM = {
+				piety = -250
+				set_secret_religion = bori
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	secretly_convert_to_a_tag_roog_holy_site = {
+		filter = owned
+		ai_target_filter = self
+	
+		only_playable = yes
+		
+		from_potential = {
+			ai = no
+			NOT = { trait = incapable }
+			NOT = { secret_religion = a_tag_roog }
+			NOT = { has_global_flag = a_tag_roog_reformation }
+			NOT = { religion = a_tag_roog }
+			NOT = { controls_religion = yes }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		potential = {
+			tier = COUNT
+			NOT = {
+				location = { religion = a_tag_roog }
+			}
+			OR = {
+				is_holy_site = a_tag_roog
+				any_de_jure_vassal_title = {
+					is_holy_site = a_tag_roog
+				}
+			}
+			OR = {
+				holder_scope = {
+					character = FROM
+				}
+				AND = {
+					tier = BARON
+					holder_scope = {
+						liege = {
+							character = FROM
+						}
+					}
+				}
+			}
+		}
+		
+		allow = {
+			FROM = {
+				piety = 250
+				prisoner = no
+				NOT = { trait = incapable }
+				NOT = { is_inaccessible_trigger = yes }
+				NOT = { society_member_of = secret_religious_cult }
+			}
+		}
+		
+		effect = {
+			FROM = {
+				piety = -250
+				set_secret_religion = a_tag_roog
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	secretly_convert_to_a_tag_roog_reformed_holy_site = {
+		filter = owned
+		ai_target_filter = self
+	
+		only_playable = yes
+		
+		from_potential = {
+			ai = no
+			NOT = { trait = incapable }
+			NOT = { secret_religion = a_tag_roog_reformed }
+			has_global_flag = a_tag_roog_reformation
+			NOT = { religion = a_tag_roog_reformed }
+			NOT = { controls_religion = yes }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		potential = {
+			tier = COUNT
+			NOT = {
+				location = { religion = a_tag_roog_reformed }
+			}
+			OR = {
+				is_holy_site = a_tag_roog_reformed
+				any_de_jure_vassal_title = {
+					is_holy_site = a_tag_roog_reformed
+				}
+			}
+			OR = {
+				holder_scope = {
+					character = FROM
+				}
+				AND = {
+					tier = BARON
+					holder_scope = {
+						liege = {
+							character = FROM
+						}
+					}
+				}
+			}
+		}
+		
+		allow = {
+			FROM = {
+				piety = 250
+				prisoner = no
+				NOT = { trait = incapable }
+				NOT = { is_inaccessible_trigger = yes }
+				NOT = { society_member_of = secret_religious_cult }
+			}
+		}
+		
+		effect = {
+			FROM = {
+				piety = -250
+				set_secret_religion = a_tag_roog_reformed
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	secretly_convert_to_amazigh_holy_site = {
+		filter = owned
+		ai_target_filter = self
+	
+		only_playable = yes
+		
+		from_potential = {
+			ai = no
+			NOT = { trait = incapable }
+			NOT = { secret_religion = amazigh }
+			NOT = { has_global_flag = amazigh_reformation }
+			NOT = { religion = amazigh }
+			NOT = { controls_religion = yes }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		potential = {
+			tier = COUNT
+			NOT = {
+				location = { religion = amazigh }
+			}
+			OR = {
+				is_holy_site = amazigh
+				any_de_jure_vassal_title = {
+					is_holy_site = amazigh
+				}
+			}
+			OR = {
+				holder_scope = {
+					character = FROM
+				}
+				AND = {
+					tier = BARON
+					holder_scope = {
+						liege = {
+							character = FROM
+						}
+					}
+				}
+			}
+		}
+		
+		allow = {
+			FROM = {
+				piety = 250
+				prisoner = no
+				NOT = { trait = incapable }
+				NOT = { is_inaccessible_trigger = yes }
+				NOT = { society_member_of = secret_religious_cult }
+			}
+		}
+		
+		effect = {
+			FROM = {
+				piety = -250
+				set_secret_religion = amazigh
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	secretly_convert_to_amazigh_reformed_holy_site = {
+		filter = owned
+		ai_target_filter = self
+	
+		only_playable = yes
+		
+		from_potential = {
+			ai = no
+			NOT = { trait = incapable }
+			NOT = { secret_religion = amazigh_reformed }
+			has_global_flag = amazigh_reformation
+			NOT = { religion = amazigh_reformed }
+			NOT = { controls_religion = yes }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		potential = {
+			tier = COUNT
+			NOT = {
+				location = { religion = amazigh_reformed }
+			}
+			OR = {
+				is_holy_site = amazigh_reformed
+				any_de_jure_vassal_title = {
+					is_holy_site = amazigh_reformed
+				}
+			}
+			OR = {
+				holder_scope = {
+					character = FROM
+				}
+				AND = {
+					tier = BARON
+					holder_scope = {
+						liege = {
+							character = FROM
+						}
+					}
+				}
+			}
+		}
+		
+		allow = {
+			FROM = {
+				piety = 250
+				prisoner = no
+				NOT = { trait = incapable }
+				NOT = { is_inaccessible_trigger = yes }
+				NOT = { society_member_of = secret_religious_cult }
+			}
+		}
+		
+		effect = {
+			FROM = {
+				piety = -250
+				set_secret_religion = amazigh_reformed
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

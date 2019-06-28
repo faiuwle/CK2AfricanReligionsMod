@@ -8962,6 +8962,7 @@ has_any_astrology_trait_trigger = {
 dlc_religion_check_trigger = {
 	OR = {
 		religion_group = christian
+        religion_group = african_group
 		AND = {
 			religion_group = muslim
 			has_dlc = "The Sword of Islam"
