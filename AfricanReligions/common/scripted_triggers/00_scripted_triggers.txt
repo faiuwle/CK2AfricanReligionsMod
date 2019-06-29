@@ -2676,6 +2676,7 @@ ROOTs_secret_religion_is_playable_trigger = {
 	hidden_tooltip = {
 		OR = {
 			secret_religion_group  = christian
+            secret_religion_group = african_group
 			AND = {
 				secret_religion_group  = jewish_group
 				has_dlc = "Sons of Abraham"
