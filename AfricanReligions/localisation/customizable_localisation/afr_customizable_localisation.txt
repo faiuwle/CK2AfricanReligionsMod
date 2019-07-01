@@ -288,23 +288,68 @@ defined_text = {
 }
 
 defined_text = {
-    name = AfrReligiousRevoltEvtDesc
+    name = GetReligiousCeremonyName
     
     text = {
         trigger = {
-            ROOT = {
-                county = c_roma
-            }
+            religion = bori
         }
-        localisation_key = rome_revolt_desc
+        localisation_key = ceremony_bori
     }
     
     text = {
         trigger = {
-            ROOT = {
-                NOT = { county = c_roma }
+            NOT = { religion = bori }
+        }
+        localisation_key = ceremony_not_bori
+    }
+}
+
+defined_text = {
+    name = GetReligiousCeremonyLocation
+    
+    text = {
+        trigger = {
+            religion = bori
+        }
+        localisation_key = ceremony_location_bori
+    }
+    
+    text = {
+        trigger = {
+            NOT = { religion = bori }
+        }
+        localisation_key = ceremony_location_not_bori
+    }
+}
+
+defined_text = {
+    name = GetReligiousCeremonyHangings
+    
+    text = {
+        trigger = {
+            religion = bori
+        }
+        localisation_key = ceremony_wall_hangings_bori
+    }
+    
+    text = {
+        trigger = {
+            OR = {
+                religion = a_tag_roog
+                religion = a_tag_roog_reformed
             }
         }
-        localisation_key = non_rome_revolt_desc
+        localisation_key = ceremony_wall_hangings_a_tag_roog
+    }
+    
+    text = {
+        trigger = {
+            OR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+        localisation_key = ceremony_wall_hangings_amazigh
     }
 }

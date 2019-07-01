@@ -1,0 +1,34 @@
+secret_bori_community = {
+	icon = 18
+	is_visible = {
+		society_member_of = secret_religious_society_bori
+	}
+}
+
+secret_a_tag_roog_community = {
+	icon = 18
+	is_visible = {
+		society_member_of = secret_religious_society_a_tag_roog
+	}
+}
+
+secret_a_tag_roog_reformed_community = {
+	icon = 18
+	is_visible = {
+		society_member_of = secret_religious_society_a_tag_roog_reformed
+	}
+}
+
+secret_amazigh_community = {
+	icon = 18
+	is_visible = {
+		society_member_of = secret_religious_society_amazigh
+	}
+}
+
+secret_amazigh_reformed_community = {
+	icon = 18
+	is_visible = {
+		society_member_of = secret_religious_society_amazigh_reformed
+	}
+}

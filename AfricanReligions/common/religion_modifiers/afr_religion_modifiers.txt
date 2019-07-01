@@ -7,3 +7,13 @@ african_revival = {
     authority = 5
     years = 20
 }
+
+constantinople_destroyed = {
+	authority = -20
+	years = 1000
+}
+
+carthage_capital_destroyed = {
+	authority = -20
+	years = 1000
+}
