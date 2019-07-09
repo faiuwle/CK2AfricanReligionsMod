@@ -5266,16 +5266,30 @@ give_this_warrior_lodge_religion_effect = { #Mostly for spawned characters.
 	if = {
 		limit = { 
 			society_member_of = warrior_lodge_west_african 
-			NOT = { has_global_flag = west_african_reformation }
 		}
-		religion = west_african_pagan
-	}
-	if = {
-		limit = { 
-			society_member_of = warrior_lodge_west_african 
-			has_global_flag = west_african_reformation
-		}
-		religion = west_african_pagan_reformed
+		random_list = {
+            10 = {
+                religion = bori
+            }
+            10 = {
+                if = {
+                    limit = { has_global_flag = a_tag_roog_reformation }
+                    religion = a_tag_roog_reformed
+                }
+                else = {
+                    religion = a_tag_roog
+                }
+            }
+            10 = {
+                if = {
+                    limit = { has_global_flag = amazigh_reformation }
+                    religion = amazigh_reformed
+                }
+                else = {
+                    religion = amazigh
+                }
+            }
+        }
 	}
 	if = {
 		limit = { 
