@@ -1,14 +1,14 @@
 african_group;African;;;;;;;;;;;;;x
 bori;Bori;;;;;;;;;;;;;x
-a_tag_roog;A tag Roog;;;;;;;;;;;;;x
-a_tag_roog_reformed;A tag Roog;;;;;;;;;;;;;x
+a_tag_roog;A Tat Roog;;;;;;;;;;;;;x
+a_tag_roog_reformed;A Tat Roog;;;;;;;;;;;;;x
 amazigh;Amazigh;;;;;;;;;;;;;x
 amazigh_reformed;Amazigh;;;;;;;;;;;;;x
-bori_DESC;Among the people of Hausaland and the region of the great Lake Chad, there is an old faith in which mortals enter communion with eternal spirits. These spiritual forces are known as bori and exist in their own spiritual realm known as Jan gari, but can be summoned by skilled individuals who offer their bodies for the spirits to possess. With the right ritual spirits will offer guidance to those who summon them.;;;;;;;;;;;;;x
-a_tag_roog_DESC;A tag Roog means "The way of the Divine" in the Serer language. Many are the faiths practiced among the peoples of the Western Sahel, but a common pattern resonates among most of them. A supreme creator god, who watches mankind from abode, a primordial set of twins who play a role in creating the world, and a fascination with the Sirius star that guides the destinies of man.;;;;;;;;;;;;;x
-a_tag_roog_reformed_DESC;A tag Roog means "The way of the Divine" in the Serer language. Many are the faiths practiced among the peoples of the Western Sahel, but a common pattern resonates among most of them. A supreme creator god, who watches mankind from abode, a primordial set of twins who play a role in creating the world, and a fascination with the Sirius star that guides the destinies of man.;;;;;;;;;;;;;x
-amazigh_DESC;Many are the gods worshiped by the Berbers through their history. At one time or another they prayed to the old gods of Egypt and Phoenicia, or even Greece and Rome. But they also prayed to gods of their own making, and made others pray to them as well, from Numidia to the old Carthage.;;;;;;;;;;;;;x
-amazigh_reformed_DESC;Many are the gods worshiped by the Berbers through their history. At one time or another they prayed to the old gods of Egypt and Phoenicia, or even Greece and Rome. But they also prayed to gods of their own making, and made others pray to them as well, from Numidia to the old Carthage.;;;;;;;;;;;;;x
+bori_DESC;Among the people of Hausaland and the region of the great Lake Chad, there is an old faith in which mortals enter communion with eternal spirits. These spiritual forces are known as bori and exist in their own spiritual realm known as Jan Gari, but can be summoned by skilled individuals who offer their bodies for the spirits to possess. With the right ritual, spirits will offer guidance to those who summon them.;;;;;;;;;;;;;x
+a_tag_roog_DESC;A Tat Roog means "The way of the Divine" in the Serer language. Many are the faiths practiced among the peoples of the Western Sahel, but a common pattern resonates among most of them. A supreme creator god, who watches mankind from abode, a primordial set of twins who play a role in creating the world, and a fascination with the Sirius star that guides the destinies of man.;;;;;;;;;;;;;x
+a_tag_roog_reformed_DESC;A Tat Roog means "The way of the Divine" in the Serer language. Many are the faiths practiced among the peoples of the Western Sahel, but a common pattern resonates among most of them. A supreme creator god, who watches mankind from abode, a primordial set of twins who play a role in creating the world, and a fascination with the Sirius star that guides the destinies of man.;;;;;;;;;;;;;x
+amazigh_DESC;Many are the gods worshiped by the Berbers through their history. At one time or another they prayed to the old gods of Egypt and Phoenicia, or even Greece and Rome. But they also prayed to gods of their own making, and made others pray to them as well, from Numidia to old Carthage.;;;;;;;;;;;;;x
+amazigh_reformed_DESC;Many are the gods worshiped by the Berbers through their history. At one time or another they prayed to the old gods of Egypt and Phoenicia, or even Greece and Rome. But they also prayed to gods of their own making, and made others pray to them as well, from Numidia to old Carthage.;;;;;;;;;;;;;x
 KIRARI_OF_MAGIRO;The Kirari of Magiro;;;;;;;;;;;;;x
 NAGA_REETU_REET;Naga Reetu Reet;;;;;;;;;;;;;x
 BAAL_CYCLE;The Baal Cycle;;;;;;;;;;;;;x
@@ -155,7 +155,7 @@ title_venerable_elder_afr_desc;This honorific can only be granted to those who h
 title_magajiya_yaljigari;Magajiya Yaljigari;;;;;;;;;;;;;x
 title_magajiya_yaljigari_desc;The Magajiya Yaljigari is a trusted woman who is in charge of informing the ruler of the news around the capital.;;;;;;;;;;;;x
 title_griot;Griot;;;;;;;;;;;;;x
-title_griot_desc;A griot is an historian, a storyteller and a poet. A very trusted position in any West African court.;;;;;;;;;;;;x
+title_griot_desc;A griot is a historian, a storyteller and a poet. A very trusted position in any West African court.;;;;;;;;;;;;x
 title_chiroma;Chiroma;;;;;;;;;;;;;x
 title_chiroma_desc;The chiroma is the traditional title held by the heir apparent in the lands of Kanem. Holding it may be enough to persuade the court to back the candidate in the eventual succession.;;;;;;;;;;;;x
 W_L_251180;https://en.wikipedia.org/wiki/Bayajidda;;;;;;;;;;;;;x
@@ -168,13 +168,13 @@ daurama_desc;Daurama was a great matriarch of the Hausa people. She ruled as a c
 bilal_ibn_rabah;Blood of Bilal ibn Rabah;;;;;;;;;;;;;x
 bilal_ibn_rabah_desc;Born into slavery, Bilal was the son of an exiled Ethiopian princess. After befriending the prophet Muhammad he became the first muezzin in islamic history.;;;;;;;;;;;;;x
 mari_djata;Blood of Mari-Djata;;;;;;;;;;;;;x
-mari_djata_desc;Prince Mari-Djata, was born disabled and was exiled from Niani by his jealous stepmother. However, he would return to reclaim his birthright, becoming the first Mansa of Mali.;;;;;;;;;;;;;x
+mari_djata_desc;Prince Mari-Djata was born disabled and exiled from Niani by his jealous stepmother. However, he would return to reclaim his birthright, becoming the first Mansa of Mali.;;;;;;;;;;;;;x
 set_bloodline;Blood of Set;;;;;;;;;;;;;x
 set_bloodline_desc;Set was a leader of the Zaghawa people, who left the nomadic lifestyle of his nation and founded the city of Djimi, governing as the first ruler of the Duguwa dynasty.;;;;;;;;;;;;;x
 carthage_bloodline;Blood of [This.GetFirstNameWithNick];;;;;;;;;;;;;x
-carthage_bloodline_desc;[This.GetTitledNameWithNick] was the magnificent ruler who presided over the rebirth of the Carthaginian empire from the very ashes.;;;;;;;;;;;;;x
+carthage_bloodline_desc;[This.GetTitledNameWithNick] was the magnificent ruler who presided over the rebirth of the Carthaginian Empire from the very ashes.;;;;;;;;;;;;;x
 string_reformed_religion_a_tag_roog; the ancient spiritual traditions of the Western Sahel have been unified into a single and true way of the divine, capable of resisting any foreign incursion.;;;;;;;;;;;;;x
-string_reformed_religion_amazigh; the faith of Carthage and Numidia will return the old gods to their place of honor and liberate the people of North Africa of the Abrahamic yoke.;;;;;;;;;;;;;x
+string_reformed_religion_amazigh; the faith of Carthage and Numidia will return the old gods to their place of honor and liberate the people of North Africa from the Abrahamic yoke.;;;;;;;;;;;;;x
 controls_holy_sites_tooltip;Controls all five holy sites;;;;;;;;;;;;;x
 vassalize_inna_tooltip;Vassalize §Y[Root.RelHead.GetBestName]§!;;;;;;;;;;;;;x
 beatification_tooltip;Ancestors can now be beatified and canonized;;;;;;;;;;;;;x
@@ -184,7 +184,7 @@ CTT_AFRICAN_GHWS_UNLOCKED;African Great Holy Wars are unlocked;;;;;;;;;;;;;x
 is_reformed_amazigh_tooltip;Publicly practices the Reformed §YAmazigh§! religion;;;;;;;;;;;;;x
 carthage_is_restored_tooltip;The Carthaginian Empire is restored;;;;;;;;;;;;;x
 is_empire_of_maghreb_tooltip;Is the Empire of §YMaghreb§!;;;;;;;;;;;;;x
-tooltip_bori_elector_vote_possessed;[From.GetSheHeCap] has the wisdom of a bori spirit who has possessed them;;;;;;;;;;;;;x
+tooltip_bori_elector_vote_possessed;[From.GetSheHeCap] has the wisdom of a bori spirit who has possessed [From.GetHerHim];;;;;;;;;;;;;x
 tooltip_bori_elector_possessed_ruler;The bori spirit possessing my liege surely knows best;;;;;;;;;;;;;x
 tooltip_elector_vote_chiroma;[From.GetSheHeCap] is the §YChiroma§!, the position traditionally held by the heir apparent;;;;;;;;;;;;;x
 baptism_sponsor_sympathetic_afr;§Y[Root.GetTitledFirstName]§! is sympathetic towards §YAfricans§!;;;;;;;;;;;;;x
@@ -208,20 +208,20 @@ become_wangara;Forge an Ancestry;;;;;;;;;;;;;x
 become_wangara_desc;[ChangeATagRoogCasteDesc];;;;;;;;;;;;;x
 reform_carthage;Restore the Carthaginian Empire;;;;;;;;;;;;;x
 reform_carthage_desc;Long ago the great Carthaginian empire perished under the Roman sword. The time has come to see its glory reborn.;;;;;;;;;;;;;x
-change_caste_griot;In your court as well as among the common people, gossips say that you do not deserve your titles. After all, a person of your ancestry is not made to occupy such a position. Only prejudices and superstitions, certainly, but enough for people to speak ill of you.\n\nYour Court Griot, however proposes a solution; he will compose a great poem in which he will say that all your ancestors were in fact of the correct caste. A little fib for the greater good.;;;;;;;;;;;;;x
+change_caste_griot;In your court as well as among the common people, gossips say that you do not deserve your titles. After all, a person of your ancestry is not made to occupy such a position. Only prejudices and superstitions, certainly, but enough for people to speak ill of you.\n\nYour Court Griot, however proposes a solution - he will compose a great poem in which he will say that all your ancestors were in fact of the correct caste. A little fib for the greater good.;;;;;;;;;;;;;x
 change_caste_no_griot;In your court as well as among the common people, gossips say that you do not deserve your titles. After all, a person of your ancestry is not made to occupy such a position. Only prejudices and superstitions, certainly, but enough for people to speak ill of you.\n\nYou will need the advice of a learned Court Griot.;;;;;;;;;;;;;x
 secretly_convert_to_bori_holy_site;Secretly Convert to Bori;;;;;;;;;;;;;x
 secretly_convert_to_bori_holy_site_desc;The §YBori§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
-secretly_convert_to_a_tag_roog_holy_site;Secretly Convert to A tag Roog;;;;;;;;;;;;;x
-secretly_convert_to_a_tag_roog_holy_site_desc;The §YA tag Roog§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
-secretly_convert_to_a_tag_roog_reformed_holy_site;Secretly Convert to A tag Roog;;;;;;;;;;;;;x
-secretly_convert_to_a_tag_roog_reformed_holy_site_desc;The §YA tag Roog§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secretly_convert_to_a_tag_roog_holy_site;Secretly Convert to A Tat Roog;;;;;;;;;;;;;x
+secretly_convert_to_a_tag_roog_holy_site_desc;The §YA Tat Roog§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secretly_convert_to_a_tag_roog_reformed_holy_site;Secretly Convert to A Tat Roog;;;;;;;;;;;;;x
+secretly_convert_to_a_tag_roog_reformed_holy_site_desc;The §YA Tat Roog§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
 secretly_convert_to_amazigh_holy_site;Secretly Convert to Amazigh;;;;;;;;;;;;;x
 secretly_convert_to_amazigh_holy_site_desc;The §YAmazigh§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
 african_revival;African Revival;;;;;;;;;;;;;x
 amazigh_resurgence;Amazigh Resurgence;;;;;;;;;;;;;x
 constantinople_destroyed;Constantinople Burned;;;;;;;;;;;;;x
-carthage_capital_burned;Carthage Burned;;;;;;;;;;;;;x
+carthage_capital_destroyed;Carthage Burned;;;;;;;;;;;;;x
 bori_opinion;Bori Opinion;;;;;;;;;;;;;x
 amazigh_opinion;[amazigh.GetName] Opinion;;;;;;;;;;;;;x
 amazigh_reformed_opinion;[amazigh_reformed.GetName] Opinion;;;;;;;;;;;;;x
@@ -234,6 +234,7 @@ secret_a_tag_roog_reformed_community_desc;In secret, the faithful have organized
 secret_amazigh_community;Secret [amazigh.GetName] Community;;;;;;;;;;;;;x
 secret_amazigh_community_desc;In secret, the faithful have organized around a small church community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
 secret_amazigh_reformed_community;Secret [amazigh_reformed.GetName] Community;;;;;;;;;;;;;x
+secret_amazigh_reformed_community_desc;In secret, the faithful have organized around a small church community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
 sympathy_african;Sympathy for Africans;;;;;;;;;;;;;x
 sympathy_african_desc;This character, though not a worshipper of the African gods, has a special sympathy and understanding for the African faiths and their practitioners.;;;;;;;;;;;;;x
 foro;Foro;;;;;;;;;;;;;x
