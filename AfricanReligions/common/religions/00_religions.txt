@@ -1847,6 +1847,8 @@ pagan_group = {
 		religious_clothing_priest = 16
 		
 		allow_in_ruler_designer = no
+        dynamic_cult = no
+        secret_religion = no
 	}
 	
 	west_african_pagan = {
@@ -1916,6 +1918,10 @@ pagan_group = {
 		
 		dislike_tribal_organization = yes
 		can_demand_religious_conversion = no
+        
+        allow_in_ruler_designer = no
+        dynamic_cult = no
+        secret_religion = no
 	}
 
 	zun_pagan_reformed = {
@@ -2792,12 +2798,15 @@ african_group = {
         graphical_culture = africangfx
         interface_skin = { zun_interface zoroastrian_interface muslim_interface }
 
+		secondary_event_pictures = west_african_pagan
+        
         ai_convert_same_group = 0
         ai_convert_other_group = 2
 
         icon = 66
         color = { 150 85 35 }
 
+        join_crusade_if_bordering_hostile = yes
         crusade_name = GREAT_HOLY_WAR
         scripture_name = KIRARI_OF_MAGIRO
         priest_title = MAGADJA
@@ -2870,6 +2879,8 @@ african_group = {
         graphical_culture = africangfx
         interface_skin = { zun_interface zoroastrian_interface muslim_interface }
 
+		secondary_event_pictures = west_african_pagan
+
         ai_convert_same_group = 0
         ai_convert_other_group = 2
 
@@ -2878,6 +2889,7 @@ african_group = {
         color = { 65 40 20 }
 
         can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
         crusade_name = GREAT_HOLY_WAR
         scripture_name = NAGA_REETU_REET
         priest_title = SALTIGUE
@@ -2914,11 +2926,15 @@ african_group = {
         religious_clothing_priest = 16
 
         allow_looting = yes
+        
+        allow_in_ruler_designer = no
     }
 
     a_tag_roog = {
         graphical_culture = africangfx
         interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+
+		secondary_event_pictures = west_african_pagan
 
         ai_convert_same_group = 0
         ai_convert_other_group = 2
@@ -2989,12 +3005,16 @@ african_group = {
 			
 			key = "DEF_RELIGION_HOME_TERRITORY"
 		}
+        
+        can_demand_religious_conversion = no
     }
 
     amazigh_reformed = {
         graphical_culture = africangfx
         interface_skin = { zun_interface zoroastrian_interface muslim_interface }
     
+		secondary_event_pictures = west_african_pagan
+
         ai_convert_same_group = 0
         ai_convert_other_group = 2
 
@@ -3003,6 +3023,7 @@ african_group = {
         color = { 205 90 15 }
 
         can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
         crusade_name = GREAT_HOLY_WAR
         scripture_name = BAAL_CYCLE
         priest_title = MARABOUT
@@ -3050,12 +3071,16 @@ african_group = {
 
         peace_prestige_loss = yes
         raised_vassal_opinion_loss = no
+        
+        allow_in_ruler_designer = no
     }
 
     amazigh = {
         graphical_culture = africangfx
         interface_skin = { zun_interface zoroastrian_interface muslim_interface }
     
+		secondary_event_pictures = west_african_pagan
+
         ai_convert_same_group = 0
         ai_convert_other_group = 2
 
@@ -3113,6 +3138,7 @@ african_group = {
 		}
 
         dislike_tribal_organization = yes
+        can_demand_religious_conversion = no
 
         peace_prestige_loss = yes
         raised_vassal_opinion_loss = no

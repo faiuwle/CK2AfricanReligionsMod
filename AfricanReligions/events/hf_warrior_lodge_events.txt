@@ -548,10 +548,18 @@ letter_event = { #SUCCESS: Welcome to the society!
 
         if = { # Give Sympathy trait if appropriate...
             limit = {
+                NOT = { event_target:warrior_lodge_to_join = { is_society = warrior_lodge_west_african } }
                 NOT = { religion_group = pagan_group }
             }
             #Give Sympathy trait
             add_trait = sympathy_pagans
+        }
+        if = {
+            limit = {
+                event_target:warrior_lodge_to_join = { is_society = warrior_lodge_west_african }
+                NOT = { religion_group = african_group }
+            }
+            add_trait = sympathy_african
         }
 
         hidden_effect = {
@@ -2865,7 +2873,10 @@ character_event = {
         }
         else_if = {
             limit = {
-                religion_openly_west_african_or_reformed_trigger = yes
+                OR = {
+                    religion_openly_west_african_or_reformed_trigger = yes
+                    religion_group = african_group
+                }
                 can_join_society = warrior_lodge_west_african
             }
             join_society = warrior_lodge_west_african

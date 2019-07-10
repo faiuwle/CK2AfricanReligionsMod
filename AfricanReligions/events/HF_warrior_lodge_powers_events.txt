@@ -1119,14 +1119,18 @@ character_event = {
 	id = HF.25021
 	desc = {
 		trigger = {
-			religion_group = pagan_group
+            OR = {
+                religion_group = pagan_group
+                religion_group = african_group
+            }
 		}
 		text = EVTDESCAHF25021
 	}
 	desc = {
 		trigger = { 
-			NOT = {
+			NOR = {
 				religion_group = pagan_group
+                religion_group = african_group
 			}
 		}
 		text = EVTDESCBHF25021
@@ -1245,6 +1249,8 @@ character_event = {
 				religion = zun_pagan_reformed
 				religion = west_african_pagan
 				religion = west_african_pagan_reformed
+                religion_group = african_group
+                has_religion_feature = religion_feature_amazigh
 				has_religion_feature = religion_ritual_sacrifice
 			} 
 		}
@@ -1323,6 +1329,8 @@ character_event = {
 				religion = zun_pagan_reformed
 				religion = west_african_pagan
 				religion = west_african_pagan_reformed
+                religion_group = african_group
+                has_religion_feature = religion_feature_amazigh
 				has_religion_feature = religion_ritual_sacrifice
 			} 
 		}
@@ -1420,7 +1428,13 @@ character_event = {
 			manpower = -150
 		}
 		if = { 
-			limit = { NOR = { religion_group = pagan_group has_religion_feature = religion_ritual_sacrifice } }
+			limit = {
+                NOR = {
+                    religion_group = pagan_group
+                    religion_group = african_group
+                    has_religion_feature = religion_ritual_sacrifice
+                }
+            }
 			tiered_high_piety_negative_effect = yes 
 		}
 		add_blood_splatter_effect = yes
@@ -4747,6 +4761,7 @@ character_event = {
 		OR = { 
 			religion = west_african_pagan 
 			religion = west_african_pagan_reformed
+            religion_group = african_group
 		}
 	}
 
