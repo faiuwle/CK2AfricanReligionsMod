@@ -190,9 +190,9 @@ tooltip_elector_vote_chiroma;[From.GetSheHeCap] is the §YChiroma§!, the position
 baptism_sponsor_sympathetic_afr;§Y[Root.GetTitledFirstName]§! is sympathetic towards §YAfricans§!;;;;;;;;;;;;;x
 baptism_sponsor_african;§Y[Root.GetTitledFirstName]§! is a §YReformed African§!;;;;;;;;;;;;;x
 salt_county_succ_tooltip;§Y[Root.GetTitledFirstName]§! takes all occupied territory.;;;;;;;;;;;;;x
-salt_rome_tooltip;The §YChristian§! world is outraged by your actions.\nThe destruction of the city and the §YHoly See§! has gravely affected the §YMoral Authority§! of the §YCatholic Church§!, as well as the faith of Rome's former owner.;;;;;;;;;;;;;x
-salt_constantinople_tooltip;The §YChristian§! world is outraged by your actions.\nThe destruction of the city has gravely affected the §YMoral Authority§! of the §YOrthodox Church§!, as well as the faith of Constantinople's former owner.;;;;;;;;;;;;;x
-salt_carthage_capital_tooltip;The §YAmazigh§! world is outraged by your actions.\nThe destruction of the city has gravely affected the §YMoral Authority§! of the §YChurch of the Amazigh People§!.;;;;;;;;;;;;;x
+salt_rome_tooltip;The §YChristian§! world is outraged by your actions.\nThe destruction of the city and the §YHoly See§! has gravely affected the §YMoral Authority§! of the §YCatholic Church§!, as well as the faith of Rome's former owner.\nYou loot §Y2000§! gold from the city.;;;;;;;;;;;;;x
+salt_constantinople_tooltip;The §YChristian§! world is outraged by your actions.\nThe destruction of the city has gravely affected the §YMoral Authority§! of the §YOrthodox Church§!, as well as the faith of Constantinople's former owner.\nYou loot §Y2000§! gold from the city.;;;;;;;;;;;;;x
+salt_carthage_capital_tooltip;The §YAmazigh§! world is outraged by your actions.\nThe destruction of the city has gravely affected the §YMoral Authority§! of the §YChurch of the Amazigh People§!.\nYou loot §Y2000§! gold from the city.;;;;;;;;;;;;;x
 eldership_rules_afr;Eldership;;;;;;;;;;;;;x
 religion_feature_a_tag_roog;Way of the Divine;;;;;;;;;;;;;x
 religion_feature_a_tag_roog_desc;In order to edify the faith we shall unify the many traditions of life and divination practiced by the different nations of the land.;;;;;;;;;;;;;x

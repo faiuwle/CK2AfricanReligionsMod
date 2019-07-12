@@ -573,6 +573,7 @@ narrative_event = {
         custom_tooltip = { text = salt_rome_tooltip }
         
         hidden_tooltip = {
+            wealth = 2000
 			any_vassal = { 
 				limit = { 
                     OR = {
@@ -695,6 +696,7 @@ narrative_event = {
         custom_tooltip = { text = salt_constantinople_tooltip }
         
         hidden_tooltip = {
+            wealth = 2000
 			any_vassal = { 
 				limit = { 
                     OR = {
@@ -817,6 +819,7 @@ narrative_event = {
         custom_tooltip = { text = salt_carthage_capital_tooltip }
         
         hidden_tooltip = {
+            wealth = 2000
 			any_vassal = { 
 				limit = { 
 					OR = {
