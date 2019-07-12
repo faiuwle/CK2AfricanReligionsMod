@@ -573,6 +573,7 @@ narrative_event = {
         custom_tooltip = { text = salt_rome_tooltip }
         
         hidden_tooltip = {
+            wealth = 2000
 			any_vassal = { 
 				limit = { 
                     OR = {
@@ -695,6 +696,7 @@ narrative_event = {
         custom_tooltip = { text = salt_constantinople_tooltip }
         
         hidden_tooltip = {
+            wealth = 2000
 			any_vassal = { 
 				limit = { 
                     OR = {
@@ -817,6 +819,7 @@ narrative_event = {
         custom_tooltip = { text = salt_carthage_capital_tooltip }
         
         hidden_tooltip = {
+            wealth = 2000
 			any_vassal = { 
 				limit = { 
 					OR = {
@@ -979,4 +982,67 @@ narrative_event = {
 		set_global_flag = carthage_borders
 		prestige = 1000
 	}
+}
+
+character_event = {
+    id = AFRREL.031
+    hide_window = yes
+    
+    religion = west_african_pagan
+    
+    mean_time_to_happen = {
+        days = 1
+    }
+    
+    immediate = {
+        if = {
+            limit = { culture_group = central_african }
+            religion = bori
+        }
+        else_if = {
+            limit = { culture_group = west_african }
+            if = {
+                limit = { has_global_flag = a_tag_roog_reformation }
+                religion = a_tag_roog_reformed
+            }
+            else = {
+                religion = a_tag_roog
+            }
+        }
+        else_if = {
+            limit = { culture = maghreb_arabic }
+            if = {
+                limit = { has_global_flag = amazigh_reformation }
+                religion = amazigh_reformed
+            }
+            else = {
+                religion = amazigh
+            }
+        }
+        else = {
+            random_list = {
+                10 = {
+                    religion = bori
+                }
+                10 = {
+                    if = {
+                        limit = { has_global_flag = a_tag_roog_reformation }
+                        religion = a_tag_roog_reformed
+                    }
+                    else = {
+                        religion = a_tag_roog
+                    }
+                }
+                10 = {
+                    if = {
+                        limit = { has_global_flag = amazigh_reformation }
+                        religion = amazigh_reformed
+                    }
+                    else = {
+                        religion = amazigh
+                    }
+                }
+            }
+        }
+    }
 }
