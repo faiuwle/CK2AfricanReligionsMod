@@ -1909,7 +1909,7 @@ pagan_group = {
 		women_can_take_consorts = yes
 		
 		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
-		reformed = west_african_pagan_reformed
+		#reformed = west_african_pagan_reformed
 		
 		aggression = 0.1 # AI aggression factor
 		
