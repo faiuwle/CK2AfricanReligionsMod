@@ -21,4 +21,4 @@ religion = amazigh
 
 # History
 
-1200.1.1 = { religion = sunni }
+1050.1.1 = { religion = sunni }

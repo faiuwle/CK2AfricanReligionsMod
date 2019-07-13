@@ -14,5 +14,7 @@ culture = maghreb_arabic
 religion = amazigh
 
 # History
-1062.1.1 = { b_tazagourt = castle }
-1216.1.1 = { religion = sunni }
+1062.1.1 = {
+    b_tazagourt = castle
+    religion = sunni
+}

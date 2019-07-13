@@ -15,3 +15,4 @@ culture = kanuri
 religion = bori
 
 # History
+1100 = { religion = ibadi }
