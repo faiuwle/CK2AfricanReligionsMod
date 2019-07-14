@@ -3992,7 +3992,7 @@
 }
 
 73222 = {
-	name="S√Ør"
+	name="SÔr"
 	dynasty = 12200
 	religion="sunni"
 	culture="maghreb_arabic"
@@ -7351,7 +7351,7 @@
 }
 
 166424 = {
-	name="A√±aterve"
+	name="AÒaterve"
 	dynasty=100848
 	religion="amazigh"
 	culture="maghreb_arabic"
@@ -7379,7 +7379,7 @@
 }
 
 166426 = {
-	name="Tita√±e"
+	name="TitaÒe"
 	dynasty=100848
 	religion="amazigh"
 	culture="maghreb_arabic"
@@ -7435,7 +7435,7 @@
 }
 
 166430 = {
-	name="Guardaf√≠a"
+	name="GuardafÌa"
 	dynasty=100848
 	religion="amazigh"
 	culture="maghreb_arabic"
@@ -7463,7 +7463,7 @@
 }
 
 166432 = {
-	name="Adxo√±a"
+	name="AdxoÒa"
 	dynasty=100848
 	religion="amazigh"
 	culture="maghreb_arabic"
@@ -8757,7 +8757,7 @@
 }
 
 161108 = {
-	name="F√§dazu"
+	name="F‰dazu"
 	#placeholder
 	dynasty=1030012
 	religion="sunni"
@@ -8822,7 +8822,7 @@
 
 #rulers of Fezzan
 248788 = {
-	name="Abdallah"    #ibn Hiy√¢n, historical ruler of Zawila d.762
+	name="Abdallah"    #ibn Hiy‚n, historical ruler of Zawila d.762
 	dynasty=1059964
 	religion="amazigh"
 	culture="maghreb_arabic"
@@ -8834,7 +8834,7 @@
 	}
 }
 248789 = {
-	name= "Hiyan" #ibn AbdAl√¢h
+	name= "Hiyan" #ibn AbdAl‚h
 	dynasty = 1059964
 	religion = amazigh
 	culture= maghreb_arabic
@@ -8847,7 +8847,7 @@
 	}
 }
 
-#Ban√∫ Khatt√¢b in Fezzan
+#Ban˙ Khatt‚b in Fezzan
 248790 = {
 	name="al-Khattab"  #semi-historical
 	dynasty=1059963
@@ -8861,7 +8861,7 @@
 	}
 }
 248791 = {
-	name="Abdallah ibn al-Khattab al-Hawwari"  #historical founder of the Banu Khatt√¢b tribe/dynasty lived in 918
+	name="Abdallah ibn al-Khattab al-Hawwari"  #historical founder of the Banu Khatt‚b tribe/dynasty lived in 918
 	dynasty=1059963
 	religion="amazigh"
 	culture="maghreb_arabic"
@@ -8874,7 +8874,7 @@
 	}
 }
 248792 = {
-	name="Abdallah"  #fictional son of historical founder of the Banu Khatt√¢b tribe/dynasty
+	name="Abdallah"  #fictional son of historical founder of the Banu Khatt‚b tribe/dynasty
 	dynasty=1059963
 	religion="amazigh"
 	culture="maghreb_arabic"
@@ -9415,7 +9415,7 @@
 # historical Lamtuna kings
 
 273070 = {
-	name="T√Ælut√¢n" #ibn T√Ækl√¢n
+	name="TÓlut‚n" #ibn TÓkl‚n
 	dynasty=1069080 #Lamtuna
 	religion = amazigh
 	culture = soninke
@@ -9431,7 +9431,7 @@
 	}
 }
 273071 = {
-	name="B√¢tin" #brother of Itlut√¢n
+	name="B‚tin" #brother of Itlut‚n
 	dynasty=1069080 #Lamtuna
 	religion = amazigh
 	culture = maghreb_arabic #tagelmust
@@ -9444,7 +9444,7 @@
 	}
 }
 273072 = {
-	name="al-Ath√Ær" #ibn B√¢tin
+	name="al-AthÓr" #ibn B‚tin
 	dynasty=1069080 #Lamtuna
 	religion = amazigh
 	culture = maghreb_arabic #tagelmust
@@ -9457,7 +9457,7 @@
 	}
 }
 273073 = {
-	name="Tam√Æm" #ibn al-Ath√Ær
+	name="TamÓm" #ibn al-AthÓr
 	dynasty=1069080 #Lamtuna
 	religion = amazigh
 	culture = maghreb_arabic #tagelmust
@@ -9470,7 +9470,7 @@
 	}
 }
 273074 = {
-	name="Niz√¢r"
+	name="Niz‚r"
 	dynasty=1069084 #Ghusti 1069089
 	religion = amazigh
 	culture = maghreb_arabic #tagelmust
@@ -9483,7 +9483,7 @@
 	}
 }
 273075 = {
-	name="Wansh√Æk" #ibn Biz√¢r
+	name="WanshÓk" #ibn Biz‚r
 	dynasty=1069084 #Ghusti
 	religion = amazigh
 	culture = maghreb_arabic #tagelmust
@@ -9496,7 +9496,7 @@
 	}
 }
 273076 = {
-	name="Tinazwa" #ibn Wansh√Æk  #AKA T√Æn Yarut√¢n ibn Wisn√¢ ibn Naz√¢r
+	name="Tinazwa" #ibn WanshÓk  #AKA TÓn Yarut‚n ibn Wisn‚ ibn Naz‚r
 	dynasty=1069084 #Ghusti
 	religion = amazigh
 	culture = maghreb_arabic #tagelmust
@@ -9522,7 +9522,7 @@
 	}
 }
 273078 = {
-	name="Abu-Abd All√¢h Muhammad" #ibn Tifawt
+	name="Abu-Abd All‚h Muhammad" #ibn Tifawt
 	dynasty=1069080 #Lamtuna
 	religion = sunni
 	culture = maghreb_arabic #tagelmust
@@ -9535,7 +9535,7 @@
 	}
 }
 273079 = {
-	name="AbdAll√¢h" #ibn Muhammad"
+	name="AbdAll‚h" #ibn Muhammad"
 	dynasty=1069080 #Lamtuna
 	religion = sunni
 	culture = maghreb_arabic #tagelmust
@@ -9756,7 +9756,7 @@
 	}
 }
 273095 = {
-	name="T√Ækl√¢n al-Lamtun√Æ"
+	name="TÓkl‚n al-LamtunÓ"
 	dynasty = 1069080 #Lamtuna
 	religion = amazigh
 	culture = soninke
@@ -9854,7 +9854,7 @@
 273101 = {
 	#placeholder
 	name="Watt'as"
-	dynasty=1069084  #Gudd√°la
+	dynasty=1069084  #Gudd·la
 	religion="amazigh"
 	culture = maghreb_arabic #tagelmust
 	848.1.1 = {
@@ -9885,7 +9885,7 @@
 273103 = {
 	#placeholder
 	name="Tamim"
-	dynasty=1069084  #Gudd√°la
+	dynasty=1069084  #Gudd·la
 	religion="amazigh"
 	culture = maghreb_arabic #tagelmust
 	father=273101
@@ -9899,7 +9899,7 @@
 273104 = {
 	#placeholder
 	name="Watt'as"
-	dynasty=1069084  #Gudd√°la
+	dynasty=1069084  #Gudd·la
 	religion="amazigh"
 	culture = maghreb_arabic #tagelmust
 	father=273103
@@ -9913,7 +9913,7 @@
 273105 = {
 	#placeholder
 	name="Tamim"
-	dynasty=1069084  #Gudd√°la
+	dynasty=1069084  #Gudd·la
 	religion="sunni"
 	culture = maghreb_arabic #tagelmust
 	father=273104
@@ -10164,7 +10164,7 @@
 	}
 }
 273123 = {
-	name="Addu" #fictional son of Tam√Æm ibn al-Ath√Ær
+	name="Addu" #fictional son of TamÓm ibn al-AthÓr
 	dynasty=1069080 #Lamtuna
 	religion = amazigh
 	culture = maghreb_arabic #tagelmust
@@ -10192,7 +10192,7 @@
 
 #Mazata chieftans
 273125 = {
-	name="Abd-al-A'l√¢" #Abu_l-Khatt√°b ibn al-Samh al Ma'afiri
+	name="Abd-al-A'l‚" #Abu_l-Khatt·b ibn al-Samh al Ma'afiri
 	dynasty=1069090
 	religion = ibadi
 	culture = maghreb_arabic #zanata
@@ -10232,7 +10232,7 @@
 
 273128 = {
 	name="Dunas" #ibn al-Khayr al-Mazati 1100-1145 Mazati chieftan under Banu Khazrun
-	dynasty=1069091 #al-Maz√¢t√Æ
+	dynasty=1069091 #al-Maz‚tÓ
 	religion = ibadi
 	culture = maghreb_arabic #zanata
 	father=273129 
@@ -10245,7 +10245,7 @@
 }
 273129 = {
 	name="al-Khayr"
-	dynasty=1069091 #al-Maz√¢t√Æ
+	dynasty=1069091 #al-Maz‚tÓ
 	religion = ibadi
 	culture = maghreb_arabic #zanata
 	father=273130 
@@ -10257,8 +10257,8 @@
 	}
 }
 273130 = {
-	name="Arj√¢n" #fictional
-	dynasty=1069091 #al-Maz√¢t√Æ
+	name="Arj‚n" #fictional
+	dynasty=1069091 #al-Maz‚tÓ
 	religion = ibadi
 	culture = maghreb_arabic #zanata
 	father=273131 
@@ -10271,7 +10271,7 @@
 }
 273131 = {
 	name="al-Samh" #fictional
-	dynasty=1069091 #al-Maz√¢t√Æ
+	dynasty=1069091 #al-Maz‚tÓ
 	religion = ibadi
 	culture = maghreb_arabic #zanata
 	father=273132 
@@ -10284,7 +10284,7 @@
 }
 273132 = {
 	name="al-Khayr" #fictional
-	dynasty=1069091 #al-Maz√¢t√Æ
+	dynasty=1069091 #al-Maz‚tÓ
 	religion = ibadi
 	culture = maghreb_arabic #zanata
 	father=273133 
@@ -10297,7 +10297,7 @@
 }
 273133 = {
 	name="Dunas" #fictional
-	dynasty=1069091 #al-Maz√¢t√Æ
+	dynasty=1069091 #al-Maz‚tÓ
 	religion = ibadi
 	culture = maghreb_arabic #zanata
 	father=273134 
@@ -10309,8 +10309,8 @@
 	}
 }
 273134 = {
-	name="Arj√¢n" #fictional
-	dynasty=1069091 #al-Maz√¢t√Æ
+	name="Arj‚n" #fictional
+	dynasty=1069091 #al-Maz‚tÓ
 	religion = ibadi
 	culture = maghreb_arabic #zanata
 	father=273135 
@@ -10323,7 +10323,7 @@
 }
 273135 = {
 	name="al-Khayr" #fictional
-	dynasty=1069091 #al-Maz√¢t√Æ
+	dynasty=1069091 #al-Maz‚tÓ
 	religion = ibadi
 	culture = maghreb_arabic #zanata
 	847.1.1 = {
@@ -10334,9 +10334,9 @@
 	}
 }
 
-#Haww√°ra in Tripolitania
+#Haww·ra in Tripolitania
 273136 = {
-	name="AbdAll√¢h"  #placeholder
+	name="AbdAll‚h"  #placeholder
 	dynasty=1069092
 	religion="ibadi"
 	culture = maghreb_arabic #zanata
@@ -10348,7 +10348,7 @@
 	}
 }
 273137 = {
-	name="Zalgh√Æn"  #placeholder
+	name="ZalghÓn"  #placeholder
 	dynasty=1069092
 	religion="ibadi"
 	culture = maghreb_arabic #zanata
@@ -10388,7 +10388,7 @@
 	}
 }
 273140 = {
-	name="Zalgh√Æn"  #placeholder
+	name="ZalghÓn"  #placeholder
 	dynasty=1069092
 	religion="ibadi"
 	culture = maghreb_arabic #zanata
