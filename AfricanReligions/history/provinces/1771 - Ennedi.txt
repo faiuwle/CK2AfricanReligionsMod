@@ -9,7 +9,7 @@ b_kobbai = tribal
 
 # Misc
 culture = maghreb_arabic
-religion = amazigh
+religion = bori
 
 # History
 1066.1.1 = { culture = daju }
