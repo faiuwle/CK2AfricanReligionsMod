@@ -12,6 +12,6 @@ b_el_fasher = tribal
 
 # Misc
 culture = daju
-religion = amazigh
+religion = bori
 
 # History
