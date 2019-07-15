@@ -750,4 +750,64 @@ title_decisions = {
 			factor = 0
 		}
 	}
+	
+	pick_religious_tradition = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 12
+		potential = {
+			has_dlc = "The Old Gods"
+			is_playable = yes
+			is_adult = yes
+			prisoner = no
+			OR = {
+				religion = a_tag_roog
+				religion = a_tag_roog_reformed
+			}
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			NOR = {
+				if = {
+					limit = {
+						ai = yes
+						has_trait = follower_of_serer
+					}
+				}
+				if = {
+					limit = {
+						ai = yes
+						has_trait = follower_of_dogon
+					}
+				}
+				if = {
+					limit = {
+						ai = yes
+						has_trait = follower_of_malinke
+					}
+				}
+			}
+		}
+		allow = {
+			piety = 25
+			prisoner = no
+		}
+		effect = {
+			piety = -25
+			custom_tooltip = {
+				text = pick_religious_tradition_tooltip
+				character_event = { id = GROUPS.1000 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 0
+				has_minor_deity_trigger = yes
+			}
+		}
+	}
 }
