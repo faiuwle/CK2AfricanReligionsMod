@@ -1,0 +1,24 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+pick_religious_tradition;Choose a Religious Tradition;;;;;;;;;;;;;x
+pick_religious_tradition_tooltip;Choose a religious tradition to follow.;;;;;;;;;;;;;x
+GROUPSTITLE;Western Traditions;;;;;;;;;;;;;x
+EVTDESCGROUPS1000;Many are the religious traditions of the Western Sahel, men of different lands have different names for the primordial twins, the star Sirius and even for God himself. Now I have the option to choose between one of three traditions. That of the Serer, with its complex rituals and spiritualism, that of the Dogon, masters of astronomy, or that of the Malinke, conquerors and masters of the forge.;;;;;;;;;;;;;x
+EVTOPTCNLGROUPS1000;I wish to choose a different path;;;;;;;;;;;;;x
+EVTOPTAGROUPS.1000;The Serer tradition;;;;;;;;;;;;;x
+EVTOPTBGROUPS.1000;The Dogon tradition;;;;;;;;;;;;;x
+EVTOPTCGROUPS.1000;The Malinke tradition;;;;;;;;;;;;;x
+GROUPS1001TITLE;The Serer;;;;;;;;;;;;;x
+EVTDESCGROUPS1001;The Serer practice “The way of the Divine”, the most complex religious tradition in all of West Africa. They refer to the supreme god as Roog, the primordial twins as Yaab and Yop, and the great star Sirius as Yoonir. Their mastery of spiritual knowledge is greater than that of any other and depends on the interaction between the three worlds: the invisible world, the terrestrial world and the nocturnal world.;;;;;;;;;;;;;x
+EVTOPTAGROUPS1001;This truly is the way of the Divine;;;;;;;;;;;;;x
+GROUPS1002TITLE;The Dogon;;;;;;;;;;;;;x
+EVTDESCGROUPS1002;The way of the Dogon is often a mystery to anyone who is not an initiate in their practices. They refer to the supreme god as Amma, the primordial twins as the Nommo, and the great star Sirius as Sigui. The Dogons are masters of astronomy, and their understanding goes beyond that of any other sage. This accompanies a strange cosmogony filled with androgynous beings and twin spirits.;;;;;;;;;;;;;x
+EVTOPTAGROUPS1002;The secrets of the stars will be revealed to me;;;;;;;;;;;;;x
+GROUPS1003TITLE;The Malinke;;;;;;;;;;;;;x
+EVTDESCGROUPS1003;The Malinke are people of the conquest, warriors and rulers. They refer to the supreme god as Mangala and the primordial twins as Pemba and Faro. The Malinke are masters in the manipulation of the Nyama, the life force that unites all things. This force is used for everything from war to complex works of smithy.;;;;;;;;;;;;;x
+EVTOPTAGROUPS1003;A faith of iron for men of iron;;;;;;;;;;;;;x
+follower_of_serer;Serer;;;;;;;;;;;;;x
+follower_of_serer_desc;The Serer mastery of spiritual knowledge is greater than that of any other and depends on the interaction between the three worlds: the invisible world, the terrestrial world and the nocturnal world.;;;;;;;;;;;;;x
+follower_of_dogon;Dogon;;;;;;;;;;;;;x
+follower_of_dogon_desc;The Dogons are masters of astronomy, and their understanding goes beyond that of any other sage. This accompanies a strange cosmogony filled with androgynous beings and twin spirits.;;;;;;;;;;;;;x
+follower_of_malinke;Malinke;;;;;;;;;;;;;x
+follower_of_malinke_desc;The Malinke are masters in the manipulation of the Nyama, the life force that unites all things. This force is used for everything from war to complex works of smithy.;;;;;;;;;;;;;x
