@@ -55,4 +55,25 @@ spriteTypes = {
         norefcount = yes
         effectFile = "gfx/FX/buttonstate.lua"
     }
+    spriteType = {
+		name = "GFX_trait_follower_of_serer"
+		texturefile = "gfx/traits/follower_of_serer.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_follower_of_dogon"
+		texturefile = "gfx/traits/follower_of_dogon.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_follower_of_malinke"
+		texturefile = "gfx/traits/follower_of_malinke.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
 }
