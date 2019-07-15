@@ -1,0 +1,138 @@
+namespace = AFRREL
+
+# Fix barons with the wrong caste traits
+character_event = {
+    id = AFRREL.015
+    hide_window = yes
+    is_triggered_only = yes
+    
+    only_rulers = yes
+    
+    trigger = {
+        tier = BARON
+        OR = {
+            religion = hindu
+            religion = buddhist
+            religion = jain
+            religion = a_tag_roog
+            religion = a_tag_roog_reformed
+        }
+        NOR = {
+            AND = {
+                OR = {
+                    religion = hindu
+                    religion = buddhist
+                    religion = jain
+                }
+                is_republic = yes
+                trait = vaishya
+            }
+            AND = {
+                OR = {
+                    religion = hindu
+                    religion = buddhist
+                    religion = jain
+                }
+                is_theocracy = yes
+                trait = brahmin
+            }
+            AND = {
+                OR = {
+                    religion = hindu
+                    religion = buddhist
+                    religion = jain
+                }
+                is_republic = no
+                is_theocracy = no
+                trait = kshatriya
+            }
+            AND = {
+                OR = {
+                    religion = a_tag_roog
+                    religion = a_tag_roog_reformed
+                }
+                is_republic = yes
+                trait = wangara
+            }
+            AND = {
+                OR = {
+                    religion = a_tag_roog
+                    religion = a_tag_roog_reformed
+                }
+                is_theocracy = yes
+                trait = jakhanke
+            }
+            AND = {
+                OR = {
+                    religion = a_tag_roog
+                    religion = a_tag_roog_reformed
+                }
+                is_republic = no
+                is_theocracy = no
+                trait = foro
+            }
+        }
+    }
+    
+    immediate = {
+        if = {
+            limit = {
+                OR = {
+                    religion = hindu
+                    religion = buddhist
+                    religion = jain
+                }
+            }
+            remove_trait = foro
+            remove_trait = wangara
+            remove_trait = jakhanke
+            if = {
+                limit = {
+                    is_republic = yes
+                }
+                remove_trait = kshatriya
+                remove_trait = brahmin
+                add_trait = vaishya
+            }
+            else_if = {
+                limit = {
+                    is_theocracy = yes
+                }
+                remove_trait = kshatriya
+                remove_trait = vaishya
+                add_trait = brahmin
+            }
+            else = {
+                remove_trait = brahmin
+                remove_trait = vaishya
+                add_trait = kshatriya
+            }
+        }
+        else = {
+            remove_trait = kshatriya
+            remove_trait = brahmin
+            remove_trait = vaishya
+            if = {
+                limit = {
+                    is_republic = yes
+                }
+                remove_trait = foro
+                remove_trait = jakhanke
+                add_trait = wangara
+            }
+            else_if = {
+                limit = {
+                    is_theocracy = yes
+                }
+                remove_trait = foro
+                remove_trait = wangara
+                add_trait = jakhanke
+            }
+            else = {
+                remove_trait = wangara
+                remove_trait = jakhanke
+                add_trait = foro
+            }
+        }
+    }
+}
