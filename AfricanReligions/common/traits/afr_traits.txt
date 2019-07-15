@@ -205,3 +205,17 @@ suffete = {
     male_insult = AFRICAN_PETTY_KING
     female_insult = AFRICAN_PETTY_QUEEN
 }
+
+#A Tat Roog traditions
+
+follower_of_serer = {
+	diplomacy = 1
+}
+
+follower_of_dogon = {
+	learning = 1
+}
+
+follower_of_malinke = {
+	martial = 1
+}
