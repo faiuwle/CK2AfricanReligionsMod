@@ -19,5 +19,5 @@ religion = amazigh
 1062.1.1 = {
 	b_warzazat = castle
 	b_tasagdah = city
+    religion = sunni
 }
-1316.1.1 = { religion = sunni }

@@ -3,7 +3,7 @@
 248734 = {
 	name="Asil" # Fictional
 	dynasty=1059971
-	religion="amazigh"
+	religion="bori"
 	culture="daju"
 	trait=strong
 	trait=zealous
@@ -19,7 +19,7 @@
 248735 = {
 	name="Ede" # Fictional
 	dynasty=1059971
-	religion="amazigh"
+	religion="bori"
 	culture="daju"
 	trait=strong
 	trait=zealous
@@ -36,7 +36,7 @@
 	name="Buk" # Fictional
 	female=yes
 	dynasty=1059971
-	religion="amazigh"
+	religion="bori"
 	culture="daju"
 	trait=strong
 	father=248734
@@ -50,7 +50,7 @@
 248737 = {
 	name="Gon" # Fictional
 	dynasty=1059971
-	religion="amazigh"
+	religion="bori"
 	culture="daju"
 	father=248735
 	1081.1.1 = {
@@ -63,7 +63,7 @@
 248738 = {
 	name="Izzo" # Fictional
 	dynasty=1059971
-	religion="amazigh"
+	religion="bori"
 	culture="daju"
 	father=248737
 	1100.1.1 = {
@@ -76,7 +76,7 @@
 248739 = {
 	name="Kalge" # Fictional
 	dynasty=1059971
-	religion="amazigh"
+	religion="bori"
 	culture="daju"
 	father=248738
 	1125.1.1 = {
@@ -89,7 +89,7 @@
 248740 = {
 	name="Ferne" # Fictional
 	dynasty=1059971
-	religion="amazigh"
+	religion="bori"
 	culture="daju"
 	father=248739
 	1160.1.1 = {
@@ -105,7 +105,7 @@
 248741 = {
 	name="Kamalgi" # Fictional
 	dynasty=1059971
-	religion="amazigh"
+	religion="bori"
 	culture="daju"
 	father=248740
 	trait=sympathy_islam
@@ -119,7 +119,7 @@
 248742 = {
 	name="Chaski" # Fictional
 	dynasty=1059971
-	religion="amazigh"
+	religion="bori"
 	culture="daju"
 	father=248741
 	trait=sympathy_islam
@@ -133,7 +133,7 @@
 248743 = {
 	name="Bolad" # Fictional
 	dynasty=1059971
-	religion="amazigh"
+	religion="bori"
 	culture="daju"
 	father=248742
 	trait=sympathy_islam
@@ -147,7 +147,7 @@
 248744 = {
 	name="Bogduru" # Fictional
 	dynasty=1059971
-	religion="amazigh"
+	religion="bori"
 	culture="daju"
 	father=248743
 	trait=sympathy_islam
@@ -161,7 +161,7 @@
 248745 = {
 	name="Gaguwe" # Fictional
 	dynasty=1059971
-	religion="amazigh"
+	religion="bori"
 	culture="daju"
 	father=248744
 	trait=sympathy_islam
@@ -175,7 +175,7 @@
 248746 = {
 	name="Dong" # Fictional
 	dynasty=1059971
-	religion="amazigh"
+	religion="bori"
 	culture="daju"
 	father=248745
 	trait=sympathy_islam
@@ -189,7 +189,7 @@
 248747= {
 	name="Ahmad" # Fictional
 	dynasty=1059971
-	religion="amazigh"
+	religion="bori"
 	culture="daju"
 	father=248746
 	1337.1.1 = {

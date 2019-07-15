@@ -24,6 +24,6 @@ religion = amazigh
 # History
 1062.1.1 = {
 	b_ifni = castle
+    religion = sunni
 }
-1116.1.1 = { religion = sunni }
 1184.1.1 = { trade_post = b_doria }

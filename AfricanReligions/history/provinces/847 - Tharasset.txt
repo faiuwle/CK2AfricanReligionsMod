@@ -28,6 +28,6 @@ religion = amazigh
 	b_igilliz = castle
 	b_tiznit = city
 	b_ouaouteit = temple
+    religion = sunni
 }
 1171.1.1 = { trade_post = b_doria }
-1416.1.1 = { religion = sunni }

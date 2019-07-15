@@ -8390,126 +8390,6 @@
 	}
 }
 
-#Fictional Tora rulers
-248699 = {
-	name="Born"
-	dynasty=1059972
-	religion="amazigh"
-	culture="maghreb_arabic"
-	740.1.1={
-		birth=yes # maybe
-	}
-	805.1.1={
-		death=yes # maybe
-	}
-}
-248700 = {
-	name="Ede"
-	dynasty=1059972
-	religion="amazigh"
-	culture="maghreb_arabic"
-	father=248699
-	769.1.1={
-		birth=yes # maybe
-	}
-	839.1.1={
-		death=yes # maybe
-	}
-}
-248701 = {
-	name="Gakuwe"
-	dynasty=1059972
-	religion="amazigh"
-	culture="maghreb_arabic"
-	father=248700
-	810.1.1={
-		birth=yes # maybe
-	}
-	880.1.1={
-		death=yes # maybe
-	}
-}
-248702 = {
-	name="Chaski"
-	dynasty=1059972
-	religion="amazigh"
-	culture="maghreb_arabic"
-	father=248701
-	864.1.1={
-		birth=yes # maybe
-	}
-	920.1.1={
-		death=yes # maybe
-	}
-}
-248703 = {
-	name="Bis"
-	female=yes
-	dynasty=1059972
-	religion="amazigh"
-	culture="maghreb_arabic"
-	father=248701
-	867.1.1={
-		birth=yes # maybe
-	}
-	922.1.1={
-		death=yes # maybe
-	}
-}
-248704 = {
-	name="Bug"
-	dynasty=1059972
-	religion="amazigh"
-	culture="maghreb_arabic"
-	father=248702
-	900.1.1={
-		birth=yes # maybe
-	}
-	960.1.1={
-		death=yes # maybe
-	}
-}
-248705 = {
-	name="Dahab"
-	dynasty=1059972
-	religion="amazigh"
-	culture="maghreb_arabic"
-	father=248704
-	935.1.1={
-		birth=yes # maybe
-	}
-	1000.1.1={
-		death=yes # maybe
-	}
-}
-248706 = {
-	name="Gon"
-	dynasty=1059972
-	religion="amazigh"
-	culture="maghreb_arabic"
-	father=248705
-	965.1.1={
-		birth=yes # maybe
-	}
-	1030.1.1={
-		death=yes # maybe
-	}
-}
-248707 = {
-	name="Izza"
-	dynasty=1059972
-	religion="amazigh"
-	culture="maghreb_arabic"
-	father=248706
-	1010.1.1={
-		birth=yes # maybe
-	}
-	1060.1.1={
-		death=yes # maybe
-	}
-}
-#End of fictional Tora rulers
-
 161076 = {
 	name="Kabayo"
 	#placeholder
@@ -9067,6 +8947,9 @@
 	1072.1.1={
 		birth = yes
 	}
+    1100.1.1 = {
+        religion = ibadi
+    }
 	1130.1.1={
 		death = yes
 	}
@@ -9074,7 +8957,7 @@
 248798 = {
 	name="Hiyan"        #placeholder
 	dynasty=1059963
-	religion="amazigh"
+	religion="ibadi"
 	culture="maghreb_arabic"
 	father = 248797
 	1100.1.1={
@@ -9087,7 +8970,7 @@
 248799 = {
 	name="Musa"        #placeholder
 	dynasty=1059963
-	religion="amazigh"
+	religion="ibadi"
 	culture="maghreb_arabic"
 	father = 248798
 	1132.1.1={
@@ -10187,6 +10070,9 @@
 	923.4.4={
 		birth = yes
 	}
+    937.1.1 = {
+        religion = karijite
+    }
 	975.6.6={
 		death = yes
 	}
@@ -10194,7 +10080,7 @@
 273117 = { 
 	name="Sakkum"
 	dynasty=1069088
-	religion="amazigh"
+	religion="karijite"
 	culture = maghreb_arabic #tagelmust
 	father = 273116
 	959.4.4={
@@ -10207,7 +10093,7 @@
 273118 = { 
 	name="Wattas"
 	dynasty=1069088
-	religion="amazigh"
+	religion="karijite"
 	culture = maghreb_arabic #tagelmust
 	father = 273117
 	993.4.4={
@@ -10220,7 +10106,7 @@
 273119 = { 
 	name="Tilankan"
 	dynasty=1069088
-	religion="amazigh"
+	religion="karijite"
 	culture = maghreb_arabic #tagelmust
 	father = 273118
 	1029.4.4={
@@ -10513,31 +10399,4 @@
 	976.1.1={
 		death = yes
 	}
-}
-
-# New holders for Ouadane and Bir Um Grein to replace the Almoravid Sultan
-1060023 = {
-    name="Sifal"
-    dynasty=1048012
-    religion=amazigh
-    culture=maghreb_arabic
-    1048.1.1 = {
-        birth = yes
-    }
-    1089.1.1 = {
-        death = yes
-    }
-}
-
-1060024 = {
-    name="Iher"
-    dynasty=1042177
-    religion=amazigh
-    culture=maghreb_arabic
-    1046.1.1 = {
-        birth = yes
-    }
-    1090.1.1 = {
-        death = yes
-    }
 }
