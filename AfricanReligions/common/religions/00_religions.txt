@@ -2897,7 +2897,7 @@ african_group = {
         high_god_name = GOD_ROOG
 
         god_names = {
-            GOD_MENDISS GOD_TIURAKH GOD_TAAHKARR
+            GOD_DONGO GOD_KONDOLON GOD_SANE
         }
 
         evil_god_names = {
@@ -2950,7 +2950,7 @@ african_group = {
         high_god_name = GOD_ROOG
 
         god_names = {
-            GOD_MENDISS GOD_TIURAKH GOD_TAAHKARR
+            GOD_DONGO GOD_KONDOLON GOD_SANE
         }
 
         evil_god_names = {
