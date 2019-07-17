@@ -1,0 +1,238 @@
+namespace = AFRREL
+
+# Tolerant character making African friend
+character_event = {
+	id = AFRREL.012
+	desc = EVTDESC_AFRREL012
+	picture = GFX_evt_courtiers_talking
+	border = GFX_event_normal_frame_religion
+
+	only_playable = yes
+	prisoner = no
+	only_capable = yes
+	min_age = 16
+	
+	trigger = {
+		trait = sympathy_african
+		has_dlc = "Sons of Abraham"
+		any_courtier = {
+			religion_group = african_group
+			prisoner = no
+			is_adult = yes
+			NOT = { trait = incapable }
+			NOT = { is_friend = ROOT }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+	}
+	
+	option = {
+		name = EVTOPTA_SoA_5414
+		random_courtier = {
+			limit = {
+				religion_group = african_group
+				prisoner = no
+				is_adult = yes
+				NOT = { trait = incapable }
+				NOT = { is_friend = ROOT }
+			}
+			add_friend = ROOT
+		}
+	}
+}
+
+# Test event for testing conditions with the console, never triggered
+character_event = {
+    id = AFRREL.013
+    hide_window = yes
+    is_triggered_only = yes
+    
+    trigger = {
+			can_call_crusade = yes
+			uses_new_crusade = no
+			has_called_crusade = no
+			religion_authority = 0.05
+			conditional_tooltip = {
+				trigger = {
+					is_alternate_start = yes
+					has_alternate_start_parameter = {
+						key = religion_names
+						value = random
+					}
+				}
+				custom_tooltip = {
+					text = ALT_GHW_STARTED
+					has_global_flag = muslim_jihads_unlocked
+					has_global_flag = pagan_ghws_unlocked
+					has_global_flag = christian_crusades_unlocked
+				}
+			}
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						has_alternate_start_parameter = {
+							key = religion_names
+							value = random
+						}
+					}
+				}
+				OR = {
+					religion_group = zoroastrian_group
+					religion_group = jewish_group
+					AND = {
+						religion_group = pagan_group
+						custom_tooltip = {
+							text = CTT_PAGAN_GHWS_UNLOCKED
+							has_global_flag = pagan_ghws_unlocked
+						}
+					}
+					AND = { 
+						religion_group = christian
+						custom_tooltip = {
+							text = CTT_CHRISTIAN_CRUSADES_UNLOCKED
+							has_global_flag = christian_crusades_unlocked
+						}
+					}
+					AND = {
+						religion_group = muslim
+						custom_tooltip = {
+							text = CTT_MUSLIM_JIHADS_UNLOCKED
+							has_global_flag = muslim_jihads_unlocked
+						}
+					}
+                    AND = {
+                        religion_group = african_group
+                        custom_tooltip = {
+                            text = CTT_AFRICAN_GHWS_UNLOCKED
+                            has_global_flag = african_ghws_unlocked
+                        }
+                    }
+				}
+			}
+			mercenary = no
+    }
+}
+
+# Event that enables GHWs for Africans
+narrative_event = {
+    id = AFRREL.014
+    title = EVTTITLE_AFRREL014
+    desc = EVTDESC_AFRREL014
+    picture = GFX_evt_battle_african
+    border = GFX_event_narrative_frame_religion
+    
+    major = yes
+	
+	show_ROOT = yes
+	hide_new = yes
+	
+	only_playable = yes
+	min_age = 16
+	religion_group = african_group
+    
+    trigger = {
+        controls_religion = yes
+        OR = {
+            NOT = { religion = bori }
+            has_global_flag = bori_psuedo_reformation
+        }
+        NOT = { has_global_flag = african_ghws_unlocked }
+        has_global_flag = muslim_jihads_unlocked
+    }
+    
+    mean_time_to_happen = {
+        months = 120
+    }
+    
+    immediate = {
+        set_global_flag = african_ghws_unlocked
+    }
+    
+    option = {
+        name = EVTOPTA_AFRREL014
+        trigger = {
+            religion = ROOT
+        }
+    }
+    
+    option = {
+        name = EVTOPTB_AFRREL014
+        trigger = {
+            NOT = { religion = ROOT }
+            religion_group = african_group
+        }
+    }
+    
+    option = {
+        name = EVTOPTC_AFRREL014
+        trigger = {
+            NOT = { religion_group = african_group }
+        }
+    }
+}
+
+# Event to switch west_african_pagan characters to a proper religion
+character_event = {
+    id = AFRREL.031
+    hide_window = yes
+    
+    religion = west_african_pagan
+    
+    mean_time_to_happen = {
+        days = 1
+    }
+    
+    immediate = {
+        if = {
+            limit = { culture_group = central_african }
+            religion = bori
+        }
+        else_if = {
+            limit = { culture_group = west_african }
+            if = {
+                limit = { has_global_flag = a_tag_roog_reformation }
+                religion = a_tag_roog_reformed
+            }
+            else = {
+                religion = a_tag_roog
+            }
+        }
+        else_if = {
+            limit = { culture = maghreb_arabic }
+            if = {
+                limit = { has_global_flag = amazigh_reformation }
+                religion = amazigh_reformed
+            }
+            else = {
+                religion = amazigh
+            }
+        }
+        else = {
+            random_list = {
+                10 = {
+                    religion = bori
+                }
+                10 = {
+                    if = {
+                        limit = { has_global_flag = a_tag_roog_reformation }
+                        religion = a_tag_roog_reformed
+                    }
+                    else = {
+                        religion = a_tag_roog
+                    }
+                }
+                10 = {
+                    if = {
+                        limit = { has_global_flag = amazigh_reformation }
+                        religion = amazigh_reformed
+                    }
+                    else = {
+                        religion = amazigh
+                    }
+                }
+            }
+        }
+    }
+}

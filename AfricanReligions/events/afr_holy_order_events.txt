@@ -1,31 +1,5 @@
 namespace = AFRREL
 
-# Replace male Inna generated on game start with a female one
-character_event = {
-    id = AFRREL.001
-    hide_window = yes
-    is_triggered_only = yes
-
-    only_rulers = yes
-    
-    trigger = {
-        has_landed_title = k_bori
-        is_female = no
-    }
-    
-    immediate = {
-        create_character = {
-            female = yes
-            age = 40
-            random_traits = yes
-            religion = bori
-            culture = hausa
-        }
-        abdicate_to = new_character
-        death = { death_reason = death_vanished } # It's awkward if he's still around afterwards
-    }
-}
-
 # on_yearly_pulse Create the Living Tan Garki if conditions apply
 character_event = {
     id = AFRREL.006
@@ -164,6 +138,40 @@ character_event = {
 			}
 			narrative_event = { id = AFRREL.007 days = 1 random = 20 }
 		}
+    }
+}
+
+# Event announcing the Living Tan Garki
+narrative_event = {
+    id = AFRREL.007
+    desc = EVTDESC_AFRREL007
+    title = d_living_tan_garki
+    picture = GFX_evt_battle_african
+    portrait = d_living_tan_garki
+	border = GFX_event_narrative_frame_religion
+    
+    is_triggered_only = yes
+    
+    only_playable = yes
+    
+    option = {
+        trigger = {
+            religion = bori
+        }
+        name = EVTOPTA_AFRREL007
+    }
+    option = {
+        trigger = {
+            NOT = { religion = bori }
+            religion_group = african_group
+        }
+        name = EVTOPTB_AFRREL007
+    }
+    option = {
+        trigger = {
+            NOT = { religion_group = african_group }
+        }
+        name = EVTOPTC_AFRREL007
     }
 }
 
@@ -311,6 +319,40 @@ character_event = {
 			}
 			narrative_event = { id = AFRREL.009 days = 1 random = 20 }
 		}
+    }
+}
+
+# Event announcing the Sacred Tyeddo
+narrative_event = {
+    id = AFRREL.009
+    desc = EVTDESC_AFRREL009
+    title = d_sacred_tyeddo
+    picture = GFX_evt_battle_african
+    portrait = d_sacred_tyeddo
+	border = GFX_event_narrative_frame_religion
+    
+    is_triggered_only = yes
+    
+    only_playable = yes
+    
+    option = {
+        trigger = {
+            religion = a_tag_roog_reformed
+        }
+        name = EVTOPTA_AFRREL009
+    }
+    option = {
+        trigger = {
+            NOT = { religion = a_tag_roog_reformed }
+            religion_group = african_group
+        }
+        name = EVTOPTB_AFRREL009
+    }
+    option = {
+        trigger = {
+            NOT = { religion_group = african_group }
+        }
+        name = EVTOPTC_AFRREL009
     }
 }
 
@@ -555,262 +597,48 @@ character_event = {
     }
 }
 
-# Fix barons with the wrong caste traits
-character_event = {
-    id = AFRREL.015
-    hide_window = yes
+# Event announcing the Orphans of Numidia
+narrative_event = {
+    id = AFRREL.011
+    desc = EVTDESC_AFRREL011
+    title = d_orphans_of_numidia
+    picture = GFX_evt_battle_african
+    portrait = d_orphans_of_numidia
+	border = GFX_event_narrative_frame_religion
+    
     is_triggered_only = yes
     
-    only_rulers = yes
-    
-    trigger = {
-        tier = BARON
-        OR = {
-            religion = hindu
-            religion = buddhist
-            religion = jain
-            religion = a_tag_roog
-            religion = a_tag_roog_reformed
-        }
-        NOR = {
-            AND = {
-                OR = {
-                    religion = hindu
-                    religion = buddhist
-                    religion = jain
-                }
-                is_republic = yes
-                trait = vaishya
-            }
-            AND = {
-                OR = {
-                    religion = hindu
-                    religion = buddhist
-                    religion = jain
-                }
-                is_theocracy = yes
-                trait = brahmin
-            }
-            AND = {
-                OR = {
-                    religion = hindu
-                    religion = buddhist
-                    religion = jain
-                }
-                is_republic = no
-                is_theocracy = no
-                trait = kshatriya
-            }
-            AND = {
-                OR = {
-                    religion = a_tag_roog
-                    religion = a_tag_roog_reformed
-                }
-                is_republic = yes
-                trait = wangara
-            }
-            AND = {
-                OR = {
-                    religion = a_tag_roog
-                    religion = a_tag_roog_reformed
-                }
-                is_theocracy = yes
-                trait = jakhanke
-            }
-            AND = {
-                OR = {
-                    religion = a_tag_roog
-                    religion = a_tag_roog_reformed
-                }
-                is_republic = no
-                is_theocracy = no
-                trait = foro
-            }
-        }
-    }
-    
-    immediate = {
-        if = {
-            limit = {
-                OR = {
-                    religion = hindu
-                    religion = buddhist
-                    religion = jain
-                }
-            }
-            remove_trait = foro
-            remove_trait = wangara
-            remove_trait = jakhanke
-            if = {
-                limit = {
-                    is_republic = yes
-                }
-                remove_trait = kshatriya
-                remove_trait = brahmin
-                add_trait = vaishya
-            }
-            else_if = {
-                limit = {
-                    is_theocracy = yes
-                }
-                remove_trait = kshatriya
-                remove_trait = vaishya
-                add_trait = brahmin
-            }
-            else = {
-                remove_trait = brahmin
-                remove_trait = vaishya
-                add_trait = kshatriya
-            }
-        }
-        else = {
-            remove_trait = kshatriya
-            remove_trait = brahmin
-            remove_trait = vaishya
-            if = {
-                limit = {
-                    is_republic = yes
-                }
-                remove_trait = foro
-                remove_trait = jakhanke
-                add_trait = wangara
-            }
-            else_if = {
-                limit = {
-                    is_theocracy = yes
-                }
-                remove_trait = foro
-                remove_trait = wangara
-                add_trait = jakhanke
-            }
-            else = {
-                remove_trait = wangara
-                remove_trait = jakhanke
-                add_trait = foro
-            }
-        }
-    }
-}
-
-# Suffete trait
-
-# Suffete Trait Gained
-character_event = {
-	id = AFRREL.020
-	desc = EVTDESC_AFRREL020
-    
-	picture = GFX_evt_building_carthage
-	
-	only_playable = yes
-	has_global_flag = carthage_restored
-	
-	trigger = {
-		has_landed_title = e_carthage
-		NOT = { trait = suffete }
-	}
-	
-	is_triggered_only = yes
-	
-	
-	option = {
-		name = EVTOPTA_AFRREL020
-		add_trait = suffete
-	}
-}
-
-# Suffete Trait Lost
-character_event = {
-	id = AFRREL.021
-	desc = {
-        trigger = {
-            e_carthage = {
-                holder_scope = { always = yes }
-            }
-        }
-        text = EVTDESC_AFRREL021_LOST
-    }
-    desc = {
-        trigger = {
-            NOT = {
-                e_carthage = {
-                    holder_scope = { always = yes }
-                }
-            }
-        }
-        text = EVTDESC_AFRREL021_DESTROYED
-    }
-	picture = GFX_evt_building_carthage
-	
-	has_global_flag = carthage_restored
-		
-	trigger = {
-		trait = suffete
-		NOT = { has_landed_title = e_carthage }
-		is_alive = yes
-	}
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_AFRREL021
-        trigger = {
-            e_carthage = {
-                holder_scope = { always = yes }
-            }
-        }
-		remove_trait = suffete
-	}
+    only_playable = yes
     
     option = {
-        name = EVTOPTB_AFRREL021
         trigger = {
-            NOT = {
-                e_carthage = {
-                    holder_scope = { always = yes }
+            OR = {
+                AND = {
+                    religion = amazigh
+                    NOT = { has_global_flag = amazigh_reformation }
                 }
+                religion = amazigh_reformed
             }
         }
-        remove_trait = suffete
+        name = EVTOPTA_AFRREL011
     }
-}
-
-#On_death Suffete Trait inheritance
-character_event = {
-	id = AFRREL.022
-	hide_window = yes
-	
-	only_playable = yes
-	has_global_flag = carthage_restored
-	
-	trigger = {
-		has_landed_title = e_carthage
-	}
-	
-	is_triggered_only = yes
-	
-	
-	immediate = {
-		e_carthage = { current_heir = { character_event = { id = AFRREL.020 days = 2 } } }
-	}
-}
-
-#On_title_usurped Suffete Trait inheritance
-character_event = {
-	id = AFRREL.023
-	hide_window = yes
-	
-	only_playable = yes
-	has_global_flag = carthage_restored
-	
-	trigger = {
-		FROM = { title = e_carthage }
-		NOT = { trait = suffete }
-	}
-	
-	is_triggered_only = yes
-	
-	
-	immediate = {
-		ROOT = { character_event = { id = AFRREL.020 days = 2 } }
-	}
+    option = {
+        trigger = {
+            NOR = {
+                AND = {
+                    religion = amazigh
+                    NOT = { has_global_flag = amazigh_reformation }
+                }
+                religion = amazigh_reformed
+            }
+            religion_group = african_group
+        }
+        name = EVTOPTB_AFRREL011
+    }
+    option = {
+        trigger = {
+            NOT = { religion_group = african_group }
+        }
+        name = EVTOPTC_AFRREL011
+    }
 }
