@@ -26,7 +26,7 @@ GOD_TIURAKH;Tiurakh;;;;;;;;;;;;;x
 GOD_TAAHKARR;Taahkarr;;;;;;;;;;;;;x
 GOD_THE_EVIL_PANGOOLS;The evil pangools;;;;;;;;;;;;;x
 GOD_TANIT;Tanit;;;;;;;;;;;;;x
-GOD_ANTI;Änti;;;;;;;;;;;;;x
+GOD_ANTI;Ã„nti;;;;;;;;;;;;;x
 GOD_GURZIL;Gurzil;;;;;;;;;;;;;x
 GOD_MAGEC;Magec;;;;;;;;;;;;;x
 GOD_SET;Set;;;;;;;;;;;;;x
@@ -35,7 +35,7 @@ INNA;Inna;;;;;;;;;;;;;x
 INNA_FOA;Mother of us all;;;;;;;;;;;;;x
 SUPREME_SALTIGUE;Supreme Saltigue;;;;;;;;;;;;;x
 SUPREME_SALTIGUE_FOA;Your Holiness;;;;;;;;;;;;;x
-GUANAMENE;Guañameñe;;;;;;;;;;;;;x
+GUANAMENE;GuaÃ±ameÃ±e;;;;;;;;;;;;;x
 GUANAMENE_FOA;Your Holiness;;;;;;;;;;;;;x
 k_bori;The Bori Matriarchy;;;;;;;;;;;;;x
 k_bori_adj;Matriarchal;;;;;;;;;;;;;x
@@ -144,14 +144,14 @@ job_treasurer_west_african;Farba;;;;;;;;;;;;;x
 job_chancellor_central_african;Wakili;;;;;;;;;;;;;x
 job_marshal_central_african;Zerma;;;;;;;;;;;;;x
 job_treasurer_central_african;Midala;;;;;;;;;;;;;x
-title_champion_afr;Champion;Champion;Champion;;Campeón;;;;;;;;;x
-title_champion_afr_desc;The person that this title is bestowed upon is considered to be the Champion of the Realm. There is surely no greater honor for mortal men to aspire to.;La personne à qui ce titre est décerné est considérée comme le champion du royaume. Aucun mortel ne saurait espérer titre plus honorable.;Die Person, die diesen Titel erhalten hat, wird als Champion des Reiches angesehen. Es gibt wahrlich keine größere Ehre für Sterbliche.;;La persona a la que se le otorga este título es considerada como el Campeón del Reino. No se puede aspirar a un honor mayor para los hombres mortales.;;;;;;;;;x
-title_master_of_the_blade_afr;Master of the Blade;Maître de la lame;Meister des Schwertes;;Maestro de la Espada;;;;;;;;;x
-title_master_of_the_blade_afr_desc;The Master of the Blade is a prestigious honorific usually granted to those with demonstrated ability in swordsmanship.;Le maître de la lame est un titre prestigieux habituellement décerné à ceux qui ont démontré leur habileté à manier l'épée.;Der Meister des Schwertes ist eine prestigeträchtige Ehrung, die nur den Erfahrensten im Umgang mit dem Schwert zuteil wird.;;El Maestro de la Espada es un prestigioso título honorífico concedido a aquellas personas con demostrada capacidad en el manejo de la espada.;;;;;;;;;x
-title_master_of_the_bow_afr;Master of the Bow;Maître de l'arc;Meister des Bogens;;Maestro del Arco;;;;;;;;;x
-title_master_of_the_bow_afr_desc;The Master of the Bow is a prestigious honorific usually granted to those with demonstrated ability in bowmanship.;Le maître de l'arc est un titre prestigieux habituellement décerné à ceux qui ont démontré leur habileté à manier l'arc.;Der Meister des Bogens ist eine prestigeträchtige Ehrung, die nur den Erfahrensten im Umgang mit dem Bogen zuteil wird.;;El Maestro del Arco es un prestigioso título honorífico concedido a aquellas personas con demostrada capacidad en el manejo del Arco.;;;;;;;;;x
-title_venerable_elder_afr;Venerable Elder;Vénérable aîné;Ehrwürdiger Älterer;;Venerable Anciano;;;;;;;;;x
-title_venerable_elder_afr_desc;This honorific can only be granted to those who have reached the age of fifty. Their wisdom and the sorely needed guidance they offer the younger generations is deserving of great respect.;Ce titre honorifique ne peut être accordé qu'à ceux qui ont atteint l'âge de cinquante ans. Leur sagesse et leurs conseils, dont ont grandement besoin les générations plus jeunes, appellent à un grand respect.;Diese Ehrung können nur jene erhalten, die das fünfzigste Lebensjahr erreicht haben. Ihre Weisheit und ihr dringend benötigter Rat für jüngere Generationen verdienen den höchstmöglichen Respekt.;;Este título honorífico sólo puede concederse a quienes hayan alcanzado la edad de cincuenta. Su sabiduría y la muy necesaria guía que ofrecen a las nuevas generaciones se merecen un gran respeto.;;;;;;;;;x
+title_champion_afr;Champion;Champion;Champion;;CampeÃ³n;;;;;;;;;x
+title_champion_afr_desc;The person that this title is bestowed upon is considered to be the Champion of the Realm. There is surely no greater honor for mortal men to aspire to.;La personne Ã  qui ce titre est dÃ©cernÃ© est considÃ©rÃ©e comme le champion du royaume. Aucun mortel ne saurait espÃ©rer titre plus honorable.;Die Person, die diesen Titel erhalten hat, wird als Champion des Reiches angesehen. Es gibt wahrlich keine grÃ¶ÃŸere Ehre fÃ¼r Sterbliche.;;La persona a la que se le otorga este tÃ­tulo es considerada como el CampeÃ³n del Reino. No se puede aspirar a un honor mayor para los hombres mortales.;;;;;;;;;x
+title_master_of_the_blade_afr;Master of the Blade;MaÃ®tre de la lame;Meister des Schwertes;;Maestro de la Espada;;;;;;;;;x
+title_master_of_the_blade_afr_desc;The Master of the Blade is a prestigious honorific usually granted to those with demonstrated ability in swordsmanship.;Le maÃ®tre de la lame est un titre prestigieux habituellement dÃ©cernÃ© Ã  ceux qui ont dÃ©montrÃ© leur habiletÃ© Ã  manier l'Ã©pÃ©e.;Der Meister des Schwertes ist eine prestigetrÃ¤chtige Ehrung, die nur den Erfahrensten im Umgang mit dem Schwert zuteil wird.;;El Maestro de la Espada es un prestigioso tÃ­tulo honorÃ­fico concedido a aquellas personas con demostrada capacidad en el manejo de la espada.;;;;;;;;;x
+title_master_of_the_bow_afr;Master of the Bow;MaÃ®tre de l'arc;Meister des Bogens;;Maestro del Arco;;;;;;;;;x
+title_master_of_the_bow_afr_desc;The Master of the Bow is a prestigious honorific usually granted to those with demonstrated ability in bowmanship.;Le maÃ®tre de l'arc est un titre prestigieux habituellement dÃ©cernÃ© Ã  ceux qui ont dÃ©montrÃ© leur habiletÃ© Ã  manier l'arc.;Der Meister des Bogens ist eine prestigetrÃ¤chtige Ehrung, die nur den Erfahrensten im Umgang mit dem Bogen zuteil wird.;;El Maestro del Arco es un prestigioso tÃ­tulo honorÃ­fico concedido a aquellas personas con demostrada capacidad en el manejo del Arco.;;;;;;;;;x
+title_venerable_elder_afr;Venerable Elder;VÃ©nÃ©rable aÃ®nÃ©;EhrwÃ¼rdiger Ã„lterer;;Venerable Anciano;;;;;;;;;x
+title_venerable_elder_afr_desc;This honorific can only be granted to those who have reached the age of fifty. Their wisdom and the sorely needed guidance they offer the younger generations is deserving of great respect.;Ce titre honorifique ne peut Ãªtre accordÃ© qu'Ã  ceux qui ont atteint l'Ã¢ge de cinquante ans. Leur sagesse et leurs conseils, dont ont grandement besoin les gÃ©nÃ©rations plus jeunes, appellent Ã  un grand respect.;Diese Ehrung kÃ¶nnen nur jene erhalten, die das fÃ¼nfzigste Lebensjahr erreicht haben. Ihre Weisheit und ihr dringend benÃ¶tigter Rat fÃ¼r jÃ¼ngere Generationen verdienen den hÃ¶chstmÃ¶glichen Respekt.;;Este tÃ­tulo honorÃ­fico sÃ³lo puede concederse a quienes hayan alcanzado la edad de cincuenta. Su sabidurÃ­a y la muy necesaria guÃ­a que ofrecen a las nuevas generaciones se merecen un gran respeto.;;;;;;;;;x
 title_magajiya_yaljigari;Magajiya Yaljigari;;;;;;;;;;;;;x
 title_magajiya_yaljigari_desc;The Magajiya Yaljigari is a trusted woman who is in charge of informing the ruler of the news around the capital.;;;;;;;;;;;;x
 title_griot;Griot;;;;;;;;;;;;;x
@@ -176,23 +176,23 @@ carthage_bloodline_desc;[This.GetTitledNameWithNick] was the magnificent ruler w
 string_reformed_religion_a_tag_roog; the ancient spiritual traditions of the Western Sahel have been unified into a single and true way of the divine, capable of resisting any foreign incursion.;;;;;;;;;;;;;x
 string_reformed_religion_amazigh; the faith of Carthage and Numidia will return the old gods to their place of honor and liberate the people of North Africa from the Abrahamic yoke.;;;;;;;;;;;;;x
 controls_holy_sites_tooltip;Controls all five holy sites;;;;;;;;;;;;;x
-vassalize_inna_tooltip;Vassalize §Y[Root.RelHead.GetBestName]§!;;;;;;;;;;;;;x
+vassalize_inna_tooltip;Vassalize Â§Y[Root.RelHead.GetBestName]Â§!;;;;;;;;;;;;;x
 beatification_tooltip;Ancestors can now be beatified and canonized;;;;;;;;;;;;;x
-has_griot_tooltip;You have appointed a §YGriot§!;;;;;;;;;;;;;x
-learned_griot_tooltip;Your §YGriot§! has §YLearning§! greater than or equal to 12;;;;;;;;;;;;;x
+has_griot_tooltip;You have appointed a Â§YGriotÂ§!;;;;;;;;;;;;;x
+learned_griot_tooltip;Your Â§YGriotÂ§! has Â§YLearningÂ§! greater than or equal to 12;;;;;;;;;;;;;x
 CTT_AFRICAN_GHWS_UNLOCKED;African Great Holy Wars are unlocked;;;;;;;;;;;;;x
-is_reformed_amazigh_tooltip;Publicly practices the Reformed §YAmazigh§! religion;;;;;;;;;;;;;x
+is_reformed_amazigh_tooltip;Publicly practices the Reformed Â§YAmazighÂ§! religion;;;;;;;;;;;;;x
 carthage_is_restored_tooltip;The Carthaginian Empire is restored;;;;;;;;;;;;;x
-is_empire_of_maghreb_tooltip;Is the Empire of §YMaghreb§!;;;;;;;;;;;;;x
+is_empire_of_maghreb_tooltip;Is the Empire of Â§YMaghrebÂ§!;;;;;;;;;;;;;x
 tooltip_bori_elector_vote_possessed;[From.GetSheHeCap] has the wisdom of a bori spirit who has possessed [From.GetHerHim];;;;;;;;;;;;;x
 tooltip_bori_elector_possessed_ruler;The bori spirit possessing my liege surely knows best;;;;;;;;;;;;;x
-tooltip_elector_vote_chiroma;[From.GetSheHeCap] is the §YChiroma§!, the position traditionally held by the heir apparent;;;;;;;;;;;;;x
-baptism_sponsor_sympathetic_afr;§Y[Root.GetTitledFirstName]§! is sympathetic towards §YAfricans§!;;;;;;;;;;;;;x
-baptism_sponsor_african;§Y[Root.GetTitledFirstName]§! is a §YReformed African§!;;;;;;;;;;;;;x
-salt_county_succ_tooltip;§Y[Root.GetTitledFirstName]§! takes all occupied territory.;;;;;;;;;;;;;x
-salt_rome_tooltip;The §YChristian§! world is outraged by your actions.\nThe destruction of the city and the §YHoly See§! has gravely affected the §YMoral Authority§! of the §YCatholic Church§!, as well as the faith of Rome's former owner.\nYou loot §Y2000§! gold from the city.;;;;;;;;;;;;;x
-salt_constantinople_tooltip;The §YChristian§! world is outraged by your actions.\nThe destruction of the city has gravely affected the §YMoral Authority§! of the §YOrthodox Church§!, as well as the faith of Constantinople's former owner.\nYou loot §Y2000§! gold from the city.;;;;;;;;;;;;;x
-salt_carthage_capital_tooltip;The §YAmazigh§! world is outraged by your actions.\nThe destruction of the city has gravely affected the §YMoral Authority§! of the §YChurch of the Amazigh People§!.\nYou loot §Y2000§! gold from the city.;;;;;;;;;;;;;x
+tooltip_elector_vote_chiroma;[From.GetSheHeCap] is the Â§YChiromaÂ§!, the position traditionally held by the heir apparent;;;;;;;;;;;;;x
+baptism_sponsor_sympathetic_afr;Â§Y[Root.GetTitledFirstName]Â§! is sympathetic towards Â§YAfricansÂ§!;;;;;;;;;;;;;x
+baptism_sponsor_african;Â§Y[Root.GetTitledFirstName]Â§! is a Â§YReformed AfricanÂ§!;;;;;;;;;;;;;x
+salt_county_succ_tooltip;Â§Y[Root.GetTitledFirstName]Â§! takes all occupied territory.;;;;;;;;;;;;;x
+salt_rome_tooltip;The Â§YChristianÂ§! world is outraged by your actions.\nThe destruction of the city and the Â§YHoly SeeÂ§! has gravely affected the Â§YMoral AuthorityÂ§! of the Â§YCatholic ChurchÂ§!, as well as the faith of Rome's former owner.\nYou loot Â§Y2000Â§! gold from the city.;;;;;;;;;;;;;x
+salt_constantinople_tooltip;The Â§YChristianÂ§! world is outraged by your actions.\nThe destruction of the city has gravely affected the Â§YMoral AuthorityÂ§! of the Â§YOrthodox ChurchÂ§!, as well as the faith of Constantinople's former owner.\nYou loot Â§Y2000Â§! gold from the city.;;;;;;;;;;;;;x
+salt_carthage_capital_tooltip;The Â§YAmazighÂ§! world is outraged by your actions.\nThe destruction of the city has gravely affected the Â§YMoral AuthorityÂ§! of the Â§YChurch of the Amazigh PeopleÂ§!.\nYou loot Â§Y2000Â§! gold from the city.;;;;;;;;;;;;;x
 eldership_rules_afr;Eldership;;;;;;;;;;;;;x
 religion_feature_a_tag_roog;Way of the Divine;;;;;;;;;;;;;x
 religion_feature_a_tag_roog_desc;In order to edify the faith we shall unify the many traditions of life and divination practiced by the different nations of the land.;;;;;;;;;;;;;x
@@ -211,13 +211,13 @@ reform_carthage_desc;Long ago the great Carthaginian empire perished under the R
 change_caste_griot;In your court as well as among the common people, gossips say that you do not deserve your titles. After all, a person of your ancestry is not made to occupy such a position. Only prejudices and superstitions, certainly, but enough for people to speak ill of you.\n\nYour Court Griot, however proposes a solution - he will compose a great poem in which he will say that all your ancestors were in fact of the correct caste. A little fib for the greater good.;;;;;;;;;;;;;x
 change_caste_no_griot;In your court as well as among the common people, gossips say that you do not deserve your titles. After all, a person of your ancestry is not made to occupy such a position. Only prejudices and superstitions, certainly, but enough for people to speak ill of you.\n\nYou will need the advice of a learned Court Griot.;;;;;;;;;;;;;x
 secretly_convert_to_bori_holy_site;Secretly Convert to Bori;;;;;;;;;;;;;x
-secretly_convert_to_bori_holy_site_desc;The §YBori§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secretly_convert_to_bori_holy_site_desc;The Â§YBoriÂ§! pilgrims that flock to the holy site in Â§Y[Root.Location.GetName]Â§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
 secretly_convert_to_a_tag_roog_holy_site;Secretly Convert to A Tat Roog;;;;;;;;;;;;;x
-secretly_convert_to_a_tag_roog_holy_site_desc;The §YA Tat Roog§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secretly_convert_to_a_tag_roog_holy_site_desc;The Â§YA Tat RoogÂ§! pilgrims that flock to the holy site in Â§Y[Root.Location.GetName]Â§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
 secretly_convert_to_a_tag_roog_reformed_holy_site;Secretly Convert to A Tat Roog;;;;;;;;;;;;;x
-secretly_convert_to_a_tag_roog_reformed_holy_site_desc;The §YA Tat Roog§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secretly_convert_to_a_tag_roog_reformed_holy_site_desc;The Â§YA Tat RoogÂ§! pilgrims that flock to the holy site in Â§Y[Root.Location.GetName]Â§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
 secretly_convert_to_amazigh_holy_site;Secretly Convert to Amazigh;;;;;;;;;;;;;x
-secretly_convert_to_amazigh_holy_site_desc;The §YAmazigh§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secretly_convert_to_amazigh_holy_site_desc;The Â§YAmazighÂ§! pilgrims that flock to the holy site in Â§Y[Root.Location.GetName]Â§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
 african_revival;African Revival;;;;;;;;;;;;;x
 amazigh_resurgence;Amazigh Resurgence;;;;;;;;;;;;;x
 constantinople_destroyed;Constantinople Burned;;;;;;;;;;;;;x
@@ -260,10 +260,10 @@ nick_the_beloved;the Beloved;;;;;;;;;;;;;x
 nick_the_thunderbolt;the Thunderbolt;;;;;;;;;;;;;x
 nick_africanus;Africanus;;;;;;;;;;;;;x
 CB_NAME_IMPERIAL_CARTHAGE;Reconquest of [Title.GetBaseName];;;;;;;;;;;;;x
-imperial_reconquest_carthage_desc;The lost territory of the Carthaginian Empire must be reclaimed! §Y$CLAIMANT$§! can use this Casus Belli to seize all titles held by §Y$TARGET$§! within the de jure §Y$TITLE$§!.;;;;;;;;;;;;;x
+imperial_reconquest_carthage_desc;The lost territory of the Carthaginian Empire must be reclaimed! Â§Y$CLAIMANT$Â§! can use this Casus Belli to seize all titles held by Â§Y$TARGET$Â§! within the de jure Â§Y$TITLE$Â§!.;;;;;;;;;;;;;x
 WAR_NAME_IMPERIAL_CARTHAGE;$ORDER$$FIRST_ADJ$ Imperial Reconquest of $OTHER_TITLE$;;;;;;;;;;;;;x
 CB_NAME_SALT_COUNTY;Salt [Title.GetBaseName];;;;;;;;;;;;;x
-salt_county_desc;This casus belli allows §Y$CLAIMANT$§! to declare war on the old imperial nemesis controlled by §Y$TARGET$§! to annex all conquered land and completely destroy their mighty metropolis.;;;;;;;;;;;;;x
+salt_county_desc;This casus belli allows Â§Y$CLAIMANT$Â§! to declare war on the old imperial nemesis controlled by Â§Y$TARGET$Â§! to annex all conquered land and completely destroy their mighty metropolis.;;;;;;;;;;;;;x
 WAR_NAME_SALT_COUNTY;$ORDER$$FIRST_ADJ$ War to Salt $OTHER_TITLE$;;;;;;;;;;;;;x
 secret_religious_society_bori;The Maguzawa;;;;;;;;;;;;;x
 secret_religious_society_bori_desc;With the arrival of new faiths, the traditional followers of the bori spirits have seen the old ways threatened. However, despite the displacement, people still speak of those living in the outskirts of society, practicing secret ceremonies in which ancient specters are summoned.  These are the Maguzawa, as they are called by the unfaithful.;;;;;;;;;;;;;x
@@ -325,3 +325,9 @@ secret_religious_society_amazigh_reformed_rank_3_male;Preacher;;;;;;;;;;;;;x
 secret_religious_society_amazigh_reformed_rank_3_female;Preacher;;;;;;;;;;;;;x
 secret_religious_society_amazigh_reformed_rank_4_male;Herald;;;;;;;;;;;;;x
 secret_religious_society_amazigh_reformed_rank_4_female;Herald;;;;;;;;;;;;;x
+follower_of_yan_riga; Follower of Yan Riga;;;;;;;;;;;;;x
+follower_of_babbaku; Follower of Babbaku;;;;;;;;;;;;;x
+follower_of_tan_garki; Follower of Tan Garki;;;;;;;;;;;;;x
+follower_of_samari; Follower of Samari;;;;;;;;;;;;;x
+follower_of_yayan_zanzanna; Follower of Yanyan Zanzanna;;;;;;;;;;;;;x
+follower_of_tan_dowa; Follower of Tan Dowa;;;;;;;;;;;;;x

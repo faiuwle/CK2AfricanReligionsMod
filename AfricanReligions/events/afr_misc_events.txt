@@ -236,3 +236,217 @@ character_event = {
         }
     }
 }
+
+# Bori Selecting Patron Deities events
+character_event = {
+    id = AFRREL.00500
+    desc = EVTDESC_AFRREL00500
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_desert
+
+    is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = { if_playable = yes }
+            any_courtier = {
+                limit = {
+                    prisoner = no
+                    religion = root
+                    age = 16
+                    has_minor_deity_trigger = no
+                }
+                character_event = { id = AFRREL.00500 days = 1 }
+            }
+        }
+    }
+
+    option = {
+        name = EVTOPTA_AFRREL00501
+        hidden_tooltip = { character_event = { id = AFRREL.00510 } }
+    }
+    option = {
+        name = EVTOPTA_AFRREL00502
+        piety = +25
+    }
+ }
+
+character_event = {
+    id = AFRREL.00510
+    desc = EVTDESC_AFRREL00510
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_desert
+
+    is_triggered_only = yes
+
+    option = {
+        name = EVTOPTA_AFRREL00512
+
+        add_character_modifier = {
+            name = follower_of_yan_riga
+            duration = -1
+        }
+
+        hidden_tooltip = { character_event = { id = AFRREL.00520 } }
+    }
+
+    option = {
+        name = EVTOPTA_AFRREL00513
+
+        add_character_modifier = {
+            name = follower_of_babbaku
+            duration = -1
+        }
+
+        hidden_tooltip = { character_event = { id = AFRREL.00530 } }
+    }
+
+    option = {
+        name = EVTOPTA_AFRREL00514
+
+        add_character_modifier = {
+            name = follower_of_tan_garki
+            duration = -1
+        }
+
+        hidden_tooltip = { character_event = { id = AFRREL.00540 } }
+    }
+
+    option = {
+        name = EVTOPTA_AFRREL00515
+
+        hidden_tooltip = { character_event = { id = AFRREL.00511 } }
+    }
+}
+
+character_event = {
+    id = AFRREL.00511
+    desc = EVTDESC_AFRREL00511
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_desert
+
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL00516
+
+        add_character_modifier = {
+            name = follower_of_samari
+            duration = -1
+        }
+
+        hidden_tooltip = { character_event = { id = AFRREL.00550 } }
+    }
+
+    option = {
+        name = EVTOPTA_AFRREL00517
+
+        add_character_modifier = {
+            name = follower_of_yayan_zanzanna
+            duration = -1
+        }
+
+        hidden_tooltip = { character_event = { id = AFRREL.00560 } }
+    }
+
+    option = {
+        name = EVTOPTA_AFRREL00518
+
+        add_character_modifier = {
+            name = follower_of_tan_dowa
+            duration = -1
+        }
+
+        hidden_tooltip = { character_event = { id = AFRREL.00570 } }
+    }
+
+    option = {
+        name = EVTOPTA_AFRREL00519
+
+        hidden_tooltip = { character_event = { id = AFRREL.00510 } }
+    }
+}
+
+#Picked Yan Riga
+character_event = {
+    id = AFRREL.00520
+    desc = EVTDESC_AFRREL00520
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_magic_ritual
+
+    is_triggered_only = yes
+
+    option = {
+        name = EVTOPTA_AFRREL00520
+    }
+}
+
+#Picked Babbaku
+character_event = {
+    id = AFRREL.00530
+    desc = EVTDESC_AFRREL00530
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_desert
+
+    is_triggered_only = yes
+
+    option = {
+        name = EVTOPTA_AFRREL00530
+    }
+}
+
+#Picked Tan Garki
+character_event = {
+    id = AFRREL.00540
+    desc = EVTDESC_AFRREL00540
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_desert
+
+    is_triggered_only = yes
+
+    option = {
+        name =  EVTOPTA_AFRREL00540
+    }
+}
+
+#Picked Samari
+character_event = {
+    id = AFRREL.00550
+    desc = EVTDESC_AFRREL00550
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_desert
+
+    is_triggered_only = yes
+
+    option = {
+        name =  EVTOPTA_AFRREL00550
+    }
+}
+
+#Picked Yayan Zanzanna
+character_event = {
+    id = AFRREL.00560
+    desc = EVTDESC_AFRREL00560
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_desert
+
+    is_triggered_only = yes
+
+    option = {
+        name =  EVTOPTA_AFRREL00560
+    }
+}
+
+#Picked Tan Dowsa
+character_event = {
+    id = AFRREL.00570
+    desc = EVTDESC_AFRREL00570
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_desert
+
+    is_triggered_only = yes
+
+    option = {
+        name =  EVTOPTA_AFRREL00570
+    }
+}
