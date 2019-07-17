@@ -33,6 +33,7 @@ secret_amazigh_reformed_community = {
 	}
 }
 
+<<<<<<< Updated upstream
 follower_of_yan_riga = {
 	learning = +2
 	martial_penalty = -1
@@ -67,4 +68,22 @@ follower_of_tan_dowa = {
 	combat_rating = +10
 	diplomacy_penalty = -1
 	icon = 48
+=======
+follower_of_mai_ja_ciki = {
+	intrigue = +2
+	combat_rating = -15
+	icon = 48
+}
+
+follower_of_garki_baba = {
+	martial = +1
+	combat = +5
+	icon = 48
+}
+
+followr_of_zaki = {
+	martial = +2
+	stewardship_penalty = -1
+	icon = 48
+>>>>>>> Stashed changes
 }

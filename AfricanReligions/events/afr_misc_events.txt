@@ -237,10 +237,17 @@ character_event = {
     }
 }
 
+<<<<<<< Updated upstream
 # Bori Selecting Patron Deities events
 character_event = {
     id = AFRREL.00500
     desc = EVTDESC_AFRREL00500
+=======
+# Bori Selecting Patron Deities event
+character_event = {
+    id = AFRREL.0050
+    desc = EVTDESC_AFRREL.0050
+>>>>>>> Stashed changes
     border = GFX_event_normal_frame_religion
     picture = GFX_evt_desert
 
@@ -256,12 +263,17 @@ character_event = {
                     age = 16
                     has_minor_deity_trigger = no
                 }
+<<<<<<< Updated upstream
                 character_event = { id = AFRREL.00500 days = 1 }
+=======
+                character_event = { id = AFRREL.0050 days = 1 }
+>>>>>>> Stashed changes
             }
         }
     }
 
     option = {
+<<<<<<< Updated upstream
         name = EVTOPTA_AFRREL00501
         hidden_tooltip = { character_event = { id = AFRREL.00510 } }
     }
@@ -371,12 +383,100 @@ character_event = {
 character_event = {
     id = AFRREL.00520
     desc = EVTDESC_AFRREL00520
+=======
+        name = EVTOPTA_AFRREL.0051
+
+        add_character_modifier = {
+            name = follower_of_maj-ja-ciki
+            duration = -1
+        }
+
+        hidden_tooltip = { character_event = { id = AFRREL.0056 } }
+
+        ai_chance = {
+            factor = 1
+            modifier = {
+                has_education_intrigue_trigger = yes
+                factor = 2
+            }
+            modifier = {
+                trait = lunatic
+                factor = 3
+            }
+            modifier = {
+                trait = possessed
+                factor = 3
+            }
+        }
+    }
+
+    option = {
+        name = EVTOPTA_AFRREL.0052
+
+        add_character_modifier = {
+            name = follower_of_garki_baba
+            duration = -1
+        }
+
+        hidden_tooltip = { character_event = { id = AFRREL.0057 } }
+
+        ai_chance = {
+            factor = 1
+            modifier = {
+                has_education_martial_trigger = yes
+                factor = 2
+            }
+            modifier = {
+                trait = brave
+                factor = 2
+            }
+            modifier = {
+                trait = proud
+                factor = 2
+            }
+        }
+    }
+
+    option = {
+        name = EVTOPTA_AFRREL.0053
+
+        add_character_modifier = {
+            name = follower_of_zaki
+            duration = -1
+        }
+
+        hidden_tooltip = { character_event = { id = AFRREL.0058 } }
+
+        ai_chance = {
+            factor = 1
+            modifier = {
+                trait = uncouth
+                factor = 2
+            }
+            modifier = {
+                trait = scarred
+                factor = 2
+            }
+            modifier = {
+                trait = hunter
+                factor = 2
+            }
+        }
+    }
+}
+
+#Picked Mai-Ja-Ciki
+character_event = {
+    id = AFRREL.0056
+    desc = EVTDESC_AFRREL.0056
+>>>>>>> Stashed changes
     border = GFX_event_normal_frame_religion
     picture = GFX_evt_magic_ritual
 
     is_triggered_only = yes
 
     option = {
+<<<<<<< Updated upstream
         name = EVTOPTA_AFRREL00520
     }
 }
@@ -427,12 +527,23 @@ character_event = {
 character_event = {
     id = AFRREL.00560
     desc = EVTDESC_AFRREL00560
+=======
+        name = EVTOPTA_AFRREL.0056
+    }
+}
+
+#Picked Garki Baba
+character_event = {
+    id = AFRREL.0057
+    desc = EVTDESC_AFRREL.0057
+>>>>>>> Stashed changes
     border = GFX_event_normal_frame_religion
     picture = GFX_evt_desert
 
     is_triggered_only = yes
 
     option = {
+<<<<<<< Updated upstream
         name =  EVTOPTA_AFRREL00560
     }
 }
@@ -441,12 +552,26 @@ character_event = {
 character_event = {
     id = AFRREL.00570
     desc = EVTDESC_AFRREL00570
+=======
+        name = EVTOPTA_AFRREL.0057
+    }
+}
+
+#Picked Zaki
+character_event = {
+    id = AFRREL.0058
+    desc = EVTDESC_AFRREL.0058
+>>>>>>> Stashed changes
     border = GFX_event_normal_frame_religion
     picture = GFX_evt_desert
 
     is_triggered_only = yes
 
     option = {
+<<<<<<< Updated upstream
         name =  EVTOPTA_AFRREL00570
+=======
+        name =  EVTOPTA_AFRREL.0058
+>>>>>>> Stashed changes
     }
 }

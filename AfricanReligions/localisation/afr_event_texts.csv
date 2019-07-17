@@ -65,6 +65,16 @@ EVTOPTB_AFRREL029;These Carthaginians, when will they learn?;;;;;;;;;;;;;x
 EVTTITLE_AFRREL030;The Old Borders are Restored;;;;;;;;;;;;;x
 EVTDESC_AFRREL030;The gods have given to man no sharper spur to victory than contempt of death. The old empire, which was once stabbed in the heart and left for dead in ashes and salt, has now been restored to its full glory. Never again shall the sons of Carthage fear the crushing defeat, never again shall the mothers of Carthage see their sons taken in chains by Northerner tyrants.\n\nThe priests of Tanit celebrate across the Maghreb, for once again they are protected by the one true heir of the beloved Dido.  Merchants set sails for places yet unexplored as once Hanno did.   Gold and prosperity once again fill the metropolises of Africa. What was built with Phoenician ingenuity and Numidian blood has been rebuild by their only heirs and a forgotten nation has now a second chance in this world.;;;;;;;;;;;;;x
 EVTOPTA_AFRREL030;A day that will forever be remembered.;;;;;;;;;;;;;x
+EVTDESC_AFRREL.0050; There are many deities whom you can chose to follow. The Crawler Snake, Mai-Ja-Ciki, with it's evil eye. The war spirit, Garki Baba, The Great Shield. The wild lion, Zaki.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL.0051; Great Mai-Ja-Ciki, I am your's!;;;;;;;;;;;;;x
+EVTOPTA_AFRREL.0052; Grab my spear and join the warriors. I will follow Garki Baba.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL.0053; I yearn for the wild spaces! I will hunt with Zaki.;;;;;;;;;;;;;x
+EVTDESC_AFRREL.0056; When the dances start you fall to the floor and writhe and roll upon it with fits and starts. When the opportunity arrises you cast your evil eye upon your rivals striking fear into their hearts.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL.0056; My limbs jerk and freaze as Mai-Ja-Ciki rides my body.;;;;;;;;;;;;;x
+EVTDESC_AFRREL.0057; As the dance begins you grab your spear and join the other warriors jumping to the drum beats to honnor Garki Baba.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL.0057; You can feel the strength of the Great Shield riding within you.;;;;;;;;;;;;;x
+EVTDESC_AFRREL.0058; As the drumbs begin to sound you take to all fours. You bound over the ground scratching those who come to close.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL.0058; The Lion eyes it's prey!;;;;;;;;;;;;;x
 EVTDESC_MNM_3225_AFRICAN;In an effort to convince the court of my piety, I have chosen to attend [Root.GetReligiousCeremonyName] and give a grand speech to my people, and to [Root.Religion.GetHighGodName]. The [Root.Religion.GetPriestTitle] eyes me curiously as I enter the building, and I stop for moment to gather my thoughts. May [Root.TrueReligion.GetHighGodName] forgive me, but I need to impress these people and choose my words carefully.;;;;;;;;;;;;;x
 ceremony_bori;a possession ceremony;;;;;;;;;;;;;x
 ceremony_not_bori;the local temple;;;;;;;;;;;;;x
