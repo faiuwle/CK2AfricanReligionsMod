@@ -1,0 +1,122 @@
+namespace = AFRREL
+
+# Suffete Trait Gained
+character_event = {
+	id = AFRREL.020
+	desc = EVTDESC_AFRREL020
+    
+	picture = GFX_evt_building_carthage
+	
+	only_playable = yes
+	has_global_flag = carthage_restored
+	
+	trigger = {
+		has_landed_title = e_carthage
+		NOT = { trait = suffete }
+	}
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = EVTOPTA_AFRREL020
+		add_trait = suffete
+	}
+}
+
+# Suffete Trait Lost
+character_event = {
+	id = AFRREL.021
+	desc = {
+        trigger = {
+            e_carthage = {
+                holder_scope = { always = yes }
+            }
+        }
+        text = EVTDESC_AFRREL021_LOST
+    }
+    desc = {
+        trigger = {
+            NOT = {
+                e_carthage = {
+                    holder_scope = { always = yes }
+                }
+            }
+        }
+        text = EVTDESC_AFRREL021_DESTROYED
+    }
+	picture = GFX_evt_building_carthage
+	
+	has_global_flag = carthage_restored
+		
+	trigger = {
+		trait = suffete
+		NOT = { has_landed_title = e_carthage }
+		is_alive = yes
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_AFRREL021
+        trigger = {
+            e_carthage = {
+                holder_scope = { always = yes }
+            }
+        }
+		remove_trait = suffete
+	}
+    
+    option = {
+        name = EVTOPTB_AFRREL021
+        trigger = {
+            NOT = {
+                e_carthage = {
+                    holder_scope = { always = yes }
+                }
+            }
+        }
+        remove_trait = suffete
+    }
+}
+
+#On_death Suffete Trait inheritance
+character_event = {
+	id = AFRREL.022
+	hide_window = yes
+	
+	only_playable = yes
+	has_global_flag = carthage_restored
+	
+	trigger = {
+		has_landed_title = e_carthage
+	}
+	
+	is_triggered_only = yes
+	
+	
+	immediate = {
+		e_carthage = { current_heir = { character_event = { id = AFRREL.020 days = 2 } } }
+	}
+}
+
+#On_title_usurped Suffete Trait inheritance
+character_event = {
+	id = AFRREL.023
+	hide_window = yes
+	
+	only_playable = yes
+	has_global_flag = carthage_restored
+	
+	trigger = {
+		FROM = { title = e_carthage }
+		NOT = { trait = suffete }
+	}
+	
+	is_triggered_only = yes
+	
+	
+	immediate = {
+		ROOT = { character_event = { id = AFRREL.020 days = 2 } }
+	}
+}
