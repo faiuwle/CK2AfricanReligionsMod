@@ -267,9 +267,12 @@ character_event = {
     }
     option = {
         name = EVTOPTA_AFRREL00502
-        piety = +25
+        piety = 25
+        remove_character_modifier = {
+            name = picked_main_deity_timer
+        }
     }
- }
+}
 
 character_event = {
     id = AFRREL.00510
@@ -321,7 +324,7 @@ character_event = {
 
 character_event = {
     id = AFRREL.00511
-    desc = EVTDESC_AFRREL00511
+    desc = EVTDESC_AFRREL00510
     border = GFX_event_normal_frame_religion
     picture = GFX_evt_desert
 
@@ -449,3 +452,4 @@ character_event = {
     option = {
         name =  EVTOPTA_AFRREL00570
     }
+}
