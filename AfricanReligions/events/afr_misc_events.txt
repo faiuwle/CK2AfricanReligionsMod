@@ -268,9 +268,7 @@ character_event = {
     option = {
         name = EVTOPTA_AFRREL00502
         piety = 25
-        remove_character_modifier = {
-            name = picked_main_deity_timer
-        }
+        remove_character_modifier = picked_main_deity_timer
     }
 }
 
