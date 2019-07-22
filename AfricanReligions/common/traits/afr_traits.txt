@@ -208,14 +208,71 @@ suffete = {
 
 #A Tat Roog traditions
 
-follower_of_serer = {
+serer = {
+    opposites = {
+        dogon
+        malinke
+    }
+    
+    opposite_opinion = -5
+    
 	diplomacy = 1
+    
+    potential = {
+        OR = {
+            religion = a_tag_roog
+            religion = a_tag_roog_reformed
+        }
+    }
+    religious_branch = a_tag_roog
+    religious_branch = a_tag_roog_reformed
+    random = no
+    religious = yes
+    ruler_designer_cost = 0
 }
 
-follower_of_dogon = {
+dogon = {
+    opposites = {
+        serer
+        malinke
+    }
+    
+    opposite_opinion = -5
+
 	learning = 1
+    
+    potential = {
+        OR = {
+            religion = a_tag_roog
+            religion = a_tag_roog_reformed
+        }
+    }
+    religious_branch = a_tag_roog
+    religious_branch = a_tag_roog_reformed
+    random = no
+    religious = yes
+    ruler_designer_cost = 0
 }
 
-follower_of_malinke = {
+malinke = {
+    opposites = {
+        serer
+        dogon
+    }
+    
+    opposite_opinion = -5
+
 	martial = 1
+    
+    potential = {
+        OR = {
+            religion = a_tag_roog
+            religion = a_tag_roog_reformed
+        }
+    }
+    religious_branch = a_tag_roog
+    religious_branch = a_tag_roog_reformed
+    random = no
+    religious = yes
+    ruler_designer_cost = 0
 }

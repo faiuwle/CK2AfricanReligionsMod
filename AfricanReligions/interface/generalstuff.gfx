@@ -1275,10 +1275,4 @@ spriteTypes = {
 		noOfFrames = 6
 		allwaystransparent = yes
 	}
-	
-	#DECISIONS
-	spriteType = {
-		name = "GFX_pick_religious_tradition"
-		texturefile = "gfx\\interface\\decision_icon_pick_main_deity.dds"
-	}
 }

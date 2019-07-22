@@ -92,6 +92,18 @@ targetted_decisions = {
 				limit = { liege = { trait = pagan_branch_4 } }
 				add_trait = pagan_branch_4
 			}
+            if = {
+                limit = { liege = { trait = serer } }
+                add_trait = serer
+            }
+            if = {
+                limit = { liege = { trait = dogon } }
+                add_trait = dogon
+            }
+            if = {
+                limit = { liege = { trait = malinke } }
+                add_trait = malinke
+            }
 		}
 		revoke_allowed = {
 			always = no
@@ -194,6 +206,18 @@ targetted_decisions = {
 					limit = { ROOT = { trait = pagan_branch_4 } }
 					add_trait = pagan_branch_4
 				}
+                if = {
+                    limit = { ROOT = { trait = serer } }
+                    add_trait = serer
+                }
+                if = {
+                    limit = { ROOT = { trait = dogon } }
+                    add_trait = dogon
+                }
+                if = {
+                    limit = { ROOT = { trait = malinke } }
+                    add_trait = malinke
+                }
 			}
 		}
 		revoke_allowed = {
@@ -2900,6 +2924,30 @@ targetted_decisions = {
 					}
 					add_trait = pagan_branch_4
 				}
+                if = {
+                    limit = {
+                        ROOT = {
+                            trait = serer
+                        }
+                    }
+                    add_trait = serer
+                }
+                if = {
+                    limit = {
+                        ROOT = {
+                            trait = dogon
+                        }
+                    }
+                    add_trait = dogon
+                }
+                if = {
+                    limit = {
+                        ROOT = {
+                            trait = malinke
+                        }
+                    }
+                    add_trait = malinke
+                }
 				
 				hidden_tooltip = {
 					religion_authority = {

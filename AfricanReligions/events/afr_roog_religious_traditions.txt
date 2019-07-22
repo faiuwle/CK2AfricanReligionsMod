@@ -4,20 +4,18 @@
 #
 #################################################
 
-namespace = GROUPS
+namespace = AFRREL
 
 long_character_event = { #Landing Event
-	id = GROUPS.1000
-	title = "GROUPSTITLE"
-	desc = "EVTDESCGROUPS1000"
+	id = AFRREL.100
+	title = "EVTTITLE_AFRREL100"
+	desc = "EVTDESC_AFRREL100"
 	picture = "GFX_evt_tribal_shrine"
 
 	is_triggered_only = yes
 
-	trigger = { NOT = { is_inaccessible_trigger = yes } }
-
 	option = {
-		name = "EVTOPTAGROUPS.1000"
+		name = "EVTOPTA_AFRREL100"
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -25,14 +23,17 @@ long_character_event = { #Landing Event
 				factor = 2
 			}
 			modifier = {
-				trait = gregarious
+                OR = {
+                    trait = gregarious
+                    trait = socializer
+                }
 				factor = 2
 			}
 		}
-		hidden_tooltip = { long_character_event = { id = GROUPS.1001 } }
+		hidden_tooltip = { long_character_event = { id = AFRREL.101 } }
 	}
 	option = {
-		name = "EVTOPTBGROUPS.1000"
+		name = "EVTOPTB_AFRREL100"
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -40,14 +41,17 @@ long_character_event = { #Landing Event
 				factor = 2
 			}
 			modifier = {
-				trait = erudite
+                OR = {
+                    trait = erudite
+                    trait = scholar
+                }
 				factor = 2
 			}
 		}
-		hidden_tooltip = { long_character_event = { id = GROUPS.1002 } }
+		hidden_tooltip = { long_character_event = { id = AFRREL.102 } }
 	}
 	option = {
-		name = "EVTOPTCGROUPS.1000"
+		name = "EVTOPTC_AFRREL100"
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -55,67 +59,165 @@ long_character_event = { #Landing Event
 				factor = 2
 			}
 			modifier = {
-				trait = brave
+                OR = {
+                    trait = brave
+                    trait = deulist
+                }
 				factor = 2
 			}
 		}
-		hidden_tooltip = { long_character_event = { id = GROUPS.1003 } }
+		hidden_tooltip = { long_character_event = { id = AFRREL.103 } }
 	}
 }
 
 # Serer
 long_character_event = {
-	id = GROUPS.1001
-	title = "GROUPS1001TITLE"
-	desc = "EVTDESCGROUPS1001"
+	id = AFRREL.101
+	title = "EVTTITLE_AFRREL101"
+	desc = "EVTDESC_AFRREL101"
 	picture = "GFX_evt_magic_ritual"
 
 	is_triggered_only = yes
 
 	option = {
-		name = "EVTOPTAGROUPS1001"
-		add_trait = follower_of_serer
+		name = "EVTOPTA_AFRREL101"
+		add_trait = serer
+        hidden_tooltip = {
+            clr_character_flag = flag_picking_branch
+            clr_character_flag = flag_changing_branch
+        }
 	}
 	option = {
-		name = "EVTOPTCNLGROUPS1000"
-		hidden_tooltip = { long_character_event = { id = GROUPS.1000 } }
+		name = "EVTOPTB_AFRREL101"
+		hidden_tooltip = {
+            if = {
+                limit = { has_character_flag = flag_picking_branch }
+                long_character_event = { id = AFRREL.100 }
+            }
+            else = { character_event = { id = AFRRLE.104 } }
+        }
 	}
 }
 
 # Dogon
 long_character_event = {
-	id = GROUPS.1002
-	title = "GROUPS1002TITLE"
-	desc = "EVTDESCGROUPS1002"
+	id = AFRREL.102
+	title = "EVTTITLE_AFRREL102"
+	desc = "EVTDESC_AFRREL102"
 	picture = "GFX_evt_comet"
 
 	is_triggered_only = yes
 
 	option = {
-		name = "EVTOPTAGROUPS1002"
-		add_trait = follower_of_dogon
+		name = "EVTOPTA_AFRREL102"
+		add_trait = dogon
+        hidden_tooltip = {
+            clr_character_flag = flag_picking_branch
+            clr_character_flag = flag_changing_branch
+        }
 	}
 	option = {
-		name = "EVTOPTCNLGROUPS1000"
-		hidden_tooltip = { long_character_event = { id = GROUPS.1000 } }
+		name = "EVTOPTB_AFRREL102"
+		hidden_tooltip = {
+            if = {
+                limit = { has_character_flag = flag_picking_branch }
+                long_character_event = { id = AFRREL.100 }
+            }
+            else = {
+                character_event = { id = AFRREL.104 }
+            }
+        }
 	}
 }
 
 # Malinke
 long_character_event = {
-	id = GROUPS.1003
-	title = "GROUPS1003TITLE"
-	desc = "EVTDESCGROUPS1003"
+	id = AFRREL.103
+	title = "EVTTITLE_AFRREL103"
+	desc = "EVTDESC_AFRREL103"
 	picture = "GFX_evt_battle"
 
 	is_triggered_only = yes
 
 	option = {
-		name = "EVTOPTAGROUPS1003"
-		add_trait = follower_of_malinke
+		name = "EVTOPTA_AFRREL103"
+		add_trait = malinke
+        hidden_tooltip = {
+            clr_character_flag = flag_picking_branch
+            clr_character_flag = flag_changing_branch
+        }
 	}
 	option = {
-		name = "EVTOPTCNLGROUPS1000"
-		hidden_tooltip = { long_character_event = { id = GROUPS.1000 } }
+		name = "EVTOPTB_AFRREL103"
+		hidden_tooltip = {
+            if = {
+                limit = { has_character_flag = flag_picking_branch }
+                long_character_event = { id = AFRREL.100 }
+            }
+            else = { character_event = { id = AFRREL.104 } }
+        }
+	}
+}
+
+character_event = {
+    id = AFRREL.104
+    desc = EVTDESC_AFRREL014
+    picture = GFX_evt_tribal_shrine
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = "EVTOPTA_AFRREL100"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_education_diplomacy_trigger = yes
+				factor = 2
+			}
+			modifier = {
+                OR = {
+                    trait = gregarious
+                    trait = socializer
+                }
+				factor = 2
+			}
+		}
+		hidden_tooltip = { long_character_event = { id = AFRREL.101 } }
+	}
+	option = {
+		name = "EVTOPTB_AFRREL100"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_education_learning_trigger = yes
+				factor = 2
+			}
+			modifier = {
+                OR = {
+                    trait = erudite
+                    trait = scholar
+                }
+				factor = 2
+			}
+		}
+		hidden_tooltip = { long_character_event = { id = AFRREL.102 } }
+	}
+	option = {
+		name = "EVTOPTC_AFRREL100"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_education_martial_trigger = yes
+				factor = 2
+			}
+			modifier = {
+                OR = {
+                    trait = brave
+                    trait = deulist
+                }
+				factor = 2
+			}
+		}
+		hidden_tooltip = { long_character_event = { id = AFRREL.103 } }
 	}
 }
