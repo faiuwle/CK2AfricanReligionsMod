@@ -242,7 +242,7 @@ character_event = {
     id = AFRREL.050
     desc = EVTDESC_AFRREL050
     border = GFX_event_normal_frame_religion
-    picture = GFX_evt_desert
+    picture = GFX_evt_afr_bori_deities_main
 
     is_triggered_only = yes
 
@@ -279,7 +279,7 @@ character_event = {
     id = AFRREL.051
     desc = EVTDESC_AFRREL051
     border = GFX_event_normal_frame_religion
-    picture = GFX_evt_desert
+    picture = GFX_evt_afr_bori_deities_choice_one
 
     is_triggered_only = yes
 
@@ -312,7 +312,7 @@ character_event = {
     id = AFRREL.052
     desc = EVTDESC_AFRREL051
     border = GFX_event_normal_frame_religion
-    picture = GFX_evt_desert
+    picture = GFX_evt_afr_bori_deities_choice_two
 
     is_triggered_only = yes
     
@@ -346,7 +346,7 @@ character_event = {
     id = AFRREL.053
     desc = EVTDESC_AFRREL053
     border = GFX_event_normal_frame_religion
-    picture = GFX_evt_magic_ritual
+    picture = GFX_evt_afr_bori_deities_main
 
     is_triggered_only = yes
 
@@ -371,7 +371,7 @@ character_event = {
     id = AFRREL.054
     desc = EVTDESC_AFRREL054
     border = GFX_event_normal_frame_religion
-    picture = GFX_evt_desert
+    picture = GFX_evt_afr_bori_deities_main
 
     is_triggered_only = yes
 
@@ -396,7 +396,7 @@ character_event = {
     id = AFRREL.055
     desc = EVTDESC_AFRREL055
     border = GFX_event_normal_frame_religion
-    picture = GFX_evt_desert
+    picture = GFX_evt_afr_bori_deities_main
 
     is_triggered_only = yes
 
@@ -421,7 +421,7 @@ character_event = {
     id = AFRREL.056
     desc = EVTDESC_AFRREL056
     border = GFX_event_normal_frame_religion
-    picture = GFX_evt_desert
+    picture = GFX_evt_afr_bori_deities_main
 
     is_triggered_only = yes
 
@@ -446,7 +446,7 @@ character_event = {
     id = AFRREL.057
     desc = EVTDESC_AFRREL057
     border = GFX_event_normal_frame_religion
-    picture = GFX_evt_desert
+    picture = GFX_evt_afr_bori_deities_main
 
     is_triggered_only = yes
 
@@ -471,7 +471,7 @@ character_event = {
     id = AFRREL.058
     desc = EVTDESC_AFRREL058
     border = GFX_event_normal_frame_religion
-    picture = GFX_evt_desert
+    picture = GFX_evt_afr_bori_deities_main
 
     is_triggered_only = yes
 
