@@ -1550,7 +1550,7 @@ decisions = {
 					finnish_pagan_reformed		= { character_event = { id = TOG.7300 } } 
 					baltic_pagan				= { character_event = { id = TOG.7400 } } 
 					baltic_pagan_reformed		= { character_event = { id = TOG.7400 } }   
-					bori						= { character_event = { id = AFRREL.00500 } }
+					bori						= { character_event = { id = AFRREL.0050 } }
 				}
 
 				add_character_modifier = {

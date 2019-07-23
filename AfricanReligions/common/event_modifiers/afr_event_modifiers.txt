@@ -34,26 +34,26 @@ secret_amazigh_reformed_community = {
 }
 
 follower_of_yan_riga = {
-	learning = +2
-	martial_penalty = -1
+	learning = 2
+	martial = -1
 	icon = 48
 }
 
 follower_of_babbaku = {
-	stewardship = +1
-	martial_penalty = -1
+	stewardship = 1
+	martial = -1
 	icon = 48
 }
 
 follower_of_tan_garki = {
-	martial = +2
-	stewardship_penalty = -1
+	martial = 2
+	stewardship = -1
 	icon = 48
 }
 
 follower_of_samari = {
-	diplomacy = +2
-	intrigue_penalty = -1
+	diplomacy = 2
+	intrigue = -1
 	icon = 48
 }
 
@@ -64,7 +64,7 @@ follower_of_yayan_zanzanna = {
 }
 
 follower_of_tan_dowa = {
-	combat_rating = +10
-	diplomacy_penalty = -1
+	combat_rating = 10
+	diplomacy = 1
 	icon = 48
 }

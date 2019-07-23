@@ -79,27 +79,27 @@ EVTDESC_MNM_3228_BORI;I walk to the center of the ceremony and make a quick deci
 EVTDESC_MNM_3228_AFRICAN;I step up to the altar and make a quick decision – as I reach the center of the stage, I collapse to the floor. The worshipers gasp as I, their [Root.GetTitle], begin quoting [Root.Religion.GetScriptureName]. I roll my eyes back as I speak, as if confronting the skies themselves. When my last words ring out, everyone seems to be holding their breath. For a moment I worry that my stunt has failed. Then the [Root.Religion.GetPriestTitle] exclaims "A VISION! My [Root.GetLordLady], let me help you stand!";;;;;;;;;;;;;x
 EVTDESC_MNM_3229_BORI;I walk to the center of the ceremony and make a quick decision – as I reach a group of people, I collapse to the floor. The worshipers gasp as I, their [Root.GetTitle], begin singing [Root.Religion.GetScriptureName]. I roll my eyes back as I sing, as if confronting the skies themselves. When my last words ring out, they start to whisper. For a moment I am convinced that my stunt has succeeded. Then the [Root.Religion.GetPriestTitle] prods at me. "Uhm, my [Root.GetLordLady]? Let's get you back onto your feet.";;;;;;;;;;;;;x
 EVTDESC_MNM_3229_AFRICAN;I step forwards and make a bold decision – as I reach a group of people, I collapse to the floor. The worshipers gasp as I, their [Root.GetTitle], begin quoting fragments of [Root.Religion.GetScriptureName]. I roll my eyes back as I speak, as if confronting the skies themselves. When my last words ring out, they start to whisper. For a moment I am convinced that my stunt has succeeded. Then the [Root.Religion.GetPriestTitle] prods at me. "Uhm, my [Root.GetLordLady]? Let's get you back onto your feet.";;;;;;;;;;;;;x
-EVTDESC_AFRREL00500;In the ethereal realm of Jan Gari, the Bori spirits exist in a transcendental state incomprehensible to the mortals. If I make special contact with one of the great bori clans and enter into communion with their king, it is possible that the spirits will grant me their blessing.;;;;;;;;;;;;;x
-EVTOPTA_AFRREL00501;Time to chose.;;;;;;;;;;;;;x
-EVTOPTA_AFRREL00502;Maybe another time.;;;;;;;;;;;;;x
-EVTDESC_AFRREL00510;While I make an effort so that my soul comes in contact with the Jan Gari plan, I face the decision of which spirit I should ask for favor. There are six major categories of spirits each with their own hierarchy and a powerful spiritual king who rules over them. Which of these spiritual courts will I pay homage to?;;;;;;;;;;;;;x
-EVTOPTA_AFRREL00512;Yan Riga, the city spirits.;;;;;;;;;;;;;x
-EVTOPTA_AFRREL00513;Babbaku, the rural spirits.;;;;;;;;;;;;;x
-EVTOPTA_AFRREL00514;Tan Garki, the warrior spirits.;;;;;;;;;;;;;x
-EVTOPTA_AFRREL00515;More options.;;;;;;;;;;;;;x
-EVTOPTA_AFRREL00516;Samari, the young femenine spirits.;;;;;;;;;;;;;x
-EVTOPTA_AFRREL00517;Yayan Zanzanna, the children of the plague.;;;;;;;;;;;;;x
-EVTOPTA_AFRREL00518;Tan Dowa, the wild spirits.;;;;;;;;;;;;;x
-EVTOPTA_AFRREL00519;More options;;;;;;;;;;;;;x
-EVTDESC_AFRREL00520;The Yan Riga, that is, those who wear clothes, are the most civilized spirits. It is said that they live in cities and know about the wisdom of men who can read. Above them reigns the spiritual king Mallam Alhaji, the so-called father of many and the oldest of all spirits.;;;;;;;;;;;;;x
-EVTOPTA_AFRREL00520;With the blessing of this spiritual court, I am sure that all the knowledge of the world will be within my reach.;;;;;;;;;;;;;x
-EVTDESC_AFRREL00530;The Babbaku, that is, the black ones, are inhabitants of rural villages. Some are farmers and other hunters, but all of them enjoy the country life and know how to make use of the land. Above them reigns Mai-Ja-Ciki, the one who crawls on the floor in his stomach, who is like a snake and can not speak in human language.;;;;;;;;;;;;;x
-EVTOPTA_AFRREL00530;With the blessing of this spiritual court I will also know more about the land, making me a better administrator.;;;;;;;;;;;;;x
-EVTDESC_AFRREL00540;The Tan Garki, that is, the sons of the shield, are the great warriors among the spirits. Many brave fighters seek their protection, but the true custodians of their blessings are the generals and strategists. The head of this spiritual army is Garki Baba, the great shield, protector of those who march to the battlefield.;;;;;;;;;;;;;x
-EVTOPTA_AFRREL00540;With the blessing of this spiritual court I will be able to guide my army with ease.;;;;;;;;;;;;;x
-EVTDESC_AFRREL00550;Samari, the spirits of youth but also of femininity. Interestingly they are led by Ba-Gudu, the one who does not run, who is neither female nor young. It is a court full of curious talents such as giving good or bad luck to gamblers, persuade a man to desire his brother's wife, or making the breasts of young girls irritate by awakening her desires.;;;;;;;;;;;;;x
-EVTOPTA_AFRREL00550;The blessing of such a diverse court will surely make me a people person.;;;;;;;;;;;;;x
-EVTDESC_AFRREL00560;The Yayan zanzanna, the children of the plague, are kid spirits with dominion over any disease, spreading smallpox and other evils among mortals. They are led by Nana Mariyamu, the naughty little queen who likes to give headaches and irritated eyes to those who are mean to her. The whole court is playful and likes to clap for no reason, after all they are just children.;;;;;;;;;;;;;x
-EVTOPTA_AFRREL00560;It would be a good idea to win the favor of the court, for my own health.;;;;;;;;;;;;;x
-EVTDESC_AFRREL00570;The Tan dowa are spirits of the jungle, they do not resemble any human but are nature in its purest state. They are spirits of the lion, the hyena and the elephant, but also the guard dog that protects man. Zaki the lion is the first among them, and more than king of the court it can be said that he is simply the strongest among a group of beasts without a leader.;;;;;;;;;;;;;x
-EVTOPTA_AFRREL00570;I will enter into communion with the beasts, so I will also have the heart of a beast..;;;;;;;;;;;;;x
+EVTDESC_AFRREL050;In the ethereal realm of Jan Gari, the Bori spirits exist in a transcendental state incomprehensible to the mortals. If I make special contact with one of the great bori clans and enter into communion with their king, it is possible that the spirits will grant me their blessing.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL050;Time to chose.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL050;Maybe another time.;;;;;;;;;;;;;x
+EVTDESC_AFRREL051;While I make an effort so that my soul comes in contact with the Jan Gari plane, I face the decision of which spirit I should ask for favor. There are six major categories of spirits each with their own hierarchy and a powerful spiritual king who rules over them. Which of these spiritual courts will I pay homage to?;;;;;;;;;;;;;x
+EVTOPTA_AFRREL051;You consider Yan Riga, the city spirits.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL051;You consider Babbaku, the rural spirits.;;;;;;;;;;;;;x
+EVTOPTC_AFRREL051;You consider Tan Garki, the warrior spirits.;;;;;;;;;;;;;x
+EVTOPTD_AFRREL051;I had something else in mind.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL052;You consider Samari, the young feminine spirits.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL052;You consider Yayan Zanzanna, the children of the plague.;;;;;;;;;;;;;x
+EVTOPTC_AFRREL052;You consider Tan Dowa, the wild spirits.;;;;;;;;;;;;;x
+EVTOPTD_AFRREL052;Maybe another court has what i require.;;;;;;;;;;;;;x
+EVTDESC_AFRREL053;The Yan Riga, that is, those who wear clothes, are the most civilized spirits. It is said that they live in cities and know about the wisdom of men who can read. Above them reigns the spiritual king Mallam Alhaji, the so-called father of many and the oldest of all spirits.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL053;Begin the song of The Learned One!;;;;;;;;;;;;;x
+EVTDESC_AFRREL054;The Babbaku, that is, the black ones, are inhabitants of rural villages. Some are farmers and other hunters, but all of them enjoy the country life and know how to make use of the land. Above them reigns Mai-Ja-Ciki, the one who crawls on the floor on his stomach, who is like a snake and can not speak in human language.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL054;Oh, Wizard of the Night, what do you say?;;;;;;;;;;;;;x
+EVTDESC_AFRREL055;The Tan Garki, that is, the sons of the shield, are the great warriors among the spirits. Many brave fighters seek their protection, but the true custodians of their blessings are the generals and strategists. The head of this spiritual army is Garki Baba, the great shield, protector of those who march to the battlefield.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL055;You followers of the chief, show me the horsemen!;;;;;;;;;;;;;x
+EVTDESC_AFRREL056;Samari, the spirits of youth but also of femininity. Interestingly they are led by Ba-Gudu, the one who does not run, who is neither female nor young. It is a court full of curious talents such as giving good or bad luck to gamblers, persuading a man to desire his brother's wife, or making the breasts of young girls irritate by awakening her desires.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL056;Let him who has two wives give one!;;;;;;;;;;;;;x
+EVTDESC_AFRREL057;The Yayan zanzanna, the children of the plague, are child spirits with dominion over any disease, spreading smallpox and other evils among mortals. They are led by Nana Mariyamu, the naughty little queen who likes to give headaches and irritated eyes to those who are mean to her. The whole court is playful and likes to clap for no reason, after all they are just children.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL057;Beautiful is she with her small spots!;;;;;;;;;;;;;x
+EVTDESC_AFRREL058;The Tan dowa are spirits of the jungle, they do not resemble any human but are nature in its purest state. They are spirits of the lion, the hyena and the elephant, but also the guard dog that protects man. Zaki the lion is the first among them, and more than king of the court it can be said that he is simply the strongest among a group of beasts without a leader.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL058;The Lion is to be feared!;;;;;;;;;;;;;x

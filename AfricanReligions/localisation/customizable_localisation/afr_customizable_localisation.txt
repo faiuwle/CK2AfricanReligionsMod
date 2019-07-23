@@ -353,3 +353,39 @@ defined_text = {
         localisation_key = ceremony_wall_hangings_amazigh
     }
 }
+
+defined_text = {
+    name = PickPatronDeityReligionCheck
+
+    text = {
+        localisation_key = bori_pick_main_deity
+        trigger = {
+            religion = bori
+        }
+    }
+
+    text = {
+        localisation_key = vanilla_pick_main_deity
+        trigger = {
+            NOT = { religion = bori }
+        }
+    }
+}
+
+defined_text = {
+    name = PickPatronDeityDescriptionReligionCheck
+
+    text = {
+        localisation_key = bori_pick_main_deity_desc
+        trigger = {
+            religion = bori
+        }
+    }
+
+    text = {
+        localisation_key = vanilla_pick_main_deity_desc
+        trigger = {
+            NOT = { religion = bori }
+        }
+    }
+}
