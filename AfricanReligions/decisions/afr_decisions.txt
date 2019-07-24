@@ -428,7 +428,7 @@ decisions = {
 		}
 		allow = {
 			prisoner = no
-            NOT = ( trait = incapable }
+            NOT = { trait = incapable }
 		}
 		effect = {
 			custom_tooltip = {

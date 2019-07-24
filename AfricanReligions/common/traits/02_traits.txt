@@ -6920,7 +6920,7 @@ pagan_branch_2 = {
 	
 	potential = {
         has_religion_feature = religion_no_leader
-        NOT = { religion = a_tag_roog_reformed
+        NOT = { religion = a_tag_roog_reformed }
     }
 	random = no
 	religious = yes
@@ -6943,7 +6943,7 @@ pagan_branch_3 = {
 	
 	potential = {
         has_religion_feature = religion_no_leader
-        NOT = { religion = a_tag_roog_reformed
+        NOT = { religion = a_tag_roog_reformed }
     }
 	random = no
 	religious = yes
@@ -6966,7 +6966,7 @@ pagan_branch_4 = {
 	
 	potential = {
         has_religion_feature = religion_no_leader
-        NOT = { religion = a_tag_roog_reformed
+        NOT = { religion = a_tag_roog_reformed }
     }
 	random = no
 	religious = yes

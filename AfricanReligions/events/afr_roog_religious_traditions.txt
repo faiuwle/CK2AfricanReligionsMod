@@ -6,9 +6,8 @@
 
 namespace = AFRREL
 
-long_character_event = { #Landing Event
+character_event = { #Landing Event
 	id = AFRREL.100
-	title = "EVTTITLE_AFRREL100"
 	desc = "EVTDESC_AFRREL100"
 	picture = "GFX_evt_tribal_shrine"
 
@@ -30,7 +29,10 @@ long_character_event = { #Landing Event
 				factor = 2
 			}
 		}
-		hidden_tooltip = { long_character_event = { id = AFRREL.101 } }
+		custom_tooltip = {
+            text = consider_serer_tooltip
+            character_event = { id = AFRREL.101 }
+        }
 	}
 	option = {
 		name = "EVTOPTB_AFRREL100"
@@ -48,7 +50,10 @@ long_character_event = { #Landing Event
 				factor = 2
 			}
 		}
-		hidden_tooltip = { long_character_event = { id = AFRREL.102 } }
+		custom_tooltip = { 
+            text = consider_dogon_tooltip
+            character_event = { id = AFRREL.102 }
+        }
 	}
 	option = {
 		name = "EVTOPTC_AFRREL100"
@@ -61,19 +66,21 @@ long_character_event = { #Landing Event
 			modifier = {
                 OR = {
                     trait = brave
-                    trait = deulist
+                    trait = duelist
                 }
 				factor = 2
 			}
 		}
-		hidden_tooltip = { long_character_event = { id = AFRREL.103 } }
+		custom_tooltip = { 
+            text = consider_malinke_tooltip
+            character_event = { id = AFRREL.103 }
+        }
 	}
 }
 
 # Serer
-long_character_event = {
+character_event = {
 	id = AFRREL.101
-	title = "EVTTITLE_AFRREL101"
 	desc = "EVTDESC_AFRREL101"
 	picture = "GFX_evt_magic_ritual"
 
@@ -82,9 +89,35 @@ long_character_event = {
 	option = {
 		name = "EVTOPTA_AFRREL101"
 		add_trait = serer
+        
         hidden_tooltip = {
             clr_character_flag = flag_picking_branch
             clr_character_flag = flag_changing_branch
+        }
+        
+        spouse = {
+            limit = {
+                is_landed = no
+                NOR = {
+                    trait = serer
+                    trait = dogon
+                    trait = malinke
+                }
+            }
+            add_trait = serer
+        }
+        
+        any_close_relative = {
+            limit = {
+                liege = { character = ROOT }
+                is_landed = no
+                NOR = {
+                    trait = serer
+                    trait = dogon
+                    trait = malinke
+                }
+            }
+            add_trait = serer
         }
 	}
 	option = {
@@ -92,17 +125,19 @@ long_character_event = {
 		hidden_tooltip = {
             if = {
                 limit = { has_character_flag = flag_picking_branch }
-                long_character_event = { id = AFRREL.100 }
+                character_event = { id = AFRREL.100 }
             }
-            else = { character_event = { id = AFRRLE.104 } }
+            else = { character_event = { id = AFRREL.104 } }
+        }
+        ai_chance = {
+            factor = 0
         }
 	}
 }
 
 # Dogon
-long_character_event = {
+character_event = {
 	id = AFRREL.102
-	title = "EVTTITLE_AFRREL102"
 	desc = "EVTDESC_AFRREL102"
 	picture = "GFX_evt_comet"
 
@@ -111,9 +146,35 @@ long_character_event = {
 	option = {
 		name = "EVTOPTA_AFRREL102"
 		add_trait = dogon
+        
         hidden_tooltip = {
             clr_character_flag = flag_picking_branch
             clr_character_flag = flag_changing_branch
+        }
+        
+        spouse = {
+            limit = {
+                is_landed = no
+                NOR = {
+                    trait = serer
+                    trait = dogon
+                    trait = malinke
+                }
+            }
+            add_trait = dogon
+        }
+        
+        any_close_relative = {
+            limit = {
+                liege = { character = ROOT }
+                is_landed = no
+                NOR = {
+                    trait = serer
+                    trait = dogon
+                    trait = malinke
+                }
+            }
+            add_trait = dogon
         }
 	}
 	option = {
@@ -121,19 +182,21 @@ long_character_event = {
 		hidden_tooltip = {
             if = {
                 limit = { has_character_flag = flag_picking_branch }
-                long_character_event = { id = AFRREL.100 }
+                character_event = { id = AFRREL.100 }
             }
             else = {
                 character_event = { id = AFRREL.104 }
             }
         }
+        ai_chance = {
+            factor = 0
+        }
 	}
 }
 
 # Malinke
-long_character_event = {
+character_event = {
 	id = AFRREL.103
-	title = "EVTTITLE_AFRREL103"
 	desc = "EVTDESC_AFRREL103"
 	picture = "GFX_evt_battle"
 
@@ -142,9 +205,35 @@ long_character_event = {
 	option = {
 		name = "EVTOPTA_AFRREL103"
 		add_trait = malinke
+        
         hidden_tooltip = {
             clr_character_flag = flag_picking_branch
             clr_character_flag = flag_changing_branch
+        }
+        
+        spouse = {
+            limit = {
+                is_landed = no
+                NOR = {
+                    trait = serer
+                    trait = dogon
+                    trait = malinke
+                }
+            }
+            add_trait = malinke
+        }
+        
+        any_close_relative = {
+            limit = {
+                liege = { character = ROOT }
+                is_landed = no
+                NOR = {
+                    trait = serer
+                    trait = dogon
+                    trait = malinke
+                }
+            }
+            add_trait = malinke
         }
 	}
 	option = {
@@ -152,9 +241,12 @@ long_character_event = {
 		hidden_tooltip = {
             if = {
                 limit = { has_character_flag = flag_picking_branch }
-                long_character_event = { id = AFRREL.100 }
+                character_event = { id = AFRREL.100 }
             }
             else = { character_event = { id = AFRREL.104 } }
+        }
+        ai_chance = {
+            factor = 0
         }
 	}
 }
@@ -182,7 +274,10 @@ character_event = {
 				factor = 2
 			}
 		}
-		hidden_tooltip = { long_character_event = { id = AFRREL.101 } }
+		custom_tooltip = { 
+            text = consider_serer_tooltip
+            character_event = { id = AFRREL.101 } 
+        }
 	}
 	option = {
 		name = "EVTOPTB_AFRREL100"
@@ -200,7 +295,10 @@ character_event = {
 				factor = 2
 			}
 		}
-		hidden_tooltip = { long_character_event = { id = AFRREL.102 } }
+		custom_tooltip = { 
+            text = consider_dogon_tooltip
+            character_event = { id = AFRREL.102 }
+        }
 	}
 	option = {
 		name = "EVTOPTC_AFRREL100"
@@ -213,11 +311,14 @@ character_event = {
 			modifier = {
                 OR = {
                     trait = brave
-                    trait = deulist
+                    trait = duelist
                 }
 				factor = 2
 			}
 		}
-		hidden_tooltip = { long_character_event = { id = AFRREL.103 } }
+		custom_tooltip = { 
+            text = consider_malinke_tooltip
+            character_event = { id = AFRREL.103 }
+        }
 	}
 }
