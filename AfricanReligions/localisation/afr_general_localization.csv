@@ -194,9 +194,7 @@ salt_rome_tooltip;The §YChristian§! world is outraged by your actions.\nThe dest
 salt_constantinople_tooltip;The §YChristian§! world is outraged by your actions.\nThe destruction of the city has gravely affected the §YMoral Authority§! of the §YOrthodox Church§!, as well as the faith of Constantinople's former owner.\nYou loot §Y2000§! gold from the city.;;;;;;;;;;;;;x
 salt_carthage_capital_tooltip;The §YAmazigh§! world is outraged by your actions.\nThe destruction of the city has gravely affected the §YMoral Authority§! of the §YChurch of the Amazigh People§!.\nYou loot §Y2000§! gold from the city.;;;;;;;;;;;;;x
 pick_religious_tradition_tooltip;Choose a religious tradition to follow.;;;;;;;;;;;;;x
-consider_serer_tooltip;You will consider the Serer tradition.;;;;;;;;;;;;;x
-consider_dogon_tooltip;You will consider the Dogon tradition.;;;;;;;;;;;;;x
-consider_malinke_tooltip;You will consider the Malinke tradition.;;;;;;;;;;;;;x
+tooltip_change_a_tag_roog_branch;You will choose a new path.;;;;;;;;;;;;;x
 eldership_rules_afr;Eldership;;;;;;;;;;;;;x
 religion_feature_a_tag_roog;Way of the Divine;;;;;;;;;;;;;x
 religion_feature_a_tag_roog_desc;In order to edify the faith we shall unify the many traditions of life and divination practiced by the different nations of the land.;;;;;;;;;;;;;x

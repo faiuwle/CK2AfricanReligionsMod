@@ -29,10 +29,8 @@ character_event = { #Landing Event
 				factor = 2
 			}
 		}
-		custom_tooltip = {
-            text = consider_serer_tooltip
+
             character_event = { id = AFRREL.101 }
-        }
 	}
 	option = {
 		name = "EVTOPTB_AFRREL100"
@@ -50,10 +48,8 @@ character_event = { #Landing Event
 				factor = 2
 			}
 		}
-		custom_tooltip = { 
-            text = consider_dogon_tooltip
+        
             character_event = { id = AFRREL.102 }
-        }
 	}
 	option = {
 		name = "EVTOPTC_AFRREL100"
@@ -71,10 +67,8 @@ character_event = { #Landing Event
 				factor = 2
 			}
 		}
-		custom_tooltip = { 
-            text = consider_malinke_tooltip
+
             character_event = { id = AFRREL.103 }
-        }
 	}
 }
 
@@ -253,13 +247,14 @@ character_event = {
 
 character_event = {
     id = AFRREL.104
-    desc = EVTDESC_AFRREL014
+    desc = EVTDESC_AFRREL104
     picture = GFX_evt_tribal_shrine
     
     is_triggered_only = yes
     
     option = {
 		name = "EVTOPTA_AFRREL100"
+        trigger = { NOT = { trait = serer } }
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -274,13 +269,12 @@ character_event = {
 				factor = 2
 			}
 		}
-		custom_tooltip = { 
-            text = consider_serer_tooltip
-            character_event = { id = AFRREL.101 } 
-        }
+
+        character_event = { id = AFRREL.101 } 
 	}
 	option = {
 		name = "EVTOPTB_AFRREL100"
+        trigger = { NOT = { trait = dogon } }
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -295,13 +289,12 @@ character_event = {
 				factor = 2
 			}
 		}
-		custom_tooltip = { 
-            text = consider_dogon_tooltip
-            character_event = { id = AFRREL.102 }
-        }
+
+        character_event = { id = AFRREL.102 }
 	}
 	option = {
 		name = "EVTOPTC_AFRREL100"
+        trigger = { NOT = { trait = malinke } }
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -316,9 +309,14 @@ character_event = {
 				factor = 2
 			}
 		}
-		custom_tooltip = { 
-            text = consider_malinke_tooltip
-            character_event = { id = AFRREL.103 }
-        }
+
+        character_event = { id = AFRREL.103 }
 	}
+    option = {
+        name = EVTOPTD_AFRREL104
+        hidden_tooltip = {
+            clr_character_flag = flag_changed_branch
+            clr_character_flag = flag_changing_branch
+        }
+    }
 }

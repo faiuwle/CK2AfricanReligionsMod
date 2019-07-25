@@ -485,7 +485,7 @@ decisions = {
 			hidden_tooltip = {
 				set_character_flag = flag_changing_branch
 				set_character_flag = flag_changed_branch
-				character_event = { id = AFRREL.101 }
+				character_event = { id = AFRREL.104 }
 			}
 		}
 		revoke_allowed = {
