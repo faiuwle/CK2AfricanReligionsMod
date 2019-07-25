@@ -82,15 +82,16 @@ EVTDESC_MNM_3229_AFRICAN;I step forwards and make a bold decision – as I reach a
 EVTDESC_AFRREL050;In the ethereal realm of Jan Gari, the Bori spirits exist in a transcendental state incomprehensible to the mortals. If I make special contact with one of the great bori clans and enter into communion with their king, it is possible that the spirits will grant me their blessing.;;;;;;;;;;;;;x
 EVTOPTA_AFRREL050;Time to chose.;;;;;;;;;;;;;x
 EVTOPTB_AFRREL050;Maybe another time.;;;;;;;;;;;;;x
+EVTOPTC_AFRREL050;I require another bori.;;;;;;;;;;;;;x
 EVTDESC_AFRREL051;While I make an effort so that my soul comes in contact with the Jan Gari plane, I face the decision of which spirit I should ask for favor. There are six major categories of spirits each with their own hierarchy and a powerful spiritual king who rules over them. Which of these spiritual courts will I pay homage to?;;;;;;;;;;;;;x
-EVTOPTA_AFRREL051;You consider Yan Riga, the city spirits.;;;;;;;;;;;;;x
-EVTOPTB_AFRREL051;You consider Babbaku, the rural spirits.;;;;;;;;;;;;;x
-EVTOPTC_AFRREL051;You consider Tan Garki, the warrior spirits.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL051;I consider Yan Riga, the city spirits.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL051;I consider Babbaku, the rural spirits.;;;;;;;;;;;;;x
+EVTOPTC_AFRREL051;I consider Tan Garki, the warrior spirits.;;;;;;;;;;;;;x
 EVTOPTD_AFRREL051;I had something else in mind.;;;;;;;;;;;;;x
-EVTOPTA_AFRREL052;You consider Samari, the young feminine spirits.;;;;;;;;;;;;;x
-EVTOPTB_AFRREL052;You consider Yayan Zanzanna, the children of the plague.;;;;;;;;;;;;;x
-EVTOPTC_AFRREL052;You consider Tan Dowa, the wild spirits.;;;;;;;;;;;;;x
-EVTOPTD_AFRREL052;Maybe another court has what i require.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL052;I consider Samari, the young feminine spirits.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL052;I consider Yayan Zanzanna, the children of the plague.;;;;;;;;;;;;;x
+EVTOPTC_AFRREL052;I consider Tan Dowa, the wild spirits.;;;;;;;;;;;;;x
+EVTOPTD_AFRREL052;Maybe another court has what I require.;;;;;;;;;;;;;x
 EVTDESC_AFRREL053;The Yan Riga, that is, those who wear clothes, are the most civilized spirits. It is said that they live in cities and know about the wisdom of men who can read. Above them reigns the spiritual king Mallam Alhaji, the so-called father of many and the oldest of all spirits.;;;;;;;;;;;;;x
 EVTOPTA_AFRREL053;Begin the song of The Learned One!;;;;;;;;;;;;;x
 EVTDESC_AFRREL054;The Babbaku, that is, the black ones, are inhabitants of rural villages. Some are farmers and other hunters, but all of them enjoy the country life and know how to make use of the land. Above them reigns Mai-Ja-Ciki, the one who crawls on the floor on his stomach, who is like a snake and can not speak in human language.;;;;;;;;;;;;;x

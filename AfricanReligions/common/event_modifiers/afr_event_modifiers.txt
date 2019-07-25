@@ -40,7 +40,7 @@ follower_of_yan_riga = {
 }
 
 follower_of_babbaku = {
-	stewardship = 1
+	stewardship = 2
 	martial = -1
 	icon = 48
 }
@@ -65,6 +65,6 @@ follower_of_yayan_zanzanna = {
 
 follower_of_tan_dowa = {
 	combat_rating = 10
-	diplomacy = 1
+	diplomacy = -1
 	icon = 48
 }
