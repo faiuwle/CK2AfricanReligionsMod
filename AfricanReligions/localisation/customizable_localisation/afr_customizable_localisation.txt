@@ -389,3 +389,17 @@ defined_text = {
         }
     }
 }
+
+defined_text = {
+    name = PatronDeity
+    
+    text = {
+        localisation_key = patron_deity_bori
+        trigger = { religion = bori }
+    }
+    
+    text = {
+        localisation_key = patron_deity_non_bori
+        trigger = { NOT = { religion = bori } }
+    }
+}
