@@ -18,3 +18,8 @@ EVTDESCHF23104;The citizens of [Root.GetName] have not reacted well to the city'
 rome_revolt_desc;The citizens of Rome have not reacted well to the city's great fire. After boiling for a few days, a large mob of peasants has broken the peace and assaulted the local garrison, rebelling openly against the destruction of the Holy See and the collateral damage caused by the fire to the people's homes.;;;;;;;;;;;;x
 non_rome_revolt_desc;The citizens of [Root.GetName] have not reacted well to the city's great fire. After boiling for a few days, a large mob of peasants has broken the peace and assaulted the local garrison, rebelling openly against the damage caused by the fire to the people's homes.;;;;;;;;;;;;x
 ROMAN_CHRISTIAN_REVOLT;[Root.County.GetAdjective] Peasant Uprising;;;;;;;;;;;;x
+pick_main_deity;[PickPatronDeityReligionCheck];;;;;;;;;;;;x
+pick_main_deity_desc;[PickPatronDeityDescriptionReligionCheck];;;;;;;;;;;;x
+pick_main_deity_tooltip;§Y[Root.GetTitledFirstName]§! gets to pick a new [PatronDeity].;;;;;;;;;;;;x
+patron_deity_non_bori;patron deity to worship;;;;;;;;;;;;x
+patron_deity_bori;patron bori to follow;;;;;;;;;;;;x
