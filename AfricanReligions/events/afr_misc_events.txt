@@ -237,6 +237,25 @@ character_event = {
     }
 }
 
+# Carnival of Awussu event
+character_event = {
+    id = AFRREL.033
+    title = EVTTITLE_AFRREL033
+    desc = EVTDESC_AFRREL033
+    picture = GFX_evt_feast
+
+    is_triggered_only = yes
+    only_playable = yes
+
+    immediate = { 
+        set_character_flag = summer_fair_begin
+    }
+
+    option = {
+        name = "EVTOPTA_AFRREL033"
+    }
+}
+
 # Bori Selecting Patron Deities events
 character_event = {
     id = AFRREL.050

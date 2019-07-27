@@ -1,0 +1,1048 @@
+namespace = AFRREL
+
+# Ping event for Exalt the Inna, received by decision taker
+character_event = {
+    id = AFRREL.002
+    hide_window = yes
+    is_triggered_only = yes
+    
+    immediate = {
+        any_playable_ruler = {
+            limit = { religion = bori }
+            narrative_event = { id = AFRREL.003 }
+        }
+        ROOT = { narrative_event = { id = AFRREL.003 } }
+        religion_head = { character_event = { id = AFRREL.005 } }
+    }
+}
+
+# Exalt the Inna, received by everyone
+narrative_event = {
+    id = AFRREL.003
+    is_triggered_only = yes
+    title = EVTTITLE_AFRREL003
+    desc = EVTDESC_AFRREL003
+    picture = GFX_evt_west_african_ruler
+	border = GFX_event_narrative_frame_religion
+    
+    option = {
+        name = EVTOPTA_AFRREL003
+    }
+}
+
+# Letter from the Inna, received by everyone
+letter_event = {
+    id = AFRREL.004
+    is_triggered_only = yes
+    desc = EVTDESC_AFRREL004
+    
+    option = {
+        name = EVTOPTA_AFRREL004
+        
+        #custom_tooltip = {
+        #    text = beatification_tooltip
+        #    set_global_flag = bori_beatification
+        #}
+        set_jizya_tax = yes
+    }
+}
+
+# Ping event for the Inna to send the letter
+character_event = {
+    id = AFRREL.005
+    is_triggered_only = yes
+    hide_window = yes
+    
+    immediate = {
+        any_playable_ruler = {
+            limit = { religion = bori }
+            letter_event = { id = AFRREL.004 days = 10 }
+        }
+    }
+}
+
+# Event announcing the Living Tan Garki
+narrative_event = {
+    id = AFRREL.007
+    desc = EVTDESC_AFRREL007
+    title = d_living_tan_garki
+    picture = GFX_evt_battle_african
+    portrait = d_living_tan_garki
+	border = GFX_event_narrative_frame_religion
+    
+    is_triggered_only = yes
+    
+    only_playable = yes
+    
+    option = {
+        trigger = {
+            religion = bori
+        }
+        name = EVTOPTA_AFRREL007
+    }
+    option = {
+        trigger = {
+            NOT = { religion = bori }
+            religion_group = african_group
+        }
+        name = EVTOPTB_AFRREL007
+    }
+    option = {
+        trigger = {
+            NOT = { religion_group = african_group }
+        }
+        name = EVTOPTC_AFRREL007
+    }
+}
+
+# Event announcing the Sacred Tyeddo
+narrative_event = {
+    id = AFRREL.009
+    desc = EVTDESC_AFRREL009
+    title = d_sacred_tyeddo
+    picture = GFX_evt_battle_african
+    portrait = d_sacred_tyeddo
+	border = GFX_event_narrative_frame_religion
+    
+    is_triggered_only = yes
+    
+    only_playable = yes
+    
+    option = {
+        trigger = {
+            religion = a_tag_roog_reformed
+        }
+        name = EVTOPTA_AFRREL009
+    }
+    option = {
+        trigger = {
+            NOT = { religion = a_tag_roog_reformed }
+            religion_group = african_group
+        }
+        name = EVTOPTB_AFRREL009
+    }
+    option = {
+        trigger = {
+            NOT = { religion_group = african_group }
+        }
+        name = EVTOPTC_AFRREL009
+    }
+}
+
+# Event announcing the Orphans of Numidia
+narrative_event = {
+    id = AFRREL.011
+    desc = EVTDESC_AFRREL011
+    title = d_orphans_of_numidia
+    picture = GFX_evt_battle_african
+    portrait = d_orphans_of_numidia
+	border = GFX_event_narrative_frame_religion
+    
+    is_triggered_only = yes
+    
+    only_playable = yes
+    
+    option = {
+        trigger = {
+            OR = {
+                AND = {
+                    religion = amazigh
+                    NOT = { has_global_flag = amazigh_reformation }
+                }
+                religion = amazigh_reformed
+            }
+        }
+        name = EVTOPTA_AFRREL011
+    }
+    option = {
+        trigger = {
+            NOR = {
+                AND = {
+                    religion = amazigh
+                    NOT = { has_global_flag = amazigh_reformation }
+                }
+                religion = amazigh_reformed
+            }
+            religion_group = african_group
+        }
+        name = EVTOPTB_AFRREL011
+    }
+    option = {
+        trigger = {
+            NOT = { religion_group = african_group }
+        }
+        name = EVTOPTC_AFRREL011
+    }
+}
+
+# Tolerant character making African friend
+character_event = {
+	id = AFRREL.012
+	desc = EVTDESC_AFRREL012
+	picture = GFX_evt_courtiers_talking
+	border = GFX_event_normal_frame_religion
+
+	only_playable = yes
+	prisoner = no
+	only_capable = yes
+	min_age = 16
+	
+	trigger = {
+		trait = sympathy_african
+		has_dlc = "Sons of Abraham"
+		any_courtier = {
+			religion_group = african_group
+			prisoner = no
+			is_adult = yes
+			NOT = { trait = incapable }
+			NOT = { is_friend = ROOT }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+	}
+	
+	option = {
+		name = EVTOPTA_SoA_5414
+		random_courtier = {
+			limit = {
+				religion_group = african_group
+				prisoner = no
+				is_adult = yes
+				NOT = { trait = incapable }
+				NOT = { is_friend = ROOT }
+			}
+			add_friend = ROOT
+		}
+	}
+}
+
+# Test event for testing conditions with the console, never triggered
+character_event = {
+    id = AFRREL.013
+    hide_window = yes
+    is_triggered_only = yes
+    
+    trigger = {
+			can_call_crusade = yes
+			uses_new_crusade = no
+			has_called_crusade = no
+			religion_authority = 0.05
+			conditional_tooltip = {
+				trigger = {
+					is_alternate_start = yes
+					has_alternate_start_parameter = {
+						key = religion_names
+						value = random
+					}
+				}
+				custom_tooltip = {
+					text = ALT_GHW_STARTED
+					has_global_flag = muslim_jihads_unlocked
+					has_global_flag = pagan_ghws_unlocked
+					has_global_flag = christian_crusades_unlocked
+				}
+			}
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						has_alternate_start_parameter = {
+							key = religion_names
+							value = random
+						}
+					}
+				}
+				OR = {
+					religion_group = zoroastrian_group
+					religion_group = jewish_group
+					AND = {
+						religion_group = pagan_group
+						custom_tooltip = {
+							text = CTT_PAGAN_GHWS_UNLOCKED
+							has_global_flag = pagan_ghws_unlocked
+						}
+					}
+					AND = { 
+						religion_group = christian
+						custom_tooltip = {
+							text = CTT_CHRISTIAN_CRUSADES_UNLOCKED
+							has_global_flag = christian_crusades_unlocked
+						}
+					}
+					AND = {
+						religion_group = muslim
+						custom_tooltip = {
+							text = CTT_MUSLIM_JIHADS_UNLOCKED
+							has_global_flag = muslim_jihads_unlocked
+						}
+					}
+                    AND = {
+                        religion_group = african_group
+                        custom_tooltip = {
+                            text = CTT_AFRICAN_GHWS_UNLOCKED
+                            has_global_flag = african_ghws_unlocked
+                        }
+                    }
+				}
+			}
+			mercenary = no
+    }
+}
+
+# Event that enables GHWs for Africans
+narrative_event = {
+    id = AFRREL.014
+    title = EVTTITLE_AFRREL014
+    desc = EVTDESC_AFRREL014
+    picture = GFX_evt_battle_african
+    border = GFX_event_narrative_frame_religion
+    
+    major = yes
+	
+	show_ROOT = yes
+	hide_new = yes
+	
+	only_playable = yes
+	min_age = 16
+	religion_group = african_group
+    
+    trigger = {
+        controls_religion = yes
+        OR = {
+            NOT = { religion = bori }
+            has_global_flag = bori_psuedo_reformation
+        }
+        NOT = { has_global_flag = african_ghws_unlocked }
+        has_global_flag = muslim_jihads_unlocked
+    }
+    
+    mean_time_to_happen = {
+        months = 120
+    }
+    
+    immediate = {
+        set_global_flag = african_ghws_unlocked
+    }
+    
+    option = {
+        name = EVTOPTA_AFRREL014
+        trigger = {
+            religion = ROOT
+        }
+    }
+    
+    option = {
+        name = EVTOPTB_AFRREL014
+        trigger = {
+            NOT = { religion = ROOT }
+            religion_group = african_group
+        }
+    }
+    
+    option = {
+        name = EVTOPTC_AFRREL014
+        trigger = {
+            NOT = { religion_group = african_group }
+        }
+    }
+}
+
+# Restoring Carthage
+narrative_event = {
+    id = AFRREL.016
+    title = EVTTITLE_AFRREL016
+    desc = EVTDESC_AFRREL016
+    picture = GFX_evt_building_carthage
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL016
+        
+        # Transfer k_africa, k_mauretania, and e_maghreb to de jure e_carthage
+        k_africa = { de_jure_liege = e_carthage }
+        k_mauretania = { de_jure_liege = e_carthage }
+        e_maghreb = {
+            any_direct_de_jure_vassal_title = {
+                de_jure_liege = e_carthage
+            }
+        }
+        
+        # Set up e_carthage
+		e_carthage = {
+			show_scope_change = no
+			grant_title = ROOT
+			hidden_tooltip = { make_primary_title = yes }
+			copy_title_laws = e_maghreb
+		}
+        
+        # Destroy e_maghreb
+        e_maghreb = {
+            show_scope_change = no
+            destroy_landed_title = THIS
+        }
+
+        # Deactivate e_maghreb
+        hidden_tooltip = { activate_title = { title = e_maghreb status = no } }
+        
+        # Spawn announcement event
+        hidden_tooltip = {
+            any_playable_ruler = {
+                limit = {
+                    NOT = { has_landed_title = e_maghreb }
+                    OR = {
+                        ai = no
+                        has_landed_title = e_byzantium
+                        has_landed_title = e_roman_empire
+                        has_landed_title = e_hre
+                        has_landed_title = e_latin_empire
+                    }
+                }
+                narrative_event = { id = AFRREL.017 days = 2 }
+            }
+        }
+        
+        # Add Suffete trait
+        add_trait = suffete
+        
+        # Give nickname The Beloved
+        give_nickname = nick_the_beloved
+        
+        # Create bloodline
+        if = {
+            limit = {
+                has_dlc = "Holy Fury"
+                OR = {
+                    religion = amazigh
+                    religion = amazigh_reformed
+                }
+            }
+            create_bloodline = {
+                type = carthage_bloodline
+            }
+            sound_effect = bloodline_added
+        }
+    }
+}
+
+# Informed about the restoration of Carthage
+narrative_event = {
+    id = AFRREL.017
+    title = EVTTITLE_AFRREL017
+
+    desc = {
+        text = EVTDESC_AFRREL017
+        trigger = {
+            NOR = {
+                has_landed_title = e_byzantium
+                has_landed_title = e_roman_empire
+                has_landed_title = e_hre
+                has_landed_title = e_latin_empire
+            }
+        }
+    }
+    
+    desc = {
+        text = EVTDESC_AFRREL017_ROME
+        trigger = {
+            OR = {
+                has_landed_title = e_byzantium
+                has_landed_title = e_roman_empire
+                has_landed_title = e_hre
+                has_landed_title = e_latin_empire
+            }
+        }
+    }
+    
+    picture = GFX_evt_building_carthage
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL017
+        trigger = {
+            NOR = {
+                has_landed_title = e_byzantium
+                has_landed_title = e_roman_empire
+                has_landed_title = e_hre
+                has_landed_title = e_latin_empire
+            }
+        }
+    }
+    
+    option = {
+        name = EVTOPTB_AFRREL017
+        trigger = {
+            OR = {
+                has_landed_title = e_byzantium
+                has_landed_title = e_roman_empire
+                has_landed_title = e_hre
+                has_landed_title = e_latin_empire
+            }
+        }
+        FROM = { letter_event = { id = AFRREL.018 days = 3 random = 10 } }
+        add_rival = FROM
+    }
+}
+
+# Nastygram from various Roman Emperors
+letter_event = {
+    id = AFRREL.018
+    desc = {
+        trigger = {
+            FROM = { has_landed_title = e_hre }
+        }
+        text = EVTDESC_AFRREL018_HRE
+    }
+    desc = {
+        trigger = {
+            FROM = { has_landed_title = e_latin_empire }
+        }
+        text = EVTDESC_AFRREL018_LATIN
+    }
+    desc = {
+        trigger = {
+            FROM = {
+                OR = {
+                    has_landed_title = e_byzantium
+                    has_landed_title = e_roman_empire
+                }
+            }
+        }
+        text = EVTDESC_AFRREL018_ROME
+    }
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL018
+        trigger = {
+            FROM = { has_landed_title = e_hre }
+        }
+        add_rival = FROM
+    }
+    option = {
+        name = EVTOPTB_AFRREL018
+        trigger = {
+            FROM = { has_landed_title = e_latin_empire }
+        }
+        add_rival = FROM
+    }
+    option = {
+        name = EVTOPTC_AFRREL018
+        trigger = {
+            FROM = {
+                OR = {
+                    has_landed_title = e_byzantium
+                    has_landed_title = e_roman_empire
+                }
+            }
+        }
+        add_rival = FROM
+    }
+}
+
+# Nastygram from Carthaginian Emperor on creation of various Romes
+letter_event = {
+    id = AFRREL.019
+    desc = EVTDESC_AFRREL019
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL019
+        add_rival = FROM
+    }
+}
+
+# Salt Rome event (Carthaginian emperor's perspective)
+narrative_event = {
+    id = AFRREL.024
+    title = EVTTITLE_AFRREL024
+    desc = EVTDESC_AFRREL024
+	picture = GFX_evt_rome_falls
+	border = GFX_event_narrative_frame_religion
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL024
+        
+        tiered_piety_reward_effect = yes
+        custom_tooltip = { text = salt_rome_tooltip }
+        
+        hidden_tooltip = {
+            wealth = 2000
+			any_vassal = { 
+				limit = { 
+                    OR = {
+                        religion_group = christian 
+                        religion = hellenic_pagan
+                        religion = hellenic_pagan_reformed
+                    }
+					NOR = { 
+						secret_religion_group = muslim
+                        secret_religion_group = african_group
+					} 
+				} 
+				opinion = { 
+					who = ROOT 
+					modifier = blasphemous_pyromaniac 
+					years = 100
+				} 
+			} 
+			k_papal_state = { 
+				holder_scope = { 
+					religion_authority = {
+						modifier = rome_destroyed
+						years = 1000
+					}
+				} 
+			}
+            if = {
+                limit = {
+                    event_target:former_owner = {
+                        NOT = { religion = catholic }
+                    }
+                }
+                event_target:former_owner = {
+                    religion_authority = {
+                        modifier = rome_destroyed
+                        years = 1000
+                    }
+                }
+            }
+			333 = { 
+				if = { #If Rome is Christian, peasant revolt is inevitable.
+					limit = {
+                        OR = {
+                            religion_group = christian
+                            religion = hellenic_pagan
+                            religion = hellenic_pagan_reformed
+                        }
+                    } 
+					province_event = { id = HF.23104 days = 5 }
+				}
+				any_province_holding = { 
+					limit = { is_capital = no } 
+					destroy_settlement = yes
+				}
+                any_province_holding = {
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                }
+			}
+			any_player = { 
+				limit = { 
+					is_within_diplo_range = yes 
+				} 
+				narrative_event = { id = AFRREL.025 } #Notification.
+			} 
+		}
+    }
+}
+
+narrative_event = {
+    id = AFRREL.025
+    title = EVTTITLE_AFRREL024
+    desc = EVTDESC_AFRREL025
+    picture = GFX_evt_rome_falls
+	border = GFX_event_narrative_frame_religion
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL024
+        trigger = {
+            OR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+    }
+    option = {
+        name = EVTOPTB_AFRREL025
+        trigger = {
+            NOR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+    }
+}
+
+narrative_event = {
+    id = AFRREL.026
+    title = EVTTITLE_AFRREL026
+    desc = EVTDESC_AFRREL026
+	picture = GFX_evt_rome_falls
+	border = GFX_event_narrative_frame_religion
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL026
+        
+        tiered_piety_reward_effect = yes
+        custom_tooltip = { text = salt_constantinople_tooltip }
+        
+        hidden_tooltip = {
+            wealth = 2000
+			any_vassal = { 
+				limit = { 
+                    OR = {
+                        religion_group = christian 
+                        religion = hellenic_pagan
+                        religion = hellenic_pagan_reformed
+                    }
+					NOR = { 
+						secret_religion_group = muslim
+                        secret_religion_group = african_group
+					} 
+				} 
+				opinion = { 
+					who = ROOT 
+					modifier = blasphemous_pyromaniac 
+					years = 100
+				} 
+			} 
+			k_orthodox = { 
+				holder_scope = { 
+					religion_authority = {
+						modifier = constantinople_destroyed
+						years = 1000
+					}
+				} 
+			} 
+            if = {
+                limit = {
+                    event_target:former_owner = {
+                        NOT = { religion = orthodox }
+                    }
+                }
+                event_target:former_owner = {
+                    religion_authority = {
+                        modifier = constantinople_destroyed
+                        years = 1000
+                    }
+                }
+            }
+			496 = { 
+				if = { #If Rome is Christian, peasant revolt is inevitable.
+					limit = {
+                        OR = {
+                            religion_group = christian
+                            religion = hellenic_pagan
+                            religion = hellenic_pagan_reformed
+                        }
+                    } 
+					province_event = { id = HF.23104 days = 5 }
+				}
+				any_province_holding = { 
+					limit = { is_capital = no } 
+					destroy_settlement = yes
+				}
+                any_province_holding = {
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                }
+			}
+			any_player = { 
+				limit = { 
+					is_within_diplo_range = yes 
+				} 
+				narrative_event = { id = AFRREL.027 } #Notification.
+			} 
+		}
+    }
+}
+
+narrative_event = {
+    id = AFRREL.027
+    title = EVTTITLE_AFRREL026
+    desc = EVTDESC_AFRREL027
+    picture = GFX_evt_rome_falls
+	border = GFX_event_narrative_frame_religion
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL026
+        trigger = {
+            OR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+    }
+    option = {
+        name = EVTOPTB_AFRREL027
+        trigger = {
+            NOR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+    }
+}
+
+narrative_event = {
+    id = AFRREL.028
+    title = EVTTITLE_AFRREL028
+    desc = EVTDESC_AFRREL028
+	picture = GFX_evt_carthage_falls
+	border = GFX_event_narrative_frame_religion
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL028
+        
+        tiered_piety_reward_effect = yes
+        custom_tooltip = { text = salt_carthage_capital_tooltip }
+        
+        hidden_tooltip = {
+            wealth = 2000
+			any_vassal = { 
+				limit = { 
+					OR = {
+                        religion = amazigh
+                        religion = amazigh_reformed
+                    }
+					NOR = { 
+						secret_religion_group = christian
+						secret_religion = hellenic_pagan
+                        secret_religion = hellenic_pagan_reformed
+					} 
+				} 
+				opinion = { 
+					who = ROOT 
+					modifier = blasphemous_pyromaniac 
+					years = 100
+				} 
+			} 
+			d_amazigh = { 
+				holder_scope = { 
+					religion_authority = {
+						modifier = carthage_capital_destroyed
+						years = 1000
+					}
+				} 
+			}
+			event_target:carthage_capital = { 
+				if = { #If Rome is Christian, peasant revolt is inevitable.
+					limit = {
+                        OR = {
+                            religion = amazigh
+                            religion = amazigh_reformed
+                        }
+                    } 
+					province_event = { id = HF.23104 days = 5 }
+				}
+				any_province_holding = { 
+					limit = { is_capital = no } 
+					destroy_settlement = yes
+				}
+                any_province_holding = {
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                    destroy_random_building = yes
+                }
+			}
+			any_player = { 
+				limit = { 
+					is_within_diplo_range = yes 
+				} 
+				narrative_event = { id = AFRREL.029 } #Notification.
+			} 
+		}
+    }
+}
+
+narrative_event = {
+    id = AFRREL.029
+    title = EVTTITLE_AFRREL028
+    desc = EVTDESC_AFRREL029
+    picture = GFX_evt_carthage_falls
+	border = GFX_event_narrative_frame_religion
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL029
+        trigger = {
+            OR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+    }
+    option = {
+        name = EVTOPTB_AFRREL029
+        trigger = {
+            NOR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+        }
+    }
+}
+
+narrative_event = {
+	id = AFRREL.030
+	title = EVTTITLE_AFRREL030
+    desc = EVTDESC_AFRREL030
+	
+	picture = GFX_evt_building_carthage
+	
+	ai = no
+	
+	trigger = {
+		is_alternate_start = no
+        has_landed_title = e_carthage
+		OR = {
+            religion = amazigh
+            religion = amazigh_reformed
+		}
+		NOT = { has_global_flag = carthage_borders }
+		
+        completely_controls = d_tunis
+        completely_controls = d_tripolitania
+        completely_controls = d_syrte
+        completely_controls = d_jerid
+        completely_controls = d_cyrenaica
+        completely_controls = d_kabylia
+        completely_controls = d_mzab
+        
+        completely_controls = d_marrakech
+        completely_controls = d_tangiers
+        completely_controls = d_fes
+        completely_controls = d_alger
+        completely_controls = d_tlemcen
+        completely_controls = d_sijilmasa
+        completely_controls = d_sous
+        completely_controls = d_adrar
+        completely_controls = d_tahert
+        
+        completely_controls = d_benevento
+        completely_controls = d_capua
+        completely_controls = d_apulia
+        completely_controls = d_abruzzo
+        completely_controls = d_salerno
+        completely_controls = d_calabria
+        completely_controls = d_sicily
+        
+        completely_controls = d_sardinia
+        completely_controls = d_corsica
+        
+        completely_controls = d_valencia
+        completely_controls = d_murcia
+        
+        completely_controls = d_cordoba
+        completely_controls = d_granada
+        completely_controls = d_sevilla
+        completely_controls = d_toledo
+        
+        completely_controls = d_badajoz
+        completely_controls = d_beja
+        completely_controls = d_algarve
+        completely_controls = d_balata
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTA_AFRREL030
+		set_global_flag = carthage_borders
+		prestige = 1000
+	}
+}
+
+character_event = {
+    id = AFRREL.031
+    hide_window = yes
+    
+    religion = west_african_pagan
+    
+    mean_time_to_happen = {
+        days = 1
+    }
+    
+    immediate = {
+        if = {
+            limit = { culture_group = central_african }
+            religion = bori
+        }
+        else_if = {
+            limit = { culture_group = west_african }
+            if = {
+                limit = { has_global_flag = a_tag_roog_reformation }
+                religion = a_tag_roog_reformed
+            }
+            else = {
+                religion = a_tag_roog
+            }
+        }
+        else_if = {
+            limit = { culture = maghreb_arabic }
+            if = {
+                limit = { has_global_flag = amazigh_reformation }
+                religion = amazigh_reformed
+            }
+            else = {
+                religion = amazigh
+            }
+        }
+        else = {
+            random_list = {
+                10 = {
+                    religion = bori
+                }
+                10 = {
+                    if = {
+                        limit = { has_global_flag = a_tag_roog_reformation }
+                        religion = a_tag_roog_reformed
+                    }
+                    else = {
+                        religion = a_tag_roog
+                    }
+                }
+                10 = {
+                    if = {
+                        limit = { has_global_flag = amazigh_reformation }
+                        religion = amazigh_reformed
+                    }
+                    else = {
+                        religion = amazigh
+                    }
+                }
+            }
+        }
+    }
+}
