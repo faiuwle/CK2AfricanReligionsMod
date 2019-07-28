@@ -2897,11 +2897,11 @@ african_group = {
         high_god_name = GOD_ROOG
 
         god_names = {
-            GOD_MENDISS GOD_TIURAKH GOD_TAAHKARR
+            GOD_DONGO GOD_KONDOLON GOD_SANE
         }
 
         evil_god_names = {
-            GOD_THE_EVIL_PANGOOLS
+            MOUSSO_KORONI
         }
 
         psc_marriage = no
@@ -2945,16 +2945,16 @@ african_group = {
 
         crusade_name = GREAT_HOLY_WAR
         scripture_name = NAGA_REETU_REET
-        priest_title = MARABOUT
+        priest_title = SALTIGUE
 
         high_god_name = GOD_ROOG
 
         god_names = {
-            GOD_MENDISS GOD_TIURAKH GOD_TAAHKARR
+            GOD_DONGO GOD_KONDOLON GOD_SANE
         }
 
         evil_god_names = {
-            GOD_THE_EVIL_PANGOOLS
+            MOUSSO_KORONI
         }
 
         reformed = a_tag_roog_reformed

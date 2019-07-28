@@ -1,5 +1,5 @@
 e_carthage = {
-    color = { 220 240 40 }
+    color = { 179 30 0 }
     
     capital = 817 # Tunis
     

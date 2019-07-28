@@ -36504,9 +36504,6 @@ e_maghreb = {
 				color={ 58 127 35 }
 				color2={ 255 255 255 }
 				
-				holy_site = west_african_pagan
-				holy_site = west_african_pagan_reformed
-				
 				b_tazagourt = {}
 				b_tizgui = {}
 				b_kasbaeljoua = {}
@@ -41316,9 +41313,7 @@ e_mali = {
 			c_ghana = { # Wagadu
 				color={ 52 130 227 }
 				color2={ 255 255 255 }
-				
-				holy_site = west_african_pagan
-				holy_site = west_african_pagan_reformed
+
 				holy_site = pagan
 				
 				b_el_ghaba = {}
@@ -41475,9 +41470,6 @@ e_mali = {
 			c_gao = {
 				color={ 195 72 64 }
 				color2={ 255 255 255 }
-				
-				holy_site = west_african_pagan
-				holy_site = west_african_pagan_reformed
 				
 				b_gao = {}
 				b_sarnah = {}
@@ -41647,10 +41639,7 @@ e_kanem = {
 			c_djimi = {
 				color={ 70 185 190 }
 				color2={ 255 255 255 }
-				
-				holy_site = west_african_pagan
-				holy_site = west_african_pagan_reformed
-				
+
 				b_djimi = {}
 				b_auno = {}
 				b_dagolu = {}
@@ -41787,10 +41776,7 @@ e_kanem = {
 			c_kano = {
 				color={ 159 75 217 }
 				color2={ 255 255 255 }
-				
-				holy_site = west_african_pagan
-				holy_site = west_african_pagan_reformed
-				
+
 				b_kano = {}
 				b_hadejia = {}
 				b_nok = {}

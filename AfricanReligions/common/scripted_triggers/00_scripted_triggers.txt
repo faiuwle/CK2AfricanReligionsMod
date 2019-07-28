@@ -2129,6 +2129,12 @@ has_minor_deity_trigger = {
 		has_character_modifier = follower_of_velnias
 		has_character_modifier = follower_of_perkunas
 		has_character_modifier = follower_of_zemyna
+		has_character_modifier = follower_of_yan_riga
+		has_character_modifier = follower_of_babbaku
+		has_character_modifier = follower_of_tan_garki
+		has_character_modifier = follower_of_samari
+		has_character_modifier = follower_of_yayan_zanzanna
+		has_character_modifier = follower_of_tan_dowa
 	}
 }
 

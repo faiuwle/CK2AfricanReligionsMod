@@ -1,353 +1,5 @@
 namespace = AFRREL
 
-# Ping event for Exalt the Inna, received by decision taker
-character_event = {
-    id = AFRREL.002
-    hide_window = yes
-    is_triggered_only = yes
-    
-    immediate = {
-        any_playable_ruler = {
-            limit = { religion = bori }
-            narrative_event = { id = AFRREL.003 }
-        }
-        ROOT = { narrative_event = { id = AFRREL.003 } }
-        religion_head = { character_event = { id = AFRREL.005 } }
-    }
-}
-
-# Exalt the Inna, received by everyone
-narrative_event = {
-    id = AFRREL.003
-    is_triggered_only = yes
-    title = EVTTITLE_AFRREL003
-    desc = EVTDESC_AFRREL003
-    picture = GFX_evt_west_african_ruler
-	border = GFX_event_narrative_frame_religion
-    
-    option = {
-        name = EVTOPTA_AFRREL003
-    }
-}
-
-# Letter from the Inna, received by everyone
-letter_event = {
-    id = AFRREL.004
-    is_triggered_only = yes
-    desc = EVTDESC_AFRREL004
-    
-    option = {
-        name = EVTOPTA_AFRREL004
-        
-        #custom_tooltip = {
-        #    text = beatification_tooltip
-        #    set_global_flag = bori_beatification
-        #}
-        set_jizya_tax = yes
-    }
-}
-
-# Ping event for the Inna to send the letter
-character_event = {
-    id = AFRREL.005
-    is_triggered_only = yes
-    hide_window = yes
-    
-    immediate = {
-        any_playable_ruler = {
-            limit = { religion = bori }
-            letter_event = { id = AFRREL.004 days = 10 }
-        }
-    }
-}
-
-# Event announcing the Living Tan Garki
-narrative_event = {
-    id = AFRREL.007
-    desc = EVTDESC_AFRREL007
-    title = d_living_tan_garki
-    picture = GFX_evt_battle_african
-    portrait = d_living_tan_garki
-	border = GFX_event_narrative_frame_religion
-    
-    is_triggered_only = yes
-    
-    only_playable = yes
-    
-    option = {
-        trigger = {
-            religion = bori
-        }
-        name = EVTOPTA_AFRREL007
-    }
-    option = {
-        trigger = {
-            NOT = { religion = bori }
-            religion_group = african_group
-        }
-        name = EVTOPTB_AFRREL007
-    }
-    option = {
-        trigger = {
-            NOT = { religion_group = african_group }
-        }
-        name = EVTOPTC_AFRREL007
-    }
-}
-
-# Event announcing the Sacred Tyeddo
-narrative_event = {
-    id = AFRREL.009
-    desc = EVTDESC_AFRREL009
-    title = d_sacred_tyeddo
-    picture = GFX_evt_battle_african
-    portrait = d_sacred_tyeddo
-	border = GFX_event_narrative_frame_religion
-    
-    is_triggered_only = yes
-    
-    only_playable = yes
-    
-    option = {
-        trigger = {
-            religion = a_tag_roog_reformed
-        }
-        name = EVTOPTA_AFRREL009
-    }
-    option = {
-        trigger = {
-            NOT = { religion = a_tag_roog_reformed }
-            religion_group = african_group
-        }
-        name = EVTOPTB_AFRREL009
-    }
-    option = {
-        trigger = {
-            NOT = { religion_group = african_group }
-        }
-        name = EVTOPTC_AFRREL009
-    }
-}
-
-# Event announcing the Orphans of Numidia
-narrative_event = {
-    id = AFRREL.011
-    desc = EVTDESC_AFRREL011
-    title = d_orphans_of_numidia
-    picture = GFX_evt_battle_african
-    portrait = d_orphans_of_numidia
-	border = GFX_event_narrative_frame_religion
-    
-    is_triggered_only = yes
-    
-    only_playable = yes
-    
-    option = {
-        trigger = {
-            OR = {
-                AND = {
-                    religion = amazigh
-                    NOT = { has_global_flag = amazigh_reformation }
-                }
-                religion = amazigh_reformed
-            }
-        }
-        name = EVTOPTA_AFRREL011
-    }
-    option = {
-        trigger = {
-            NOR = {
-                AND = {
-                    religion = amazigh
-                    NOT = { has_global_flag = amazigh_reformation }
-                }
-                religion = amazigh_reformed
-            }
-            religion_group = african_group
-        }
-        name = EVTOPTB_AFRREL011
-    }
-    option = {
-        trigger = {
-            NOT = { religion_group = african_group }
-        }
-        name = EVTOPTC_AFRREL011
-    }
-}
-
-# Tolerant character making African friend
-character_event = {
-	id = AFRREL.012
-	desc = EVTDESC_AFRREL012
-	picture = GFX_evt_courtiers_talking
-	border = GFX_event_normal_frame_religion
-
-	only_playable = yes
-	prisoner = no
-	only_capable = yes
-	min_age = 16
-	
-	trigger = {
-		trait = sympathy_african
-		has_dlc = "Sons of Abraham"
-		any_courtier = {
-			religion_group = african_group
-			prisoner = no
-			is_adult = yes
-			NOT = { trait = incapable }
-			NOT = { is_friend = ROOT }
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 300
-	}
-	
-	option = {
-		name = EVTOPTA_SoA_5414
-		random_courtier = {
-			limit = {
-				religion_group = african_group
-				prisoner = no
-				is_adult = yes
-				NOT = { trait = incapable }
-				NOT = { is_friend = ROOT }
-			}
-			add_friend = ROOT
-		}
-	}
-}
-
-# Test event for testing conditions with the console, never triggered
-character_event = {
-    id = AFRREL.013
-    hide_window = yes
-    is_triggered_only = yes
-    
-    trigger = {
-			can_call_crusade = yes
-			uses_new_crusade = no
-			has_called_crusade = no
-			religion_authority = 0.05
-			conditional_tooltip = {
-				trigger = {
-					is_alternate_start = yes
-					has_alternate_start_parameter = {
-						key = religion_names
-						value = random
-					}
-				}
-				custom_tooltip = {
-					text = ALT_GHW_STARTED
-					has_global_flag = muslim_jihads_unlocked
-					has_global_flag = pagan_ghws_unlocked
-					has_global_flag = christian_crusades_unlocked
-				}
-			}
-			conditional_tooltip = {
-				trigger = {
-					NOT = {
-						has_alternate_start_parameter = {
-							key = religion_names
-							value = random
-						}
-					}
-				}
-				OR = {
-					religion_group = zoroastrian_group
-					religion_group = jewish_group
-					AND = {
-						religion_group = pagan_group
-						custom_tooltip = {
-							text = CTT_PAGAN_GHWS_UNLOCKED
-							has_global_flag = pagan_ghws_unlocked
-						}
-					}
-					AND = { 
-						religion_group = christian
-						custom_tooltip = {
-							text = CTT_CHRISTIAN_CRUSADES_UNLOCKED
-							has_global_flag = christian_crusades_unlocked
-						}
-					}
-					AND = {
-						religion_group = muslim
-						custom_tooltip = {
-							text = CTT_MUSLIM_JIHADS_UNLOCKED
-							has_global_flag = muslim_jihads_unlocked
-						}
-					}
-                    AND = {
-                        religion_group = african_group
-                        custom_tooltip = {
-                            text = CTT_AFRICAN_GHWS_UNLOCKED
-                            has_global_flag = african_ghws_unlocked
-                        }
-                    }
-				}
-			}
-			mercenary = no
-    }
-}
-
-# Event that enables GHWs for Africans
-narrative_event = {
-    id = AFRREL.014
-    title = EVTTITLE_AFRREL014
-    desc = EVTDESC_AFRREL014
-    picture = GFX_evt_battle_african
-    border = GFX_event_narrative_frame_religion
-    
-    major = yes
-	
-	show_ROOT = yes
-	hide_new = yes
-	
-	only_playable = yes
-	min_age = 16
-	religion_group = african_group
-    
-    trigger = {
-        controls_religion = yes
-        OR = {
-            NOT = { religion = bori }
-            has_global_flag = bori_psuedo_reformation
-        }
-        NOT = { has_global_flag = african_ghws_unlocked }
-        has_global_flag = muslim_jihads_unlocked
-    }
-    
-    mean_time_to_happen = {
-        months = 120
-    }
-    
-    immediate = {
-        set_global_flag = african_ghws_unlocked
-    }
-    
-    option = {
-        name = EVTOPTA_AFRREL014
-        trigger = {
-            religion = ROOT
-        }
-    }
-    
-    option = {
-        name = EVTOPTB_AFRREL014
-        trigger = {
-            NOT = { religion = ROOT }
-            religion_group = african_group
-        }
-    }
-    
-    option = {
-        name = EVTOPTC_AFRREL014
-        trigger = {
-            NOT = { religion_group = african_group }
-        }
-    }
-}
-
 # Restoring Carthage
 narrative_event = {
     id = AFRREL.016
@@ -651,6 +303,7 @@ narrative_event = {
     }
 }
 
+# Salt Rome (others)
 narrative_event = {
     id = AFRREL.025
     title = EVTTITLE_AFRREL024
@@ -680,6 +333,7 @@ narrative_event = {
     }
 }
 
+# Salt Constantinople (Carthaginian Emperor's perspective)
 narrative_event = {
     id = AFRREL.026
     title = EVTTITLE_AFRREL026
@@ -774,6 +428,7 @@ narrative_event = {
     }
 }
 
+# Salt Constantinople (others)
 narrative_event = {
     id = AFRREL.027
     title = EVTTITLE_AFRREL026
@@ -803,6 +458,7 @@ narrative_event = {
     }
 }
 
+# Salt Carthage event (Attacker's perspective)
 narrative_event = {
     id = AFRREL.028
     title = EVTTITLE_AFRREL028
@@ -883,6 +539,7 @@ narrative_event = {
     }
 }
 
+# Salt Carthage (others)
 narrative_event = {
     id = AFRREL.029
     title = EVTTITLE_AFRREL028
@@ -912,6 +569,7 @@ narrative_event = {
     }
 }
 
+# Carthage borders are restored
 narrative_event = {
 	id = AFRREL.030
 	title = EVTTITLE_AFRREL030
@@ -982,67 +640,4 @@ narrative_event = {
 		set_global_flag = carthage_borders
 		prestige = 1000
 	}
-}
-
-character_event = {
-    id = AFRREL.031
-    hide_window = yes
-    
-    religion = west_african_pagan
-    
-    mean_time_to_happen = {
-        days = 1
-    }
-    
-    immediate = {
-        if = {
-            limit = { culture_group = central_african }
-            religion = bori
-        }
-        else_if = {
-            limit = { culture_group = west_african }
-            if = {
-                limit = { has_global_flag = a_tag_roog_reformation }
-                religion = a_tag_roog_reformed
-            }
-            else = {
-                religion = a_tag_roog
-            }
-        }
-        else_if = {
-            limit = { culture = maghreb_arabic }
-            if = {
-                limit = { has_global_flag = amazigh_reformation }
-                religion = amazigh_reformed
-            }
-            else = {
-                religion = amazigh
-            }
-        }
-        else = {
-            random_list = {
-                10 = {
-                    religion = bori
-                }
-                10 = {
-                    if = {
-                        limit = { has_global_flag = a_tag_roog_reformation }
-                        religion = a_tag_roog_reformed
-                    }
-                    else = {
-                        religion = a_tag_roog
-                    }
-                }
-                10 = {
-                    if = {
-                        limit = { has_global_flag = amazigh_reformation }
-                        religion = amazigh_reformed
-                    }
-                    else = {
-                        religion = amazigh
-                    }
-                }
-            }
-        }
-    }
 }

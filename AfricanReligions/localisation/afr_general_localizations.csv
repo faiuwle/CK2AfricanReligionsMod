@@ -21,9 +21,10 @@ GOD_GARKI_BABA;Garki Baba;;;;;;;;;;;;;x
 GOD_ZAKI;Zaki;;;;;;;;;;;;;x
 GOD_THE_YAYAN_ZANZANNA;The yayan zanzanna;;;;;;;;;;;;;x
 GOD_ROOG;Roog;;;;;;;;;;;;;x
-GOD_MENDISS;Mendiss;;;;;;;;;;;;;x
-GOD_TIURAKH;Tiurakh;;;;;;;;;;;;;x
-GOD_TAAHKARR;Taahkarr;;;;;;;;;;;;;x
+GOD_DONGO;Dongo;;;;;;;;;;;;;x
+GOD_KONDOLON;Kondolon;;;;;;;;;;;;;x
+GOD_SANE;Sané;;;;;;;;;;;;;x
+MOUSSO_KORONI;Mousso Koroni;;;;;;;;;;;;;x
 GOD_THE_EVIL_PANGOOLS;The evil pangools;;;;;;;;;;;;;x
 GOD_TANIT;Tanit;;;;;;;;;;;;;x
 GOD_ANTI;Änti;;;;;;;;;;;;;x
@@ -210,6 +211,10 @@ become_wangara;Forge an Ancestry;;;;;;;;;;;;;x
 become_wangara_desc;[ChangeATagRoogCasteDesc];;;;;;;;;;;;;x
 reform_carthage;Restore the Carthaginian Empire;;;;;;;;;;;;;x
 reform_carthage_desc;Long ago the great Carthaginian empire perished under the Roman sword. The time has come to see its glory reborn.;;;;;;;;;;;;;x
+vanilla_pick_main_deity;Pick Patron Deity;;;;;;;;;;;;x
+vanilla_pick_main_deity_desc;There are many gods and goddesses who rule over different aspects of our life. While all of them should be honored properly, it is common for people to pick a deity whom they pray and sacrifice to more often.;;;;;;;;;;;;x
+bori_pick_main_deity;Pick Patron Bori;;;;;;;;;;;;x
+bori_pick_main_deity_desc;It is good to have a protective spirit, therefore it would be a good idea to choose one.;;;;;;;;;;;;x
 change_caste_griot;In your court as well as among the common people, gossips say that you do not deserve your titles. After all, a person of your ancestry is not made to occupy such a position. Only prejudices and superstitions, certainly, but enough for people to speak ill of you.\n\nYour Court Griot, however proposes a solution - he will compose a great poem in which he will say that all your ancestors were in fact of the correct caste. A little fib for the greater good.;;;;;;;;;;;;;x
 change_caste_no_griot;In your court as well as among the common people, gossips say that you do not deserve your titles. After all, a person of your ancestry is not made to occupy such a position. Only prejudices and superstitions, certainly, but enough for people to speak ill of you.\n\nYou will need the advice of a learned Court Griot.;;;;;;;;;;;;;x
 secretly_convert_to_bori_holy_site;Secretly Convert to Bori;;;;;;;;;;;;;x
@@ -231,6 +236,17 @@ carthage_capital_destroyed;Carthage Burned;;;;;;;;;;;;;x
 bori_opinion;Bori Opinion;;;;;;;;;;;;;x
 amazigh_opinion;[amazigh.GetName] Opinion;;;;;;;;;;;;;x
 amazigh_reformed_opinion;[amazigh_reformed.GetName] Opinion;;;;;;;;;;;;;x
+follower_of_yan_riga;Follower of Yan Riga;;;;;;;;;;;;;x
+follower_of_yan_riga_desc;The Yan Riga, those who wear clothes, are the most civilized spirits. It is said that they live in cities and know about the wisdom of men who can read. Their king is Mallam Alhaji.;;;;;;;;;;;;;x
+follower_of_babbaku_desc;The Babbaku, that is, the black ones, are inhabitants of rural villages. Some are farmers and other hunters. Their king is Mai-Ja-Ciki.;;;;;;;;;;;;;x
+follower_of_tan_garki;Follower of Tan Garki;;;;;;;;;;;;;x
+follower_of_tan_garki_desc;The Tan Garki, that is, the sons of the shield, are the great warriors among the spirits. Their king is Garki Baba.;;;;;;;;;;;;;x
+follower_of_samari;Follower of Samari;;;;;;;;;;;;;x
+follower_of_samari_desc;Samari, the spirits of youth but also of femininity. It's a very colorful group. Their king is Ba-Gudu.;;;;;;;;;;;;;x
+follower_of_yayan_zanzanna;Follower of Yanyan Zanzanna;;;;;;;;;;;;;x
+follower_of_yayan_zanzanna_desc;The Yayan Zanzanna, the children of the plague, are child spirits with dominion over any disease, spreading smallpox and other evils among mortals, Their queen is Nana Mariyamu.;;;;;;;;;;;;;x
+follower_of_tan_dowa;Follower of Tan Dowa;;;;;;;;;;;;;x
+follower_of_tan_dowa_desc;The Tan Dowa are spirits of the jungle, they do not resemble any juman but are nature in its purest state. Zaki the lion is the first among them.;;;;;;;;;;;;x
 secret_bori_community;Secret Bori Community;;;;;;;;;;;;;x
 secret_bori_community_desc;In secret, the faithful have organized around a small church community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
 secret_a_tag_roog_community;Secret [a_tag_roog.GetName] Community;;;;;;;;;;;;;x
