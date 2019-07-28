@@ -28,9 +28,18 @@ character_event = { #Landing Event
                 }
 				factor = 2
 			}
+            modifier = {
+                liege = {
+                    OR = {
+                        trait = dogon
+                        trait = malinke
+                    }
+                }
+                factor = 0
+            }
 		}
 
-            character_event = { id = AFRREL.101 }
+        character_event = { id = AFRREL.101 }
 	}
 	option = {
 		name = "EVTOPTB_AFRREL100"
@@ -47,9 +56,18 @@ character_event = { #Landing Event
                 }
 				factor = 2
 			}
+            modifier = {
+                liege = {
+                    OR = {
+                        trait = serer
+                        trait = malinke
+                    }
+                }
+                factor = 0
+            }
 		}
         
-            character_event = { id = AFRREL.102 }
+        character_event = { id = AFRREL.102 }
 	}
 	option = {
 		name = "EVTOPTC_AFRREL100"
@@ -66,9 +84,18 @@ character_event = { #Landing Event
                 }
 				factor = 2
 			}
+            modifier = {
+                liege = {
+                    OR = {
+                        trait = serer
+                        trait = dogon
+                    }
+                }
+                factor = 0
+            }
 		}
 
-            character_event = { id = AFRREL.103 }
+        character_event = { id = AFRREL.103 }
 	}
 }
 
