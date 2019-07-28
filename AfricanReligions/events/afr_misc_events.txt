@@ -237,256 +237,52 @@ character_event = {
     }
 }
 
-# Bori Selecting Patron Deities events
+# First ping event to fire events for courtiers on startup - fired on_startup, targets Pope
 character_event = {
-    id = AFRREL.050
-    desc = EVTDESC_AFRREL050
-    border = GFX_event_normal_frame_religion
-    picture = GFX_evt_afr_bori_deities_main
-
-    is_triggered_only = yes
-
-    immediate = {
-        if = {
-            limit = { is_playable = yes }
-            any_courtier = {
-                limit = {
-                    prisoner = no
-                    religion = bori
-                    age = 16
-                    has_minor_deity_trigger = no
-                    NOT = { is_playable  = yes }
-                }
-                character_event = { id = AFRREL.050 days = 1 }
-            }
-        }
-    }
-
-    option = {
-        name = EVTOPTA_AFRREL050
-        hidden_tooltip = { character_event = { id = AFRREL.051 } }
-    }
-    option = {
-        name = EVTOPTB_AFRREL050
-        hidden_tooltip = {
-            piety = 25
-            remove_character_modifier = picked_main_deity_timer
-        }
-    }
-}
-
-character_event = {
-    id = AFRREL.051
-    desc = EVTDESC_AFRREL051
-    border = GFX_event_normal_frame_religion
-    picture = GFX_evt_afr_bori_deities_choice_one
-
-    is_triggered_only = yes
-
-    option = {
-        name = EVTOPTA_AFRREL051
-
-        hidden_tooltip = { character_event = { id = AFRREL.053 } }
-    }
-
-    option = {
-        name = EVTOPTB_AFRREL051
-
-        hidden_tooltip = { character_event = { id = AFRREL.054 } }
-    }
-
-    option = {
-        name = EVTOPTC_AFRREL051
-
-        hidden_tooltip = { character_event = { id = AFRREL.055 } }
-    }
-
-    option = {
-        name = EVTOPTD_AFRREL051
-
-        hidden_tooltip = { character_event = { id = AFRREL.052 } }
-    }
-}
-
-character_event = {
-    id = AFRREL.052
-    desc = EVTDESC_AFRREL051
-    border = GFX_event_normal_frame_religion
-    picture = GFX_evt_afr_bori_deities_choice_two
-
+    id = AFRREL.033
+    hide_window = yes
     is_triggered_only = yes
     
-    option = {
-        name = EVTOPTA_AFRREL052
-
-        hidden_tooltip = { character_event = { id = AFRREL.056 } }
+    religion = catholic
+    
+    trigger = {
+        controls_religion = yes
     }
-
-    option = {
-        name = EVTOPTB_AFRREL052
-
-        hidden_tooltip = { character_event = { id = AFRREL.057 } }
-    }
-
-    option = {
-        name = EVTOPTC_AFRREL052
-
-        hidden_tooltip = { character_event = { id = AFRREL.058 } }
-    }
-
-    option = {
-        name = EVTOPTD_AFRREL052
-
-        hidden_tooltip = { character_event = { id = AFRREL.050 } }
+    
+    immediate = {
+        character_event = { id = AFRREL.034 days = 1 }
     }
 }
 
-#Picked Yan Riga
+# Second ping event - actually fires the events
 character_event = {
-    id = AFRREL.053
-    desc = EVTDESC_AFRREL053
-    border = GFX_event_normal_frame_religion
-    picture = GFX_evt_afr_bori_deities_main
-
+    id = AFRREL.034
+    hide_window = yes
     is_triggered_only = yes
-
-    option = {
-        name = EVTOPTA_AFRREL053
-
-        add_character_modifier = {
-            name = follower_of_yan_riga
-            duration = -1
+    
+    immediate = {
+        any_character = {
+            limit = {
+                OR = {
+                    religion = a_tag_roog
+                    religion = a_tag_roog_reformed
+                }
+                is_landed = no
+            }
+            character_event = { id = AFRREL.100 }  # branch fix
         }
-    }
-
-    option = {
-        name = EVTOPTB_AFRREL053
-
-        hidden_tooltip = { character_event = { id = AFRREL.051 } }
-    }
-}
-
-#Picked Babbaku
-character_event = {
-    id = AFRREL.054
-    desc = EVTDESC_AFRREL054
-    border = GFX_event_normal_frame_religion
-    picture = GFX_evt_afr_bori_deities_main
-
-    is_triggered_only = yes
-
-    option = {
-        name = EVTOPTA_AFRREL054
-
-        add_character_modifier = {
-            name = follower_of_babbaku
-            duration = -1
+        any_character = {
+            limit = {
+                OR = {
+                    religion = a_tag_roog
+                    religion = a_tag_roog_reformed
+                    religion = hindu
+                    religion = buddhist
+                    religion = jain
+                }
+                is_landed = no
+            }
+            character_event = ( id = AFRREL.032 }  # caste fix
         }
-    }
-
-    option = {
-        name = EVTOPTB_AFRREL054
-
-        hidden_tooltip = { character_event = { id = AFRREL.051 } }
-    }
-}
-
-#Picked Tan Garki
-character_event = {
-    id = AFRREL.055
-    desc = EVTDESC_AFRREL055
-    border = GFX_event_normal_frame_religion
-    picture = GFX_evt_afr_bori_deities_main
-
-    is_triggered_only = yes
-
-    option = {
-        name =  EVTOPTA_AFRREL055
-
-        add_character_modifier = {
-            name = follower_of_tan_garki
-            duration = -1
-        }
-    }
-
-    option = {
-        name = EVTOPTB_AFRREL055
-
-        hidden_tooltip = { character_event = { id = AFRREL.051 } }
-    }
-}
-
-#Picked Samari
-character_event = {
-    id = AFRREL.056
-    desc = EVTDESC_AFRREL056
-    border = GFX_event_normal_frame_religion
-    picture = GFX_evt_afr_bori_deities_main
-
-    is_triggered_only = yes
-
-    option = {
-        name =  EVTOPTA_AFRREL056
-
-        add_character_modifier = {
-            name = follower_of_samari
-            duration = -1
-        }
-    }
-
-    option = {
-        name = EVTOPTB_AFRREL056
-
-        hidden_tooltip = { character_event = { id = AFRREL.052 } }
-    }
-}
-
-#Picked Yayan Zanzanna
-character_event = {
-    id = AFRREL.057
-    desc = EVTDESC_AFRREL057
-    border = GFX_event_normal_frame_religion
-    picture = GFX_evt_afr_bori_deities_main
-
-    is_triggered_only = yes
-
-    option = {
-        name =  EVTOPTA_AFRREL057
-
-        add_character_modifier = {
-            name = follower_of_yayan_zanzanna
-            duration = -1
-        }
-    }
-
-    option = {
-        name = EVTOPTB_AFRREL057
-
-        hidden_tooltip = { character_event = { id = AFRREL.052 } }
-    }
-}
-
-#Picked Tan Dowsa
-character_event = {
-    id = AFRREL.058
-    desc = EVTDESC_AFRREL058
-    border = GFX_event_normal_frame_religion
-    picture = GFX_evt_afr_bori_deities_main
-
-    is_triggered_only = yes
-
-    option = {
-        name =  EVTOPTA_AFRREL058
-
-        add_character_modifier = {
-            name = follower_of_tan_dowa
-            duration = -1
-        }
-    }
-
-    option = {
-        name = EVTOPTB_AFRREL058
-
-        hidden_tooltip = { character_event = { id = AFRREL.052 } }
     }
 }
