@@ -46,7 +46,34 @@ character_event = { #Landing Event
             }
 		}
 
-        character_event = { id = AFRREL.101 }
+        add_trait = serer
+        
+        spouse = {
+            limit = {
+                is_landed = no
+                NOR = {
+                    trait = serer
+                    trait = dogon
+                    trait = malinke
+                }
+            }
+            add_trait = serer
+        }
+        
+        any_close_relative = {
+            limit = {
+                liege = { character = ROOT }
+                is_landed = no
+                NOR = {
+                    trait = serer
+                    trait = dogon
+                    trait = malinke
+                }
+            }
+            add_trait = serer
+        }
+        
+        hidden_tooltip = { character_event = { id = AFRREL.101 } }
 	}
 	option = {
 		name = "EVTOPTB_AFRREL100"
@@ -74,7 +101,34 @@ character_event = { #Landing Event
             }
 		}
         
-        character_event = { id = AFRREL.102 }
+        add_trait = dogon
+        
+        spouse = {
+            limit = {
+                is_landed = no
+                NOR = {
+                    trait = serer
+                    trait = dogon
+                    trait = malinke
+                }
+            }
+            add_trait = dogon
+        }
+        
+        any_close_relative = {
+            limit = {
+                liege = { character = ROOT }
+                is_landed = no
+                NOR = {
+                    trait = serer
+                    trait = dogon
+                    trait = malinke
+                }
+            }
+            add_trait = dogon
+        }
+        
+        hidden_tooltip = { character_event = { id = AFRREL.102 } }
 	}
 	option = {
 		name = "EVTOPTC_AFRREL100"
@@ -102,7 +156,34 @@ character_event = { #Landing Event
             }
 		}
 
-        character_event = { id = AFRREL.103 }
+        add_trait = malinke
+        
+        spouse = {
+            limit = {
+                is_landed = no
+                NOR = {
+                    trait = serer
+                    trait = dogon
+                    trait = malinke
+                }
+            }
+            add_trait = malinke
+        }
+        
+        any_close_relative = {
+            limit = {
+                liege = { character = ROOT }
+                is_landed = no
+                NOR = {
+                    trait = serer
+                    trait = dogon
+                    trait = malinke
+                }
+            }
+            add_trait = malinke
+        }
+        
+        hidden_tooltip = { character_event = { id = AFRREL.103 } }
 	}
 }
 
@@ -116,49 +197,10 @@ character_event = {
 
 	option = {
 		name = "EVTOPTA_AFRREL101"
-		add_trait = serer
         
         hidden_tooltip = {
             clr_character_flag = flag_picking_branch
             clr_character_flag = flag_changing_branch
-        }
-        
-        spouse = {
-            limit = {
-                is_landed = no
-                NOR = {
-                    trait = serer
-                    trait = dogon
-                    trait = malinke
-                }
-            }
-            add_trait = serer
-        }
-        
-        any_close_relative = {
-            limit = {
-                liege = { character = ROOT }
-                is_landed = no
-                NOR = {
-                    trait = serer
-                    trait = dogon
-                    trait = malinke
-                }
-            }
-            add_trait = serer
-        }
-	}
-	option = {
-		name = "EVTOPTB_AFRREL101"
-		hidden_tooltip = {
-            if = {
-                limit = { has_character_flag = flag_picking_branch }
-                character_event = { id = AFRREL.100 }
-            }
-            else = { character_event = { id = AFRREL.104 } }
-        }
-        ai_chance = {
-            factor = 0
         }
 	}
 }
@@ -173,51 +215,10 @@ character_event = {
 
 	option = {
 		name = "EVTOPTA_AFRREL102"
-		add_trait = dogon
         
         hidden_tooltip = {
             clr_character_flag = flag_picking_branch
             clr_character_flag = flag_changing_branch
-        }
-        
-        spouse = {
-            limit = {
-                is_landed = no
-                NOR = {
-                    trait = serer
-                    trait = dogon
-                    trait = malinke
-                }
-            }
-            add_trait = dogon
-        }
-        
-        any_close_relative = {
-            limit = {
-                liege = { character = ROOT }
-                is_landed = no
-                NOR = {
-                    trait = serer
-                    trait = dogon
-                    trait = malinke
-                }
-            }
-            add_trait = dogon
-        }
-	}
-	option = {
-		name = "EVTOPTB_AFRREL102"
-		hidden_tooltip = {
-            if = {
-                limit = { has_character_flag = flag_picking_branch }
-                character_event = { id = AFRREL.100 }
-            }
-            else = {
-                character_event = { id = AFRREL.104 }
-            }
-        }
-        ai_chance = {
-            factor = 0
         }
 	}
 }
@@ -232,49 +233,10 @@ character_event = {
 
 	option = {
 		name = "EVTOPTA_AFRREL103"
-		add_trait = malinke
         
         hidden_tooltip = {
             clr_character_flag = flag_picking_branch
             clr_character_flag = flag_changing_branch
-        }
-        
-        spouse = {
-            limit = {
-                is_landed = no
-                NOR = {
-                    trait = serer
-                    trait = dogon
-                    trait = malinke
-                }
-            }
-            add_trait = malinke
-        }
-        
-        any_close_relative = {
-            limit = {
-                liege = { character = ROOT }
-                is_landed = no
-                NOR = {
-                    trait = serer
-                    trait = dogon
-                    trait = malinke
-                }
-            }
-            add_trait = malinke
-        }
-	}
-	option = {
-		name = "EVTOPTB_AFRREL103"
-		hidden_tooltip = {
-            if = {
-                limit = { has_character_flag = flag_picking_branch }
-                character_event = { id = AFRREL.100 }
-            }
-            else = { character_event = { id = AFRREL.104 } }
-        }
-        ai_chance = {
-            factor = 0
         }
 	}
 }
@@ -304,7 +266,8 @@ character_event = {
 			}
 		}
 
-        character_event = { id = AFRREL.101 } 
+        add_trait = serer
+        hidden_tooltip = { character_event = { id = AFRREL.101 } }
 	}
 	option = {
 		name = "EVTOPTB_AFRREL100"
@@ -324,7 +287,8 @@ character_event = {
 			}
 		}
 
-        character_event = { id = AFRREL.102 }
+        add_trait = dogon
+        hidden_tooltip = { character_event = { id = AFRREL.102 } }
 	}
 	option = {
 		name = "EVTOPTC_AFRREL100"
@@ -344,7 +308,8 @@ character_event = {
 			}
 		}
 
-        character_event = { id = AFRREL.103 }
+        add_trait = malinke
+        hidden_tooltip = { character_event = { id = AFRREL.103 } }
 	}
     option = {
         name = EVTOPTD_AFRREL104
