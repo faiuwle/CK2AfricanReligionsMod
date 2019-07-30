@@ -212,6 +212,8 @@ vanilla_pick_main_deity;Pick Patron Deity;;;;;;;;;;;;x
 vanilla_pick_main_deity_desc;There are many gods and goddesses who rule over different aspects of our life. While all of them should be honored properly, it is common for people to pick a deity whom they pray and sacrifice to more often.;;;;;;;;;;;;x
 bori_pick_main_deity;Pick Patron Bori;;;;;;;;;;;;x
 bori_pick_main_deity_desc;It is good to have a protective spirit, therefore it would be a good idea to choose one.;;;;;;;;;;;;x
+amazigh_pick_main_deity;Pick Patron Deity;;;;;;;;;;;;x
+amazigh_pick_main_deity_desc;Many are the gods venerated by our people. But each person must devote himself to one in particular.;;;;;;;;;;;;x
 change_caste_griot;In your court as well as among the common people, gossips say that you do not deserve your titles. After all, a person of your ancestry is not made to occupy such a position. Only prejudices and superstitions, certainly, but enough for people to speak ill of you.\n\nYour Court Griot, however proposes a solution - he will compose a great poem in which he will say that all your ancestors were in fact of the correct caste. A little fib for the greater good.;;;;;;;;;;;;;x
 change_caste_no_griot;In your court as well as among the common people, gossips say that you do not deserve your titles. After all, a person of your ancestry is not made to occupy such a position. Only prejudices and superstitions, certainly, but enough for people to speak ill of you.\n\nYou will need the advice of a learned Court Griot.;;;;;;;;;;;;;x
 secretly_convert_to_bori_holy_site;Secretly Convert to Bori;;;;;;;;;;;;;x
@@ -231,6 +233,7 @@ amazigh_opinion;[amazigh.GetName] Opinion;;;;;;;;;;;;;x
 amazigh_reformed_opinion;[amazigh_reformed.GetName] Opinion;;;;;;;;;;;;;x
 follower_of_yan_riga;Follower of Yan Riga;;;;;;;;;;;;;x
 follower_of_yan_riga_desc;The Yan Riga, those who wear clothes, are the most civilized spirits. It is said that they live in cities and know about the wisdom of men who can read. Their king is Mallam Alhaji.;;;;;;;;;;;;;x
+follower_of_babbaku;Follower of Babbaku;;;;;;;;;;;;;x
 follower_of_babbaku_desc;The Babbaku, that is, the black ones, are inhabitants of rural villages. Some are farmers and other hunters. Their king is Mai-Ja-Ciki.;;;;;;;;;;;;;x
 follower_of_tan_garki;Follower of Tan Garki;;;;;;;;;;;;;x
 follower_of_tan_garki_desc;The Tan Garki, that is, the sons of the shield, are the great warriors among the spirits. Their king is Garki Baba.;;;;;;;;;;;;;x
@@ -239,7 +242,17 @@ follower_of_samari_desc;Samari, the spirits of youth but also of femininity. It'
 follower_of_yayan_zanzanna;Follower of Yanyan Zanzanna;;;;;;;;;;;;;x
 follower_of_yayan_zanzanna_desc;The Yayan Zanzanna, the children of the plague, are child spirits with dominion over any disease, spreading smallpox and other evils among mortals, Their queen is Nana Mariyamu.;;;;;;;;;;;;;x
 follower_of_tan_dowa;Follower of Tan Dowa;;;;;;;;;;;;;x
-follower_of_tan_dowa_desc;The Tan Dowa are spirits of the jungle, they do not resemble any juman but are nature in its purest state. Zaki the lion is the first among them.;;;;;;;;;;;;x
+follower_of_tan_dowa_desc;The Tan Dowa are spirits of the jungle, they do not resemble any human but are nature in its purest state. Zaki the lion is the first among them.;;;;;;;;;;;;x
+follower_of_tanit;Follower of Tanit;;;;;;;;;;;;;x
+follower_of_tanit_desc;Tanit is the mother goddess who brings the rains to the arid lands and gives fertility to women without children. The protector of old Carthage brings blessing an protection to one’s family.;;;;;;;;;;;;;x
+follower_of_anti;Follower of Änti;;;;;;;;;;;;;x
+follower_of_anti_desc;Änti or Antaeus was a powerful giant, born of the very earth, who became the most formidable fighter in the whole world because while he was in contact with his mother he became invincible.;;;;;;;;;;;;;x
+follower_of_gurzil;Follower of Gurzil;;;;;;;;;;;;;x
+follower_of_gurzil_desc;Gurzil is the great god-bull of war. Many have been the warriors who have sought his blessing on the battlefield.;;;;;;;;;;;;;x	
+follower_of_magec;Follower of Magec;;;;;;;;;;;;;x
+follower_of_magec_desc;The sun Magec is beautiful like no other and full of blessings even to those who do not revere her. He spirit is well known in the Guanche Islands, where men speak in whistles.;;;;;;;;;;;;;x
+follower_of_set;Follower of Set;;;;;;;;;;;;;x
+follower_of_set_desc;Set is a god of chaos, the desert, the wild storms and of violence among men. Set is a trickster but also a protector who fights a constant battle against death itself.;;;;;;;;;;;;;x
 secret_bori_community;Secret Bori Community;;;;;;;;;;;;;x
 secret_bori_community_desc;In secret, the faithful have organized around a small church community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
 secret_a_tag_roog_community;Secret [a_tag_roog.GetName] Community;;;;;;;;;;;;;x

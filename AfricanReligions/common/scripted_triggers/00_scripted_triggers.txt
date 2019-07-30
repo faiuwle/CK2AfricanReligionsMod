@@ -2135,6 +2135,11 @@ has_minor_deity_trigger = {
 		has_character_modifier = follower_of_samari
 		has_character_modifier = follower_of_yayan_zanzanna
 		has_character_modifier = follower_of_tan_dowa
+		has_character_modifier = follower_of_tanit
+		has_character_modifier = follower_of_anti
+		has_character_modifier = follower_of_gurzil
+		has_character_modifier = follower_of_magec
+		has_character_modifier = follower_of_set
 	}
 }
 
