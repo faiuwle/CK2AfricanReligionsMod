@@ -20,3 +20,6 @@ non_rome_revolt_desc;The citizens of [Root.GetName] have not reacted well to the
 ROMAN_CHRISTIAN_REVOLT;[Root.County.GetAdjective] Peasant Uprising;;;;;;;;;;;;x
 pick_main_deity;[PickPatronDeityReligionCheck];;;;;;;;;;;;x
 pick_main_deity_desc;[PickPatronDeityDescriptionReligionCheck];;;;;;;;;;;;x
+pick_main_deity_tooltip;§Y[Root.GetTitledFirstName]§! gets to pick a new [PatronDeity].;;;;;;;;;;;;x
+patron_deity_non_bori;patron deity to worship;;;;;;;;;;;;x
+patron_deity_bori;patron bori to follow;;;;;;;;;;;;x
