@@ -586,7 +586,7 @@ character_event = {
     }
 
     option = {
-        name = EVTOPTD_AFRREL062
+        name = EVTOPTC_AFRREL062
 
         hidden_tooltip = { character_event = { id = AFRREL.060 } }
     }
@@ -636,7 +636,7 @@ character_event = {
     }
 
     option = {
-        name = EVTOPTB_AFRREL063
+        name = EVTOPTB_AFRREL064
 
         hidden_tooltip = { character_event = { id = AFRREL.061 } }
     }
@@ -711,7 +711,7 @@ character_event = {
     }
 
     option = {
-        name = EVTOPTB_AFRREL066
+        name = EVTOPTB_AFRREL067
 
         hidden_tooltip = { character_event = { id = AFRREL.062 } }
     }
