@@ -365,23 +365,9 @@ defined_text = {
     }
 
     text = {
-        localisation_key = amazigh_pick_main_deity
-        trigger = {
-            OR = {
-                religion = amazigh
-                religion = amazigh_reformed
-            }
-        }
-    }
-
-    text = {
         localisation_key = vanilla_pick_main_deity
         trigger = {
-            NOR = {
-                religion = bori
-                religion = amazigh
-                religion = amazigh_reformed
-            }
+            NOT = { religion = bori }
         }
     }
 }
@@ -397,23 +383,9 @@ defined_text = {
     }
 
     text = {
-        localisation_key = amazigh_pick_main_deity_desc
-        trigger = {
-            OR = {
-                religion = amazigh
-                religion = amazigh_reformed
-            }
-        }
-    }
-
-    text = {
         localisation_key = vanilla_pick_main_deity_desc
         trigger = {
-            NOR = {
-                religion = bori
-                religion = amazigh
-                religion = amazigh_reformed
-            }
+            NOT = { religion = bori }
         }
     }
 }

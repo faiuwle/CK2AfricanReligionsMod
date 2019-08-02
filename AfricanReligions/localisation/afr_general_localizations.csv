@@ -213,8 +213,6 @@ vanilla_pick_main_deity;Pick Patron Deity;;;;;;;;;;;;x
 vanilla_pick_main_deity_desc;There are many gods and goddesses who rule over different aspects of our life. While all of them should be honored properly, it is common for people to pick a deity whom they pray and sacrifice to more often.;;;;;;;;;;;;x
 bori_pick_main_deity;Pick Patron Bori;;;;;;;;;;;;x
 bori_pick_main_deity_desc;It is good to have a protective spirit, therefore it would be a good idea to choose one.;;;;;;;;;;;;x
-amazigh_pick_main_deity;Pick Patron Deity;;;;;;;;;;;;x
-amazigh_pick_main_deity_desc;Many are the gods venerated by our people. But each person must devote himself to one in particular.;;;;;;;;;;;;x
 change_caste_griot;In your court as well as among the common people, gossips say that you do not deserve your titles. After all, a person of your ancestry is not made to occupy such a position. Only prejudices and superstitions, certainly, but enough for people to speak ill of you.\n\nYour Court Griot, however proposes a solution - he will compose a great poem in which he will say that all your ancestors were in fact of the correct caste. A little fib for the greater good.;;;;;;;;;;;;;x
 change_caste_no_griot;In your court as well as among the common people, gossips say that you do not deserve your titles. After all, a person of your ancestry is not made to occupy such a position. Only prejudices and superstitions, certainly, but enough for people to speak ill of you.\n\nYou will need the advice of a learned Court Griot.;;;;;;;;;;;;;x
 secretly_convert_to_bori_holy_site;Secretly Convert to Bori;;;;;;;;;;;;;x

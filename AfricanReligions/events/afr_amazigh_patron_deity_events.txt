@@ -1,3 +1,5 @@
+namespace = AFRREL
+
 # Amazigh Selecting Patron Deities events
 character_event = {
     id = AFRREL.060
@@ -120,7 +122,7 @@ character_event = {
     option = {
         name = EVTOPTC_AFRREL062
 
-        hidden_tooltip = { character_event = { id = AFRREL.060 } }
+        hidden_tooltip = { character_event = { id = AFRREL.061 } }
     }
 }
 
