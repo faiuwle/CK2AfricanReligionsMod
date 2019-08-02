@@ -174,11 +174,11 @@ mari_djata_desc;Prince Mari-Djata was born disabled and exiled from Niani by his
 set_bloodline;Blood of Set;;;;;;;;;;;;;x
 set_bloodline_desc;Set was a leader of the Zaghawa people, who left the nomadic lifestyle of his nation and founded the city of Djimi, governing as the first ruler of the Duguwa dynasty.;;;;;;;;;;;;;x
 dinga_cisse;Blood of Dinga Cisse;;;;;;;;;;;;;x
-dinga_cisse_desc;The Soninke people came together under the leadership of Dinga Cisse, who is considered the first ruler of unified Wagadou.  He established a capital at Kumbi Saleh which sat along one of the emerging Trans-Saharan trade routes, and his Empire grew to be one of richest in the the world at it's height.;;;;;;;;;;;;;x
+dinga_cisse_desc;Warrior-sorcerer Dinga Cisse is considered the first ruler of Wagadou, an Empire which grew to be one of richest in the the world.;;;;;;;;;;;;;x
 tunka_manin;Blood of Tunka Manin;;;;;;;;;;;;;x
-tunka_manin_desc;Manin is regarded as the last pagan ruler of the Wagadou Empire before an Almoravid led jihad against the Empire, triggered the Empire's collapse and the eventual conversion of Wagadou's ruling class to Islam.  Although he was ultimately defeated and temporarily vassalised by the Almoravids after the sacking of Kumbi Saleh in 1076, his was the last stand of the traditional rulers of Wagadou.;;;;;;;;;;;;;x
+tunka_manin_desc;The last pagan ruler of the Wagadou, Manin stubbornly refused to convert to Islam despite the threat of an Almoravid jihad.;;;;;;;;;;;;;x
 alayaman;Blood of Alayaman;;;;;;;;;;;;;x
-alayaman_desc;Alayman of the legendary Zuwa Dynasty, is the first recorded King of the dynasty that ruled the Kingdom of Gao for over 300 years, and transformed it into a powerhouse of the Trans-Saharan trade network.;;;;;;;;;;;;;x
+alayaman_desc;The first king of the Zuwa dynasty, Alayaman helped establish Gao as a trading powerhouse of the Sahel.;;;;;;;;;;;;;x
 carthage_bloodline;Blood of [This.GetFirstNameWithNick];;;;;;;;;;;;;x
 carthage_bloodline_desc;[This.GetTitledNameWithNick] was the magnificent ruler who presided over the rebirth of the Carthaginian Empire from the very ashes.;;;;;;;;;;;;;x
 string_reformed_religion_a_tag_roog; the ancient spiritual traditions of the Western Sahel have been unified into a single and true way of the divine, capable of resisting any foreign incursion.;;;;;;;;;;;;;x
@@ -239,6 +239,8 @@ amazigh_opinion;[amazigh.GetName] Opinion;;;;;;;;;;;;;x
 amazigh_reformed_opinion;[amazigh_reformed.GetName] Opinion;;;;;;;;;;;;;x
 a_tag_roog_opinion;[a_tag_roog.GetName] Opinion;;;;;;;;;;;;;x
 a_tag_roog_reformed_opinion;[a_tag_roog_reformed.GetName] Opinion;;;;;;;;;;;;;x
+songhay_opinion;Songhay Opinion;;;;;;;;;;;;;x
+soninke_opinion;Soninke Opinion;;;;;;;;;;;;;x
 follower_of_yan_riga;Follower of Yan Riga;;;;;;;;;;;;;x
 follower_of_yan_riga_desc;The Yan Riga, those who wear clothes, are the most civilized spirits. It is said that they live in cities and know about the wisdom of men who can read. Their king is Mallam Alhaji.;;;;;;;;;;;;;x
 follower_of_babbaku_desc;The Babbaku, that is, the black ones, are inhabitants of rural villages. Some are farmers and other hunters. Their king is Mai-Ja-Ciki.;;;;;;;;;;;;;x

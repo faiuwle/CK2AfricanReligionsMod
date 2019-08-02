@@ -22,6 +22,22 @@ amazigh_reformed_opinion = {
 	max_decimals = 0
 }
 
+songhay_opinion = {
+    show_as_percent = no
+    is_good = yes
+    is_monthly = no
+    is_hidden = no
+    max_decimals = 0
+}
+
+soninke_opinion = {
+    show_as_percent = no
+    is_good = yes
+    is_monthly = no
+    is_hidden = no
+    max_decimals = 0
+}
+
 a_tag_roog_opinion = {
     show_as_percent = no
     is_good = yes

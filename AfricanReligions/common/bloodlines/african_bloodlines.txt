@@ -40,10 +40,10 @@ mari_djata = {
 dinga_cisse = {
     inheritance = patrilineal
     allow_bastards = yes
+    combat_rating = 5
     soninke_opinion = 5
-    dynasty_opinion = 5
+    hunter_opinion = 5
     monthly_character_prestige = 0.2
-    light_cavalry = 0.05
     picture = GFX_bloodlines_symbol_african
     flags = { historical_bloodline }
 }
@@ -55,7 +55,9 @@ tunka_manin = {
     a_tag_roog_reformed_opinion = 5
     temple_vassal_opinion = 5
     monthly_character_piety = 0.1
-    morale_defense = 0.05
+    command_modifier = {
+        morale_defence = 0.05
+    }
     picture = GFX_bloodlines_symbol_african
     flags = { historical_bloodline }
 }
@@ -65,7 +67,7 @@ alayaman = {
     allow_bastards = yes
     songhay_opinion = 5
     maghreb_arabic_opinion = 5
-    monthly_character_prestige = 0.2
+    monthly_character_prestige = 0.15
     picture = GFX_bloodlines_symbol_african_waves
     flags = { historical_bloodline }
 }
@@ -73,6 +75,7 @@ alayaman = {
 set_bloodline = {
     inheritance = patrilineal
     allow_bastards = yes
+    monthly_character_prestige = 0.1
     combat_rating = 5
     tribal_opinion = 5
     picture = GFX_bloodlines_symbol_african
