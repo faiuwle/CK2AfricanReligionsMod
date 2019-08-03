@@ -1415,6 +1415,8 @@ decisions = {
 				religion = finnish_pagan
 				religion = finnish_pagan_reformed
 				religion = bori
+				religion = amazigh
+                religion = amazigh_reformed
 			}
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
@@ -1525,6 +1527,26 @@ decisions = {
 				limit = { has_character_modifier = follower_of_tan_dowa}
 				remove_character_modifier = follower_of_tan_dowa
 			}
+			if = {
+				limit = { has_character_modifier = follower_of_tanit}
+				remove_character_modifier = follower_of_tanit
+			}
+			if = {
+				limit = { has_character_modifier = follower_of_anti}
+				remove_character_modifier = follower_of_anti
+			}
+			if = {
+				limit = { has_character_modifier = follower_of_gurzil}
+				remove_character_modifier = follower_of_gurzil
+			}
+			if = {
+				limit = { has_character_modifier = follower_of_magec}
+				remove_character_modifier = follower_of_magec
+			}
+			if = {
+				limit = { has_character_modifier = follower_of_set}
+				remove_character_modifier = follower_of_set
+			}
 
 			piety = -25
 
@@ -1550,7 +1572,9 @@ decisions = {
 					finnish_pagan_reformed		= { character_event = { id = TOG.7300 } } 
 					baltic_pagan				= { character_event = { id = TOG.7400 } } 
 					baltic_pagan_reformed		= { character_event = { id = TOG.7400 } }   
-					bori						= { character_event = { id = AFRREL.0050 } }
+					bori						= { character_event = { id = AFRREL.050 } }
+					amazigh 					= { character_event = { id = AFRREL.060 } }
+					amazigh_reformed			= { character_event = { id = AFRREL.060 } }
 				}
 
 				add_character_modifier = {

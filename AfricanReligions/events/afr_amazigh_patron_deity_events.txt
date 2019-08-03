@@ -1,0 +1,197 @@
+namespace = AFRREL
+
+# Amazigh Selecting Patron Deities events
+character_event = {
+    id = AFRREL.060
+    desc = EVTDESC_AFRREL060
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_afr_amazigh_deities_main
+
+    is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = { is_playable = yes }
+            any_courtier = {
+                limit = {
+                    prisoner = no
+                    OR = {
+                        religion = amazigh
+                        religion = amazigh_reformed
+                    }
+                    age = 16
+                    has_minor_deity_trigger = no
+                    NOT = { is_playable  = yes }
+                }
+                character_event = { id = AFRREL.060 days = 1 }
+            }
+        }
+    }
+
+    option = {
+        name = EVTOPTA_AFRREL060
+        hidden_tooltip = { character_event = { id = AFRREL.061 } }
+    }
+    option = {
+        name = EVTOPTB_AFRREL060
+        hidden_tooltip = {
+            piety = 25
+            remove_character_modifier = picked_main_deity_timer
+        }
+    }
+}
+
+character_event = {
+    id = AFRREL.061
+    desc = EVTDESC_AFRREL061
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_afr_amazigh_deities_main
+
+    is_triggered_only = yes
+
+    option = {
+        name = EVTOPTA_AFRREL061
+
+        add_character_modifier = {
+            name = follower_of_tanit
+            duration = -1
+        }
+        
+        hidden_tooltip = { character_event = { id = AFRREL.063 } }
+    }
+
+    option = {
+        name = EVTOPTB_AFRREL061
+
+        add_character_modifier = {
+            name = follower_of_anti
+            duration = -1
+        }
+
+        hidden_tooltip = { character_event = { id = AFRREL.064 } }
+    }
+
+    option = {
+        name = EVTOPTC_AFRREL061
+
+        add_character_modifier = {
+            name = follower_of_gurzil
+            duration = -1
+        }
+
+        hidden_tooltip = { character_event = { id = AFRREL.065 } }
+    }
+
+    option = {
+        name = EVTOPTD_AFRREL061
+
+        hidden_tooltip = { character_event = { id = AFRREL.062 } }
+    }
+}
+
+character_event = {
+    id = AFRREL.062
+    desc = EVTDESC_AFRREL061
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_afr_amazigh_deities_main
+
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL062
+
+        add_character_modifier = {
+            name = follower_of_magec
+            duration = -1
+        }
+
+        hidden_tooltip = { character_event = { id = AFRREL.066 } }
+    }
+
+    option = {
+        name = EVTOPTB_AFRREL062
+
+        add_character_modifier = {
+            name = follower_of_set
+            duration = -1
+        }
+
+        hidden_tooltip = { character_event = { id = AFRREL.067 } }
+    }
+
+    option = {
+        name = EVTOPTC_AFRREL062
+
+        hidden_tooltip = { character_event = { id = AFRREL.061 } }
+    }
+}
+
+#Picked Tanit
+character_event = {
+    id = AFRREL.063
+    desc = EVTDESC_AFRREL063
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_afr_amazigh_deities_main
+
+    is_triggered_only = yes
+
+    option = {
+        name = EVTOPTA_AFRREL063
+    }
+}
+
+#Picked Anti
+character_event = {
+    id = AFRREL.064
+    desc = EVTDESC_AFRREL064
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_afr_amazigh_deities_main
+
+    is_triggered_only = yes
+
+    option = {
+        name = EVTOPTA_AFRREL064
+    }
+}
+
+#Picked Gurzil
+character_event = {
+    id = AFRREL.065
+    desc = EVTDESC_AFRREL065
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_afr_amazigh_deities_main
+
+    is_triggered_only = yes
+
+    option = {
+        name =  EVTOPTA_AFRREL065
+    }
+}
+
+#Picked Magec
+character_event = {
+    id = AFRREL.066
+    desc = EVTDESC_AFRREL066
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_afr_amazigh_deities_main
+
+    is_triggered_only = yes
+
+    option = {
+        name =  EVTOPTA_AFRREL066
+    }
+}
+
+#Picked Set
+character_event = {
+    id = AFRREL.067
+    desc = EVTDESC_AFRREL067
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_afr_amazigh_deities_main
+
+    is_triggered_only = yes
+
+    option = {
+        name =  EVTOPTA_AFRREL067
+    }
+}
