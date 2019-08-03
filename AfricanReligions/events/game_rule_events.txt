@@ -6857,6 +6857,18 @@ character_event = { # Generate 'Fake Family' for characters without any
                     remove_trait = wangara
                     add_trait = foro
                 }
+                if = {
+                    limit = { trait = serer }
+                    new_character = { add_trait = serer }
+                }
+                else_if = {
+                    limit = { trait = dogon }
+                    new_character = { add_trait = dogon }
+                }
+                else_if = {
+                    limit = { trait = malinke }
+                    new_character = { add_trait = malinke }
+                }
             }
 		}
 		else_if = {
@@ -6912,6 +6924,18 @@ character_event = { # Generate 'Fake Family' for characters without any
                     remove_trait = wangara
                     add_trait = foro
                 }
+                if = {
+                    limit = { trait = serer }
+                    new_character = { add_trait = serer }
+                }
+                else_if = {
+                    limit = { trait = dogon }
+                    new_character = { add_trait = dogon }
+                }
+                else_if = {
+                    limit = { trait = malinke }
+                    new_character = { add_trait = malinke }
+                }
             }
 		}
 		else_if = {
@@ -6940,7 +6964,47 @@ character_event = { # Generate 'Fake Family' for characters without any
     			DUKE = { prestige = 200 }
     			COUNT = { prestige = 100 }
     		}
-		}
+            if = {
+                limit = { has_dharmic_religion_trigger = yes trait = kshatriya }
+                new_character = {
+                    remove_trait = brahmin
+                    remove_trait = vaishya
+                    remove_trait = foro
+                    remove_trait = jakhanke
+                    remove_trait = wangara
+                    add_trait = kshatriya
+                }
+            }
+            if = {
+                limit = {
+                    OR = {
+                        religion = a_tag_roog
+                        religion = a_tag_roog_reformed
+                    }
+                    trait = foro
+                }
+                new_character = {
+                    remove_trait = brahmin
+                    remove_trait = kshatriya
+                    remove_trait = vaishya
+                    remove_trait = jakhanke
+                    remove_trait = wangara
+                    add_trait = foro
+                }
+                if = {
+                    limit = { trait = serer }
+                    new_character = { add_trait = serer }
+                }
+                else_if = {
+                    limit = { trait = dogon }
+                    new_character = { add_trait = dogon }
+                }
+                else_if = {
+                    limit = { trait = malinke }
+                    new_character = { add_trait = malinke }
+                }
+            }
+        }
 		else_if = {
 			limit = {
 				is_married = no
@@ -6993,6 +7057,18 @@ character_event = { # Generate 'Fake Family' for characters without any
                     remove_trait = jakhanke
                     remove_trait = wangara
                     add_trait = foro
+                }
+                if = {
+                    limit = { trait = serer }
+                    new_character = { add_trait = serer }
+                }
+                else_if = {
+                    limit = { trait = dogon }
+                    new_character = { add_trait = dogon }
+                }
+                else_if = {
+                    limit = { trait = malinke }
+                    new_character = { add_trait = malinke }
                 }
             }
 		}
@@ -7049,6 +7125,18 @@ character_event = { # Generate 'Fake Family' for characters without any
                     remove_trait = wangara
                     add_trait = foro
                 }
+                if = {
+                    limit = { trait = serer }
+                    new_character = { add_trait = serer }
+                }
+                else_if = {
+                    limit = { trait = dogon }
+                    new_character = { add_trait = dogon }
+                }
+                else_if = {
+                    limit = { trait = malinke }
+                    new_character = { add_trait = malinke }
+                }
             }
 		}
 		else_if = {
@@ -7103,6 +7191,18 @@ character_event = { # Generate 'Fake Family' for characters without any
                     remove_trait = jakhanke
                     remove_trait = wangara
                     add_trait = foro
+                }
+                if = {
+                    limit = { trait = serer }
+                    new_character = { add_trait = serer }
+                }
+                else_if = {
+                    limit = { trait = dogon }
+                    new_character = { add_trait = dogon }
+                }
+                else_if = {
+                    limit = { trait = malinke }
+                    new_character = { add_trait = malinke }
                 }
             }
 		}
@@ -7159,6 +7259,18 @@ character_event = { # Generate 'Fake Family' for characters without any
                     remove_trait = wangara
                     add_trait = foro
                 }
+                if = {
+                    limit = { trait = serer }
+                    new_character = { add_trait = serer }
+                }
+                else_if = {
+                    limit = { trait = dogon }
+                    new_character = { add_trait = dogon }
+                }
+                else_if = {
+                    limit = { trait = malinke }
+                    new_character = { add_trait = malinke }
+                }
             }
 		}
 		else_if = {
@@ -7214,6 +7326,18 @@ character_event = { # Generate 'Fake Family' for characters without any
                     remove_trait = wangara
                     add_trait = foro
                 }
+                if = {
+                    limit = { trait = serer }
+                    new_character = { add_trait = serer }
+                }
+                else_if = {
+                    limit = { trait = dogon }
+                    new_character = { add_trait = dogon }
+                }
+                else_if = {
+                    limit = { trait = malinke }
+                    new_character = { add_trait = malinke }
+                }
             }
 		}
 		else_if = {
@@ -7267,6 +7391,18 @@ character_event = { # Generate 'Fake Family' for characters without any
                     remove_trait = jakhanke
                     remove_trait = wangara
                     add_trait = foro
+                }
+                if = {
+                    limit = { trait = serer }
+                    new_character = { add_trait = serer }
+                }
+                else_if = {
+                    limit = { trait = dogon }
+                    new_character = { add_trait = dogon }
+                }
+                else_if = {
+                    limit = { trait = malinke }
+                    new_character = { add_trait = malinke }
                 }
             }
 		}
@@ -8076,6 +8212,7 @@ character_event = { # Generate 'Fake Family' for characters without any
 		
 		any_child = {
 			character_event = { id = RoI.30121 } # Set religious branch to liege's branch
+            character_event = { id = AFRREL.100 }
 		}
 		
 		any_child = { # Fix for children not getting any traits

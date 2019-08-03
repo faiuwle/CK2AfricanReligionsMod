@@ -194,6 +194,8 @@ salt_county_succ_tooltip;§Y[Root.GetTitledFirstName]§! takes all occupied territ
 salt_rome_tooltip;The §YChristian§! world is outraged by your actions.\nThe destruction of the city and the §YHoly See§! has gravely affected the §YMoral Authority§! of the §YCatholic Church§!, as well as the faith of Rome's former owner.\nYou loot §Y2000§! gold from the city.;;;;;;;;;;;;;x
 salt_constantinople_tooltip;The §YChristian§! world is outraged by your actions.\nThe destruction of the city has gravely affected the §YMoral Authority§! of the §YOrthodox Church§!, as well as the faith of Constantinople's former owner.\nYou loot §Y2000§! gold from the city.;;;;;;;;;;;;;x
 salt_carthage_capital_tooltip;The §YAmazigh§! world is outraged by your actions.\nThe destruction of the city has gravely affected the §YMoral Authority§! of the §YChurch of the Amazigh People§!.\nYou loot §Y2000§! gold from the city.;;;;;;;;;;;;;x
+pick_religious_tradition_tooltip;Choose a religious tradition to follow.;;;;;;;;;;;;;x
+tooltip_change_a_tag_roog_branch;You will choose a new path.;;;;;;;;;;;;;x
 eldership_rules_afr;Eldership;;;;;;;;;;;;;x
 religion_feature_a_tag_roog;Way of the Divine;;;;;;;;;;;;;x
 religion_feature_a_tag_roog_desc;In order to edify the faith we shall unify the many traditions of life and divination practiced by the different nations of the land.;;;;;;;;;;;;;x
@@ -223,6 +225,10 @@ secretly_convert_to_a_tag_roog_reformed_holy_site;Secretly Convert to A Tat Roog
 secretly_convert_to_a_tag_roog_reformed_holy_site_desc;The §YA Tat Roog§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
 secretly_convert_to_amazigh_holy_site;Secretly Convert to Amazigh;;;;;;;;;;;;;x
 secretly_convert_to_amazigh_holy_site_desc;The §YAmazigh§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+pick_a_tat_roog_religious_tradition;Choose a Religious Tradition;;;;;;;;;;;;;x
+pick_a_tat_roog_religious_tradition_desc;There are many religious traditions in the Western Sahel, each with its own internal organization. It is possible to dedicate yourself fully to one of them.;;;;;;;;;;;;;x
+change_a_tat_roog_branch;Choose a Religious Tradition;;;;;;;;;;;;;x
+change_a_tat_roog_branch_desc;Many are the religious traditions of the Western Sahel.  Once per lifetime a ruler may choose different path.;;;;;;;;;;;;;x
 african_revival;African Revival;;;;;;;;;;;;;x
 amazigh_resurgence;Amazigh Resurgence;;;;;;;;;;;;;x
 constantinople_destroyed;Constantinople Burned;;;;;;;;;;;;;x
@@ -267,6 +273,12 @@ heir_of_dihya;Heir of Dihya;;;;;;;;;;;;;x
 heir_of_dihya_desc;This character has fought for the Amazigh faith as Queen Dihya did in the days of yore.;;;;;;;;;;;;;x
 suffete;Suffete;;;;;;;;;;;;;x
 suffete_desc;This character is the highest magistrate of the Carthaginian Empire.;;;;;;;;;;;;;x
+serer;Serer;;;;;;;;;;;;;x
+serer_desc;This character follows the Serer spiritual tradition. The Serer refer to the supreme god as Roog, the primordial twins as Yaab and Yop, and the great star Sirius as Yoonir. They believe that creation is divided in the three worlds: the invisible world, the terrestrial world and the nocturnal world.;;;;;;;;;;;;;x
+dogon;Dogon;;;;;;;;;;;;;x
+dogon_desc;This character follows the Dogon spiritual tradition.  The Dogon refer to the supreme god as Amma, the primordial twins as the Nommo, and the great star Sirius as Sigui; they are also masters of astronomy.;;;;;;;;;;;;;x
+malinke;Malinke;;;;;;;;;;;;;x
+malinke_desc;This character follows the Malinke spiritual tradition. Malinke are masters in the manipulation of the Nyama, the life force that unites all things; they refer to the supreme god as Mangala and the primordial twins as Pemba and Faro.;;;;;;;;;;;;;x
 HEIR_OF_HANNIBAL;heir of Hannibal;;;;;;;;;;;;;x
 HEIR_OF_DIDO;heir of Dido;;;;;;;;;;;;;x
 FAKE_PHOENICIAN;fake Phoenician;;;;;;;;;;;;;x

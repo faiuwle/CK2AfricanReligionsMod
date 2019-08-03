@@ -403,6 +403,98 @@ decisions = {
             factor = 1
         }
     }
+    
+	pick_a_tat_roog_religious_tradition = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 12
+        
+		potential = {
+			is_playable = yes
+			is_adult = yes
+			OR = {
+				religion = a_tag_roog
+				religion = a_tag_roog_reformed
+			}
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			NOR = {
+                trait = serer
+                trait = dogon
+                trait = malinke
+			}
+            NOT = { has_character_flag = flag_picking_branch }
+		}
+		allow = {
+			prisoner = no
+            NOT = { trait = incapable }
+		}
+		effect = {
+			custom_tooltip = {
+				text = pick_religious_tradition_tooltip
+                set_character_flag = flag_picking_branch
+				character_event = { id = AFRREL.100 }
+				add_character_modifier = { modifier = picked_pagan_branch_cooldown years = 5 hidden = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+            
+			modifier = {
+				factor = 1.5
+				trait = zealous
+			}
+		}
+	}
+    
+	change_a_tat_roog_branch = {
+		only_playable = yes
+		ai = no
+
+		potential = {
+			is_adult = yes
+			OR = {
+                trait = serer
+                trait = dogon
+                trait = malinke
+            }
+			NOT = { has_character_flag = flag_changing_branch }
+			NOT = { has_character_flag = flag_changed_branch }
+            OR = {
+                religion = a_tag_roog
+                religion = a_tag_roog_reformed
+            }
+		}
+		
+		allow = {
+			prisoner = no
+			NOT = { trait = incapable }
+			custom_tooltip = { text = pagan_branch_timer 
+				hidden_tooltip = { NOT = { has_character_modifier = picked_pagan_branch_cooldown } } 
+			}
+		}
+		
+		effect = {
+			custom_tooltip = {
+				text = tooltip_change_a_tag_roog_branch
+			}
+			hidden_tooltip = {
+				set_character_flag = flag_changing_branch
+				set_character_flag = flag_changed_branch
+				character_event = { id = AFRREL.104 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }
 
 title_decisions = {

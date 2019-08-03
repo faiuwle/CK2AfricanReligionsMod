@@ -1,0 +1,321 @@
+################################################
+#
+# Events for Religious Traditions
+#
+#################################################
+
+namespace = AFRREL
+
+character_event = { #Landing Event
+	id = AFRREL.100
+	desc = "EVTDESC_AFRREL100"
+	picture = "GFX_evt_tribal_shrine"
+
+	is_triggered_only = yes
+    
+    trigger = {
+        OR = {
+            religion = a_tag_roog
+            religion = a_tag_roog_reformed
+        }
+    }
+
+	option = {
+		name = "EVTOPTA_AFRREL100"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_education_diplomacy_trigger = yes
+				factor = 2
+			}
+			modifier = {
+                OR = {
+                    trait = gregarious
+                    trait = socializer
+                }
+				factor = 2
+			}
+            modifier = {
+                liege = {
+                    OR = {
+                        trait = dogon
+                        trait = malinke
+                    }
+                }
+                factor = 0
+            }
+		}
+
+        add_trait = serer
+        
+        spouse = {
+            limit = {
+                is_landed = no
+                NOR = {
+                    trait = serer
+                    trait = dogon
+                    trait = malinke
+                }
+            }
+            add_trait = serer
+        }
+        
+        any_close_relative = {
+            limit = {
+                liege = { character = ROOT }
+                is_landed = no
+                NOR = {
+                    trait = serer
+                    trait = dogon
+                    trait = malinke
+                }
+            }
+            add_trait = serer
+        }
+        
+        hidden_tooltip = { character_event = { id = AFRREL.101 } }
+	}
+	option = {
+		name = "EVTOPTB_AFRREL100"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_education_learning_trigger = yes
+				factor = 2
+			}
+			modifier = {
+                OR = {
+                    trait = erudite
+                    trait = scholar
+                }
+				factor = 2
+			}
+            modifier = {
+                liege = {
+                    OR = {
+                        trait = serer
+                        trait = malinke
+                    }
+                }
+                factor = 0
+            }
+		}
+        
+        add_trait = dogon
+        
+        spouse = {
+            limit = {
+                is_landed = no
+                NOR = {
+                    trait = serer
+                    trait = dogon
+                    trait = malinke
+                }
+            }
+            add_trait = dogon
+        }
+        
+        any_close_relative = {
+            limit = {
+                liege = { character = ROOT }
+                is_landed = no
+                NOR = {
+                    trait = serer
+                    trait = dogon
+                    trait = malinke
+                }
+            }
+            add_trait = dogon
+        }
+        
+        hidden_tooltip = { character_event = { id = AFRREL.102 } }
+	}
+	option = {
+		name = "EVTOPTC_AFRREL100"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_education_martial_trigger = yes
+				factor = 2
+			}
+			modifier = {
+                OR = {
+                    trait = brave
+                    trait = duelist
+                }
+				factor = 2
+			}
+            modifier = {
+                liege = {
+                    OR = {
+                        trait = serer
+                        trait = dogon
+                    }
+                }
+                factor = 0
+            }
+		}
+
+        add_trait = malinke
+        
+        spouse = {
+            limit = {
+                is_landed = no
+                NOR = {
+                    trait = serer
+                    trait = dogon
+                    trait = malinke
+                }
+            }
+            add_trait = malinke
+        }
+        
+        any_close_relative = {
+            limit = {
+                liege = { character = ROOT }
+                is_landed = no
+                NOR = {
+                    trait = serer
+                    trait = dogon
+                    trait = malinke
+                }
+            }
+            add_trait = malinke
+        }
+        
+        hidden_tooltip = { character_event = { id = AFRREL.103 } }
+	}
+}
+
+# Serer
+character_event = {
+	id = AFRREL.101
+	desc = "EVTDESC_AFRREL101"
+	picture = "GFX_evt_magic_ritual"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA_AFRREL101"
+        
+        hidden_tooltip = {
+            clr_character_flag = flag_picking_branch
+            clr_character_flag = flag_changing_branch
+        }
+	}
+}
+
+# Dogon
+character_event = {
+	id = AFRREL.102
+	desc = "EVTDESC_AFRREL102"
+	picture = "GFX_evt_comet"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA_AFRREL102"
+        
+        hidden_tooltip = {
+            clr_character_flag = flag_picking_branch
+            clr_character_flag = flag_changing_branch
+        }
+	}
+}
+
+# Malinke
+character_event = {
+	id = AFRREL.103
+	desc = "EVTDESC_AFRREL103"
+	picture = "GFX_evt_battle"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA_AFRREL103"
+        
+        hidden_tooltip = {
+            clr_character_flag = flag_picking_branch
+            clr_character_flag = flag_changing_branch
+        }
+	}
+}
+
+character_event = {
+    id = AFRREL.104
+    desc = EVTDESC_AFRREL104
+    picture = GFX_evt_tribal_shrine
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = "EVTOPTA_AFRREL100"
+        trigger = { NOT = { trait = serer } }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_education_diplomacy_trigger = yes
+				factor = 2
+			}
+			modifier = {
+                OR = {
+                    trait = gregarious
+                    trait = socializer
+                }
+				factor = 2
+			}
+		}
+
+        add_trait = serer
+        hidden_tooltip = { character_event = { id = AFRREL.101 } }
+	}
+	option = {
+		name = "EVTOPTB_AFRREL100"
+        trigger = { NOT = { trait = dogon } }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_education_learning_trigger = yes
+				factor = 2
+			}
+			modifier = {
+                OR = {
+                    trait = erudite
+                    trait = scholar
+                }
+				factor = 2
+			}
+		}
+
+        add_trait = dogon
+        hidden_tooltip = { character_event = { id = AFRREL.102 } }
+	}
+	option = {
+		name = "EVTOPTC_AFRREL100"
+        trigger = { NOT = { trait = malinke } }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_education_martial_trigger = yes
+				factor = 2
+			}
+			modifier = {
+                OR = {
+                    trait = brave
+                    trait = duelist
+                }
+				factor = 2
+			}
+		}
+
+        add_trait = malinke
+        hidden_tooltip = { character_event = { id = AFRREL.103 } }
+	}
+    option = {
+        name = EVTOPTD_AFRREL104
+        hidden_tooltip = {
+            clr_character_flag = flag_changed_branch
+            clr_character_flag = flag_changing_branch
+        }
+    }
+}
