@@ -10071,7 +10071,7 @@
 		birth = yes
 	}
     937.1.1 = {
-        religion = karijite
+        religion = kharijite
     }
 	975.6.6={
 		death = yes
@@ -10080,7 +10080,7 @@
 273117 = { 
 	name="Sakkum"
 	dynasty=1069088
-	religion="karijite"
+	religion="kharijite"
 	culture = maghreb_arabic #tagelmust
 	father = 273116
 	959.4.4={
@@ -10093,7 +10093,7 @@
 273118 = { 
 	name="Wattas"
 	dynasty=1069088
-	religion="karijite"
+	religion="kharijite"
 	culture = maghreb_arabic #tagelmust
 	father = 273117
 	993.4.4={
@@ -10106,7 +10106,7 @@
 273119 = { 
 	name="Tilankan"
 	dynasty=1069088
-	religion="karijite"
+	religion="kharijite"
 	culture = maghreb_arabic #tagelmust
 	father = 273118
 	1029.4.4={
