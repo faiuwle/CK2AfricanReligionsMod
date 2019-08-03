@@ -238,7 +238,7 @@ bori_opinion;Bori Opinion;;;;;;;;;;;;;x
 amazigh_opinion;[amazigh.GetName] Opinion;;;;;;;;;;;;;x
 amazigh_reformed_opinion;[amazigh_reformed.GetName] Opinion;;;;;;;;;;;;;x
 a_tag_roog_opinion;[a_tag_roog.GetName] Opinion;;;;;;;;;;;;;x
-a_tag_roog_reformed_opinion;[a_tag_roog_reformed.GetName] Opinion;;;;;;;;;;;;;x
+a_tag_roog_reformed_opinion;Reformed [a_tag_roog_reformed.GetName] Opinion;;;;;;;;;;;;;x
 songhay_opinion;Songhay Opinion;;;;;;;;;;;;;x
 soninke_opinion;Soninke Opinion;;;;;;;;;;;;;x
 follower_of_yan_riga;Follower of Yan Riga;;;;;;;;;;;;;x
