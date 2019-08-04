@@ -136,3 +136,100 @@ character_event = {
         }
     }
 }
+
+#Fix courtiers spawning with the wrong castes
+character_event = {
+    id = AFRREL.032
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        OR = {
+            AND = {
+                OR = {
+                    religion = jain
+                    religion = hindu
+                    religion = buddhist
+                }
+                OR = {
+                    trait = wangara
+                    trait = jakhanke
+                    trait = foro
+                }
+            }
+            AND = {
+                OR = {
+                    religion = a_tag_roog
+                    religion = a_tag_roog_reformed
+                }
+                OR = {
+                    trait = brahmin
+                    trait = kshatriya
+                    trait = vaishya
+                }
+            }
+        }
+    }
+
+    immediate = {
+        if = {
+            limit = {
+                OR = {
+                    religion = a_tag_roog
+                    religion = a_tag_roog_reformed
+                }
+                if = {
+                    limit = {
+                        trait = brahmin
+                    }
+                    remove_trait = brahmin
+                    add_trait = jakhanke
+                }
+                else_if = {
+                    limit = {
+                        trait = kshatriya
+                    }
+                    remove_trait = kshatriya
+                    add_trait = foro
+                }
+                else_if = {
+                    limit = {
+                        trait = vaishya
+                    }
+                    remove_trait = vaishya
+                    add_trait = wangara
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                OR = {
+                    religion = jain
+                    religion = hindu
+                    religion = buddhist
+                }
+            }
+            if = {
+                limit = {
+                    trait = jakhanke
+                }
+                remove_trait = jakhanke
+                add_trait = brahmin
+            }
+            else_if = {
+                limit = {
+                    trait = foro
+                }
+                remove_trait = foro
+                add_trait = kshatriya
+            }
+            else_if = {
+                limit = {
+                    trait = wangara
+                }
+                remove_trait = wangara
+                add_trait = vaishya
+            }
+        }
+    }
+}

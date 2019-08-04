@@ -32,3 +32,69 @@ secret_amazigh_reformed_community = {
 		society_member_of = secret_religious_society_amazigh_reformed
 	}
 }
+
+follower_of_yan_riga = {
+	learning = 2
+	martial = -1
+	icon = 48
+}
+
+follower_of_babbaku = {
+	stewardship = 2
+	martial = -1
+	icon = 48
+}
+
+follower_of_tan_garki = {
+	martial = 2
+	stewardship = -1
+	icon = 48
+}
+
+follower_of_samari = {
+	diplomacy = 2
+	intrigue = -1
+	icon = 48
+}
+
+follower_of_yayan_zanzanna = {
+	plot_power_modifier = 0.2
+	defensive_plot_power_modifier = -0.15
+	icon = 48
+}
+
+follower_of_tan_dowa = {
+	combat_rating = 10
+	diplomacy = -1
+	icon = 48
+}
+
+follower_of_tanit = {
+	dynasty_opinion = 10
+	defensive_plot_power_modifier = -0.15
+	icon = 48
+}
+
+follower_of_anti = {
+	combat_rating = 10
+	diplomacy = -1
+	icon = 48
+}
+
+follower_of_gurzil = {
+	martial = 2
+	learning = -1
+	icon = 48
+}
+
+follower_of_magec = {
+	stewardship = 2
+	intrigue = -1
+	icon = 48
+}
+
+follower_of_set = {
+	intrigue = 2
+	martial = -1
+	icon = 48
+}

@@ -236,3 +236,53 @@ character_event = {
         }
     }
 }
+
+# First ping event to fire events for courtiers on startup - fired on_startup, targets Pope
+character_event = {
+    id = AFRREL.033
+    hide_window = yes
+    is_triggered_only = yes
+    
+    religion = catholic
+    
+    trigger = {
+        controls_religion = yes
+    }
+    
+    immediate = {
+        character_event = { id = AFRREL.034 days = 1 }
+    }
+}
+
+# Second ping event - actually fires the events
+character_event = {
+    id = AFRREL.034
+    hide_window = yes
+    is_triggered_only = yes
+    
+    immediate = {
+        any_character = {
+            limit = {
+                OR = {
+                    religion = a_tag_roog
+                    religion = a_tag_roog_reformed
+                }
+                is_landed = no
+            }
+            character_event = { id = AFRREL.100 }  # branch fix
+        }
+        any_character = {
+            limit = {
+                OR = {
+                    religion = a_tag_roog
+                    religion = a_tag_roog_reformed
+                    religion = hindu
+                    religion = buddhist
+                    religion = jain
+                }
+                is_landed = no
+            }
+            character_event = ( id = AFRREL.032 }  # caste fix
+        }
+    }
+}

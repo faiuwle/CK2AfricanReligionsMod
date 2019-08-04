@@ -92,6 +92,18 @@ targetted_decisions = {
 				limit = { liege = { trait = pagan_branch_4 } }
 				add_trait = pagan_branch_4
 			}
+            if = {
+                limit = { liege = { trait = serer } }
+                add_trait = serer
+            }
+            if = {
+                limit = { liege = { trait = dogon } }
+                add_trait = dogon
+            }
+            if = {
+                limit = { liege = { trait = malinke } }
+                add_trait = malinke
+            }
 		}
 		revoke_allowed = {
 			always = no
@@ -194,6 +206,18 @@ targetted_decisions = {
 					limit = { ROOT = { trait = pagan_branch_4 } }
 					add_trait = pagan_branch_4
 				}
+                if = {
+                    limit = { ROOT = { trait = serer } }
+                    add_trait = serer
+                }
+                if = {
+                    limit = { ROOT = { trait = dogon } }
+                    add_trait = dogon
+                }
+                if = {
+                    limit = { ROOT = { trait = malinke } }
+                    add_trait = malinke
+                }
 			}
 		}
 		revoke_allowed = {
@@ -1169,6 +1193,8 @@ targetted_decisions = {
 				religion = west_african_pagan
 				religion = bon
 				religion = hellenic_pagan
+                religion = a_tag_roog
+                religion = amazigh
 			}
 		}
 		allow = {
@@ -1213,6 +1239,14 @@ targetted_decisions = {
 				limit = { religion = hellenic_pagan }
 				religion = hellenic_pagan_reformed
 			}
+            if = {
+                limit = { religion = a_tag_roog }
+                religion = a_tag_roog_reformed
+            }
+            if = {
+                limit = { religion = amazigh }
+                religion = amazigh_reformed
+            }
 			
 			hidden_tooltip = {
 				any_courtier = {
@@ -1325,6 +1359,14 @@ targetted_decisions = {
 						religion = hellenic_pagan
 						hellenic_pagan_reformed = { has_religion_feature = religion_proselytizing }
 					}
+                    AND = {
+                        religion = a_tag_roog
+                        a_tag_roog_reformed = { has_religion_feature = religion_proselytizing }
+                    }
+                    AND = {
+                        religion = amazigh
+                        amazigh_reformed = { has_religion_feature = religion_proselytizing }
+                    }
 				}
 			}
 		}
@@ -2900,6 +2942,30 @@ targetted_decisions = {
 					}
 					add_trait = pagan_branch_4
 				}
+                if = {
+                    limit = {
+                        ROOT = {
+                            trait = serer
+                        }
+                    }
+                    add_trait = serer
+                }
+                if = {
+                    limit = {
+                        ROOT = {
+                            trait = dogon
+                        }
+                    }
+                    add_trait = dogon
+                }
+                if = {
+                    limit = {
+                        ROOT = {
+                            trait = malinke
+                        }
+                    }
+                    add_trait = malinke
+                }
 				
 				hidden_tooltip = {
 					religion_authority = {

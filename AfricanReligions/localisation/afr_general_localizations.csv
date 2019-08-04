@@ -21,9 +21,10 @@ GOD_GARKI_BABA;Garki Baba;;;;;;;;;;;;;x
 GOD_ZAKI;Zaki;;;;;;;;;;;;;x
 GOD_THE_YAYAN_ZANZANNA;The yayan zanzanna;;;;;;;;;;;;;x
 GOD_ROOG;Roog;;;;;;;;;;;;;x
-GOD_MENDISS;Mendiss;;;;;;;;;;;;;x
-GOD_TIURAKH;Tiurakh;;;;;;;;;;;;;x
-GOD_TAAHKARR;Taahkarr;;;;;;;;;;;;;x
+GOD_DONGO;Dongo;;;;;;;;;;;;;x
+GOD_KONDOLON;Kondolon;;;;;;;;;;;;;x
+GOD_SANE;Sané;;;;;;;;;;;;;x
+MOUSSO_KORONI;Mousso Koroni;;;;;;;;;;;;;x
 GOD_THE_EVIL_PANGOOLS;The evil pangools;;;;;;;;;;;;;x
 GOD_TANIT;Tanit;;;;;;;;;;;;;x
 GOD_ANTI;Änti;;;;;;;;;;;;;x
@@ -193,6 +194,8 @@ salt_county_succ_tooltip;§Y[Root.GetTitledFirstName]§! takes all occupied territ
 salt_rome_tooltip;The §YChristian§! world is outraged by your actions.\nThe destruction of the city and the §YHoly See§! has gravely affected the §YMoral Authority§! of the §YCatholic Church§!, as well as the faith of Rome's former owner.\nYou loot §Y2000§! gold from the city.;;;;;;;;;;;;;x
 salt_constantinople_tooltip;The §YChristian§! world is outraged by your actions.\nThe destruction of the city has gravely affected the §YMoral Authority§! of the §YOrthodox Church§!, as well as the faith of Constantinople's former owner.\nYou loot §Y2000§! gold from the city.;;;;;;;;;;;;;x
 salt_carthage_capital_tooltip;The §YAmazigh§! world is outraged by your actions.\nThe destruction of the city has gravely affected the §YMoral Authority§! of the §YChurch of the Amazigh People§!.\nYou loot §Y2000§! gold from the city.;;;;;;;;;;;;;x
+pick_religious_tradition_tooltip;Choose a religious tradition to follow.;;;;;;;;;;;;;x
+tooltip_change_a_tag_roog_branch;You will choose a new path.;;;;;;;;;;;;;x
 eldership_rules_afr;Eldership;;;;;;;;;;;;;x
 religion_feature_a_tag_roog;Way of the Divine;;;;;;;;;;;;;x
 religion_feature_a_tag_roog_desc;In order to edify the faith we shall unify the many traditions of life and divination practiced by the different nations of the land.;;;;;;;;;;;;;x
@@ -208,6 +211,10 @@ become_wangara;Forge an Ancestry;;;;;;;;;;;;;x
 become_wangara_desc;[ChangeATagRoogCasteDesc];;;;;;;;;;;;;x
 reform_carthage;Restore the Carthaginian Empire;;;;;;;;;;;;;x
 reform_carthage_desc;Long ago the great Carthaginian empire perished under the Roman sword. The time has come to see its glory reborn.;;;;;;;;;;;;;x
+vanilla_pick_main_deity;Pick Patron Deity;;;;;;;;;;;;x
+vanilla_pick_main_deity_desc;There are many gods and goddesses who rule over different aspects of our life. While all of them should be honored properly, it is common for people to pick a deity whom they pray and sacrifice to more often.;;;;;;;;;;;;x
+bori_pick_main_deity;Pick Patron Bori;;;;;;;;;;;;x
+bori_pick_main_deity_desc;It is good to have a protective spirit, therefore it would be a good idea to choose one.;;;;;;;;;;;;x
 change_caste_griot;In your court as well as among the common people, gossips say that you do not deserve your titles. After all, a person of your ancestry is not made to occupy such a position. Only prejudices and superstitions, certainly, but enough for people to speak ill of you.\n\nYour Court Griot, however proposes a solution - he will compose a great poem in which he will say that all your ancestors were in fact of the correct caste. A little fib for the greater good.;;;;;;;;;;;;;x
 change_caste_no_griot;In your court as well as among the common people, gossips say that you do not deserve your titles. After all, a person of your ancestry is not made to occupy such a position. Only prejudices and superstitions, certainly, but enough for people to speak ill of you.\n\nYou will need the advice of a learned Court Griot.;;;;;;;;;;;;;x
 secretly_convert_to_bori_holy_site;Secretly Convert to Bori;;;;;;;;;;;;;x
@@ -218,6 +225,10 @@ secretly_convert_to_a_tag_roog_reformed_holy_site;Secretly Convert to A Tat Roog
 secretly_convert_to_a_tag_roog_reformed_holy_site_desc;The §YA Tat Roog§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
 secretly_convert_to_amazigh_holy_site;Secretly Convert to Amazigh;;;;;;;;;;;;;x
 secretly_convert_to_amazigh_holy_site_desc;The §YAmazigh§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+pick_a_tat_roog_religious_tradition;Choose a Religious Tradition;;;;;;;;;;;;;x
+pick_a_tat_roog_religious_tradition_desc;There are many religious traditions in the Western Sahel, each with its own internal organization. It is possible to dedicate yourself fully to one of them.;;;;;;;;;;;;;x
+change_a_tat_roog_branch;Choose a Religious Tradition;;;;;;;;;;;;;x
+change_a_tat_roog_branch_desc;Many are the religious traditions of the Western Sahel.  Once per lifetime a ruler may choose different path.;;;;;;;;;;;;;x
 african_revival;African Revival;;;;;;;;;;;;;x
 amazigh_resurgence;Amazigh Resurgence;;;;;;;;;;;;;x
 constantinople_destroyed;Constantinople Burned;;;;;;;;;;;;;x
@@ -225,6 +236,28 @@ carthage_capital_destroyed;Carthage Burned;;;;;;;;;;;;;x
 bori_opinion;Bori Opinion;;;;;;;;;;;;;x
 amazigh_opinion;[amazigh.GetName] Opinion;;;;;;;;;;;;;x
 amazigh_reformed_opinion;[amazigh_reformed.GetName] Opinion;;;;;;;;;;;;;x
+follower_of_yan_riga;Follower of Yan Riga;;;;;;;;;;;;;x
+follower_of_yan_riga_desc;The Yan Riga, those who wear clothes, are the most civilized spirits. It is said that they live in cities and know about the wisdom of men who can read. Their king is Mallam Alhaji.;;;;;;;;;;;;;x
+follower_of_babbaku;Follower of Babbaku;;;;;;;;;;;;;x
+follower_of_babbaku_desc;The Babbaku, that is, the black ones, are inhabitants of rural villages. Some are farmers and other hunters. Their king is Mai-Ja-Ciki.;;;;;;;;;;;;;x
+follower_of_tan_garki;Follower of Tan Garki;;;;;;;;;;;;;x
+follower_of_tan_garki_desc;The Tan Garki, that is, the sons of the shield, are the great warriors among the spirits. Their king is Garki Baba.;;;;;;;;;;;;;x
+follower_of_samari;Follower of Samari;;;;;;;;;;;;;x
+follower_of_samari_desc;Samari, the spirits of youth but also of femininity. It's a very colorful group. Their king is Ba-Gudu.;;;;;;;;;;;;;x
+follower_of_yayan_zanzanna;Follower of Yanyan Zanzanna;;;;;;;;;;;;;x
+follower_of_yayan_zanzanna_desc;The Yayan Zanzanna, the children of the plague, are child spirits with dominion over any disease, spreading smallpox and other evils among mortals, Their queen is Nana Mariyamu.;;;;;;;;;;;;;x
+follower_of_tan_dowa;Follower of Tan Dowa;;;;;;;;;;;;;x
+follower_of_tan_dowa_desc;The Tan Dowa are spirits of the jungle, they do not resemble any human but are nature in its purest state. Zaki the lion is the first among them.;;;;;;;;;;;;x
+follower_of_tanit;Follower of Tanit;;;;;;;;;;;;;x
+follower_of_tanit_desc;Tanit is the mother goddess who brings the rains to the arid lands and gives fertility to women without children. The protector of old Carthage brings blessing an protection to one’s family.;;;;;;;;;;;;;x
+follower_of_anti;Follower of Änti;;;;;;;;;;;;;x
+follower_of_anti_desc;Änti or Antaeus was a powerful giant, born of the very earth, who became the most formidable fighter in the whole world because while he was in contact with his mother he became invincible.;;;;;;;;;;;;;x
+follower_of_gurzil;Follower of Gurzil;;;;;;;;;;;;;x
+follower_of_gurzil_desc;Gurzil is the great god-bull of war. Many have been the warriors who have sought his blessing on the battlefield.;;;;;;;;;;;;;x	
+follower_of_magec;Follower of Magec;;;;;;;;;;;;;x
+follower_of_magec_desc;The sun Magec is beautiful like no other and full of blessings even to those who do not revere her. He spirit is well known in the Guanche Islands, where men speak in whistles.;;;;;;;;;;;;;x
+follower_of_set;Follower of Set;;;;;;;;;;;;;x
+follower_of_set_desc;Set is a god of chaos, the desert, the wild storms and of violence among men. Set is a trickster but also a protector who fights a constant battle against death itself.;;;;;;;;;;;;;x
 secret_bori_community;Secret Bori Community;;;;;;;;;;;;;x
 secret_bori_community_desc;In secret, the faithful have organized around a small church community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
 secret_a_tag_roog_community;Secret [a_tag_roog.GetName] Community;;;;;;;;;;;;;x
@@ -251,6 +284,12 @@ heir_of_dihya;Heir of Dihya;;;;;;;;;;;;;x
 heir_of_dihya_desc;This character has fought for the Amazigh faith as Queen Dihya did in the days of yore.;;;;;;;;;;;;;x
 suffete;Suffete;;;;;;;;;;;;;x
 suffete_desc;This character is the highest magistrate of the Carthaginian Empire.;;;;;;;;;;;;;x
+serer;Serer;;;;;;;;;;;;;x
+serer_desc;This character follows the Serer spiritual tradition. The Serer refer to the supreme god as Roog, the primordial twins as Yaab and Yop, and the great star Sirius as Yoonir. They believe that creation is divided in the three worlds: the invisible world, the terrestrial world and the nocturnal world.;;;;;;;;;;;;;x
+dogon;Dogon;;;;;;;;;;;;;x
+dogon_desc;This character follows the Dogon spiritual tradition.  The Dogon refer to the supreme god as Amma, the primordial twins as the Nommo, and the great star Sirius as Sigui; they are also masters of astronomy.;;;;;;;;;;;;;x
+malinke;Malinke;;;;;;;;;;;;;x
+malinke_desc;This character follows the Malinke spiritual tradition. Malinke are masters in the manipulation of the Nyama, the life force that unites all things; they refer to the supreme god as Mangala and the primordial twins as Pemba and Faro.;;;;;;;;;;;;;x
 HEIR_OF_HANNIBAL;heir of Hannibal;;;;;;;;;;;;;x
 HEIR_OF_DIDO;heir of Dido;;;;;;;;;;;;;x
 FAKE_PHOENICIAN;fake Phoenician;;;;;;;;;;;;;x
