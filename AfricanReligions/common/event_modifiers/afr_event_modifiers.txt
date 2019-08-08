@@ -98,3 +98,18 @@ follower_of_set = {
 	martial = -1
 	icon = 48
 }
+
+tanit_blessing = {
+	icon = 39
+	fertility = 0.2
+}
+
+voice_of_samari = {
+	icon = 3
+	general_opinion = 10
+}
+
+voice_of_tanit = {
+	icon = 3
+	general_opinion = 10
+}

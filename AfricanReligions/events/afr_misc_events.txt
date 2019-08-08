@@ -282,7 +282,7 @@ character_event = {
                 }
                 is_landed = no
             }
-            character_event = ( id = AFRREL.032 }  # caste fix
+            character_event = { id = AFRREL.032 }  # caste fix
         }
     }
 }

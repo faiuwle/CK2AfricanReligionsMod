@@ -2146,6 +2146,8 @@ character_event = {
 							has_character_modifier = follower_of_dievas
 							has_character_modifier = follower_of_akka
 							has_character_modifier = follower_of_ayyur
+							has_character_modifier = follower_of_samari
+							has_character_modifier = follower_of_tanit
 						}
 					}
 					character_event = { id = TOG.7500 }
@@ -2159,6 +2161,10 @@ character_event = {
 							has_character_modifier = follower_of_taipo_and_mielikki
 							has_character_modifier = follower_of_dongo
 							has_character_modifier = follower_of_perun
+							has_character_modifier = follower_of_tan_garki
+							has_character_modifier = follower_of_tan_dowa
+							has_character_modifier = follower_of_anti
+							has_character_modifier = follower_of_gurzil
 						}
 					}
 					character_event = { id = TOG.7501 }
@@ -2172,6 +2178,8 @@ character_event = {
 							has_character_modifier = follower_of_ukko
 							has_character_modifier = follower_of_bida
 							has_character_modifier = follower_of_jarilo
+							has_character_modifier = follower_of_babbaku
+							has_character_modifier = follower_of_magec
 						}
 					}
 					character_event = { id = TOG.7502 }
@@ -2185,6 +2193,8 @@ character_event = {
 							has_character_modifier = follower_of_lempo
 							has_character_modifier = follower_of_veles
 							has_character_modifier = follower_of_anansi
+							has_character_modifier = follower_of_yayan_zanzanna
+							has_character_modifier = follower_of_set
 						}
 					}
 					character_event = { id = TOG.7503 }
@@ -2196,6 +2206,7 @@ character_event = {
 						OR = {
 							has_character_modifier = follower_of_tsumburbura
 							has_character_modifier = follower_of_morana
+							has_character_modifier = follower_of_yan_riga
 						}
 					}
 					character_event = { id = TOG.7504 }
@@ -2279,6 +2290,50 @@ character_event = {
 							AND = {
 								has_character_modifier = follower_of_zemyna
 								ROOT = { has_character_modifier = follower_of_zemyna }
+							}
+							AND = {
+								has_character_modifier = follower_of_yan_riga
+								ROOT = { has_character_modifier = follower_of_yan_riga }
+							}
+							AND = {
+								has_character_modifier = follower_of_babbaku
+								ROOT = { has_character_modifier = follower_of_babbaku }
+							}
+							AND = {
+								has_character_modifier = follower_of_tan_garki
+								ROOT = { has_character_modifier = follower_of_tan_garki }
+							}
+							AND = {
+								has_character_modifier = follower_of_samari
+								ROOT = { has_character_modifier = follower_of_samari }
+							}
+							AND = {
+								has_character_modifier = follower_of_yayan_zanzanna
+								ROOT = { has_character_modifier = follower_of_yayan_zanzanna }
+							}
+							AND = {
+								has_character_modifier = follower_of_tan_dowa
+								ROOT = { has_character_modifier = follower_of_tan_dowa }
+							}
+							AND = {
+								has_character_modifier = follower_of_tanit
+								ROOT = { has_character_modifier = follower_of_tanit }
+							}
+							AND = {
+								has_character_modifier = follower_of_anti
+								ROOT = { has_character_modifier = follower_of_anti }
+							}
+							AND = {
+								has_character_modifier = follower_of_gurzil
+								ROOT = { has_character_modifier = follower_of_gurzil }
+							}
+							AND = {
+								has_character_modifier = follower_of_magec
+								ROOT = { has_character_modifier = follower_of_magec }
+							}
+							AND = {
+								has_character_modifier = follower_of_set
+								ROOT = { has_character_modifier = follower_of_set }
 							}
 						}
 					}
@@ -2388,6 +2443,7 @@ character_event = {
 						OR = {
 							has_character_modifier = follower_of_lempo
 							has_character_modifier = follower_of_jarilo
+							has_character_modifier = follower_of_samari
 						}
 						any_courtier_or_vassal = {
 							NOT = { is_close_relative = ROOT }
@@ -2422,6 +2478,7 @@ character_event = {
 								has_fair_trait_trigger = yes
 								has_character_modifier = follower_of_lempo
 								has_character_modifier = follower_of_jarilo
+								has_character_modifier = follower_of_samari
 							}
 						}
 						save_event_target_as = pagan_lover
@@ -2446,6 +2503,7 @@ character_event = {
 							has_character_modifier = follower_of_zemyna
 							has_character_modifier = follower_of_tsumburbura
 							has_character_modifier = follower_of_akka
+							has_character_modifier = follower_of_tanit
 						}
 					}
 					random_spouse = {
@@ -2473,6 +2531,7 @@ character_event = {
 							has_character_modifier = follower_of_morana
 							has_character_modifier = follower_of_veles
 							has_character_modifier = follower_of_velnias
+							has_character_modifier = follower_of_yayan_zanzanna
 						}
 					}
 					any_courtier = {
@@ -2509,7 +2568,12 @@ character_event = {
 				}
 				#Hunting dieties
 				if = {
-					limit = { has_character_modifier = follower_of_taipo_and_mielikki }
+					limit = { 
+						OR = {
+							has_character_modifier = follower_of_taipo_and_mielikki 
+							has_character_modifier = follower_of_tan_dowa
+						}
+					}
 					character_event = { id = TOG.7517 }
 				} 
 			}
@@ -2523,6 +2587,10 @@ character_event = {
 							has_character_modifier = follower_of_taipo_and_mielikki
 							has_character_modifier = follower_of_dongo
 							has_character_modifier = follower_of_perun
+							has_character_modifier = follower_of_tan_garki
+							has_character_modifier = follower_of_tan_dowa
+							has_character_modifier = follower_of_anti
+							has_character_modifier = follower_of_gurzil
 						}
 					}
 					character_event = { id = TOG.7516 }
@@ -2534,6 +2602,8 @@ character_event = {
 							has_character_modifier = follower_of_dievas
 							has_character_modifier = follower_of_akka
 							has_character_modifier = follower_of_ayyur
+							has_character_modifier = follower_of_samari
+							has_character_modifier = follower_of_tanit
 						}
 					}
 					character_event = { id = TOG.7518 }
@@ -2546,6 +2616,8 @@ character_event = {
 							has_character_modifier = follower_of_ukko
 							has_character_modifier = follower_of_bida
 							has_character_modifier = follower_of_jarilo
+							has_character_modifier = follower_of_babbaku
+							has_character_modifier = follower_of_magec
 						}
 					}
 					character_event = { id = TOG.7520 }
@@ -2557,6 +2629,8 @@ character_event = {
 							has_character_modifier = follower_of_velnias
 							has_character_modifier = follower_of_lempo
 							has_character_modifier = follower_of_veles
+							has_character_modifier = follower_of_yayan_zanzanna
+							has_character_modifier = follower_of_set
 						}
 					}
 					character_event = { id = TOG.7522 }
@@ -2567,6 +2641,7 @@ character_event = {
 						OR = {
 							has_character_modifier = follower_of_tsumburbura
 							has_character_modifier = follower_of_morana
+							has_character_modifier = follower_of_yan_riga
 						}
 					}
 					character_event = { id = TOG.7524 }
@@ -2621,6 +2696,14 @@ character_event = {
 				religion = tengri_pagan_reformed
 				FROM = { religion = tengri_pagan }
 			}
+			AND = {
+				religion = amazigh_reformed
+				FROM = { religion = amazigh }
+			}
+			AND = {
+				religion = a_tag_roog
+				FROM = { religion = a_tag_roog_reformed }
+			}
 		}
 	}
 
@@ -2649,6 +2732,17 @@ character_event = {
 		remove_character_modifier = zemynas_blessing
 		remove_character_modifier = tsumburburas_blessing
 		remove_character_modifier = akkas_blessing
+		remove_character_modifier = follower_of_yan_riga
+		remove_character_modifier = follower_of_babbaku
+		remove_character_modifier = follower_of_tan_garki
+		remove_character_modifier = follower_of_samari
+		remove_character_modifier = follower_of_yayan_zanzanna
+		remove_character_modifier = follower_of_tan_dowa
+		remove_character_modifier = follower_of_tanit
+		remove_character_modifier = follower_of_anti
+		remove_character_modifier = follower_of_gurzil
+		remove_character_modifier = follower_of_magec
+		remove_character_modifier = follower_of_set
 	}
 }
 
@@ -3571,6 +3665,16 @@ character_event = {
 		text = EVTDESC_TOG_7500_AYYUR
 		picture = GFX_evt_family
 	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_samari }
+		text = EVTDESC_105_SAMARI
+		picture = GFX_evt_magic_ritual
+	}
+	desc = {
+		trigger = {has_character_modifier = follower_of_tanit }
+		text = EVTDESC_105_TANIT
+		picture = GFX_evt_diplomatic_greeting
+	}
 
 	is_triggered_only = yes
 	hide_from = yes
@@ -3608,6 +3712,26 @@ character_event = {
 		trigger = { has_character_modifier = follower_of_perun }
 		text = EVTDESC_TOG_7501_PERUN
 		picture = GFX_evt_viking_battle_oldgods
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_tan_garki }
+		text = EVTDESC_105_TAN_GARKI
+		picture = GFX_evt_campfire_hf
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_tan_dowa }
+		text = EVTDESC_105_TAN_DOWA
+		picture = GFX_evt_mysterious_forest
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_anti }
+		text = EVTDESC_105_ANTI
+		picture = GFX_evt_afr_berber_wrestling
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_gurzil }
+		text = EVTDESC_105_GURZIL
+		picture = GFX_evt_moors
 	}
 
 	is_triggered_only = yes
@@ -3647,6 +3771,16 @@ character_event = {
 		text = EVTDESC_TOG_7502_JARILO
 		picture = GFX_evt_tribal_lands
 	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_babbaku }
+		text = EVTDESC_105_BABBAKU
+		picture = GFX_evt_tribal_lands
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_magec }
+		text = EVTDESC_105_MAGEC
+		picture = GFX_evt_tribal_lands
+	}
 
 	is_triggered_only = yes
 	hide_from = yes
@@ -3681,6 +3815,14 @@ character_event = {
 		trigger = { has_character_modifier = follower_of_anansi }
 		text = EVTDESC_TOG_7503_ANANSI
 	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_yayan_zanzanna }
+		text = EVTDESC_105_YAYAN_ZANZANNA
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_set }
+		text = EVTDESC_105_SET
+	}
 
 	is_triggered_only = yes
 	hide_from = yes
@@ -3706,6 +3848,10 @@ character_event = {
 	desc = {
 		trigger = { has_character_modifier = follower_of_morana }
 		text = EVTDESC_TOG_7503_MORANA
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_yan_riga }
+		text = EVTDESC_105_YAN_RIGA
 	}
 
 	is_triggered_only = yes
@@ -3815,6 +3961,61 @@ character_event = {
 	desc = {
 		trigger = { has_character_modifier = follower_of_velnias }
 		text = EVTDESC_TOG_7506_VELNIAS
+		picture = GFX_evt_spymaster
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_yan_riga }
+		text = EVTDESC_106_YAN_RIGA
+		picture = GFX_evt_tribal_shrine
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_babbaku }
+		text = EVTDESC_106_BABBAKU
+		picture = GFX_evt_tribal_lands
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_tan_garki }
+		text = EVTDESC_106_TAN_GARKI
+		picture = GFX_evt_hunt
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_samari }
+		text = EVTDESC_106_SAMARI
+		picture = GFX_evt_brothel
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_yayan_zanzanna }
+		text = EVTDESC_106_YAYAN_ZANZANNA
+		picture = GFX_evt_sickness_hf
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_tan_dowa }
+		text = EVTDESC_106_TAN_DOWA
+		picture = GFX_evt_mysterious_forest
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_tanit }
+		text = EVTDESC_106_TANIT
+		picture = GFX_evt_tribal_shrine
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_anti }
+		text = EVTDESC_106_ANTI
+		picture = GFX_evt_afr_berber_wrestling
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_gurzil }
+		text = EVTDESC_106_GURZIL
+		picture = GFX_evt_hunt
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_magec }
+		text = EVTDESC_106_MAGEC
+		picture = GFX_evt_tribal_lands
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_set }
+		text = EVTDESC_106_SET
 		picture = GFX_evt_spymaster
 	}
 
@@ -4026,6 +4227,10 @@ character_event = {
 		trigger = { has_character_modifier = follower_of_jarilo }
 		text = EVTDESC_TOG_7510_JARILO
 	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_samari }
+		text = EVTDESC_107_SAMARI
+	}
 
 	is_triggered_only = yes
 
@@ -4038,6 +4243,10 @@ character_event = {
 		name = {
 			trigger = { has_character_modifier = follower_of_jarilo }
 			text = EVTOPTA_TOG_7510_JARILO
+		}
+		name = {
+			trigger = { has_character_modifier = follower_of_samari }
+			text = EVTOPTA_107_SAMARI
 		}
 
 		add_trait_lustful_effect = yes
@@ -4104,6 +4313,10 @@ character_event = {
 		trigger = { has_character_modifier = follower_of_akka }
 		text = EVTDESC_TOG_7510_AKKA
 	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_tanit }
+		text = EVTDESC_108_TANIT
+	}
 
 	is_triggered_only = yes
 
@@ -4112,6 +4325,7 @@ character_event = {
 			has_character_modifier = zemynas_blessing
 			has_character_modifier = tsumburburas_blessing
 			has_character_modifier = akkas_blessing
+			has_character_modifier = tanit_blessing
 		}
 	}
 
@@ -4153,6 +4367,13 @@ character_event = {
 			limit = { has_character_modifier = follower_of_akka }
 			add_character_modifier = {
 				name = akkas_blessing
+				years = 5
+			}
+		}
+		if = {
+			limit = { has_character_modifier = follower_of_tanit }
+			add_character_modifier = {
+				name = tanit_blessing
 				years = 5
 			}
 		}
@@ -4248,7 +4469,11 @@ character_event = {
 		name = {
 			trigger = { has_character_modifier = follower_of_velnias }
 			text = EVTOPTA_TOG_7514_VELNIAS
-		} 
+		}
+		name = {
+			trigger = { has_character_modifier = follower_of_yayan_zanzanna }
+			text = EVTOPTA_109_YAYAN_ZANZANNA
+		}
 		custom_tooltip = { text = EVTOPTA_TOG_7514_TOOLTIP }
 
 		random = {
@@ -4323,6 +4548,10 @@ character_event = {
 			trigger = { has_character_modifier = follower_of_velnias }
 			text = EVTOPTB_TOG_7514_VELNIAS
 		} 
+		name = {
+			trigger = { has_character_modifier = follower_of_yayan_zanzanna }
+			text = EVTOPTB_109_YAYAN_ZANZANNA
+		}
 		custom_tooltip = { text = EVTOPTB_TOG_7514_TOOLTIP }
 
 		random = {
@@ -4434,6 +4663,10 @@ character_event = {
 			trigger = { has_character_modifier = follower_of_velnias }
 			text = EVTOPTA_TOG_7515_VELNIAS
 		} 
+		name = {
+			trigger = { has_character_modifier = follower_of_yayan_zanzanna }
+			text = EVTOPTC_109_YAYAN_ZANZANNA
+		}
 
 		FROM = {
 			clr_character_flag = inspiring_tale
@@ -4470,6 +4703,10 @@ character_event = {
 			trigger = { has_character_modifier = follower_of_velnias }
 			text = EVTOPTB_TOG_7515_VELNIAS
 		} 
+		name = {
+			trigger = { has_character_modifier = follower_of_yayan_zanzanna }
+			text = EVTOPTD_109_YAYAN_ZANZANNA
+		}
 
 		FROM = {
 			clr_character_flag = dull_tale
@@ -4507,6 +4744,10 @@ character_event = {
 			trigger = { has_character_modifier = follower_of_velnias }
 			text = EVTOPTA_TOG_7515_VELNIAS
 		} 
+		name = {
+			trigger = { has_character_modifier = follower_of_yayan_zanzanna }
+			text = EVTOPTC_109_YAYAN_ZANZANNA
+		}
 
 		FROM = {
 			clr_character_flag = hardening_tale
@@ -4544,6 +4785,10 @@ character_event = {
 			trigger = { has_character_modifier = follower_of_velnias }
 			text = EVTOPTB_TOG_7515_VELNIAS
 		} 
+		name = {
+			trigger = { has_character_modifier = follower_of_yayan_zanzanna }
+			text = EVTOPTD_109_YAYAN_ZANZANNA
+		}
 
 		FROM = {
 			clr_character_flag = scary_tale
@@ -4594,6 +4839,22 @@ character_event = {
 		trigger = { has_character_modifier = follower_of_perun }
 		text = EVTDESC_TOG_7516_PERUN
 	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_tan_garki }
+		text = EVTDESC_11O_TAN_GARKI
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_tan_dowa }
+		text = EVTDESC_11O_TAN_DOWA
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_anti }
+		text = EVTDESC_110_ANTI
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_gurzil }
+		text = EVTDESC_110_GURZIL
+	}
 
 	hide_from = yes
 
@@ -4605,7 +4866,33 @@ character_event = {
 			text = EVTOPTA_TOG_7516_A
 		} 
 		name = {
-			trigger = { NOT = { has_character_modifier = follower_of_taipo_and_mielikki } }
+			trigger = { 
+				OR = {
+					has_character_modifier = follower_of_tan_garki 
+					has_character_modifier = follower_of_tan_dowa
+				}
+			}
+			text = EVTOPTA_110_BORI
+		}
+		name = {
+			trigger = { 
+				OR = {
+					has_character_modifier = follower_of_anti
+					has_character_modifier = follower_of_gurzil
+				}
+			}
+			text = EVTOPTA_110_AMAZIGH
+		}
+		name = {
+			trigger = { 
+				NOR = { 
+					has_character_modifier = follower_of_taipo_and_mielikki 
+					has_character_modifier = follower_of_tan_garki 
+					has_character_modifier = follower_of_tan_dowa
+					has_character_modifier = follower_of_anti
+					has_character_modifier = follower_of_gurzil
+				}
+			}
 			text = EVTOPTA_TOG_7516_B
 		} 
 
@@ -4645,7 +4932,6 @@ character_event = {
 	id = TOG.7518
 	border = GFX_event_normal_frame_diplomacy
 	picture = GFX_evt_princess_byzantine
-
 	
 	desc = {
 		trigger = { has_character_modifier = follower_of_dievas }
@@ -4660,6 +4946,16 @@ character_event = {
 		text = EVTDESC_TOG_7518_AYYUR
 		picture = GFX_evt_emissary_arabic
 	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_samari }
+		text = EVTDESC_110_SAMARI
+		picture = GFX_evt_feast_arabic
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_tanit }
+		text = EVTDESC_110_TANIT
+		picture = GFX_evt_feast_arabic
+	}
 
 	hide_from = yes
 
@@ -4671,7 +4967,16 @@ character_event = {
 			text = EVTOPTA_TOG_7518_A
 		} 
 		name = {
-			trigger = { NOT = { has_character_modifier = follower_of_dievas } }
+			trigger = { has_character_modifier = follower_of_samari }
+			text = EVTOPTA_110_SAMARI
+		}
+		name = {
+			trigger = { 
+				NOT = { 
+					has_character_modifier = follower_of_dievas 
+					has_character_modifier = follower_of_samari
+				} 
+			}
 			text = EVTOPTA_TOG_7518_B
 		} 
 
@@ -4693,6 +4998,20 @@ character_event = {
 			limit = { has_character_modifier = follower_of_ayyur }
 			add_character_modifier = {
 				name = voice_of_ayyur
+				years = 10
+			}
+		}
+		if = {
+			limit = { has_character_modifier = follower_of_samari }
+			add_character_modifier = {
+				name = voice_of_samari
+				years = 10
+			}
+		}
+		if = {
+			limit = { has_character_modifier = follower_of_tanit }
+			add_character_modifier = {
+				name = voice_of_tanit
 				years = 10
 			}
 		}
@@ -4722,6 +5041,15 @@ character_event = {
 		trigger = { has_character_modifier = follower_of_bida }
 		text = EVTDESC_TOG_7520_BIDA
 		picture = GFX_evt_market_byzantine
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_babbaku }
+		text = EVTDESC_110_BABBAKU
+		picture = GFX_evt_market_altaic
+	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_magec }
+		text = EVTDESC_110_MAGEC
 	}
 
 	hide_from = yes
@@ -4810,6 +5138,20 @@ character_event = {
 	}
 	desc = {
 		trigger = { 
+			has_character_modifier = follower_of_yayan_zanzanna 
+			event_target:god_plot_target = { character = ROOT }
+		}
+		text = EVTDESC_110_YAYAN_ZANZANNA_ME
+	}
+	desc = {
+		trigger = { 
+			has_character_modifier = follower_of_set
+			event_target:god_plot_target = { character = ROOT }
+		}
+		text = EVTDESC_110_SET_ME
+	}
+	desc = {
+		trigger = { 
 			has_character_modifier = follower_of_lempo 
 			NOT = { event_target:god_plot_target = { character = ROOT } }
 		}
@@ -4829,7 +5171,20 @@ character_event = {
 		}
 		text = EVTDESC_TOG_7522_VELES
 	}
-	
+	desc = {
+		trigger = { 
+			has_character_modifier = follower_of_yayan_zanzanna
+			NOT = { event_target:god_plot_target = { character = ROOT } }
+		}
+		text = EVTDESC_110_YAYAN_ZANZANNA
+	}
+	desc = {
+		trigger = { 
+			has_character_modifier = follower_of_set
+			NOT = { event_target:god_plot_target = { character = ROOT } }
+		}
+		text = EVTDESC_110_SET
+	}
 	trigger = {
 		any_realm_character = {
 			has_plot = yes
@@ -4908,6 +5263,10 @@ character_event = {
 		trigger = { has_character_modifier = follower_of_morana }
 		text = EVTDESC_TOG_7524_MORANA
 	}
+	desc = {
+		trigger = { has_character_modifier = follower_of_yan_riga }
+		text = EVTDESC_110_YAN_RIGA
+	}
 
 	is_triggered_only = yes
 
@@ -4946,6 +5305,8 @@ character_event = {
 			OR = {
 				religion = west_african_pagan
 				religion = west_african_pagan_reformed
+				religion = amazigh
+				religion = amazigh_reformed
 			}
 		}
 		text = EVTDESC_TOG_7526
@@ -5038,6 +5399,50 @@ character_event = {
 			trigger = { has_character_modifier = follower_of_dan }
 			text = EVTOPTA_TOG_7526_DAN
 		}
+		name = {
+			trigger = { has_character_modifier = follower_of_yan_riga }
+			text = EVTOPTA_111_YAN_RIGA
+		}
+		name = {
+			trigger = { has_character_modifier = follower_of_babbaku }
+			text = EVTOPTA_111_BABBAKU
+		}
+		name = {
+			trigger = { has_character_modifier = follower_of_tan_garki }
+			text = EVTOPTA_111_TAN_GARKI
+		}
+		name = {
+			trigger = { has_character_modifier = follower_of_samari }
+			text = EVTOPTA_111_SAMARI
+		}
+		name = {
+			trigger = { has_character_modifier = follower_of_yayan_zanzanna }
+			text = EVTOPTA_111_YAYAN_ZANZANN
+		}
+		name = {
+			trigger = { has_character_modifier = follower_of_tan_dowa }
+			text = EVTOPTA_111_TAN_DOWA
+		}
+		name = {
+			trigger = { has_character_modifier = follower_of_tanit }
+			text = EVTOPTA_111_TANIT
+		}
+		name = {
+			trigger = { has_character_modifier = follower_of_anti }
+			text = EVTOPTA_111_ANTI
+		}
+		name = {
+			trigger = { has_character_modifier = follower_of_gurzil }
+			text = EVTOPTA_111_GURZIL
+		}
+		name = {
+			trigger = { has_character_modifier = follower_of_magec }
+			text = EVTOPTA_111_MAGEC
+		}
+		name = {
+			trigger = { has_character_modifier = follower_of_set }
+			text = EVTOPTA_111_SET
+		}
 
 		custom_tooltip = { text = EVTOPTA_TOG_7525_TOOLTIP }
 
@@ -5108,6 +5513,8 @@ character_event = {
 			OR = {
 				religion = west_african_pagan
 				religion = west_african_pagan_reformed
+				religion = amazigh
+				religion = amazigh_reformed
 			}
 		}
 		text = EVTDESC_TOG_7527_ANCESTORS
@@ -5242,6 +5649,83 @@ character_event = {
 			has_character_modifier = follower_of_dan
 		}
 		text = EVTDESC_TOG_7527_DAN
+	}
+	desc = {
+		trigger = { 
+			NOT = { has_character_flag = monument_for_ancestors }
+			has_character_modifier = follower_of_yan_riga
+		}
+		text = EVTDESC_112_YAN_RIGA
+	}
+	desc = {
+		trigger = { 
+			NOT = { has_character_flag = monument_for_ancestors }
+			has_character_modifier = follower_of_babbaku
+		}
+		text = EVTDESC_112_BABBAKU
+	}
+	desc = {
+		trigger = { 
+			NOT = { has_character_flag = monument_for_ancestors }
+			has_character_modifier = follower_of_tan_garki
+		}
+		text = EVTDESC_112_TAN_GARKI
+	}
+	desc = {
+		trigger = { 
+			NOT = { has_character_flag = monument_for_ancestors }
+			has_character_modifier = follower_of_samari
+		}
+		text = EVTDESC_112_SAMARI
+	}
+	desc = {
+		trigger = { 
+			NOT = { has_character_flag = monument_for_ancestors }
+			has_character_modifier = follower_of_yayan_zanzanna
+		}
+		text = EVTDESC_112_YAYAN_ZANZANNA
+	}
+	desc = {
+		trigger = { 
+			NOT = { has_character_flag = monument_for_ancestors }
+			has_character_modifier = follower_of_tan_dowa
+		}
+		text = EVTDESC_112_TAN_DOWA
+	}
+	desc = {
+		trigger = { 
+			NOT = { has_character_flag = monument_for_ancestors }
+			has_character_modifier = follower_of_tanit
+		}
+		text = EVTDESC_112_TANIT
+	}
+	desc = {
+		trigger = { 
+			NOT = { has_character_flag = monument_for_ancestors }
+			has_character_modifier = follower_of_anti
+		}
+		text = EVTDESC_112_ANTI
+	}
+	desc = {
+		trigger = { 
+			NOT = { has_character_flag = monument_for_ancestors }
+			has_character_modifier = follower_of_gurzil
+		}
+		text = EVTDESC_112_GURZIL
+	}
+	desc = {
+		trigger = { 
+			NOT = { has_character_flag = monument_for_ancestors }
+			has_character_modifier = follower_of_magec
+		}
+		text = EVTDESC_112_MAGEC
+	}
+	desc = {
+		trigger = { 
+			NOT = { has_character_flag = monument_for_ancestors }
+			has_character_modifier = follower_of_set
+		}
+		text = EVTDESC_112_SET
 	}
 
 	is_triggered_only = yes
