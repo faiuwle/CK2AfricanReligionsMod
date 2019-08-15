@@ -196,6 +196,7 @@ salt_constantinople_tooltip;The §YChristian§! world is outraged by your actions.
 salt_carthage_capital_tooltip;The §YAmazigh§! world is outraged by your actions.\nThe destruction of the city has gravely affected the §YMoral Authority§! of the §YChurch of the Amazigh People§!.\nYou loot §Y2000§! gold from the city.;;;;;;;;;;;;;x
 pick_religious_tradition_tooltip;Choose a religious tradition to follow.;;;;;;;;;;;;;x
 tooltip_change_a_tag_roog_branch;You will choose a new path.;;;;;;;;;;;;;x
+hawan_sallah_elephant_prepare_tooltip;You will prepare an elephant for the parade.;;;;;;;;;;;;;x
 eldership_rules_afr;Eldership;;;;;;;;;;;;;x
 religion_feature_a_tag_roog;Way of the Divine;;;;;;;;;;;;;x
 religion_feature_a_tag_roog_desc;In order to edify the faith we shall unify the many traditions of life and divination practiced by the different nations of the land.;;;;;;;;;;;;;x
@@ -268,6 +269,7 @@ secret_amazigh_community;Secret [amazigh.GetName] Community;;;;;;;;;;;;;x
 secret_amazigh_community_desc;In secret, the faithful have organized around a small church community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
 secret_amazigh_reformed_community;Secret [amazigh_reformed.GetName] Community;;;;;;;;;;;;;x
 secret_amazigh_reformed_community_desc;In secret, the faithful have organized around a small church community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
+holding_hawan_sallah;Holding a Hawan Sallah parade;;;;;;;;;;;;;x
 sympathy_african;Sympathy for Africans;;;;;;;;;;;;;x
 sympathy_african_desc;This character, though not a worshipper of the African gods, has a special sympathy and understanding for the African faiths and their practitioners.;;;;;;;;;;;;;x
 foro;Foro;;;;;;;;;;;;;x
