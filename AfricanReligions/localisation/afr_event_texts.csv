@@ -175,7 +175,7 @@ EVTOPTB_AFRREL075;I like this one, that’s some spunk.;;;;;;;;;;;;;x
 EVTDESC_AFRREL076;On the day of the celebration you arrive at the parade on the back of a beautiful elephant, to the surprise of all. As you ride the animal you can hear the screams of the crowd, they are certainly full of excitement. For some reason [From.GetTitledFirstName] seems not to appreciate the beautiful gesture.;;;;;;;;;;;;;x
 EVTOPTA_AFRREL076;If [From.GetSheHe] does not appreciate Stampy then I do not appreciate [From.GetHerHim].;;;;;;;;;;;;;x
 EVTDESC_AFRREL077;On the day of the celebration you arrive at the parade on the back of a beautiful elephant, to the surprise of all. As you ride the animal you can hear the screams of the crowd, they are certainly full of excitement. [From.GetTitledFirstName] seems absolutely delighted as [From.GetSheHe] approaches to pet the elephant.  This was certainly the greatest idea you've ever had.;;;;;;;;;;;;;x
-EVTOPTB_AFRREL077;Any friend of Stampy is a friend of mine.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL077;Any friend of Stampy is a friend of mine.;;;;;;;;;;;;;x
 EVTDESC_AFRREL078;You are watching the parade organized by your liege [From.GetTitledNameWithNick] for the Hawan Sallah. Everything seems in order until you see a drunkard throwing himself at the riders shouting "Ostriches are prettier than any horse!"\n\nYou have come to enjoy the parade and you will not let the imbecile ruin it, so you put him in his place with one fist. [From.GetTitledFirstName] seems impressed.;;;;;;;;;;;;;x
 EVTOPTA_AFRREL078;I seem to have made a new friend!;;;;;;;;;;;;;x
 EVTDESC_AFRREL079;Although most of your subjects seem happy to see the parade you have organized, one of them does not seem to agree. The man, clearly drunk, stands in your way screaming that the parade would be better if we rode zebras and ostriches.\n\nJust when you think the afternoon is ruined, someone appears in the crowd and knocks out the drunk with a single blow, allowing you to continue. It's [From.GetTitledNameWithNick], who has come to your rescue.;;;;;;;;;;;;;x
@@ -194,6 +194,8 @@ hawan_sallah_old_horse;old barb;;;;;;;;;;;;;x
 hawan_sallah_mare;young mare;;;;;;;;;;;;;x
 hawan_sallah_stallion;beautiful stallion;;;;;;;;;;;;;x
 hawan_sallah_wild_beast;wild zebra that I tamed by myself;;;;;;;;;;;;;x
+EVTOPTA_AFRREL082;Yes, this is a fine mount.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL082;What do they know about horsemanship?;;;;;;;;;;;;;x
 EVTDESC_AFRREL083;The parade finally comes to an end, but the festivities are not over. Now is the time of the great race in which the bravest riders of [Root.Capital] will compete to decide which of them is the most skilled.\n\nOf course it would be frowned upon for someone from your high position to participate in the race, but there is no reason not to make the game more interesting. Maybe it would be a good idea to place a bet with one of the wealthy merchants of the city.;;;;;;;;;;;;;x
 EVTOPTA_AFRREL083;I will make a small bet.;;;;;;;;;;;;;x
 EVTOPTB_AFRREL083;I will take a risk.;;;;;;;;;;;;;x

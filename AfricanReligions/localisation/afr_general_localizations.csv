@@ -197,6 +197,12 @@ salt_carthage_capital_tooltip;The §YAmazigh§! world is outraged by your actions.
 pick_religious_tradition_tooltip;Choose a religious tradition to follow.;;;;;;;;;;;;;x
 tooltip_change_a_tag_roog_branch;You will choose a new path.;;;;;;;;;;;;;x
 hawan_sallah_elephant_prepare_tooltip;You will prepare an elephant for the parade.;;;;;;;;;;;;;x
+hawan_sallah_bet_arabian;You bet [HawanSallahBetGold] on the white Arabian.;;;;;;;;;;;;;x
+hawan_sallah_bet_palomino;You bet [HawanSallahBetGold] on the palomino barb.;;;;;;;;;;;;;x
+hawan_sallah_bet_andalusian;You bet [HawanSallahBetGold] on the bay Andalusian.;;;;;;;;;;;;;x
+hawan_sallah_bet_10;10;;;;;;;;;;;;;x
+hawan_sallah_bet_30;30;;;;;;;;;;;;;x
+hawan_sallah_bet_all_in;[hawan_sallah_bet_winnings.GetValue];;;;;;;;;;;;;x
 eldership_rules_afr;Eldership;;;;;;;;;;;;;x
 religion_feature_a_tag_roog;Way of the Divine;;;;;;;;;;;;;x
 religion_feature_a_tag_roog_desc;In order to edify the faith we shall unify the many traditions of life and divination practiced by the different nations of the land.;;;;;;;;;;;;;x

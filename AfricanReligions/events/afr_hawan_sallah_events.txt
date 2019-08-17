@@ -4,6 +4,7 @@ namespace = AFRREL
 character_event = {
     id = AFRREL.070
     desc = EVTDESC_AFRREL070
+    picture = GFX_evt_west_african_ruler
     
     is_triggered_only = yes
     
@@ -19,6 +20,7 @@ character_event = {
 character_event = {
     id = AFRREL.071
     desc = EVTDESC_AFRREL071
+    picture = GFX_evt_horse_friend
     
     is_triggered_only = yes
     war = no
@@ -148,6 +150,7 @@ character_event = {
 character_event = {
     id = AFRREL.072
     desc = EVTDESC_AFRREL072
+    picture = GFX_evt_afr_well_dressed
     is_triggered_only = yes
     
     war = no
@@ -305,6 +308,7 @@ narrative_event = {
     id = AFRREL.073
     title = EVTTITLE_AFRREL073
     desc = EVTDESC_AFRREL073
+    picture = GFX_evt_west_african_ruler
     is_triggered_only = yes
     
     war = no
@@ -410,6 +414,7 @@ narrative_event = {
 character_event = {
     id = AFRREL.074
     desc = EVTDESC_AFRREL074
+    picture = GFX_evt_afr_elephant
     is_triggered_only = yes
     
     war = no
@@ -461,6 +466,7 @@ character_event = {
 character_event = {
     id = AFRREL.075
     desc = EVTDESC_AFRREL075
+    picture = GFX_evt_afr_elephant_rider
     is_triggered_only = yes
     
     war = no
@@ -493,7 +499,7 @@ character_event = {
             chance = 30
             add_trait = arbitrary
         }
-        hidden_tooltip = { FROM = { character_event = { id = AFRREL.077 days 3 } } }
+        hidden_tooltip = { FROM = { character_event = { id = AFRREL.077 days = 3 } } }
         
         ai_chance = {
             factor = 2
@@ -505,6 +511,7 @@ character_event = {
 character_event = {
     id = AFRREL.076
     desc = EVTDESC_AFRREL076
+    picture = GFX_evt_afr_elephant_rider
     is_triggered_only = yes
     
     war = no
@@ -523,6 +530,7 @@ character_event = {
 character_event = {
     id = AFRREL.077
     desc = EVTDESC_AFRREL077
+    picture = GFX_evt_afr_elephant_rider
     is_triggered_only = yes
     
     war = no
@@ -541,6 +549,7 @@ character_event = {
 character_event = {
     id = AFRREL.078
     desc = EVTDESC_AFRREL078
+    picture = GFX_evt_drunk
     is_triggered_only = yes
     
     war = no
@@ -560,6 +569,7 @@ character_event = {
 character_event = {
     id = AFRREL.079
     desc = EVTDESC_AFRREL079
+    picture = GFX_evt_drunk
     is_triggered_only = yes
     
     war = no
@@ -576,6 +586,7 @@ character_event = {
 # Attractive person
 character_event = {
     id = AFRREL.080
+    picture = GFX_evt_lovers
     
     desc = {
         trigger = { prefers_men_trigger = yes }
@@ -584,7 +595,7 @@ character_event = {
     
     desc = {
         trigger = { prefers_men_trigger = no }
-        text = EVTDESC_AFRRREL080_WOMAN
+        text = EVTDESC_AFRREL080_WOMAN
     }
     
     is_triggered_only = yes
@@ -658,6 +669,7 @@ character_event = {
 character_event = {
     id = AFRREL.081
     desc = EVTDESC_AFRREL081
+    picture = GFX_evt_courier
     is_triggered_only = yes
     
     war = no
@@ -707,6 +719,7 @@ character_event = {
 # Horse assessment
 character_event = {
     id = AFRREL.082
+    picture = GFX_evt_courier
     
     desc = {
         text = EVTDESC_AFRREL082_IMPRESSIVE
@@ -714,7 +727,7 @@ character_event = {
     }
     
     desc = {
-        text = EVTDESC_AFRREL_UNIMPRESSIVE
+        text = EVTDESC_AFRREL082_UNIMPRESSIVE
         trigger = { NOT = { has_character_flag = hawan_sallah_impressive_horse } }
     }
     
@@ -736,7 +749,7 @@ character_event = {
         
         trigger = { NOT = { has_character_flag = hawan_sallah_impressive_horse } }
         
-        prestige = 40
+        prestige = -40
     }
 }
 
@@ -744,6 +757,7 @@ character_event = {
 character_event = {
     id = AFRREL.083
     desc = EVTDESC_AFRREL083
+    picture = GFX_evt_bribe_accepted
     is_triggered_only = yes
     
     war = no
@@ -847,6 +861,7 @@ character_event = {
 character_event = {
     id = AFRREL.084
     desc = EVTDESC_AFRREL084
+    picture = GFX_evt_horse_friend
     is_triggered_only = yes
     
     war = no
@@ -932,6 +947,7 @@ character_event = {
 character_event = {
     id = AFRREL.085
     desc = EVTDESC_AFRREL085
+    picture = GFX_evt_moors
     is_triggered_only = yes
     
     war = no
@@ -1012,7 +1028,7 @@ character_event = {
                 limit = { has_character_flag = hawan_sallah_bet_arabian }
                 multiply_variable = { which = hawan_sallah_bet_winnings value = 1.44 }
             }
-            else_if {
+            else_if = {
                 limit = { has_character_flag = hawan_sallah_bet_palomino }
                 multiply_variable = { which = hawan_sallah_bet_winnings value = 2.97 }
             }
@@ -1034,7 +1050,8 @@ character_event = {
 # Picked a losing horse
 character_event = {
     id = AFRREL.086
-    desc = EVTDESC_AFFREL086
+    desc = EVTDESC_AFRREL086
+    picture = GFX_evt_moors
     is_triggered_only = yes
     
     war = no
@@ -1052,6 +1069,7 @@ character_event = {
 character_event = {
     id = AFRREL.087
     desc = EVTDESC_AFRREL087
+    picture = GFX_evt_moors
     is_triggered_only = yes
     
     war = no
@@ -1068,6 +1086,7 @@ character_event = {
 character_event = {
     id = AFRREL.088
     desc = EVTDESC_AFRREL088
+    picture = GFX_evt_west_african_ruler
     is_triggered_only = yes
     
     war = no
@@ -1089,6 +1108,7 @@ character_event = {
     
     immediate = {
         remove_character_modifier = holding_hawan_sallah
+        clr_character_flag = do_not_disturb
     
         clr_character_flag = hawan_sallah_old_horse
         clr_character_flag = hawan_sallah_mare
@@ -1121,16 +1141,19 @@ character_event = {
 # Hawan Sallah is cancelled
 character_event = {
     id = AFRREL.090
+    picture = GFX_evt_west_african_ruler
     
     desc = {
         text = EVTDESC_AFRREL090_WAR
-        war = yes
+        trigger = { war = yes }
     }
     
     desc = {
         text = EVTDESC_AFRREL090_IMPRISONED
-        war = no
-        prisoner = yes
+        trigger = {
+            war = no
+            prisoner = yes
+        }
     }
     
     only_rulers = yes

@@ -484,3 +484,22 @@ defined_text = {
         trigger = { has_character_flag = hawan_sallah_bet_andalusian }
     }
 }
+
+defined_text = {
+    name = HawanSallahBetGold
+    
+    text = {
+        localisation_key = hawan_sallah_bet_10
+        trigger = { has_character_flag = hawan_sallah_small_bet }
+    }
+    
+    text = {
+        localisation_key = hawan_sallah_bet_30
+        trigger = { has_character_flag = hawan_sallah_large_bet }
+    }
+    
+    text = {
+        localisation_key = hawan_sallah_bet_all_in
+        trigger = { has_character_flag = hawan_sallah_bet_all_in }
+    }
+}
