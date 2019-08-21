@@ -922,7 +922,7 @@ character_event = {
         hidden_tooltip = {
             random_list = {
                 60 = { long_character_event = { id = AFRREL.085 days = 5 } }
-                0 = { long_character_event = { id = AFRREL.086 days = 5 } }
+                40 = { long_character_event = { id = AFRREL.086 days = 5 } }
             }
         }
         
@@ -947,7 +947,7 @@ character_event = {
         hidden_tooltip = {
             random_list = {
                 30 = { long_character_event = { id = AFRREL.085 days = 5 } }
-                0 = { long_character_event = { id = AFRREL.086 days = 5 } }
+                70 = { long_character_event = { id = AFRREL.086 days = 5 } }
             }
         }
         
@@ -967,7 +967,7 @@ character_event = {
         hidden_tooltip = {
             random_list = {
                 10 = { long_character_event = { id = AFRREL.085 days = 5 } }
-                0 = { long_character_event = { id = AFRREL.086 days = 5 } }
+                90 = { long_character_event = { id = AFRREL.086 days = 5 } }
             }
         }
         
