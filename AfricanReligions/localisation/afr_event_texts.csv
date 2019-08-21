@@ -158,7 +158,7 @@ EVTOPTB_AFRREL072;White robes are a sign of piety.;;;;;;;;;;;;;x
 EVTOPTC_AFRREL072;I will ride covered in gold.;;;;;;;;;;;;;x
 EVTOPTD_AFRREL072;I will dress in the dark mantle of those who bring the plague.;;;;;;;;;;;;;x
 EVTTITLE_AFRREL073;The Great Parade;;;;;;;;;;;;;x
-EVTDESC_AFRREL073;All the people of [Root.Capital.GetName] congregate on both sides of the main street of the city. An army of drummers advances among them, singing songs in honor of the bori, followed by dancers who perform impressive pirouettes.\n\nAt the end of all, the main show arrives, one hundred men in beautiful steeds and at the head of them [Root.GetTitledName]. The faithful subjects cheer the name of the [Root.GetTitle] and [Root.GetSheHe] responds by greeting them with grace. The [Root.GetTitle]’s [Root.HawanSallahClothes] has [Root.HawanSallahClothesEffect]. Certainly this has been a glorious day.
+EVTDESC_AFRREL073;All the people of [Root.Capital.GetName] congregate on both sides of the main street of the city. An army of drummers advances among them, singing songs in honor of the bori, followed by dancers who perform impressive pirouettes.\n\nAt the end of all, the main show arrives, one hundred men in beautiful steeds and at the head of them [Root.GetTitledName]. The faithful subjects cheer the name of the [Root.GetTitle] and [Root.GetSheHe] responds by greeting them with grace. The [Root.GetTitle]’s [Root.HawanSallahClothes] has [Root.HawanSallahClothesEffect]. Certainly this has been a glorious day.;;;;;;;;;;;;;x
 hawan_sallah_old_clothes;humble clothes;;;;;;;;;;;;;x
 hawan_sallah_white_robes;white robes;;;;;;;;;;;;;x
 hawan_sallah_gold_clothes;pompous jewelry;;;;;;;;;;;;;x

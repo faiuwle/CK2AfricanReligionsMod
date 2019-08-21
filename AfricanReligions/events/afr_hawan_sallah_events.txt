@@ -11,7 +11,6 @@ character_event = {
     option = {
         name = EVTOPTA_AFRREL070
         
-        wealth = -25
         hidden_tooltip = { character_event = { id = AFRREL.071 days = 3 } }
     }
 }
@@ -327,6 +326,14 @@ narrative_event = {
     }
     
     after = {  # Launch all the other events
+        # Scheduling:
+        # Race happens on day 45
+        # Elephant can happen on day 15, 25, or 35 (liege event launches 5 days after vassal event)
+        # Friend can happen on day 10, 20, or 30
+        # Attractive person can happen on day 17, 27, or 37
+        # Horse assessment can happen on day 13, 23, or 33
+        # Horse crash always happens on day 42
+    
         # Launch elephant subplot
         # If there actually is a lunatic vassal, this is their time to shine!
         # Otherwise, we want to pick the player if possible, so they can participate.
@@ -357,8 +364,14 @@ narrative_event = {
                     trait = craven
                 }
             }
-            character_event = { id = AFRREL.074 days = 5 random = 4 }
             set_character_flag = hawan_sallah_elephant_rider
+            hidden_tooltip = {
+                random_list = {
+                    10 = { character_event = { id = AFRREL.074 days = 10 } }
+                    10 = { character_event = { id = AFRREL.074 days = 20 } }
+                    10 = { character_event = { id = AFRREL.074 days = 30 } }
+                }
+            }
         }
         
         # Random friend event
@@ -382,14 +395,26 @@ narrative_event = {
                     NOT = { trait = drunkard }
                 }
                 set_character_flag = hawan_sallah_new_friend
-                character_event = { id = AFRREL.078 days = 20 random = 15 }
+                hidden_tooltip = {
+                    random_list = {
+                        10 = { long_character_event = { id = AFRREL.078 days = 10 } }
+                        10 = { long_character_event = { id = AFRREL.078 days = 20 } }
+                        10 = { long_character_event = { id = AFRREL.078 days = 30 } }
+                    }
+                }
             }
         }
         
         # Encounter with a sexy person
         random = {
             chance = 30
-            character_event = { id = AFRREL.080 days = 20 random = 15 }
+            hidden_tooltip = {
+                random_list = {
+                    10 = { long_character_event = { id = AFRREL.080 days = 17 } }
+                    10 = { long_character_event = { id = AFRREL.080 days = 27 } }
+                    10 = { long_character_event = { id = AFRREL.080 days = 37 } }
+                }
+            }
         }
         
         # Horse crash
@@ -399,14 +424,20 @@ narrative_event = {
                 factor = 5
                 has_character_flag = hawan_sallah_wild_beast
             }
-            character_event = { id = AFRREL.081 days = 20 random = 15 }
+            long_character_event = { id = AFRREL.081 days = 42 }
         }
         
         # Horse assessment
-        character_event = { id = AFRREL.082 days = 20 random = 15 }
+        hidden_tooltip = {
+            random_list = {
+                10 = { character_event = { id = AFRREL.082 days = 13 } }
+                10 = { character_event = { id = AFRREL.082 days = 23 } }
+                10 = { character_event = { id = AFRREL.082 days = 33 } }
+            }
+        }
         
         # Race
-        character_event = { id = AFRREL.083 days = 40 random = 4 }
+        long_character_event = { id = AFRREL.083 days = 45 }
     }
 }
 
@@ -425,7 +456,7 @@ character_event = {
         
         custom_tooltip = {
             text = hawan_sallah_elephant_prepare_tooltip
-            FROM = { character_event = { id = AFRREL.075 days = 5 random = 4 } }
+            FROM = { long_character_event = { id = AFRREL.075 days = 5 } }
         }
         
         ai_chance = {
@@ -463,7 +494,7 @@ character_event = {
 }
 
 # Liege reacts to the elephant
-character_event = {
+long_character_event = {
     id = AFRREL.075
     desc = EVTDESC_AFRREL075
     picture = GFX_evt_afr_elephant_rider
@@ -546,7 +577,7 @@ character_event = {
 }
 
 # Vassal saves liege from drunk
-character_event = {
+long_character_event = {
     id = AFRREL.078
     desc = EVTDESC_AFRREL078
     picture = GFX_evt_drunk
@@ -561,12 +592,12 @@ character_event = {
         prestige = 10
         add_friend = FROM
         clr_character_flag = hawan_sallah_new_friend
-        hidden_tooltip = { FROM = { character_event = { id = AFRREL.079 } } }
+        hidden_tooltip = { FROM = { long_character_event = { id = AFRREL.079 } } }
     }
 }
 
 # Liege informed
-character_event = {
+long_character_event = {
     id = AFRREL.079
     desc = EVTDESC_AFRREL079
     picture = GFX_evt_drunk
@@ -584,7 +615,7 @@ character_event = {
 }
 
 # Attractive person
-character_event = {
+long_character_event = {
     id = AFRREL.080
     picture = GFX_evt_lovers
     
@@ -666,7 +697,7 @@ character_event = {
 }
 
 # Horse crash
-character_event = {
+long_character_event = {
     id = AFRREL.081
     desc = EVTDESC_AFRREL081
     picture = GFX_evt_courier
@@ -754,7 +785,7 @@ character_event = {
 }
 
 # Race and bet
-character_event = {
+long_character_event = {
     id = AFRREL.083
     desc = EVTDESC_AFRREL083
     picture = GFX_evt_bribe_accepted
@@ -763,12 +794,27 @@ character_event = {
     war = no
     prisoner = no
     
+    immediate = {
+        # Set up for all in scenario
+        export_to_variable = { which = hawan_sallah_bet_winnings value = yearly_income }
+        if = {
+            limit = { NOT = { check_variable = { which = hawan_sallah_bet_winnings value = 100 } } }
+            set_variable = { which = hawan_sallah_bet_winnings value = 100 }
+        }
+        if = {
+            limit = { check_variable = { which = hawan_sallah_bet_winnings value = 1000 } }
+            set_variable = { which = hawan_sallah_bet_winnings value = 1000 }
+        }
+        set_variable = { which = hawan_sallah_bet_cost which = hawan_sallah_bet_winnings }
+        multiply_variable = { which = hawan_sallah_bet_cost value = -1 }
+    }
+    
     option = {
         name = EVTOPTA_AFRREL083
         
         set_character_flag = hawan_sallah_small_bet
         wealth = -10
-        hidden_tooltip = { character_event = { id = AFRREL.084 } }
+        hidden_tooltip = { long_character_event = { id = AFRREL.084 } }
         
         ai_chance = {
             factor = 1
@@ -790,7 +836,7 @@ character_event = {
         
         set_character_flag = hawan_sallah_large_bet
         wealth = -30
-        hidden_tooltip = { character_event = { id = AFRREL.084 } }
+        hidden_tooltip = { long_character_event = { id = AFRREL.084 } }
         
         ai_chance = {
             factor = 1
@@ -805,10 +851,8 @@ character_event = {
         }
         
         set_character_flag = hawan_sallah_all_in
-        scaled_wealth = { value = -1 min = -100 max = -1000 }
-        # This stops people from doing something to increase their yearly income before their winnings are calculated
-        export_to_variable = { which = hawan_sallah_bet_winnings value = scaled_wealth }
-        hidden_tooltip = { character_event = { id = AFRREL.084 } }
+        scaled_wealth = { value = -1 max = -1000 min = -100 }
+        hidden_tooltip = { long_character_event = { id = AFRREL.084 } }
         
         ai_chance = {
             factor = 1
@@ -877,8 +921,8 @@ character_event = {
         
         hidden_tooltip = {
             random_list = {
-                60 = { character_event = { id = AFRREL.085 days = 5 } }
-                40 = { character_event = { id = AFRREL.086 days = 5 } }
+                60 = { long_character_event = { id = AFRREL.085 days = 5 } }
+                0 = { long_character_event = { id = AFRREL.086 days = 5 } }
             }
         }
         
@@ -902,8 +946,8 @@ character_event = {
         
         hidden_tooltip = {
             random_list = {
-                30 = { character_event = { id = AFRREL.085 days = 5 } }
-                70 = { character_event = { id = AFRREL.086 days = 5 } }
+                30 = { long_character_event = { id = AFRREL.085 days = 5 } }
+                0 = { long_character_event = { id = AFRREL.086 days = 5 } }
             }
         }
         
@@ -922,8 +966,8 @@ character_event = {
         
         hidden_tooltip = {
             random_list = {
-                10 = { character_event = { id = AFRREL.085 days = 5 } }
-                90 = { character_event = { id = AFRREL.086 days = 5 } }
+                10 = { long_character_event = { id = AFRREL.085 days = 5 } }
+                0 = { long_character_event = { id = AFRREL.086 days = 5 } }
             }
         }
         
@@ -944,7 +988,7 @@ character_event = {
 }
 
 # Picked the winning horse
-character_event = {
+long_character_event = {
     id = AFRREL.085
     desc = EVTDESC_AFRREL085
     picture = GFX_evt_moors
@@ -1048,7 +1092,7 @@ character_event = {
 }
 
 # Picked a losing horse
-character_event = {
+long_character_event = {
     id = AFRREL.086
     desc = EVTDESC_AFRREL086
     picture = GFX_evt_moors
@@ -1066,7 +1110,7 @@ character_event = {
 }
 
 # Didn't bet
-character_event = {
+long_character_event = {
     id = AFRREL.087
     desc = EVTDESC_AFRREL087
     picture = GFX_evt_moors
