@@ -15,17 +15,22 @@ spriteTypes = {
     }
 
     spriteType = {
-	name = "GFX_evt_afr_bori_deities_main"
-	texturefile = "gfx/event_pictures/afr_bori_deities_main.dds"
+	   name = "GFX_evt_afr_bori_deities_main"
+	   texturefile = "gfx/event_pictures/afr_bori_deities_main.dds"
     }
 
     spriteType = {
-	name = "GFX_evt_afr_bori_deities_choice_one"
-	texturefile = "gfx/event_pictures/afr_bori_deities_choice_one.dds"
+	   name = "GFX_evt_afr_bori_deities_choice_one"
+	   texturefile = "gfx/event_pictures/afr_bori_deities_choice_one.dds"
     }
 
     spriteType = {
-	name = "GFX_evt_afr_bori_deities_choice_two"
-	texturefile = "gfx/event_pictures/afr_bori_deities_choice_two.dds"
+	   name = "GFX_evt_afr_bori_deities_choice_two"
+	   texturefile = "gfx/event_pictures/afr_bori_deities_choice_two.dds"
+    }
+
+    spriteType = {
+        name = "GFX_evt_afr_awussu_carnival"
+        texturefile = "gfx/event_pictures/afr_awussu_carnival.dds"
     }
 }

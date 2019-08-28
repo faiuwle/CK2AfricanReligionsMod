@@ -462,10 +462,10 @@ decisions = {
 			}
 			hidden_tooltip = {
 				character_event = {	
-					id = AFRREL.034
+					id = AFRREL.038
 					days = 60
 				}
-				character_event = { id = AFRREL.033 }
+				character_event = { id = AFRREL.037 }
 			}
 
 			if = {
