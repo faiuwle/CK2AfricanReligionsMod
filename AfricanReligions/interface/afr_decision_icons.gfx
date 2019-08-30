@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_hold_hawan_sallah"
+        texturefile = "gfx/interface/afr_decision_icon_hawan_sallah.dds"
+    }
+}
