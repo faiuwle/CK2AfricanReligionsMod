@@ -197,12 +197,12 @@ salt_carthage_capital_tooltip;The §YAmazigh§! world is outraged by your actions.
 pick_religious_tradition_tooltip;Choose a religious tradition to follow.;;;;;;;;;;;;;x
 tooltip_change_a_tag_roog_branch;You will choose a new path.;;;;;;;;;;;;;x
 hawan_sallah_elephant_prepare_tooltip;You will prepare an elephant for the parade.;;;;;;;;;;;;;x
-hawan_sallah_bet_arabian;You bet [HawanSallahBetGold] on the white Arabian.;;;;;;;;;;;;;x
-hawan_sallah_bet_palomino;You bet [HawanSallahBetGold] on the palomino barb.;;;;;;;;;;;;;x
-hawan_sallah_bet_andalusian;You bet [HawanSallahBetGold] on the bay Andalusian.;;;;;;;;;;;;;x
-hawan_sallah_bet_10;10;;;;;;;;;;;;;x
-hawan_sallah_bet_30;30;;;;;;;;;;;;;x
-hawan_sallah_bet_all_in;[hawan_sallah_bet_winnings.GetValue];;;;;;;;;;;;;x
+hawan_sallah_bet_arabian;You bet §Y[Root.hawan_sallah_bet_winnings.GetValue]§! gold on the white Arabian.;;;;;;;;;;;;;x
+hawan_sallah_bet_palomino;You bet §Y[Root.hawan_sallah_bet_winnings.GetValue]§! gold on the palomino barb.;;;;;;;;;;;;;x
+hawan_sallah_bet_andalusian;You bet §Y[Root.hawan_sallah_bet_winnings.GetValue]§! gold on the bay Andalusian.;;;;;;;;;;;;;x
+hawan_sallah_military_speech;You will give a speech about your achievements as a commander.;;;;;;;;;;;;;x
+hawan_sallah_religious_speech;You will give a speech about the virtues of a pious soul.;;;;;;;;;;;;;x
+hawan_sallah_smart_speech;You will give a poetic speech showing your true brilliance.;;;;;;;;;;;;;x
 eldership_rules_afr;Eldership;;;;;;;;;;;;;x
 religion_feature_a_tag_roog;Way of the Divine;;;;;;;;;;;;;x
 religion_feature_a_tag_roog_desc;In order to edify the faith we shall unify the many traditions of life and divination practiced by the different nations of the land.;;;;;;;;;;;;;x
@@ -278,6 +278,12 @@ secret_amazigh_community_desc;In secret, the faithful have organized around a sm
 secret_amazigh_reformed_community;Secret [amazigh_reformed.GetName] Community;;;;;;;;;;;;;x
 secret_amazigh_reformed_community_desc;In secret, the faithful have organized around a small church community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
 holding_hawan_sallah;Holding a Hawan Sallah parade;;;;;;;;;;;;;x
+arrested_town_fool;Arrested Town Fool;;;;;;;;;;;;;x
+arrested_town_fool_desc;This ruler angered the populace by arresting the beloved town fool.;;;;;;;;;;;;;x
+silver_tongue;Silver Tongue;;;;;;;;;;;;;x
+silver_tongue_desc;This person is known for being talented with words.;;;;;;;;;;;;;x
+babbling;Babbling Speech;;;;;;;;;;;;;x
+babbling_desc;This person has being publicly humiliated by their clumsy words.;;;;;;;;;;;;;x
 sympathy_african;Sympathy for Africans;;;;;;;;;;;;;x
 sympathy_african_desc;This character, though not a worshipper of the African gods, has a special sympathy and understanding for the African faiths and their practitioners.;;;;;;;;;;;;;x
 foro;Foro;;;;;;;;;;;;;x

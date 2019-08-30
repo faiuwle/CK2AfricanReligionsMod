@@ -48,4 +48,19 @@ spriteTypes = {
         name = "GFX_evt_afr_well_dressed"
         texturefile = "gfx/event_pictures/afr_well_dressed.dds"
     }
+    
+    spriteType = {
+        name = "GFX_evt_afr_music"
+        texturefile = "gfx/event_pictures/afr_african_music.dds"
+    }
+    
+    spriteType = {
+        name = "GFX_evt_afr_speech"
+        texturefile = "gfx/event_pictures/afr_african_speech.dds"
+    }
+    
+    spriteType = {
+        name = "GFX_evt_afr_man_with_horse"
+        texturefile = "gfx/event_pictures/afr_man_with_horse.dds"
+    }
 }

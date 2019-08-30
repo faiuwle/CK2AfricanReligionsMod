@@ -103,3 +103,19 @@ holding_hawan_sallah = {
 	monthly_character_prestige = 0.05
 	icon = 7
 }
+
+arrested_town_fool = {
+    local_tax_modifier = -0.05
+    local_revolt_risk = 0.02
+    icon = 38
+}
+
+silver_tongue = {
+    diplomacy = 2
+    icon = 3
+}
+
+babbling = {
+    diplomacy = -2
+    icon = 21
+}

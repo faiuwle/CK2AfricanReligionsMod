@@ -19,7 +19,7 @@ character_event = {
 character_event = {
     id = AFRREL.071
     desc = EVTDESC_AFRREL071
-    picture = GFX_evt_horse_friend
+    picture = GFX_evt_afr_man_with_horse
     
     is_triggered_only = yes
     war = no
@@ -328,16 +328,24 @@ narrative_event = {
     after = {  # Launch all the other events
         # Scheduling:
         # Race happens on day 45
-        # Elephant can happen on day 15, 25, or 35 (liege event launches 5 days after vassal event)
-        # Friend can happen on day 10, 20, or 30
-        # Attractive person can happen on day 17, 27, or 37
-        # Horse assessment can happen on day 13, 23, or 33
-        # Horse crash always happens on day 42
+        # Horse crash always happens on day 42 (10% chance, 50% if you chose the wild horse)
+        # Other events can happen on days 10, 20, 30 and 40
+        # The elephant event chain is guaranteed; if the vassal chooses not to ride the elephant, the liege
+        # gets the streaker event instead.  This will happen about 80% of the time, assuming no lunatics, but the
+        # elephant event specifically targets lunatics, so the streaker event should be somewhat less common.
+        # The horse assessment is similarly guaranteed.
+        # That leaves 6 events that randomly occur 30% of the time to possibly fill the remaining two timeslots.
+        # hawan_sallah_day_XX flags are used to track which slots have been filled, and deleted at the end of this event.
+        # The chance of getting no events other than the guaranteed ones is 0.7^6, or 11.8%.
+        # The chance of getting one extra event is 0.3 * 0.7^5 * 6, or 30.3%.
+        # That leaves ~57.9% chance of getting all four event slots filled.  So, pretty good, without making any of the
+        # events super common (except for the guaranteed events).
     
         # Launch elephant subplot
         # If there actually is a lunatic vassal, this is their time to shine!
         # Otherwise, we want to pick the player if possible, so they can participate.
         # Even better if the player is also the lunatic vassal!
+        # If the vassal declines to ride the elephant, the liege will get the streaker event instead.
         random_vassal = {
             limit = {
                 NOT = { has_character_modifier = holding_hawan_sallah }
@@ -367,9 +375,60 @@ narrative_event = {
             set_character_flag = hawan_sallah_elephant_rider
             hidden_tooltip = {
                 random_list = {
-                    10 = { character_event = { id = AFRREL.074 days = 10 } }
-                    10 = { character_event = { id = AFRREL.074 days = 20 } }
-                    10 = { character_event = { id = AFRREL.074 days = 30 } }
+                    10 = {
+                        character_event = { id = AFRREL.074 days = 5 }
+                        ROOT = { set_character_flag = hawan_sallah_day_10 }
+                    }
+                    10 = {
+                        character_event = { id = AFRREL.074 days = 15 }
+                        ROOT = { set_character_flag = hawan_sallah_day_20 }
+                    }
+                    10 = {
+                        character_event = { id = AFRREL.074 days = 25 }
+                        ROOT = { set_character_flag = hawan_sallah_day_30 }
+                    }
+                    10 = { 
+                        character_event = { id = AFRREL.074 days = 35 }
+                        ROOT = { set_character_flag = hawan_sallah_day_40 }
+                    }
+                }
+            }
+        }
+        
+        # Horse assessment - guaranteed
+        hidden_tooltip = {
+            random_list = {
+                10 = {
+                    character_event = { id = AFRREL.082 days = 10 }
+                    set_character_flag = hawan_sallah_day_10
+                    modifier = {
+                        factor = 0
+                        has_character_flag = hawan_sallah_day_10
+                    }
+                }
+                10 = {
+                    character_event = { id = AFRREL.082 days = 20 }
+                    set_character_flag = hawan_sallah_day_20
+                    modifier = {
+                        factor = 0
+                        has_character_flag = hawan_sallah_day_20
+                    }
+                }
+                10 = {
+                    character_event = { id = AFRREL.082 days = 30 }
+                    set_character_flag = hawan_sallah_day_30
+                    modifier = {
+                        factor = 0
+                        has_character_flag = hawan_sallah_day_30
+                    }
+                }
+                10 = {
+                    character_event = { id = AFRREL.082 days = 40 }
+                    set_character_flag = hawan_sallah_day_40
+                    modifier = {
+                        factor = 0
+                        has_character_flag = hawan_sallah_day_40
+                    }
                 }
             }
         }
@@ -392,31 +451,258 @@ narrative_event = {
                     ai = no  # In case they didn't get picked to be the elephant rider because someone else was a lunatic
                 }
                 preferred_limit = {
-                    NOT = { trait = drunkard }
+                    NOT = { trait = drunkard }  # Bit hypocritcal
                 }
                 set_character_flag = hawan_sallah_new_friend
+                
                 hidden_tooltip = {
                     random_list = {
-                        10 = { long_character_event = { id = AFRREL.078 days = 10 } }
-                        10 = { long_character_event = { id = AFRREL.078 days = 20 } }
-                        10 = { long_character_event = { id = AFRREL.078 days = 30 } }
+                        10 = {
+                            long_character_event = { id = AFRREL.078 days = 10 }
+                            ROOT = { set_character_flag = hawan_sallah_day_10 }
+                            modifier = {
+                                factor = 0
+                                ROOT = { has_character_flag = hawan_sallah_day_10 }
+                            }
+                        }
+                        10 = {
+                            long_character_event = { id = AFRREL.078 days = 20 }
+                            ROOT = { set_character_flag = hawan_sallah_day_20 }
+                            modifier = {
+                                factor = 0
+                                ROOT = { has_character_flag = hawan_sallah_day_20 }
+                            }
+                        }
+                        10 = {
+                            long_character_event = { id = AFRREL.078 days = 30 }
+                            ROOT = { set_character_flag = hawan_sallah_day_30 }
+                            modifier = {
+                                factor = 0
+                                ROOT = { has_character_flag = hawan_sallah_day_30 }
+                            }
+                        }
+                        10 = {
+                            long_character_event = { id = AFRREL.078 days = 40 }
+                            ROOT = { set_character_flag = hawan_sallah_day_40 }
+                            modifier = {
+                                factor = 0
+                                ROOT = { has_character_flag = hawan_sallah_day_40 }
+                            }
+                        }
                     }
                 }
             }
-        }
+        } 
         
         # Encounter with a sexy person
         random = {
             chance = 30
             hidden_tooltip = {
                 random_list = {
-                    10 = { long_character_event = { id = AFRREL.080 days = 17 } }
-                    10 = { long_character_event = { id = AFRREL.080 days = 27 } }
-                    10 = { long_character_event = { id = AFRREL.080 days = 37 } }
+                    10 = {
+                        long_character_event = { id = AFRREL.080 days = 10 }
+                        set_character_flag = hawan_sallah_day_10
+                        modifier = {
+                            factor = 0
+                            has_character_flag = hawan_sallah_day_10
+                        }
+                    }
+                    10 = {
+                        long_character_event = { id = AFRREL.080 days = 20 }
+                        set_character_flag = hawan_sallah_day_20
+                        modifier = {
+                            factor = 0
+                            has_character_flag = hawan_sallah_day_20
+                        }
+                    }
+                    10 = {
+                        long_character_event = { id = AFRREL.080 days = 30 }
+                        set_character_flag = hawan_sallah_day_30
+                        modifier = {
+                            factor = 0
+                            has_character_flag = hawan_sallah_day_30
+                        }
+                    }
+                    10 = {
+                        long_character_event = { id = AFRREL.080 days = 40 }
+                        set_character_flag = hawan_sallah_day_40
+                        modifier = {
+                            factor = 0 
+                            has_character_flag = hawan_sallah_day_40
+                        }
+                    }
                 }
             }
         }
         
+        # Children
+        random = {
+            chance = 30
+            hidden_tooltip = {
+                random_list = {
+                     10 = {
+                        character_event = { id = AFRREL.093 days = 10 }
+                        set_character_flag = hawan_sallah_day_10
+                        modifier = {
+                            factor = 0
+                            has_character_flag = hawan_sallah_day_10
+                        }
+                    }
+                    10 = {
+                        character_event = { id = AFRREL.093 days = 20 }
+                        set_character_flag = hawan_sallah_day_20
+                        modifier = {
+                            factor = 0
+                            has_character_flag = hawan_sallah_day_20
+                        }
+                    }
+                    10 = {
+                        character_event = { id = AFRREL.093 days = 30 }
+                        set_character_flag = hawan_sallah_day_30
+                        modifier = {
+                            factor = 0
+                            has_character_flag = hawan_sallah_day_30
+                        }
+                    }
+                    10 = {
+                        character_event = { id = AFRREL.093 days = 40 }
+                        set_character_flag = hawan_sallah_day_40
+                        modifier = {
+                            factor = 0 
+                            has_character_flag = hawan_sallah_day_40
+                        }
+                    }
+                    fallback = { }
+                }
+            }
+        }
+        
+        # Speech
+        random = {
+            chance = 30
+            hidden_tooltip = {
+                random_list = {
+                     10 = {
+                        character_event = { id = AFRREL.094 days = 10 }
+                        set_character_flag = hawan_sallah_day_10
+                        modifier = {
+                            factor = 0
+                            has_character_flag = hawan_sallah_day_10
+                        }
+                    }
+                    10 = {
+                        character_event = { id = AFRREL.094 days = 20 }
+                        set_character_flag = hawan_sallah_day_20
+                        modifier = {
+                            factor = 0
+                            has_character_flag = hawan_sallah_day_20
+                        }
+                    }
+                    10 = {
+                        character_event = { id = AFRREL.094 days = 30 }
+                        set_character_flag = hawan_sallah_day_30
+                        modifier = {
+                            factor = 0
+                            has_character_flag = hawan_sallah_day_30
+                        }
+                    }
+                    10 = {
+                        character_event = { id = AFRREL.094 days = 40 }
+                        set_character_flag = hawan_sallah_day_40
+                        modifier = {
+                            factor = 0 
+                            has_character_flag = hawan_sallah_day_40
+                        }
+                    }
+                    fallback = { }
+                }
+            }
+        }
+        
+        # Grain
+        random = {
+            chance = 30
+            hidden_tooltip = {
+                random_list = {
+                     10 = {
+                        character_event = { id = AFRREL.097 days = 10 }
+                        set_character_flag = hawan_sallah_day_10
+                        modifier = {
+                            factor = 0
+                            has_character_flag = hawan_sallah_day_10
+                        }
+                    }
+                    10 = {
+                        character_event = { id = AFRREL.097 days = 20 }
+                        set_character_flag = hawan_sallah_day_20
+                        modifier = {
+                            factor = 0
+                            has_character_flag = hawan_sallah_day_20
+                        }
+                    }
+                    10 = {
+                        character_event = { id = AFRREL.097 days = 30 }
+                        set_character_flag = hawan_sallah_day_30
+                        modifier = {
+                            factor = 0
+                            has_character_flag = hawan_sallah_day_30
+                        }
+                    }
+                    10 = {
+                        character_event = { id = AFRREL.097 days = 40 }
+                        set_character_flag = hawan_sallah_day_40
+                        modifier = {
+                            factor = 0 
+                            has_character_flag = hawan_sallah_day_40
+                        }
+                    }
+                    fallback = { }
+                }
+            }
+        }
+        
+        # Music (this is last because it has the biggest possible reward, so we put it at the end where it is less likely to occur)
+        random = {
+            chance = 30
+            hidden_tooltip = {
+                random_list = {
+                     10 = {
+                        character_event = { id = AFRREL.096 days = 10 }
+                        set_character_flag = hawan_sallah_day_10
+                        modifier = {
+                            factor = 0
+                            has_character_flag = hawan_sallah_day_10
+                        }
+                    }
+                    10 = {
+                        character_event = { id = AFRREL.096 days = 20 }
+                        set_character_flag = hawan_sallah_day_20
+                        modifier = {
+                            factor = 0
+                            has_character_flag = hawan_sallah_day_20
+                        }
+                    }
+                    10 = {
+                        character_event = { id = AFRREL.096 days = 30 }
+                        set_character_flag = hawan_sallah_day_30
+                        modifier = {
+                            factor = 0
+                            has_character_flag = hawan_sallah_day_30
+                        }
+                    }
+                    10 = {
+                        character_event = { id = AFRREL.096 days = 40 }
+                        set_character_flag = hawan_sallah_day_40
+                        modifier = {
+                            factor = 0 
+                            has_character_flag = hawan_sallah_day_40
+                        }
+                    }
+                    fallback = { }
+                }
+            }
+        }
+                
         # Horse crash
         random = {
             chance = 10
@@ -427,17 +713,14 @@ narrative_event = {
             long_character_event = { id = AFRREL.081 days = 42 }
         }
         
-        # Horse assessment
-        hidden_tooltip = {
-            random_list = {
-                10 = { character_event = { id = AFRREL.082 days = 13 } }
-                10 = { character_event = { id = AFRREL.082 days = 23 } }
-                10 = { character_event = { id = AFRREL.082 days = 33 } }
-            }
-        }
-        
         # Race
         long_character_event = { id = AFRREL.083 days = 45 }
+        
+        # Clear scheduling flags
+        clr_character_flag = hawan_sallah_day_10
+        clr_character_flag = hawan_sallah_day_20
+        clr_character_flag = hawan_sallah_day_30
+        clr_character_flag = hawan_sallah_day_40
     }
 }
 
@@ -481,6 +764,9 @@ character_event = {
     
     option = {
         name = EVTOPTB_AFRREL074
+        
+        # Fire streaker event if elephant event won't appear
+        hidden_tooltip = { FROM = { character_event = { id = AFRREL.092 days = 5 } } }
         
         ai_chance = {
             factor = 8
@@ -794,27 +1080,14 @@ long_character_event = {
     war = no
     prisoner = no
     
-    immediate = {
-        # Set up for all in scenario
-        export_to_variable = { which = hawan_sallah_bet_winnings value = yearly_income }
-        if = {
-            limit = { NOT = { check_variable = { which = hawan_sallah_bet_winnings value = 100 } } }
-            set_variable = { which = hawan_sallah_bet_winnings value = 100 }
-        }
-        if = {
-            limit = { check_variable = { which = hawan_sallah_bet_winnings value = 1000 } }
-            set_variable = { which = hawan_sallah_bet_winnings value = 1000 }
-        }
-        set_variable = { which = hawan_sallah_bet_cost which = hawan_sallah_bet_winnings }
-        multiply_variable = { which = hawan_sallah_bet_cost value = -1 }
-    }
-    
     option = {
         name = EVTOPTA_AFRREL083
         
-        set_character_flag = hawan_sallah_small_bet
         wealth = -10
-        hidden_tooltip = { long_character_event = { id = AFRREL.084 } }
+        hidden_tooltip = {
+            set_variable = { which = hawan_sallah_bet_winnings value = 10 }
+            character_event = { id = AFRREL.084 }
+        }
         
         ai_chance = {
             factor = 1
@@ -834,9 +1107,11 @@ long_character_event = {
     option = {
         name = EVTOPTB_AFRREL083
         
-        set_character_flag = hawan_sallah_large_bet
         wealth = -30
-        hidden_tooltip = { long_character_event = { id = AFRREL.084 } }
+        hidden_tooltip = {
+            set_variable = { which = hawan_sallah_bet_winnings value = 30 }
+            character_event = { id = AFRREL.084 }
+        }
         
         ai_chance = {
             factor = 1
@@ -850,9 +1125,19 @@ long_character_event = {
             scaled_wealth = { value = 1 min = 100 max = 1000 }
         }
         
-        set_character_flag = hawan_sallah_all_in
         scaled_wealth = { value = -1 max = -1000 min = -100 }
-        hidden_tooltip = { long_character_event = { id = AFRREL.084 } }
+        hidden_tooltip = {
+            export_to_variable = { which = hawan_sallah_bet_winnings value = yearly_income }
+            if = {
+                limit = { NOT = { check_variable = { which = hawan_sallah_bet_winnings value = 100 } } }
+                set_variable = { which = hawan_sallah_bet_winnings value = 100 }
+            }
+            if = {
+                limit = { check_variable = { which = hawan_sallah_bet_winnings value = 1000 } }
+                set_variable = { which = hawan_sallah_bet_winnings value = 1000 }
+            }
+            character_event = { id = AFRREL.084 }
+        }
         
         ai_chance = {
             factor = 1
@@ -878,7 +1163,7 @@ long_character_event = {
         name = EVTOPTD_AFRREL083
         
         piety = 5
-        hidden_tooltip = { character_event = { id = AFRREL.087 days = 5 } }
+        hidden_tooltip = { long_character_event = { id = AFRREL.087 days = 5 } }
         
         ai_chance = {
             factor = 1
@@ -905,7 +1190,7 @@ long_character_event = {
 character_event = {
     id = AFRREL.084
     desc = EVTDESC_AFRREL084
-    picture = GFX_evt_horse_friend
+    picture = GFX_evt_afr_man_with_horse
     is_triggered_only = yes
     
     war = no
@@ -1032,54 +1317,16 @@ long_character_event = {
     # you'll lose money in the long run.
     immediate = {
         if = {
-            limit = { has_character_flag = hawan_sallah_small_bet }
-            
-            if = {
-                limit = { has_character_flag = hawan_sallah_bet_arabian }
-                set_variable = { which = hawan_sallah_bet_winnings value = 14 }
-            }
-            else_if = {
-                limit = { has_character_flag = hawan_sallah_bet_palomino }
-                set_variable = { which = hawan_sallah_bet_winnings value = 30 }
-            }
-            else_if = {
-                limit = { has_character_flag = hawan_sallah_bet_andalusian }
-                set_variable = { which = hawan_sallah_bet_winnings value = 90 }
-            }
+            limit = { has_character_flag = hawan_sallah_bet_arabian }
+            multiply_variable = { which = hawan_sallah_bet_winnings value = 1.44 }
         }
-        
         else_if = {
-            limit = { has_character_flag = hawan_sallah_large_bet }
-            
-            if = {
-                limit = { has_character_flag = hawan_sallah_bet_arabian }
-                set_variable = { which = hawan_sallah_bet_winnings value = 43 }
-            }
-            else_if = {
-                limit = { has_character_flag = hawan_sallah_bet_palomino }
-                set_variable = { which = hawan_sallah_bet_winnings value = 89 }
-            }
-            else_if = {
-                limit = { has_character_flag = hawan_sallah_bet_andalusian }
-                set_variable = { which = hawan_sallah_bet_winnings value = 270 }
-            }
+            limit = { has_character_flag = hawan_sallah_bet_palomino }
+            multiply_variable = { which = hawan_sallah_bet_winnings value = 2.97 }
         }
-        
         else_if = {
-            limit = { has_character_flag = hawan_sallah_all_in }
-            
-            if = {
-                limit = { has_character_flag = hawan_sallah_bet_arabian }
-                multiply_variable = { which = hawan_sallah_bet_winnings value = 1.44 }
-            }
-            else_if = {
-                limit = { has_character_flag = hawan_sallah_bet_palomino }
-                multiply_variable = { which = hawan_sallah_bet_winnings value = 2.97 }
-            }
-            else_if = {
-                limit = { has_character_flag = hawan_sallah_bet_andalusian }
-                multiply_variable = { which = hawan_sallah_bet_winnings value = 9 }
-            }
+            limit = { has_character_flag = hawan_sallah_bet_andalusian }
+            multiply_variable = { which = hawan_sallah_bet_winnings value = 9 }
         }
     }
     
@@ -1166,14 +1413,12 @@ character_event = {
         clr_character_flag = hawan_sallah_dark_mantle
         clr_character_flag = hawan_sallah_impressive_clothes
         
-        clr_character_flag = hawan_sallah_small_bet
-        clr_character_flag = hawan_sallah_large_bet
-        clr_character_flag = hawan_sallah_all_in
         clr_character_flag = hawan_sallah_bet_arabian
         clr_character_flag = hawan_sallah_bet_palomino
         clr_character_flag = hawan_sallah_bet_andalusian
         set_variable = { which = hawan_sallah_bet_winnings value = 0 }
-        clr_character_flag = hawan_sallah_bet_completed
+        
+        clr_character_flag = hawan_sallah_good_speech
         
         any_vassal = {
             clr_character_flag = hawan_sallah_elephant_rider
@@ -1233,5 +1478,333 @@ character_event = {
             limit = { FROM = { has_character_modifier = holding_hawan_sallah } }
             FROM = { character_event = { id = AFRREL.090 } }
         }
+    }
+}
+
+# Extra Hawan Sallah events
+
+# Streaker
+character_event = {
+    id = AFRREL.092
+    desc = EVTDESC_AFRREL092
+    picture = GFX_evt_west_african_ruler
+    hide_from = yes  # Triggered from the Elephant event
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL092
+        
+        capital_scope = {
+            add_province_modifier = {
+                name = arrested_town_fool
+                months = 10
+            }
+        }
+        
+        ai_chance = {
+            factor = 1
+            
+            modifier = {
+                factor = 2
+                trait = cruel
+            }
+        }
+    }
+    
+    option = {
+        name = EVTOPTB_AFRREL092
+        
+        prestige = -30
+        
+        ai_chance = {
+            factor = 1
+            
+            modifier = {
+                factor = 2
+                trait = kind
+            }
+        }
+    }
+}
+
+# Children
+character_event = {
+    id = AFRREL.093
+    desc = EVTDESC_AFRREL093
+    picture = GFX_evt_child_play_arabic
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL093
+        
+        wealth = -5
+        random = {
+            chance = 30
+            add_trait = charitable
+        }
+        
+        ai_chance = {
+            factor = 1
+            
+            modifier = {
+                factor = 2
+                trait = charitable
+            }
+            
+            modifier = {
+                factor = 2
+                trait = kind
+            }
+        }
+    }
+    
+    option = {
+        name = EVTOPTB_AFRREL093
+        
+        random = {
+            chance = 20
+            add_trait = cruel
+        }
+        
+        ai_chance = {
+            factor = 1
+            
+            modifier = {
+                factor = 2
+                trait = greedy
+            }
+            
+            modifier = {
+                factor = 2
+                trait = cruel
+            }
+        }
+    }
+}
+
+# Speech
+character_event = {
+    id = AFRREL.094
+    desc = EVTDESC_AFRREL094
+    picture = GFX_evt_afr_speech
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL094
+        
+        custom_tooltip = {
+            text = hawan_sallah_military_speech
+            random = {
+                chance = 50
+                
+                modifier = {
+                    factor = 1.4
+                    martial = 10
+                }
+                
+                set_character_flag = hawan_sallah_good_speech
+            }
+        }
+        
+        ai_chance = {
+            factor = 1
+            
+            modifier = {
+                factor = 1.5
+                has_education_martial_trigger = yes
+            }
+            
+            modifier = {
+                factor = 2
+                has_lifestyle_martial_trigger = yes
+            }
+            
+            modifier = {
+                factor = 0.5
+                NOT = { martial = 10 }
+            }
+        }
+    }
+    
+    option = {
+        name = EVTOPTB_AFRREL094
+        
+        custom_tooltip = {
+            text = hawan_sallah_religious_speech
+            random = {
+                chance = 50
+                
+                modifier = {
+                    factor = 1.4
+                    learning = 10
+                }
+                
+                set_character_flag = hawan_sallah_good_speech
+            }
+        }
+        
+        ai_chance = {
+            factor = 1
+            
+            modifier = {
+                factor = 1.5
+                has_education_learning_trigger = yes
+            }
+            
+            modifier = {
+                factor = 2
+                has_lifestyle_learning_trigger = yes
+            }
+            
+            modifier = {
+                factor = 0.5
+                NOT = { learning = 10 }
+            }
+        }
+    }
+    
+    option = {
+        name = EVTOPTC_AFRREL094
+        
+        trigger = { is_smart_trigger = yes }
+        
+        tooltip_info_custom = available_due_to_smart
+        
+        custom_tooltip = {
+            text = hawan_sallah_smart_speech
+            random = {
+                chance = 80
+                set_character_flag = hawan_sallah_good_speech
+            }
+        }
+        
+        ai_chance = {
+            factor = 10
+        }
+    }
+    
+    after = {
+        hidden_tooltip = { character_event = { id = AFRREL.095 } }
+    }
+}
+
+# Speech result
+character_event = {
+    id = AFRREL.095
+    picture = GFX_evt_afr_speech
+    
+    desc = {
+        text = EVTDESC_AFRREL095_GOOD
+        trigger = { has_character_flag = hawan_sallah_good_speech }
+    }
+    
+    desc = {
+        text = EVTDESC_AFRREL095_BAD
+        trigger = { NOT = { has_character_flag = hawan_sallah_good_speech } }
+    }
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL095
+        
+        trigger = { has_character_flag = hawan_sallah_good_speech }
+        
+        add_character_modifier = {
+            name = silver_tongue
+            months = 10
+        }
+    }
+    
+    option = {
+        name = EVTOPTB_AFRREL095
+        
+        trigger = { NOT = { has_character_flag = hawan_sallah_good_speech } }
+        
+        add_character_modifier = {
+            name = babbling
+            months = 10
+        }
+    }
+}
+
+# Music
+character_event = {
+    id = AFRREL.096
+    desc = EVTDESC_AFRREL096
+    picture = GFX_evt_afr_music
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL096
+        
+        random = {
+            chance = 10
+            add_trait = trickster
+        }
+    }
+    
+    option = {
+        name = EVTOPTB_AFRREL096
+        
+        random = {
+            chance = 10
+            add_trait = narrow_flank_leader
+        }
+    }
+    
+    option = {
+        name = EVTOPTC_AFRREL096
+        
+        random = {
+            chance = 10
+            add_trait = organizer
+        }
+    }
+}
+
+# Grain
+character_event = {
+    id = AFRREL.097
+    desc = EVTDESC_AFRREL097
+    picture = GFX_evt_west_african_ruler
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL097
+        
+        prestige = -20
+        random = {
+            chance = 20
+            add_trait = patient
+        }
+    }
+    
+    option = {
+        name = EVTOPTB_AFRREL097
+        
+        random = {
+            chance = 30
+            add_trait = stubborn
+        }
+    }
+    
+    option = {
+        name = EVTOPTC_AFRREL097
+        
+        trigger = {
+            OR = {
+                trait = greedy
+                trait = arbitrary
+            }
+        }
+        
+        prestige = -30
+        wealth = 15
     }
 }

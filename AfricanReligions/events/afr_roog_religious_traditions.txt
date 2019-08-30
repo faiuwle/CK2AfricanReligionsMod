@@ -48,9 +48,13 @@ character_event = { #Landing Event
 
         add_trait = serer
         
-        spouse = {
+        any_spouse = {
             limit = {
                 is_landed = no
+                OR = {
+                    religion = a_tag_roog
+                    religion = a_tag_roog_reformed
+                }
                 NOR = {
                     trait = serer
                     trait = dogon
@@ -64,6 +68,10 @@ character_event = { #Landing Event
             limit = {
                 liege = { character = ROOT }
                 is_landed = no
+                OR = {
+                    religion = a_tag_roog
+                    religion = a_tag_roog_reformed
+                }
                 NOR = {
                     trait = serer
                     trait = dogon
@@ -103,9 +111,13 @@ character_event = { #Landing Event
         
         add_trait = dogon
         
-        spouse = {
+        any_spouse = {
             limit = {
                 is_landed = no
+                OR = {
+                    religion = a_tag_roog
+                    religion = a_tag_roog_reformed
+                }
                 NOR = {
                     trait = serer
                     trait = dogon
@@ -119,6 +131,10 @@ character_event = { #Landing Event
             limit = {
                 liege = { character = ROOT }
                 is_landed = no
+                OR = {
+                    religion = a_tag_roog
+                    religion = a_tag_roog_reformed
+                }
                 NOR = {
                     trait = serer
                     trait = dogon
@@ -158,9 +174,13 @@ character_event = { #Landing Event
 
         add_trait = malinke
         
-        spouse = {
+        any_spouse = {
             limit = {
                 is_landed = no
+                OR = {
+                    religion = a_tag_roog
+                    religion = a_tag_roog_reformed
+                }
                 NOR = {
                     trait = serer
                     trait = dogon

@@ -158,11 +158,11 @@ EVTOPTB_AFRREL072;White robes are a sign of piety.;;;;;;;;;;;;;x
 EVTOPTC_AFRREL072;I will ride covered in gold.;;;;;;;;;;;;;x
 EVTOPTD_AFRREL072;I will dress in the dark mantle of those who bring the plague.;;;;;;;;;;;;;x
 EVTTITLE_AFRREL073;The Great Parade;;;;;;;;;;;;;x
-EVTDESC_AFRREL073;All the people of [Root.Capital.GetName] congregate on both sides of the main street of the city. An army of drummers advances among them, singing songs in honor of the bori, followed by dancers who perform impressive pirouettes.\n\nAt the end of all, the main show arrives, one hundred men in beautiful steeds and at the head of them [Root.GetTitledName]. The faithful subjects cheer the name of the [Root.GetTitle] and [Root.GetSheHe] responds by greeting them with grace. The [Root.GetTitle]’s [Root.HawanSallahClothes] has [Root.HawanSallahClothesEffect]. Certainly this has been a glorious day.;;;;;;;;;;;;;x
-hawan_sallah_old_clothes;humble clothes;;;;;;;;;;;;;x
-hawan_sallah_white_robes;white robes;;;;;;;;;;;;;x
-hawan_sallah_gold_clothes;pompous jewelry;;;;;;;;;;;;;x
-hawan_sallah_dark_mantle;unsettling black tunic;;;;;;;;;;;;;x
+EVTDESC_AFRREL073;All the people of [Root.Capital.GetName] congregate on both sides of the main street of the city. An army of drummers advances among them, singing songs in honor of the bori, followed by dancers who perform impressive pirouettes.\n\nAt the end of all, the main show arrives, one hundred men on beautiful steeds and at the head of them [Root.GetTitledName]. The faithful subjects cheer the name of the [Root.GetTitle] and [Root.GetSheHe] responds by greeting them with grace. The [Root.GetTitle]’s [Root.HawanSallahClothes] [Root.HawanSallahClothesEffect]. Certainly this has been a glorious day.;;;;;;;;;;;;;x
+hawan_sallah_old_clothes;humble clothes have;;;;;;;;;;;;;x
+hawan_sallah_white_robes;white robes have;;;;;;;;;;;;;x
+hawan_sallah_gold_clothes;pompous jewelry has;;;;;;;;;;;;;x
+hawan_sallah_dark_mantle;unsettling black tunic has;;;;;;;;;;;;;x
 hawan_sallah_impressive_clothes;gained everybody's approval;;;;;;;;;;;;;x
 hawan_sallah_unimpressive_clothes;however been the subject of some mockery;;;;;;;;;;;;;x
 EVTOPTA_AFRREL073;Behold the glory of [Root.GetBestName]!;;;;;;;;;;;;;x
@@ -219,3 +219,25 @@ EVTOPTA_AFRREL088;What a great time this was.;;;;;;;;;;;;;x
 EVTDESC_AFRREL090_WAR;Sadly, the war has made it impossible to continue with the festivities. This year’s Hawan Sallah has been cancelled as a result.;;;;;;;;;;;;;x
 EVTDESC_AFRREL090_IMPRISONED;Sadly, my imprisonment has made it impossible to continue with the festivities. This year’s Hawan Sallah has been cancelled as a result.;;;;;;;;;;;;;x
 EVTOPTA_AFRREL090;Such a shame!;;;;;;;;;;;;;x
+EVTDESC_AFRREL092;The riders stop momentarily when an idiot starts running naked in front of the horses. Your companions ask you to punish the fool, but the crowd seems fond of the exhibitionist's clownery.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL092;To the dungeon with the pervert!;;;;;;;;;;;;;x
+EVTOPTB_AFRREL092;Live and let live.;;;;;;;;;;;;;x
+EVTDESC_AFRREL093;Several young children have gathered to watch the riders, their eyes light up seeing the brave warriors. Maybe you can cheer them up even more.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL093;Have some coins, go and buy some sweets.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL093;Get out of here, brats!;;;;;;;;;;;;;x
+EVTDESC_AFRREL094;While the other riders take a break to perform pirouettes in front of the public, the large crowd begins to encourage you to give a speech. Of course, as [Root.GetTitle] you cannot refuse.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL094;The glory of our armies...;;;;;;;;;;;;;x
+EVTOPTB_AFRREL094;Virtuous is the spirit that...;;;;;;;;;;;;;x
+EVTOPTC_AFRREL094;Earth will not share the rafter's envy...;;;;;;;;;;;;;x
+EVTDESC_AFRREL095_GOOD;The minutes pass and the riders finish with their pirouettes, but the crowd doesn't care about horses anymore, they are delighted with your words. You certainly are great with words.;;;;;;;;;;;;;x
+EVTDESC_AFRREL095_BAD;The riders suddenly stop their pirouettes and indicate that it is time to continue. They are really doing you a favor. Every word you say is clumsier than the last and the crowd looks at you as if you were some kind of fool.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL095;...and that’s the only truth!;;;;;;;;;;;;;x
+EVTOPTB_AFRREL095;...In conclusion, more yams?;;;;;;;;;;;;;x
+EVTDESC_AFRREL096;The Hawan Sallah includes several musical performers, one of which marches right beside you playing their instruments. You wonder if they take requests.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL096;Do you know ‘Confusion Break Bones’?;;;;;;;;;;;;;x
+EVTOPTB_AFRREL096;Can you play ‘Water no get enemy’?;;;;;;;;;;;;;x
+EVTOPTC_AFRREL096;Please play ‘Army Arrangement’.;;;;;;;;;;;;;x
+EVTDESC_AFRREL097;A warehouse collapsed and the grain stored there poured out right into the main street of [Root.Capital.GetName], blocking the route. Your companions indicate you that you should get off of the horse until the warehouse owner can collect his grain.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL097;Very well, we will wait.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL097;Nonsense, we will march over grain if necessary.;;;;;;;;;;;;;x
+EVTOPTC_AFRREL097;Confiscate the grain, this mess is his fault!;;;;;;;;;;;;;x
