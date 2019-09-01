@@ -3,4 +3,39 @@ spriteTypes = {
         name = "GFX_hold_hawan_sallah"
         texturefile = "gfx/interface/afr_decision_icon_hawan_sallah.dds"
     }
+    
+    spriteType = {
+        name = "GFX_vassalize_inna"
+        texturefile = "gfx/interface/afr_decision_icon_inna.dds"
+    }
+    
+    spriteType = {
+        name = "GFX_exalt_inna"
+        texturefile = "gfx/interface/afr_decision_icon_inna.dds"
+    }
+    
+    spriteType = {
+        name = "GFX_become_foro"
+        texturefile = "gfx/interface/afr_decision_icon_forge_ancestry.dds"
+    }
+    
+    spriteType = {
+        name = "GFX_become_wangara"
+        texturefile = "gfx/interface/afr_decision_icon_forge_ancestry.dds"
+    }
+    
+    spriteType = {
+        name = "GFX_reform_carthage"
+        texturefile = "gfx/interface/afr_decision_icon_carthage.dds"
+    }
+    
+    spriteType = {
+        name = "GFX_pick_a_tat_roog_religious_tradition"
+        texturefile = "gfx/interface/afr_decision_icon_religion_branch.dds"
+    }
+    
+    spriteType = {
+        name = "GFX_change_a_tat_roog_branch"
+        texturefile = "gfx/interface/afr_decision_icon_religion_branch.dds"
+    }
 }
