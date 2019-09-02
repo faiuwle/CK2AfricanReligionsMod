@@ -1,0 +1,63 @@
+e_kanem = {
+    capital = 1739 # Djimi
+}
+c_djenne = {
+    holy_site = a_tag_roog
+    holy_site = a_tag_roog_reformed
+}
+c_bambuk = {
+    holy_site = a_tag_roog
+    holy_site = a_tag_roog_reformed
+}
+c_aoudaghost = {
+    holy_site = a_tag_roog
+    holy_site = a_tag_roog_reformed
+}
+c_draa = {
+    holy_site = a_tag_roog
+    holy_site = a_tag_roog_reformed
+}
+c_kano = {
+    holy_site = bori
+    holy_site = a_tag_roog
+    holy_site = a_tag_roog_reformed
+    
+    b_hadejia = {
+        pentarchy = bori
+    }
+}
+c_kebbi = {
+    holy_site = bori
+}
+c_djimi = {
+    holy_site = bori
+    b_auno = {
+        pentarchy = bori
+    }
+}
+c_makuria = {
+    holy_site = bori
+}
+c_tripolitana = {
+    holy_site = bori
+}
+c_biskra = {
+    holy_site = amazigh
+    holy_site = amazigh_reformed
+}
+c_tangiers = {
+    holy_site = amazigh
+    holy_site = amazigh_reformed
+}
+c_timbuktu = {
+    holy_site = amazigh
+    holy_site = amazigh_reformed
+}
+c_canarias = {
+    holy_site = amazigh
+    holy_site = amazigh_reformed
+}
+c_cairo = {
+    holy_site = amazigh
+    holy_site = amazigh_reformed
+}

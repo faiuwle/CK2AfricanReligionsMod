@@ -1,0 +1,18 @@
+e_carthage = {
+    color = { 179 30 0 }
+    
+    capital = 817 # Tunis
+    
+    short_name = yes
+    
+    title = SUFFETE
+    
+    culture = maghreb_arabic
+    religion = amazigh_reformed
+    
+    dynasty_title_names = no
+    
+    allow = {
+        has_global_flag = carthage_restored
+    }
+}

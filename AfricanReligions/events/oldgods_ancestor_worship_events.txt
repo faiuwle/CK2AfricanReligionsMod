@@ -2531,7 +2531,6 @@ character_event = {
 							has_character_modifier = follower_of_morana
 							has_character_modifier = follower_of_veles
 							has_character_modifier = follower_of_velnias
-							has_character_modifier = follower_of_yayan_zanzanna
 						}
 					}
 					any_courtier = {
@@ -2576,6 +2575,51 @@ character_event = {
 					}
 					character_event = { id = TOG.7517 }
 				} 
+				#Call Yan Riga flavour event
+				if = {
+					limit = { has_character_modifier = follower_of_yan_riga }
+					character_event = { id = TOG.7530 }
+				}
+				#Call Babbaku flavour event
+				if = {
+					limit = { has_character_modifier = follower_of_babbaku }
+					character_event = { id = TOG.7531 }
+				}
+				#Call Tan Garki flavour event
+				if = {
+					limit = { has_character_modifier = follower_of_tan_garki }
+					character_event = { id = TOG.7534 }
+				}
+				#Call Yayan Zanzanna flavour event
+				if = {
+					limit = { has_character_modifier = follower_of_yayan_zanzanna }
+					character_event = { id = TOG.7535 }
+				}
+				#Call Tan Dowa flavour event
+				if = {
+					limit = { has_character_modifier = follower_of_tan_dowa }
+					character_event = { id = TOG.7536 }
+				}
+				#Call Anti flavour event
+				if = {
+					limit = { has_character_modifier = follower_of_anti }
+					character_event = { id = TOG.7537 }
+				}
+				#Call Gurzil flavour event
+				if = {
+					limit = { has_character_modifier = follower_of_gurzil }
+					character_event = { id = TOG.7538 }
+				}
+				#Call Magec flavour event
+				if = {
+					limit = { has_character_modifier = follower_of_magec }
+					character_event = { id = TOG.7539 }
+				}
+				#Call Set flavour event
+				if = {
+					limit = { has_character_modifier = follower_of_set }
+					character_event = {id = TOG.7540 }
+				}
 			}
 			#Theme events set 2
 			20 = {
@@ -4466,10 +4510,6 @@ character_event = {
 			trigger = { has_character_modifier = follower_of_velnias }
 			text = EVTOPTA_TOG_7514_VELNIAS
 		}
-		name = {
-			trigger = { has_character_modifier = follower_of_yayan_zanzanna }
-			text = EVTOPTA_TOG_7514_YAYAN_ZANZANNA
-		}
 		custom_tooltip = { text = EVTOPTA_TOG_7514_TOOLTIP }
 
 		random = {
@@ -4544,10 +4584,6 @@ character_event = {
 			trigger = { has_character_modifier = follower_of_velnias }
 			text = EVTOPTB_TOG_7514_VELNIAS
 		} 
-		name = {
-			trigger = { has_character_modifier = follower_of_yayan_zanzanna }
-			text = EVTOPTB_TOG_7514_YAYAN_ZANZANNA
-		}
 		custom_tooltip = { text = EVTOPTB_TOG_7514_TOOLTIP }
 
 		random = {
@@ -4659,10 +4695,6 @@ character_event = {
 			trigger = { has_character_modifier = follower_of_velnias }
 			text = EVTOPTA_TOG_7515_VELNIAS
 		} 
-		name = {
-			trigger = { has_character_modifier = follower_of_yayan_zanzanna }
-			text = EVTOPTA_TOG_7515_YAYAN_ZANZANNA
-		}
 
 		FROM = {
 			clr_character_flag = inspiring_tale
@@ -4699,10 +4731,6 @@ character_event = {
 			trigger = { has_character_modifier = follower_of_velnias }
 			text = EVTOPTB_TOG_7515_VELNIAS
 		} 
-		name = {
-			trigger = { has_character_modifier = follower_of_yayan_zanzanna }
-			text = EVTOPTB_TOG_7515_YAYAN_ZANZANNA
-		}
 
 		FROM = {
 			clr_character_flag = dull_tale
@@ -4740,10 +4768,6 @@ character_event = {
 			trigger = { has_character_modifier = follower_of_velnias }
 			text = EVTOPTA_TOG_7515_VELNIAS
 		} 
-		name = {
-			trigger = { has_character_modifier = follower_of_yayan_zanzanna }
-			text = EVTOPTA_TOG_7515_YAYAN_ZANZANNA
-		}
 
 		FROM = {
 			clr_character_flag = hardening_tale
@@ -4781,10 +4805,6 @@ character_event = {
 			trigger = { has_character_modifier = follower_of_velnias }
 			text = EVTOPTB_TOG_7515_VELNIAS
 		} 
-		name = {
-			trigger = { has_character_modifier = follower_of_yayan_zanzanna }
-			text = EVTOPTB_TOG_7515_YAYAN_ZANZANNA
-		}
 
 		FROM = {
 			clr_character_flag = scary_tale
@@ -4810,6 +4830,295 @@ character_event = {
 	}
 
 	after = { clear_event_target = death_child }
+}
+
+#Yan Riga flavour event
+character_event = {
+	id = TOG.7530
+	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_market_byzantine
+
+	desc = {
+		trigger = { has_character_modifier = follower_of_yan_riga }
+		text = EVTDESC_TOG_7530
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = { text = EVTOPTA_TOG_7530 }
+		gold = -20
+		add_character_modifier = {
+			name = honor_alkali
+			years = 2
+		}
+	}
+	option = {
+		name = { text = EVTOPTB_TOG_7530 }
+		random = {
+			chance = 50
+			add_trait = humble
+		}
+	}
+}
+
+#Babbaku flavour event
+character_event = {
+	id = TOG.7531
+	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_tribal_shrine
+
+	desc = {
+		trigger = { has_character_modifier = follower_of_babbaku }
+		text = EVTDESC_TOG_7531
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = { text = EVTOPTA_TOG_7531 }
+		random_list = {
+			50 = { hidden_tooltip = { character_event = { id = TOG.7532 days = 3 } } }
+			50 = { hidden_tooltip = { character_event = { id = TOG.7533 days = 3 } } }
+		}
+	}
+	option = {
+		name = { text = EVTOPTB_TOG_7531 }
+		prestige = -5
+	}
+}
+
+character_event = {
+	id = TOG.7532
+	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_afr_berber_wrestling
+
+	desc = {
+		text = EVTDESC_TOG_7532
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = { text = EVTOPTA_TOG_7532 }
+		remove_trait = is_fat
+		remove_trait = is_malnourished
+		add_trait = robust
+	}
+}
+
+character_event = {
+	id = TOG.7533
+	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_magic_ritual
+
+	desc = {
+		text = EVTDESC_TOG_7533
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = { text = EVTOPTA_TOG_7533 }
+		add_trait = blinded
+	}
+}
+
+#Tan Garki flavour event
+character_event = {
+	id = TOG.7534
+	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_battle_scene
+
+	desc = {
+		trigger = { has_character_modifier = follower_of_tan_garki }
+		text = EVTDESC_TOG_7534
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = { text = EVTOPTA_TOG_7534 }
+		military_techpoints = 80
+	}
+}
+
+#Yayan Zanzanna flavour event
+character_event = {
+	id = TOG.7535
+	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_sick_character
+
+	desc = {
+		trigger = { 
+			AND = {
+				has_character_modifier = follower_of_yayan_zanzanna
+				OR = {
+					has_disease_trigger = yes
+					trait = incapable
+				}
+			}
+		}
+		text = EVTDESC_TOG_7535
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = { text = EVTOPTA_TOG_7535 }
+		gold = -10
+		remove_trait = incapable
+		remove_disease_trait_effect = yes	
+	}
+}
+
+#Tan Dowa flavour event
+character_event = {
+	id = TOG.7536
+	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_mysterious_forest
+
+	desc = {
+		trigger = { has_character_modifier = follower_of_tan_dowa }
+		text = EVTDESC_TOG_7536
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = { text = EVTOPTA_TOG_7536 }
+		add_character_modifier = {
+			name = blessing_of_ayu
+			duration = -1
+		}
+	}
+	option = {
+		name = { text = EVTOPTB_TOG_7536 }
+		add_character_modifier = {
+			name = blessing_of_kadda
+			duration = -1
+		}
+	}
+}
+
+#Anti flavour event
+character_event = {
+	id = TOG.7537
+	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_berber_wrestling
+
+	desc = {
+		trigger = { 
+			has_character_modifier = follower_of_anti
+			is_married = yes
+		}
+		text = EVTDESC_TOG_7537
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		trigger = {
+			spouse = {
+				is_alive = yes
+				prisoner = no
+			}
+		}
+		name = { text = EVTOPTA_TOG_7537 }
+		remove_trait = is_fat
+		random = {
+			chance = 50
+			save_event_target_as = self
+			random_spouse = {
+				add_lover = event_target:self
+			}
+		}
+	}
+	option = {
+		name = { text = EVTOPTB_TOG_7537 }
+		remove_trait = is_fat
+		add_trait = chaste
+	}
+}
+
+#Gurzil flavour event
+character_event = {
+	id = TOG.7538
+	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_tribal_lands
+
+	desc = {
+		trigger = { has_character_modifier = follower_of_gurzil }
+		text = EVTDESC_TOG_7538
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = { text = EVTOPTA_TOG_7538 }
+		gold = -10
+		add_character_modifier = {
+			name = blessing_of_gurzil
+			duration = -1
+		}
+	}
+	option = {
+		name = { text = EVTOPTB_TOG_7538 }
+	}
+}
+
+#Magec flavour event
+character_event = {
+	id = TOG.7539
+	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_tribal_lands
+
+	desc = {
+		trigger = { has_character_modifier = follower_of_magec }
+		text = EVTDESC_TOG_7539
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = { text = EVTOPTA_TOG_7539 }
+		random_demesne_province = {
+			add_province_modifier = {
+				name = blessing_of_magec
+				duration = 300
+			}
+		}
+	}
+}
+
+#Set flavour event
+character_event = {
+	id = TOG.7540
+	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_shadow_mittens
+
+	desc = {
+		trigger = { has_character_modifier = follower_of_set }
+		text = EVTDESC_TOG_7540
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = { text = EVTOPTA_TOG_7540 }
+		random = {
+			chance = 50
+			add_trait = kind
+		}
+	}
+	option = {
+		name = { text = EVTOPTB_TOG_7540 }
+		change_intrigue = 1
+		random = {
+			chance = 20
+			add_trait = arbitrary
+		}
+	}
 }
 
 #16 Martial, increased levy
@@ -5034,6 +5343,10 @@ character_event = {
 		text = EVTDESC_TOG_7520_JARILO
 	}
 	desc = {
+		trigger = { has_character_modifier = follower_of_magec }
+		text = EVTDESC_TOG_7520_MAGEC
+	}
+	desc = {
 		trigger = { has_character_modifier = follower_of_bida }
 		text = EVTDESC_TOG_7520_BIDA
 		picture = GFX_evt_market_byzantine
@@ -5042,10 +5355,6 @@ character_event = {
 		trigger = { has_character_modifier = follower_of_babbaku }
 		text = EVTDESC_TOG_7520_BABBAKU
 		picture = GFX_evt_market_altaic
-	}
-	desc = {
-		trigger = { has_character_modifier = follower_of_magec }
-		text = EVTDESC_TOG_7520_MAGEC
 	}
 
 	hide_from = yes

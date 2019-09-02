@@ -1,0 +1,49 @@
+k_bori = {
+    color = { 150 85 35 }
+    
+    capital = 1746 # Kano
+    controls_religion = bori
+    short_name = yes
+    religion = bori
+    
+    title_female = "INNA"
+    foa = "INNA_FOA"
+    
+    landless = yes
+    primary = yes
+    dynasty_title_names = no
+}
+
+d_a_tag_roog = {
+    color = { 65 40 20 } 
+    
+    capital = 926 # Bambuk
+    controls_religion = a_tag_roog_reformed
+    short_name = yes
+    religion = a_tag_roog_reformed
+    
+    title = "SUPREME_SALTIGUE"
+    title_female = "SUPREME_SALTIGUE"
+    foa = "SUPREME_SALTIGUE_FOA"
+    
+    landless = yes
+    primary = yes
+    dynasty_title_names = no
+}
+
+d_amazigh = {
+    color = { 205 90 15 }
+    
+    capital = 817 # Tunis
+    controls_religion = amazigh_reformed
+    short_name = yes
+    religion = amazigh_reformed
+    
+    title = "GUANAMENE"
+    title_female = "GUANAMENE"
+    foa = "GUANAMENE_FOA"
+    
+    landless = yes
+    primary = yes
+    dynasty_title_names = no
+}

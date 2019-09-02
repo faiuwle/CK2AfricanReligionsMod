@@ -261,6 +261,11 @@ follower_of_set_desc;Set is a god of chaos, the desert, the wild storms and of v
 tanit_blessing;Blessing of Tanit;;;;;;;;;;;;;x
 voice_of_samari;Voice of the Samari;;;;;;;;;;;;;x
 voice_of_tanit;Voice of Tanit;;;;;;;;;;;;;x
+honor_alkali;Honored Alkali;;;;;;;;;;;;;x
+blessing_of_magec;Blessing of Magec;;;;;;;;;;;;;x
+blessing_of_ayu;Blessing of Ayu;;;;;;;;;;;;;x
+blessing_of_kadda;Blessing of Kadda;;;;;;;;;;;;;x
+blessing_of_gurzil;Blessing of Gurzil;;;;;;;;;;;;;x
 secret_bori_community;Secret Bori Community;;;;;;;;;;;;;x
 secret_bori_community_desc;In secret, the faithful have organized around a small church community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
 secret_a_tag_roog_community;Secret [a_tag_roog.GetName] Community;;;;;;;;;;;;;x

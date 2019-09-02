@@ -1,0 +1,73 @@
+k_mali = {
+    a_tag_roog_reformed = 1000
+    bori = 50
+    amazigh_reformed = 50
+}
+
+k_ghana = {
+    a_tag_roog_reformed = 1000
+    bori = 50
+    amazigh_reformed = 100
+}
+
+k_songhay = {
+    a_tag_roog_reformed = 1000
+    bori = 50
+    amazigh_reformed = 50
+}
+
+k_kanem = {
+    bori = 1000
+    a_tag_roog_reformed = 50
+    amazigh_reformed = 50
+}
+
+k_hausaland = {
+    bori = 1000
+    a_tag_roog_reformed = 50
+    amazigh_reformed = 50
+}
+
+k_mauretania = {
+    amazigh_reformed = 1000
+    bori = 50
+    a_tag_roog_reformed = 50
+}
+
+k_africa = {
+    amazigh_reformed = 1000
+    bori = 50
+    a_tag_roog_reformed = 50
+}
+
+c_tunis = {
+    amazigh_reformed = 2000
+}
+
+c_mallorca = {
+    amazigh_reformed = 500
+}
+
+k_egypt = {
+    amazigh_reformed = 100
+}
+
+k_valencia = {
+    amazigh_reformed = 250
+}
+
+k_badajoz = {
+    amazigh_reformed = 250
+}
+
+k_andalusia = {
+    amazigh_reformed = 250
+}
+
+d_sicily = {
+    amazigh_reformed = 250
+}
+
+k_sardinia = {
+    amazigh_reformed = 250
+}
