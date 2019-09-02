@@ -36,6 +36,6 @@ spriteTypes = {
 
     spriteType = {
         name = "GFX_evt_afr_berber_wrestling"
-            texturefile = "gfx/event_pictures/berber_wrestling.dds"
+        texturefile = "gfx/event_pictures/berber_wrestling.dds"
     }
 }
