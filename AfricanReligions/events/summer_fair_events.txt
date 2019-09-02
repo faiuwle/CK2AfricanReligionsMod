@@ -15,7 +15,19 @@
 #Dancing Monkey
 character_event = {
 	id = 74000
-	desc = "EVTDESC74000"
+	desc = {
+		trigger = {
+			religion_group = african_group
+		}
+		text = EVTDESC74000_AWUSSU
+	}
+	desc = {
+		trigger = {
+			NOT = { religion_group = african_group }
+		}
+		text = EVTDESC74000
+	}
+
 	picture = GFX_evt_jugglers
 
 	min_age = 20
@@ -156,7 +168,19 @@ character_event = {
 #Archery
 character_event = {
 	id = 74005
-	desc = "EVTDESC74005"
+	desc = {
+		trigger = {
+			religion_group = african_group
+		}
+		text = EVTDESC74005_AWUSSU
+	}
+	desc = {
+		trigger = {
+			NOT = { religion_group = african_group }
+		}
+		text = EVTDESC74005
+	}
+
 	picture = GFX_evt_jugglers
 
 	min_age = 20
@@ -268,7 +292,19 @@ character_event = {
 #Jesters
 character_event = {
 	id = 74010
-	desc = "EVTDESC74010"
+	desc = {
+		trigger = {
+			religion_group = african_group
+		}
+		text = EVTDESC74010_AWUSSU
+	}
+	desc = {
+		trigger = {
+			NOT = { religion_group = african_group }
+		}
+		text = EVTDESC74010
+	}	
+
 	picture = GFX_evt_jugglers
 
 	min_age = 20
@@ -332,7 +368,19 @@ character_event = {
 	}
 
 	option = {
-		name = "EVTOPTA74010"
+		name = { 
+			text = EVTOPTA74010_AWUSSU
+			trigger = {
+				religion_group = african_group
+			}
+		}
+		name = {
+			text = EVTOPTA74010
+			trigger = {
+				NOT = { religion_group = african_group }
+			}
+		}
+
 		trigger = {
 			NOT = {
 				trait = wroth
@@ -359,7 +407,19 @@ character_event = {
 	}
 
 	option = {
-		name = "EVTOPTG74010"
+		name = {
+			text = EVTOPTG74010_AWUSSU
+			trigger = {
+				religion_group = african_group
+			}
+		}
+		name = {
+			text = EVTOPG74010
+			trigger = {
+				NOT = { religion_group = african_group }
+			}
+		}
+
 		trigger = {
 			trait = charitable
 			NOT = {
@@ -375,7 +435,19 @@ character_event = {
 #Mummers
 character_event = {
 	id = 74015
-	desc = "EVTDESC74015"
+	desc = {
+		trigger = {
+			religion_group = african_group
+		}
+		text = EVTDESC74015_AWUSSU
+	}
+	desc = {
+		trigger = {
+			NOT = { religion_group = african_group }
+		}
+		text = EVTDESC74015
+	}	
+
 	picture = GFX_evt_jugglers
 
 	min_age = 20
@@ -481,7 +553,19 @@ character_event = {
 	}
 
 	option = {
-		name = "EVTOPTE74015"
+		name = {
+			text = EVTOPTE74015_AWUSSU
+			trigger = {
+				religion_group = african_group
+			}
+		}
+		name = {
+			text = EVTOPTE74015
+			trigger = {
+				NOT = { religion_group = african_group }
+			}
+		}
+
 		trigger = {
 			NOT = { trait = gregarious }
 			NOT = { trait = shy }
@@ -501,7 +585,19 @@ character_event = {
 #Summer Fair
 character_event = {
 	id = 74020
-	desc = "EVTDESC74020"
+	desc = {
+		trigger = {
+			religion_group = african_group
+		}
+		text = EVTDESC74020_AWUSSU
+	}
+	desc = {
+		trigger = {
+			NOT = { religion_group = african_group }
+		}
+		text = EVTDESC74020
+	}
+
 	picture = "GFX_evt_market"
 
 	min_age = 20
@@ -612,7 +708,19 @@ character_event = {
 #Strolling Players
 character_event = {
 	id = 74025
-	desc = "EVTDESC74025"
+	desc = {
+		trigger = {
+			religion_group = african_group
+		}
+		text = EVTDESC74025_AWUSSU
+	}
+	desc = {
+		trigger = {
+			NOT = { religion_group = african_group }
+		}
+		text = EVTDESC74025
+	}
+
 	picture = GFX_evt_jugglers
 
 	min_age = 20
@@ -680,7 +788,19 @@ character_event = {
 	}
 
 	option = {
-		name = "EVTOPTA74025"
+		name = {
+			text = EVTOPTA74025_AWUSSU
+			trigger = {
+				religion_group = african_group
+			}
+		}
+		name = {
+			text = EVTOPTA74025
+			trigger = {
+				NOT = { religion_group = african_group }
+			}
+		}
+
 		random_vassal = {
 			limit = {
 				prisoner = no
@@ -698,7 +818,19 @@ character_event = {
 	}
 
 	option = {
-		name = "EVTOPTB74025"
+		name = {
+			text = EVTOPTB74025_AWUSSU
+			trigger = { 
+				religion_group = african_group
+			}
+		}
+		name = {
+			text = EVTOPTB74025
+			trigger = {
+				NOT = { religion_group = african_group }
+			}
+		}
+
 		trigger = {
 			NOT = { has_character_flag = learning_boost_fair }
 		}
@@ -721,7 +853,19 @@ character_event = {
 #Jugglers
 character_event = {
 	id = 74030
-	desc = "EVTDESC74030"
+		desc = {
+		trigger = {
+			religion_group = african_group
+		}
+		text = EVTDESC74030_AWUSSU
+	}
+	desc = {
+		trigger = {
+			NOT = { religion_group = african_group }
+		}
+		text = EVTDESC74030
+	}
+
 	picture = "GFX_evt_jugglers"
 
 	min_age = 20
@@ -784,13 +928,37 @@ character_event = {
 	}
 
 	option = {
-		name = "EVTOPTA74030"
+		name = {
+			text = EVTOPTA74030_AWUSSU
+			trigger = {
+				religion_group = african_group
+			}
+		}
+		name = {
+			text = EVTOPTA74030
+			trigger = {
+				NOT = { religion_group = african_group }
+			}
+		}
+
 		prestige = 10
 		piety = -5
 	}
 
 	option = {
-		name = "EVTOPTB74030"
+		name = {
+			text = EVTOPTB74030_AWUSSU
+			trigger = {
+				religion_group = african_group
+			}
+		} 
+		name = {
+			text = EVTOPTB74030
+			trigger = {
+				NOT = { religion_group = african_group }
+			}
+		}
+
 		random_vassal = {
 			limit = {
 				prisoner = no
@@ -808,7 +976,19 @@ character_event = {
 	}
 
 	option = {
-		name = "EVTOPTD74030"
+		name = {
+			text = EVTOPTD74030_AWUSSU
+			trigger = { 
+				religion_group = african_group
+			}
+		}
+		name = {
+			text = EVTOPTD74030
+			trigger = {
+				NOT = { religion_group = african_group }
+			}
+		}
+
 		prestige = -5
 		piety = 10
 		random_vassal = {
@@ -831,7 +1011,19 @@ character_event = {
 #Jumping Jews of Jerusalem
 character_event = {
 	id = 74035
-	desc = "EVTDESC74035"
+	desc = {
+		trigger = {
+			religion_group = african_group
+		}
+		text = EVTDESC74035_AWUSSU
+	}
+	desc = {
+		trigger = {
+			NOT = { religion_group = african_group }
+		}
+		text = EVTDESC74035
+	}
+	
 	picture = GFX_evt_jugglers
 
 	min_age = 20
@@ -972,7 +1164,19 @@ character_event = {
 #Mages and Divinators visits the fair
 character_event = {
 	id = 74040
-	desc = "EVTDESC74040"
+	desc = {
+		trigger = {
+			religion_group = african_group
+		}
+		text = EVTDESC74040_AWUSSU
+	}
+	desc = {
+		trigger = {
+			NOT = { religion_group = african_group }
+		}
+		text = EVTDESC74040
+	}
+
 	picture = GFX_evt_jugglers
 
 	min_age = 20
@@ -1055,8 +1259,20 @@ character_event = {
 			remove_trait = zealous
 		}
 	}
-	option = {
-		name = "EVTOPTB74040" #Banish them
+	option = { #Banish them
+		name = {
+			text = EVTOPTB74040_AWUSSU
+			trigger = {
+				religion_group = african_group
+			}
+		} 
+		name = {
+			text = EVTOPTB74040
+			trigger = {
+				NOT = { religion_group = african_group }
+			}
+		}
+
 		piety = 10
 		capital_scope = {
 			add_province_modifier = {
@@ -1070,7 +1286,19 @@ character_event = {
 #Errant monk disturbing the fair
 character_event = {
 	id = 74042
-	desc = "EVTDESC74042"
+	desc = {
+		trigger = {
+			religion_group = african_group
+		}
+		text = EVTDESC74042_AWUSSU
+	}
+	desc = {
+		trigger = {
+			NOT = { religion_group = african_group }
+		}
+		text = EVTDESC74042
+	}
+
 	picture = GFX_evt_jugglers
 
 	min_age = 20
@@ -1146,8 +1374,20 @@ character_event = {
 			}
 		}
 	}
-	option = {
-		name = "EVTOPTB74042" #Banish him
+	option = {  #Banish him
+		name = {
+			text = EVTOPTB74042_AWUSSU
+			trigger = {
+				religion_group = african_group
+			}
+		}
+		name = {
+			text = EVTOPTB74042
+			trigger = {
+				religion_group = african_group
+			}
+		}
+
 		piety = 10
 		capital_scope = {
 			add_province_modifier = {
@@ -1246,7 +1486,19 @@ character_event = {
 #Too many Peasants enter the city
 character_event = {
 	id = 74045
-	desc = "EVTDESC74045"
+	desc = {
+		trigger = {
+			religion_group = african_group
+		}
+		text = EVTDESC74045_AWUSSU
+	}
+	desc = {
+		trigger = {
+			NOT = { religion_group = african_group }
+		}
+		text = EVTDESC74045
+	}
+
 	picture = GFX_evt_jugglers
 
 	min_age = 20
@@ -1298,8 +1550,20 @@ character_event = {
 		}			
 	}
 
-	option = {
-		name = "EVTOPTA74045" #Tell him to accept the peasants
+	option = { #Tell him to accept the peasants
+		name = {
+			text = EVTOPTA74045_AWUSSU
+			trigger = {
+				religion_group = african_group
+			}
+		}
+		name = {
+			text = EVTOPTA74045
+			trigger = {
+				NOT = { religion_group = african_group }
+			}
+		}
+
 		ai_chance = {
 			factor = 100
 		}
@@ -1319,7 +1583,19 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTB74045" #Restrict peasant access
+		name = { 
+			text = EVTOPTB74045_AWUSSU
+			trigger = {
+				religion_group = african_group
+			}
+		}
+		name = {
+			text = EVTOPTB74045  #Restrict peasant access
+			trigger = {
+				NOT = { religion_group = african_group }
+			}
+		}
+
 		ai_chance = {
 			factor = 5
 		}
@@ -1387,7 +1663,19 @@ character_event = {
 #Satirical Puppet Show
 character_event = {
 	id = 4105
-	desc = "EVTDESC4105"
+	desc = {
+		trigger = {
+			religion_group = african_group
+		}
+		text = EVTDESC4105_AWUSSU
+	}
+	desc = {
+		trigger = {
+			NOT = { religion_group = african_group }
+		}
+		text = EVTDESC4105
+	}
+
 	picture = GFX_evt_jugglers
 
 	only_playable = yes
@@ -1443,7 +1731,19 @@ character_event = {
 	}
 
 	option = {
-		name = "EVTOPTA4105"
+		name = {
+			text = EVTOPTA4105_AWUSSU
+			trigger = {
+				religion_group = african_group
+			}
+		}
+		name = {
+			text = EVTOPTA4105
+			trigger = {
+				NOT = { religion_group = african_group }
+			}
+		}
+
 		trigger = {
 			NOT = { trait = kind }
 			NOT = { trait = gregarious }
@@ -1522,7 +1822,19 @@ character_event = {
 #Performing Bear
 character_event = {
 	id = 4170
-	desc = "EVTDESC4170"
+	desc = {
+		trigger = {
+			religion_group = african_group
+		}
+		text = EVTDESC4170_AWUSSU
+	}
+	desc = {
+		trigger = {
+			NOT = { religion_group = african_group }
+		}
+		text = EVTDESC4170
+	}
+
 	picture = "GFX_evt_jugglers"
 
 	only_playable = yes
@@ -1608,7 +1920,19 @@ character_event = {
 	}
 
 	option = {
-		name = "EVTOPTD4170"
+		name = {
+			text = EVTOPTD4170_AWUSSU
+			trigger = {
+				religion_group = african_group
+			}
+		}
+		name = {
+			text = EVTOPTD4170
+			trigger = {
+				NOT = { religion_group = african_group }
+			}
+		}
+
 		trigger = {
 			trait = proud
 			NOT = { trait = craven }
