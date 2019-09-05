@@ -423,6 +423,7 @@ decisions = {
                 trait = serer
                 trait = dogon
                 trait = malinke
+                trait = sarakole
 			}
             NOT = { has_character_flag = flag_picking_branch }
 		}
@@ -461,6 +462,7 @@ decisions = {
                 trait = serer
                 trait = dogon
                 trait = malinke
+                trait = sarakole
             }
 			NOT = { has_character_flag = flag_changing_branch }
 			NOT = { has_character_flag = flag_changed_branch }
