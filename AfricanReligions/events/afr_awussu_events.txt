@@ -22,7 +22,6 @@ character_event = {
 #Carnival of Awussu, pretty lad
 character_event = {
 	id = AFRREL.035
-	title = EVTTITLE_AFRREL035
 	desc = EVTDESC_AFRREL035
 	picture = GFX_evt_lovers
 
@@ -31,23 +30,17 @@ character_event = {
 	only_playable = yes
 
 	trigger = {
-		religion = amazigh
 		OR = {
-			AND = {
-				is_female = yes
-				NOT = { trait = homosexual }
-			}
-			AND = {
-				is_female = no
-				trait = homosexual 
-			}
+			religion = amazigh_reformed
+			religion = amazigh
 		}
+		prefers_men_trigger = yes
 
 		OR = {
 			NOT = { has_character_flag = fair_event_happened }
 			had_character_flag = {
 				flag = fair_event_happened
-				days = 3hjk
+				days = 3
 			}
 		}
 		has_character_modifier = holding_summer_fair
@@ -55,11 +48,11 @@ character_event = {
 			flag = summer_fair_begin
 			days = 3
 		}
-		NOT = { has_character_flag = fair_event_AFRREL035 }	
+		NOT = { has_character_flag = fair_event_lover_lass }	
 	}
 
 	immediate = {
-		set_character_flag = fair_event_AFRREL035
+		set_character_flag = fair_event_lover_lass
 		set_character_flag = fair_event_happened
 	}
 
@@ -84,6 +77,7 @@ character_event = {
 				limit = { ROOT = { trait = homosexual } }
 				add_trait = homosexual
 			}
+			else = { remove_trait = homosexual }
 
 			add_lover = ROOT
 			remove_trait = genius
@@ -106,7 +100,6 @@ character_event = {
 #Carnival of Awussu, pretty lass
 character_event = {
 	id = AFRREL.036
-	title = EVTTITLE_AFRREL036
 	desc = EVTDESC_AFRREL036
 	picture = GFX_evt_lovers
 
@@ -115,17 +108,11 @@ character_event = {
 	only_playable = yes
 
 	trigger = {
-		religion = amazigh
 		OR = {
-			AND = {
-				is_female = no
-				NOT = { trait = homosexual }
-			}
-			AND = {
-				is_female = yes
-				trait = homosexual 
-			}
+			religion = amazigh_reformed
+			religion = amazigh
 		}
+		prefers_men_trigger = no
 
 		OR = {
 			NOT = { has_character_flag = fair_event_happened }
@@ -139,11 +126,11 @@ character_event = {
 			flag = summer_fair_begin
 			days = 3
 		}
-		NOT = { has_character_flag = fair_event_AFRREL036 }	
+		NOT = { has_character_flag = fair_event_lad }	
 	}
 
 	immediate = {
-		set_character_flag = fair_event_AFRREL036
+		set_character_flag = fair_event_lover_lad
 		set_character_flag = fair_event_happened
 	}
 
@@ -168,6 +155,7 @@ character_event = {
 				limit = { ROOT = { trait = homosexual } }
 				add_trait = homosexual
 			}
+			else = { remove_trait = homosexual }
 
 			add_lover = ROOT
 			remove_trait = genius
@@ -219,8 +207,8 @@ character_event = {
 		clr_character_flag = fair_event_74045
 		clr_character_flag = fair_event_4105
 		clr_character_flag = fair_event_4170
-		clr_character_flag = fair_event_AFRREL035
-		clr_character_flag = fair_event_AFRREL036
+		clr_character_flag = fair_event_lover_lass
+		clr_character_flag = fair_event_lover_lad
 		prestige = 10
 	}
 }
