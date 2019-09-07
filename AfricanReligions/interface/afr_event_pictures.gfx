@@ -33,4 +33,9 @@ spriteTypes = {
     name = "GFX_evt_afr_amazigh_deities_main"
     texturefile = "gfx/event_pictures/amazigh_patron_deity_event_main.dds"
     }
+    
+    spriteType = {
+        name = "GFX_evt_afr_snake"
+        texturefile = "gfx/event_pictures/afr_snake.dds"
+    }
 }

@@ -296,11 +296,13 @@ heir_of_dihya_desc;This character has fought for the Amazigh faith as Queen Dihy
 suffete;Suffete;;;;;;;;;;;;;x
 suffete_desc;This character is the highest magistrate of the Carthaginian Empire.;;;;;;;;;;;;;x
 serer;Serer;;;;;;;;;;;;;x
-serer_desc;This character follows the Serer spiritual tradition. The Serer refer to the supreme god as Roog, the primordial twins as Yaab and Yop, and the great star Sirius as Yoonir. They believe that creation is divided in the three worlds: the invisible world, the terrestrial world and the nocturnal world.;;;;;;;;;;;;;x
+serer_desc;This character follows the Serer religious tradition, “The way of the Divine”. The faith is founded around the interaction between the different planes of existence.;;;;;;;;;;;;;x
 dogon;Dogon;;;;;;;;;;;;;x
-dogon_desc;This character follows the Dogon spiritual tradition.  The Dogon refer to the supreme god as Amma, the primordial twins as the Nommo, and the great star Sirius as Sigui; they are also masters of astronomy.;;;;;;;;;;;;;x
+dogon_desc;This character follows the Dogon religious tradition. The doctrine is based around a deep knowledge of the stars and the blessings of mysterious spirits.;;;;;;;;;;;;;x
 malinke;Malinke;;;;;;;;;;;;;x
-malinke_desc;This character follows the Malinke spiritual tradition. Malinke are masters in the manipulation of the Nyama, the life force that unites all things; they refer to the supreme god as Mangala and the primordial twins as Pemba and Faro.;;;;;;;;;;;;;x
+malinke_desc;This character follows the Malinke religious tradition. This creed of blacksmiths and craftsmen is centered on the manipulation of Nyama, the fundamental life force of all things.;;;;;;;;;;;;;x
+sarakole;Sarakole;;;;;;;;;;;;;x
+sarakole_desc;This character follows the Sarakole religious tradition, the cult of Bida the snake. This mysterious cult offers regular human sacrifices, expecting the viper’s blessing in return.;;;;;;;;;;;;;x
 HEIR_OF_HANNIBAL;heir of Hannibal;;;;;;;;;;;;;x
 HEIR_OF_DIDO;heir of Dido;;;;;;;;;;;;;x
 FAKE_PHOENICIAN;fake Phoenician;;;;;;;;;;;;;x

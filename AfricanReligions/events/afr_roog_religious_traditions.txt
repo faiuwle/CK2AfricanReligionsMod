@@ -344,6 +344,7 @@ character_event = {
 character_event = {
     id = AFRREL.105
     desc = EVTDESC_AFRREL105
+    picture = GFX_evt_afr_snake
     
     is_triggered_only = yes
     
@@ -428,7 +429,7 @@ character_event = {
         hidden_tooltip = { character_event = { id = AFRREL.103 } }
 	}
     option = {
-        name = EVTOPTE_AFRREL104
+        name = EVTOPTD_AFRREL100
         
         trigger = { NOT = { trait = sarakole } }
         
