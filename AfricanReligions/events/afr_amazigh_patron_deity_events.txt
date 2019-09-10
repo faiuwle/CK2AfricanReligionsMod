@@ -195,3 +195,120 @@ character_event = {
         name =  EVTOPTA_AFRREL067
     }
 }
+
+#Anti flavour event
+character_event = {
+    id = AFRREL.113
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_berber_wrestling
+    desc = EVTDESC_AFRREL_113
+    
+    is_triggered_only = yes
+ 
+    option = {
+        trigger = {
+            spouse = {
+                is_alive = yes
+                prisoner = no
+            }
+        }
+        name = EVTOPTA_AFRREL_113
+        if = {
+            limit = { trait = is_fat }
+            lose_weight_medium_effect = yes
+            weight_trait_check_effect = yes
+        }
+        random = {
+            chance = 50
+            random_spouse = {
+                add_lover = event_target:PREV
+            }
+        }
+    }
+    option = {
+        trigger = {
+            spouse = {
+                is_alive = yes
+                prisoner = no
+            }
+        }
+        name = EVTOPTB_AFRREL_113
+        if = {
+            limit = { trait = is_fat }
+            lose_weight_medium_effect = yes
+            weight_trait_check_effect = yes
+        }
+        add_trait = chaste
+    }
+}
+
+#Gurzil flavour event
+character_event = {
+    id = AFRREL.114
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_tribal_lands
+
+    desc = EVTDESC_AFRREL_114
+
+    is_triggered_only = yes
+
+    option = {
+        name = EVTOPTA_AFRREL_114
+        gold = -10
+        add_character_modifier = {
+            name = blessing_of_gurzil
+            duration = 5
+        }
+    }
+    option = {
+        name = EVTOPTB_AFRREL_114
+    }
+}
+
+#Magec flavour event
+character_event = {
+    id = AFRREL.115
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_tribal_lands
+
+    desc = EVTDESC_AFRREL_115
+
+    is_triggered_only = yes
+
+    option = {
+        name = EVTOPTA_AFRREL_115
+        random_demesne_province = {
+            add_province_modifier = {
+                name = blessing_of_magec
+                duration = 300
+            }
+        }
+    }
+}
+
+#Set flavour event
+character_event = {
+    id = AFRREL.116
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_shadow_mittens
+
+    desc = EVTDESC_AFRREL_116
+
+    is_triggered_only = yes
+
+    option = {
+        name = EVTOPTA_AFRREL_116
+        random = {
+            chance = 50
+            add_trait = kind
+        }
+    }
+    option = {
+        name = EVTOPTB_AFRREL_116
+        change_intrigue = 1
+        random = {
+            chance = 20
+            add_trait = arbitrary
+        }
+    }
+}

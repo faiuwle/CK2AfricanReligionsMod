@@ -198,7 +198,7 @@ character_event = {
     }
 }
 
-#Picked Tan Dowsa
+#Picked Tan Dowa
 character_event = {
     id = AFRREL.058
     desc = EVTDESC_AFRREL058
@@ -209,5 +209,154 @@ character_event = {
 
     option = {
         name =  EVTOPTA_AFRREL058
+    }
+}
+
+#Yan Riga flavour event
+character_event = {
+    id = AFRREL.106
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_market_byzantine
+
+    desc = EVTDESC_AFRREL_106
+
+    is_triggered_only = yes
+
+    option = {
+        name = EVTOPTA_AFRREL_106
+        gold = -20
+        add_character_modifier = {
+            name = honor_alkali
+            years = 2
+        }
+    }
+    option = {
+        name = EVTOPTB_AFRREL_106
+        random = {
+            chance = 50
+            add_trait = humble
+        }
+    }
+}
+
+#Babbaku flavour event
+character_event = {
+    id = AFRREL.107
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_tribal_shrine
+
+    desc = EVTDESC_AFRREL_107
+    is_triggered_only = yes
+
+    option = {
+        name = EVTOPTA_AFRREL_107
+        random_list = {
+            50 = { hidden_tooltip = { character_event = { id = AFRREL.108 days = 3 } } }
+            50 = { hidden_tooltip = { character_event = { id = AFRREL.109 days = 3 } } }
+        }
+    }
+    option = {
+        name = EVTOPTB_AFRREL_107
+        prestige = -5
+    }
+}
+
+character_event = {
+    id = AFRREL.108
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_afr_berber_wrestling
+
+    desc = EVTDESC_AFRREL_108
+
+    is_triggered_only = yes
+
+    option = {
+        name = EVTOPTA_AFRREL_108
+        if = {
+            limit = { trait = is_fat }
+            lose_weight_medium_effect = yes
+            weight_trait_check_effect = yes
+        }
+        if = {
+            limit = { trait = is_malnourished }
+            gain_weight_medium_effect = yes
+            weight_trait_check_effect = yes
+        }
+        add_trait = robust
+    }
+}
+
+character_event = {
+    id = AFRREL.109
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_magic_ritual
+
+    desc = EVTDESC_AFRREL_109
+
+    is_triggered_only = yes
+
+    option = {
+        name = EVTOPTA_AFRREL_109
+        add_trait = blinded
+    }
+}
+
+#Tan Garki flavour event
+character_event = {
+    id = AFRREL.110
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_battle_scene
+
+    desc = EVTDESC_AFRREL_110
+
+    is_triggered_only = yes
+
+    option = {
+        name = EVTOPTA_AFRREL_110
+        military_techpoints = 80
+    }
+}
+
+#Yayan Zanzanna flavour event
+character_event = {
+    id = AFRREL.111
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_sick_character
+
+    desc = EVTDESC_AFRREL_111
+
+    is_triggered_only = yes
+
+    option = {
+        name = EVTOPTA_AFRREL_111
+        gold = -10
+        remove_trait = incapable
+        remove_disease_trait_effect = yes   
+    }
+}
+
+#Tan Dowa flavour event
+character_event = {
+    id = AFRREL.112
+    border = GFX_event_normal_frame_religion
+    picture = GFX_evt_mysterious_forest
+
+    desc = EVTDESC_AFRREL_112
+
+    is_triggered_only = yes
+
+    option = {
+        name = EVTOPTA_AFRREL_112
+        add_character_modifier = {
+            name = blessing_of_ayu
+            duration = 5
+        }
+    }
+    option = {
+        name = EVTOPTB_AFRREL_112
+        add_character_modifier = {
+            name = blessing_of_kadda
+            duration = 5
+        }
     }
 }
