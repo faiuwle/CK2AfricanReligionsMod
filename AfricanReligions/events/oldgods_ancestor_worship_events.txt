@@ -2616,12 +2616,23 @@ character_event = {
 							is_married = yes
 						}
 					}
-
-					any_spouse = {
-						save_event_target_as = target_spouse
+					random_spouse = {
+						limit = {
+							OR = {
+								is_female = no
+								AND = {
+									is_female = yes
+									NOT = { age = 46 }
+								}
+							}
+							NOR = {
+								trait = celibate
+								trait = eunuch
+							}
+							prisoner = no
+						}
+					 	character_event = { id = AFRREL.117 } 
 					}
-
-					event_target:target_spouse = {character_event = { id = AFRREL.113 } }
 				}
 				#Call Gurzil flavour event
 				if = {

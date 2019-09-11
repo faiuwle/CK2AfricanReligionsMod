@@ -198,6 +198,17 @@ character_event = {
 
 #Anti flavour event
 character_event = {
+    id = AFRREL.117
+    hide_window = yes
+
+    is_triggered_only = yes
+
+    option = {
+        FROM = { character_event = { id = AFRREL.113 } }
+    }
+}
+
+character_event = {
     id = AFRREL.113
     border = GFX_event_normal_frame_religion
     picture = GFX_evt_berber_wrestling
@@ -221,7 +232,7 @@ character_event = {
         random = {
             chance = 50
             random_spouse = {
-                add_lover = event_target:PREV
+                add_lover = ROOT
             }
         }
     }
