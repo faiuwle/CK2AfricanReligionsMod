@@ -231,7 +231,7 @@ character_event = {
         }
         random = {
             chance = 50
-            random_spouse = {
+            FROM = {
                 add_lover = ROOT
             }
         }
@@ -265,10 +265,10 @@ character_event = {
 
     option = {
         name = EVTOPTA_AFRREL_114
-        gold = -10
+        wealth = -10
         add_character_modifier = {
             name = blessing_of_gurzil
-            duration = 5
+            years = 5
         }
     }
     option = {

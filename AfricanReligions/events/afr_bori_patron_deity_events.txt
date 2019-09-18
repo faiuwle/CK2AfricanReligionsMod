@@ -224,7 +224,7 @@ character_event = {
 
     option = {
         name = EVTOPTA_AFRREL_106
-        gold = -20
+        wealth = -20
         add_character_modifier = {
             name = honor_alkali
             years = 2
@@ -250,9 +250,11 @@ character_event = {
 
     option = {
         name = EVTOPTA_AFRREL_107
-        random_list = {
-            50 = { hidden_tooltip = { character_event = { id = AFRREL.108 days = 3 } } }
-            50 = { hidden_tooltip = { character_event = { id = AFRREL.109 days = 3 } } }
+        hidden_tooltip = {
+            random_list = {
+                50 = { character_event = { id = AFRREL.108 days = 3 } }
+                50 = {  character_event = { id = AFRREL.109 days = 3 } }
+            }
         }
     }
     option = {
@@ -329,7 +331,7 @@ character_event = {
 
     option = {
         name = EVTOPTA_AFRREL_111
-        gold = -10
+        wealth = -10
         remove_trait = incapable
         remove_disease_trait_effect = yes   
     }
@@ -349,14 +351,14 @@ character_event = {
         name = EVTOPTA_AFRREL_112
         add_character_modifier = {
             name = blessing_of_ayu
-            duration = 5
+            years = 5
         }
     }
     option = {
         name = EVTOPTB_AFRREL_112
         add_character_modifier = {
             name = blessing_of_kadda
-            duration = 5
+            years = 5
         }
     }
 }
