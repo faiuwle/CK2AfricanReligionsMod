@@ -2568,10 +2568,7 @@ character_event = {
 				#Hunting dieties
 				if = {
 					limit = { 
-						OR = {
-							has_character_modifier = follower_of_taipo_and_mielikki 
-							has_character_modifier = follower_of_tan_dowa
-						}
+						has_character_modifier = follower_of_taipo_and_mielikki 
 					}
 					character_event = { id = TOG.7517 }
 				} 
@@ -2611,26 +2608,30 @@ character_event = {
 				#Call Anti flavour event
 				if = {
 					limit = { 
-						AND = {
-							has_character_modifier = follower_of_anti
-							is_married = yes
-						}
+                        has_character_modifier = follower_of_anti
+						is_married = yes
+                        NOR = {
+                            trait = celibate
+                            trait = eunuch
+                        }
 					}
 					random_spouse = {
 						limit = {
-							OR = {
-								is_female = no
-								AND = {
-									is_female = yes
-									NOT = { age = 46 }
-								}
-							}
 							NOR = {
 								trait = celibate
 								trait = eunuch
 							}
 							prisoner = no
 						}
+                        preferred_limit = {
+                            NOT = { age = 30 }
+                        }
+                        preferred_limit = {
+                            NOT = { age = 40 }
+                        }
+                        preferred_limit = {
+                            NOT = { age = 46 }
+                        }
 					 	character_event = { id = AFRREL.117 } 
 					}
 				}
@@ -5333,7 +5334,14 @@ character_event = {
 	hide_from = yes
 
 	option = {
-		name = EVTOPTA_TOG_7524
+		name = {
+            text = EVTOPTA_TOG_7524
+            trigger = { NOT = { has_character_modifier = follower_of_yan_riga } }
+        }
+        name = {
+            text = EVTOPTA_TOG_7524_YAN_RIGA
+            trigger = { has_character_modifier = follower_of_yan_riga }
+        }
 
 		random_list = {
 			33 = { military_techpoints = 100 }

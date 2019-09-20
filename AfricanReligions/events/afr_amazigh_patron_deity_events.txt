@@ -217,12 +217,6 @@ character_event = {
     is_triggered_only = yes
  
     option = {
-        trigger = {
-            spouse = {
-                is_alive = yes
-                prisoner = no
-            }
-        }
         name = EVTOPTA_AFRREL_113
         if = {
             limit = { trait = is_fat }
@@ -237,12 +231,6 @@ character_event = {
         }
     }
     option = {
-        trigger = {
-            spouse = {
-                is_alive = yes
-                prisoner = no
-            }
-        }
         name = EVTOPTB_AFRREL_113
         if = {
             limit = { trait = is_fat }
