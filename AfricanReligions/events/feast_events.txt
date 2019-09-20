@@ -1049,7 +1049,14 @@ character_event = {
 #Send invites
 character_event = {
 	id = 72010
-	desc = "EVTDESC72010"
+	desc = {
+        text = "EVTDESC72010"
+        trigger = { NOT = { religion_group = african_group } }
+    }
+    desc = {
+        text = EVTDESC72010_BIDA
+        trigger = { religion_group = african_group }
+    }
 	picture = GFX_evt_feast
 
 	is_triggered_only = yes
@@ -1222,6 +1229,11 @@ character_event = {
 					tooltip = "EVTTOOLTIP72016"
 				}
 			}
+            # Selection of Bida snake's bride for A Tat Roog
+            if = {
+                limit = { religion_group = african_group }
+                character_event = { id = AFRREL.040 days = 6 }
+            }
 			random_list = { #First wave of events
 				10 = { #Lavish food (vassal)
 					modifier = {
@@ -2310,7 +2322,13 @@ character_event = {
 				}
 				#10 = {} #Empty as fallback
 			}
-			character_event = { id = 72110 days = 20 }
+            if = {  # Feast ends
+                limit = { NOT = { religion_group = african_group } }
+                character_event = { id = 72110 days = 20 }
+            }
+            else = {  # Bida sacrifice events
+            
+            }
 		}
 	}
 }
