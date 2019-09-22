@@ -1,11 +1,14 @@
 namespace = AFRREL
 
+# Selection of the victim
 character_event = {
     id = AFRREL.040
     desc = EVTDESC_AFRREL040
     picture = GFX_evt_afr_snake
     
     is_triggered_only = yes
+    
+    trigger = { has_character_modifier = holding_large_feast }
     
     immediate = {
         random_courtier = {
@@ -93,7 +96,7 @@ character_event = {
             text = bida_sacrifice_peasant_tooltip
             random = {
                 chance = 50
-                character_event = { id = AFRREL.041 days = 11 }
+                character_event = { id = AFRREL.041 days = 16 }
             }
         }
         
@@ -113,7 +116,7 @@ character_event = {
             text = bida_sacrifice_courtier_tooltip
             random = {
                 chance = 50
-                character_event = { id = AFRREL.041 days = 11 }
+                character_event = { id = AFRREL.041 days = 16 }
             }
         }
 
@@ -197,12 +200,25 @@ character_event = {
     }
 }
 
+# Victim comes to beg for her life
 character_event = {
     id = AFRREL.041
     desc = EVTDESC_AFRREL041
     # picture: crying woman?
     
     is_triggered_only = yes
+    
+    trigger = {
+        has_character_modifier = holding_large_feast
+        NOT = { persistent_event_target:bida_sacrifice = { is_alive = no } }
+    }
+    
+    fail_trigger_effect = {
+        if = {
+            limit = { has_character_modifier = holding_large_feast }
+            character_event = { id = AFRREL.045 }
+        }
+    }
     
     immediate = {
         if = {
@@ -267,6 +283,8 @@ character_event = {
                 new_character = { add_friend = ROOT }
             }
         }
+        
+        any_demesne_province = { add_province_modifier = { name = canceled_bida_sacrifice months = 8 } }
         
         clear_persistent_event_target = bida_sacrifice
     }
@@ -342,4 +360,143 @@ character_event = {
     }
 }
     
+# The sacrifice takes place
+character_event = {
+    id = AFRREL.042
+    desc = {
+        text = EVTDESC_AFRREL042
+        trigger = {
+            persistent_event_target:bida_sacrifice = { always = yes }
+            persistent_event_target:bida_sacrifice = { NOT = { character = ROOT } }
+        }
+    }
+    desc = {
+        text = EVTDESC_AFRREL042_PEASANT
+        trigger = { NOT = { persistent_event_target:bida_sacrifice = { always = yes } } }
+    }
+    desc = {
+        text = EVTDESC_AFRREL042_SUICIDE
+        trigger = { persistent_event_target:bida_sacrifice = { character = ROOT } }
+    }
+    picture = GFX_evt_afr_snake
     
+    is_triggered_only = yes
+    
+    trigger = {
+        has_character_modifier = holding_large_feast
+        NOT = { persistent_event_target:bida_sacrifice = { is_alive = no } }
+    }
+    
+    fail_trigger_effect = {
+        if = {
+            limit = { has_character_modifier = holding_large_feast }
+            character_event = { id = AFRREL.045 }
+        }
+    }
+    
+    option = {
+        name = {
+            text = EVTOPTA_AFRREL042
+            trigger = { NOT = { persistent_event_target:bida_sacrifice = { character = ROOT } } }
+        }
+        name = {
+            text = EVTOPTA_AFRREL042_SUICIDE
+            trigger = { persistent_event_target:bida_sacrifice = { character = ROOT } }
+        }
+        
+        if = {
+            limit = { NOT = { persistent_event_target:bida_sacrifice = { character = ROOT } } }
+            piety = 5
+        }
+        
+        if = {
+            limit = { random = 30 }
+            any_demesne_province = { add_province_modifier = { name = good_bida_sacrifice months = 8 } }
+            set_character_flag = good_bida_sacrifice
+        }
+        else = {
+            any_demesne_province = { add_province_modifier = { name = bad_bida_sacrifice months = 8 } }
+            set_character_flag = bad_bida_sacrifice
+        }
+        
+        persistent_event_target:bida_sacrifice = {
+            if = {
+                limit = { ai = no }
+                tooltip = { death = { death_reason = death_bida_sacrifice killer = ROOT } }
+                hidden_tooltip = { character_event = { id = AFRREL.043 } }
+            }
+            else = {
+                death = { death_reason = death_bida_sacrifice killer = ROOT }
+            }
+        }
+        
+        clear_persistent_event_target = bida_sacrifice
+        
+        hidden_tooltip = { character_event = { id = 72110 } }
+        hidden_tooltip = { character_event = { id = AFRREL.044 days = 90 } }
+    }
+}
+
+# Player is informed that they've been sacrificed
+character_event = {
+    id = AFRREL.043
+    desc = EVTDESC_AFRREL043
+    picture = GFX_evt_afr_snake
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL043
+        
+        death = { death_reason = death_bida_sacrifice killer = FROM }
+    }
+}
+
+# Report on the success of the sacrifice a few months later
+character_event = {
+    id = AFRREL.044
+    desc = {
+        text = EVTDESC_AFRREL044_GOOD
+        trigger = { has_character_flag = good_bida_sacrifice }
+    }
+    desc = {
+        text = EVTDESC_AFRREL044_BAD
+        trigger = { has_character_flag = bad_bida_sacrifice }
+    }
+    # picture: rains?
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = {
+            text = EVTOPTA_AFRREL044_GOOD
+            trigger = { has_character_flag = good_bida_sacrifice }
+        }
+        name = {
+            text = EVTOPTA_AFRREL044_BAD
+            trigger = { has_character_flag = bad_bida_sacrifice }
+        }
+        
+        clr_character_flag = good_bida_sacrifice
+        clr_character_flag = bad_bida_sacrifice
+    }
+}
+
+# Sacrifice died prematurely
+character_event = {
+    id = AFRREL.045
+    desc = EVTDESC_AFRREL045
+    picture = GFX_evt_afr_snake
+    
+    is_triggered_only = yes
+    
+    trigger = { has_character_modifier = holding_large_feast }
+    
+    option = {
+        name = EVTOPTA_AFRREL045
+        
+        clear_persistent_event_target = bida_sacrifice
+        hidden_tooltip = { character_event = { id = 72999 } }
+        any_demesne_province = { add_province_modifier = { name = canceled_bida_sacrifice months = 8 } }
+    }
+}

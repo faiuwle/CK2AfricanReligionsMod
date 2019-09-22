@@ -1232,7 +1232,7 @@ character_event = {
             # Selection of Bida snake's bride for A Tat Roog
             if = {
                 limit = { religion_group = african_group }
-                character_event = { id = AFRREL.040 days = 6 }
+                character_event = { id = AFRREL.040 days = 1 }
             }
 			random_list = { #First wave of events
 				10 = { #Lavish food (vassal)
