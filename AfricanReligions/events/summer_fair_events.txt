@@ -173,15 +173,16 @@ character_event = {
 			religion_group = african_group
 		}
 		text = EVTDESC74005_AWUSSU
+		picture = GFX_evt_longbowman_arabic
 	}
 	desc = {
 		trigger = {
 			NOT = { religion_group = african_group }
 		}
 		text = EVTDESC74005
+		picture = GFX_evt_jugglers
 	}
-
-	picture = GFX_evt_jugglers
+	
 
 	min_age = 20
 	capable_only = yes
@@ -297,15 +298,15 @@ character_event = {
 			religion_group = african_group
 		}
 		text = EVTDESC74010_AWUSSU
+		picture = GFX_evt_imam
 	}
 	desc = {
 		trigger = {
 			NOT = { religion_group = african_group }
 		}
 		text = EVTDESC74010
+		picture = GFX_evt_jugglers
 	}	
-
-	picture = GFX_evt_jugglers
 
 	min_age = 20
 	capable_only = yes
@@ -440,15 +441,15 @@ character_event = {
 			religion_group = african_group
 		}
 		text = EVTDESC74015_AWUSSU
+		picture = GFX_evt_joust_arabic
 	}
 	desc = {
 		trigger = {
 			NOT = { religion_group = african_group }
 		}
 		text = EVTDESC74015
-	}	
-
-	picture = GFX_evt_jugglers
+		picture = GFX_evt_jugglers
+	}
 
 	min_age = 20
 	capable_only = yes
@@ -590,15 +591,15 @@ character_event = {
 			religion_group = african_group
 		}
 		text = EVTDESC74020_AWUSSU
+		picture = GFX_evt_torture
 	}
 	desc = {
 		trigger = {
 			NOT = { religion_group = african_group }
 		}
 		text = EVTDESC74020
+		picture = GFX_evt_market
 	}
-
-	picture = "GFX_evt_market"
 
 	min_age = 20
 	capable_only = yes
@@ -713,15 +714,15 @@ character_event = {
 			religion_group = african_group
 		}
 		text = EVTDESC74025_AWUSSU
+		picture = GFX_evt_jugglers_arabic
 	}
 	desc = {
 		trigger = {
 			NOT = { religion_group = african_group }
 		}
 		text = EVTDESC74025
+		picture = GFX_evt_jugglers
 	}
-
-	picture = GFX_evt_jugglers
 
 	min_age = 20
 	capable_only = yes
@@ -858,15 +859,15 @@ character_event = {
 			religion_group = african_group
 		}
 		text = EVTDESC74030_AWUSSU
+		picture = GFX_evt_market_byzantine
 	}
 	desc = {
 		trigger = {
 			NOT = { religion_group = african_group }
 		}
 		text = EVTDESC74030
+		picture = GFX_evt_jugglers
 	}
-
-	picture = "GFX_evt_jugglers"
 
 	min_age = 20
 	capable_only = yes
@@ -1016,15 +1017,15 @@ character_event = {
 			religion_group = african_group
 		}
 		text = EVTDESC74035_AWUSSU
+		picture = GFX_evt_jugglers_arabic
 	}
 	desc = {
 		trigger = {
 			NOT = { religion_group = african_group }
 		}
 		text = EVTDESC74035
+		picture = GFX_evt_jugglers
 	}
-	
-	picture = GFX_evt_jugglers
 
 	min_age = 20
 	capable_only = yes
@@ -1169,15 +1170,15 @@ character_event = {
 			religion_group = african_group
 		}
 		text = EVTDESC74040_AWUSSU
+		picture = GFX_evt_council_arabic
 	}
 	desc = {
 		trigger = {
 			NOT = { religion_group = african_group }
 		}
 		text = EVTDESC74040
+		picture = GFX_evt_jugglers
 	}
-
-	picture = GFX_evt_jugglers
 
 	min_age = 20
 	capable_only = yes
@@ -1291,15 +1292,15 @@ character_event = {
 			religion_group = african_group
 		}
 		text = EVTDESC74042_AWUSSU
+		picture = GFX_evt_heretic
 	}
 	desc = {
 		trigger = {
 			NOT = { religion_group = african_group }
 		}
 		text = EVTDESC74042
+		picture = GFX_evt_jugglers
 	}
-
-	picture = GFX_evt_jugglers
 
 	min_age = 20
 	capable_only = yes
@@ -1402,8 +1403,18 @@ character_event = {
 character_event = {
 	id = 74044
 	desc = "EVTDESC74044"
-	picture = GFX_evt_market
+	picture = {
+		trigger = { religion_group = african_group }
+		picture = GFX_evt_spymaster
+	}
 
+	picture = {
+		trigger = { 
+			NOT = { religion_group = african_group }
+		}
+		picture = GFX_evt_market
+	}
+	
 	min_age = 20
 	capable_only = yes
 	prisoner = no
@@ -1491,15 +1502,15 @@ character_event = {
 			religion_group = african_group
 		}
 		text = EVTDESC74045_AWUSSU
+		picture = GFX_evt_feast_indo_aryan_group
 	}
 	desc = {
 		trigger = {
 			NOT = { religion_group = african_group }
 		}
 		text = EVTDESC74045
+		picture = GFX_evt_jugglers
 	}
-
-	picture = GFX_evt_jugglers
 
 	min_age = 20
 	capable_only = yes
@@ -1668,6 +1679,7 @@ character_event = {
 			religion_group = african_group
 		}
 		text = EVTDESC4105_AWUSSU
+		picture = GFX_evt_recieve_letter
 	}
 	desc = {
 		trigger = {
