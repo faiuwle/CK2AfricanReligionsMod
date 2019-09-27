@@ -53,3 +53,9 @@ on_employer_change = {
         AFRREL.100  # Give liege's branch to generated courtiers
     }
 }
+
+on_released_from_prison = {
+    events = {
+        AFRREL.046  # Releasing the Bida sacrifice ends the event chain
+    }
+}

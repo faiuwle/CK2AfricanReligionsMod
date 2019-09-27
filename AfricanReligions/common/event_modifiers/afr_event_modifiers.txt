@@ -98,3 +98,15 @@ follower_of_set = {
 	martial = -1
 	icon = 48
 }
+
+good_bida_sacrifice = {
+    icon = 129
+}
+
+bad_bida_sacrifice = {
+    icon = 129
+}
+
+canceled_bida_sacrifice = {
+    icon = 130
+}

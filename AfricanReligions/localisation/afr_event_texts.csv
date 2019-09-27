@@ -166,3 +166,28 @@ EVTDESC72111_BIDA;[From.GetTitledFirstName]'s ceremony presenting this year’s sa
 EVTOPTA72111_BIDA;The loss of a good woman, a necessary evil.;;;;;;;;;;;;;x
 EVTDESC72112_BIDA;I have to cancel the Bida ceremony due to the war I am currently fighting against one of my enemies. Perhaps after the war I might throw a victory feast.;;;;;;;;;;;;;x
 EVTDESC72113_BIDA;Dear [Root.GetTitledFirstName], due to the unfortunate war I have to cancel this years sacrifice. I hope you will be able to attend the victory fest I plan to have after the war.\n\n[From.GetTitledFirstName];;;;;;;;;;;;;x
+EVTDESC_AFRREL040;The snake’s bride must be selected with precision - for this reason one hundred young ladies appear before you on the back of one hundred horses. The guests of the feast must select the most beautiful among all but as host you have the final say.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL040;Whatever plebian girl they like is fine.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL040;One of my own court would show generosity.;;;;;;;;;;;;;x
+EVTOPTC_AFRREL040;My own daughter will have the honor.;;;;;;;;;;;;;x
+EVTOPTD_AFRREL040;I do need to empty a cell.;;;;;;;;;;;;;x
+EVTOPTE_AFRREL040;Can I be the sacrifice? I am pretty.;;;;;;;;;;;;;x
+EVTDESC_AFRREL041;Once everyone has gone to bed in preparation for the ceremony, somebody knocks at your door. It’s the snake’s fiancée, and she is crying. She says between sobs: “My [Root.GetTitle], please, I don’t want to die. I will give you anything, my loyalty, my life, my heart.” You feel a sting in your heart seen that beautiful face covered in tears.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL041;This atrocity is over, you will not suffer under my watch.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL041;The snake demands, and we must pay.;;;;;;;;;;;;;x
+EVTOPTC_AFRREL041;Perhaps some other girl could replace you.;;;;;;;;;;;;;x
+EVTDESC_AFRREL042;A procession marches to the river in the morning and with them rides [bida_sacrifice.GetTitledName] carrying a golden spoon. Once there, the head priest attaches heavy weights to the girl’s legs and places her in a small boat. Everybody is then commanded to look away. You hear a splash as the girl is swallowed by the river. The viper of the waters has got his bride.;;;;;;;;;;;;;x
+EVTDESC_AFRREL042_PEASANT;A procession marches to the river in the morning and with them rides the peasant girl carrying a golden spoon. Once there, the head priest attaches heavy weights to the girl’s legs and places her in a small boat. Everybody is then commanded to look away. You hear a splash as the girl is swallowed by the river. The viper of the waters has got his bride.;;;;;;;;;;;;;x
+EVTDESC_AFRREL042_SUICIDE;A procession marches to the river in the morning and you ride with them carrying a golden spoon. Once there the head priest attaches heavy weights to your legs and places you in a small boat. Everybody is then commanded to look away as the priest pushes you to the river. This is your wedding, but you don’t see the groom.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL042;Only life can pay for life.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL042_SUICIDE;What? Where is the snake?;;;;;;;;;;;;;x
+EVTDESC_AFRREL043;[From.GetTitledNameWithNick] has selected you as this year’s sacrifice to Bida. You are forced to parade to the river. Once there the head priest attaches heavy weights to your legs and places you in a small boat. Everybody is then commanded to look away as the priest pushes you to the river. The snake will have you as their offering.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL043;So this is the embrace of the serpent.;;;;;;;;;;;;;x
+EVTDESC_AFRREL044_GOOD;Every year a young bride is sacrificed to the river, and every year you wonder if it’s all worth it.\n\nYour suspicions are gone for the time being. The snake must love his new bride, because the land is more fertile than ever and the mines keep the revenue coming.;;;;;;;;;;;;;x
+EVTDESC_AFRREL044_BAD;Maybe it’s all a charade, the mines are not producing and the rains are late this year.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL044_GOOD;We pay with life, and we get life.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL044_BAD;Cursed snake;;;;;;;;;;;;;x
+EVTDESC_AFRREL045;This year’s intended sacrifice [bida_sacrifice.GetTitledName], has died prematurely. Without a proper sacrifice the ritual for Bida is now ruined and the event must be canceled immediately.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL045;The snake will be displeased.;;;;;;;;;;;;;x
+EVTDESC_AFRREL047;With [bida_sacrifice.GetTitledName] no longer in your dungeon, this year’s ceremony has being left without a proper sacrifice. The ritual must be postponed.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL047;The snake will be displeased.;;;;;;;;;;;;;x

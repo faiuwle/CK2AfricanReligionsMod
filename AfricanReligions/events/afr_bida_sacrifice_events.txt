@@ -136,7 +136,10 @@ character_event = {
         
         prestige = 60
         piety = 60
-        add_trait = diligent
+        random = {
+            chance = 50
+            add_trait = diligent
+        }
         custom_tooltip = {
             text = bida_sacrifice_daughter_tooltip
         }
@@ -204,7 +207,7 @@ character_event = {
 character_event = {
     id = AFRREL.041
     desc = EVTDESC_AFRREL041
-    # picture: crying woman?
+    picture = GFX_evt_daughter_asking_father
     
     is_triggered_only = yes
     
@@ -294,6 +297,10 @@ character_event = {
         
         custom_tooltip = {
             text = bida_sacrifice_continues_tooltip
+        }
+        random = {
+            chance = 20
+            add_trait = zealous
         }
     }
     
@@ -463,7 +470,7 @@ character_event = {
         text = EVTDESC_AFRREL044_BAD
         trigger = { has_character_flag = bad_bida_sacrifice }
     }
-    # picture: rains?
+    picture = GFX_evt_west_african_ruler
     
     is_triggered_only = yes
     
@@ -495,8 +502,51 @@ character_event = {
     option = {
         name = EVTOPTA_AFRREL045
         
-        clear_persistent_event_target = bida_sacrifice
-        hidden_tooltip = { character_event = { id = 72999 } }
+        custom_tooltip = {
+            text = bida_sacrifice_ends_early_tooltip
+            clear_persistent_event_target = bida_sacrifice
+            character_event = { id = 72999 }
+        }
+        any_demesne_province = { add_province_modifier = { name = canceled_bida_sacrifice months = 8 } }
+    }
+}
+
+# Sacrfice was released from prison
+# This fires for the released prisoner from the on_action, the following event fires for the character sacrificing to Bida
+character_event = {
+    id = AFRREL.046
+    hide_window = yes
+    
+    is_triggered_only = yes
+    
+    trigger = {
+        FROM = {
+            has_character_modifier = holding_large_feast
+            persistent_event_target:bida_sacrifice = { character = ROOT }
+            NOT = { character = ROOT }
+        }
+    }
+    
+    immediate = {
+        FROM = { character_event = { id = AFRREL.047 } }
+    }
+}
+
+character_event = {
+    id = AFRREL.047
+    desc = EVTDESC_AFRREL047
+    picture = GFX_evt_afr_snake
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL047
+        
+        custom_tooltip = {
+            text = bida_sacrifice_ends_early_tooltip
+            clear_persistent_event_target = bida_sacrifice
+            character_event = { id = 72999 }
+        }
         any_demesne_province = { add_province_modifier = { name = canceled_bida_sacrifice months = 8 } }
     }
 }

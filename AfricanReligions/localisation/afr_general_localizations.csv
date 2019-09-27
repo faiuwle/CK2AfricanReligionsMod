@@ -203,6 +203,19 @@ salt_constantinople_tooltip;The §YChristian§! world is outraged by your actions.
 salt_carthage_capital_tooltip;The §YAmazigh§! world is outraged by your actions.\nThe destruction of the city has gravely affected the §YMoral Authority§! of the §YChurch of the Amazigh People§!.\nYou loot §Y2000§! gold from the city.;;;;;;;;;;;;;x
 pick_religious_tradition_tooltip;Choose a religious tradition to follow.;;;;;;;;;;;;;x
 tooltip_change_a_tag_roog_branch;You will choose a new path.;;;;;;;;;;;;;x
+bida_sacrifice_peasant_tooltip;A peasant girl will be selected as the sacrifice.;;;;;;;;;;;;;x
+bida_sacrifice_courtier_tooltip;§Y[bida_sacrifice_courtier.GetTitledName]§! will be selected as the sacrifice.;;;;;;;;;;;;;x
+bida_sacrifice_daughter_tooltip;§Y[bida_sacrifice_daughter.GetTitledName]§! will be selected as the sacrifice.;;;;;;;;;;;;;x
+bida_sacrifice_prisoner_tooltip;§Y[bida_sacrifice_prisoner.GetTitledName]§! will be selected as the sacrifice.;;;;;;;;;;;;;x
+bida_self_sacrifice_tooltip;§YYou§! will be selected as the sacrifice.;;;;;;;;;;;;;x
+bida_sacrifice_ends_early_tooltip;The sacrifice will be canceled and all of the guests will go home.;;;;;;;;;;;;;x
+bida_sacrifice_continues_tooltip;The sacrifice will continue as originally planned.;;;;;;;;;;;;;x
+bida_sacrifice_replacement_courtier_tooltip;§Y[bida_sacrifice_replacement.GetTitledName]§! will be sacrificed in place of §Y[bida_sacrifice.GetTitledName]§!;;;;;;;;;;;;;x
+bida_sacrifice_replacement_peasant_tooltip;A different girl will be sacrificed in her place.;;;;;;;;;;;;;x
+bida_self_sacrifice_tooltip_info;[Root.BidaSelfSacrificeTooltipInfo];;;;;;;;;;;;;x
+bida_self_sacrifice_zealous;This option is available because you have the §YZealous§! trait.;;;;;;;;;;;;;x
+bida_self_sacrifice_lunatic;This option is available because you have the §YLunatic§! trait.;;;;;;;;;;;;;x
+bida_self_sacrifice_dumb;This option is available because you are dumb.;;;;;;;;;;;;x
 eldership_rules_afr;Eldership;;;;;;;;;;;;;x
 religion_feature_a_tag_roog;Way of the Divine;;;;;;;;;;;;;x
 religion_feature_a_tag_roog_desc;In order to edify the faith we shall unify the many traditions of life and divination practiced by the different nations of the land.;;;;;;;;;;;;;x
@@ -236,6 +249,7 @@ pick_a_tat_roog_religious_tradition;Choose a Religious Tradition;;;;;;;;;;;;;x
 pick_a_tat_roog_religious_tradition_desc;There are many religious traditions in the Western Sahel, each with its own internal organization. It is possible to dedicate yourself fully to one of them.;;;;;;;;;;;;;x
 change_a_tat_roog_branch;Choose a Religious Tradition;;;;;;;;;;;;;x
 change_a_tat_roog_branch_desc;Many are the religious traditions of the Western Sahel.  Once per lifetime a ruler may choose different path.;;;;;;;;;;;;;x
+DEATH_BY_BIDA_SACRIFICE;was offered in sacrifice to the snake god Bida by $KILLER$;;;;;;;;;;;;;x
 african_revival;African Revival;;;;;;;;;;;;;x
 amazigh_resurgence;Amazigh Resurgence;;;;;;;;;;;;;x
 constantinople_destroyed;Constantinople Burned;;;;;;;;;;;;;x
@@ -279,6 +293,12 @@ secret_amazigh_community;Secret [amazigh.GetName] Community;;;;;;;;;;;;;x
 secret_amazigh_community_desc;In secret, the faithful have organized around a small church community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
 secret_amazigh_reformed_community;Secret [amazigh_reformed.GetName] Community;;;;;;;;;;;;;x
 secret_amazigh_reformed_community_desc;In secret, the faithful have organized around a small church community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
+good_bida_sacrifice;Embrace of the Serpent;;;;;;;;;;;;;x
+good_bida_sacrifice_desc;This province is enjoying the benefits of a bridal sacrifice to the snake god Bida.;;;;;;;;;;;;;x
+bad_bida_sacrifice;Embrace of the Serpent;;;;;;;;;;;;;x
+bad_bida_sacrifice_desc;This province is enjoying the benefits of a bridal sacrifice to the snake god Bida.;;;;;;;;;;;;;x
+canceled_bida_sacrifice;Fury of the Serpent;;;;;;;;;;;;;x
+canceled_bida_sacrifice_desc;This province is suffering as a result of a failed sacrifice to the snake god Bida.;;;;;;;;;;;;;x
 sympathy_african;Sympathy for Africans;;;;;;;;;;;;;x
 sympathy_african_desc;This character, though not a worshipper of the African gods, has a special sympathy and understanding for the African faiths and their practitioners.;;;;;;;;;;;;;x
 foro;Foro;;;;;;;;;;;;;x
