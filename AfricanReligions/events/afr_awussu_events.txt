@@ -48,11 +48,11 @@ character_event = {
 			flag = summer_fair_begin
 			days = 3
 		}
-		NOT = { has_character_flag = fair_event_lover_lass }	
+		NOT = { has_character_flag = fair_event_lover_lad }	
 	}
 
 	immediate = {
-		set_character_flag = fair_event_lover_lass
+		set_character_flag = fair_event_lover_lad
 		set_character_flag = fair_event_happened
 	}
 
@@ -126,11 +126,11 @@ character_event = {
 			flag = summer_fair_begin
 			days = 3
 		}
-		NOT = { has_character_flag = fair_event_lad }	
+		NOT = { has_character_flag = fair_event_lass }	
 	}
 
 	immediate = {
-		set_character_flag = fair_event_lover_lad
+		set_character_flag = fair_event_lover_lass
 		set_character_flag = fair_event_happened
 	}
 
