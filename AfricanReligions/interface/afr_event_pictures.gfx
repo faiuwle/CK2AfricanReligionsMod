@@ -35,7 +35,12 @@ spriteTypes = {
     }
 
     spriteType = {
-    name = "GFX_evt_afr_amazigh_deities_main"
-    texturefile = "gfx/event_pictures/amazigh_patron_deity_event_main.dds"
+        name = "GFX_evt_afr_amazigh_deities_main"
+        texturefile = "gfx/event_pictures/amazigh_patron_deity_event_main.dds"
+    }
+
+    spriteType = {
+        name = "GFX_evt_afr_berber_wrestling"
+        texturefile = "gfx/event_pictures/berber_wrestling.dds"
     }
 }
