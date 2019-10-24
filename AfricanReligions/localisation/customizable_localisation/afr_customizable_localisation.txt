@@ -403,3 +403,84 @@ defined_text = {
         trigger = { NOT = { religion = bori } }
     }
 }
+
+defined_text = {
+    name = HawanSallahClothes
+    
+    text = {
+        localisation_key = hawan_sallah_old_clothes
+        trigger = { has_character_flag = hawan_sallah_old_clothes }
+    }
+    
+    text = {
+        localisation_key = hawan_sallah_white_robes
+        trigger = { has_character_flag = hawan_sallah_white_tunic }
+    }
+    
+    text = {
+        localisation_key = hawan_sallah_gold_clothes
+        trigger = { has_character_flag = hawan_sallah_gold_clothes }
+    }
+    
+    text = {
+        localisation_key = hawan_sallah_dark_mantle
+        trigger = { has_character_flag = hawan_sallah_dark_mantle }
+    }
+}
+
+defined_text = {
+    name = HawanSallahClothesEffect
+    
+    text = {
+        localisation_key = hawan_sallah_impressive_clothes
+        trigger = { has_character_flag = hawan_sallah_impressive_clothes }
+    }
+    
+    text = {
+        localisation_key = hawan_sallah_unimpressive_clothes
+        trigger = { NOT = { has_character_flag = hawan_sallah_impressive_clothes } }
+    }
+}
+
+defined_text = {
+    name = HawanSallahHorse
+    
+    text = {
+        localisation_key = hawan_sallah_old_horse
+        trigger = { has_character_flag = hawan_sallah_old_horse }
+    }
+    
+    text = {
+        localisation_key = hawan_sallah_mare
+        trigger = { has_character_flag = hawan_sallah_mare }
+    }
+    
+    text = {
+        localisation_key = hawan_sallah_stallion
+        trigger = { has_character_flag = hawan_sallah_stallion }
+    }
+    
+    text = {
+        localisation_key = hawan_sallah_wild_beast
+        trigger = { has_character_flag = hawan_sallah_wild_beast }
+    }
+}
+
+defined_text = {
+    name = HawanSallahBetHorse
+    
+    text = {
+        localisation_key = hawan_sallah_arabian
+        trigger = { has_character_flag = hawan_sallah_bet_arabian }
+    }
+    
+    text = {
+        localisation_key = hawan_sallah_palomino
+        trigger = { has_character_flag = hawan_sallah_bet_palomino }
+    }
+    
+    text = {
+        localisation_key = hawan_sallah_andalusian
+        trigger = { has_character_flag = hawan_sallah_bet_andalusian }
+    }
+}

@@ -38,4 +38,34 @@ spriteTypes = {
         name = "GFX_evt_afr_berber_wrestling"
         texturefile = "gfx/event_pictures/berber_wrestling.dds"
     }
+    
+    spriteType = {
+        name = "GFX_evt_afr_elephant_rider"
+        texturefile = "gfx/event_pictures/afr_elephant_rider.dds"
+    }
+    
+    spriteType = {
+        name = "GFX_evt_afr_elephant"
+        texturefile = "gfx/event_pictures/afr_elephant.dds"
+    }
+    
+    spriteType = {
+        name = "GFX_evt_afr_well_dressed"
+        texturefile = "gfx/event_pictures/afr_well_dressed.dds"
+    }
+    
+    spriteType = {
+        name = "GFX_evt_afr_music"
+        texturefile = "gfx/event_pictures/afr_african_music.dds"
+    }
+    
+    spriteType = {
+        name = "GFX_evt_afr_speech"
+        texturefile = "gfx/event_pictures/afr_african_speech.dds"
+    }
+    
+    spriteType = {
+        name = "GFX_evt_afr_man_with_horse"
+        texturefile = "gfx/event_pictures/afr_man_with_horse.dds"
+    }
 }

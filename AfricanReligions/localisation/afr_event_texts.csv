@@ -145,6 +145,102 @@ EVTDESC_AFRREL066;The sun lady Magec is beautiful like no other and full of bles
 EVTOPTA_AFRREL066;The sun that illuminates all land will let me understand it better.;;;;;;;;;;;;;x
 EVTDESC_AFRREL067;Set is a god of chaos, the desert, the wild storms and of violence among men. In the ancient times when the pharaohs still ruled their river kingdom, they also though he was the god of foreigners, because he loved us Amazighs. Set is a trickster but also a protector who fights a constant battle against death itself.;;;;;;;;;;;;;x
 EVTOPTA_AFRREL067;Give me some of your cleverness, lord of chaos.;;;;;;;;;;;;;x
+EVTDESC_AFRREL070;Our people, more than men and women, are stallions and mares. We are born on the backs of steeds and therefore we celebrate on horseback. The Hawan Sallah is a beautiful opportunity to show this. A great parade will be organized for the pleasure of nobles and commoners, so that people can see how prosperous my reign is.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL070;What a great parade will this be!;;;;;;;;;;;;;x
+EVTDESC_AFRREL071;The first thing to decide will be which horse will ride at the head of the parade. Of course it is an option to simply take one of the horses in your stables, but those old steeds will not impress anyone. Maybe it would be better to acquire a new horse for the occasion.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL071;Whatever is in my stables will suffice.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL071;I should buy a young mare.;;;;;;;;;;;;;x
+EVTOPTC_AFRREL071;A mighty stallion, nothing less.;;;;;;;;;;;;;x
+EVTOPTD_AFRREL071;The lion will ride a wild beast tamed by itself!;;;;;;;;;;;;;x
+EVTDESC_AFRREL072;The Hawan Sallah is a great opportunity to show your riches and impress the curious. You could certainly call for the royal tailors to make you a dress of silk and gold, although perhaps it would be best to show humility among your subjects.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL072;What's wrong with what I am wearing?;;;;;;;;;;;;;x
+EVTOPTB_AFRREL072;White robes are a sign of piety.;;;;;;;;;;;;;x
+EVTOPTC_AFRREL072;I will ride covered in gold.;;;;;;;;;;;;;x
+EVTOPTD_AFRREL072;I will dress in the dark mantle of those who bring the plague.;;;;;;;;;;;;;x
+EVTTITLE_AFRREL073;The Great Parade;;;;;;;;;;;;;x
+EVTDESC_AFRREL073;All the people of [Root.Capital.GetName] congregate on both sides of the main street of the city. An army of drummers advances among them, singing songs in honor of the bori, followed by dancers who perform impressive pirouettes.\n\nAt the end of all, the main show arrives, one hundred men on beautiful steeds and at the head of them [Root.GetTitledName]. The faithful subjects cheer the name of the [Root.GetTitle] and [Root.GetSheHe] responds by greeting them with grace. The [Root.GetTitle]’s [Root.HawanSallahClothes] [Root.HawanSallahClothesEffect]. Certainly this has been a glorious day.;;;;;;;;;;;;;x
+hawan_sallah_old_clothes;humble clothes have;;;;;;;;;;;;;x
+hawan_sallah_white_robes;white robes have;;;;;;;;;;;;;x
+hawan_sallah_gold_clothes;pompous jewelry has;;;;;;;;;;;;;x
+hawan_sallah_dark_mantle;unsettling black tunic has;;;;;;;;;;;;;x
+hawan_sallah_impressive_clothes;gained everybody's approval;;;;;;;;;;;;;x
+hawan_sallah_unimpressive_clothes;however been the subject of some mockery;;;;;;;;;;;;;x
+EVTOPTA_AFRREL073;Behold the glory of [Root.GetBestName]!;;;;;;;;;;;;;x
+EVTDESC_AFRREL074;You've heard that your liege [From.GetTitledNameWithNick] has organized a grand parade as part of this year's Hawan Sallah. It would certainly be worth it to join that celebration in a way that brings excitement to the occasion. Suddenly you have an idea that will make you the life and soul of the party: you are going to show up at the parade on the back of a mighty elephant.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL074;Everybody is going to love it!;;;;;;;;;;;;;x
+EVTOPTB_AFRREL074;This may be the worst idea I ever had.;;;;;;;;;;;;;x
+EVTDESC_AFRREL075;The parade runs without any inconvenience, or at least that's what it seems, until you hear a rumble that echoes through the streets of [Root.Capital.GetName]. Screams of terror and laughs of mockery are heard in the crowd and you can not understand what is happening.\n\nIt is then that you see the problem, it is [From.GetTitledNameWithNick] that has come to be part of the parade, not on the back of a stallion but mounted on an elephant bigger than a house. The beast makes its way through the streets while you can not help but gawk at it.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL075;That idiot is ruining my parade!;;;;;;;;;;;;;x
+EVTOPTB_AFRREL075;I like this one, that’s some spunk.;;;;;;;;;;;;;x
+EVTDESC_AFRREL076;On the day of the celebration you arrive at the parade on the back of a beautiful elephant, to the surprise of all. As you ride the animal you can hear the screams of the crowd, they are certainly full of excitement. For some reason [From.GetTitledFirstName] seems not to appreciate the beautiful gesture.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL076;If [From.GetSheHe] does not appreciate Stampy then I do not appreciate [From.GetHerHim].;;;;;;;;;;;;;x
+EVTDESC_AFRREL077;On the day of the celebration you arrive at the parade on the back of a beautiful elephant, to the surprise of all. As you ride the animal you can hear the screams of the crowd, they are certainly full of excitement. [From.GetTitledFirstName] seems absolutely delighted as [From.GetSheHe] approaches to pet the elephant.  This was certainly the greatest idea you've ever had.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL077;Any friend of Stampy is a friend of mine.;;;;;;;;;;;;;x
+EVTDESC_AFRREL078;You are watching the parade organized by your liege [From.GetTitledNameWithNick] for the Hawan Sallah. Everything seems in order until you see a drunkard throwing himself at the riders shouting "Ostriches are prettier than any horse!"\n\nYou have come to enjoy the parade and you will not let the imbecile ruin it, so you put him in his place with one fist. [From.GetTitledFirstName] seems impressed.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL078;I seem to have made a new friend!;;;;;;;;;;;;;x
+EVTDESC_AFRREL079;Although most of your subjects seem happy to see the parade you have organized, one of them does not seem to agree. The man, clearly drunk, stands in your way screaming that the parade would be better if we rode zebras and ostriches.\n\nJust when you think the afternoon is ruined, someone appears in the crowd and knocks out the drunk with a single blow, allowing you to continue. It's [From.GetTitledNameWithNick], who has come to your rescue.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL079;Ha! A thousand thanks, [From.GetTitledFirstName]!;;;;;;;;;;;;;x
+EVTDESC_AFRREL080_MAN;While you are riding at the head of the parade, a young man approaches you with a single red rose. He looks like a simple farmer, but he has a charming appeal, like the rose he carries with him. He also has beefy arms and an iron abdomen, it's worth mentioning.\n\nYou get off your horse and accept the rose with kindness.;;;;;;;;;;;;;x
+EVTDESC_AFRREL080_WOMAN;While you are riding at the head of the parade, a young lass approaches you with a bouquet of wild flowers. She looks like a humble girl, but she has a unique beauty, like the flowers she carries with her. She also has generous hips and full breasts, it's worth mentioning.\n\nYou get off your horse and accept the flower bouquet with kindness.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL080;You honor me and my faith.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL080_MAN;Do you want to ride with me? I can sit on your lap.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL080_WOMAN;Do you want to ride with me? You can sit on my lap.;;;;;;;;;;;;;x
+EVTDESC_AFRREL081;The parade stretches longer than you expected, the sun shines with great force and your horse begins to look irritated. It flutters from one side to the other and annoys the other riders. Suddenly the rider at your side loses control of his horse and collides with yours. Your mount goes completely crazy, it starts jumping on its hind legs and it does not take long for you to lose your balance and fall from its back.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL081;Here comes the ground!;;;;;;;;;;;;;x
+EVTOPTB_AFRREL081;I can fall on my feet!;;;;;;;;;;;;;x
+EVTDESC_AFRREL082_IMPRESSIVE;When I selected my mount I was somewhat worried that my horse might not be enough. My concerns turned out to be baseless. The [Root.HawanSallahHorse] has impressed all the commoners.;;;;;;;;;;;;;x
+EVTDESC_AFRREL082_UNIMPRESSIVE;When I selected my mount I was somewhat worried that my horse might not be enough. My concerns turned out to be correct. The [Root.HawanSallahHorse] has not been enough to impress anybody.;;;;;;;;;;;;;x
+hawan_sallah_old_horse;old barb;;;;;;;;;;;;;x
+hawan_sallah_mare;young mare;;;;;;;;;;;;;x
+hawan_sallah_stallion;beautiful stallion;;;;;;;;;;;;;x
+hawan_sallah_wild_beast;wild zebra that I tamed by myself;;;;;;;;;;;;;x
+EVTOPTA_AFRREL082;Yes, this is a fine mount.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL082;What do they know about horsemanship?;;;;;;;;;;;;;x
+EVTDESC_AFRREL083;The parade finally comes to an end, but the festivities are not over. Now is the time of the great race in which the bravest riders of [Root.Capital] will compete to decide which of them is the most skilled.\n\nOf course it would be frowned upon for someone from your high position to participate in the race, but there is no reason not to make the game more interesting. Maybe it would be a good idea to place a bet with one of the wealthy merchants of the city.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL083;I will make a small bet.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL083;I will take a risk.;;;;;;;;;;;;;x
+EVTOPTC_AFRREL083;All-in, cowardice is for poor people!;;;;;;;;;;;;;x
+EVTOPTD_AFRREL083;Gambling is for the wicked.;;;;;;;;;;;;;x
+EVTDESC_AFRREL084;Next you must choose a horse to bet on. You could make a safe bet on the white Arabian, but the profits would be small. The palomino barb is an interesting choice, a medium risk for a medium gain. And there is the bay Andalusian, an unlikely winner, but it would make you a fortune.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL084;Let’s play it safe with the Arabian.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL084;I will take a risk with the barb.;;;;;;;;;;;;;x
+EVTOPTC_AFRREL084;The Andalusian! Why are people laughing?;;;;;;;;;;;;;x
+EVTDESC_AFRREL085;At the start of the race an old soldier on the back of a black stallion quickly takes the lead. In the first three laps there seems to be no doubt who will be the champion this year. But a challenger finally manages to reduce the distance with the black steed on the last lap, it is a young ragged girl on the back of the [Root.HawanSallahBetHorse], which makes you happy because you bet on her.\n\nThe two riders fight for the front, neck to neck as the spectators shout at the edge of their seats. Finally it is the young woman on the [Root.HawanSallahBetHorse] who manages to win by a head.;;;;;;;;;;;;;x
+hawan_sallah_arabian;white Arabian;;;;;;;;;;;;;x
+hawan_sallah_palomino;palomino barb;;;;;;;;;;;;;x
+hawan_sallah_andalusian;bay Andalusian;;;;;;;;;;;;;x
+EVTOPTA_AFRREL085;What a beautiful sport this is!;;;;;;;;;;;;;x
+EVTDESC_AFRREL086;At the start of the race an old soldier on the back of the [Root.HawanSallahBetHorse] quickly takes the lead, which pleases you because you bet on him. In the first three laps there seems to be no doubt who will be the champion this year. But a challenger on a black steed finally manages to reduce the distance on the last lap, it is a young ragged girl on the back of a black mare.\n\nThe two riders fight for the front, neck to neck as the spectators shout at the edge of their seats. Finally it is the young woman on the black horse who manages to win by a head.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL086;She cheated! Unfair!;;;;;;;;;;;;;x
+EVTDESC_AFRREL087;At the start of the race an old soldier on the back of a black stallion quickly takes the lead. In the first three laps there seems to be no doubt who will be the champion this year. But a challenger finally manages to reduce the distance with the black steed on the last lap, it is a young ragged girl on the back of a white mare.\n\nThe two riders fight for the front, neck to neck as the spectators shout at the edge of their seats. Finally it is the young woman on the white horse who manages to win by a head.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL087;As long as everybody is having fun.;;;;;;;;;;;;;x
+EVTDESC_AFRREL088;While the sun sets, the festivities come to an end. People return to their homes and the horses are returned to their stables. This year the Hawan Sallah was a splendid occasion and it was all thanks to you.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL088;What a great time this was.;;;;;;;;;;;;;x
+EVTDESC_AFRREL090_WAR;Sadly, the war has made it impossible to continue with the festivities. This year’s Hawan Sallah has been cancelled as a result.;;;;;;;;;;;;;x
+EVTDESC_AFRREL090_IMPRISONED;Sadly, my imprisonment has made it impossible to continue with the festivities. This year’s Hawan Sallah has been cancelled as a result.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL090;Such a shame!;;;;;;;;;;;;;x
+EVTDESC_AFRREL092;The riders stop momentarily when an idiot starts running naked in front of the horses. Your companions ask you to punish the fool, but the crowd seems fond of the exhibitionist's clownery.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL092;To the dungeon with the pervert!;;;;;;;;;;;;;x
+EVTOPTB_AFRREL092;Live and let live.;;;;;;;;;;;;;x
+EVTDESC_AFRREL093;Several young children have gathered to watch the riders, their eyes light up seeing the brave warriors. Maybe you can cheer them up even more.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL093;Have some coins, go and buy some sweets.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL093;Get out of here, brats!;;;;;;;;;;;;;x
+EVTDESC_AFRREL094;While the other riders take a break to perform pirouettes in front of the public, the large crowd begins to encourage you to give a speech. Of course, as [Root.GetTitle] you cannot refuse.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL094;The glory of our armies...;;;;;;;;;;;;;x
+EVTOPTB_AFRREL094;Virtuous is the spirit that...;;;;;;;;;;;;;x
+EVTOPTC_AFRREL094;Earth will not share the rafter's envy...;;;;;;;;;;;;;x
+EVTDESC_AFRREL095_GOOD;The minutes pass and the riders finish with their pirouettes, but the crowd doesn't care about horses anymore, they are delighted with your words. You certainly are great with words.;;;;;;;;;;;;;x
+EVTDESC_AFRREL095_BAD;The riders suddenly stop their pirouettes and indicate that it is time to continue. They are really doing you a favor. Every word you say is clumsier than the last and the crowd looks at you as if you were some kind of fool.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL095;...and that’s the only truth!;;;;;;;;;;;;;x
+EVTOPTB_AFRREL095;...In conclusion, more yams?;;;;;;;;;;;;;x
+EVTDESC_AFRREL096;The Hawan Sallah includes several musical performers, one of which marches right beside you playing their instruments. You wonder if they take requests.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL096;Do you know ‘Confusion Break Bones’?;;;;;;;;;;;;;x
+EVTOPTB_AFRREL096;Can you play ‘Water no get enemy’?;;;;;;;;;;;;;x
+EVTOPTC_AFRREL096;Please play ‘Army Arrangement’.;;;;;;;;;;;;;x
+EVTDESC_AFRREL097;A warehouse collapsed and the grain stored there poured out right into the main street of [Root.Capital.GetName], blocking the route. Your companions indicate you that you should get off of the horse until the warehouse owner can collect his grain.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL097;Very well, we will wait.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL097;Nonsense, we will march over grain if necessary.;;;;;;;;;;;;;x
+EVTOPTC_AFRREL097;Confiscate the grain, this mess is his fault!;;;;;;;;;;;;;x
 EVTDESC_TOG_7500_SAMARI;You have toiled devoutly in your endeavor to follow the path of the Samari. In their name you have promoted joy and understanding between your subjects. As a result, your diplomatic skills have been improving.;;;;;;;;;;;;;x
 EVTDESC_TOG_7500_TANIT;You have toiled devoutly in your endeavor to follow the path of Tanit. In her name you have promoted peace and understanding between your subjects. As a result, your diplomatic skills have been improving.;;;;;;;;;;;;;x
 EVTDESC_TOG_7501_TAN_GARKI;You have toiled devoutly in your endeavor to follow the path of the Tan Garki. In their name you have practiced your spear throwing and spent many hours strategizing at the war hut with your commanders. As a result, your martial skills have been improving.;;;;;;;;;;;;;x
