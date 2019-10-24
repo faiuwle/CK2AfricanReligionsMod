@@ -26,7 +26,7 @@
 }
 
 161001 = {
-	name="Tunka Menin"
+	name="Tunka Manin"
 	dynasty=1030000
 	religion="a_tag_roog"
 	culture="soninke"
@@ -36,6 +36,12 @@
 	1030.1.1={
 		birth="1030.1.1"
 	}
+    1062.1.1 = {
+        create_bloodline = {
+            type = tunka_manin
+            has_dlc = "Holy Fury"
+        }
+    }
 	1068.1.1={
 		death="1068.1.1"
 	}
@@ -339,7 +345,7 @@
 
 #####TOG
 184010 = {
-	name="Dramane"
+	name="Dinga"
 	dynasty=1030000
 	religion="a_tag_roog"
 	culture="soninke"
@@ -348,13 +354,19 @@
 	695.1.1={
 		birth="695.1.1"
 	}
+    740.1.1 = {
+        create_bloodline = {
+            type = dinga_cisse
+            has_dlc = "Holy Fury"
+        }
+    }
 	745.1.1={
 		death = yes
 	}
 }
 
 184011 = {
-	name="Seydou"
+	name="Khine"
 	dynasty=1030000
 	religion="a_tag_roog"
 	culture="soninke"
@@ -370,7 +382,7 @@
 }
 
 184012 = {
-	name="Drissa"
+	name="Dyabe"
 	dynasty=1030000
 	religion="a_tag_roog"
 	culture="soninke"
@@ -386,7 +398,7 @@
 }
 
 184013 = { 
-	name="Mayan Dyabe" #First historical contact with islam
+	name="Mamadi" #First historical contact with islam
 	dynasty=1030000
 	religion=a_tag_roog
 	culture=soninke

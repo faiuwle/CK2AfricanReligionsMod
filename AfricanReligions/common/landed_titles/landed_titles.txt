@@ -41131,6 +41131,8 @@ e_mali = {
 	culture = manden
 	
 	west_african_pagan_reformed = 500
+    
+    soninke = "Wagadou"
 	
 	# Creation/usurpation trigger
 	allow = {
@@ -41303,6 +41305,8 @@ e_mali = {
 		capital = 913 # Ghana
 		
 		culture = manden
+        
+        title = KAYA_MAGA
 		
 		d_ghana = {
 			color={ 62 150 247 }

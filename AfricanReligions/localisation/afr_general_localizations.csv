@@ -117,12 +117,13 @@ emperor_songhay;Dia;;;;;;;;;;;;;x
 tribal_emperor_songhay;Dia;;;;;;;;;;;;;x
 king_soninke;Ghana;;;;;;;;;;;;;x
 tribal_king_soninke;Ghana;;;;;;;;;;;;;x
-emperor_soninke;Ghana;;;;;;;;;;;;;x
-tribal_emperor_soninke;Ghana;;;;;;;;;;;;;x
+emperor_soninke;Kaya Maga;;;;;;;;;;;;;x
+tribal_emperor_soninke;Kaya Maga;;;;;;;;;;;;;x
 AGELLID;Agellid;;;;;;;;;;;;;x
 TAGELLIDT;Tagellidt;;;;;;;;;;;;;x
 AMENKAD;Amenkad;;;;;;;;;;;;;x
 SUFFETE;Suffete;;;;;;;;;;;;;x
+KAYA_MAGA;Kaya Maga;;;;;;;;;;;;;x
 king_maghreb_arabic;[MaghrebArabicKing];;;;;;;;;;;;;x
 king_female_maghreb_arabic;[MaghrebArabicQueen];;;;;;;;;;;;;x
 emperor_maghreb_arabic;[MaghrebArabicEmperor];;;;;;;;;;;;;x
@@ -172,6 +173,12 @@ mari_djata;Blood of Mari-Djata;;;;;;;;;;;;;x
 mari_djata_desc;Prince Mari-Djata was born disabled and exiled from Niani by his jealous stepmother. However, he would return to reclaim his birthright, becoming the first Mansa of Mali.;;;;;;;;;;;;;x
 set_bloodline;Blood of Set;;;;;;;;;;;;;x
 set_bloodline_desc;Set was a leader of the Zaghawa people, who left the nomadic lifestyle of his nation and founded the city of Djimi, governing as the first ruler of the Duguwa dynasty.;;;;;;;;;;;;;x
+dinga_cisse;Blood of Dinga Cisse;;;;;;;;;;;;;x
+dinga_cisse_desc;Warrior-sorcerer Dinga Cisse is considered the first ruler of Wagadou, an Empire which grew to be one of richest in the the world.;;;;;;;;;;;;;x
+tunka_manin;Blood of Tunka Manin;;;;;;;;;;;;;x
+tunka_manin_desc;The last pagan ruler of the Wagadou, Manin stubbornly refused to convert to Islam despite the threat of an Almoravid jihad.;;;;;;;;;;;;;x
+alayaman;Blood of Alayaman;;;;;;;;;;;;;x
+alayaman_desc;The first king of the Zuwa dynasty, Alayaman helped establish Gao as a trading powerhouse of the Sahel.;;;;;;;;;;;;;x
 carthage_bloodline;Blood of [This.GetFirstNameWithNick];;;;;;;;;;;;;x
 carthage_bloodline_desc;[This.GetTitledNameWithNick] was the magnificent ruler who presided over the rebirth of the Carthaginian Empire from the very ashes.;;;;;;;;;;;;;x
 string_reformed_religion_a_tag_roog; the ancient spiritual traditions of the Western Sahel have been unified into a single and true way of the divine, capable of resisting any foreign incursion.;;;;;;;;;;;;;x
@@ -245,6 +252,10 @@ carthage_capital_destroyed;Carthage Burned;;;;;;;;;;;;;x
 bori_opinion;Bori Opinion;;;;;;;;;;;;;x
 amazigh_opinion;[amazigh.GetName] Opinion;;;;;;;;;;;;;x
 amazigh_reformed_opinion;[amazigh_reformed.GetName] Opinion;;;;;;;;;;;;;x
+a_tag_roog_opinion;[a_tag_roog.GetName] Opinion;;;;;;;;;;;;;x
+a_tag_roog_reformed_opinion;Reformed [a_tag_roog_reformed.GetName] Opinion;;;;;;;;;;;;;x
+songhay_opinion;Songhay Opinion;;;;;;;;;;;;;x
+soninke_opinion;Soninke Opinion;;;;;;;;;;;;;x
 follower_of_yan_riga;Follower of Yan Riga;;;;;;;;;;;;;x
 follower_of_yan_riga_desc;The Yan Riga, those who wear clothes, are the most civilized spirits. It is said that they live in cities and know about the wisdom of men who can read. Their king is Mallam Alhaji.;;;;;;;;;;;;;x
 follower_of_babbaku;Follower of Babbaku;;;;;;;;;;;;;x
@@ -267,6 +278,14 @@ follower_of_magec;Follower of Magec;;;;;;;;;;;;;x
 follower_of_magec_desc;The sun Magec is beautiful like no other and full of blessings even to those who do not revere her. He spirit is well known in the Guanche Islands, where men speak in whistles.;;;;;;;;;;;;;x
 follower_of_set;Follower of Set;;;;;;;;;;;;;x
 follower_of_set_desc;Set is a god of chaos, the desert, the wild storms and of violence among men. Set is a trickster but also a protector who fights a constant battle against death itself.;;;;;;;;;;;;;x
+tanit_blessing;Blessing of Tanit;;;;;;;;;;;;;x
+voice_of_samari;Voice of the Samari;;;;;;;;;;;;;x
+voice_of_tanit;Voice of Tanit;;;;;;;;;;;;;x
+honor_alkali;Honored Alkali;;;;;;;;;;;;;x
+blessing_of_magec;Blessing of Magec;;;;;;;;;;;;;x
+blessing_of_ayu;Blessing of Ayu;;;;;;;;;;;;;x
+blessing_of_kadda;Blessing of Kadda;;;;;;;;;;;;;x
+blessing_of_gurzil;Blessing of Gurzil;;;;;;;;;;;;;x
 secret_bori_community;Secret Bori Community;;;;;;;;;;;;;x
 secret_bori_community_desc;In secret, the faithful have organized around a small church community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
 secret_a_tag_roog_community;Secret [a_tag_roog.GetName] Community;;;;;;;;;;;;;x

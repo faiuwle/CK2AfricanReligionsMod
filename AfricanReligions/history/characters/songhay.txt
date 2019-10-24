@@ -14,7 +14,12 @@
 	700.1.1={
 		birth="700.1.1"
 	}
-	
+	740.1.1 = {
+        create_bloodline = {
+            type = alayaman
+            has_dlc = "Holy Fury"
+        }
+    }
 	750.1.1={
 		death="750.1.1"
 	}

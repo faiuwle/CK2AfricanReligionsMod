@@ -23,6 +23,7 @@ bilal_ibn_rabah = {
     allow_bastards = yes
     muslim_opinion = 5
     monthly_character_prestige = 0.1
+    monthly_character_piety = 0.1
     picture = GFX_bloodlines_symbol_sunni
     flags = { historical_bloodline }
 }
@@ -34,12 +35,48 @@ mari_djata = {
     build_time_modifier = -0.1
     build_cost_modifier = -0.1
     picture = GFX_bloodlines_symbol_african
-    flags = { historical_bloodlines }
+    flags = { historical_bloodline }
+}
+
+dinga_cisse = {
+    inheritance = patrilineal
+    allow_bastards = yes
+    combat_rating = 5
+    soninke_opinion = 5
+    hunter_opinion = 5
+    monthly_character_prestige = 0.2
+    picture = GFX_bloodlines_symbol_african
+    flags = { historical_bloodline }
+}
+
+tunka_manin = {
+    inheritance = patrilineal
+    allow_bastards = yes
+    a_tag_roog_opinion = 5
+    a_tag_roog_reformed_opinion = 5
+    church_opinion = 5
+    monthly_character_piety = 0.1
+    command_modifier = {
+        morale_defence = 0.05
+    }
+    picture = GFX_bloodlines_symbol_african
+    flags = { historical_bloodline }
+}
+
+alayaman = {
+    inheritance = patrilineal
+    allow_bastards = yes
+    songhay_opinion = 5
+    maghreb_arabic_opinion = 5
+    monthly_character_prestige = 0.15
+    picture = GFX_bloodlines_symbol_african_waves
+    flags = { historical_bloodline }
 }
 
 set_bloodline = {
     inheritance = patrilineal
     allow_bastards = yes
+    monthly_character_prestige = 0.1
     combat_rating = 5
     tribal_opinion = 5
     picture = GFX_bloodlines_symbol_african

@@ -15,23 +15,28 @@ spriteTypes = {
     }
 
     spriteType = {
-	name = "GFX_evt_afr_bori_deities_main"
-	texturefile = "gfx/event_pictures/afr_bori_deities_main.dds"
+	   name = "GFX_evt_afr_bori_deities_main"
+	   texturefile = "gfx/event_pictures/afr_bori_deities_main.dds"
     }
 
     spriteType = {
-	name = "GFX_evt_afr_bori_deities_choice_one"
-	texturefile = "gfx/event_pictures/afr_bori_deities_choice_one.dds"
+	   name = "GFX_evt_afr_bori_deities_choice_one"
+	   texturefile = "gfx/event_pictures/afr_bori_deities_choice_one.dds"
     }
 
     spriteType = {
-	name = "GFX_evt_afr_bori_deities_choice_two"
-	texturefile = "gfx/event_pictures/afr_bori_deities_choice_two.dds"
+	   name = "GFX_evt_afr_bori_deities_choice_two"
+	   texturefile = "gfx/event_pictures/afr_bori_deities_choice_two.dds"
     }
 
     spriteType = {
-    name = "GFX_evt_afr_amazigh_deities_main"
-    texturefile = "gfx/event_pictures/amazigh_patron_deity_event_main.dds"
+        name = "GFX_evt_afr_amazigh_deities_main"
+        texturefile = "gfx/event_pictures/amazigh_patron_deity_event_main.dds"
+    }
+
+    spriteType = {
+        name = "GFX_evt_afr_berber_wrestling"
+        texturefile = "gfx/event_pictures/berber_wrestling.dds"
     }
     
     spriteType = {

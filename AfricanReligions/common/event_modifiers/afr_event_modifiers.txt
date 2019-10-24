@@ -119,3 +119,43 @@ babbling = {
     diplomacy = -2
     icon = 21
 }
+    
+tanit_blessing = {
+	icon = 39
+	fertility = 0.2
+}
+
+voice_of_samari = {
+	icon = 3
+	general_opinion = 10
+}
+
+voice_of_tanit = {
+	icon = 3
+	general_opinion = 10
+}
+
+honor_alkali = {
+	icon = 48
+	sex_appeal_opinion = 10
+}
+
+blessing_of_magec = {
+	icon = 48
+	local_tax_modifier = 0.2
+}
+
+blessing_of_ayu = {
+	icon = 48
+	intrigue = 1
+}
+
+blessing_of_kadda = {
+	icon = 48
+	combat_rating = 10
+}
+
+blessing_of_gurzil = {
+	icon = 48
+	stewardship = 1
+}
