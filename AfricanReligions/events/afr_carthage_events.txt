@@ -295,7 +295,7 @@ narrative_event = {
 			}
 			any_player = { 
 				limit = { 
-					is_within_diplo_range = yes 
+					is_within_diplo_range = ROOT
 				} 
 				narrative_event = { id = AFRREL.025 } #Notification.
 			} 
@@ -420,7 +420,7 @@ narrative_event = {
 			}
 			any_player = { 
 				limit = { 
-					is_within_diplo_range = yes 
+					is_within_diplo_range = ROOT
 				} 
 				narrative_event = { id = AFRREL.027 } #Notification.
 			} 
@@ -531,7 +531,7 @@ narrative_event = {
 			}
 			any_player = { 
 				limit = { 
-					is_within_diplo_range = yes 
+					is_within_diplo_range = ROOT
 				} 
 				narrative_event = { id = AFRREL.029 } #Notification.
 			} 

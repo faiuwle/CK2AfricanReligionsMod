@@ -1,7 +1,7 @@
 african_group;African;;;;;;;;;;;;;x
 bori;Bori;;;;;;;;;;;;;x
-a_tag_roog;A Tat Roog;;;;;;;;;;;;;x
-a_tag_roog_reformed;A Tat Roog;;;;;;;;;;;;;x
+a_tag_roog;West Sahelian;;;;;;;;;;;;;x
+a_tag_roog_reformed;West Sahelian;;;;;;;;;;;;;x
 amazigh;Amazigh;;;;;;;;;;;;;x
 amazigh_reformed;Amazigh;;;;;;;;;;;;;x
 bori_DESC;Among the people of Hausaland and the region of the great Lake Chad, there is an old faith in which mortals enter communion with eternal spirits. These spiritual forces are known as bori and exist in their own spiritual realm known as Jan Gari, but can be summoned by skilled individuals who offer their bodies for the spirits to possess. With the right ritual, spirits will offer guidance to those who summon them.;;;;;;;;;;;;;x
@@ -203,6 +203,13 @@ salt_constantinople_tooltip;The §YChristian§! world is outraged by your actions.
 salt_carthage_capital_tooltip;The §YAmazigh§! world is outraged by your actions.\nThe destruction of the city has gravely affected the §YMoral Authority§! of the §YChurch of the Amazigh People§!.\nYou loot §Y2000§! gold from the city.;;;;;;;;;;;;;x
 pick_religious_tradition_tooltip;Choose a religious tradition to follow.;;;;;;;;;;;;;x
 tooltip_change_a_tag_roog_branch;You will choose a new path.;;;;;;;;;;;;;x
+hawan_sallah_elephant_prepare_tooltip;You will prepare an elephant for the parade.;;;;;;;;;;;;;x
+hawan_sallah_bet_arabian;You bet §Y[Root.hawan_sallah_bet_winnings.GetValue]§! gold on the white Arabian.;;;;;;;;;;;;;x
+hawan_sallah_bet_palomino;You bet §Y[Root.hawan_sallah_bet_winnings.GetValue]§! gold on the palomino barb.;;;;;;;;;;;;;x
+hawan_sallah_bet_andalusian;You bet §Y[Root.hawan_sallah_bet_winnings.GetValue]§! gold on the bay Andalusian.;;;;;;;;;;;;;x
+hawan_sallah_military_speech;You will give a speech about your achievements as a commander.;;;;;;;;;;;;;x
+hawan_sallah_religious_speech;You will give a speech about the virtues of a pious soul.;;;;;;;;;;;;;x
+hawan_sallah_smart_speech;You will give a poetic speech showing your true brilliance.;;;;;;;;;;;;;x
 eldership_rules_afr;Eldership;;;;;;;;;;;;;x
 religion_feature_a_tag_roog;Way of the Divine;;;;;;;;;;;;;x
 religion_feature_a_tag_roog_desc;In order to edify the faith we shall unify the many traditions of life and divination practiced by the different nations of the land.;;;;;;;;;;;;;x
@@ -238,6 +245,8 @@ pick_a_tat_roog_religious_tradition;Choose a Religious Tradition;;;;;;;;;;;;;x
 pick_a_tat_roog_religious_tradition_desc;There are many religious traditions in the Western Sahel, each with its own internal organization. It is possible to dedicate yourself fully to one of them.;;;;;;;;;;;;;x
 change_a_tat_roog_branch;Choose a Religious Tradition;;;;;;;;;;;;;x
 change_a_tat_roog_branch_desc;Many are the religious traditions of the Western Sahel.  Once per lifetime a ruler may choose different path.;;;;;;;;;;;;;x
+hold_hawan_sallah;Hold the Hawan Sallah;;;;;;;;;;;;;x
+hold_hawan_sallah_desc;The Hawan Sallah is an equestrian parade and sporting event. It is a great opportunity to show the prosperity of the ruling class.;;;;;;;;;;;;;x
 african_revival;African Revival;;;;;;;;;;;;;x
 amazigh_resurgence;Amazigh Resurgence;;;;;;;;;;;;;x
 constantinople_destroyed;Constantinople Burned;;;;;;;;;;;;;x
@@ -289,6 +298,13 @@ secret_amazigh_community;Secret [amazigh.GetName] Community;;;;;;;;;;;;;x
 secret_amazigh_community_desc;In secret, the faithful have organized around a small church community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
 secret_amazigh_reformed_community;Secret [amazigh_reformed.GetName] Community;;;;;;;;;;;;;x
 secret_amazigh_reformed_community_desc;In secret, the faithful have organized around a small church community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
+holding_hawan_sallah;Holding a Hawan Sallah parade;;;;;;;;;;;;;x
+arrested_town_fool;Arrested Town Fool;;;;;;;;;;;;;x
+arrested_town_fool_desc;This ruler angered the populace by arresting the beloved town fool.;;;;;;;;;;;;;x
+silver_tongue;Silver Tongue;;;;;;;;;;;;;x
+silver_tongue_desc;This person is known for being talented with words.;;;;;;;;;;;;;x
+babbling;Babbling Speech;;;;;;;;;;;;;x
+babbling_desc;This person has being publicly humiliated by their clumsy words.;;;;;;;;;;;;;x
 sympathy_african;Sympathy for Africans;;;;;;;;;;;;;x
 sympathy_african_desc;This character, though not a worshipper of the African gods, has a special sympathy and understanding for the African faiths and their practitioners.;;;;;;;;;;;;;x
 foro;Foro;;;;;;;;;;;;;x
@@ -306,11 +322,13 @@ heir_of_dihya_desc;This character has fought for the Amazigh faith as Queen Dihy
 suffete;Suffete;;;;;;;;;;;;;x
 suffete_desc;This character is the highest magistrate of the Carthaginian Empire.;;;;;;;;;;;;;x
 serer;Serer;;;;;;;;;;;;;x
-serer_desc;This character follows the Serer spiritual tradition. The Serer refer to the supreme god as Roog, the primordial twins as Yaab and Yop, and the great star Sirius as Yoonir. They believe that creation is divided in the three worlds: the invisible world, the terrestrial world and the nocturnal world.;;;;;;;;;;;;;x
+serer_desc;This character follows the Serer religious tradition, “The way of the Divine”. The faith is founded around the interaction between the different planes of existence.;;;;;;;;;;;;;x
 dogon;Dogon;;;;;;;;;;;;;x
-dogon_desc;This character follows the Dogon spiritual tradition.  The Dogon refer to the supreme god as Amma, the primordial twins as the Nommo, and the great star Sirius as Sigui; they are also masters of astronomy.;;;;;;;;;;;;;x
+dogon_desc;This character follows the Dogon religious tradition. The doctrine is based around a deep knowledge of the stars and the blessings of mysterious spirits.;;;;;;;;;;;;;x
 malinke;Malinke;;;;;;;;;;;;;x
-malinke_desc;This character follows the Malinke spiritual tradition. Malinke are masters in the manipulation of the Nyama, the life force that unites all things; they refer to the supreme god as Mangala and the primordial twins as Pemba and Faro.;;;;;;;;;;;;;x
+malinke_desc;This character follows the Malinke religious tradition. This creed of blacksmiths and craftsmen is centered on the manipulation of Nyama, the fundamental life force of all things.;;;;;;;;;;;;;x
+sarakole;Sarakole;;;;;;;;;;;;;x
+sarakole_desc;This character follows the Sarakole religious tradition, the cult of Bida the snake. This mysterious cult offers regular human sacrifices, expecting the viper’s blessing in return.;;;;;;;;;;;;;x
 HEIR_OF_HANNIBAL;heir of Hannibal;;;;;;;;;;;;;x
 HEIR_OF_DIDO;heir of Dido;;;;;;;;;;;;;x
 FAKE_PHOENICIAN;fake Phoenician;;;;;;;;;;;;;x

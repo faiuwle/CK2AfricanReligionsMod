@@ -44,6 +44,7 @@ on_new_holder_usurpation = {
 on_death = {
     events = {
         AFRREL.022  # Inheritance of Suffete trait
+        AFRREL.089  # Clean up Hawan Sallah flags
     }
 }
 
@@ -51,5 +52,17 @@ on_employer_change = {
     events = {
         AFRREL.032  # Fix castes of generated courtiers
         AFRREL.100  # Give liege's branch to generated courtiers
+    }
+}
+
+on_war_started = {
+    events = {
+        AFRREL.091  # Cancel Hawan Sallah
+    }
+}
+
+on_become_imprisoned_any_reason = {
+    events = {
+        AFRREL.090  # Cancel Hawan Sallah
     }
 }

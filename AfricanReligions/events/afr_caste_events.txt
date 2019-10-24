@@ -178,27 +178,27 @@ character_event = {
                     religion = a_tag_roog
                     religion = a_tag_roog_reformed
                 }
-                if = {
-                    limit = {
-                        trait = brahmin
-                    }
-                    remove_trait = brahmin
-                    add_trait = jakhanke
+            }
+            if = {
+                limit = {
+                    trait = brahmin
                 }
-                else_if = {
-                    limit = {
-                        trait = kshatriya
-                    }
-                    remove_trait = kshatriya
-                    add_trait = foro
+                remove_trait = brahmin
+                add_trait = jakhanke
+            }
+            else_if = {
+                limit = {
+                    trait = kshatriya
                 }
-                else_if = {
-                    limit = {
-                        trait = vaishya
-                    }
-                    remove_trait = vaishya
-                    add_trait = wangara
+                remove_trait = kshatriya
+                add_trait = foro
+            }
+            else_if = {
+                limit = {
+                    trait = vaishya
                 }
+                remove_trait = vaishya
+                add_trait = wangara
             }
         }
         else_if = {
