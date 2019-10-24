@@ -4963,14 +4963,7 @@ character_event = {
 character_event = {
 	id = TOG.7517
 	border = GFX_event_normal_frame_war
-	desc = {
-		trigger = { follower_of_taipo_and_mielikki }
-		text = EVTDESC_TOG_7517
-	}
-	desc = {
-		trigger = { follower_of_tan_dowa }
-		text = EVTDESC_TOG_7517_TAN_DOWA
-	}
+	desc = EVTDESC_TOG_7517
 	picture = GFX_evt_hunt
 
 	trigger = { NOT = { has_character_modifier = hunters_physique } }
