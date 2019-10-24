@@ -191,3 +191,192 @@ EVTDESC_AFRREL045;This year’s intended sacrifice [bida_sacrifice.GetTitledName],
 EVTOPTA_AFRREL045;The snake will be displeased.;;;;;;;;;;;;;x
 EVTDESC_AFRREL047;With [bida_sacrifice.GetTitledName] no longer in your dungeon, this year’s ceremony has being left without a proper sacrifice. The ritual must be postponed.;;;;;;;;;;;;;x
 EVTOPTA_AFRREL047;The snake will be displeased.;;;;;;;;;;;;;x
+EVTDESC_AFRREL070;Our people, more than men and women, are stallions and mares. We are born on the backs of steeds and therefore we celebrate on horseback. The Hawan Sallah is a beautiful opportunity to show this. A great parade will be organized for the pleasure of nobles and commoners, so that people can see how prosperous my reign is.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL070;What a great parade will this be!;;;;;;;;;;;;;x
+EVTDESC_AFRREL071;The first thing to decide will be which horse will ride at the head of the parade. Of course it is an option to simply take one of the horses in your stables, but those old steeds will not impress anyone. Maybe it would be better to acquire a new horse for the occasion.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL071;Whatever is in my stables will suffice.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL071;I should buy a young mare.;;;;;;;;;;;;;x
+EVTOPTC_AFRREL071;A mighty stallion, nothing less.;;;;;;;;;;;;;x
+EVTOPTD_AFRREL071;The lion will ride a wild beast tamed by itself!;;;;;;;;;;;;;x
+EVTDESC_AFRREL072;The Hawan Sallah is a great opportunity to show your riches and impress the curious. You could certainly call for the royal tailors to make you a dress of silk and gold, although perhaps it would be best to show humility among your subjects.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL072;What's wrong with what I am wearing?;;;;;;;;;;;;;x
+EVTOPTB_AFRREL072;White robes are a sign of piety.;;;;;;;;;;;;;x
+EVTOPTC_AFRREL072;I will ride covered in gold.;;;;;;;;;;;;;x
+EVTOPTD_AFRREL072;I will dress in the dark mantle of those who bring the plague.;;;;;;;;;;;;;x
+EVTTITLE_AFRREL073;The Great Parade;;;;;;;;;;;;;x
+EVTDESC_AFRREL073;All the people of [Root.Capital.GetName] congregate on both sides of the main street of the city. An army of drummers advances among them, singing songs in honor of the bori, followed by dancers who perform impressive pirouettes.\n\nAt the end of all, the main show arrives, one hundred men on beautiful steeds and at the head of them [Root.GetTitledName]. The faithful subjects cheer the name of the [Root.GetTitle] and [Root.GetSheHe] responds by greeting them with grace. The [Root.GetTitle]’s [Root.HawanSallahClothes] [Root.HawanSallahClothesEffect]. Certainly this has been a glorious day.;;;;;;;;;;;;;x
+hawan_sallah_old_clothes;humble clothes have;;;;;;;;;;;;;x
+hawan_sallah_white_robes;white robes have;;;;;;;;;;;;;x
+hawan_sallah_gold_clothes;pompous jewelry has;;;;;;;;;;;;;x
+hawan_sallah_dark_mantle;unsettling black tunic has;;;;;;;;;;;;;x
+hawan_sallah_impressive_clothes;gained everybody's approval;;;;;;;;;;;;;x
+hawan_sallah_unimpressive_clothes;however been the subject of some mockery;;;;;;;;;;;;;x
+EVTOPTA_AFRREL073;Behold the glory of [Root.GetBestName]!;;;;;;;;;;;;;x
+EVTDESC_AFRREL074;You've heard that your liege [From.GetTitledNameWithNick] has organized a grand parade as part of this year's Hawan Sallah. It would certainly be worth it to join that celebration in a way that brings excitement to the occasion. Suddenly you have an idea that will make you the life and soul of the party: you are going to show up at the parade on the back of a mighty elephant.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL074;Everybody is going to love it!;;;;;;;;;;;;;x
+EVTOPTB_AFRREL074;This may be the worst idea I ever had.;;;;;;;;;;;;;x
+EVTDESC_AFRREL075;The parade runs without any inconvenience, or at least that's what it seems, until you hear a rumble that echoes through the streets of [Root.Capital.GetName]. Screams of terror and laughs of mockery are heard in the crowd and you can not understand what is happening.\n\nIt is then that you see the problem, it is [From.GetTitledNameWithNick] that has come to be part of the parade, not on the back of a stallion but mounted on an elephant bigger than a house. The beast makes its way through the streets while you can not help but gawk at it.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL075;That idiot is ruining my parade!;;;;;;;;;;;;;x
+EVTOPTB_AFRREL075;I like this one, that’s some spunk.;;;;;;;;;;;;;x
+EVTDESC_AFRREL076;On the day of the celebration you arrive at the parade on the back of a beautiful elephant, to the surprise of all. As you ride the animal you can hear the screams of the crowd, they are certainly full of excitement. For some reason [From.GetTitledFirstName] seems not to appreciate the beautiful gesture.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL076;If [From.GetSheHe] does not appreciate Stampy then I do not appreciate [From.GetHerHim].;;;;;;;;;;;;;x
+EVTDESC_AFRREL077;On the day of the celebration you arrive at the parade on the back of a beautiful elephant, to the surprise of all. As you ride the animal you can hear the screams of the crowd, they are certainly full of excitement. [From.GetTitledFirstName] seems absolutely delighted as [From.GetSheHe] approaches to pet the elephant.  This was certainly the greatest idea you've ever had.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL077;Any friend of Stampy is a friend of mine.;;;;;;;;;;;;;x
+EVTDESC_AFRREL078;You are watching the parade organized by your liege [From.GetTitledNameWithNick] for the Hawan Sallah. Everything seems in order until you see a drunkard throwing himself at the riders shouting "Ostriches are prettier than any horse!"\n\nYou have come to enjoy the parade and you will not let the imbecile ruin it, so you put him in his place with one fist. [From.GetTitledFirstName] seems impressed.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL078;I seem to have made a new friend!;;;;;;;;;;;;;x
+EVTDESC_AFRREL079;Although most of your subjects seem happy to see the parade you have organized, one of them does not seem to agree. The man, clearly drunk, stands in your way screaming that the parade would be better if we rode zebras and ostriches.\n\nJust when you think the afternoon is ruined, someone appears in the crowd and knocks out the drunk with a single blow, allowing you to continue. It's [From.GetTitledNameWithNick], who has come to your rescue.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL079;Ha! A thousand thanks, [From.GetTitledFirstName]!;;;;;;;;;;;;;x
+EVTDESC_AFRREL080_MAN;While you are riding at the head of the parade, a young man approaches you with a single red rose. He looks like a simple farmer, but he has a charming appeal, like the rose he carries with him. He also has beefy arms and an iron abdomen, it's worth mentioning.\n\nYou get off your horse and accept the rose with kindness.;;;;;;;;;;;;;x
+EVTDESC_AFRREL080_WOMAN;While you are riding at the head of the parade, a young lass approaches you with a bouquet of wild flowers. She looks like a humble girl, but she has a unique beauty, like the flowers she carries with her. She also has generous hips and full breasts, it's worth mentioning.\n\nYou get off your horse and accept the flower bouquet with kindness.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL080;You honor me and my faith.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL080_MAN;Do you want to ride with me? I can sit on your lap.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL080_WOMAN;Do you want to ride with me? You can sit on my lap.;;;;;;;;;;;;;x
+EVTDESC_AFRREL081;The parade stretches longer than you expected, the sun shines with great force and your horse begins to look irritated. It flutters from one side to the other and annoys the other riders. Suddenly the rider at your side loses control of his horse and collides with yours. Your mount goes completely crazy, it starts jumping on its hind legs and it does not take long for you to lose your balance and fall from its back.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL081;Here comes the ground!;;;;;;;;;;;;;x
+EVTOPTB_AFRREL081;I can fall on my feet!;;;;;;;;;;;;;x
+EVTDESC_AFRREL082_IMPRESSIVE;When I selected my mount I was somewhat worried that my horse might not be enough. My concerns turned out to be baseless. The [Root.HawanSallahHorse] has impressed all the commoners.;;;;;;;;;;;;;x
+EVTDESC_AFRREL082_UNIMPRESSIVE;When I selected my mount I was somewhat worried that my horse might not be enough. My concerns turned out to be correct. The [Root.HawanSallahHorse] has not been enough to impress anybody.;;;;;;;;;;;;;x
+hawan_sallah_old_horse;old barb;;;;;;;;;;;;;x
+hawan_sallah_mare;young mare;;;;;;;;;;;;;x
+hawan_sallah_stallion;beautiful stallion;;;;;;;;;;;;;x
+hawan_sallah_wild_beast;wild zebra that I tamed by myself;;;;;;;;;;;;;x
+EVTOPTA_AFRREL082;Yes, this is a fine mount.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL082;What do they know about horsemanship?;;;;;;;;;;;;;x
+EVTDESC_AFRREL083;The parade finally comes to an end, but the festivities are not over. Now is the time of the great race in which the bravest riders of [Root.Capital] will compete to decide which of them is the most skilled.\n\nOf course it would be frowned upon for someone from your high position to participate in the race, but there is no reason not to make the game more interesting. Maybe it would be a good idea to place a bet with one of the wealthy merchants of the city.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL083;I will make a small bet.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL083;I will take a risk.;;;;;;;;;;;;;x
+EVTOPTC_AFRREL083;All-in, cowardice is for poor people!;;;;;;;;;;;;;x
+EVTOPTD_AFRREL083;Gambling is for the wicked.;;;;;;;;;;;;;x
+EVTDESC_AFRREL084;Next you must choose a horse to bet on. You could make a safe bet on the white Arabian, but the profits would be small. The palomino barb is an interesting choice, a medium risk for a medium gain. And there is the bay Andalusian, an unlikely winner, but it would make you a fortune.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL084;Let’s play it safe with the Arabian.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL084;I will take a risk with the barb.;;;;;;;;;;;;;x
+EVTOPTC_AFRREL084;The Andalusian! Why are people laughing?;;;;;;;;;;;;;x
+EVTDESC_AFRREL085;At the start of the race an old soldier on the back of a black stallion quickly takes the lead. In the first three laps there seems to be no doubt who will be the champion this year. But a challenger finally manages to reduce the distance with the black steed on the last lap, it is a young ragged girl on the back of the [Root.HawanSallahBetHorse], which makes you happy because you bet on her.\n\nThe two riders fight for the front, neck to neck as the spectators shout at the edge of their seats. Finally it is the young woman on the [Root.HawanSallahBetHorse] who manages to win by a head.;;;;;;;;;;;;;x
+hawan_sallah_arabian;white Arabian;;;;;;;;;;;;;x
+hawan_sallah_palomino;palomino barb;;;;;;;;;;;;;x
+hawan_sallah_andalusian;bay Andalusian;;;;;;;;;;;;;x
+EVTOPTA_AFRREL085;What a beautiful sport this is!;;;;;;;;;;;;;x
+EVTDESC_AFRREL086;At the start of the race an old soldier on the back of the [Root.HawanSallahBetHorse] quickly takes the lead, which pleases you because you bet on him. In the first three laps there seems to be no doubt who will be the champion this year. But a challenger on a black steed finally manages to reduce the distance on the last lap, it is a young ragged girl on the back of a black mare.\n\nThe two riders fight for the front, neck to neck as the spectators shout at the edge of their seats. Finally it is the young woman on the black horse who manages to win by a head.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL086;She cheated! Unfair!;;;;;;;;;;;;;x
+EVTDESC_AFRREL087;At the start of the race an old soldier on the back of a black stallion quickly takes the lead. In the first three laps there seems to be no doubt who will be the champion this year. But a challenger finally manages to reduce the distance with the black steed on the last lap, it is a young ragged girl on the back of a white mare.\n\nThe two riders fight for the front, neck to neck as the spectators shout at the edge of their seats. Finally it is the young woman on the white horse who manages to win by a head.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL087;As long as everybody is having fun.;;;;;;;;;;;;;x
+EVTDESC_AFRREL088;While the sun sets, the festivities come to an end. People return to their homes and the horses are returned to their stables. This year the Hawan Sallah was a splendid occasion and it was all thanks to you.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL088;What a great time this was.;;;;;;;;;;;;;x
+EVTDESC_AFRREL090_WAR;Sadly, the war has made it impossible to continue with the festivities. This year’s Hawan Sallah has been cancelled as a result.;;;;;;;;;;;;;x
+EVTDESC_AFRREL090_IMPRISONED;Sadly, my imprisonment has made it impossible to continue with the festivities. This year’s Hawan Sallah has been cancelled as a result.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL090;Such a shame!;;;;;;;;;;;;;x
+EVTDESC_AFRREL092;The riders stop momentarily when an idiot starts running naked in front of the horses. Your companions ask you to punish the fool, but the crowd seems fond of the exhibitionist's clownery.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL092;To the dungeon with the pervert!;;;;;;;;;;;;;x
+EVTOPTB_AFRREL092;Live and let live.;;;;;;;;;;;;;x
+EVTDESC_AFRREL093;Several young children have gathered to watch the riders, their eyes light up seeing the brave warriors. Maybe you can cheer them up even more.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL093;Have some coins, go and buy some sweets.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL093;Get out of here, brats!;;;;;;;;;;;;;x
+EVTDESC_AFRREL094;While the other riders take a break to perform pirouettes in front of the public, the large crowd begins to encourage you to give a speech. Of course, as [Root.GetTitle] you cannot refuse.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL094;The glory of our armies...;;;;;;;;;;;;;x
+EVTOPTB_AFRREL094;Virtuous is the spirit that...;;;;;;;;;;;;;x
+EVTOPTC_AFRREL094;Earth will not share the rafter's envy...;;;;;;;;;;;;;x
+EVTDESC_AFRREL095_GOOD;The minutes pass and the riders finish with their pirouettes, but the crowd doesn't care about horses anymore, they are delighted with your words. You certainly are great with words.;;;;;;;;;;;;;x
+EVTDESC_AFRREL095_BAD;The riders suddenly stop their pirouettes and indicate that it is time to continue. They are really doing you a favor. Every word you say is clumsier than the last and the crowd looks at you as if you were some kind of fool.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL095;...and that’s the only truth!;;;;;;;;;;;;;x
+EVTOPTB_AFRREL095;...In conclusion, more yams?;;;;;;;;;;;;;x
+EVTDESC_AFRREL096;The Hawan Sallah includes several musical performers, one of which marches right beside you playing their instruments. You wonder if they take requests.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL096;Do you know ‘Confusion Break Bones’?;;;;;;;;;;;;;x
+EVTOPTB_AFRREL096;Can you play ‘Water no get enemy’?;;;;;;;;;;;;;x
+EVTOPTC_AFRREL096;Please play ‘Army Arrangement’.;;;;;;;;;;;;;x
+EVTDESC_AFRREL097;A warehouse collapsed and the grain stored there poured out right into the main street of [Root.Capital.GetName], blocking the route. Your companions indicate you that you should get off of the horse until the warehouse owner can collect his grain.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL097;Very well, we will wait.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL097;Nonsense, we will march over grain if necessary.;;;;;;;;;;;;;x
+EVTOPTC_AFRREL097;Confiscate the grain, this mess is his fault!;;;;;;;;;;;;;x
+EVTDESC_TOG_7500_SAMARI;You have toiled devoutly in your endeavor to follow the path of the Samari. In their name you have promoted joy and understanding between your subjects. As a result, your diplomatic skills have been improving.;;;;;;;;;;;;;x
+EVTDESC_TOG_7500_TANIT;You have toiled devoutly in your endeavor to follow the path of Tanit. In her name you have promoted peace and understanding between your subjects. As a result, your diplomatic skills have been improving.;;;;;;;;;;;;;x
+EVTDESC_TOG_7501_TAN_GARKI;You have toiled devoutly in your endeavor to follow the path of the Tan Garki. In their name you have practiced your spear throwing and spent many hours strategizing at the war hut with your commanders. As a result, your martial skills have been improving.;;;;;;;;;;;;;x
+EVTDESC_TOG_7501_TAN_DOWA;You have toiled devoutly in your endeavor to follow the path of the Tan Dowa. In their name you have arranged a number grand hunts as well as spent many solitary hours tracking in the wilderness. As a result, your martial skills have been improving.;;;;;;;;;;;;;x
+EVTDESC_TOG_7501_ANTI;You have toiled devoutly in your endeavor to follow the path of Änti. In his name you have practiced your wrestling and spent many hours training with your commanders. As a result, your martial skills have been improving.;;;;;;;;;;;;;x
+EVTDESC_TOG_7501_GURZIL;You have toiled devoutly in your endeavor to follow the path of Gurzil. In his name you have practiced your swordsmanship and spent many hours strategizing at the war table with your commanders. As a result, your martial skills have been improving.;;;;;;;;;;;;;x
+EVTDESC_TOG_7502_BABBAKU;You have toiled devoutly in your endeavor to follow the path of the Babbaku. In their name you have arranged harvest festivals and fertility rites, as well as spent many hours inspecting the fields of [Root.Capital.GetName]. As a result, your stewardship skills have been improving.;;;;;;;;;;;;;x
+EVTDESC_TOG_7502_MAGEC;You have toiled devoutly in your endeavor to follow the path of Magec. In her name you have arranged harvest festivals and fertility rites, as well as spent many hours inspecting the fields of [Root.Capital.GetName]. As a result, your stewardship skills have been improving.;;;;;;;;;;;;;x
+EVTDESC_TOG_7503_YAYAN_ZANZANNA;You have toiled devoutly in your endeavor to follow the path of the Yayan Zanzanna. In their name you have brewed poisons, plotted and spread disease. As a result, your skills of intrigue have been improving.;;;;;;;;;;;;;x
+EVTDESC_TOG_7503_SET;You have toiled devoutly in your endeavor to follow the path of Set. In his name you have plotted and spied and manipulated. As a result, your skills of intrigue have been improving.;;;;;;;;;;;;;x
+EVTDESC_TOG_7503_YAN_RIGA;You have toiled devoutly in your endeavor to follow the path of the Yan Riga. In their name you have sought out knowledge and purity, as well as taught and done good deeds wherever your travels have taken you. As a result, your learning has been improving.;;;;;;;;;;;;;x
+EVTDESC_TOG_7506_YAN_RIGA;It is early morning and you are at the shrine dedicated to the Yan Riga, deep in prayers & thought. You hear soft footsteps behind you - who could it be at this hour? [From.GetTitledFirstName], as it turns out. You exchange some pleasantries and soon you find yourself in a full-fledged conversation. You have so much in common!;;;;;;;;;;;;;x
+EVTDESC_TOG_7506_BABBAKU;Many find it odd that a [Root.GetTitle] works in the fields, but tending to the land and crops make you feel closer to the Babbaku, more so than any prayer. As you take a short break, you notice [From.GetTitledFirstName] approaching. You greet and exchange some words about the harvest. It turns out that [From.GetSheHe] is also a follower of the Babbaku!;;;;;;;;;;;;;x
+EVTDESC_TOG_7506_TAN_GARKI;It is a fine day and you are out hunting with a small party. As you take a break to eat your midday meal, you find yourself in a discussion on spear throwing with [From.GetTitledFirstName]. It turns out that [From.GetSheHe] is also a devout follower of the Tan Garki. The longer you talk the more you seem to have in common!;;;;;;;;;;;;;x
+EVTDESC_TOG_7506_SAMARI;Today you have decided to dedicate the night to some gambling and celebration. As a devotee of the Samari you know well that a gambler must put his faith in the bori and it seems that [From.GetTitledFirstName] agrees. This could be the beginning of a beautiful friendship… as soon as you win the next round.;;;;;;;;;;;;;x
+EVTDESC_TOG_7506_YAYAN_ZANZANNA;As a good ruler you decide to visit the ill being attended by the local healer. When you arrive, you see that [From.GetTitledFirstName] is already there. After some talking you realize that [From.GetSheHe] is also a devotee of the Yayan Zanzanna, which is a blessing given that you are surrounded by so much disease.;;;;;;;;;;;;;x
+EVTDESC_TOG_7506_TAN_DOWA;It is a fine day and you are out hunting with a small party. As you take a break to eat your midday meal, you find yourself in a discussion on tracking with [From.GetTitledFirstName]. It turns out that [From.GetSheHe] is also a devout follower of the Tan Dowa. The longer you talk the more you seem to have in common!;;;;;;;;;;;;;x
+EVTDESC_TOG_7506_TANIT;It is early morning and you are at the shrine dedicated to Tanit, deep in prayers. You hear soft footsteps behind you - who could it be at this hour? [From.GetTitledFirstName], as it turns out. You exchange some pleasantries and soon you find yourself in a full-fledged conversation. You have so much in common!;;;;;;;;;;;;;x
+EVTDESC_TOG_7506_ANTI;Today [From.GetTitledFirstName] has invited you to watch a wrestling match between two local champions, after the first round of the competition you have had time to talk and soon discovered that [From.GetSheHe] is also a devotee of Änti, the great giant fighter.;;;;;;;;;;;;;x
+EVTDESC_TOG_7506_GURZIL;It is a fine day and you are out hunting with a small party. As you take a break to eat your midday meal, you find yourself in a discussion on archery with [From.GetTitledFirstName]. It turns out that [From.GetSheHe] is also a devout follower of Gurzil. The longer you talk the more you seem to have in common!;;;;;;;;;;;;;x
+EVTDESC_TOG_7506_MAGEC;It is said that the nobles are pale because they spend all their time indoors, but not you. As a devotee of Magec the sun you love walking through the fields enjoying its light. On one of your walks you meet [From.GetTitledFirstName] who is also dedicating [From.GetHerHis] day to Magec. It is always good to find another devotee.;;;;;;;;;;;;;x
+EVTDESC_TOG_7506_SET;When you needed an accomplice in a small scheme, [From.GetTitledFirstName] proved to be an unexpected ally. Think what mutual benefits can do to unite two souls! While it was pure business at first, it turns out you have plenty in common, such as your reverence of Set. Now you spend more time conversing than plotting...;;;;;;;;;;;;;x
+EVTDESC_TOG_7510_SAMARI;You are dancing at the secret rite held in the Samari's honor as your eyes find [From.GetTitledFirstName]'s across the bonfire. For a moment, it is as if the whole world turns silent. The drumming is a distant thunder, yet the rhythmic vibrations run through your body, to your very core...;;;;;;;;;;;;;x
+EVTOPTA_TOG_7510_SAMARI;Tonight, I shall bed [From.GetFirstName] in the name of the Samari.;;;;;;;;;;;;;x
+EVTDESC_TOG_7510_TANIT;Lately, you have striven to act in the spirit of Tanit by treating your [From.GetHusbandWife] [From.GetFirstName] with respect and warmth. Slowly it has changed the dynamic of your relationship, and those who are closest to you have noticed it as well.;;;;;;;;;;;;;x
+EVTDESC_TOG_7516_TAN_GARKI;Your reputation as a devout follower of the Tan Garki has spread across the lands. Many great and seasoned warriors have since traveled to [Root.Capital.GetName] to pledge their allegiance to your cause.;;;;;;;;;;;;;x
+EVTDESC_TOG_7516_TAN_DOWA;Your reputation as a devout follower of the Tan Dowa has spread across the lands. Many great and seasoned warriors have since traveled to [Root.Capital.GetName] to pledge their allegiance to your cause.;;;;;;;;;;;;;x
+EVTDESC_TOG_7516_ANTI;Your reputation as a devout follower of Änti has spread across the lands. Many great and seasoned warriors have since traveled to [Root.Capital.GetName] to pledge their allegiance to your cause.;;;;;;;;;;;;;x
+EVTDESC_TOG_7516_GURZIL;Your reputation as a devout follower of Gurzil has spread across the lands. Many great and seasoned warriors have since traveled to [Root.Capital.GetName] to pledge their allegiance to your cause.;;;;;;;;;;;;;x
+EVTOPTA_TOG_7516_BORI;Glory to the Spirits!;;;;;;;;;;;;;x
+EVTOPTA_TOG_7516_AMAZIGH;Glory to the great god!;;;;;;;;;;;;;x
+EVTDESC_TOG_7517_TAN_DOWA;After each hunt you make sure to leave an offering for the Tan Dowa in thanks of their great generosity. They surely must be pleased, for you have noticed that nowadays your arrows find their targets more often than they once did. You have been blessed with strength and a deadly aim.;;;;;;;;;;;;;x
+EVTDESC_TOG_7518_SAMARI;In your efforts to become more like the good Samari, you have begun treating everyone who crosses your path with more openness and respect. As a result, you have become known for your compassionate ways. Some go as far as calling you "the Voice of the Samari".;;;;;;;;;;;;;x
+EVTDESC_TOG_7518_TANIT;In your efforts to become more like the good Tanit, you have begun treating everyone who crosses your path with more openness and respect. As a result, you have become known for your compassionate ways. Some go as far as calling you "the Voice of Tanit".;;;;;;;;;;;;;x
+EVTOPTA_TOG_7518_SAMARI;I am proud to honour the Samari.;;;;;;;;;;;;;x
+EVTDESC_TOG_7520_BABBAKU;Your efforts to make [Root.Capital.GetName] famous for its markets and merchants has paid off. The city is prospering like never before, and more people gather at the shrine of the Babbaku each day. You have inspired many to follow their path.;;;;;;;;;;;;;x
+EVTDESC_TOG_7520_MAGEC;Your efforts to make the most out of Magec's holy soil has turned you into a true inspiration for your people. Their hard work, in combination with the fair weather which the Goddess has blessed you with, has resulted in the richest harvest in many years. Celebrations in Magec's honor is held in every village.;;;;;;;;;;;;;x
+EVTDESC_TOG_7522_YAYAN_ZANZANNA_ME;Following in the footsteps of The Yayan Zanzanna has brought you down many paths you would never otherwise tread. The things one can overhear during such journeys often prove valuable, indeed. Just recently you discovered that [god_plotter.GetTitledFirstName] is plotting against none other than yourself!;;;;;;;;;;;;;x
+EVTDESC_TOG_7522_SET_ME;Following in the footsteps of Set has brought you down many paths you would never otherwise tread. The things one can overhear during such journeys often prove valuable, indeed. Just recently you discovered that [god_plotter.GetTitledFirstName] is plotting against none other than yourself!;;;;;;;;;;;;;x
+EVTDESC_TOG_7522_YAYAN_ZANZANNA;Following in the footsteps of the Yayan Zanzanna has brought you down many paths you would never otherwise tread. The things one can overhear during such journeys often prove valuable, indeed. Just recently you discovered that [god_plotter.GetTitledFirstName] is plotting against [god_plot_target.GetTitledFirstName]...;;;;;;;;;;;;;x
+EVTDESC_TOG_7522_SET;Following in the footsteps of Set has brought you down many paths you would never otherwise tread. The things one can overhear during such journeys often prove valuable, indeed. Just recently you discovered that [god_plotter.GetTitledFirstName] is plotting against [god_plot_target.GetTitledFirstName]...;;;;;;;;;;;;;x
+EVTDESC_TOG_7524_YAN_RIGA;In your search for wisdom in the name of the Yan Riga, you have had more than one epiphany relevant to the welfare of your lands. Spreading that knowledge is not only beneficial to your rule, but also a sacred duty in and of itself.;;;;;;;;;;;;;x
+EVTOPTA_TOG_7524_YAN_RIGA;The spirits' wisdom is a bottomless well. Praised be the bori!;;;;;;;;;;;;;x
+EVTOPTA_TOG_7526_YAN_RIGA;I shall erect a monument in the honor of the Yan Riga.;;;;;;;;;;;;;x
+EVTOPTA_TOG_7526_BABBAKU;I shall erect a monument in the honor of the Babbaku.;;;;;;;;;;;;;x
+EVTOPTA_TOG_7526_TAN_GARKI;I shall erect a monument in the honor of the Tan Garki.;;;;;;;;;;;;;x
+EVTOPTA_TOG_7526_SAMARI;I shall erect a monument in the honor of the Samari.;;;;;;;;;;;;;x
+EVTOPTA_TOG_7526_YAYAN_ZANZANNA;I shall erect a monument in the honor of the Yayan Zanzanna.;;;;;;;;;;;;;x
+EVTOPTA_TOG_7526_TAN_DOWA;I shall erect a monument in the honor of the Tan Dowa.;;;;;;;;;;;;;x
+EVTOPTA_TOG_7526_TANIT;I shall erect a monument in the honor of Tanit.;;;;;;;;;;;;;x
+EVTOPTA_TOG_7526_ANTI;I shall erect a monument in the honor of Änti.;;;;;;;;;;;;;x
+EVTOPTA_TOG_7526_GURZIL;I shall erect a monument in the honor of Gurzil.;;;;;;;;;;;;;x
+EVTOPTA_TOG_7526_MAGEC;I shall erect a monument in the honor of Magec.;;;;;;;;;;;;;x
+EVTOPTA_TOG_7526_SET;I shall erect a monument in the honor of Set.;;;;;;;;;;;;;x
+EVTDESC_TOG_7527_YAN_RIGA;Finally the monument is finished. It turned out just as you envisioned it, or perhaps even better. To celebrate its completion, a grand ceremony was held in the Yan Riga's honor, and what a ceremony indeed! Tales of it will be told for as long as the monument stands watch over [Root.Capital.GetName].;;;;;;;;;;;;;x
+EVTDESC_TOG_7527_BABBAKU;Finally the monument is finished. It turned out just as you envisioned it, or perhaps even better. To celebrate its completion, a grand ceremony was held in the Babbaku's honor, and what a ceremony indeed! Tales of it will be told for as long as the monument stands watch over [Root.Capital.GetName].;;;;;;;;;;;;;x
+EVTDESC_TOG_7527_TAN_GARKI;Finally the monument is finished. It turned out just as you envisioned it, or perhaps even better. To celebrate its completion, a grand ceremony was held in the Tan Garki's honor, and what a ceremony indeed! Tales of it will be told for as long as the monument stands watch over [Root.Capital.GetName].;;;;;;;;;;;;;x
+EVTDESC_TOG_7527_SAMARI;Finally the monument is finished. It turned out just as you envisioned it, or perhaps even better. To celebrate its completion, a grand ceremony was held in teh Samari's honor, and what a ceremony indeed! Tales of it will be told for as long as the monument stands watch over [Root.Capital.GetName].;;;;;;;;;;;;;x
+EVTDESC_TOG_7527_YAYAN_ZANZANNA;Finally the monument is finished. It turned out just as you envisioned it, or perhaps even better. To celebrate its completion, a grand ceremony was held in the Yayan Zanzanna's honor, and what a ceremony indeed! Tales of it will be told for as long as the monument stands watch over [Root.Capital.GetName].;;;;;;;;;;;;;x
+EVTDESC_TOG_7527_TAN_DOWA;Finally the monument is finished. It turned out just as you envisioned it, or perhaps even better. To celebrate its completion, a grand ceremony was held in Tan Dowa's honor, and what a ceremony indeed! Tales of it will be told for as long as the monument stands watch over [Root.Capital.GetName].;;;;;;;;;;;;;x
+EVTDESC_TOG_7527_TANIT;Finally the monument is finished. It turned out just as you envisioned it, or perhaps even better. To celebrate its completion, a grand ceremony was held in Tanit's honor, and what a ceremony indeed! Tales of it will be told for as long as the monument stands watch over [Root.Capital.GetName].;;;;;;;;;;;;;x
+EVTDESC_TOG_7527_ANTI;Finally the monument is finished. It turned out just as you envisioned it, or perhaps even better. To celebrate its completion, a grand ceremony was held in Änti's honor, and what a ceremony indeed! Tales of it will be told for as long as the monument stands watch over [Root.Capital.GetName].;;;;;;;;;;;;;x
+EVTDESC_TOG_7527_GURZIL;Finally the monument is finished. It turned out just as you envisioned it, or perhaps even better. To celebrate its completion, a grand ceremony was held in Gurzil's honor, and what a ceremony indeed! Tales of it will be told for as long as the monument stands watch over [Root.Capital.GetName].;;;;;;;;;;;;;x
+EVTDESC_TOG_7527_MAGEC;Finally the monument is finished. It turned out just as you envisioned it, or perhaps even better. To celebrate its completion, a grand ceremony was held in Magec's honor, and what a ceremony indeed! Tales of it will be told for as long as the monument stands watch over [Root.Capital.GetName].;;;;;;;;;;;;;x
+EVTDESC_TOG_7527_SET;Finally the monument is finished. It turned out just as you envisioned it, or perhaps even better. To celebrate its completion, a grand ceremony was held in Set's honor, and what a ceremony indeed! Tales of it will be told for as long as the monument stands watch over [Root.Capital.GetName].;;;;;;;;;;;;;x
+EVTDESC_AFRREL_106;Alkali is a bori from the Yan Riga court, a patron of the dyers and weavers. In a visit to the local market I consider that the best way to honor him is to get myself a new wardrobe of elegant tunics.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL_106;Only the finest fabric.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL_106;This is too ostentatious for me.;;;;;;;;;;;;;x
+EVTDESC_AFRREL_107;Doguwa is a bori from the Babbaku court, a patron of wrestlers. She is a very complex being made of two halves that not always agree with each other. I am tempted to summon her presence but it could carry a great risk, for I don’t know which half will answer my call.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL_107;Dear mother, please come to me!;;;;;;;;;;;;;x
+EVTOPTB_AFRREL_107;No, it’s too risky;;;;;;;;;;;;;x
+EVTDESC_AFRREL_108;You feel the spirit take possession of your body and you start to sing her song “With her white cloth she has come”. This is the lovely mother of wrestlers, and she has come to give you her strength.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL_108;I feel it already!;;;;;;;;;;;;;x
+EVTDESC_AFRREL_109;You feel the spirit take possession of your body and you start to sing her song “With her white cloth she has come”. However this is not the blessed half of Doguwa, but the wild one of the bush, and has decided to punish you for calling her name.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL_109;No, please. My eyes!;;;;;;;;;;;;;x
+EVTDESC_AFRREL_110;Kulita is a bori from the Tan Garki court, a little drummer that marches with the armies. Inspired by him I have experimented with using young boys beating drums to mark the footsteps of my marching troops. This may be a real tactical advantage.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL_110;One, two, one, two;;;;;;;;;;;;;x
+EVTDESC_AFRREL_111;As my illness worsens I have tried contacting with the bori spirits. Today my prayers have being answered as I felt how I was possessed by KaiKai, one of the Yayan Zanzanna children of the plague. The lady of the disease took it away, my pain is finally gone.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL_111;I must sacrifice two hens in her name.;;;;;;;;;;;;;x
+EVTDESC_AFRREL_112;Ayu the manatee is one of the Tan Dowa wild bori, he drags his victims underwater and drowns them. Kadda the crocodile is a lot more direct, as he breaks them with his jaws. In a recent spirit possession I had the opportunity to choose which of these spirits to call.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL_112;The sneaky manatee.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL_112;The ferocious crocodile.;;;;;;;;;;;;;x
+EVTDESC_AFRREL_113;Recently I have being practicing a lot of wrestling, as the giant Änti did. It not only has made me feel great but it seems like my new defined abdomen has caught the eye of my [From.GetHusbandWife].;;;;;;;;;;;;;x
+EVTOPTA_AFRREL_113;Do you like what you see?;;;;;;;;;;;;;x
+EVTOPTB_AFRREL_113;Go away, I have to keep my head on the next match.;;;;;;;;;;;;;x
+EVTDESC_AFRREL_114;Gurzil is a god of war, but one must not forget that he is also a bull. The herders always look for his protection when watching over the cattle. I could make a sacrifice to the horned figure if I want my own lands to have healthy heifers.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL_114;The bull shall provide.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL_114;I have no money for sacrifices.;;;;;;;;;;;;;x
+EVTDESC_AFRREL_115;The sun shines over all, and it can be both a blessing and a curse. Magec is the radiant sun, and as one of her faithful I always await for her blessing. Lately the sun has certainly favored the crops, the harvest has being plentiful and the profits have being flowing.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL_115;Praise the sun!;;;;;;;;;;;;;x
+EVTDESC_AFRREL_116;Strange noises at night, objects moving on their own and terrifying messages written on the ceiling have convinced the entire court that the palace is haunted. I don’t have the heart to admit that it’s just my latest prank, just a game to celebrate Set the lord of chaos.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL_116;Maybe I should stop, I am scaring people.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL_116;This is so fun. Next, blood on the walls.;;;;;;;;;;;;;x

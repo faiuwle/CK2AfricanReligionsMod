@@ -216,6 +216,13 @@ bida_self_sacrifice_tooltip_info;[Root.BidaSelfSacrificeTooltipInfo];;;;;;;;;;;;
 bida_self_sacrifice_zealous;This option is available because you have the §YZealous§! trait.;;;;;;;;;;;;;x
 bida_self_sacrifice_lunatic;This option is available because you have the §YLunatic§! trait.;;;;;;;;;;;;;x
 bida_self_sacrifice_dumb;This option is available because you are dumb.;;;;;;;;;;;;x
+hawan_sallah_elephant_prepare_tooltip;You will prepare an elephant for the parade.;;;;;;;;;;;;;x
+hawan_sallah_bet_arabian;You bet §Y[Root.hawan_sallah_bet_winnings.GetValue]§! gold on the white Arabian.;;;;;;;;;;;;;x
+hawan_sallah_bet_palomino;You bet §Y[Root.hawan_sallah_bet_winnings.GetValue]§! gold on the palomino barb.;;;;;;;;;;;;;x
+hawan_sallah_bet_andalusian;You bet §Y[Root.hawan_sallah_bet_winnings.GetValue]§! gold on the bay Andalusian.;;;;;;;;;;;;;x
+hawan_sallah_military_speech;You will give a speech about your achievements as a commander.;;;;;;;;;;;;;x
+hawan_sallah_religious_speech;You will give a speech about the virtues of a pious soul.;;;;;;;;;;;;;x
+hawan_sallah_smart_speech;You will give a poetic speech showing your true brilliance.;;;;;;;;;;;;;x
 eldership_rules_afr;Eldership;;;;;;;;;;;;;x
 religion_feature_a_tag_roog;Way of the Divine;;;;;;;;;;;;;x
 religion_feature_a_tag_roog_desc;In order to edify the faith we shall unify the many traditions of life and divination practiced by the different nations of the land.;;;;;;;;;;;;;x
@@ -252,6 +259,8 @@ change_a_tat_roog_branch_desc;Many are the religious traditions of the Western S
 hold_bida_sacrifice;Hold a Feast for Human Sacrifice;;;;;;;;;;;;;x
 hold_bida_sacrifice_desc;Every year a young woman must be offered in sacrifice to Bida the snake. This year I could hold a great feast to commemorate the occasion.;;;;;;;;;;;;;x
 DEATH_BY_BIDA_SACRIFICE;was offered in sacrifice to the snake god Bida by $KILLER$;;;;;;;;;;;;;x
+hold_hawan_sallah;Hold the Hawan Sallah;;;;;;;;;;;;;x
+hold_hawan_sallah_desc;The Hawan Sallah is an equestrian parade and sporting event. It is a great opportunity to show the prosperity of the ruling class.;;;;;;;;;;;;;x
 african_revival;African Revival;;;;;;;;;;;;;x
 amazigh_resurgence;Amazigh Resurgence;;;;;;;;;;;;;x
 constantinople_destroyed;Constantinople Burned;;;;;;;;;;;;;x
@@ -285,6 +294,14 @@ follower_of_magec;Follower of Magec;;;;;;;;;;;;;x
 follower_of_magec_desc;The sun Magec is beautiful like no other and full of blessings even to those who do not revere her. He spirit is well known in the Guanche Islands, where men speak in whistles.;;;;;;;;;;;;;x
 follower_of_set;Follower of Set;;;;;;;;;;;;;x
 follower_of_set_desc;Set is a god of chaos, the desert, the wild storms and of violence among men. Set is a trickster but also a protector who fights a constant battle against death itself.;;;;;;;;;;;;;x
+tanit_blessing;Blessing of Tanit;;;;;;;;;;;;;x
+voice_of_samari;Voice of the Samari;;;;;;;;;;;;;x
+voice_of_tanit;Voice of Tanit;;;;;;;;;;;;;x
+honor_alkali;Honored Alkali;;;;;;;;;;;;;x
+blessing_of_magec;Blessing of Magec;;;;;;;;;;;;;x
+blessing_of_ayu;Blessing of Ayu;;;;;;;;;;;;;x
+blessing_of_kadda;Blessing of Kadda;;;;;;;;;;;;;x
+blessing_of_gurzil;Blessing of Gurzil;;;;;;;;;;;;;x
 secret_bori_community;Secret Bori Community;;;;;;;;;;;;;x
 secret_bori_community_desc;In secret, the faithful have organized around a small church community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
 secret_a_tag_roog_community;Secret [a_tag_roog.GetName] Community;;;;;;;;;;;;;x
@@ -305,6 +322,13 @@ bida_sacrifice_tax_good;Blessed Rains of Bida;;;;;;;;;;;;;x
 bida_sacrifice_tax_good_desc;The god Bida has blessed this land, bringing prosperity to his most faithful.;;;;;;;;;;;;;x
 bida_sacrifice_tax_bad;The Snake’s Disdain;;;;;;;;;;;;;x
 bida_sacrifice_tax_bad_desc;The snake god Bida has left this land to its own fate, making it unproductive.;;;;;;;;;;;;;x
+holding_hawan_sallah;Holding a Hawan Sallah parade;;;;;;;;;;;;;x
+arrested_town_fool;Arrested Town Fool;;;;;;;;;;;;;x
+arrested_town_fool_desc;This ruler angered the populace by arresting the beloved town fool.;;;;;;;;;;;;;x
+silver_tongue;Silver Tongue;;;;;;;;;;;;;x
+silver_tongue_desc;This person is known for being talented with words.;;;;;;;;;;;;;x
+babbling;Babbling Speech;;;;;;;;;;;;;x
+babbling_desc;This person has being publicly humiliated by their clumsy words.;;;;;;;;;;;;;x
 sympathy_african;Sympathy for Africans;;;;;;;;;;;;;x
 sympathy_african_desc;This character, though not a worshipper of the African gods, has a special sympathy and understanding for the African faiths and their practitioners.;;;;;;;;;;;;;x
 foro;Foro;;;;;;;;;;;;;x

@@ -46,72 +46,25 @@ character_event = {
 # Test event for testing conditions with the console, never triggered
 character_event = {
     id = AFRREL.013
-    hide_window = yes
+    #hide_window = yes
     is_triggered_only = yes
     
-    trigger = {
-			can_call_crusade = yes
-			uses_new_crusade = no
-			has_called_crusade = no
-			religion_authority = 0.05
-			conditional_tooltip = {
-				trigger = {
-					is_alternate_start = yes
-					has_alternate_start_parameter = {
-						key = religion_names
-						value = random
-					}
-				}
-				custom_tooltip = {
-					text = ALT_GHW_STARTED
-					has_global_flag = muslim_jihads_unlocked
-					has_global_flag = pagan_ghws_unlocked
-					has_global_flag = christian_crusades_unlocked
-				}
-			}
-			conditional_tooltip = {
-				trigger = {
-					NOT = {
-						has_alternate_start_parameter = {
-							key = religion_names
-							value = random
-						}
-					}
-				}
-				OR = {
-					religion_group = zoroastrian_group
-					religion_group = jewish_group
-					AND = {
-						religion_group = pagan_group
-						custom_tooltip = {
-							text = CTT_PAGAN_GHWS_UNLOCKED
-							has_global_flag = pagan_ghws_unlocked
-						}
-					}
-					AND = { 
-						religion_group = christian
-						custom_tooltip = {
-							text = CTT_CHRISTIAN_CRUSADES_UNLOCKED
-							has_global_flag = christian_crusades_unlocked
-						}
-					}
-					AND = {
-						religion_group = muslim
-						custom_tooltip = {
-							text = CTT_MUSLIM_JIHADS_UNLOCKED
-							has_global_flag = muslim_jihads_unlocked
-						}
-					}
-                    AND = {
-                        religion_group = african_group
-                        custom_tooltip = {
-                            text = CTT_AFRICAN_GHWS_UNLOCKED
-                            has_global_flag = african_ghws_unlocked
-                        }
-                    }
-				}
-			}
-			mercenary = no
+    immediate = {
+        export_to_variable = { which = variable_one value = scaled_wealth }
+        export_to_variable = { which = variable_two value = yearly_income }
+    }
+    
+    option = {
+        name = some_option
+        wealth = variable_one
+    }
+    option = {
+        name = other_option
+        wealth = variable_two
+    }
+    option = {
+        name = true_scaled_wealth
+        scaled_wealth = 1
     }
 }
 
