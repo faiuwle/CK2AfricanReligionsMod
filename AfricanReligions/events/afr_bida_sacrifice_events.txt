@@ -16,8 +16,9 @@ character_event = {
                 is_female = yes
                 is_adult = yes
                 prisoner = no
-                is_married = no
+                appropriate_bida_sacrifice_trigger = yes
                 NOT = { dynasty = ROOT }
+                is_landed = no
             }
             preferred_limit = {
                 trait = fair
@@ -36,13 +37,13 @@ character_event = {
                 is_female = yes
                 is_adult = yes
                 prisoner = yes
-                is_married = no
+                appropriate_bida_sacrifice_trigger = yes
             }
             preferred_limit = {
                 trait = fair
                 NOT = { age = 40 }
             }
-            preferred_limit = {
+            preferred_limit = { 
                 NOT = { age = 40 }
             }
             preferred_limit = {
@@ -50,40 +51,39 @@ character_event = {
             }
             save_event_target_as = bida_sacrifice_prisoner
         }
-        random_child = {
+        random_courtier = {
             limit = {
                 is_female = yes
                 is_adult = yes
-                is_married = no
+                appropriate_bida_sacrifice_trigger = yes
                 is_landed = no
-                liege = { character = PREV }
+                is_child_of = ROOT
             }
             preferred_limit = {
-                is_heir = no
                 is_betrothed = no
                 trait = fair
                 NOT = { age = 40 }
             }
             preferred_limit = {
-                is_heir = no
                 is_betrothed = no
                 NOT = { age = 40 }
             }
             preferred_limit = {
-                is_heir = no
                 trait = fair
                 NOT = { age = 40 }
             }
             preferred_limit = {
-                is_heir = no
                 NOT = { age = 40 }
             }
             preferred_limit = {
-                is_heir = no
+                is_betrothed = no
                 trait = fair
             }
             preferred_limit = {
-                is_heir = no
+                is_betrothed = no
+            }
+            preferred_limit = {
+                trait = fair
             }
             save_event_target_as = bida_sacrifice_daughter
         }
@@ -121,7 +121,10 @@ character_event = {
         }
 
         event_target:bida_sacrifice_courtier = {
-            save_persistent_event_target = { name = bida_sacrifice scope = ROOT }
+            save_event_target_as = doesnt_matter
+            ROOT = {
+                save_persistent_event_target = { name = bida_sacrifice scope = PREV }
+            }
         }
         
         ai_chance = {
@@ -145,7 +148,10 @@ character_event = {
         }
         
         event_target:bida_sacrifice_daughter = {
-            save_persistent_event_target = { name = bida_sacrifice scope = ROOT }
+            save_event_target_as = doesnt_matter
+            ROOT = {
+                save_persistent_event_target = { name = bida_sacrifice scope = PREV }
+            }
         }
         
         ai_chance = {
@@ -163,7 +169,10 @@ character_event = {
         }
         
         event_target:bida_sacrifice_prisoner = {
-            save_persistent_event_target = { name = bida_sacrifice scope = ROOT }
+            save_event_target_as = doesnt_matter
+            ROOT = {
+                save_persistent_event_target = { name = bida_sacrifice scope = PREV }
+            }
         }
         
         ai_chance = {
@@ -176,7 +185,7 @@ character_event = {
         
         trigger = {
             is_female = yes
-            is_married = no
+            appropriate_bida_sacrifice_trigger = yes
             is_adult = yes
             OR = {
                 trait = lunatic
@@ -194,6 +203,7 @@ character_event = {
         }
         
         ROOT = {
+            save_event_target_as = doesnt_matter
             save_persistent_event_target = { name = bida_sacrifice scope = ROOT }
         }
         
@@ -224,14 +234,14 @@ character_event = {
     }
     
     immediate = {
-        if = {
+        if = {  # Check for replacement sacrifice
             limit = { persistent_event_target:bida_sacrifice = { always = yes } }
             random_courtier = {
                 limit = {
                     is_female = yes
                     is_adult = yes
                     prisoner = no
-                    is_married = no
+                    appropriate_bida_sacrifice_trigger = yes
                     NOT = { dynasty = ROOT }
                     NOT = { persistent_event_target:bida_sacrifice = { character = PREV } }
                 }
@@ -247,6 +257,23 @@ character_event = {
                 }
                 save_event_target_as = bida_sacrifice_replacement
             }
+        }
+        else = {  # Otherwise, generate a character to be the lover
+            create_character = {
+                culture = ROOT
+                religion = ROOT
+                dynasty = none
+                female = yes
+                age = 16
+                random_traits = yes
+                trait = fair
+            }
+            new_character = {
+                remove_trait = genius
+                remove_trait = quick
+                remove_all_negative_congenital_traits_effect = yes
+            }
+            new_character = { save_event_target_as = rescued_sacrifice }
         }
     }
     
@@ -271,23 +298,18 @@ character_event = {
             }
         }
         else = {
-            create_character = {
-                culture = ROOT
-                religion = ROOT
-                female = yes
-                random_traits = yes
-                trait = fair
-            }
             if = {
                 limit = { prefers_men_trigger = no }
-                new_character = { add_lover = ROOT }
+                event_target:rescued_sacrifice = { add_lover = ROOT }
             }
             else = {
-                new_character = { add_friend = ROOT }
+                event_target:rescued_sacrifice = { add_friend = ROOT }
             }
         }
         
         any_demesne_province = { add_province_modifier = { name = canceled_bida_sacrifice months = 8 } }
+        hidden_tooltip = { character_event = { id = HF.15100 days = 30 } }  # Update weather
+        hidden_tooltip = { character_event = { id = HF.15120 days = 60 } }  # Rain events tombola
         
         clear_persistent_event_target = bida_sacrifice
     }
@@ -301,6 +323,9 @@ character_event = {
         random = {
             chance = 20
             add_trait = zealous
+        }
+        hidden_tooltip = {
+            event_target:rescued_sacrifice = { death = { death_reason = death_vanished } }
         }
     }
     
@@ -328,19 +353,12 @@ character_event = {
             }
         }
         else = {
-            create_character = {
-                culture = ROOT
-                religion = ROOT
-                female = yes
-                random_traits = yes
-                trait = fair
-            }
             if = {
                 limit = { prefers_men_trigger = no }
-                new_character = { add_lover = ROOT }
+                event_target:rescued_sacrifice = { add_lover = ROOT }
             }
             else = {
-                new_character = { add_friend = ROOT }
+                event_target_rescued_sacrifice = { add_friend = ROOT }
             }
         }
         
@@ -361,9 +379,7 @@ character_event = {
             add_trait = deceitful
         }
         
-        event_target:bida_sacrifice_replacement = {
-            save_persistent_event_target = { name = bida_sacrifice scope = ROOT }
-        }
+        save_persistent_event_target = { name = bida_sacrifice scope = event_target:bida_sacrifice_replacement }
     }
 }
     
@@ -428,7 +444,10 @@ character_event = {
         
         persistent_event_target:bida_sacrifice = {
             if = {
-                limit = { ai = no }
+                limit = {
+                    ai = no
+                    NOT = { character = ROOT }
+                }
                 tooltip = { death = { death_reason = death_bida_sacrifice killer = ROOT } }
                 hidden_tooltip = { character_event = { id = AFRREL.043 } }
             }
@@ -439,8 +458,10 @@ character_event = {
         
         clear_persistent_event_target = bida_sacrifice
         
-        hidden_tooltip = { character_event = { id = 72110 } }
-        hidden_tooltip = { character_event = { id = AFRREL.044 days = 90 } }
+        hidden_tooltip = { character_event = { id = 72110 } }  # End the feast
+        hidden_tooltip = { character_event = { id = HF.15100 days = 30 } }  # Update weather
+        hidden_tooltip = { character_event = { id = HF.15120 days = 60 } }  # Rain event tombola
+        hidden_tooltip = { character_event = { id = AFRREL.044 days = 90 } }  # Reveal good/bad result
     }
 }
 
@@ -484,8 +505,21 @@ character_event = {
             trigger = { has_character_flag = bad_bida_sacrifice }
         }
         
-        clr_character_flag = good_bida_sacrifice
-        clr_character_flag = bad_bida_sacrifice
+        if = {
+            limit = { has_character_flag = good_bida_sacrifice }
+            any_demesne_province = {
+                limit = { has_province_modifier = good_bida_sacrifice }
+                add_province_modifier = { name = bida_sacrifice_tax_good months = 6 }
+            }
+            clr_character_flag = good_bida_sacrifice
+        }
+        else = {
+            any_demesne_province = {
+                limit = { has_province_modifier = bad_bida_sacrifice }
+                add_province_modifier = { name = bida_sacrifice_tax_bad months = 6 }
+            }
+            clr_character_flag = bad_bida_sacrifice
+        }
     }
 }
 
@@ -508,6 +542,8 @@ character_event = {
             character_event = { id = 72999 }
         }
         any_demesne_province = { add_province_modifier = { name = canceled_bida_sacrifice months = 8 } }
+        hidden_tooltip = { character_event = { id = HF.15100 days = 30 } }  # Update weather
+        hidden_tooltip = { character_event = { id = HF.15120 days = 60 } }  # Rain events tombola
     }
 }
 
@@ -548,5 +584,7 @@ character_event = {
             character_event = { id = 72999 }
         }
         any_demesne_province = { add_province_modifier = { name = canceled_bida_sacrifice months = 8 } }
+        hidden_tooltip = { character_event = { id = HF.15100 days = 30 } }  # Update weather
+        hidden_tooltip = { character_event = { id = HF.15120 days = 60 } }  # Rain events tombola
     }
 }

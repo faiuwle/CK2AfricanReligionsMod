@@ -249,6 +249,8 @@ pick_a_tat_roog_religious_tradition;Choose a Religious Tradition;;;;;;;;;;;;;x
 pick_a_tat_roog_religious_tradition_desc;There are many religious traditions in the Western Sahel, each with its own internal organization. It is possible to dedicate yourself fully to one of them.;;;;;;;;;;;;;x
 change_a_tat_roog_branch;Choose a Religious Tradition;;;;;;;;;;;;;x
 change_a_tat_roog_branch_desc;Many are the religious traditions of the Western Sahel.  Once per lifetime a ruler may choose different path.;;;;;;;;;;;;;x
+hold_bida_sacrifice;Hold a Feast for Human Sacrifice;;;;;;;;;;;;;x
+hold_bida_sacrifice_desc;Every year a young woman must be offered in sacrifice to Bida the snake. This year I could hold a great feast to commemorate the occasion.;;;;;;;;;;;;;x
 DEATH_BY_BIDA_SACRIFICE;was offered in sacrifice to the snake god Bida by $KILLER$;;;;;;;;;;;;;x
 african_revival;African Revival;;;;;;;;;;;;;x
 amazigh_resurgence;Amazigh Resurgence;;;;;;;;;;;;;x
@@ -299,6 +301,10 @@ bad_bida_sacrifice;Embrace of the Serpent;;;;;;;;;;;;;x
 bad_bida_sacrifice_desc;This province is enjoying the benefits of a bridal sacrifice to the snake god Bida.;;;;;;;;;;;;;x
 canceled_bida_sacrifice;Fury of the Serpent;;;;;;;;;;;;;x
 canceled_bida_sacrifice_desc;This province is suffering as a result of a failed sacrifice to the snake god Bida.;;;;;;;;;;;;;x
+bida_sacrifice_tax_good;Blessed Rains of Bida;;;;;;;;;;;;;x
+bida_sacrifice_tax_good_desc;The god Bida has blessed this land, bringing prosperity to his most faithful.;;;;;;;;;;;;;x
+bida_sacrifice_tax_bad;The Snake’s Disdain;;;;;;;;;;;;;x
+bida_sacrifice_tax_bad_desc;The snake god Bida has left this land to its own fate, making it unproductive.;;;;;;;;;;;;;x
 sympathy_african;Sympathy for Africans;;;;;;;;;;;;;x
 sympathy_african_desc;This character, though not a worshipper of the African gods, has a special sympathy and understanding for the African faiths and their practitioners.;;;;;;;;;;;;;x
 foro;Foro;;;;;;;;;;;;;x

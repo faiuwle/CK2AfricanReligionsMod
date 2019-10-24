@@ -109,4 +109,15 @@ bad_bida_sacrifice = {
 
 canceled_bida_sacrifice = {
     icon = 130
+    local_tax_modifier = -0.10
+}
+
+bida_sacrifice_tax_good = {
+    icon = 6
+    local_tax_modifier = 0.10
+}
+
+bida_sacrifice_tax_bad = {
+    icon = 24
+    local_tax_modifier = -0.10
 }

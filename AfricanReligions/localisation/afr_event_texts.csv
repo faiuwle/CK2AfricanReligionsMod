@@ -146,7 +146,7 @@ EVTOPTA_AFRREL066;The sun that illuminates all land will let me understand it be
 EVTDESC_AFRREL067;Set is a god of chaos, the desert, the wild storms and of violence among men. In the ancient times when the pharaohs still ruled their river kingdom, they also though he was the god of foreigners, because he loved us Amazighs. Set is a trickster but also a protector who fights a constant battle against death itself.;;;;;;;;;;;;;x
 EVTOPTA_AFRREL067;Give me some of your cleverness, lord of chaos.;;;;;;;;;;;;;x
 EVTDESC72109_BIDA;Our fertile lands give us life, but this is not without a price. For this reason each year a young woman is chosen to be a bride for the old snake spirit of the waters that is known as Bida. All the people of the domain must be invited for a feast to celebrate the occasion in which the blessed lady will be chosen.;;;;;;;;;;;;;x
-EVTOPTA72109_BIDA;Only life can pay life.;;;;;;;;;;;;;x
+EVTOPTA72109_BIDA;Only life can pay for life.;;;;;;;;;;;;;x
 EVTDESC72001_BIDA;The wandering griot entered the castle telling the story of the kings of old and did not stop until he found me. With a flourishing bow and one long, sad tone from his balafon he finished his poem and asked for my patronage.;;;;;;;;;;;;;x
 EVTDESC72003_BIDA;The best part about preparing a feast is deciding what foodstuff to serve. I must purchase mutton, millet and rice, spices, yogurt and tea, honey for the desserts, cheeses and perhaps even sweet potato or baobab leaves.;;;;;;;;;;;;;x
 EVTDESC72008_BIDA;If I want to impress my guests it is essential that I have the pelt of a lion on display. Who will get the prestigious task of facing against the king of beasts in the great hunt?;;;;;;;;;;;;;x
@@ -184,9 +184,9 @@ EVTOPTA_AFRREL042_SUICIDE;What? Where is the snake?;;;;;;;;;;;;;x
 EVTDESC_AFRREL043;[From.GetTitledNameWithNick] has selected you as this year’s sacrifice to Bida. You are forced to parade to the river. Once there the head priest attaches heavy weights to your legs and places you in a small boat. Everybody is then commanded to look away as the priest pushes you to the river. The snake will have you as their offering.;;;;;;;;;;;;;x
 EVTOPTA_AFRREL043;So this is the embrace of the serpent.;;;;;;;;;;;;;x
 EVTDESC_AFRREL044_GOOD;Every year a young bride is sacrificed to the river, and every year you wonder if it’s all worth it.\n\nYour suspicions are gone for the time being. The snake must love his new bride, because the land is more fertile than ever and the mines keep the revenue coming.;;;;;;;;;;;;;x
-EVTDESC_AFRREL044_BAD;Maybe it’s all a charade, the mines are not producing and the rains are late this year.;;;;;;;;;;;;;x
+EVTDESC_AFRREL044_BAD;Every year a young bride is sacrificed to the river, and every year you wonder if it’s all worth it.\n\nMaybe it’s all a charade, the mines are not producing and the rains are late this year.;;;;;;;;;;;;;x
 EVTOPTA_AFRREL044_GOOD;We pay with life, and we get life.;;;;;;;;;;;;;x
-EVTOPTA_AFRREL044_BAD;Cursed snake;;;;;;;;;;;;;x
+EVTOPTA_AFRREL044_BAD;Cursed snake.;;;;;;;;;;;;;x
 EVTDESC_AFRREL045;This year’s intended sacrifice [bida_sacrifice.GetTitledName], has died prematurely. Without a proper sacrifice the ritual for Bida is now ruined and the event must be canceled immediately.;;;;;;;;;;;;;x
 EVTOPTA_AFRREL045;The snake will be displeased.;;;;;;;;;;;;;x
 EVTDESC_AFRREL047;With [bida_sacrifice.GetTitledName] no longer in your dungeon, this year’s ceremony has being left without a proper sacrifice. The ritual must be postponed.;;;;;;;;;;;;;x

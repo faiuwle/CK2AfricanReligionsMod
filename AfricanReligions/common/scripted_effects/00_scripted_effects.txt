@@ -28940,7 +28940,7 @@ change_rain_effect = { # Needs a province scope...
 					any_neighbor_province_has_dry_weather_trigger = yes
 				}
                 modifier = {
-                    factor = 0.25
+                    factor = 0.1
                     has_province_modifier = good_bida_sacrifice
                 }
                 modifier = {
@@ -29019,7 +29019,7 @@ change_rain_effect = { # Needs a province scope...
 					any_neighbor_province_has_dry_weather_trigger = yes
 				}
                 modifier = {
-                    factor = 0.25
+                    factor = 0.1
                     has_province_modifier = good_bida_sacrifice
                 }
                 modifier = {
@@ -29078,7 +29078,7 @@ change_rain_effect = { # Needs a province scope...
 					any_neighbor_province_has_heavy_rain_trigger = no
 				}
                 modifier = {
-                    factor = 0.25
+                    factor = 0.1
                     has_province_modifier = good_bida_sacrifice
                 }
                 modifier = {
@@ -29117,7 +29117,7 @@ change_rain_effect = { # Needs a province scope...
                     has_province_modifier = good_bida_sacrifice
                 }
                 modifier = {
-                    factor = 0.25
+                    factor = 0.1
                     OR = {
                         has_province_modifier = bad_bida_sacrifice
                         has_province_modifier = canceled_bida_sacrifice
@@ -29170,7 +29170,7 @@ change_rain_effect = { # Needs a province scope...
                     has_province_modifier = good_bida_sacrifice
                 }
                 modifier = {
-                    factor = 0.25
+                    factor = 0.1
                     OR = {
                         has_province_modifier = bad_bida_sacrifice
                         has_province_modifier = canceled_bida_sacrifice
@@ -29235,7 +29235,7 @@ change_rain_effect = { # Needs a province scope...
 					any_neighbor_province_has_dry_weather_trigger = yes
 				}
                 modifier = {
-                    factor = 0.25
+                    factor = 0.1
                     has_province_modifier = good_bida_sacrifice
                 }
                 modifier = {

@@ -520,7 +520,11 @@ decisions = {
 				liege = {
 					has_character_modifier = holding_large_feast
 				}
-			}			
+			}
+            OR = {
+                NOT = { has_character_flag = recent_feast }
+                had_character_flag = { flag = recent_feast days = 180 }
+            }
 			num_of_vassals = 1
 		}
         
@@ -540,7 +544,7 @@ decisions = {
             is_adult = yes
 			wealth = 25
 			month = 5
-            NOT = { month = 8 }
+            NOT = { month = 9 }
 			prestige = 100
 			custom_tooltip = {
 				text = is_not_busy_trigger_tooltip

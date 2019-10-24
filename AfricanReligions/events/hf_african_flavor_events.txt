@@ -347,7 +347,7 @@ character_event = {
 					}
     			}
                 modifier = {
-                    factor = 0.5
+                    factor = 0.1
                     any_demesne_province = { has_province_modifier = good_bida_sacrifice }
                 }
                 modifier = {
@@ -401,7 +401,7 @@ character_event = {
     				has_character_flag = had_book_event
     			}
                 modifier = {
-                    factor = 0.5
+                    factor = 0.1
                     capital_scope = { has_province_modifier = good_bida_sacrifice }
                 }
                 modifier = {
@@ -452,7 +452,7 @@ character_event = {
     				has_character_flag = had_weapon_event
     			}
                 modifier = {
-                    factor = 0.5
+                    factor = 0.1
                     capital_scope = { has_province_modifier = good_bida_sacrifice }
                 }
                 modifier = {
@@ -552,7 +552,7 @@ character_event = {
 					}
     			}
                 modifier = {
-                    factor = 0.5
+                    factor = 0.1
                     any_demesne_province = { has_province_modifier = good_bida_sacrifice }
                 }
                 modifier = {
@@ -604,7 +604,7 @@ character_event = {
     				}
     			}
                 modifier = {
-                    factor = 0.5
+                    factor = 0.1
                     any_demesne_province = { has_province_modifier = good_bida_sacrifice }
                 }
                 modifier = {
