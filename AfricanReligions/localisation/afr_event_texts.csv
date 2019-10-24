@@ -79,10 +79,11 @@ EVTDESC_MNM_3228_BORI;I walk to the center of the ceremony and make a quick deci
 EVTDESC_MNM_3228_AFRICAN;I step up to the altar and make a quick decision – as I reach the center of the stage, I collapse to the floor. The worshipers gasp as I, their [Root.GetTitle], begin quoting [Root.Religion.GetScriptureName]. I roll my eyes back as I speak, as if confronting the skies themselves. When my last words ring out, everyone seems to be holding their breath. For a moment I worry that my stunt has failed. Then the [Root.Religion.GetPriestTitle] exclaims "A VISION! My [Root.GetLordLady], let me help you stand!";;;;;;;;;;;;;x
 EVTDESC_MNM_3229_BORI;I walk to the center of the ceremony and make a quick decision – as I reach a group of people, I collapse to the floor. The worshipers gasp as I, their [Root.GetTitle], begin singing [Root.Religion.GetScriptureName]. I roll my eyes back as I sing, as if confronting the skies themselves. When my last words ring out, they start to whisper. For a moment I am convinced that my stunt has succeeded. Then the [Root.Religion.GetPriestTitle] prods at me. "Uhm, my [Root.GetLordLady]? Let's get you back onto your feet.";;;;;;;;;;;;;x
 EVTDESC_MNM_3229_AFRICAN;I step forwards and make a bold decision – as I reach a group of people, I collapse to the floor. The worshipers gasp as I, their [Root.GetTitle], begin quoting fragments of [Root.Religion.GetScriptureName]. I roll my eyes back as I speak, as if confronting the skies themselves. When my last words ring out, they start to whisper. For a moment I am convinced that my stunt has succeeded. Then the [Root.Religion.GetPriestTitle] prods at me. "Uhm, my [Root.GetLordLady]? Let's get you back onto your feet.";;;;;;;;;;;;;x
-EVTDESC_AFRREL100;Many are the religious traditions of the Western Sahel, with different names for the primordial twins, the star Sirius and even for God himself. Now I have the option to choose between one of three traditions: that of the Serer, with its complex rituals and spiritualism, that of the Dogon, masters of astronomy, or that of the Malinke, conquerors and masters of the forge.;;;;;;;;;;;;;x
+EVTDESC_AFRREL100;Many are the religious traditions of the Western Sahel, with different names for the primordial twins, the star Sirius and even for God himself. I can choose among that of the Serer, with complex rituals and spiritualism. The Dogon, masters of astronomy. The Malinke, conquerors and masters of the forge. Or the Sarakole, mysterious men of the snake.;;;;;;;;;;;;;x
 EVTOPTA_AFRREL100;I choose the Serer tradition.;;;;;;;;;;;;;x
 EVTOPTB_AFRREL100;I choose the Dogon tradition.;;;;;;;;;;;;;x
 EVTOPTC_AFRREL100;I choose the Malinke tradition.;;;;;;;;;;;;;x
+EVTOPTD_AFRREL100;I choose the Sarakole tradition.;;;;;;;;;;;;;x
 EVTDESC_AFRREL101;The Serer practice “The way of the Divine”, the most complex faith in all of West Africa. They refer to the supreme god as Roog, the primordial twins as Yaab and Yop, and the great star Sirius as Yoonir. Their spiritual knowledge is unrivaled and is based on the three worlds: the invisible world, the terrestrial world and the nocturnal world.;;;;;;;;;;;;;x
 EVTOPTA_AFRREL101;This truly is the way of the Divine.;;;;;;;;;;;;;x
 EVTOPTB_AFRREL101;I will choose another path.;;;;;;;;;;;;;x
@@ -92,8 +93,10 @@ EVTOPTB_AFRREL102;I will choose another path.;;;;;;;;;;;;;x
 EVTDESC_AFRREL103;The Malinke are people of the conquest, warriors and rulers. They refer to the supreme god as Mangala and the primordial twins as Pemba and Faro. The Malinke are masters in the manipulation of the Nyama, the life force that unites all things. This force is used for everything from war to complex works of smithy.;;;;;;;;;;;;;x
 EVTOPTA_AFRREL103;A faith of iron for men of iron.;;;;;;;;;;;;;x
 EVTOPTB_AFRREL103;I will choose another path.;;;;;;;;;;;;;x
-EVTDESC_AFRREL104;The four traditions of A Tat Roog are that of the Serer, the Dogon, and the Malinke. You have decided to choose a new way, but which one shall it be?;;;;;;;;;;;;;x
+EVTDESC_AFRREL104;The four traditions of A Tat Roog are that of the Serer, the Dogon, the Malinke, and the Sarakole. You have decided to choose a new way, but which one shall it be?;;;;;;;;;;;;;x
 EVTOPTD_AFRREL104;Never mind.;;;;;;;;;;;;;x
+EVTDESC_AFRREL105;The Sarakole follow the tenebrous cult of the Bida snake. The snake can be cruel but also very generous, bringing blessing to those who seek its protection.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL105;I play with dangerous forces.;;;;;;;;;;;;;x
 EVTDESC_AFRREL050;In the ethereal realm of Jan Gari, the Bori spirits exist in a transcendental state incomprehensible to the mortals. If I make special contact with one of the great bori clans and enter into communion with their king, it is possible that the spirits will grant me their blessing.;;;;;;;;;;;;;x
 EVTOPTA_AFRREL050;Time to chose.;;;;;;;;;;;;;x
 EVTOPTB_AFRREL050;Maybe another time.;;;;;;;;;;;;;x

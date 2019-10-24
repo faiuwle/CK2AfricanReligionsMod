@@ -68,4 +68,9 @@ spriteTypes = {
         name = "GFX_evt_afr_man_with_horse"
         texturefile = "gfx/event_pictures/afr_man_with_horse.dds"
     }
+    
+    spriteType = {
+        name = "GFX_evt_afr_snake"
+        texturefile = "gfx/event_pictures/afr_snake.dds"
+    }
 }

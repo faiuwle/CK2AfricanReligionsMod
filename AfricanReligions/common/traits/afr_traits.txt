@@ -212,6 +212,7 @@ serer = {
     opposites = {
         dogon
         malinke
+        sarakole
     }
     
     opposite_opinion = -5
@@ -236,6 +237,7 @@ dogon = {
     opposites = {
         serer
         malinke
+        sarakole
     }
     
     opposite_opinion = -5
@@ -260,12 +262,38 @@ malinke = {
     opposites = {
         serer
         dogon
+        sarakole
     }
     
     opposite_opinion = -5
 
 	martial = 1
     combat_rating = 5
+    
+    potential = {
+        OR = {
+            religion = a_tag_roog
+            religion = a_tag_roog_reformed
+        }
+    }
+    religious_branch = a_tag_roog
+    religious_branch = a_tag_roog_reformed
+    random = no
+    religious = yes
+    ruler_designer_cost = 0
+}
+
+sarakole = {
+    opposites = {
+        serer
+        dogon
+        malinke
+    }
+    
+    opposite_opinion = -5
+
+	intrigue = 1
+    arrest_chance_modifier = 0.05
     
     potential = {
         OR = {

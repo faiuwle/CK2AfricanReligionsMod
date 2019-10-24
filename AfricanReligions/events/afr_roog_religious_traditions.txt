@@ -40,6 +40,7 @@ character_event = { #Landing Event
                     OR = {
                         trait = dogon
                         trait = malinke
+                        trait = sarakole
                     }
                 }
                 factor = 0
@@ -59,6 +60,11 @@ character_event = { #Landing Event
                     trait = serer
                     trait = dogon
                     trait = malinke
+                    trait = sarakole
+                }
+                OR = {
+                    religion = a_tag_roog
+                    religion = a_tag_roog_reformed
                 }
             }
             add_trait = serer
@@ -76,6 +82,11 @@ character_event = { #Landing Event
                     trait = serer
                     trait = dogon
                     trait = malinke
+                    trait = sarakole
+                }
+                OR = {
+                    religion = a_tag_roog
+                    religion = a_tag_roog_reformed
                 }
             }
             add_trait = serer
@@ -103,6 +114,7 @@ character_event = { #Landing Event
                     OR = {
                         trait = serer
                         trait = malinke
+                        trait = sarakole
                     }
                 }
                 factor = 0
@@ -122,6 +134,11 @@ character_event = { #Landing Event
                     trait = serer
                     trait = dogon
                     trait = malinke
+                    trait = sarakole
+                }
+                OR = {
+                    religion = a_tag_roog
+                    religion = a_tag_roog_reformed
                 }
             }
             add_trait = dogon
@@ -139,6 +156,11 @@ character_event = { #Landing Event
                     trait = serer
                     trait = dogon
                     trait = malinke
+                    trait = sarakole
+                }
+                OR = {
+                    religion = a_tag_roog
+                    religion = a_tag_roog_reformed
                 }
             }
             add_trait = dogon
@@ -166,6 +188,7 @@ character_event = { #Landing Event
                     OR = {
                         trait = serer
                         trait = dogon
+                        trait = sarakole
                     }
                 }
                 factor = 0
@@ -185,6 +208,11 @@ character_event = { #Landing Event
                     trait = serer
                     trait = dogon
                     trait = malinke
+                    trait = sarakole
+                }
+                OR = {
+                    religion = a_tag_roog
+                    religion = a_tag_roog_reformed
                 }
             }
             add_trait = malinke
@@ -198,12 +226,83 @@ character_event = { #Landing Event
                     trait = serer
                     trait = dogon
                     trait = malinke
+                    trait = sarakole
+                }
+                OR = {
+                    religion = a_tag_roog
+                    religion = a_tag_roog_reformed
                 }
             }
             add_trait = malinke
         }
         
         hidden_tooltip = { character_event = { id = AFRREL.103 } }
+	}
+	option = {
+		name = "EVTOPTD_AFRREL100"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_education_intrigue_trigger = yes
+				factor = 2
+			}
+			modifier = {
+                OR = {
+                    trait = deceitful
+                    trait = impaler
+                }
+				factor = 2
+			}
+            modifier = {
+                liege = {
+                    OR = {
+                        trait = serer
+                        trait = dogon
+                        trait = malinke
+                    }
+                }
+                factor = 0
+            }
+		}
+
+        add_trait = sarakole
+        
+        any_spouse = {
+            limit = {
+                is_landed = no
+                NOR = {
+                    trait = serer
+                    trait = dogon
+                    trait = malinke
+                    trait = sarakole
+                }
+                OR = {
+                    religion = a_tag_roog
+                    religion = a_tag_roog_reformed
+                }
+            }
+            add_trait = sarakole
+        }
+        
+        any_close_relative = {
+            limit = {
+                liege = { character = ROOT }
+                is_landed = no
+                NOR = {
+                    trait = serer
+                    trait = dogon
+                    trait = malinke
+                    trait = sarakole
+                }
+                OR = {
+                    religion = a_tag_roog
+                    religion = a_tag_roog_reformed
+                }
+            }
+            add_trait = sarakole
+        }
+        
+        hidden_tooltip = { character_event = { id = AFRREL.105 } }
 	}
 }
 
@@ -259,6 +358,24 @@ character_event = {
             clr_character_flag = flag_changing_branch
         }
 	}
+}
+
+# Sarakole
+character_event = {
+    id = AFRREL.105
+    desc = EVTDESC_AFRREL105
+    picture = GFX_evt_afr_snake
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL105
+        
+        hidden_tooltip = {
+            clr_character_flag = flag_picking_branch
+            clr_character_flag = flag_changing_branch
+        }
+    }
 }
 
 character_event = {
@@ -331,6 +448,29 @@ character_event = {
         add_trait = malinke
         hidden_tooltip = { character_event = { id = AFRREL.103 } }
 	}
+    option = {
+        name = EVTOPTD_AFRREL100
+        
+        trigger = { NOT = { trait = sarakole } }
+        
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 2
+                has_education_intrigue_trigger = yes
+            }
+            modifier = {
+                factor = 2
+                OR = {
+                    trait = deceitful
+                    trait = impaler
+                }
+            }
+        }
+        
+        add_trait = sarakole
+        hidden_tooltip = { character_event = { id = AFRREL.105 } }
+    }
     option = {
         name = EVTOPTD_AFRREL104
         hidden_tooltip = {

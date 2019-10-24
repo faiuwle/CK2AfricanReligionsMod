@@ -16,7 +16,7 @@
 	culture="soninke"
 	father=184019
     trait = foro
-    trait = serer
+    trait = sarakole
 	1010.1.1={
 		birth="1010.1.1"
 	}
@@ -32,7 +32,7 @@
 	culture="soninke"
 	father=161000
     trait = foro
-    trait = serer
+    trait = sarakole
 	1030.1.1={
 		birth="1030.1.1"
 	}
@@ -54,7 +54,7 @@
 	culture="soninke"
 	father=161001
     trait = foro
-    trait = serer
+    trait = sarakole
 	1050.1.1={
 		birth="1050.1.1"
 	}
@@ -73,7 +73,7 @@
 	culture="soninke"
 	father=161002
     trait = foro
-    trait = serer
+    trait = sarakole
 	1070.1.1={
 		birth="1070.1.1"
 	}
@@ -350,7 +350,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
     trait = foro
-    trait = serer
+    trait = sarakole
 	695.1.1={
 		birth="695.1.1"
 	}
@@ -372,7 +372,7 @@
 	culture="soninke"
 	father=184010
     trait = foro
-    trait = serer
+    trait = sarakole
 	725.1.1={
 		birth="725.1.1"
 	}
@@ -388,7 +388,7 @@
 	culture="soninke"
 	father=184010
     trait = foro
-    trait = serer
+    trait = sarakole
 	730.1.1={
 		birth="730.1.1"
 	}
@@ -404,7 +404,7 @@
 	culture=soninke
 	father=184012
     trait = foro
-    trait = serer
+    trait = sarakole
 	770.1.1={
 		birth = yes
 	}
@@ -420,7 +420,7 @@
 	culture=soninke
 	father=184013
     trait = foro
-    trait = serer
+    trait = sarakole
 	805.1.1={
 		birth = yes
 	}
@@ -436,7 +436,7 @@
 	culture=soninke
 	father=184014
     trait = foro
-    trait = serer
+    trait = sarakole
 	830.1.1={
 		birth = yes
 	}
@@ -452,7 +452,7 @@
 	culture=soninke
 	father=184015
     trait = foro
-    trait = serer
+    trait = sarakole
 	875.1.1={
 		birth="875.1.1"
 	}
@@ -468,7 +468,7 @@
 	culture=soninke
 	father=184016
     trait = foro
-    trait = serer
+    trait = sarakole
 	905.1.1={
 		birth="905.1.1"
 	}
@@ -484,7 +484,7 @@
 	culture=soninke
 	father=184017
     trait = foro
-    trait = serer
+    trait = sarakole
 	925.1.1={
 		birth="925.1.1"
 	}
@@ -500,7 +500,7 @@
 	culture=soninke
 	father=184018
     trait = foro
-    trait = serer
+    trait = sarakole
 	970.1.1={
 		birth="970.1.1"
 	}
@@ -581,7 +581,7 @@
 	culture="soninke"
 	father = 251170
     trait = foro
-    trait = serer
+    trait = sarakole
 	1042.1.1={
 		birth=yes
 	}
@@ -596,7 +596,7 @@
 	culture="soninke"
 	father=251130
     trait = foro
-    trait = serer
+    trait = sarakole
 	1073.1.1={
 		birth = yes
 	}
@@ -611,7 +611,7 @@
 	culture="soninke"
 	father=251131
     trait = foro
-    trait = serer
+    trait = sarakole
 	1100.1.1={
 		birth = yes
 	}
@@ -626,7 +626,7 @@
 	culture="soninke"
 	father=251132
     trait = foro
-    trait = serer
+    trait = sarakole
 	1124.1.1={
 		birth=yes
 	}
@@ -640,7 +640,7 @@
 	religion="a_tag_roog"
 	culture="soninke"
     trait = foro
-    trait = serer
+    trait = sarakole
 	745.1.1={
 		birth=yes
 	}
@@ -655,7 +655,7 @@
 	culture="soninke"
 	father = 251165
     trait = foro
-    trait = serer
+    trait = sarakole
 	845.1.1={
 		birth=yes
 	}
@@ -1090,7 +1090,7 @@
 	culture="soninke"
 	father = 251134
     trait = foro
-    trait = serer
+    trait = sarakole
 	770.1.1={
 		birth=yes
 	}
@@ -1107,7 +1107,7 @@
 	culture="soninke"
 	father = 251163
     trait = foro
-    trait = serer
+    trait = sarakole
 	790.1.1={
 		birth=yes
 	}
@@ -1124,7 +1124,7 @@
 	culture="soninke"
 	father = 251164
     trait = foro
-    trait = serer
+    trait = sarakole
 	819.1.1={
 		birth=yes
 	}
@@ -1141,7 +1141,7 @@
 	culture="soninke"
 	father = 251135
     trait = foro
-    trait = serer
+    trait = sarakole
 	870.1.1={
 		birth=yes
 	}
@@ -1158,7 +1158,7 @@
 	culture="soninke"
 	father = 251166
     trait = foro
-    trait = serer
+    trait = sarakole
 	903.1.1={
 		birth=yes
 	}
@@ -1175,7 +1175,7 @@
 	culture="soninke"
 	father = 251167
     trait = foro
-    trait = serer
+    trait = sarakole
 	937.1.1={
 		birth=yes
 	}
@@ -1192,7 +1192,7 @@
 	culture="soninke"
 	father = 251168
     trait = foro
-    trait = serer
+    trait = sarakole
 	970.1.1={
 		birth=yes
 	}
@@ -1209,7 +1209,7 @@
 	culture="soninke"
 	father = 251169
     trait = foro
-    trait = serer
+    trait = sarakole
 	1008.1.1={
 		birth=yes
 	}
