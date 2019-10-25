@@ -121,7 +121,7 @@ character_event = {
         }
 
         event_target:bida_sacrifice_courtier = {
-            save_event_target_as = doesnt_matter
+            set_character_flag = bida_sacrifice
             ROOT = {
                 save_persistent_event_target = { name = bida_sacrifice scope = PREV }
             }
@@ -185,7 +185,6 @@ character_event = {
         
         trigger = {
             is_female = yes
-            appropriate_bida_sacrifice_trigger = yes
             is_adult = yes
             OR = {
                 trait = lunatic
@@ -243,7 +242,8 @@ character_event = {
                     prisoner = no
                     appropriate_bida_sacrifice_trigger = yes
                     NOT = { dynasty = ROOT }
-                    NOT = { persistent_event_target:bida_sacrifice = { character = PREV } }
+                    NOT = { has_character_flag = bida_sacrifice }
+                    is_landed = no
                 }
                 preferred_limit = {
                     trait = fair
@@ -311,6 +311,7 @@ character_event = {
         hidden_tooltip = { character_event = { id = HF.15100 days = 30 } }  # Update weather
         hidden_tooltip = { character_event = { id = HF.15120 days = 60 } }  # Rain events tombola
         
+        persistent_event_target:bida_sacrifice = { clr_character_flag = bida_sacrifice }
         clear_persistent_event_target = bida_sacrifice
     }
     
@@ -361,9 +362,13 @@ character_event = {
                 event_target_rescued_sacrifice = { add_friend = ROOT }
             }
         }
+        persistent_event_target:bida_sacrifice = { clr_character_flag = bida_sacrifice }
         
         if = {
             limit = { persistent_event_target:bida_sacrifice = { always = yes } }
+            event_target:bida_sacrifice_replacement = {
+                save_event_target_as = doesnt_matter
+            }
             custom_tooltip = {
                 text = bida_sacrifice_replacement_courtier_tooltip
             }
@@ -456,6 +461,7 @@ character_event = {
             }
         }
         
+        persistent_event_target:bida_sacrifice = { clr_character_flag = bida_sacrifice }
         clear_persistent_event_target = bida_sacrifice
         
         hidden_tooltip = { character_event = { id = 72110 } }  # End the feast
