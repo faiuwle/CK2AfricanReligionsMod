@@ -55,6 +55,12 @@ on_employer_change = {
     }
 }
 
+on_released_from_prison = {
+    events = {
+        AFRREL.046  # Releasing the Bida sacrifice ends the event chain
+    }
+}
+
 on_war_started = {
     events = {
         AFRREL.091  # Cancel Hawan Sallah

@@ -148,6 +148,52 @@ EVTDESC_AFRREL066;The sun lady Magec is beautiful like no other and full of bles
 EVTOPTA_AFRREL066;The sun that illuminates all land will let me understand it better.;;;;;;;;;;;;;x
 EVTDESC_AFRREL067;Set is a god of chaos, the desert, the wild storms and of violence among men. In the ancient times when the pharaohs still ruled their river kingdom, they also though he was the god of foreigners, because he loved us Amazighs. Set is a trickster but also a protector who fights a constant battle against death itself.;;;;;;;;;;;;;x
 EVTOPTA_AFRREL067;Give me some of your cleverness, lord of chaos.;;;;;;;;;;;;;x
+EVTDESC72109_BIDA;Our fertile lands give us life, but this is not without a price. For this reason each year a young woman is chosen to be a bride for the old snake spirit of the waters that is known as Bida. All the people of the domain must be invited for a feast to celebrate the occasion in which the blessed lady will be chosen.;;;;;;;;;;;;;x
+EVTOPTA72109_BIDA;Only life can pay for life.;;;;;;;;;;;;;x
+EVTDESC72001_BIDA;The wandering griot entered the castle telling the story of the kings of old and did not stop until he found me. With a flourishing bow and one long, sad tone from his balafon he finished his poem and asked for my patronage.;;;;;;;;;;;;;x
+EVTDESC72003_BIDA;The best part about preparing a feast is deciding what foodstuff to serve. I must purchase mutton, millet and rice, spices, yogurt and tea, honey for the desserts, cheeses and perhaps even sweet potato or baobab leaves.;;;;;;;;;;;;;x
+EVTDESC72008_BIDA;If I want to impress my guests it is essential that I have the pelt of a lion on display. Who will get the prestigious task of facing against the king of beasts in the great hunt?;;;;;;;;;;;;;x
+EVTOPTC72008_BIDA;I will hunt the lion myself;;;;;;;;;;;;;x
+EVTDESC72010_BIDA;Most of the preparations for the feast before the sacrificial ceremony have been made, now I only have to send out the invitations!;;;;;;;;;;;;;x
+EVTDESC72011_BIDA;Dear [Root.GetBestName], I hereby invite you to oversee the annual sacrifice to Bida in [From.Location.GetName]. Your presence at the ceremony and feast would be greatly appreciated and I look forward to your attendance.\n\n[From.GetTitledFirstName];;;;;;;;;;;;;x
+EVTDESC72012_BIDA;Dear [Root.GetTitledFirstName], I thank you for your invitation but I will not be able to attend the ceremony. In fact, I refuse to set my foot in the same castle as you!\n\nRespectfully,\n\n[From.GetTitledFirstName];;;;;;;;;;;;;x
+EVTDESC72020_BIDA;Much thought and consideration had been put into the courses served at [Root.Liege.GetTitledFirstName]'s feast. The mutton was so tender it almost melted on the tongue, the chicken delicious, the palm wine was properly aged, but the dessert outdid all the other dishes: the most delicious thiacry I have ever tasted...;;;;;;;;;;;;;x
+EVTDESC72021_BIDA;The courses at the feast were few but palatable. We were served mutton, some sort of fish, a few palm wines, millet and a small dessert. It was not really the abundance of food I had expected [Root.Liege.GetTitledFirstName] to serve at [Root.Liege.GetHerHis] feast.;;;;;;;;;;;;;x
+EVTOPTB72021_BIDA;Where's the rice?;;;;;;;;;;;;;x
+EVTDESC72022_BIDA;Instead of the millet, the palm wine and all kinds of meats I had thought [Root.Liege.GetTitledFirstName] would serve at [Root.Liege.GetHerHis] feast, we were served courses that could have been served at dinner at a much poorer [Root.Liege.GetManWoman]'s table.;;;;;;;;;;;;;x
+EVTDESC72065_BIDA;The griot sang and the ladies wept, the griot sang and the lords laughed. His performance at my feast was above my expectations and I congratulated myself for hiring him.;;;;;;;;;;;;;x
+EVTDESC72066_BIDA;I am not ashamed to admit I both laughed and cried when the griot sang. The griot's performance at [From.GetTitledFirstName]'s feast was extraordinary!;;;;;;;;;;;;;x
+EVTDESC72110_BIDA;The annual sacrifice has come to an end and the guests are now departing, satisfied with your hospitality. Watching the riverbank, you wonder if it’s all worth it.;;;;;;;;;;;;;x
+EVTOPTA72110_BIDA;We do as we must.;;;;;;;;;;;;;x
+EVTDESC72111_BIDA;[From.GetTitledFirstName]'s ceremony presenting this year’s sacrifice to Bida is finally over. The young maiden has been sent to the serpent’s embrace. Now is time to go home and return to our lives.;;;;;;;;;;;;;x
+EVTOPTA72111_BIDA;The loss of a good woman, a necessary evil.;;;;;;;;;;;;;x
+EVTDESC72112_BIDA;I have to cancel the Bida ceremony due to the war I am currently fighting against one of my enemies. Perhaps after the war I might throw a victory feast.;;;;;;;;;;;;;x
+EVTDESC72113_BIDA;Dear [Root.GetTitledFirstName], due to the unfortunate war I have to cancel this years sacrifice. I hope you will be able to attend the victory fest I plan to have after the war.\n\n[From.GetTitledFirstName];;;;;;;;;;;;;x
+EVTDESC_AFRREL040;The snake’s bride must be selected with precision - for this reason one hundred young ladies appear before you on the back of one hundred horses. The guests of the feast must select the most beautiful among all but as host you have the final say.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL040;Whatever plebian girl they like is fine.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL040;One of my own court would show generosity.;;;;;;;;;;;;;x
+EVTOPTC_AFRREL040;My own daughter will have the honor.;;;;;;;;;;;;;x
+EVTOPTD_AFRREL040;I do need to empty a cell.;;;;;;;;;;;;;x
+EVTOPTE_AFRREL040;Can I be the sacrifice? I am pretty.;;;;;;;;;;;;;x
+EVTDESC_AFRREL041;Once everyone has gone to bed in preparation for the ceremony, somebody knocks at your door. It’s the snake’s fiancée, and she is crying. She says between sobs: “My [Root.GetTitle], please, I don’t want to die. I will give you anything, my loyalty, my life, my heart.” You feel a sting in your heart seeing that beautiful face covered in tears.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL041;This atrocity is over, you will not suffer under my watch.;;;;;;;;;;;;;x
+EVTOPTB_AFRREL041;The snake demands, and we must pay.;;;;;;;;;;;;;x
+EVTOPTC_AFRREL041;Perhaps some other girl could replace you.;;;;;;;;;;;;;x
+EVTDESC_AFRREL042;A procession marches to the river in the morning and with them rides [bida_sacrifice.GetTitledName] carrying a golden spoon. Once there, the head priest attaches heavy weights to the girl’s legs and places her in a small boat. Everybody is then commanded to look away. You hear a splash as the girl is swallowed by the river. The viper of the waters has got his bride.;;;;;;;;;;;;;x
+EVTDESC_AFRREL042_PEASANT;A procession marches to the river in the morning and with them rides the peasant girl carrying a golden spoon. Once there, the head priest attaches heavy weights to the girl’s legs and places her in a small boat. Everybody is then commanded to look away. You hear a splash as the girl is swallowed by the river. The viper of the waters has got his bride.;;;;;;;;;;;;;x
+EVTDESC_AFRREL042_SUICIDE;A procession marches to the river in the morning and you ride with them carrying a golden spoon. Once there the head priest attaches heavy weights to your legs and places you in a small boat. Everybody is then commanded to look away as the priest pushes you to the river. This is your wedding, but you don’t see the groom.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL042;Only life can pay for life.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL042_SUICIDE;What? Where is the snake?;;;;;;;;;;;;;x
+EVTDESC_AFRREL043;[From.GetTitledNameWithNick] has selected you as this year’s sacrifice to Bida. You are forced to parade to the river. Once there the head priest attaches heavy weights to your legs and places you in a small boat. Everybody is then commanded to look away as the priest pushes you to the river. The snake will have you as their offering.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL043;So this is the embrace of the serpent.;;;;;;;;;;;;;x
+EVTDESC_AFRREL044_GOOD;Every year a young bride is sacrificed to the river, and every year you wonder if it’s all worth it.\n\nYour suspicions are gone for the time being. The snake must love his new bride, because the land is more fertile than ever and the mines keep the revenue coming.;;;;;;;;;;;;;x
+EVTDESC_AFRREL044_BAD;Every year a young bride is sacrificed to the river, and every year you wonder if it’s all worth it.\n\nMaybe it’s all a charade, the mines are not producing and the rains are late this year.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL044_GOOD;We pay with life, and we get life.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL044_BAD;Cursed snake.;;;;;;;;;;;;;x
+EVTDESC_AFRREL045;This year’s intended sacrifice [bida_sacrifice.GetTitledName], has died prematurely. Without a proper sacrifice the ritual for Bida is now ruined and the event must be canceled immediately.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL045;The snake will be displeased.;;;;;;;;;;;;;x
+EVTDESC_AFRREL047;With [bida_sacrifice.GetTitledName] no longer in your dungeon, this year’s ceremony has being left without a proper sacrifice. The ritual must be postponed.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL047;The snake will be displeased.;;;;;;;;;;;;;x
 EVTDESC_AFRREL070;Our people, more than men and women, are stallions and mares. We are born on the backs of steeds and therefore we celebrate on horseback. The Hawan Sallah is a beautiful opportunity to show this. A great parade will be organized for the pleasure of nobles and commoners, so that people can see how prosperous my reign is.;;;;;;;;;;;;;x
 EVTOPTA_AFRREL070;What a great parade will this be!;;;;;;;;;;;;;x
 EVTDESC_AFRREL071;The first thing to decide will be which horse will ride at the head of the parade. Of course it is an option to simply take one of the horses in your stables, but those old steeds will not impress anyone. Maybe it would be better to acquire a new horse for the occasion.;;;;;;;;;;;;;x

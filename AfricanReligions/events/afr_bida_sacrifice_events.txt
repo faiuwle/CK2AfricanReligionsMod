@@ -1,0 +1,596 @@
+namespace = AFRREL
+
+# Selection of the victim
+character_event = {
+    id = AFRREL.040
+    desc = EVTDESC_AFRREL040
+    picture = GFX_evt_afr_snake
+    
+    is_triggered_only = yes
+    
+    trigger = { has_character_modifier = holding_large_feast }
+    
+    immediate = {
+        random_courtier = {
+            limit = {
+                is_female = yes
+                is_adult = yes
+                prisoner = no
+                appropriate_bida_sacrifice_trigger = yes
+                NOT = { dynasty = ROOT }
+                is_landed = no
+            }
+            preferred_limit = {
+                trait = fair
+                NOT = { age = 40 }
+            }
+            preferred_limit = {
+                NOT = { age = 40 }
+            }
+            preferred_limit = {
+                trait = fair
+            }
+            save_event_target_as = bida_sacrifice_courtier
+        }
+        random_courtier = {
+            limit = {
+                is_female = yes
+                is_adult = yes
+                prisoner = yes
+                appropriate_bida_sacrifice_trigger = yes
+            }
+            preferred_limit = {
+                trait = fair
+                NOT = { age = 40 }
+            }
+            preferred_limit = { 
+                NOT = { age = 40 }
+            }
+            preferred_limit = {
+                trait = fair
+            }
+            save_event_target_as = bida_sacrifice_prisoner
+        }
+        random_courtier = {
+            limit = {
+                is_female = yes
+                is_adult = yes
+                appropriate_bida_sacrifice_trigger = yes
+                is_landed = no
+                is_child_of = ROOT
+            }
+            preferred_limit = {
+                is_betrothed = no
+                trait = fair
+                NOT = { age = 40 }
+            }
+            preferred_limit = {
+                is_betrothed = no
+                NOT = { age = 40 }
+            }
+            preferred_limit = {
+                trait = fair
+                NOT = { age = 40 }
+            }
+            preferred_limit = {
+                NOT = { age = 40 }
+            }
+            preferred_limit = {
+                is_betrothed = no
+                trait = fair
+            }
+            preferred_limit = {
+                is_betrothed = no
+            }
+            preferred_limit = {
+                trait = fair
+            }
+            save_event_target_as = bida_sacrifice_daughter
+        }
+    }
+    
+    option = {
+        name = EVTOPTA_AFRREL040
+        
+        custom_tooltip = {
+            text = bida_sacrifice_peasant_tooltip
+            random = {
+                chance = 50
+                character_event = { id = AFRREL.041 days = 16 }
+            }
+        }
+        
+        ai_chance = {
+            factor = 20
+        }
+    }
+    
+    option = {
+        name = EVTOPTB_AFRREL040
+        
+        trigger = { event_target:bida_sacrifice_courtier = { always = yes } }
+        
+        prestige = 20
+        piety = 20
+        custom_tooltip = {
+            text = bida_sacrifice_courtier_tooltip
+            random = {
+                chance = 50
+                character_event = { id = AFRREL.041 days = 16 }
+            }
+        }
+
+        event_target:bida_sacrifice_courtier = {
+            set_character_flag = bida_sacrifice
+            ROOT = {
+                save_persistent_event_target = { name = bida_sacrifice scope = PREV }
+            }
+        }
+        
+        ai_chance = {
+            factor = 1
+        }
+    }
+    
+    option = {
+        name = EVTOPTC_AFRREL040
+        
+        trigger = { event_target:bida_sacrifice_daughter = { always = yes } }
+        
+        prestige = 60
+        piety = 60
+        random = {
+            chance = 50
+            add_trait = diligent
+        }
+        custom_tooltip = {
+            text = bida_sacrifice_daughter_tooltip
+        }
+        
+        event_target:bida_sacrifice_daughter = {
+            save_event_target_as = doesnt_matter
+            ROOT = {
+                save_persistent_event_target = { name = bida_sacrifice scope = PREV }
+            }
+        }
+        
+        ai_chance = {
+            factor = 0  # Don't want the AI sacrificing potential wives
+        }
+    }
+    
+    option = {
+        name = EVTOPTD_AFRREL040
+        
+        trigger = { event_target:bida_sacrifice_prisoner = { always = yes } }
+        
+        custom_tooltip = {
+            text = bida_sacrifice_prisoner_tooltip
+        }
+        
+        event_target:bida_sacrifice_prisoner = {
+            save_event_target_as = doesnt_matter
+            ROOT = {
+                save_persistent_event_target = { name = bida_sacrifice scope = PREV }
+            }
+        }
+        
+        ai_chance = {
+            factor = 1
+        }
+    }
+    
+    option = {
+        name = EVTOPTE_AFRREL040
+        
+        trigger = {
+            is_female = yes
+            is_adult = yes
+            OR = {
+                trait = lunatic
+                trait = zealous
+                trait = imbecile
+                trait = slow
+                trait = dull
+            }
+        }
+        
+        tooltip_info_custom = bida_self_sacrifice_tooltip_info
+        
+        custom_tooltip = {
+            text = bida_self_sacrifice_tooltip
+        }
+        
+        ROOT = {
+            save_event_target_as = doesnt_matter
+            save_persistent_event_target = { name = bida_sacrifice scope = ROOT }
+        }
+        
+        ai_chance = {
+            factor = 0  # Don't want the AI sacrificing potential wives
+        }
+    }
+}
+
+# Victim comes to beg for her life
+character_event = {
+    id = AFRREL.041
+    desc = EVTDESC_AFRREL041
+    picture = GFX_evt_daughter_asking_father
+    
+    is_triggered_only = yes
+    
+    trigger = {
+        has_character_modifier = holding_large_feast
+        NOT = { persistent_event_target:bida_sacrifice = { is_alive = no } }
+    }
+    
+    fail_trigger_effect = {
+        if = {
+            limit = { has_character_modifier = holding_large_feast }
+            character_event = { id = AFRREL.045 }
+        }
+    }
+    
+    immediate = {
+        if = {  # Check for replacement sacrifice
+            limit = { persistent_event_target:bida_sacrifice = { always = yes } }
+            random_courtier = {
+                limit = {
+                    is_female = yes
+                    is_adult = yes
+                    prisoner = no
+                    appropriate_bida_sacrifice_trigger = yes
+                    NOT = { dynasty = ROOT }
+                    NOT = { has_character_flag = bida_sacrifice }
+                    is_landed = no
+                }
+                preferred_limit = {
+                    trait = fair
+                    NOT = { age = 40 }
+                }
+                preferred_limit = {
+                    NOT = { age = 40 }
+                }
+                preferred_limit = {
+                    trait = fair
+                }
+                save_event_target_as = bida_sacrifice_replacement
+            }
+        }
+        else = {  # Otherwise, generate a character to be the lover
+            create_character = {
+                culture = ROOT
+                religion = ROOT
+                dynasty = none
+                female = yes
+                age = 16
+                random_traits = yes
+                trait = fair
+            }
+            new_character = {
+                remove_trait = genius
+                remove_trait = quick
+                remove_all_negative_congenital_traits_effect = yes
+            }
+            new_character = { save_event_target_as = rescued_sacrifice }
+        }
+    }
+    
+    option = {
+        name = EVTOPTA_AFRREL041
+        
+        custom_tooltip = {
+            text = bida_sacrifice_ends_early_tooltip
+            
+            character_event = { id = 72999 }
+        }
+        prestige = -30
+
+        if = {
+            limit = { persistent_event_target:bida_sacrifice = { always = yes } }
+            if = {
+                limit = { prefers_men_trigger = no } 
+                persistent_event_target:bida_sacrifice = { add_lover = ROOT }
+            }
+            else = {
+                persistent_event_target:bida_sacrifice = { add_friend = ROOT }
+            }
+        }
+        else = {
+            if = {
+                limit = { prefers_men_trigger = no }
+                event_target:rescued_sacrifice = { add_lover = ROOT }
+            }
+            else = {
+                event_target:rescued_sacrifice = { add_friend = ROOT }
+            }
+        }
+        
+        any_demesne_province = { add_province_modifier = { name = canceled_bida_sacrifice months = 8 } }
+        hidden_tooltip = { character_event = { id = HF.15100 days = 30 } }  # Update weather
+        hidden_tooltip = { character_event = { id = HF.15120 days = 60 } }  # Rain events tombola
+        
+        persistent_event_target:bida_sacrifice = { clr_character_flag = bida_sacrifice }
+        clear_persistent_event_target = bida_sacrifice
+    }
+    
+    option = {
+        name = EVTOPTB_AFRREL041
+        
+        custom_tooltip = {
+            text = bida_sacrifice_continues_tooltip
+        }
+        random = {
+            chance = 20
+            add_trait = zealous
+        }
+        hidden_tooltip = {
+            event_target:rescued_sacrifice = { death = { death_reason = death_vanished } }
+        }
+    }
+    
+    option = {
+        name = EVTOPTC_AFRREL041
+        
+        trigger = {
+            OR = {
+                NOT = { persistent_event_target:bida_sacrifice = { always = yes } }
+                event_target:bida_sacrifice_replacement = { always = yes }
+            }
+            intrigue = 15
+        }
+        
+        tooltip_info = intrigue
+        
+        if = {
+            limit = { persistent_event_target:bida_sacrifice = { always = yes } }
+            if = {
+                limit = { prefers_men_trigger = no } 
+                persistent_event_target:bida_sacrifice = { add_lover = ROOT }
+            }
+            else = {
+                persistent_event_target:bida_sacrifice = { add_friend = ROOT }
+            }
+        }
+        else = {
+            if = {
+                limit = { prefers_men_trigger = no }
+                event_target:rescued_sacrifice = { add_lover = ROOT }
+            }
+            else = {
+                event_target_rescued_sacrifice = { add_friend = ROOT }
+            }
+        }
+        persistent_event_target:bida_sacrifice = { clr_character_flag = bida_sacrifice }
+        
+        if = {
+            limit = { persistent_event_target:bida_sacrifice = { always = yes } }
+            event_target:bida_sacrifice_replacement = {
+                save_event_target_as = doesnt_matter
+            }
+            custom_tooltip = {
+                text = bida_sacrifice_replacement_courtier_tooltip
+            }
+        }
+        else = {
+            custom_tooltip = {
+                text = bida_sacrifice_replacement_peasant_tooltip
+            }
+        }
+        
+        random = {
+            chance = 50
+            add_trait = deceitful
+        }
+        
+        save_persistent_event_target = { name = bida_sacrifice scope = event_target:bida_sacrifice_replacement }
+    }
+}
+    
+# The sacrifice takes place
+character_event = {
+    id = AFRREL.042
+    desc = {
+        text = EVTDESC_AFRREL042
+        trigger = {
+            persistent_event_target:bida_sacrifice = { always = yes }
+            persistent_event_target:bida_sacrifice = { NOT = { character = ROOT } }
+        }
+    }
+    desc = {
+        text = EVTDESC_AFRREL042_PEASANT
+        trigger = { NOT = { persistent_event_target:bida_sacrifice = { always = yes } } }
+    }
+    desc = {
+        text = EVTDESC_AFRREL042_SUICIDE
+        trigger = { persistent_event_target:bida_sacrifice = { character = ROOT } }
+    }
+    picture = GFX_evt_afr_snake
+    
+    is_triggered_only = yes
+    
+    trigger = {
+        has_character_modifier = holding_large_feast
+        NOT = { persistent_event_target:bida_sacrifice = { is_alive = no } }
+    }
+    
+    fail_trigger_effect = {
+        if = {
+            limit = { has_character_modifier = holding_large_feast }
+            character_event = { id = AFRREL.045 }
+        }
+    }
+    
+    option = {
+        name = {
+            text = EVTOPTA_AFRREL042
+            trigger = { NOT = { persistent_event_target:bida_sacrifice = { character = ROOT } } }
+        }
+        name = {
+            text = EVTOPTA_AFRREL042_SUICIDE
+            trigger = { persistent_event_target:bida_sacrifice = { character = ROOT } }
+        }
+        
+        if = {
+            limit = { NOT = { persistent_event_target:bida_sacrifice = { character = ROOT } } }
+            piety = 5
+        }
+        
+        if = {
+            limit = { random = 30 }
+            any_demesne_province = { add_province_modifier = { name = good_bida_sacrifice months = 8 } }
+            set_character_flag = good_bida_sacrifice
+        }
+        else = {
+            any_demesne_province = { add_province_modifier = { name = bad_bida_sacrifice months = 8 } }
+            set_character_flag = bad_bida_sacrifice
+        }
+        
+        persistent_event_target:bida_sacrifice = {
+            if = {
+                limit = {
+                    ai = no
+                    NOT = { character = ROOT }
+                }
+                tooltip = { death = { death_reason = death_bida_sacrifice killer = ROOT } }
+                hidden_tooltip = { character_event = { id = AFRREL.043 } }
+            }
+            else = {
+                death = { death_reason = death_bida_sacrifice killer = ROOT }
+            }
+        }
+        
+        persistent_event_target:bida_sacrifice = { clr_character_flag = bida_sacrifice }
+        clear_persistent_event_target = bida_sacrifice
+        
+        hidden_tooltip = { character_event = { id = 72110 } }  # End the feast
+        hidden_tooltip = { character_event = { id = HF.15100 days = 30 } }  # Update weather
+        hidden_tooltip = { character_event = { id = HF.15120 days = 60 } }  # Rain event tombola
+        hidden_tooltip = { character_event = { id = AFRREL.044 days = 90 } }  # Reveal good/bad result
+    }
+}
+
+# Player is informed that they've been sacrificed
+character_event = {
+    id = AFRREL.043
+    desc = EVTDESC_AFRREL043
+    picture = GFX_evt_afr_snake
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL043
+        
+        death = { death_reason = death_bida_sacrifice killer = FROM }
+    }
+}
+
+# Report on the success of the sacrifice a few months later
+character_event = {
+    id = AFRREL.044
+    desc = {
+        text = EVTDESC_AFRREL044_GOOD
+        trigger = { has_character_flag = good_bida_sacrifice }
+    }
+    desc = {
+        text = EVTDESC_AFRREL044_BAD
+        trigger = { has_character_flag = bad_bida_sacrifice }
+    }
+    picture = GFX_evt_west_african_ruler
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = {
+            text = EVTOPTA_AFRREL044_GOOD
+            trigger = { has_character_flag = good_bida_sacrifice }
+        }
+        name = {
+            text = EVTOPTA_AFRREL044_BAD
+            trigger = { has_character_flag = bad_bida_sacrifice }
+        }
+        
+        if = {
+            limit = { has_character_flag = good_bida_sacrifice }
+            any_demesne_province = {
+                limit = { has_province_modifier = good_bida_sacrifice }
+                add_province_modifier = { name = bida_sacrifice_tax_good months = 6 }
+            }
+            clr_character_flag = good_bida_sacrifice
+        }
+        else = {
+            any_demesne_province = {
+                limit = { has_province_modifier = bad_bida_sacrifice }
+                add_province_modifier = { name = bida_sacrifice_tax_bad months = 6 }
+            }
+            clr_character_flag = bad_bida_sacrifice
+        }
+    }
+}
+
+# Sacrifice died prematurely
+character_event = {
+    id = AFRREL.045
+    desc = EVTDESC_AFRREL045
+    picture = GFX_evt_afr_snake
+    
+    is_triggered_only = yes
+    
+    trigger = { has_character_modifier = holding_large_feast }
+    
+    option = {
+        name = EVTOPTA_AFRREL045
+        
+        custom_tooltip = {
+            text = bida_sacrifice_ends_early_tooltip
+            clear_persistent_event_target = bida_sacrifice
+            character_event = { id = 72999 }
+        }
+        any_demesne_province = { add_province_modifier = { name = canceled_bida_sacrifice months = 8 } }
+        hidden_tooltip = { character_event = { id = HF.15100 days = 30 } }  # Update weather
+        hidden_tooltip = { character_event = { id = HF.15120 days = 60 } }  # Rain events tombola
+    }
+}
+
+# Sacrfice was released from prison
+# This fires for the released prisoner from the on_action, the following event fires for the character sacrificing to Bida
+character_event = {
+    id = AFRREL.046
+    hide_window = yes
+    
+    is_triggered_only = yes
+    
+    trigger = {
+        FROM = {
+            has_character_modifier = holding_large_feast
+            persistent_event_target:bida_sacrifice = { character = ROOT }
+            NOT = { character = ROOT }
+        }
+    }
+    
+    immediate = {
+        FROM = { character_event = { id = AFRREL.047 } }
+    }
+}
+
+character_event = {
+    id = AFRREL.047
+    desc = EVTDESC_AFRREL047
+    picture = GFX_evt_afr_snake
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_AFRREL047
+        
+        custom_tooltip = {
+            text = bida_sacrifice_ends_early_tooltip
+            clear_persistent_event_target = bida_sacrifice
+            character_event = { id = 72999 }
+        }
+        any_demesne_province = { add_province_modifier = { name = canceled_bida_sacrifice months = 8 } }
+        hidden_tooltip = { character_event = { id = HF.15100 days = 30 } }  # Update weather
+        hidden_tooltip = { character_event = { id = HF.15120 days = 60 } }  # Rain events tombola
+    }
+}

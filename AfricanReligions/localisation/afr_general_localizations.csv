@@ -203,6 +203,19 @@ salt_constantinople_tooltip;The §YChristian§! world is outraged by your actions.
 salt_carthage_capital_tooltip;The §YAmazigh§! world is outraged by your actions.\nThe destruction of the city has gravely affected the §YMoral Authority§! of the §YChurch of the Amazigh People§!.\nYou loot §Y2000§! gold from the city.;;;;;;;;;;;;;x
 pick_religious_tradition_tooltip;Choose a religious tradition to follow.;;;;;;;;;;;;;x
 tooltip_change_a_tag_roog_branch;You will choose a new path.;;;;;;;;;;;;;x
+bida_sacrifice_peasant_tooltip;A peasant girl will be selected as the sacrifice.;;;;;;;;;;;;;x
+bida_sacrifice_courtier_tooltip;§Y[bida_sacrifice_courtier.GetTitledName]§! will be selected as the sacrifice.;;;;;;;;;;;;;x
+bida_sacrifice_daughter_tooltip;§Y[bida_sacrifice_daughter.GetTitledName]§! will be selected as the sacrifice.;;;;;;;;;;;;;x
+bida_sacrifice_prisoner_tooltip;§Y[bida_sacrifice_prisoner.GetTitledName]§! will be selected as the sacrifice.;;;;;;;;;;;;;x
+bida_self_sacrifice_tooltip;§YYou§! will be selected as the sacrifice.;;;;;;;;;;;;;x
+bida_sacrifice_ends_early_tooltip;The sacrifice will be canceled and all of the guests will go home.;;;;;;;;;;;;;x
+bida_sacrifice_continues_tooltip;The sacrifice will continue as originally planned.;;;;;;;;;;;;;x
+bida_sacrifice_replacement_courtier_tooltip;§Y[bida_sacrifice_replacement.GetTitledName]§! will be sacrificed in place of §Y[bida_sacrifice.GetTitledName]§!;;;;;;;;;;;;;x
+bida_sacrifice_replacement_peasant_tooltip;A different girl will be sacrificed in her place.;;;;;;;;;;;;;x
+bida_self_sacrifice_tooltip_info;[Root.BidaSelfSacrificeTooltipInfo];;;;;;;;;;;;;x
+bida_self_sacrifice_zealous;This option is available because you have the §YZealous§! trait.;;;;;;;;;;;;;x
+bida_self_sacrifice_lunatic;This option is available because you have the §YLunatic§! trait.;;;;;;;;;;;;;x
+bida_self_sacrifice_dumb;This option is available because you are dumb.;;;;;;;;;;;;x
 hawan_sallah_elephant_prepare_tooltip;You will prepare an elephant for the parade.;;;;;;;;;;;;;x
 hawan_sallah_bet_arabian;You bet §Y[Root.hawan_sallah_bet_winnings.GetValue]§! gold on the white Arabian.;;;;;;;;;;;;;x
 hawan_sallah_bet_palomino;You bet §Y[Root.hawan_sallah_bet_winnings.GetValue]§! gold on the palomino barb.;;;;;;;;;;;;;x
@@ -243,6 +256,9 @@ pick_a_tat_roog_religious_tradition;Choose a Religious Tradition;;;;;;;;;;;;;x
 pick_a_tat_roog_religious_tradition_desc;There are many religious traditions in the Western Sahel, each with its own internal organization. It is possible to dedicate yourself fully to one of them.;;;;;;;;;;;;;x
 change_a_tat_roog_branch;Choose a Religious Tradition;;;;;;;;;;;;;x
 change_a_tat_roog_branch_desc;Many are the religious traditions of the Western Sahel.  Once per lifetime a ruler may choose different path.;;;;;;;;;;;;;x
+hold_bida_sacrifice;Hold a Feast for Human Sacrifice;;;;;;;;;;;;;x
+hold_bida_sacrifice_desc;Every year a young woman must be offered in sacrifice to Bida the snake. This year I could hold a great feast to commemorate the occasion.;;;;;;;;;;;;;x
+DEATH_BY_BIDA_SACRIFICE;was offered in sacrifice to the snake god Bida by $KILLER$;;;;;;;;;;;;;x
 hold_hawan_sallah;Hold the Hawan Sallah;;;;;;;;;;;;;x
 hold_hawan_sallah_desc;The Hawan Sallah is an equestrian parade and sporting event. It is a great opportunity to show the prosperity of the ruling class.;;;;;;;;;;;;;x
 african_revival;African Revival;;;;;;;;;;;;;x
@@ -296,6 +312,16 @@ secret_amazigh_community;Secret [amazigh.GetName] Community;;;;;;;;;;;;;x
 secret_amazigh_community_desc;In secret, the faithful have organized around a small church community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
 secret_amazigh_reformed_community;Secret [amazigh_reformed.GetName] Community;;;;;;;;;;;;;x
 secret_amazigh_reformed_community_desc;In secret, the faithful have organized around a small church community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
+good_bida_sacrifice;Embrace of the Serpent;;;;;;;;;;;;;x
+good_bida_sacrifice_desc;This province is enjoying the benefits of a bridal sacrifice to the snake god Bida.;;;;;;;;;;;;;x
+bad_bida_sacrifice;Embrace of the Serpent;;;;;;;;;;;;;x
+bad_bida_sacrifice_desc;This province is enjoying the benefits of a bridal sacrifice to the snake god Bida.;;;;;;;;;;;;;x
+canceled_bida_sacrifice;Fury of the Serpent;;;;;;;;;;;;;x
+canceled_bida_sacrifice_desc;This province is suffering as a result of a failed sacrifice to the snake god Bida.;;;;;;;;;;;;;x
+bida_sacrifice_tax_good;Blessed Rains of Bida;;;;;;;;;;;;;x
+bida_sacrifice_tax_good_desc;The god Bida has blessed this land, bringing prosperity to his most faithful.;;;;;;;;;;;;;x
+bida_sacrifice_tax_bad;The Snake’s Disdain;;;;;;;;;;;;;x
+bida_sacrifice_tax_bad_desc;The snake god Bida has left this land to its own fate, making it unproductive.;;;;;;;;;;;;;x
 holding_hawan_sallah;Holding a Hawan Sallah parade;;;;;;;;;;;;;x
 arrested_town_fool;Arrested Town Fool;;;;;;;;;;;;;x
 arrested_town_fool_desc;This ruler angered the populace by arresting the beloved town fool.;;;;;;;;;;;;;x
