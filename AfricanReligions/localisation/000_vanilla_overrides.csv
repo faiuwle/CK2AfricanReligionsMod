@@ -23,3 +23,5 @@ pick_main_deity_desc;[PickPatronDeityDescriptionReligionCheck];;;;;;;;;;;;x
 pick_main_deity_tooltip;§Y[Root.GetTitledFirstName]§! gets to pick a new [PatronDeity].;;;;;;;;;;;;x
 patron_deity_non_bori;patron deity to worship;;;;;;;;;;;;x
 patron_deity_bori;patron bori to follow;;;;;;;;;;;;x
+awussu_female_innuendo;drink from the royal chalice.;;;;;;;;;;;;x
+awussu_male_innuendo;play with the royal scepter.;;;;;;;;;;;;x

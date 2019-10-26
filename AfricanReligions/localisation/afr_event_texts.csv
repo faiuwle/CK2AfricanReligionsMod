@@ -65,6 +65,18 @@ EVTOPTB_AFRREL029;These Carthaginians, when will they learn?;;;;;;;;;;;;;x
 EVTTITLE_AFRREL030;The Old Borders are Restored;;;;;;;;;;;;;x
 EVTDESC_AFRREL030;The gods have given to man no sharper spur to victory than contempt of death. The old empire, which was once stabbed in the heart and left for dead in ashes and salt, has now been restored to its full glory. Never again shall the sons of Carthage fear the crushing defeat, never again shall the mothers of Carthage see their sons taken in chains by Northerner tyrants.\n\nThe priests of Tanit celebrate across the Maghreb, for once again they are protected by the one true heir of the beloved Dido.  Merchants set sails for places yet unexplored as once Hanno did.   Gold and prosperity once again fill the metropolises of Africa. What was built with Phoenician ingenuity and Numidian blood has been rebuild by their only heirs and a forgotten nation has now a second chance in this world.;;;;;;;;;;;;;x
 EVTOPTA_AFRREL030;A day that will forever be remembered.;;;;;;;;;;;;;x
+EVTTITLE_AFRREL037;Carnival of Awussu;;;;;;;;;;;;;x
+EVTDESC_AFRREL037;In the old Amazigh calendar, the great heat wave that hits the lands of the Maghreb when the month of Ghusht arrives is known as Awussu. The occasion is celebrated with a great carnival, and this year I have decided to sponsor the entire celebration on my own, to the joy of the commoners.\n\nI give the order to light the big bonfires for my capital and give gifts to the people who are preparing for the traditional plunge into the water. I just hope that this time people have the decency not to start copulating in the water; I do not care if they assure that it helps fertility.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL037;We will have so much fun!;;;;;;;;;;;;;x
+EVTTITLE_AFRREL038;Carnival Ends;;;;;;;;;;;;;x
+EVTDESC_AFRREL038;As the heat wave ends and the people calm down, another carnival comes to an end. This is an old celebration, going back to the days of old Carthage and with good reason. The fun is always good for the spirit.;;;;;;;;;;;;;x
+EVTOPTA_AFRREL038;Until next year!;;;;;;;;;;;;;x
+EVTDESC_AFRREL035;As it is carnival tradition, I decide to take a plunge in the water for good luck. It is then that I see that I am not alone. His muscles seem to be sculpted in marble and his smile could make any heart melt. They say that the waters in Awussu are good for fertility, and he seems more than willing to [Root.AwussuGetAppropriateSexualInnuendo];;;;;;;;;;;;;x
+EVTOPTA_AFRREL035;Well, if the gods sent him to me...;;;;;;;;;;;;;x
+EVTOPTB_AFRREL035;Get away from me! I am a decent [Root.GetManWoman];;;;;;;;;;;;;x
+EVTDESC_AFRREL036;As it is carnival tradition, I decide to take a plunge in the water for good luck. It is then that I see that I am not alone. Her curvaceous body steals my breath and her breasts awaken all my desires. They say that the waters in Awussu are good for fertility, and she seems more than willing to [Root.AwussuGetAppropriateSexualInnuendo];;;;;;;;;;;;;x
+EVTOPTA_AFRREL036;Well, if the gods sent her to me...;;;;;;;;;;;;;x
+EVTOPTB_AFRREL036;Get away from me! I am a decent [Root.GetManWoman];;;;;;;;;;;;;x
 EVTDESC_MNM_3225_AFRICAN;In an effort to convince the court of my piety, I have chosen to attend [Root.GetReligiousCeremonyName] and give a grand speech to my people, and to [Root.Religion.GetHighGodName]. The [Root.Religion.GetPriestTitle] eyes me curiously as I enter the building, and I stop for moment to gather my thoughts. May [Root.TrueReligion.GetHighGodName] forgive me, but I need to impress these people and choose my words carefully.;;;;;;;;;;;;;x
 ceremony_bori;a possession ceremony;;;;;;;;;;;;;x
 ceremony_not_bori;the local temple;;;;;;;;;;;;;x
@@ -148,6 +160,33 @@ EVTDESC_AFRREL066;The sun lady Magec is beautiful like no other and full of bles
 EVTOPTA_AFRREL066;The sun that illuminates all land will let me understand it better.;;;;;;;;;;;;;x
 EVTDESC_AFRREL067;Set is a god of chaos, the desert, the wild storms and of violence among men. In the ancient times when the pharaohs still ruled their river kingdom, they also though he was the god of foreigners, because he loved us Amazighs. Set is a trickster but also a protector who fights a constant battle against death itself.;;;;;;;;;;;;;x
 EVTOPTA_AFRREL067;Give me some of your cleverness, lord of chaos.;;;;;;;;;;;;;x
+EVTDESC74000_AWUSSU;I had invited a monkey trainer to the carnival and the performance went well until one of the monkeys refused to ride on top of a pig. The trainer beat the monkey with a stick which led the other monkeys to attack the trainer, biting him and hitting him with his own stick.;;;;;;;;;;;;;x
+EVTDESC74005_AWUSSU;The carnival’s Archery contest went very well. The clout and the space around it was filled with arrows, some of them had hit the bullseye, some of them had missed the clout altogether. The winner was a modest man who disappeared rather quickly after he collected his prize.;;;;;;;;;;;;;x
+EVTDESC74010_AWUSSU;A traditional narrator of hikayat or folktales has being telling a funny story about a foolish king. After a while you start to realize that the fool in the tale is a metaphor for you. Everybody is now laughing at the buffoonery of the storyteller.;;;;;;;;;;;;;x
+EVTOPTA74010_AWUSSU;That's actually a very clever metaphor;;;;;;;;;;;;;x
+EVTOPTG74010_AWUSSU;If I pay him more, perhaps he will talk about something else;;;;;;;;;;;;;x
+EVTDESC74015_AWUSSU;A group of horse riders has come to the carnival to perform the Tbourida, a traditional synchronized spectacle of horsemanship and archery. Some of the small children in the crowd seem to be scared of so many horses galloping in unison.;;;;;;;;;;;;;x
+EVTOPTE74015_AWUSSU;I can't wait! I love the Tbourida!;;;;;;;;;;;;;x
+EVTDESC74020_AWUSSU;When my advisor asked me to sponsor this year’s carnival I could never have guessed I would regret it. The gathered crowd took the opportunity to proclaim a dahir, sentencing one of my vassals to being tied to a camel and kicked out of town!;;;;;;;;;;;;;x
+EVTDESC74025_AWUSSU;The ahwash is a traditional for of theatrics involving song, dance, poetry, and drumming. A large group of performers has being organized among the people of the city for the carnival and I have come to pay them a visit before their presentation.;;;;;;;;;;;;;x
+EVTOPTA74025_AWUSSU;I'd prefer if you performed 'The Old Marabout';;;;;;;;;;;;;x
+EVTOPTB74025_AWUSSU;The ahwash is our most precious tradition;;;;;;;;;;;;;x
+EVTDESC74030_AWUSSU;With the carnival coming, a large supply of hashish has entered the city from the east. The marabouts insist that eating the substance is damaging for the soul, but the common folk seem to enjoy the effect it produces.;;;;;;;;;;;;;x
+EVTOPTA74030_AWUSSU;How bad can it be? Let the plebs have their fun;;;;;;;;;;;;;x
+EVTOPTB74030_AWUSSU;The marabouts could use some hashish to calm down;;;;;;;;;;;;;x
+EVTOPTD74030_AWUSSU;If the gods don’t approve it neither do I;;;;;;;;;;;;;x
+EVTDESC74035_AWUSSU;I don’t know what I was thinking hiring the Marrakshi Camel Riders to parade through the streets. Camels are not horses, they can’t do pirouettes, not that that stopped the riders from trying. After falling to the grown and crashing into a group of scared women I must admit that the parade is ruined.;;;;;;;;;;;;;x
+EVTDESC74040_AWUSSU;A shuwafa is a fortuneteller, and there are plenty in the city, more than usual due to the carnival. Their omens usually come from cowrie-shells and similar silly things but there are still people who believe in their rituals and interpretations.;;;;;;;;;;;;;x
+EVTOPTB74040_AWUSSU;Banish them from the carnival;;;;;;;;;;;;;x
+EVTDESC74042_AWUSSU;A marabout is disturbing the carnival by rambling nonsense about sacrificing babies to the goddess Tanit. His drivel is frightening some, but most of the crowd around him is mocking and laughing at him.;;;;;;;;;;;;;x
+EVTOPTB74042_AWUSSU;Kick him out, he does not belong at the carnival;;;;;;;;;;;;;x
+EVTDESC74045_AWUSSU;The local clan chiefs of [Root.Location.GetName] complain about the peasants getting too noisy with their music and dancing during the carnival.;;;;;;;;;;;;;x
+EVTOPTA74045_AWUSSU;Tell them to learn how to appreciate the music;;;;;;;;;;;;;x
+EVTOPTB74045_AWUSSU;Restrict the musical performances in the city;;;;;;;;;;;;;x
+EVTDESC4105_AWUSSU;A poet has being performing an epic in the traditional asefru composition in front of a large crowd, the piece is about the prominent people of [Root.Location.GetName]. You do notice that he keeps riming your name with various synonyms of the word ‘genitals’;;;;;;;;;;;;;x
+EVTOPTA4105_AWUSSU;That doesn’t even rhyme!;;;;;;;;;;;;;x
+EVTDESC4170_AWUSSU;Its ragged fur and sorrowful eyes made the lion look pitiful, but when its trainer started playing his laud the lion started dancing. The dancing lion and his trainer have become a very popular carnival attraction.;;;;;;;;;;;;;x
+EVTOPTD4170_AWUSSU;Training a lion can't be too hard;;;;;;;;;;;;;x
 EVTDESC72109_BIDA;Our fertile lands give us life, but this is not without a price. For this reason each year a young woman is chosen to be a bride for the old snake spirit of the waters that is known as Bida. All the people of the domain must be invited for a feast to celebrate the occasion in which the blessed lady will be chosen.;;;;;;;;;;;;;x
 EVTOPTA72109_BIDA;Only life can pay for life.;;;;;;;;;;;;;x
 EVTDESC72001_BIDA;The wandering griot entered the castle telling the story of the kings of old and did not stop until he found me. With a flourishing bow and one long, sad tone from his balafon he finished his poem and asked for my patronage.;;;;;;;;;;;;;x

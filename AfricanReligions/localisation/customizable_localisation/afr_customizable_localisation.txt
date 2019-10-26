@@ -405,6 +405,19 @@ defined_text = {
 }
 
 defined_text = {
+    name = AwussuGetAppropriateSexualInnuendo
+
+    text = {
+        localisation_key = awussu_female_innuendo
+        trigger = { is_female = yes }
+    }
+    text = {
+        localisation_key = awussu_male_innuendo
+        trigger = { is_female = no }
+    }
+}
+
+defined_text = {
     name = BidaSelfSacrificeTooltipInfo
     
     text = {

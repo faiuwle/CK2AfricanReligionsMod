@@ -1,0 +1,214 @@
+namespace = AFRREL
+
+# Carnival of Awussu Begins Event
+character_event = {
+    id = AFRREL.037
+    title = EVTTITLE_AFRREL037
+    desc = EVTDESC_AFRREL037
+    picture = GFX_evt_afr_awussu_carnival
+
+    is_triggered_only = yes
+    only_playable = yes
+
+    immediate = { 
+        set_character_flag = summer_fair_begin
+    }
+
+    option = {
+        name = "EVTOPTA_AFRREL037"
+    }
+}
+
+#Carnival of Awussu, pretty lad
+character_event = {
+	id = AFRREL.035
+	desc = EVTDESC_AFRREL035
+	picture = GFX_evt_lovers
+
+	capable_only = yes
+	prisoner = no
+	only_playable = yes
+
+	trigger = {
+		OR = {
+			religion = amazigh_reformed
+			religion = amazigh
+		}
+		prefers_men_trigger = yes
+
+		OR = {
+			NOT = { has_character_flag = fair_event_happened }
+			had_character_flag = {
+				flag = fair_event_happened
+				days = 3
+			}
+		}
+		has_character_modifier = holding_summer_fair
+		had_character_flag = {
+			flag = summer_fair_begin
+			days = 3
+		}
+		NOT = { has_character_flag = fair_event_lover_lad }	
+	}
+
+	immediate = {
+		set_character_flag = fair_event_lover_lad
+		set_character_flag = fair_event_happened
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = "EVTOPTA_AFRREL035" #Take a new lover
+		create_character = {
+			random_traits = yes
+			female = no
+			dynasty = random
+			culture = ROOT
+			religion = ROOT
+			age = 17			
+			trait = fair
+		}
+
+		new_character = {
+			if = {
+				limit = { ROOT = { trait = homosexual } }
+				add_trait = homosexual
+			}
+			else = { remove_trait = homosexual }
+
+			add_lover = ROOT
+			remove_trait = genius
+			remove_trait = imbecile
+			remove_trait = ugly
+			remove_trait = slow
+			remove_trait = chaste
+		}
+	}
+
+	option = {
+		name = "EVTOPTB_AFRREL035" #Reject the new lover
+		random = {
+			chance = 25
+			add_trait = chaste
+		}
+	}
+}
+
+#Carnival of Awussu, pretty lass
+character_event = {
+	id = AFRREL.036
+	desc = EVTDESC_AFRREL036
+	picture = GFX_evt_lovers
+
+	capable_only = yes
+	prisoner = no
+	only_playable = yes
+
+	trigger = {
+		OR = {
+			religion = amazigh_reformed
+			religion = amazigh
+		}
+		prefers_men_trigger = no
+
+		OR = {
+			NOT = { has_character_flag = fair_event_happened }
+			had_character_flag = {
+				flag = fair_event_happened
+				days = 3
+			}
+		}
+		has_character_modifier = holding_summer_fair
+		had_character_flag = {
+			flag = summer_fair_begin
+			days = 3
+		}
+		NOT = { has_character_flag = fair_event_lass }	
+	}
+
+	immediate = {
+		set_character_flag = fair_event_lover_lass
+		set_character_flag = fair_event_happened
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = "EVTOPTA_AFRREL036" #Take a new lover
+		create_character = {
+			random_traits = yes
+			female = yes
+			dynasty = random
+			culture = ROOT
+			religion = ROOT
+			age = 17
+			trait = fair
+		}
+
+		new_character = {
+			if = {
+				limit = { ROOT = { trait = homosexual } }
+				add_trait = homosexual
+			}
+			else = { remove_trait = homosexual }
+
+			add_lover = ROOT
+			remove_trait = genius
+			remove_trait = imbecile
+			remove_trait = ugly
+			remove_trait = slow
+			remove_trait = chaste
+		}
+	}
+
+	option = {
+		name = "EVTOPTB_AFRREL036" #Reject the new lover
+		random = {
+			chance = 25
+			add_trait = chaste
+		}
+	}
+}
+
+#Carnival of Awussu Ends Event
+character_event = {
+	id = AFRREL.038
+	title = EVTTITLE_AFRREL038
+	desc = EVTDESC_AFRREL038
+	picture = GFX_evt_afr_awussu_carnival
+
+	is_triggered_only = yes
+	only_playable = yes
+
+	option = {
+		name = "EVTOPTA_AFRREL038"
+		remove_character_modifier = holding_summer_fair
+		clr_character_flag = summer_fair_begin
+		clr_character_flag = summer_fair_begin
+		set_character_flag = recent_summer_fair
+		clr_character_flag = fair_event_happened
+		clr_character_flag = do_not_disturb
+		clr_character_flag = fair_event_74000
+		clr_character_flag = fair_event_74005
+		clr_character_flag = fair_event_74010
+		clr_character_flag = fair_event_74015
+		clr_character_flag = fair_event_74020
+		clr_character_flag = fair_event_74025
+		clr_character_flag = fair_event_74030
+		clr_character_flag = fair_event_74035
+		clr_character_flag = fair_event_74040
+		clr_character_flag = fair_event_74042
+		clr_character_flag = fair_event_74044
+		clr_character_flag = fair_event_74045
+		clr_character_flag = fair_event_4105
+		clr_character_flag = fair_event_4170
+		clr_character_flag = fair_event_lover_lass
+		clr_character_flag = fair_event_lover_lad
+		prestige = 10
+	}
+}

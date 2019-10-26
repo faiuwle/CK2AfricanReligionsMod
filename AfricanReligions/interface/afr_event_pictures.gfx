@@ -30,6 +30,11 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_evt_afr_awussu_carnival"
+        texturefile = "gfx/event_pictures/afr_awussu_carnival.dds"
+    }
+
+    spriteType = {
         name = "GFX_evt_afr_amazigh_deities_main"
         texturefile = "gfx/event_pictures/amazigh_patron_deity_event_main.dds"
     }
