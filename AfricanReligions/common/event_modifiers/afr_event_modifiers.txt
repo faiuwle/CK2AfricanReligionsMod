@@ -99,6 +99,29 @@ follower_of_set = {
 	icon = 48
 }
 
+good_bida_sacrifice = {
+    icon = 129
+}
+
+bad_bida_sacrifice = {
+    icon = 129
+}
+
+canceled_bida_sacrifice = {
+    icon = 130
+    local_tax_modifier = -0.10
+}
+
+bida_sacrifice_tax_good = {
+    icon = 6
+    local_tax_modifier = 0.10
+}
+
+bida_sacrifice_tax_bad = {
+    icon = 24
+    local_tax_modifier = -0.10
+}
+
 holding_hawan_sallah = {
 	monthly_character_prestige = 0.05
 	icon = 7

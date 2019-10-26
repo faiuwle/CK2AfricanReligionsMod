@@ -38,4 +38,9 @@ spriteTypes = {
         name = "GFX_change_a_tat_roog_branch"
         texturefile = "gfx/interface/afr_decision_icon_religion_branch.dds"
     }
+    
+    spriteType = {
+        name = "GFX_hold_bida_sacrifice"
+        texturefile = "gfx/interface/afr_decision_icon_bida_sacrifice.dds"
+    }
 }

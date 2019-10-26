@@ -1,0 +1,32 @@
+appropriate_bida_sacrifice_trigger = {
+    NOR = {
+		any_lover = { always = yes }
+		any_child_even_if_dead = { always = yes }
+		any_spouse_even_if_dead = { always = yes }
+		has_focus = focus_seduction
+		is_pregnant = yes
+		trait = pregnant
+        AND = {
+            trait = lustful
+            age = 20
+        }
+		trait = hedonist
+		trait = seducer
+		trait = seductress
+		trait = lovers_pox
+        AND = {
+            trait = syphilitic
+            NOR = {
+                mother = { trait = syphilitic }
+                father = { trait = syphilitic }
+            }
+        }
+	}
+	OR = {
+		NOT = { age = 30 }
+		trait = celibate
+		trait = chaste
+		trait = shy
+		is_ascetic_trigger = yes
+	}
+}

@@ -18,6 +18,12 @@ character_event = { #Landing Event
             religion = a_tag_roog
             religion = a_tag_roog_reformed
         }
+        NOR = {
+            trait = serer
+            trait = dogon
+            trait = malinke
+            trait = sarakole
+        }
     }
 
 	option = {

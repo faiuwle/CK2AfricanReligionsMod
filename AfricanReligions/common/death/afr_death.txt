@@ -1,0 +1,13 @@
+death_bida_sacrifice = {
+    violent = yes
+    long_desc = DEATH_BY_BIDA_SACRIFICE
+    sound_list = {
+		female = {
+			"drowning_female_01"
+			"drowning_female_02"
+		}
+		male = {
+			"drowning_male_01"
+		}
+	}
+}

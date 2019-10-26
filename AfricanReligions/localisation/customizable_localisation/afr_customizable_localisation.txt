@@ -418,6 +418,34 @@ defined_text = {
 }
 
 defined_text = {
+    name = BidaSelfSacrificeTooltipInfo
+    
+    text = {
+        localisation_key = bida_self_sacrifice_lunatic
+        trigger = { trait = lunatic }
+    }
+    
+    text = {
+        localisation_key = bida_self_sacrifice_zealous
+        trigger = {
+            NOT = { trait = lunatic }
+            trait = zealous
+        }
+    }
+    
+    text = {
+        localisation_key = bida_self_sacrifice_dumb
+        trigger = {
+            NOR = {
+                trait = lunatic
+                trait = zealous
+            }
+            is_dumb_trigger = yes
+        }
+    }
+}
+
+defined_text = {
     name = HawanSallahClothes
     
     text = {
