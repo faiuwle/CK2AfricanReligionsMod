@@ -43,4 +43,9 @@ spriteTypes = {
         name = "GFX_hold_bida_sacrifice"
         texturefile = "gfx/interface/afr_decision_icon_bida_sacrifice.dds"
     }
+    
+    spriteType = {
+        name = "GFX_hold_carnival_of_awussu"
+        texturefile = "gfx/interface/decision_icon_summerfair.dds"
+    }
 }
