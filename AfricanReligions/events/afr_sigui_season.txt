@@ -1,0 +1,96 @@
+##################################
+#                                #
+# Events for West Sahelian Sigui #
+#                                #
+##################################
+
+namespace = AFRREL
+
+#Sigui Season
+narrative_event = {
+	id = AFRREL.400
+	desc = "EVTDESC_AFRREL400"
+	picture = "GFX_evt_tribal_shrine"
+	border = "GFX_event_narrative_frame_war"
+
+	is_triggered_only = yes
+
+     trigger = {
+	AND = {
+		OR = {
+			religion = a_tag_roog
+			religion = a_tag_roog_reformed
+		}
+		OR = {
+			year = 770
+			year = 827
+			year = 887
+			year = 947
+			year = 1007
+			year = 1067
+			year = 1127
+			year = 1187
+			year = 1247
+			year = 1307
+			year = 1367
+			year = 1427
+		}
+	}
+     }
+	set_global_flag = sigui_season
+}
+
+#Sigui Season Ends
+narrative_event = {
+	id = AFRREL.401
+	desc = "EVTDESC_AFRREL401"
+	picture = "GFX_evt_tribal_shrine"
+	border = "GFX_event_narrative_frame_war"
+
+	is_triggered_only = yes
+
+     trigger = {
+	AND = {
+		OR = {
+			religion = a_tag_roog
+			religion = a_tag_roog_reformed
+		}
+		OR = {
+			year = 787
+			year = 844
+			year = 904
+			year = 964
+			year = 1024
+			year = 1084
+			year = 1144
+			year = 1204
+			year = 1264
+			year = 1324
+			year = 1384
+		}
+	}
+    }
+	clr_global_flag = sigui_season
+}
+
+#Hold the Sigui
+character_event = {
+	id_AFRREL.402
+	desc = "EVTDESC_AFRREL402"
+	picture = "GFX_evt_tribal_shrine"
+	
+	is_triggered_only = yes
+
+     trigger = {
+	AND = {
+		OR = {
+			religion = a_tag_roog
+			religion = a_tag_roog_reformed
+		}
+		is_adult = yes
+		prisoner = no
+		
+
+	add_trait = on_pilgrimage
+
+}
