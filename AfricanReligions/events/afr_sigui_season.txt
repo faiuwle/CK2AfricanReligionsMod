@@ -8,8 +8,8 @@ namespace = AFRREL
 
 #Sigui Season Flag Set
 character_event = {
-	id = AFRREL.400
-	desc = "EVTDESC_AFRREL400"
+	id = AFRREL.118
+	desc = "EVTDESC_AFRREL118"
 	picture = "GFX_evt_tribal_shrine"
 	hide_window = yes
 
@@ -72,14 +72,14 @@ character_event = {
 	}
 	immediate = {
 			set_global_flag = sigui_season
-			any_ruler = { limit = { OR = { religion = a_tag_roog religion = a_tag_roog_reformed } } narrative_event = { id = AFRREL.403 } }
+			any_ruler = { limit = { OR = { religion = a_tag_roog religion = a_tag_roog_reformed } } narrative_event = { id = AFRREL.120 } }
 	}
 }
 
 #Sigui Season Flag Clear
 character_event = {
-	id = AFRREL.401
-	desc = "EVTDESC_AFRREL401"
+	id = AFRREL.119
+	desc = "EVTDESC_AFRREL119"
 	picture = "GFX_evt_tribal_shrine"
 	hide_window = yes
 
@@ -139,42 +139,42 @@ character_event = {
 
 	immediate = {
 		clr_global_flag = sigui_season
-		any_ruler = { limit = { OR = { religion = a_tag_roog religion = a_tag_roog_reformed } } narrative_event = { id = AFRREL.404 } }
+		any_ruler = { limit = { OR = { religion = a_tag_roog religion = a_tag_roog_reformed } } narrative_event = { id = AFRREL.121 } }
 	}
 }
 
 #Sigui Season Starts
 narrative_event = {
-	id = AFRREL.403
-	desc = "EVTDESC_AFRREL401"
+	id = AFRREL.120
+	desc = "EVTDESC_AFRREL120"
 	picture = "GFX_evt_tribal_shrine"
 	border = "GFX_event_narrative_frame_religion"
 
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTA_AFRREL401
+		name = EVTOPTA_AFRREL120
 	}
 }
 
 #Sigui Season Ends
 narrative_event = {
-	id = AFRREL.404
-	desc = "EVTDESC_AFRREL402"
+	id = AFRREL.121
+	desc = "EVTDESC_AFRREL121"
 	picture = "GFX_evt_tribal_shrine"
 	border = "GFX_event_narrative_frame_religion"
 
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTA_AFRREL402
+		name = EVTOPTA_AFRREL121
 	}
 }
 
 #Hold the Sigui
 character_event = {
-	id_AFRREL.404
-	desc = "EVTDESC_AFRREL402"
+	id = AFRREL.122
+	desc = "EVTDESC_AFRREL122"
 	picture = "GFX_evt_tribal_shrine"
 	
 	is_triggered_only = yes
@@ -185,18 +185,123 @@ character_event = {
      	}
 	fail_trigger_effect = {
 		clr_character_flag = activated_sigui
-		hidden_tooltip = { remove_trait = on_pilgrimage }
 	}
 	option = {
-		name = EVTOPTA_AFRREL402 #Start Sigui
-		add_trait = on_pilgrimage
-		set_character_flag = holding_sigui
+		name = EVTOPTA_AFRREL122 #Start Sigui 
+		wealth = -5
+		set_character_flag = planning_sigui
 		clr_character_flag = activated_sigui
+
+		#SEND AFRREL.123 TO HEIR IF ONE EXISTS
+
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { trait = zealous }
+			}
+		}
 	}
 	option = {
-		name = EVTOPTB_AFRREL402 #Nevermind
+		name = EVTOPTB_AFRREL122 #Nevermind
 		remove_trait = on_pilgrimage
-		clr_character_flag = holding_sigui
+		clr_character_flag = planning_sigui
 		clr_character_flag = activated_sigui
+
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
+	}
+}
+
+#Adult Heir wants to go with you (Heir Perspective)
+character_event = {
+	id = AFRREL.123
+	desc = "EVTDESC_AFRREL123"
+	picture = "GFX_evt_tribal_shrine"
+
+	is_triggered_only = yes
+
+	trigger = {
+		AND = {
+			OR = {
+				AND = {
+					is_ruler = yes
+					NOT = { trait = zealous } #They should have already decided to go
+				}
+				is_ruler = false
+
+				#IS PLAYER CHARACTER
+			}
+			is_adult = yes
+		}
+	}
+
+	option = {
+		name = EVTOPTA_AFRREL123 #Ask to go with family member
+
+		#SEND AFRREL.124 TO PARENT HOLDING SIGUI
+
+		ai_chance = { factor = 10 }
+	}
+	option = {
+		name = EVTOPTB_AFRREL123 #Do not ask
+
+		ai_chance = { factor = 10 }
+	}
+}
+
+#Adult Heir wants to go with you
+character_event = {
+	id = AFRREL.124
+	desc = "EVTDESC_AFRREL124"
+	picture = "GFX_evt_tribal_shrine"
+
+	is_triggered_only = yes
+
+	trigger = {
+	}
+
+	option = {
+		name = EVTOPTA_AFRREL124 #Allow heir to attend
+		
+		#SEND AFRREL.125 TO HEIR
+		
+		wealth = -25
+		
+		ai_chance = { factor = 10 }	
+	}
+	option = {
+		name = EVTOPTB_AFRREL124 #Do not allow heir to attend
+
+		#HEIR -10 OPINION OF YOU, 10 YEARS, DISAPOINTED
+
+		ai_chance = { factor = 10 }
+	}
+}
+
+#Sigui Starts
+character_event = {
+	id = AFRREL.125
+	desc = "EVTDESC_AFRREL124"
+	picture = "GTX_evt_tribal_shrine"
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = planning_sigui
+		has_global_flag = sigui_season
+	}
+
+	option = {
+		name = EVTOPTA_AFRREL125
+
+		#TRIGGER REGENCY
+
+		hidden_tooltip = { add_trait = on_pilgrimage }
 	}
 }
