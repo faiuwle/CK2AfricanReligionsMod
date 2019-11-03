@@ -12,8 +12,8 @@ on_yearly_pulse = {
         AFRREL.008  # Sacred Tyeddo
         AFRREL.010  # Orphans of Numidia
         AFRREL.021  # Clean up Suffete trait
-	AFRREL.400  # Set Sigui flag
-	AFRREL.401  # Clear Sigui flag
+	AFRREL.118  # Set Sigui flag
+	AFRREL.119  # Clear Sigui flag
     }
 }
 
