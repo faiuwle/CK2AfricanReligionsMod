@@ -192,7 +192,8 @@ character_event = {
 		set_character_flag = planning_sigui
 		clr_character_flag = activated_sigui
 
-		#SEND AFRREL.123 TO HEIR IF ONE EXISTS
+		current_heir = { limit = { dynasty = ROOT } character_event = { id = AFRREL.123 days = 2 } } }
+		character_event = { id = AFRREL.125 days = 5 }
 
 		ai_chance = {
 			factor = 10
@@ -233,18 +234,21 @@ character_event = {
 					is_ruler = yes
 					NOT = { trait = zealous } #They should have already decided to go
 				}
-				is_ruler = false
-
-				#IS PLAYER CHARACTER
+				is_ruler = no
 			}
 			is_adult = yes
+			NOT = { trait = pilgrim }
+			NOT = { trait = infirm }
+			#NOT TRAVELING
+			#NOT PRISONER
+			#NOT INCAPABLE
 		}
 	}
 
 	option = {
 		name = EVTOPTA_AFRREL123 #Ask to go with family member
 
-		#SEND AFRREL.124 TO PARENT HOLDING SIGUI
+		FROM = { character_event = { id = AFRREL.124 days = 2 } }
 
 		ai_chance = { factor = 10 }
 	}
@@ -269,7 +273,7 @@ character_event = {
 	option = {
 		name = EVTOPTA_AFRREL124 #Allow heir to attend
 		
-		#SEND AFRREL.125 TO HEIR
+		FROM = { character_event = { id = AFRREL.125 days = 1 } }
 		
 		wealth = -25
 		
@@ -278,7 +282,7 @@ character_event = {
 	option = {
 		name = EVTOPTB_AFRREL124 #Do not allow heir to attend
 
-		#HEIR -10 OPINION OF YOU, 10 YEARS, DISAPOINTED
+		FROM = { opinion = { modifier = very_disapointed who = ROOT years = 10 } }
 
 		ai_chance = { factor = 10 }
 	}
@@ -287,7 +291,7 @@ character_event = {
 #Sigui Starts
 character_event = {
 	id = AFRREL.125
-	desc = "EVTDESC_AFRREL124"
+	desc = "EVTDESC_AFRREL125"
 	picture = "GTX_evt_tribal_shrine"
 
 	is_triggered_only = yes
@@ -299,9 +303,140 @@ character_event = {
 
 	option = {
 		name = EVTOPTA_AFRREL125
+		
+		clr_character_flag = planning_sigui
+		set_character_flag = on_sigui
 
 		#TRIGGER REGENCY
 
+		random_list = {
+			25 = { character_event = { id = AFRREL.126 days = 10 random = 4 } } #Picks Random Event
+			25 = { character_event = { id = AFRREL.129 days = 10 random = 4 } }
+			25 = { character_event = { id = AFRREL.130 days = 10 random = 4 } }
+			25 = { character_event = { id = AFRREL.131 days = 10 random = 4 } }
+		}
+
+		random_list = {
+			25 = { character_event = { id = AFRREL.132 days = 15 random = 4 } } #Picks a Second Random Event
+			25 = { character_event = { id = AFRREL.133 days = 15 random = 4 } }
+			25 = { character_event = { id = AFRREL.134 days = 15 random = 4 } }
+			25 = { character_event = { id = AFRREL.135 days = 15 random = 4 } }
+		}
+
+		character_event = { id = AFRREL.134 days = 25 random = 5 }
+
 		hidden_tooltip = { add_trait = on_pilgrimage }
 	}
+}
+
+#Veiled Bandits
+character_event = {
+	id = AFRREL.126
+	desc = "EVTDESC_AFRREL126"
+	picture = "GTX_evt_tribal_shrine"
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_sigui
+		has_global_flag = sigui_season
+	}
+	fail_trigger_effect = {
+		clr_character_flag = on_sigui
+		hidden_tooltip = { remove_trait = on_pilgrimage }
+	}
+
+	option = {
+		name = EVTOPTA_AFRREL126 #Flee
+		wealth = -25
+		random = {
+			50 = { add_trait = craven }
+		}
+
+		ai_chance = { factor = 10 }
+	}
+	option = {
+		name = EVTOPTB_AFRREL126 #Fight
+		random = {
+			25 = { add_trait = wounded }
+			50 = { add_trait = brave }
+		}
+		IF = {
+			limit = { martial >= 15 } #Placeholder for combat skills
+			character_event = { id = AFRREL.127 }
+		}
+		ELSE = {
+			character_event = { id = AFRREL.128 }
+		}
+
+		ai_chance = { factor = 10 modifier = { factor = 0 NOT = { trait = brave } } }
+	}	
+}
+
+#Veiled Bandits lose
+character_event = {
+	id = AFRREL.127
+	desc = "EVTDESC_AFRREL127
+	picture = "GTX_evt_tribal_shrine"
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_sigui
+	}
+
+	option = {
+		name = EVTOPTA_AFRREL127
+		prestige = 60
+	}
+}
+
+#Veiled Bandits win
+character_event = {
+	id = AFRREL.128
+	desc = "EVTDESC_AFRREL128"
+	picture = "GTX_evt_tribal_shrine"
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_sigui
+	}
+
+	option = {
+		name = EVTOPTA_AFRREL128
+		prestige = 30
+		wealth = -50
+	}
+}
+
+#Albino Sacrifice
+character_event = {
+	id = AFRREL.129
+	desc = "EVTDESC_AFRREL128"
+	picture = "GTX_evt_tribal_shrine"
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_sigui
+		has_global_flag = sigui_season
+	}
+	fail_trigger_effect = {
+		clr_character_flag = on_sigui
+		hidden_tooltip = { remove_trait = on_pilgrimage }
+	}
+
+	option = {
+		name = EVTOPTA_AFRREL129 #Kill Albino
+		piety = 25
+
+		ai_chance = { factor = 10 }
+	}
+	option = {
+		name = EVTOPTB_AFRREL129 #Release Albino
+		prestige = 15
+
+		ai_chance = { factor = 10 }
+	}	
 }
