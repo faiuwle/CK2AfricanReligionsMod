@@ -6,91 +6,197 @@
 
 namespace = AFRREL
 
-#Sigui Season
-narrative_event = {
+#Sigui Season Flag Set
+character_event = {
 	id = AFRREL.400
 	desc = "EVTDESC_AFRREL400"
 	picture = "GFX_evt_tribal_shrine"
-	border = "GFX_event_narrative_frame_war"
+	hide_window = yes
 
 	is_triggered_only = yes
 
-     trigger = {
-	AND = {
-		OR = {
-			religion = a_tag_roog
-			religion = a_tag_roog_reformed
-		}
-		OR = {
-			year = 770
-			year = 827
-			year = 887
-			year = 947
-			year = 1007
-			year = 1067
-			year = 1127
-			year = 1187
-			year = 1247
-			year = 1307
-			year = 1367
-			year = 1427
+	trigger = {
+		AND = {
+			NOT = { has_global_flag = sigui_season }
+			OR = {
+				AND = {
+					year = 770
+					NOT = { year = 771 }
+				}
+				AND = {
+					year = 827
+					NOT = { year = 828 }
+				}
+				AND = {
+					year = 887
+					NOT = { year = 888 }
+				}
+				AND = {
+					year = 947
+					NOT = { year = 948 }
+					}
+				AND = {
+					year = 1007
+					NOT = { year = 1007 }
+				}
+				AND = {
+					year = 1067
+					NOT = { year = 1068 }
+				}
+				AND = {
+					year = 1127
+					NOT = { year = 1128 }
+				}
+				AND = {
+					year = 1187
+					NOT = { year = 1188 }
+				}
+				AND = {
+					year = 1247
+					NOT = { year = 1248 }
+				}
+				AND = {
+					year = 1307
+					NOT = { year = 1308 }
+				}
+				AND = {
+					year = 1367
+					NOT = { year = 1368 }
+				}
+				AND = {
+					year = 1427
+					NOT = { year = 1428 }
+				}
+			}
 		}
 	}
-     }
-	set_global_flag = sigui_season
+	immediate = {
+			set_global_flag = sigui_season
+			any_ruler = { limit = { OR = { religion = a_tag_roog religion = a_tag_roog_reformed } } narrative_event = { id = AFRREL.403 } }
+	}
+}
+
+#Sigui Season Flag Clear
+character_event = {
+	id = AFRREL.401
+	desc = "EVTDESC_AFRREL401"
+	picture = "GFX_evt_tribal_shrine"
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		AND = {
+			has_global_flag = sigui_season
+			OR = {
+				AND = {
+					year = 787
+					NOT = { year = 788 }
+				}
+				AND = {
+					year = 844
+					NOT = { year = 845 }
+				}
+				AND = {
+					year = 904
+					NOT = { year = 905 }
+				}
+				AND = {
+					year = 964
+					NOT = { year = 965 }
+				}
+				AND = {
+					year = 1024
+					NOT = { year = 1025 }
+				}
+				AND = {
+					year = 1084
+					NOT = { year = 1085 }
+				}
+				AND = {
+					year = 1144
+					NOT = { year = 1145 }
+				}
+				AND = {
+					year = 1204
+					NOT = { year = 1205 }
+				}
+				AND = {
+					year = 1264
+					NOT = { year = 1265 }
+				}
+				AND = {
+					year = 1324
+					NOT = { year = 1325 }
+				}
+				AND = {
+					year = 1384
+					NOT = { year = 1385 }
+				}
+			}
+		}
+	}
+
+	immediate = {
+		clr_global_flag = sigui_season
+		any_ruler = { limit = { OR = { religion = a_tag_roog religion = a_tag_roog_reformed } } narrative_event = { id = AFRREL.404 } }
+	}
+}
+
+#Sigui Season Starts
+narrative_event = {
+	id = AFRREL.403
+	desc = "EVTDESC_AFRREL401"
+	picture = "GFX_evt_tribal_shrine"
+	border = "GFX_event_narrative_frame_religion"
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_AFRREL401
+	}
 }
 
 #Sigui Season Ends
 narrative_event = {
-	id = AFRREL.401
-	desc = "EVTDESC_AFRREL401"
+	id = AFRREL.404
+	desc = "EVTDESC_AFRREL402"
 	picture = "GFX_evt_tribal_shrine"
-	border = "GFX_event_narrative_frame_war"
+	border = "GFX_event_narrative_frame_religion"
 
 	is_triggered_only = yes
 
-     trigger = {
-	AND = {
-		OR = {
-			religion = a_tag_roog
-			religion = a_tag_roog_reformed
-		}
-		OR = {
-			year = 787
-			year = 844
-			year = 904
-			year = 964
-			year = 1024
-			year = 1084
-			year = 1144
-			year = 1204
-			year = 1264
-			year = 1324
-			year = 1384
-		}
+	option = {
+		name = EVTOPTA_AFRREL402
 	}
-    }
-	clr_global_flag = sigui_season
 }
 
 #Hold the Sigui
 character_event = {
-	id_AFRREL.402
+	id_AFRREL.404
 	desc = "EVTDESC_AFRREL402"
 	picture = "GFX_evt_tribal_shrine"
 	
 	is_triggered_only = yes
 
-     trigger = {
-	AND = {
-		OR = {
-			religion = a_tag_roog
-			religion = a_tag_roog_reformed
-		}
-		is_adult = yes
-		prisoner = no
-		
-
-	add_trait = on_pilgrimage
-
+     	trigger = {
+		has_character_flag = activated_sigui
+		has_global_flag = sigui_season
+     	}
+	fail_trigger_effect = {
+		clr_character_flag = activated_sigui
+		hidden_tooltip = { remove_trait = on_pilgrimage }
+	}
+	option = {
+		name = EVTOPTA_AFRREL402 #Start Sigui
+		add_trait = on_pilgrimage
+		set_character_flag = holding_sigui
+		clr_character_flag = activated_sigui
+	}
+	option = {
+		name = EVTOPTB_AFRREL402 #Nevermind
+		remove_trait = on_pilgrimage
+		clr_character_flag = holding_sigui
+		clr_character_flag = activated_sigui
+	}
 }
