@@ -124,18 +124,18 @@ TAGELLIDT;Tagellidt;;;;;;;;;;;;;x
 AMENKAD;Amenkad;;;;;;;;;;;;;x
 SUFFETE;Suffete;;;;;;;;;;;;;x
 KAYA_MAGA;Kaya Maga;;;;;;;;;;;;;x
-king_maghreb_arabic;[MaghrebArabicKing];;;;;;;;;;;;;x
-king_female_maghreb_arabic;[MaghrebArabicQueen];;;;;;;;;;;;;x
-emperor_maghreb_arabic;[MaghrebArabicEmperor];;;;;;;;;;;;;x
-emperor_female_maghreb_arabic;[MaghrebArabicEmpress];;;;;;;;;;;;;x
-tribal_king_maghreb_arabic;[MaghrebArabicKing];;;;;;;;;;;;;x
-tribal_king_female_maghreb_arabic;[MaghrebArabicQueen];;;;;;;;;;;;;x
-tribal_emperor_maghreb_arabic;[MaghrebArabicEmperor];;;;;;;;;;;;;x
-tribal_emperor_female_maghreb_arabic;[MaghrebArabicEmpress];;;;;;;;;;;;;x
+king_maghreb_arabic;Agellid;;;;;;;;;;;;;x
+king_female_maghreb_arabic;Tagellidt;;;;;;;;;;;;;x
+emperor_maghreb_arabic;Amenkad;;;;;;;;;;;;;x
+emperor_female_maghreb_arabic;Tagellidt;;;;;;;;;;;;;x
+tribal_king_maghreb_arabic;Agellid;;;;;;;;;;;;;x
+tribal_king_female_maghreb_arabic;Tagellidt;;;;;;;;;;;;;x
+tribal_emperor_maghreb_arabic;Amenkad;;;;;;;;;;;;;x
+tribal_emperor_female_maghreb_arabic;Tagellidt;;;;;;;;;;;;;x
 kingdom_of_maghreb_arabic;Kingdom of;;;;;;;;;;;;;x
 tribal_kingdom_of_maghreb_arabic;Kingdom of;;;;;;;;;;;;;x
-kingdom_maghreb_arabic;[Holder.MaghrebArabicKingdom];;;;;;;;;;;;;x
-tribal_kingdom_maghreb_arabic;[Holder.MaghrebArabicKingdom];;;;;;;;;;;;;x
+kingdom_maghreb_arabic;Kingdom;;;;;;;;;;;;;x
+tribal_kingdom_maghreb_arabic;Kingdom;;;;;;;;;;;;;x
 job_spiritual_bori;Court Magadja;;;;;;;;;;;;;x
 job_spiritual_a_tag_roog;Hogon;;;;;;;;;;;;;x
 job_spiritual_a_tag_roog_reformed;Hogon;;;;;;;;;;;;;x

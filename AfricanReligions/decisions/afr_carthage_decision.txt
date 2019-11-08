@@ -1,0 +1,49 @@
+decisions = {
+    reform_carthage = {
+        only_playable = yes
+        is_high_prio = yes
+        ai_check_interval = 24
+        
+        potential = {
+            OR = {
+                religion = amazigh
+                religion = amazigh_reformed
+            }
+            is_adult = yes
+            prisoner = no
+            NOT = { trait = incapable }
+            NOT = { has_global_flag = carthage_restored }
+        }
+        
+        allow = {
+            custom_tooltip = {
+                text = is_reformed_amazigh_tooltip
+                religion = amazigh_reformed
+            }
+            primary_title = {
+                custom_tooltip = {
+                    text = is_empire_of_maghreb_tooltip
+                    title = e_maghreb
+                }
+            }
+            prestige = 3000
+            completely_controls = d_tunis
+            completely_controls = d_tangiers
+            completely_controls = d_tripolitania
+            completely_controls = d_sous
+            war = no
+        }
+        
+        effect = {
+            set_global_flag = carthage_restored
+            narrative_event = { id = AFRREL.016 tooltip = carthage_is_restored_tooltip }
+        }
+        
+        revoke_allowed = {
+            always = no
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}
