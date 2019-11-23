@@ -413,7 +413,7 @@ character_event = {
 #Albino Sacrifice
 character_event = {
 	id = AFRREL.129
-	desc = "EVTDESC_AFRREL128"
+	desc = "EVTDESC_AFRREL129"
 	picture = "GTX_evt_tribal_shrine"
 
 	is_triggered_only = yes
@@ -439,4 +439,221 @@ character_event = {
 
 		ai_chance = { factor = 10 }
 	}	
+}
+
+#The Poor Village
+character_event = {
+	id = AFRREL.130
+	desc = "EVTDESC_AFRREL130"
+	picture = "GTX_evt_tribal_shrine"
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_sigui
+		has_global_flag = sigui_season
+	}
+	fail_trigger_effect = {
+		clr_character_flag = on_sigui
+		hidden_tooltip = { remove_trait = on_pilgrimage }
+	}
+
+	option  = {
+		name = EVTOPTA_AFRREL130 #Feed them
+		wealth = -15
+		random = { 50 = { add_trait = charitable } }
+		ai_chance = { factor = 10 }
+	}
+	option  = {
+		name = EVTOPTB_AFRREL130 #Don't feed them
+		prestige = -20
+		random = { 50 = { add_trait = greedy } }
+		ai_chance = { factor = 10 }
+	}
+}
+
+#The Mysterious Priest
+character_event = {
+	id = AFRREL.131
+	desc = "EVTDESC_AFRREL131"
+	picture = "GTX_evt_tribal_shrine"
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_sigui
+		has_global_flag = sigui_season
+	}
+	fail_trigger_effect = {
+		clr_character_flag = on_sigui
+		hidden_tooltip = { remove_trait = on_pilgrimage }
+	}
+
+	option = {
+		name = EVTOPTA_AFRREL131 #Take old man
+		wealth = -3
+		character_event = { id = AFRREL132 }
+		ai_chance = { factor = 10 }
+	}
+	option = {
+		name = EVTOPTB_AFRREL131 #Don't take him
+		character_event = { id = AFRREL133 }
+		ai_chance = { factor = 10 }
+	}
+}
+
+#Accepted Priest
+character_event = {
+	id = AFRREL.132
+	desc = "EVTDESC_AFRREL132"
+	picture = "GTX_evt_tribal_shrine"
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_AFRREL132
+		add_trait = ambitious
+		random = { 30 = { add_trait = proud } }
+	}
+}
+
+#Rejected Priest
+character_event = {
+	id = AFRREL.133
+	desc = "EVTDESC_AFRREL133"
+	picture = "GTX_evt_tribal_shrine"
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_AFRREL133
+		prestiege = -50
+	}
+}
+
+#Acquired the Large Homosexuality (Got the big gay)
+character_event = {
+	id = AFRREL.134
+	desc = "EVTDESC_AFRREL134"
+	picture = "GTX_evt_tribal_shrine"
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_sigui
+		has_global_flag = sigui_season
+	}
+	fail_trigger_effect = {
+		clr_character_flag = on_sigui
+		hidden_tooltip = { remove_trait = on_pilgrimage }
+	}
+
+	option = {
+		name = EVTOPTA_AFRREL134
+		piety = 25
+		prestige = -10
+		random = { 50 = { add_trait = trusting } }
+	}
+	option = {
+		name = EVTOPTB_AFRREL134
+		prestige = 25
+		piety = -10
+		random = { 50 = { add_trait = homosexual } }
+	}
+	option = {
+		name = EVTOPTC_AFRREL134
+		prestige = 15
+		piety = 15
+		random = { 50 = { add_trait = celibate } }
+	}
+}
+		
+#African Jews
+character_event = {
+	id = AFRREL.135
+	desc = "EVTDESC_AFRREL135"
+	picture = "GTX_evt_tribal_shrine"
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = on_sigui
+		has_global_flag = sigui_season
+	}
+	fail_trigger_effect = {
+		clr_character_flag = on_sigui
+		hidden_tooltip = { remove_trait = on_pilgrimage }
+	}
+
+	option = {
+		name = EVTOPTA_AFRREL135
+		piety = 25
+		random = { 50 = { add_trait = zealous } }
+	}
+	option = {
+		name = EVTOPTB_AFRREL136
+		#Make random Jewish character of African culture
+		#with scholarly theologian and renowned physician
+		#add to court.
+		#Gain sympathy for judaism
+	}
+}
+
+#Tired Warrior
+character_event = {
+	id = AFRREL.136
+	desc = "EVTDESC_AFRREL136"
+	picture = "GTX_evt_tribal_shrine"
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_sigui
+		has_global_flag = sigui_season
+	}
+	fail_trigger_effect = {
+		clr_character_flag = on_sigui
+		hidden_tooltip = { remove_trait = on_pilgrimage }
+	}
+
+	option = {
+		name = EVTOPTA_AFRREL136
+		#Make random African courtier with Skilled
+		#Tactician and Hedonist
+	}
+	option = {
+		name = EVTOPTB_AFRREL136
+		piety = 20
+		random = { 20 = { add_trait = kind } }
+	}
+}
+
+#Drunkard There
+character_event = {
+	id = AFRREL.137
+	desc = "EVTDESC_AFRREL137"
+	picture = "GTX_evt_tribal_shrine"
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_sigui
+		has_global_flag = sigui_season
+	}
+	fail_trigger_effect = {
+		clr_character_flag = on_sigui
+		hidden_tooltip = { remove_trait = on_pilgrimage }
+	}
+
+	option = {
+		name = EVTOPTA_AFRREL137
+		prestige = -25
+		random = { 20 = { add_trait = patient } }
+	}
+	option = {
+		name = EVTOPTB_AFRREL137
+		prestige = 25
+		random = { 25 = { add_trait = wounded }
+			    3 = { #die like a fool } }
+	}
 }
