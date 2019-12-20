@@ -2038,6 +2038,7 @@ ravager = {
 				has_religion_feature = religion_adventuring
 				has_religion_feature = religion_seafaring
 			}
+            has_religion_feature = religion_feature_amazigh
 		}
 	}
 	opposites =  {
@@ -2075,6 +2076,7 @@ seaking = {
 				has_religion_feature = religion_adventuring
 				has_religion_feature = religion_seafaring
 			}
+            has_religion_feature = religion_feature_amazigh
 		}
 	}
 	opposites =  {
@@ -2216,6 +2218,7 @@ sea_queen = {
 				has_religion_feature = religion_adventuring
 				has_religion_feature = religion_seafaring
 			}
+            has_religion_feature = religion_feature_amazigh
 		}
 	}
 	opposites =  {
@@ -7562,6 +7565,7 @@ pirate = {
 				has_religion_feature = religion_adventuring
 				has_religion_feature = religion_seafaring
 			}
+            has_religion_feature = religion_feature_amazigh
 		}
 	}
 	opposites =  {
@@ -7589,6 +7593,7 @@ bloodthirsty_gods_1 = { #10 burned_hearts_points
 			has_religion_feature = religion_ritual_sacrifice
 			religion = aztec
 			religion = aztec_reformed
+            has_religion_feature = religion_feature_amazigh
 		}
 	}
 	opposites =  {
@@ -7625,6 +7630,7 @@ bloodthirsty_gods_2 = { #50 burned_hearts_points
 			has_religion_feature = religion_ritual_sacrifice
 			religion = aztec
 			religion = aztec_reformed
+            has_religion_feature = religion_feature_amazigh
 		}
 	}
 	opposites =  {
@@ -7661,6 +7667,7 @@ bloodthirsty_gods_3 = { #100 burned_hearts_points
 			has_religion_feature = religion_ritual_sacrifice
 			religion = aztec
 			religion = aztec_reformed
+            has_religion_feature = religion_feature_amazigh
 		}
 	}
 	opposites =  {
